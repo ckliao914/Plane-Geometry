@@ -1,5 +1,9 @@
 # Overview {.unnumbered}
+::: {.callout-note collapse="true"}
+## Preface
 
+Here is the preface text. You can write your introduction, background, or acknowledgments here. It will stay collapsed until the reader clicks the title.
+:::
 
 * [Chapter 1: Projective Space](ch1.html)
 
