@@ -1,3 +1,6 @@
+<style>
+  .markdown-body > h1:first-child { display: none; }
+</style>
 <script>
   MathJax = {
     tex: {
@@ -8,10 +11,8 @@
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# Complex Planar Geometry (English Version)
-
-Here is an inline fraction $\frac{a}{b}$ and a display equation:
-
+# Complex Planar Geometry
+See?
 $$
 \frac{a}{b} = c
 $$
