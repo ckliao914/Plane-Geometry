@@ -4,7 +4,7 @@
 
 On the real projective plane, a line $\ell$ and a conic $\mathcal{C}$ may meet at $0,1,2$ points. However, we may always study the involution on $\ell$ induced by $\mathcal{C}$ (if they are not tangent)
 $$
-\varphi:\ell\to \ell,\, p\mapsto \ell\cap \mathfrak{p}_{\mathcal{C}}(P)
+\varphi:\ell\to \ell,\, P\mapsto \ell\cap \mathfrak{p}_{\mathcal{C}}(P)
 $$
 where $\mathfrak{p}_{\mathcal{C}}(P)$ is the polar of $P$ with respect to $\mathcal{C}$.
 
