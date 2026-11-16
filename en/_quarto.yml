@@ -10,6 +10,15 @@ book:
 format:
   html:
     theme: cosmo
-    toc: true
-    number-sections: true
-    html-math-method: mathjax
+    include-in-header:
+      text: |
+        <script>
+        window.MathJax = {
+          tex: {
+            macros: {
+              // 強制將 \mathcal 轉向標準的傳統手寫體字集
+              mathcal: ['{\\scr #1}', 1]
+            }
+          }
+        };
+        </script>
