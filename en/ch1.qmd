@@ -1,5 +1,6 @@
-# Projective Space
+# Complex Projective Plane and Cross Ratio
 
+## Projective Plane
 ::: {#def-proj}
 ## Projective Space
 Let $V$ be a finite-dimensional vector space over $\mathbb{C}$. The projective space $\mathbb{P}(V)$ is the set of all one-dimensional linear subspaces of $V$.
@@ -28,3 +29,4 @@ Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
 :::
 
 As shown in @lem-bezout and @rem-coord, intersection multiplicities are well-defined.
+## Cross Ratio 
