@@ -4,8 +4,8 @@ project:
 book:
   title: "Complex Planar Geometry"
   chapters:
-    - en/index.qmd
-    - en/ch1.qmd
+    - index.qmd
+    - ch1.qmd
 
 format:
   html:
