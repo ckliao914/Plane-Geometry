@@ -1,0 +1,16 @@
+project:
+  type: book
+
+book:
+  title: "Complex Planar Geometry"
+  chapters:
+    - PlaneGeoENG.qmd
+    - ch1.qmd
+    - ch2.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    html-math-method: mathjax
