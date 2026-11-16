@@ -1,0 +1,30 @@
+# Projective Space
+
+::: {#def-proj}
+## Projective Space
+Let $V$ be a finite-dimensional vector space over $\mathbb{C}$. The projective space $\mathbb{P}(V)$ is the set of all one-dimensional linear subspaces of $V$.
+:::
+
+::: {#lem-bezout}
+## Bézout's Theorem
+Let $C_1$ and $C_2$ be two projective plane curves in $\mathbb{CP}^2$ of degrees $d_1$ and $d_2$ with no common components. Then
+$$
+\sum_{P \in C_1 \cap C_2} I_P(C_1, C_2) = d_1 d_2.
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the resultant of the defining homogeneous polynomials $F$ and $G$:
+$$
+\operatorname{Res}(F, G) = 0
+$$
+Thus the intersection is non-empty. $\blacksquare$
+:::
+
+::: {#rem-coord}
+## Homogeneous Coordinates
+Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
+:::
+
+As shown in @lem-bezout and @rem-coord, intersection multiplicities are well-defined.
