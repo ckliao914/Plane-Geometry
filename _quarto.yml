@@ -6,7 +6,6 @@ book:
   chapters:
     - PlaneGeoENG.qmd
     - ch1.qmd
-    - ch2.qmd
 
 format:
   html:
