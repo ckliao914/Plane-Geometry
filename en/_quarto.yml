@@ -17,7 +17,7 @@ format:
           tex: {
             macros: {
               // 強制將 \mathcal 轉向標準的傳統手寫體字集
-              mathcal: ['{\\scr #1}', 1]
+              mathcal: ['{\\mathscr{#1}}', 1]
             }
           }
         };
