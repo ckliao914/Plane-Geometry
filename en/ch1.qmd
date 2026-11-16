@@ -29,4 +29,6 @@ Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
 :::
 
 As shown in @lem-bezout and @rem-coord, intersection multiplicities are well-defined.
+
 ## Cross Ratio 
+We define the cross ratio.
