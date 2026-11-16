@@ -19,7 +19,16 @@
   </ul>
 </body>
 
-* [English Version: Complex Planar Geometry](./PlaneGeoENG.md)
-  I'm trying to translate the Complex Planar Geometry handout directly on Github, but it's incomplete.
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <ul>
+    <!-- 點擊可在瀏覽器中開啟 PDF -->
+    <li><a href="PlaneGeoENG.md" target="_blank">Complex Planar Geometry (English ver.)</a></li>
+  </ul>
+</body>
+
+  I'm trying to translate the Complex Planar Geometry handout directly on Github, but there's nothing in it now.
 </html>
 
