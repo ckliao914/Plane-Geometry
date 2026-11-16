@@ -15,7 +15,7 @@
 <body>
   <ul>
     <!-- 點擊可在瀏覽器中開啟 PDF -->
-    <li><a href="Planar_Geometry_over_C.pdf" target="_blank">複射影平面幾何/Complex Planar Geometry (Last Updated 11/15)</a></li>
+    <li><a href="Planar_Geometry_over_C.pdf" target="_blank">複射影平面幾何/Complex Planar Geometry</a> (Last Updated 11/15)</li>
   </ul>
 </body>
 </html>
