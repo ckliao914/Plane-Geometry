@@ -23,34 +23,30 @@ body {
   counter-reset: shared-thm;
 }
 
-/* 1. 計數器遞增 */
+/* 隱藏預設的標題文字，但保留 Quarto 產生的編號（例如 1.1） */
 div[id^="thm-"] .theorem-title,
 div[id^="lem-"] .theorem-title,
 div[id^="cor-"] .theorem-title {
-  counter-increment: shared-thm;
+  font-size: 0 !important;
 }
 
-/* 2. 隱藏 Quarto 原生的獨立編號（避免出現 1.1 1 重複） */
-div[id^="thm-"] .theorem-title strong,
-div[id^="lem-"] .theorem-title strong,
-div[id^="cor-"] .theorem-title strong {
-  font-size: 0;
+/* 重新組合成 "Theorem [章節編號]" */
+div[id^="thm-"] .theorem-title::before {
+  content: "Theorem " attr(data-number);
+  font-size: 1rem !important;
+  font-weight: 700;
 }
 
-/* 3. 用共用計數器重新印出正確的單一編號 */
-div[id^="thm-"] .theorem-title strong::before {
-  content: "Theorem " counter(shared-thm);
-  font-size: 1rem;
+div[id^="lem-"] .theorem-title::before {
+  content: "Lemma " attr(data-number);
+  font-size: 1rem !important;
+  font-weight: 700;
 }
 
-div[id^="lem-"] .theorem-title strong::before {
-  content: "Lemma " counter(shared-thm);
-  font-size: 1rem;
-}
-
-div[id^="cor-"] .theorem-title strong::before {
-  content: "Corollary " counter(shared-thm);
-  font-size: 1rem;
+div[id^="cor-"] .theorem-title::before {
+  content: "Corollary " attr(data-number);
+  font-size: 1rem !important;
+  font-weight: 700;
 }
 
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
