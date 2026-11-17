@@ -18,33 +18,34 @@ ol[type="1"] > li::before {
   text-align: right;
 }
 
-/* 1. 建立共用的 Theorem / Lemma 計數器 (依章節重置或全局遞增) */
+/* 1. 頁面載入時重置共用計數器 */
 body {
   counter-reset: shared-thm;
 }
 
-/* 隱藏預設的標題文字，但保留 Quarto 產生的編號（例如 1.1） */
+/* 2. 讓 Theorem / Lemma / Corollary 共用同一個計數器遞增 */
 div[id^="thm-"] .theorem-title,
 div[id^="lem-"] .theorem-title,
 div[id^="cor-"] .theorem-title {
-  font-size: 0 !important;
+  counter-increment: shared-thm;
+  font-size: 0 !important; /* 徹底隱藏 Quarto 原生的 cor 1.1 或 Theorem 1.1 */
 }
 
-/* 重新組合成 "Theorem [章節編號]" */
+/* 3. 重新印出乾淨的共用編號（恢復字體大小並加上粗體） */
 div[id^="thm-"] .theorem-title::before {
-  content: "Theorem " attr(data-number);
+  content: "Theorem " counter(shared-thm) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="lem-"] .theorem-title::before {
-  content: "Lemma " attr(data-number);
+  content: "Lemma " counter(shared-thm) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="cor-"] .theorem-title::before {
-  content: "Corollary " attr(data-number);
+  content: "Corollary " counter(shared-thm) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
