@@ -43,7 +43,7 @@ i.e. $\mathcal{I}=\{(P_i,\ell_j)\mid j-i\equiv 1,2,4\pmod 7\}$. In this case, $\
 ## Cross Ratio 
 ::: {.unnumbered-env}
 **Definition.**
-On a projective plane, for any collinear points $P_1,P_2,Q_1,Q_2$, satisfying $P_i\neq Q_j$ ($i,j\neq 1,2$), define the cross ratio $$(P_1,P_2;Q_1,Q_2)\in \mathbb{C}-\{0\}=\mathbb{C}^\times$$ of the four points to be a function satisfying the following hypothesis.
+On a projective plane, for any collinear points $P_1,P_2,Q_1,Q_2$, satisfying $P_i\neq Q_j$ ($i,j\neq 1,2$), define the cross ratio $$(P_1,P_2;Q_1,Q_2)\in \mathbb{C}-\{0\}=\mathbb{C}^\times$$ of the four points to be a function satisfying the following hypotheses.
 
 (1) $(P_1,P_2;Q_1,Q_2)=(Q_1,Q_2;P_1,P_2)$.
 
@@ -61,6 +61,17 @@ $$
 
 A projective space equipped with a cross ratio is called a complex projective plane.
 :::
+
+::: {.unnumbered-env}
+**Example.**
+The union of $\mathbb{C}^2$ along with the line of infinity may be equipped with the cross ratio
+$$
+(P_1,P_2;Q_1,Q_2)=\dfrac{P_1Q_1/P_1Q_2}{P_2Q_1/P_2Q_2}
+$$
+where the length are directed (i.e. can be treated as vectors). This cross ratio satisfies the hypotheses, so this gives an example of a complex projective plane.
+:::
+
+In the following, we fix a complex projective plane, i.e. a projective plane and the equipped cross ratio.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
