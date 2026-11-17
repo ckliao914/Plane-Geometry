@@ -3,7 +3,7 @@
 ## Projective Plane
 ::: {.unnumbered-env}
 **Definition.**
-Given sets $\mathbb{P}$ and $\mathbb{L}$, the elements in $\mathbb{P}$ are called points, and the elements in $\mathbb{L}$ are called lines. Given a subset $\mathcal{I}$ of the set $\mathbb{P}\times \mathbb{L}$, then for a point $P$, define 
+Given sets $\mathbb{P}$ and $\mathbb{L}$, the elements in $\mathbb{P}$ are called **points**, and the elements in $\mathbb{L}$ are called **lines**. Given a subset $\mathcal{I}$ of the set $\mathbb{P}\times \mathbb{L}$, then for a point $P$, define 
 $$
 \mathbb{L}_P=\{\ell\in \mathbb{L}\mid (P,\ell)\in \mathcal{I}\}
 $$
@@ -19,19 +19,29 @@ If $\mathcal{P}=(\mathbb{P},\mathbb{L},\mathcal{I})$ satisfies
 
 (3) For any two distinct points $P_1,P_2$, there exists a unique line $\ell\in \mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}$, we write $\ell=P_1P_2$.
 
-then $\mathcal{P}$ is a projective plane.
+then $\mathcal{P}$ is a **projective plane**.
 :::
 
-Suppose that distinct points $P_1,P_2$ satisfies $\mathbb{L}_{P_1}=\mathbb{L}_{P_2}$, then $|\mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}|>1$, contradiction, i.e. $\mathbb{L}_{P_1}=\mathbb{L}_{P_2}$ implies that $P_1=P_2$. In other words, we may identify $P$ with $\mathbb{L}_P$, and similarly, we may identify $\ell$ and $\mathbb{P}_{\ell}$. Since $(P,\ell)\in \mathcal{I}$ is equivalent to $P\in \mathbb{P}_{\ell}$, we may also write $P\in \ell$ (or $\ell\in P$, but this is rarely used), and say that $P$ is on $\ell$, or $\ell$ passes through $P$.
+Suppose that points $P_1,P_2$ satisfies $\mathbb{L}_{P_1}=\mathbb{L}_{P_2}$, then $|\mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}|>1$, i.e. $P_1=P_2$. In other words, we may identify $P$ with $\mathbb{L}_P$, and similarly, we may identify $\ell$ and $\mathbb{P}_{\ell}$. Since $(P,\ell)\in \mathcal{I}$ is equivalent to $P\in \mathbb{P}_{\ell}$, we may also write $P\in \ell$ (or $\ell\in P$, but this is rarely used), and say that $P$ is on $\ell$, or $\ell$ passes through $P$.
 
-If some points are on the same line, then they are said to be collinear; and if some lines pass through the same point, then they are said to be concurrent.
-::: {#lem-bezout}
-## Bézout's Theorem
-Let $C_1$ and $C_2$ be two projective plane curves in $\mathbb{CP}^2$ of degrees $d_1$ and $d_2$ with no common components. Then
-$$
-\sum_{P \in C_1 \cap C_2} I_P(C_1, C_2) = d_1 d_2.
-$$
+If some points are on the same line, then they are said to be **collinear**; and if some lines pass through the same point, then they are said to be **concurrent**.
+
+::: {.unnumbered-env}
+**Remark.**
+Under the usual framework, a projective plane is the set of points, i.e. the set $\mathbb{P}$, and define lines to be some specific subsets of $\mathbb{P}$, i.e. $\mathbb{P}_\ell$. This is the reason why the notation $\ell\in P$ is rarely used. To emphasize that the roles of the points and lines are exchangable (i.e. duality), we used $\mathcal{I}$ (incident set) to encode the relations of points and lines. In this way, there are no specific hierarchy between points and lines.
 :::
+
+::: {.unnumbered-env}
+**Example.**
+Let $\mathbb{P}=\{P_1,P_2,...,P_7\}$, and $\mathbb{L}=\{\ell_1,\ell_2,...,\ell_7\}$, and define
+$$
+P_i\in \ell_j\iff j-i\equiv 1,2,4\pmod 7
+$$
+i.e. $\mathcal{I}=\{(P_i,\ell_j)\mid j-i\equiv 1,2,4\pmod 7\}. In this case, $\mathcal{P}=(\mathbb{P},\mathbb{L},\mathcal{I})$ is a projective plane, and there are three points (resp. lines) on each line (resp. point).
+:::
+
+## Cross Ratio 
+We define the cross ratio.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
@@ -49,5 +59,4 @@ Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
 
 As shown in @lem-bezout and @rem-coord, intersection multiplicities are well-defined.
 
-## Cross Ratio 
-We define the cross ratio.
+
