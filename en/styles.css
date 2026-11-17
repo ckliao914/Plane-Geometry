@@ -1,0 +1,19 @@
+/* 讓 Pandoc 支援的 (1) 括號數字清單在網頁正確顯示 */
+ol[type="1"] {
+  list-style-type: none;
+  counter-reset: list-counter;
+  padding-left: 1.5em;
+}
+
+ol[type="1"] > li {
+  counter-increment: list-counter;
+  position: relative;
+}
+
+ol[type="1"] > li::before {
+  content: "(" counter(list-counter) ")";
+  position: absolute;
+  left: -1.8em;
+  width: 1.5em;
+  text-align: right;
+}
