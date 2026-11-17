@@ -16,7 +16,10 @@ format:
         <script>
         window.MathJax = {
           output: {
-            font: 'mathjax-tex'
+            font: 'mathjax-tex',
+            linebreaks: {
+              automatic: false
+            }
           }
         };
         </script>
