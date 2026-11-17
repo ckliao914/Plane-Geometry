@@ -19,7 +19,7 @@ ol[type="1"] > li::before {
 }
 
 
-/* 1. 頁面載入時重置共用計數器 */
+/* 1. 頁面重置共用計數器 */
 body {
   counter-reset: shared-thm;
 }
