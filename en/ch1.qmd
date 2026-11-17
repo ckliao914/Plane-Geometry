@@ -94,6 +94,15 @@ $$
 Thus the intersection is non-empty. $\blacksquare$
 :::
 
+::: {.unnumbered-env}
+**Remark.**
+The usual definition of the cross ratio takes value in $\mathbb{C}\cup \{\infty\}$, and satisfies the relation
+$$
+(P_1,P_2;Q_1,Q_2)+(P_1,Q_1;P_2,Q_2)=1
+$$
+(this will be called the linear hypothesis in the following). However, many results do not depend on this, i.e. we may view $\mathbb{C}^\times$ as a multiplicative group and forget the additive structure on $\mathcal{C}$.
+:::
+
 ::: {#rem-coord}
 ## Homogeneous Coordinates
 Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
