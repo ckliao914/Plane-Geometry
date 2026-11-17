@@ -6,7 +6,8 @@ book:
   chapters:
     - index.qmd
     - ch1.qmd
-
+  number-sections: true
+  
 format:
   html:
     theme: cosmo
