@@ -17,3 +17,32 @@ ol[type="1"] > li::before {
   width: 1.5em;
   text-align: right;
 }
+
+/* 1. 建立共用的 Theorem / Lemma 計數器 (依章節重置或全局遞增) */
+body {
+  counter-reset: shared-thm;
+}
+
+/* 隱藏 Quarto 原生的獨立編號，改用共用計數器顯示 */
+div[id^="thm-"] .theorem-title,
+div[id^="lem-"] .theorem-title {
+  counter-increment: shared-thm;
+}
+
+/* 讓 Theorem 顯示為 Theorem 1, 2, 3... */
+div[id^="thm-"] .theorem-title strong::after {
+  content: " " counter(shared-thm);
+}
+
+/* 讓 Lemma 共用同一個號碼，顯示為 Lemma 1, 2, 3... */
+div[id^="lem-"] .theorem-title strong::after {
+  content: " " counter(shared-thm);
+}
+
+/* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
+.unnumbered-env {
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  border-left: 3px solid #6c757d;
+  background-color: #f8f9fa;
+}
