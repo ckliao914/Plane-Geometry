@@ -232,7 +232,7 @@ In Mandarin, we call projective maps "preserve cross ratio", and the projective 
 This is the advantage of hypothesis (4) in the definition of cross ratio. Though the projective map method seems to be a direct consequence of hypothesis (4), the idea of projective maps is helpful in proving some properties.
 
 ::: {#thm-Pappus}
-##Pappus theorem
+## Pappus theorem
 Suppose that $A_1,A_2,A_3$ are collinear on $\ell$, $B_1,B_2,B_3$ are collinear on $m$ ($\ell\neq m$), then the points
 $$
 P=A_2B_3\cap A_3B_2,\, Q=A_3B_1\cap A_1B_3,\, R=A_1B_2\cap A_2B_1
@@ -253,7 +253,7 @@ We can rewrite the proof in pure cross ratios. One may compare the two proofs.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Alternative proof
-Since ($Q'=PR\cap A_3B_1$)
+Let $Q'=PR\cap A_3B_1$. Since
 $$
 R(A_2B_1\cap A_3B_2,B_2,A_3;P)=(B_1,A_3B_1\cap A_1B_2;A_2,Q')
 $$
