@@ -91,7 +91,7 @@ $$
 (this will be called the linear hypothesis in the following). However, many results do not depend on this, i.e. we may view $\mathbb{C}^\times$ as a multiplicative group and forget the additive structure on $\mathbb{C}$.
 :::
 
-We only defined the cross ratio of four points, but condition (3) allows us to define the cross ratio of four points.
+We only defined the cross ratio of four points, but hypothesis (3) allows us to define the cross ratio of four points.
 
 ::: {.unnumbered-env}
 **Definition.**
@@ -99,7 +99,7 @@ Four lines $m_1,m_2,n_1,n_2$ pass through $P$, where $m_i\neq n_j$ ($i,j=1,2$). 
 $$
 (m_1,m_2;n_1,n_2)=(\ell\cap m_1,\ell\cap m_2;\ell\cap n_1;\ell\cap n_2)
 $$
-where $\ell$ is any line that does not pass through $P$. From condition (3) this does not depend on the choice of $\ell$.
+where $\ell$ is any line that does not pass through $P$. From hypothesis (3) this does not depend on the choice of $\ell$.
 :::
 
 ::: {.unnumbered-env}
@@ -158,6 +158,7 @@ i.e. $Q=Q'$, and $P_1,P_2,P_3$ are collinear. The dual holds automatically.
 :::
 
 ::: {#thm-Desargues}
+## Desargues theorem
 Given triangles $ABC$ and $DEF$, we define
 $$
 X=BC\cap EF,\,Y=CA\cap FD,\, Z=AB\cap DE
@@ -179,3 +180,53 @@ $$
 $$
 so from @thm-collinear (the dual version), $YZ,BC, EF$ are concurrent at $X$, i.e, $X,Y,Z$ are collinear.
 :::
+
+## Projective Maps and the Projective Map Method
+
+::: {.unnumbered-env}
+**Definition.**
+A cross-ratio set is a set on which the cross ratio is defined, for example, $\mathbb{L}_P$ and $\mathbb{P}_\ell$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $\mathscr{A},\mathscr{B}$ be cross-ratio sets. A function $f:\mathscr{A}\to\mathscr{B}$ is said to be a projective map if for any $\mathfrak{a}_1,\mathfrak{a}_2,\mathfrak{a}_3,\mathfrak{a}_4\in\mathscr{A}$,
+$$
+(\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a}_3,\mathfrak{a}_4)=(f(\mathfrak{a}_1),f(\mathfrak{a}_2);f(\mathfrak{a}_3),f(\mathfrak{a}_4))
+$$
+Projective maps are bijective, and the composition of projective maps is also projective.
+:::
+
+::: {.unnumbered-env}
+**Example.**
+Given point $P$ and line $m$ such that $P\notin m$, then the function        
+$$
+f:\mathbb{L}_P\to\mathbb{P}_m,\, f(\ell)=\ell\cap m
+$$
+is a projective map. We usually write $f:\ell\mapsto \ell\cap m$ for $f(\ell)=\ell\cap m$.
+:::
+
+::: {#thm-projunique}
+## Projective map method
+Let $\mathscr{A},\mathscr{B}$ be cross-ratio sets, and $f,f':\mathscr{A}\to\mathscr{B}$ are projective maps. Suppose that there exists distinct $\mathfrak{a}_1,\mathfrak{a}_2,\mathfrak{a}_3\in\mathscr{A}$ such that 
+$$
+f(\mathfrak{a}_i)=f'(\mathfrak{a}_i)\,\,\,\forall i=1,2,3
+$$
+then $f=f'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+For each $\mathfrak{a}\in\mathscr{A}$ such that $\mathfrak{a}\neq \mathfrak{a}_1,\mathfrak{a}_2$,
+$$
+(f(\mathfrak{a}_1),f(\mathfrak{a}_2);f(\mathfrak{a}_3),f(\mathfrak{a}))=(\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a}_3,\mathfrak{a})=(f'(\mathfrak{a}_1),f'(\mathfrak{a}_2);f'(\mathfrak{a}_3),f'(\mathfrak{a}))
+$$
+Since $f(\mathfrak{a}_i)=f'(\mathfrak{a}_i)$, $f(\mathfrak{a})=f'(\mathfrak{a})$.         
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Projective map method in Mandarin
+In Mandarin, we call projective maps "preserve cross ratio", and the projective map method is called "great preserve cross ratio" (大保交比). On the other hand, the Great Barrier Reef is 大堡礁 in Mandarin, which sounds pretty similar.
+:::
+
+This is the advantage of hypothesis (4) in the definition of cross ratio. Though the projective map method seems to be a direct consequence of hypothesis (4), the idea of projective maps is helpful in proving some properties.
