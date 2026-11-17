@@ -250,6 +250,7 @@ It suffices to prove that $f(P)=f'(P)$ for three choices of $P$. Take $P=A_2B_1\
 :::
 
 We can rewrite the proof in pure cross ratios. One may compare the two proofs.
+
 ::: {.callout-note collapse="true" icon="false"}
 ## Alternative proof
 Since ($Q'=PR\cap A_3B_1$)
