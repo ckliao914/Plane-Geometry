@@ -74,6 +74,7 @@ where the length are directed (i.e. can be treated as vectors). This cross ratio
 In the following, we fix a complex projective plane, i.e. a projective plane and the equipped cross ratio.
 
 ::: {#cor-CP2}
+## cp2
 Let $\ell$ be a line, $P$ be a point, then $|\mathbb{L}_P|=|\mathbb{P}_\ell|=|\mathbb{C}|$ are infinite sets, and we have
 
 (1) $(P,P;Q_1,Q_2)=1$.
