@@ -15,15 +15,15 @@ format:
       text: |
         <script>
         window.MathJax = {
-          output: {
-            font: 'mathjax-tex',
+          chtml: {
             linebreaks: {
-              automatic: false
+              automatic: false,
+              inline: false
             }
           }
         };
         </script>
-        
+
 crossref:
   thm-title: "Theorem"
   lem-title: "Lemma"
