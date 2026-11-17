@@ -30,24 +30,6 @@ div[id^="cor-"] .theorem-title {
   font-size: 0 !important;
 }
 
-/* 直接使用 Quarto 產生的章節編號 data-number */
-div[id^="thm-"] .theorem-title::before {
-  content: "Theorem " attr(data-number) ".";
-  font-size: 1rem !important;
-  font-weight: 700;
-}
-
-div[id^="lem-"] .theorem-title::before {
-  content: "Lemma " attr(data-number) ".";
-  font-size: 1rem !important;
-  font-weight: 700;
-}
-
-div[id^="cor-"] .theorem-title::before {
-  content: "Corollary " attr(data-number) ".";
-  font-size: 1rem !important;
-  font-weight: 700;
-}
 
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
 .unnumbered-env {
