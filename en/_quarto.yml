@@ -15,6 +15,9 @@ format:
       text: |
         <script>
         window.MathJax = {
+          output: {
+            font: 'mathjax-tex'
+          },
           chtml: {
             linebreaks: {
               automatic: false,
