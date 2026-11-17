@@ -23,32 +23,32 @@ body {
   counter-reset: shared-thm;
 }
 
-/* 2. 讓 Theorem / Lemma / Corollary 共用同一個計數器遞增 */
+/* 隱藏預設的雜訊，確保只顯示我們排版好的標題 */
 div[id^="thm-"] .theorem-title,
 div[id^="lem-"] .theorem-title,
 div[id^="cor-"] .theorem-title {
-  counter-increment: shared-thm;
-  font-size: 0 !important; /* 隱藏 Quarto 原生原本亂跑的標題文字 */
+  font-size: 0 !important;
 }
 
-/* 3. 強制印出乾淨的編號（例如 Theorem 1., Corollary 2.） */
+/* 直接使用 Quarto 產生的章節編號 data-number */
 div[id^="thm-"] .theorem-title::before {
-  content: "Theorem " counter(shared-thm) ".";
+  content: "Theorem " attr(data-number) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="lem-"] .theorem-title::before {
-  content: "Lemma " counter(shared-thm) ".";
-  font-size: 1.1rem !important;
+  content: "Lemma " attr(data-number) ".";
+  font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="cor-"] .theorem-title::before {
-  content: "Corollary " counter(shared-thm) ".";
-  font-size: 1.1rem !important;
+  content: "Corollary " attr(data-number) ".";
+  font-size: 1rem !important;
   font-weight: 700;
 }
+
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
 .unnumbered-env {
   margin: 1em 0;
