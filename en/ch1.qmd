@@ -28,7 +28,7 @@ If some points are on the same line, then they are said to be **collinear**; and
 
 ::: {.unnumbered-env}
 **Remark.**
-Under the usual framework, a projective plane is the set of points, i.e. the set $\mathbb{P}$, and define lines to be some specific subsets of $\mathbb{P}$, i.e. $\mathbb{P}_\ell$. This is the reason why the notation $\ell\in P$ is rarely used. To emphasize that the roles of the points and lines are interchangeable (i.e. duality), we used $\mathcal{I}$ (incident set) to encode the relations of points and lines. In this way, there is no specific hierarchy between points and lines.
+Under the usual framework, a projective plane is the set of points, i.e. the set $\mathbb{P}$, and define lines to be some specific subsets of $\mathbb{P}$, i.e. $\mathbb{P}_\ell$. This is the reason why the notation $\ell\in P$ is rarely used. To emphasize that the roles of the points and lines are interchangeable (i.e. duality), we used $\mathcal{I}$ (incidence set) to encode the relations of points and lines. In this way, there is no specific hierarchy between points and lines.
 :::
 
 ::: {.unnumbered-env}
