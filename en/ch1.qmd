@@ -102,6 +102,31 @@ $$
 where $\ell$ is any line that does not pass through $P$. From condition (3) this does not depend on the choice of $\ell$.
 :::
 
+::: {.unnumbered-env}
+**Definition.**
+Define ($P_i$ need not be collinear) 
+$$
+P(P_1,P_2;P_3,P_4)=(PP_1,PP_2;PP_3,PP_4)
+$$ 
+Similarly, define ($\ell_i$ need not be concurrent)
+$$
+\ell(\ell_1,\ell_2;\ell_3,\ell_4)=(\ell\cap\ell_1,\ell\cap\ell_2;\ell\cap\ell_3,\ell\cap\ell_4)
+$$
+:::
+
+Since the roles of lines and points are interchangeable, and by definition we may check that the cross ratio of four lines also satisfies the four hypotheses of the cross ratio (of four points). For a statement, we have its dual statement by interchanging the roles of points and lines. We see that the dual statement and the original statement are equivalent from the above arguments.
+
+::: {.unnumbered-env}
+**Example.**
+In the definition of the cross ratio, the dual statement of (4) is: given point $P$, $\ell_1,\ell_2,\ell_3\in \mathbb{L}_P$ are distinct, then for any $c\in \mathbb{C}^\times$, there exists a unique $\ell\in \mathbb{L}_P$ such that $(\ell_1,\ell_2;\ell_3,\ell)=c$.
+
+We now prove this dual statement. Given a line $m$ not passing through $P$, then for each $c\in \mathbb{C}^\times$, there exists a unique $Q\in m$ such that
+$$
+(\ell_1,\ell_2;\ell_3;PQ)=(\ell_1\cap m,\ell_2\cap m;\ell_3\cap m,Q)=c
+$$
+Let $\ell=PQ$, then $(\ell_1,\ell_2;\ell_3,\ell)=c$, and $\ell$ is unique.
+:::
+
 ::: {#lem-good}
 Let's go!!
 :::
