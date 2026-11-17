@@ -46,3 +46,8 @@ div[id^="lem-"] .theorem-title strong::after {
   border-left: 3px solid #6c757d;
   background-color: #f8f9fa;
 }
+
+/* 強制行內數學公式 ($...$) 保持完整，不在中間斷行 */
+mjx-container[jax="CHTML"]:not([display="true"]) {
+  white-space: nowrap !important;
+}
