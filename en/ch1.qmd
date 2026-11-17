@@ -41,7 +41,26 @@ i.e. $\mathcal{I}=\{(P_i,\ell_j)\mid j-i\equiv 1,2,4\pmod 7\}$. In this case, $\
 :::
 
 ## Cross Ratio 
-We define the cross ratio.
+::: {.unnumbered-env}
+**Definition.**
+On a projective plane, for any collinear points $P_1,P_2,Q_1,Q_2$, satisfying $P_i\neq Q_j$ ($i,j\neq 1,2$), define the cross ratio $$(P_1,P_2;Q_1,Q_2)\in \mathbb{C}-\{0\}=\mathbb{C}^\times$$ of the four points to be a function satisfying the following hypothesis.
+
+(1) $(P_1,P_2;Q_1,Q_2)=(Q_1,Q_2;P_1,P_2)$.
+
+(2) If $P_3$ and $Q_1,Q_2$ are distinct, then 
+$$
+(P_1,P_2;Q_1,Q_2)=(P_1,P_3;Q_1,Q_2)\cdot (P_3,P_2;Q_1,Q_2)
+$$
+
+(3) Given point $P$ and lines $m,n$ satisfying $P\notin m,n$, then for distinct $\ell_1,\ell_2,\ell_3,\ell_4\in \mathbb{L}_P$, 
+$$
+(\ell_1\cap m,\ell_2\cap m;\ell_3\cap m,\ell_4\cap m)=(\ell_1\cap n,\ell_2\cap n;\ell_3\cap n,\ell_4\cap n)
+$$
+
+(4) Given line $\ell$ and distinct points $P_1,P_2,P_3\in \ell$, then for any $c\in \mathbb{C}^\times$, there exists a unique $P\in \ell$ such that $(P_1,P_2;P_3,P)=c$ ($P\neq P_1,P_2$).
+
+A projective space equipped with a cross ratio is called a complex projective plane.
+:::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
