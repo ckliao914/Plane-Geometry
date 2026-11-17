@@ -32,19 +32,9 @@ format:
 
 crossref:
   chapters: true
-  custom:
-    - kind: theorem
-      key: thm
-      latex-env: theorem
-      prefix: "Theorem"
-      title: "Theorem"
-    - kind: theorem
-      key: lem
-      latex-env: lemma
-      prefix: "Lemma"
-      title: "Lemma"
-    - kind: theorem
-      key: cor
-      latex-env: corollary
-      prefix: "Corollary"
-      title: "Corollary"
+  thm-title: "Theorem"
+  lem-title: "Lemma"
+  cor-title: "Corollary"
+  thm-prefix: "Theorem"
+  lem-prefix: "Lemma"
+  cor-prefix: "Corollary"
