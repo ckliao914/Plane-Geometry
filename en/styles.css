@@ -18,6 +18,13 @@ ol[type="1"] > li::before {
   text-align: right;
 }
 
+div.theorem, div.lemma, div.corollary {
+  /* 共用的顏色與邊框設定 */
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  border-left: 3px solid #6c757d;
+  background-color: #f8f9fa;
+}
 
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
 .unnumbered-env {
