@@ -20,3 +20,9 @@ format:
           }
         };
         </script>
+        
+crossref:
+  thm-title: "Theorem"
+  lem-title: "Lemma"
+  thm-prefix: "Theorem"
+  lem-prefix: "Lemma"
