@@ -225,8 +225,35 @@ Since $f(\mathfrak{a}_i)=f'(\mathfrak{a}_i)$, $f(\mathfrak{a})=f'(\mathfrak{a})$
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
-## Projective map method in Mandarin
+## Remark (Projective map method in Mandarin)
 In Mandarin, we call projective maps "preserve cross ratio", and the projective map method is called "great preserve cross ratio" (大保交比). On the other hand, the Great Barrier Reef is 大堡礁 in Mandarin, which sounds pretty similar.
 :::
 
 This is the advantage of hypothesis (4) in the definition of cross ratio. Though the projective map method seems to be a direct consequence of hypothesis (4), the idea of projective maps is helpful in proving some properties.
+
+::: {#thm-Pappus}
+Suppose that $A_1,A_2,A_3$ are collinear on $\ell$, $B_1,B_2,B_3$ are collinear on $m$ ($\ell\neq m$), then the points
+$$
+P=A_2B_3\cap A_3B_2,\, Q=A_3B_1\cap A_1B_3,\, R=A_1B_2\cap A_2B_1
+$$
+are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix the points $A_1,A_2,A_3,B_1,B_2,R$. Let $B_3$ be a varying point on $m$, then $P$ varies on $A_3B_2$, and $Q$ varies on $A_3B_1$. Let $PR\cap A_3B_1=Q'$, we define the projective maps $f,f':\mathbb{P}_{A_3B_2}\to\mathbb{P}_{A_3B_1}$ by
+$$
+f:P\mapsto A_2P\mapsto B_3\mapsto A_1B_3\mapsto Q,\,\, f':P\mapsto RP\mapsto Q'
+$$
+It suffices to prove that $f(P)=f'(P)$ for three choices of $P$. Take $P=A_2B_1\cap  A_3B_2,\, B_2,\, A_3$, then $B_3=B_1,B_2,\ell\cap m$, and $Q=Q'$ are $B_1,A_3B_1\cap A_1B_2, A_2$, respectively. This gives $f=f'$, i.e. $PR$ passes through $Q$.
+:::
+
+We can rewrite the proof in pure cross ratios. Since ($Q'=PR\cap A_3B_1$)
+$$
+R(A_2B_1\cap A_3B_2,B_2,A_3;P)=(B_1,A_3B_1\cap A_1B_2;A_2,Q')
+$$
+and 
+$$
+A_2(A_2B_1\cap A_3B_2,B_2;A_3,P)=A_1(B_1,B_2;\ell\cap m,B_3)=(B_1,A_3B_1\cap A_1B_2;A_2,Q)
+$$
+we get $Q=Q'$. One may compare the two proofs.
