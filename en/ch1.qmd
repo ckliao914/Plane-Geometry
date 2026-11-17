@@ -158,9 +158,13 @@ i.e. $Q=Q'$, and $P_1,P_2,P_3$ are collinear. The dual holds automatically.
 :::
 
 ::: {#thm-Desargues}
-Given triangles $ABC$ and $DEF$, then 
+Given triangles $ABC$ and $DEF$, we define
 $$
-AD,\,BE,\,CF\,\text{are concurrent at }P\,\iff X=BC\cap EF,\,Y=CA\cap FD,\, Z=AB\cap DE\,\text{are collinear on }\ell
+X=BC\cap EF,\,Y=CA\cap FD,\, Z=AB\cap DE
+$$
+then 
+$$
+AD,\,BE,\,CF\text{ are concurrent at }P \iff X,Y,Z\text{ are collinear on }\ell
 $$
 In this case, the two triangles are said to be persective, $P$ and $\ell$ are called the perspector and perspectrix, respectively.
 :::
