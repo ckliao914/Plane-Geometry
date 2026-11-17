@@ -1,7 +1,7 @@
 # Complex Projective Plane and Cross Ratio
 
 ## Projective Plane
-::: {#def}
+::: {#def-projPlane}
 Given sets $\mathbb{P}$ and $\mathbb{L}$, the elements in $\mathbb{P}$ are called points, and the elements in $\mathbb{L}$ are called lines. Given a subset $\mathcal{I}$ of the set $\mathbb{P}\times \mathbb{L}$, then for a point $P$, define 
 $$
 \mathbb{L}_P=\{\ell\in \mathbb{L}\mid (P,\ell)\in \mathcal{I}\}
