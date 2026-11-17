@@ -19,6 +19,37 @@ ol[type="1"] > li::before {
 }
 
 
+/* 1. 頁面載入時重置共用計數器 */
+body {
+  counter-reset: shared-thm;
+}
+
+/* 2. 讓 Theorem / Lemma / Corollary 共用同一個計數器遞增並隱藏預設標題 */
+div[id^="thm-"] .theorem-title,
+div[id^="lem-"] .theorem-title,
+div[id^="cor-"] .theorem-title {
+  counter-increment: shared-thm;
+}
+
+/* 3. 重新印出乾淨的共用編號 */
+div[id^="thm-"] .theorem-title::before {
+  content: "Theorem " counter(shared-thm) ".";
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
+div[id^="lem-"] .theorem-title::before {
+  content: "Lemma " counter(shared-thm) ".";
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
+div[id^="cor-"] .theorem-title::before {
+  content: "Corollary " counter(shared-thm) ".";
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
 .unnumbered-env {
   margin: 1em 0;
