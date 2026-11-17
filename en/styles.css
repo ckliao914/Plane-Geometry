@@ -27,7 +27,7 @@ body {
 div[id^="thm-"] .theorem-title,
 div[id^="lem-"] .theorem-title,
 div[id^="cor-"] .theorem-title {
-  font-size: 0 !important;
+  font-size: 10 !important;
 }
 
 
