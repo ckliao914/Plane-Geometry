@@ -39,14 +39,4 @@ crossref:
   lem-prefix: "Lemma"
   cor-prefix: "Corollary"
   
-theorem:
-  name: true
-  theorems:
-    - name: theorem
-      title: "Theorem"
-    - name: lemma
-      title: "Lemma"
-      as: theorem
-    - name: corollary
-      title: "Corollary"
-      as: theorem
+
