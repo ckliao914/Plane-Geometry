@@ -25,7 +25,8 @@ body {
 
 /* 隱藏 Quarto 原生的獨立編號，改用共用計數器顯示 */
 div[id^="thm-"] .theorem-title,
-div[id^="lem-"] .theorem-title {
+div[id^="lem-"] .theorem-title,
+div[id^="cor-"] .theorem-title {
   counter-increment: shared-thm;
 }
 
@@ -36,6 +37,11 @@ div[id^="thm-"] .theorem-title strong::after {
 
 /* 讓 Lemma 共用同一個號碼，顯示為 Lemma 1, 2, 3... */
 div[id^="lem-"] .theorem-title strong::after {
+  content: " " counter(shared-thm);
+}
+
+/* 讓 Corollary 共用同一個號碼，顯示為 Corollary 1, 2, 3... */
+div[id^="cor-"] .theorem-title strong::after {
   content: " " counter(shared-thm);
 }
 
