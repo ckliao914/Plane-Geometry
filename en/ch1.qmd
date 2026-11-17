@@ -15,9 +15,9 @@ If $\mathcal{P}=(\mathbb{P},\mathbb{L},\mathcal{I})$ satisfies
 
 (1) For all points $P$, $|\mathbb{L}_P|>1$; for all lines $\ell$, $|\mathbb{P}_\ell|>1$.
 
-(2) For any two distinct lines $\ell_1,\ell_2$, there exists a unique point $P\in\mathbb{P}_{\ell_1}\cap \mathbb{P}_{\ell_2}$, and we write $P=\ell_1\cap \ell_2$.
+(2) For any two distinct lines $\ell_1,\ell_2$, there exists a unique point $P\in\mathbb{P}_{\ell_1}\cap \mathbb{P}_{\ell_2}$. We write $P=\ell_1\cap \ell_2$.
 
-(3) For any two distinct points $P_1,P_2$, there exists a unique line $\ell\in \mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}$, and we write $\ell=P_1P_2$.
+(3) For any two distinct points $P_1,P_2$, there exists a unique line $\ell\in \mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}$. We write $\ell=P_1P_2$.
 
 then $\mathcal{P}$ is a **projective plane**.
 :::
