@@ -6,7 +6,9 @@ book:
   chapters:
     - index.qmd
     - ch1.qmd
-  number-sections: true   # 這裡啟用全域章節編號
+
+# 這裡移到頂層，讓整本書啟用章節編號
+number-sections: true
 
 format:
   html:
@@ -29,7 +31,7 @@ format:
         </script>
 
 crossref:
-  chapters: true          # 關鍵：讓編號帶入章節前綴（如 1.1）
+  chapters: true
   thm-title: "Theorem"
   lem-title: "Lemma"
   cor-title: "Corollary"
