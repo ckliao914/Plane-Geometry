@@ -81,6 +81,27 @@ Let $\ell$ be a line, $P$ be a point, then $|\mathbb{L}_P|=|\mathbb{P}_\ell|=|\m
 (2) $(P_1,P_2;Q_1,Q_2)\cdot (P_2,P_1;Q_1,Q_2)=1$.
 :::
 
+
+::: {.unnumbered-env}
+**Remark.**
+The usual definition of the cross ratio takes value in $\mathbb{C}\cup \{\infty\}$, and satisfies the relation
+$$
+(P_1,P_2;Q_1,Q_2)+(P_1,Q_1;P_2,Q_2)=1
+$$
+(this will be called the linear hypothesis in the following). However, many results do not depend on this, i.e. we may view $\mathbb{C}^\times$ as a multiplicative group and forget the additive structure on $\mathbb{C}$.
+:::
+
+We only defined the cross ratio of four points, but condition (3) allows us to define the cross ratio of four points.
+
+::: {.unnumbered-env}
+**Definition.**
+Four lines $m_1,m_2,n_1,n_2$ pass through $P$, where $m_i\neq n_j$ ($i,j=1,2$). Define the cross ratio of the four lines by
+$$
+(m_1,m_2;n_1,n_2)=(\ell\cap m_1,\ell\cap m_2;\ell\cap n_1;\ell\cap n_2)
+$$
+where $\ell$ is any line that does not pass through $P$. From condition (3) this does not depend on the choice of $\ell$.
+:::
+
 ::: {#lem-good}
 Let's go!!
 :::
@@ -92,15 +113,6 @@ $$
 \operatorname{Res}(F, G) = 0
 $$
 Thus the intersection is non-empty. $\blacksquare$
-:::
-
-::: {.unnumbered-env}
-**Remark.**
-The usual definition of the cross ratio takes value in $\mathbb{C}\cup \{\infty\}$, and satisfies the relation
-$$
-(P_1,P_2;Q_1,Q_2)+(P_1,Q_1;P_2,Q_2)=1
-$$
-(this will be called the linear hypothesis in the following). However, many results do not depend on this, i.e. we may view $\mathbb{C}^\times$ as a multiplicative group and forget the additive structure on $\mathcal{C}$.
 :::
 
 ::: {#rem-coord}
