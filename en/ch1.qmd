@@ -114,7 +114,7 @@ $$
 $$
 :::
 
-Since the roles of lines and points are interchangeable, and by definition we may check that the cross ratio of four lines also satisfies the four hypotheses of the cross ratio (of four points). For a statement, we have its dual statement by interchanging the roles of points and lines. We see that the dual statement and the original statement are equivalent from the above arguments.
+Since the roles of lines and points are interchangeable, and by definition we may check that the cross ratio of four lines also satisfies the four hypotheses of the cross ratio (of four points). For a statement, its dual statement is given by interchanging the roles of points and lines of the original statement. We see that the dual statement and the original statement are equivalent from the above arguments.
 
 ::: {.unnumbered-env}
 **Example.**
@@ -127,24 +127,51 @@ $$
 Let $\ell=PQ$, then $(\ell_1,\ell_2;\ell_3,\ell)=c$, and $\ell$ is unique.
 :::
 
-::: {#lem-good}
-Let's go!!
+We use the definition of cross ratios to prove a criterion of collinearity.
+
+::: {#thm-collinear}
+Given distinct $P_1,P_2,P_3,P,P'$ such that line $PP'$ does not pass through $P_1,P_2,P_3$, then $P_1,P_2,P_3$ are collinear if and only if 
+$$
+P(P_1,P_2;P_3,P')=P'(P_1,P_2;P_3,P)
+$$
+Dually, given distinct lines $\ell_1,\ell_2,\ell_3,m,m'$ such that $m\cap m'$ is not on $\ell_1,\ell_2,\ell_3$, then $\ell_1,\ell_2,\ell_3$ are concurrent if and only if
+$$
+m(\ell_1,\ell_2;\ell_3,m')=m'(\ell_1,\ell_2;\ell_3,m)
+$$
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Consider the resultant of the defining homogeneous polynomials $F$ and $G$:
+Suppose that $P_1,P_2,P_3$ are collinear on $\ell$, then
 $$
-\operatorname{Res}(F, G) = 0
+P(P_1,P_2;P_3,P')=(P_1,P_2;P_3,\ell\cap PP')=P'(P_1,P_2;P_3,P')
 $$
-Thus the intersection is non-empty. $\blacksquare$
+Conversely, if $P(P_1,P_2;P_3,P')=P'(P_1,P_2;P_3,P)$, define
+$$
+PP_3\cap P_1P_2=Q, \,P'P_3\cap P_1P_2=Q',\, PP'\cap P_1P_2=R
+$$
+then 
+$$
+(P_1,P_2;Q,R)=P(P_1,P_2;P_3,P')=P'(P_1,P_2;P_3,P)=(P_1,P_2;Q',R)
+$$
+i.e. $Q=Q'$, and $P_1,P_2,P_3$ are collinear. The dual holds automatically.
 :::
 
-::: {#rem-coord}
-## Homogeneous Coordinates
-Note that $(X:Y:Z)$ are defined up to a non-zero scalar multiple.
+::: {#thm-Desargues}
+Given triangles $ABC$ and $DEF$, then 
+$$
+AD,\,BE,\,CF\,\text{are concurrent at }P\,\iff X=BC\cap EF,\,Y=CA\cap FD,\, Z=AB\cap DE\,\text{are collinear on }\ell
+$$
+In this case, the two triangles are said to be persective, $P$ and $\ell$ are called the perspector and perspectrix, respectively.
 :::
 
-As shown in @rem-coord, intersection multiplicities are well-defined.
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This theorem is self-dual, so it suffices to prove one direction.
 
-
+Suppose that $AD,BE,CF$ are concurrent at $P$, then
+$$
+(Y,A;C,AC\cap EF)\mathop{=}\limits^{F}(D,A;P,AD\cap EF)\mathop{=}\limits^{E}(Z,A;B,AB\cap EF)
+$$
+so from @thm-collinear (the dual version), $YZ,BC, EF$ are concurrent at $X$, i.e, $X,Y,Z$ are collinear.
+:::
