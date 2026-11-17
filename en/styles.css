@@ -23,30 +23,29 @@ body {
   counter-reset: shared-thm;
 }
 
-/* 2. 讓 Theorem / Lemma / Corollary 共用同一個計數器遞增 */
+/* 1. 隱藏 Quarto 原生的預設標題文字 */
 div[id^="thm-"] .theorem-title,
 div[id^="lem-"] .theorem-title,
 div[id^="cor-"] .theorem-title {
-  counter-increment: shared-thm;
-  font-size: 0 !important; /* 徹底隱藏 Quarto 原生的 cor 1.1 或 Theorem 1.1 */
+  font-size: 0 !important;
 }
 
-/* 3. 重新印出乾淨的共用編號（恢復字體大小並加上粗體） */
+/* 2. 直接抓取 Quarto 的章節編號 (例如 1.1) 並重新組合 */
 div[id^="thm-"] .theorem-title::before {
-  content: "Theorem " counter(shared-thm) ".";
+  content: "Theorem " attr(data-number) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="lem-"] .theorem-title::before {
-  content: "Lemma " counter(shared-thm) ".";
+  content: "Lemma " attr(data-number) ".";
   font-size: 1rem !important;
   font-weight: 700;
 }
 
 div[id^="cor-"] .theorem-title::before {
-  content: "Corollary " counter(shared-thm) ".";
-  font-size: 1rem !important;
+  content: "Corollary " attr(data-number) ".";
+  font-size: 1.1rem !important; /* 如果大小需要微調可自行更改 */
   font-weight: 700;
 }
 
