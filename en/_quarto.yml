@@ -6,7 +6,8 @@ book:
   chapters:
     - index.qmd
     - ch1.qmd
-  
+  number-sections: true   # 這裡啟用全域章節編號
+
 format:
   html:
     theme: cosmo
@@ -28,6 +29,7 @@ format:
         </script>
 
 crossref:
+  chapters: true          # 關鍵：讓編號帶入章節前綴（如 1.1）
   thm-title: "Theorem"
   lem-title: "Lemma"
   cor-title: "Corollary"
