@@ -6,12 +6,12 @@ book:
   chapters:
     - index.qmd
     - ch1.qmd
-  number-sections: true
   
 format:
   html:
     theme: cosmo
     css: styles.css
+    number-sections: true
     include-in-header:
       text: |
         <script>
