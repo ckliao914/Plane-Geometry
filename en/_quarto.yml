@@ -11,7 +11,6 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    number-sections: true
     include-in-header:
       text: |
         <script>
