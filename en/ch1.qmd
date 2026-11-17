@@ -82,7 +82,7 @@ Let $\ell$ be a line, $P$ be a point, then $|\mathbb{L}_P|=|\mathbb{P}_\ell|=|\m
 :::
 
 ::: {#lem-good}
-Let's go
+Let's go!!
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
