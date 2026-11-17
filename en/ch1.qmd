@@ -1,9 +1,16 @@
 # Complex Projective Plane and Cross Ratio
 
 ## Projective Plane
-::: {#def-proj}
-## Projective Space
-Let $V$ be a finite-dimensional vector space over $\mathbb{C}$. The projective space $\mathbb{P}(V)$ is the set of all one-dimensional linear subspaces of $V$.
+::: {#def}
+Given sets $\mathbb{P}$ and $\mathbb{L}$, we call the elements in $\mathbb{P}$ points, and the elements in $\mathbb{L}$ lines. Given a subset $\mathcal{I}$ of $\mathbb{P}\times \mathbb{L}$, then for a point $P$, define $\mathbb{L}_P=\{\ell\in \mathbb{L}\mid (P,\ell)\in \mathcal{I}\}$; for a line $\ell$, define $\mathbb{P}_{\ell}=\{P\in \mathbb{P}\mid (P,\ell)\in \mathcal{I}\}$. If $\mathcal{P}=(\mathbb{P},\mathbb{L},\mathcal{I})$ satisfies
+
+(1) For all points $P$, $|\mathbb{L}_P|>1$; for all lines $\ell$, $|\mathbb{P}_\ell|>1$.
+
+(2) For any two distinct lines $\ell_1,\ell_2$, there exists a unique point $P$\in\mathbb{P}_{\ell_1}\cap \mathbb{P}_{\ell_2}$, we write $P=\ell_1\cap \ell_2$.
+
+(3) For any two distinct points $P_1,P_2$, there exists a unique line $\ell\in \mathbb{L}_{P_1}\cap \mathbb{L}_{P_2}$, we write $\ell=P_1P_2$.
+
+then $\mathcal{P}$ is a projective plane.
 :::
 
 ::: {#lem-bezout}
