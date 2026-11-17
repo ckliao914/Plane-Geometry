@@ -30,5 +30,7 @@ format:
 crossref:
   thm-title: "Theorem"
   lem-title: "Lemma"
+  cor-title: "Corollary"
   thm-prefix: "Theorem"
   lem-prefix: "Lemma"
+  cor-prefix: "Corollary"
