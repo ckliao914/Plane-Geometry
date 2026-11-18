@@ -627,7 +627,7 @@ Projective transformations preserve every property related to cross ratios, so w
 A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva's theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a projective transformation is characterized by the value at four points (no three of which are collinear).
 
 ::: {#thm-projtransunique}
-Suppose that any three points among $W,X,Y,Z$ are not collinear, and any three points among $W_1,X_1,Y_1,Z_1$ are not collinear, then there exists a projective transformation $\rho$ such that
+Suppose that any three points among $W,X,Y,Z$ are not collinear, and any three points among $W_1,X_1,Y_1,Z_1$ are not collinear, then there exists a unique projective transformation $\rho$ such that
 $$
 \rho(W)=W_1,\,\rho(X)=X_1,\,\rho(Y)=Y_1,\,\rho(Z)=Z_1
 $$
