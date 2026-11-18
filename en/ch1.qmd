@@ -376,7 +376,7 @@ $$
 is called the **cevian triangle** of the complete quadrangle $ABCP$, or the cevian triangle of $P$ with respect to $ABC$ (in the latter usage, the order of the vertices of the cevian triangle should correspond to that of $ABC$).
 :::
 
-::: {lem-cevaharmonic}
+::: {#lem-cevaharmonic}
 Let the cevian triangle of $P$ with respect to $ABC$ be $P_aP_bP_c$, and the harmonic conjugate of $P_a$ with respect to $B|C$ be $Q_a$, then $Q_a,P_b,P_c$ are collinear. Equivalently, 
 $$
 (B,C;P_a,P_bP_c\cap BC)=-1
@@ -394,16 +394,105 @@ so $R=S$, and $P_b,P_c,Q_a$ are collinear.
 
 ::: {.unnumbered-env}
 **Remark.**
-In general projective planes, $P_a,P_b,P_c$ may be collinear. An example is the $7$-point projective plane. Here, the cross ratio structure ensures the existence of harmonic conjugates, and avoided the case when $P_a,P_b,P_c$ are collinear.
+In general projective planes, $P_a,P_b,P_c$ may be collinear. An example is the $7$-point projective plane. Here, the cross ratio structure ensures the existence of harmonic conjugates, and avoids the case when $P_a,P_b,P_c$ are collinear.
 
 When we defined cross ratios, we used $\mathbb{C}^\times$ as the multiplicative group. One may try to replace $\mathbb{C}^\times$ with other multiplicative groups, for instance, equipping the $7$-point projective plane with a cross ratio whose multiplicative group is trivial. For cross ratios in a more general setting, see Appendix A.
 :::
 
 ::: {#thm-trilinearPolarPole}
-Let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $Q_a$ be the harmonic conjugate of $P_a$ with respect to $B|C$, and we analogously define $Q_b,Q_c$, then $Q_a,Q_b,Q_c$ are collinear on $\ell$. The line $\ell$ is called the **trilinear polar** (or **tripolar** of $P$ with respect to $ABC$, and $P$ is called the **trilinear pole** (or **tripole**) of $\ell$.
+Let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $Q_a$ be the harmonic conjugate of $P_a$ with respect to $B|C$, and we analogously define $Q_b,Q_c$, then $Q_a,Q_b,Q_c$ are collinear on $\ell$. The line $\ell$ is called the **trilinear polar** (or **tripolar**) of $P$ with respect to $ABC$, and $P$ is called the **trilinear pole** (or **tripole**) of $\ell$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 From @lem-cevaharmonic and Desargues theorem, $Q_a,Q_b,Q_c$ are on the perspectrix of $ABC$ and $P_aP_bP_c$.
 :::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $\mathscr{A}$ be a cross-ratio set. Suppose that $f:\mathscr{A}\to\mathscr{A}$ is projective such that 
+$$
+f(f(\mathfrak{a}))=\mathfrak{a}\,\,\forall \mathfrak{a}\in\mathscr{A}
+$$
+and $f$ is not the identity (i.e. there exists $\mathfrak{a}'$ such that $f(\mathfrak{a}')\neq \mathfrak{a}'$), then $f$ is said to be an **involution** on $\mathscr{A}$. The pairs 
+$$
+(\mathfrak{a}_1,\mathfrak{a}_1'), ..., (\mathfrak{a}_n,\mathfrak{a}_n')$$
+are said to be involution pairs if there exists a unique involution $f$ such that $f(\mathfrak{a}_i)=\mathfrak{a}_i'$ for $i=1,...,n$ (we may also say that the set of pairs is an involution).
+:::
+
+::: {.unnumbered-env}
+**Example.**
+From @lem-fixcrossratio, harmonic conjugations are projective, so they are also involutions.
+:::
+
+::: {#lem-involutionUnique}
+Suppose that $f:\mathscr{A}\to\mathscr{A}$ is projective, and $\mathfrak{a}_1,\mathfrak{a}_2\in\mathscr{A}$ are distinct elements satisfying
+$$
+f(\mathfrak{a}_1)=\mathfrak{a}_2, f(\mathfrak{a}_2)=\mathfrak{a}_1
+$$
+then $f$ is an involution on $\mathscr{A}$. We see that two involution pairs determine a unique involution.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since 
+$$
+(\mathfrak{a}_2,\mathfrak{a}_1;f(\mathfrak{a}),\mathfrak{a})=(\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a},f(\mathfrak{a}))=(\mathfrak{a}_2,\mathfrak{a}_1;f(\mathfrak{a}), f(f(\mathfrak{a})))
+$$
+we conclude that $f(f(\mathfrak{a}))=\mathfrak{a}$.
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+Given $f:\mathscr{A}\to \mathscr{A}$ such that $f$ is not the identity. Take distinct elements $\mathfrak{a}_1,\mathfrak{a}_2\in \mathscr{A}$ such that 
+$$
+\mathfrak{a}_i\neq f(\mathfrak{a}_i)\,\forall i=1,2
+$$
+and let $g$ be the involution defined by the pairs
+$$
+(\mathfrak{a}_1,f(\mathfrak{a}_2)),(\mathfrak{a}_2,f(\mathfrak{a}_1))$$
+Take an element $\mathfrak{a}_3\in \mathscr{A}$ distinct from $\mathfrak{a}_1,\mathfrak{a}_2$ satisfying $g(\mathfrak{a}_3)\neq f(\mathfrak{a}_i)$ ($i=1,2$), and let $h$ be the involution defined by the pairs 
+$$
+(f(\mathfrak{a}_1),f(\mathfrak{a}_2)),(g(\mathfrak{a}_3),f(\mathfrak{a}_3))
+$$
+then $f=h\circ g$. This shows that any projective map on $\mathscr{A}$ is a composition (not unique) of two involutions. Sometimes, to prove a property of projective maps, it suffices to prove for the case when the map is an involution.
+:::
+
+An element $\mathfrak{a}\in \mathscr{A}$ is said to be the fixed point of a function $f:\mathscr{A}\to \mathscr{A}$ (not necessarily a projective map) if $f(\mathfrak{a})=\mathfrak{a}$.
+
+::: {#lem-invfix}
+Let $f$ be an involution on a line $\ell$, then $f$ has exactly two fixed points $P_1,P_2$, and $f$ is the harmonic conjugation with respect to $P_1|P_2$. 
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Given $X\neq Y$ on $\ell$, let 
+$$
+c=(X,f(X);Y,f(Y))
+$$ 
+then there exists $c_1\neq c_2$ such that $c_1^2=c_2^2=c$ (since $c\neq 0$), so there exists $P_i$ such that 
+$$
+(X,f(X);Y,P_i)=c_i\,\,\forall i=1,2
+$$
+We have
+$$
+(X,f(X);Y,P_i)\cdot(X,f(X);P_i,f(Y))=(X,f(X);Y,f(Y))
+$$
+i.e.        
+$$
+c_i=(X,f(X);P_i,f(Y))=(f(X),X;f(P_i),Y)=(X,f(X);Y,f(P_i))
+$$
+so $P_i=f(P_i)$, $P_1,P_2$ are fixed points. If there were a third fixed point, then $f$ would be the identity, which is a contradiction.
+        
+Now, let $Q\neq P_1,P_2$ be on $\ell$, then
+$$
+(P_1,P_2;Q,f(Q))=(P_1,P_2;f(Q),Q)
+$$
+since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic conjugation with respect to $P_1|P_2$.
+:::
+
+::: {.unnumbered-env}
+**Remark**
+The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exists in $\mathbb{C}^\times$.
+:::
+    
