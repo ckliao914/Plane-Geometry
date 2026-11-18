@@ -557,7 +557,7 @@ We give an application of Ceva's theorem.
 $$
 (AB,AC), \,(AP,AQ), \,(AX,\ell_A)
 $$
-is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\ell_C$ are concurrent at $Y$. The transformation $\varphi:X\mapsto Y$ is called the $(P,Q)$-isoconjugation.
+is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\ell_C$ are concurrent at $Y$. The transformation $\varphi:X\mapsto Y$ is called the $(P,Q)$-**isoconjugation**.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -573,7 +573,7 @@ $$
 We conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
 :::
 
-::: {.unnamed-env}
+::: {.unnumbered-env}
 **Remark.**
 Fix four points $A,B,C,D$ such that any three of them are not collinear. For any $X\in \mathbb{P}$ not on the three sides of $ABC$, consider the three values
 $$
@@ -582,9 +582,9 @@ $$
 From Ceva's theorem, the three values satisfies $x_Ax_Bx_C=1$. Conversely, given three values $x_Ax_Bx_C$ whose product is $1$, then this determines a unique $X$. Im conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to encode the location of points.
 :::
 
-::: {.unnamed-env}
+::: {.unnumbered-env}
 **Example.**
-Fix points $A,B,C,D$, we will use the way in the previous remark to investigate @thm-isoconjugate. Let the location of $P,Q,X,Y$ be 
+Fix points $A,B,C,D$, we will use the way in the previous remark to investigate @thm-isoconjugate. Let the locations of $P,Q,X,Y$ be 
 $$
 (p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)
 $$
