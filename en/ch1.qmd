@@ -416,7 +416,7 @@ f(f(\mathfrak{a}))=\mathfrak{a}\,\,\forall \mathfrak{a}\in\mathscr{A}
 $$
 and $f$ is not the identity (i.e. there exists $\mathfrak{a}'$ such that $f(\mathfrak{a}')\neq \mathfrak{a}'$), then $f$ is said to be an **involution** on $\mathscr{A}$. The pairs 
 $$
-(\mathfrak{a}_1,\mathfrak{a}_1'), ..., (\mathfrak{a}_n,\mathfrak{a}_n')$$
+(\mathfrak{a}_1,\mathfrak{a}_1'), \ldots, (\mathfrak{a}_n,\mathfrak{a}_n')$$
 are said to be involution pairs if there exists a unique involution $f$ such that $f(\mathfrak{a}_i)=\mathfrak{a}_i'$ for $i=1,...,n$ (we may also say that the set of pairs is an involution).
 :::
 
@@ -492,7 +492,7 @@ since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic co
 :::
 
 ::: {.unnumbered-env}
-**Remark**
+**Remark.**
 The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exists in $\mathbb{C}^\times$.
 :::
     
