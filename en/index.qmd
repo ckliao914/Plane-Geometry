@@ -15,7 +15,7 @@ Consider the involution $\varphi$ on the line of infinity $\ell_\infty$ induced 
 In the complex projective plane, the hypothesis is satisfied, and we call the points $\infty_\pm$ the circular points of infinity. The circumcircle $\omega$ of a triangle $ABC$ is the conic passing through $A,B,C,\infty_+,\infty_-$, and if $O$ is the center of $\omega$, then $O\infty_+,O\infty_-$ are tangent to $\omega$ (since the polar of $O$ with respect to $\omega$ is $\ell_\infty$). Besides circles, we may define angles, radical centers, and even the foci of conics projectively with the circular points of infinity. In the following, we equip a projective plane with a complex-valued cross ratio, and derive familiar geometric properties from its fundamental properties.
 :::
 
-* [Chapter 1: Complex Projective Plane and Cross Ratio](ch1.html)
+* [Chapter 1: The Complex Projective Plane and Cross Ratio](ch1.html)
 
 ---
 [← Back to Main Site](../index.html)
