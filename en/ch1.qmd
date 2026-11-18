@@ -144,7 +144,7 @@ $$
 ## Proof
 Suppose that $P_1,P_2,P_3$ are collinear on $\ell$, then
 $$
-P(P_1,P_2;P_3,P')=(P_1,P_2;P_3,\ell\cap PP')=P'(P_1,P_2;P_3,P')
+P(P_1,P_2;P_3,P')=(P_1,P_2;P_3,\ell\cap PP')=P'(P_1,P_2;P_3,P)
 $$
 Conversely, if $P(P_1,P_2;P_3,P')=P'(P_1,P_2;P_3,P)$, define
 $$
@@ -178,7 +178,7 @@ Suppose that $AD,BE,CF$ are concurrent at $P$, then
 $$
 (Y,A;C,AC\cap EF)\mathop{=}\limits^{F}(D,A;P,AD\cap EF)\mathop{=}\limits^{E}(Z,A;B,AB\cap EF)
 $$
-so from @thm-collinear (the dual version), $YZ,BC, EF$ are concurrent at $X$, i.e, $X,Y,Z$ are collinear.
+so from @thm-collinear (the dual version), $YZ,BC, EF$ are concurrent at $X$, i.e. $X,Y,Z$ are collinear.
 :::
 
 ## Projective Maps and the Projective Map Method
@@ -208,7 +208,7 @@ is a projective map. We usually write $f:\ell\mapsto \ell\cap m$ for $f(\ell)=\e
 
 ::: {#thm-projunique}
 ## Projective map method
-Let $\mathscr{A},\mathscr{B}$ be cross-ratio sets, and $f,f':\mathscr{A}\to\mathscr{B}$ are projective maps. Suppose that there exists distinct $\mathfrak{a}_1,\mathfrak{a}_2,\mathfrak{a}_3\in\mathscr{A}$ such that 
+Let $\mathscr{A},\mathscr{B}$ be cross-ratio sets, and let $f,f':\mathscr{A}\to\mathscr{B}$ be projective maps. Suppose that there exist distinct $\mathfrak{a}_1,\mathfrak{a}_2,\mathfrak{a}_3\in\mathscr{A}$ such that 
 $$
 f(\mathfrak{a}_i)=f'(\mathfrak{a}_i)\,\,\,\forall i=1,2,3
 $$
@@ -261,7 +261,7 @@ and
 $$
 A_2(A_2B_1\cap A_3B_2,B_2;A_3,P)=A_1(B_1,B_2;\ell\cap m,B_3)=(B_1,A_3B_1\cap A_1B_2;A_2,Q)
 $$
-we get $Q=Q'$. 
+we conclude that $Q=Q'$. 
 :::
 
 ::: {#lem-autexist}
@@ -270,7 +270,7 @@ For a line $\ell$, and points $P_1,P_2,P_3,Q_1,Q_2,Q_3$ on $\ell$, where $P_1,P_
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-First, we will show that there exists a projective $g:\mathbb{P}_\ell\to\mathbb{P}_\ell$ such that $g(P_1)=Q_1$. Let $R,S$ be two points such that any three points among $R,S,P_1,Q_1$ are not collinear. Let $RP_1\cap SQ_1=T$, and $m$ be another line passing through $T$, then
+First, we will show that there exists a projective map $g:\mathbb{P}_\ell\to\mathbb{P}_\ell$ such that $g(P_1)=Q_1$. Let $R,S$ be two points such that any three points among $R,S,P_1,Q_1$ are not collinear. Let $RP_1\cap SQ_1=T$, and $m$ be another line passing through $T$, then
 $$
 g:X\mapsto RX\mapsto RX\cap m=Y\mapsto SY\mapsto SY\cap \ell
 $$
@@ -284,7 +284,7 @@ and define the projective map $h:\mathbb{P}_\ell\to\mathbb{P}_\ell$ by
 $$
 h:X\mapsto UX\mapsto UX\cap n:=X^*\mapsto VX^*\mapsto VX^*\cap \ell
 $$
-then $h(P_2')=Q_2$, $h(P_3')=Q_3$, $h(Q_1)=Q_1$, so $f=h\circ g$ is a projective map with $f(P_i)=Q_i$。
+then $h(P_2')=Q_2$, $h(P_3')=Q_3$, $h(Q_1)=Q_1$, so $f=h\circ g$ is a projective map with $f(P_i)=Q_i$.
 :::
 
 This shows that a projective map is uniquely determined by the value at three points.
@@ -304,7 +304,7 @@ i.e. a projective map is characterized by the value at three points.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-There exists a projective map $f_0:\mathscr{A}\to \mathscr{B}$ (the way we define other cross-ratio sets later on naturally gives rise to a projective map from a line to them). From @lem-autexist, there exists a unique projective $f_\mathscr{B}:\mathscr{B}\to \mathscr{B}$ such that $f_\mathscr{B}\circ f_0(\mathfrak{a}_i)=\mathfrak{b}_i$. Setting $f=f_\mathscr{B}\circ f_0$ will do.
+There exists a projective map $f_0:\mathscr{A}\to \mathscr{B}$ (the way we define other cross-ratio sets later on naturally gives rise to a projective map from a line to them). From @lem-autexist, there exists a unique projective $f_\mathscr{B}:\mathscr{B}\to \mathscr{B}$ such that $f_\mathscr{B}\circ f_0(\mathfrak{a}_i)=\mathfrak{b}_i$. The composition $f=f_\mathscr{B}\circ f_0$ is the required unique map.
 :::
 
 ::: {.unnumbered-env}
@@ -312,7 +312,7 @@ There exists a projective map $f_0:\mathscr{A}\to \mathscr{B}$ (the way we defin
 $$
 (\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a}_3,\mathfrak{a}_4)=(\mathfrak{b}_1,\mathfrak{b}_2;\mathfrak{b}_3,\mathfrak{b}_4)=c
 $$
-then there exists a projective map $f$ such that $f(\mathfrak{a}_i)=\mathfrak{b}_i$. When $c\neq 1$，
+then there exists a projective map $f$ such that $f(\mathfrak{a}_i)=\mathfrak{b}_i$. When $c\neq 1$,
 $$
 (\mathfrak{a}_1,\mathfrak{a}_3;\mathfrak{a}_2,\mathfrak{a}_4)=(\mathfrak{b}_1,\mathfrak{b}_3;\mathfrak{b}_2,\mathfrak{b}_4):=\iota(c)
 $$
