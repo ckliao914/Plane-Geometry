@@ -564,13 +564,13 @@ is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\el
 ## Proof
 Let the cevian triangle of $P,Q,X$ with respect to $ABC$ be $P_aP_bP_c$, $Q_aQ_bQ_c$ and $X_aX_bX_c$, then from the involution, 
 $$
-(B,C;P_A,X_A)=(C,B;Q_A,\ell_A\cap BC)
+(B,C;P_a,X_a)=(C,B;Q_a,\ell_A\cap BC)
 $$
 Applying Ceva's theorem, since (denote by $\mathrm{cyc}$ the product over the three sides)
 $$
-1=\prod_{\text{cyc}}(B,C;P_A,X_A)=\prod_{\text{cyc}}(C,B;Q_A,\ell_A\cap BC)
+1=\prod_{\text{cyc}}(B,C;P_a,X_a)=\prod_{\text{cyc}}(C,B;Q_a,\ell_A\cap BC)
 $$
-We conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
+we conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
 :::
 
 ::: {.unnumbered-env}
@@ -579,12 +579,12 @@ Fix four points $A,B,C,D$ such that any three of them are not collinear. For any
 $$
 x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
 $$
-From Ceva's theorem, the three values satisfies $x_Ax_Bx_C=1$. Conversely, given three values $x_Ax_Bx_C$ whose product is $1$, then this determines a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
+From Ceva's theorem, the three values satisfy $x_Ax_Bx_C=1$. Conversely, given three values $x_A,x_B,x_C$ whose product is $1$, then they determine a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
 :::
 
 ::: {.unnumbered-env}
 **Example.**
-Fix points $A,B,C,D$, we will use the way in the previous remark to investigate @thm-isoconjugate. Let the locations of $P,Q,X,Y$ be 
+Fixing points $A,B,C,D$, we will use the method in the previous remark to investigate @thm-isoconjugate. Let the locations of $P,Q,X,Y$ be 
 $$
 (p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)
 $$
