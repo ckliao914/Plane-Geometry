@@ -64,11 +64,11 @@ A projective space equipped with a cross ratio is called a complex projective pl
 
 ::: {.unnumbered-env}
 **Example.**
-The union of $\mathbb{C}^2$ along with the line of infinity may be equipped with the cross ratio
+The union of $\mathbb{C}^2$ along with the line of infinity may be equipped with the classical cross ratio
 $$
 (P_1,P_2;Q_1,Q_2)=\dfrac{P_1Q_1/P_1Q_2}{P_2Q_1/P_2Q_2}
 $$
-where the lengths are directed (i.e. can be treated as vectors). This cross ratio satisfies the hypotheses, so this gives an example of a complex projective plane.
+where the lengths are directed (i.e. can be treated as vectors). The classical cross ratio satisfies the hypotheses, so this gives an example of a complex projective plane.
 :::
 
 In the following, we fix a complex projective plane, i.e. a projective plane and the equipped cross ratio.
@@ -263,3 +263,89 @@ A_2(A_2B_1\cap A_3B_2,B_2;A_3,P)=A_1(B_1,B_2;\ell\cap m,B_3)=(B_1,A_3B_1\cap A_1
 $$
 we get $Q=Q'$. 
 :::
+
+::: {#lem-autexist}
+For a line $\ell$, and points $P_1,P_2,P_3,Q_1,Q_2,Q_3$ on $\ell$, where $P_1,P_2,P_3$ are distinct, $Q_1,Q_2,Q_3$ are distinct, then there exists a projective map $f:\mathbb{P}_\ell\to\mathbb{P}_\ell$ such that $f(P_i)=Q_i$ for $i=1,2,3$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+First, we will show that there exists a projective $g:\mathbb{P}_\ell\to\mathbb{P}_\ell$ such that $g(P_1)=Q_1$. Let $R,S$ be two points such that any three points among $R,S,P_1,Q_1$ are not collinear. Let $RP_1\cap SQ_1=T$, and $m$ be another line passing through $T$, then
+$$
+g:X\mapsto RX\mapsto RX\cap m=Y\mapsto SY\mapsto SY\cap \ell
+$$
+is projective, and $g(P_1)=Q_1$. 
+
+Let $g(P_2)=P_2',g(P_3)=P_3'$, $n\neq \ell$ be a line through $Q_1$, and $U$ be a point not on $n,\ell$. Set 
+$$
+UP_2'\cap n=P_2^*, UP_3'\cap n=P_3^*, P_2^*Q_2\cap P_3^*Q_3=V
+$$
+and define the projective map $h:\mathbb{P}_\ell\to\mathbb{P}_\ell$ by
+$$
+h:X\mapsto UX\mapsto UX\cap n:=X^*\mapsto VX^*\mapsto VX^*\cap \ell
+$$
+then $h(P_2')=Q_2$, $h(P_3')=Q_3$, $h(Q_1)=Q_1$, so $f=h\circ g$ is a projective map with $f(P_i)=Q_i$。
+:::
+
+This shows that a projective map is uniquely determined by the value at three points.
+
+::: {.unnumbered-env}
+**Remark**.
+The proof of @lem-autexist is by constructing two projective maps and composing them. Suppose that we are given $P_1,P_2,P_3\in \ell$, $Q_1,Q_2,Q_3\in m$, then there exists a projective $f:\ell\to m,\,P_i\mapsto Q_i$. By Pappus theorem, for $P,P'\in \ell$, there exists a line $n$ such that $Pf(P')\cap P'f(P)\in n$. This gives a way to construct the projective map between two distinct lines.
+:::
+
+::: {#thm-projectivecharbythree}
+Let $\mathscr{A},\mathscr{B}$ be cross-ratio sets. Given three distinct elements $\mathfrak{a}_1,\mathfrak{a}_2,\mathfrak{a}_3$ in $\mathscr{A}$, and three distinct elements $\mathfrak{b}_1,\mathfrak{b}_2,\mathfrak{b}_3$ in $\mathscr{B}$, then there exists a unique projective map 
+$$
+f:\mathscr{A}\to\mathscr{B},\, f(\mathfrak{a}_i)=\mathfrak{b}_i \,\,\forall i=1,2,3
+$$
+i.e. a projective map is characterized by the value at three points.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+There exists a projective map $f_0:\mathscr{A}\to \mathscr{B}$ (the way we define other cross-ratio sets later on naturally gives rise to a projective map from a line to them). From @lem-autexist, there exists a unique projective $f_\mathscr{B}:\mathscr{B}\to \mathscr{B}$ such that $f_\mathscr{B}\circ f_0(\mathfrak{a}_i)=\mathfrak{b}_i$. Setting $f=f_\mathscr{B}\circ f_0$ will do.
+:::
+
+::: {.unnumbered-env}
+**Remark.** Suppose that 
+$$
+(\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a}_3,\mathfrak{a}_4)=(\mathfrak{b}_1,\mathfrak{b}_2;\mathfrak{b}_3,\mathfrak{b}_4)=c
+$$
+then there exists a projective map $f$ such that $f(\mathfrak{a}_i)=\mathfrak{b}_i$. When $c\neq 1$，
+$$
+(\mathfrak{a}_1,\mathfrak{a}_3;\mathfrak{a}_2,\mathfrak{a}_4)=(\mathfrak{b}_1,\mathfrak{b}_3;\mathfrak{b}_2,\mathfrak{b}_4):=\iota(c)
+$$
+i.e. $\iota(c)$ does not depend on the choice of $\mathfrak{a}_i,\mathfrak{b}_i$, the structure of the cross ratio gives rise to a function
+$$
+\iota:\mathbb C^\times\setminus\{1\}\to \mathbb C^\times\setminus\{1\}
+$$
+Note that in the classical cross ratio, we require that $\iota(c)=1-c$, which is the linear hypothesis.
+:::
+
+::: {#lem-fixcrossratio}
+Let $\mathscr{A}$ be a cross-ratio set. Fix $c\in \mathbb{C}^\times,\,\mathfrak{a}_1,\mathfrak{a}_2\in \mathscr{A}$. For $\mathfrak{a}\in\mathscr{A}$, let $\mathfrak{a}^*\in \mathscr{A}$ such that 
+$$
+(\mathfrak{a}_1,\mathfrak{a}_2;\mathfrak{a},\mathfrak{a}^*)=c
+$$
+(and define $\mathfrak{a}_1^*=\mathfrak{a}_1$, $\mathfrak{a}_2^*=\mathfrak{a}_2$), then
+$$
+f:\mathscr{A}\to \mathscr{A},\,\mathfrak{a}\mapsto \mathfrak{a}^*
+$$
+is projective.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Given line $\ell$, let $f_0:\mathscr{A}\to \mathbb{P}_\ell$ be a projective map, and set 
+$$
+f_0(\mathfrak{a}_1)=P_1, f_0(\mathfrak{a}_2)=P_2
+$$
+Fix $P_2'\notin\ell$, let $m=P_1P_2'$, and choose $Q_1,Q_2$ on $m$ such that $(P_1,P_2';Q_1,Q_2)=c$. Consider
+$$
+h:\mathbb{P}_\ell\to \mathbb{P}_\ell,\,X\mapsto Q_1X\mapsto Q_1X\cap P_2P_2':=Y\mapsto Q_2Y\mapsto Q_2Y\cap \ell:=X^*
+$$
+then $h$ is projective, and $(P_1,P_2;X,X^*)=Y(P_1,P_2';Q_1,Q_2)=c$, so $f=f_0^{-1}\circ h\circ f_0$ is projective.
+:::
+
+From the previous remark, $\mathfrak{a}_1,\mathfrak{a}_2$ may be placed in other positions.
