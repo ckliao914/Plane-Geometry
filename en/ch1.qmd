@@ -521,7 +521,7 @@ This is equal to $(BC\cap PQ,BC\cap PQ;P,Q)=1$.
 Fixing $P$ in @lem-cevatriproduct, we obtain Ceva's theorem.
 
 ::: {#thm-ceva}
-##Ceva's theorem
+## Ceva's theorem
 Given point $P$, let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $D,E,F$ be points on $BC,CA,AB$, respectively, then $AD,BE,CF$ are concurrent if and only if
 $$
 (B,C;P_a,D)\cdot (C,A;P_b,E)\cdot (A,B;P_c,F)=1
