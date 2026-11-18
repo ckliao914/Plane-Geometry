@@ -499,7 +499,7 @@ The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-inv
 ## Ceva's Theorem and Menelaus's Theorem    
 
 ::: {#lem-cevatriproduct}
-Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangle of $P,Q$ with respect to $ABC$, respectively, then
+Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangles of $P,Q$ with respect to $ABC$, respectively, then
 $$
 (B,C;P_a,Q_a)\cdot (C,A;P_b,Q_b)\cdot (A,B;P_c,Q_c)=1
 $$
@@ -547,7 +547,7 @@ Assume that $D,E,F$ are collinear on $\ell$. In @lem-cevatriproduct, let $Q$ be 
 $$
 (B,C;P_a,Q_a)=(B,C;P_a,D)\cdot (B,C;D,Q_a)=-(B,C;P_a,D)
 $$
-so this follows from @lem-cevatriproduct and the uniqueness of cross ratios.
+The rest follows from @lem-cevatriproduct and the uniqueness of cross ratios.
 :::
         
 We give an application of Ceva's theorem.
@@ -579,7 +579,7 @@ Fix four points $A,B,C,D$ such that any three of them are not collinear. For any
 $$
 x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
 $$
-From Ceva's theorem, the three values satisfies $x_Ax_Bx_C=1$. Conversely, given three values $x_Ax_Bx_C$ whose product is $1$, then this determines a unique $X$. Im conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to encode the location of points.
+From Ceva's theorem, the three values satisfies $x_Ax_Bx_C=1$. Conversely, given three values $x_Ax_Bx_C$ whose product is $1$, then this determines a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
 :::
 
 ::: {.unnumbered-env}
