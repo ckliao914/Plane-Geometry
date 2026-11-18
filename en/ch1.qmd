@@ -495,4 +495,90 @@ since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic co
 **Remark.**
 The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exists in $\mathbb{C}^\times$.
 :::
-    
+
+## Ceva's Theorem and Menelaus's Theorem    
+
+::: {#lem-cevatriproduct}
+Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangle of $P,Q$ with respect to $ABC$, respectively, then
+$$
+(B,C;P_a,Q_a)\cdot (C,A;P_b,Q_b)\cdot (A,B;P_c,Q_c)=1
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We note that
+$$
+A(B,C;P_a,Q_a)=(AB\cap PQ,AC\cap PQ;P,Q)
+$$
+so the LHS in the lemma is 
+$$
+(AB\cap PQ,AC\cap PQ;P,Q)\cdot (BC\cap PQ,BA\cap PQ;P,Q)\cdot (CA\cap PQ,CB\cap PQ;P,Q)
+$$
+This is equal to $(BC\cap PQ,BC\cap PQ;P,Q)=1$.
+:::
+
+Fixing $P$ in @lem-cevatriproduct, we obtain Ceva's theorem.
+
+::: {#thm-ceva}
+##Ceva's theorem
+Given point $P$, let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $D,E,F$ be points on $BC,CA,AB$, respectively, then $AD,BE,CF$ are concurrent if and only if
+$$
+(B,C;P_a,D)\cdot (C,A;P_b,E)\cdot (A,B;P_c,F)=1
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from @lem-cevatriproduct and the uniqueness of cross ratios.
+:::
+
+::: {#thm-Menelaus}
+## Menelaus's theorem
+Given point $P$, let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $D,E,F$ be points on $BC,CA,AB$, respectively, then $D,E,F$ are collinear if and only if 
+$$
+(B,C;P_a,D)\cdot (C,A;P_b,E)\cdot (A,B;P_c,F)=-1
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Assume that $D,E,F$ are collinear on $\ell$. In @lem-cevatriproduct, let $Q$ be the tripole of $\ell$, then
+$$
+(B,C;P_a,Q_a)=(B,C;P_a,D)\cdot (B,C;D,Q_a)=-(B,C;P_a,D)
+$$
+so this follows from @lem-cevatriproduct and the uniqueness of cross ratios.
+:::
+        
+We give an application of Ceva's theorem.
+
+::: {#thm-isoconjugate}
+ Given triangle $ABC$ and points $P,Q$ not on its three sides. Let $X$ be any point not on the three sides of $ABC$, and define $\ell_A$ to be the line through $A$ such that
+$$
+(AB,AC), \,(AP,AQ), \,(AX,\ell_A)
+$$
+is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\ell_C$ are concurrent at $Y$. 變換$\varphi:X\mapsto Y$稱為$(P,Q)$-等共軛變換。
+:::
+    \begin{theorem}\label{isoconjugate}
+       
+    \end{theorem}
+    \begin{pf}
+        令$P$, $Q$與$X$對$ABC$的西瓦三角形分別為$P_aP_bP_c$, $Q_aQ_bQ_c$與$X_aX_bX_c$，則由對合
+        
+        \central{$(B,C;P_A,X_A)=(C,B;Q_A,\ell_A\cap BC)$}
+        \noindent 使用Ceva定理，因為(cyc為把三邊輪換乘起來)$$1=\prod_{\text{cyc}}(B,C;P_A,X_A)=\prod_{\text{cyc}}(C,B;Q_A,\ell_A\cap BC)$$故$\ell_A$, $\ell_B$, $\ell_C$共點。
+    \end{pf}
+
+    \begin{rmk}
+        固定任三點不共線的$A,B,C,D\in\mathbb{P}$，則對於任意$X\in \mathbb{P}$不在三角形$ABC$的三邊上，考慮三個交比
+        
+        \central{$x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)$}
+        \noindent 由Ceva定理，這三個交比值滿足$x_Ax_Bx_C=1$，且給定乘積為$1$的$x_A,\,x_B,\,x_C\in\mathbb{C}^\times$也會唯一決定點$X$，故點$A,B,C,D$及數對$(x_A,x_B,x_C)$給了一個定位點的方式。
+    \end{rmk}
+    \begin{ex}
+        固定點$A,B,C,D$，這裡利用定位的方法來看\Cref{isoconjugate}。令$P,Q,X,Y$在點$A,B,C,D$下的定位分別為$(p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)$，則
+        
+         \central{$y_Ap_A^{-1}=A(B,C;P,Y)=A(C,B;Q,X)=A(B,C;X,Q)=q_Ax_A^{-1}$}
+        \noindent 故$(y_A,y_B,y_C)=(p_Aq_Ax_A^{-1},p_Bq_Bx_B^{-1},p_Cq_Cx_C^{-1})$，簡記為$Y=P\times Q\div X$。
+    \end{ex}
+
