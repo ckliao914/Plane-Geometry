@@ -349,3 +349,61 @@ then $h$ is projective, and $(P_1,P_2;X,X^*)=Y(P_1,P_2';Q_1,Q_2)=c$, so $f=f_0^{
 :::
 
 From the previous remark, $\mathfrak{a}_1,\mathfrak{a}_2$ may be placed in other positions.
+
+## Harmonicity, Trilinear Polars, and Involutions
+
+::: {.unnumbered-env}
+**Definition.**
+Assume that $P_1,P_2,P_3,P_4$ are collinear points such that 
+$$
+(P_1,P_2;P_3,P_4)=-1
+$$
+then the four points are said to be **harmonic**. Given distinct collinear points $P_1,P_2,P_3$, there exists a unique point $P_4$ such that $(P_1,P_2;P_3,P_4)=-1$. In this case, $P_4$ is said to be the **harmonic conjugate** of $P_3$ with respect to $P_1|P_2$. Additionally, we define the harmonic conjugate of $P_1,P_2$ with respect to $P_1|P_2$ to be $P_1,P_2$, respectively, and when $P\neq P_1$, define the harmonic conjugate of $P$ with respect to $P_1|P_1$ to be $P_1$.
+:::
+
+In the definition of harmonicity, we may replace the points with elements in any cross-ratio set.
+
+::: {#cor-harmonic}
+If $(P_1,P_2;P_3,P_4)=-1$, then $(P_1,P_2;P_4,P_3)=-1$, i.e. the harmonic conjugate of $P_4$ with respect to $P_1|P_2$ is $P_3$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Given distinct points $A,B,C,P$ such that any three points among them are not collinear, then the triangle with vertices
+$$
+AP\cap BC,\, BP\cap CA,\, CP\cap AB
+$$
+is called the **cevian triangle** of the complete quadrangle $ABCP$, or the cevian triangle of $P$ with respect to $ABC$ (in the latter usage, the order of the vertices of the cevian triangle should correspond to that of $ABC$).
+:::
+
+::: {lem-cevaharmonic}
+Let the cevian triangle of $P$ with respect to $ABC$ be $P_aP_bP_c$, and the harmonic conjugate of $P_a$ with respect to $B|C$ be $Q_a$, then $Q_a,P_b,P_c$ are collinear. Equivalently, 
+$$
+(B,C;P_a,P_bP_c\cap BC)=-1
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P_bQ_a\cap AP=R$, $P_cQ_a\cap AP=S$, then
+$$
+(A,P;P_a, R)=P_b(C,B;P_a,Q_a)=-1=P_c(B,C;P_a,Q_a)=(A,P;P_a, S)
+$$
+so $R=S$, and $P_b,P_c,Q_a$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+In general projective planes, $P_a,P_b,P_c$ may be collinear. An example is the $7$-point projective plane. Here, the cross ratio structure ensures the existence of harmonic conjugates, and avoided the case when $P_a,P_b,P_c$ are collinear.
+
+When we defined cross ratios, we used $\mathbb{C}^\times$ as the multiplicative group. One may try to replace $\mathbb{C}^\times$ with other multiplicative groups, for instance, equipping the $7$-point projective plane with a cross ratio whose multiplicative group is trivial. For cross ratios in a more general setting, see Appendix A.
+:::
+
+::: {#thm-trilinearPolarPole}
+Let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $Q_a$ be the harmonic conjugate of $P_a$ with respect to $B|C$, and we analogously define $Q_b,Q_c$, then $Q_a,Q_b,Q_c$ are collinear on $\ell$. The line $\ell$ is called the **trilinear polar** (or **tripolar** of $P$ with respect to $ABC$, and $P$ is called the **trilinear pole** (or **tripole**) of $\ell$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+From @lem-cevaharmonic and Desargues theorem, $Q_a,Q_b,Q_c$ are on the perspectrix of $ABC$ and $P_aP_bP_c$.
+:::
