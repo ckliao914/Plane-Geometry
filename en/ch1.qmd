@@ -493,7 +493,7 @@ since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic co
 
 ::: {.unnumbered-env}
 **Remark.**
-The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exists in $\mathbb{C}^\times$.
+The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exist in $\mathbb{C}^\times$.
 :::
 
 ## Ceva's Theorem and Menelaus's Theorem    
