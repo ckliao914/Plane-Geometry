@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Complex Planar Geometry"
+  title: "Complex Projective Planar Geometry"
   chapters:
     - index.qmd
     - ch1.qmd
