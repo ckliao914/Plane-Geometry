@@ -566,7 +566,7 @@ Let the cevian triangle of $P,Q,X$ with respect to $ABC$ be $P_aP_bP_c$, $Q_aQ_b
 $$
 (B,C;P_A,X_A)=(C,B;Q_A,\ell_A\cap BC)
 $$
-Applying Ceva's theorem, since (denote by cyc the product over the three sides)
+Applying Ceva's theorem, since (denote by $\mathrm{cyc}$ the product over the three sides)
 $$
 1=\prod_{\text{cyc}}(B,C;P_A,X_A)=\prod_{\text{cyc}}(C,B;Q_A,\ell_A\cap BC)
 $$
