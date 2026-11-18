@@ -601,7 +601,7 @@ $$
 We will write $Y=P\times Q\div X$ for short.
 :::
 
-## Projectivr Transformation 
+## Projective Transformation 
 
 ::: {.unnumbered-env}
 **Definition.**
@@ -617,14 +617,14 @@ $$
 (from (2), $\rho$ is bijective), then $\rho$ is said to be a **projective transformation**.
 :::
 
-Since projective transformation preserves collinearity, the dual of projective transformation is essentially the same thing, i.e. each projective transformation give rise to a function $\rho:\mathbb{L}\to\mathbb{L}$ such that
+Since projective transformation preserves collinearity, the dual of projective transformation is essentially the same thing, i.e. each projective transformation gives rise to a function $\rho:\mathbb{L}\to\mathbb{L}$ such that
 $$
 (P,\ell)\in\mathcal{I}\iff (\rho(P),\rho(\ell))\in\mathcal{I}
 $$
 
-Projective transformations preserve every property related to cross ratios, so we would get nothing new by taking the projective transformation of a statement. The problems we are interested in have to include both the original and transformed side, for example, the fixed-point problem, which will be discussed in later chapters.
+Projective transformations preserve every property related to cross ratios, so we would get nothing new by taking the projective transformation of a statement. The problems we are interested in have to include both the original and transformed sides, for example, the fixed-point problem, which will be discussed in later chapters.
 
-A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva's theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a protective transformation is characterized by the value at four points such that any three of them are not collinear.
+A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva's theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a projective transformation is characterized by the value at four points (no three of which are collinear).
 
 ::: {#thm-projtransunique}
 Suppose that any three points among $W,X,Y,Z$ are not collinear, and any three points among $W_1,X_1,Y_1,Z_1$ are not collinear, then there exists a projective transformation $\rho$ such that
@@ -654,7 +654,7 @@ $$
 This shows that $\rho$ is a projective transformation.
 :::
 
-Supoose that there are four fixed points (any three of them are not collinear) of $\rho$, then $\rho$ is the identity transformation (i.e. $\rho(X)=X$ for $X\in\mathbb{P}$). In the following, we consider projective transformation with three fixed points.
+Suppose that there are four fixed points (no three of which are collinear) of $\rho$, then $\rho$ is the identity transformation (i.e. $\rho(X)=X$ for $X\in\mathbb{P}$). In the following, we consider projective transformation with three fixed points.
 
 ::: {.unnumbered-env}
 **Example.**
@@ -662,5 +662,5 @@ Let $\rho$ be a projective transformation such that the vertices of triangle $AB
 $$
 A(B,C;\rho(X),Q)=A(B,C;X,P)
 $$
-i.e. $\rho(X)=X\times Q\div P$. Note that from @thm-isoconjugate, $\rho$ is the composition of the $(Q,R)$-isoconjugation and the $(R,P)$-isoconjugation, where $R$ is some arbitrary point.
+i.e. $\rho(X)=X\times Q\div P$. Note that from @thm-isoconjugate, $\rho$ is the composition of the $(P,R)$-isoconjugation followed by the $(R,Q)$-isoconjugation, where $R$ is some arbitrary point.
 :::
