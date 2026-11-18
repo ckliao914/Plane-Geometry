@@ -491,6 +491,8 @@ $$
 since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic conjugation with respect to $P_1|P_2$.
 :::
 
+Clearly, @lem-invfix holds for any cross-ratio set. (The reason we stated it for a line is simple: we wouldn't want a bunch of fraktur fonts flying all around in the proof, would we?)
+
 ::: {.unnumbered-env}
 **Remark.**
 The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exist in $\mathbb{C}^\times$.
