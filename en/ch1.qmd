@@ -1,6 +1,6 @@
-# Complex Projective Plane and Cross Ratio
+# The Complex Projective Plane and Cross Ratio
 
-## Projective Plane
+## Projective Planes
 ::: {.unnumbered-env}
 **Definition.**
 Given sets $\mathbb{P}$ and $\mathbb{L}$, the elements in $\mathbb{P}$ are called **points**, and the elements in $\mathbb{L}$ are called **lines**. Given a subset $\mathcal{I}$ of the set $\mathbb{P}\times \mathbb{L}$, for a point $P$, define 
@@ -601,7 +601,7 @@ $$
 We will write $Y=P\times Q\div X$ for short.
 :::
 
-## Projective Transformation 
+## Projective Transformations
 
 ::: {.unnumbered-env}
 **Definition.**
