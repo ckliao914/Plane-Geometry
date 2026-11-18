@@ -557,28 +557,45 @@ We give an application of Ceva's theorem.
 $$
 (AB,AC), \,(AP,AQ), \,(AX,\ell_A)
 $$
-is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\ell_C$ are concurrent at $Y$. 變換$\varphi:X\mapsto Y$稱為$(P,Q)$-等共軛變換。
+is an involution. We define $\ell_B,\ell_C$ analogously, then $\ell_A,\ell_B,\ell_C$ are concurrent at $Y$. The transformation $\varphi:X\mapsto Y$ is called the $(P,Q)$-isoconjugation.
 :::
-    \begin{theorem}\label{isoconjugate}
-       
-    \end{theorem}
-    \begin{pf}
-        令$P$, $Q$與$X$對$ABC$的西瓦三角形分別為$P_aP_bP_c$, $Q_aQ_bQ_c$與$X_aX_bX_c$，則由對合
-        
-        \central{$(B,C;P_A,X_A)=(C,B;Q_A,\ell_A\cap BC)$}
-        \noindent 使用Ceva定理，因為(cyc為把三邊輪換乘起來)$$1=\prod_{\text{cyc}}(B,C;P_A,X_A)=\prod_{\text{cyc}}(C,B;Q_A,\ell_A\cap BC)$$故$\ell_A$, $\ell_B$, $\ell_C$共點。
-    \end{pf}
 
-    \begin{rmk}
-        固定任三點不共線的$A,B,C,D\in\mathbb{P}$，則對於任意$X\in \mathbb{P}$不在三角形$ABC$的三邊上，考慮三個交比
-        
-        \central{$x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)$}
-        \noindent 由Ceva定理，這三個交比值滿足$x_Ax_Bx_C=1$，且給定乘積為$1$的$x_A,\,x_B,\,x_C\in\mathbb{C}^\times$也會唯一決定點$X$，故點$A,B,C,D$及數對$(x_A,x_B,x_C)$給了一個定位點的方式。
-    \end{rmk}
-    \begin{ex}
-        固定點$A,B,C,D$，這裡利用定位的方法來看\Cref{isoconjugate}。令$P,Q,X,Y$在點$A,B,C,D$下的定位分別為$(p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)$，則
-        
-         \central{$y_Ap_A^{-1}=A(B,C;P,Y)=A(C,B;Q,X)=A(B,C;X,Q)=q_Ax_A^{-1}$}
-        \noindent 故$(y_A,y_B,y_C)=(p_Aq_Ax_A^{-1},p_Bq_Bx_B^{-1},p_Cq_Cx_C^{-1})$，簡記為$Y=P\times Q\div X$。
-    \end{ex}
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the cevian triangle of $P,Q,X$ with respect to $ABC$ be $P_aP_bP_c$, $Q_aQ_bQ_c$ and $X_aX_bX_c$, then from the involution, 
+$$
+(B,C;P_A,X_A)=(C,B;Q_A,\ell_A\cap BC)
+$$
+Applying Ceva's theorem, since (denote by cyc the product over the three sides)
+$$
+1=\prod_{\text{cyc}}(B,C;P_A,X_A)=\prod_{\text{cyc}}(C,B;Q_A,\ell_A\cap BC)
+$$
+We conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
+:::
+
+::: {.unnamed-env}
+**Remark.**
+Fix four points $A,B,C,D$ such that any three of them are not collinear. For any $X\in \mathbb{P}$ not on the three sides of $ABC$, consider the three values
+$$
+x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
+$$
+From Ceva's theorem, the three values satisfies $x_Ax_Bx_C=1$. Conversely, given three values $x_Ax_Bx_C$ whose product is $1$, then this determines a unique $X$. Im conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to encode the location of points.
+:::
+
+::: {.unnamed-env}
+**Example.**
+Fix points $A,B,C,D$, we will use the way in the previous remark to investigate @thm-isoconjugate. Let the location of $P,Q,X,Y$ be 
+$$
+(p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)
+$$
+then
+$$
+y_Ap_A^{-1}=A(B,C;P,Y)=A(C,B;Q,X)=A(B,C;X,Q)=q_Ax_A^{-1}
+$$
+so
+$$
+(y_A,y_B,y_C)=(p_Aq_Ax_A^{-1},p_Bq_Bx_B^{-1},p_Cq_Cx_C^{-1})
+$$
+We will write $Y=P\times Q\div X$ for short.
+:::
 
