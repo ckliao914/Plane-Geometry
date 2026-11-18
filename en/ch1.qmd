@@ -577,7 +577,7 @@ we conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
 
 ::: {.unnumbered-env}
 **Remark.**
-Fix four points $A,B,C,D$ such that any three of them are not collinear. For any $X\in \mathbb{P}$ not on the three sides of $ABC$, consider the three values
+Fix four reference points $A,B,C,D$ such that any three of them are not collinear. For any $X\in \mathbb{P}$ not on the three sides of $ABC$, consider the three values
 $$
 x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
 $$
@@ -586,7 +586,7 @@ From Ceva's theorem, the three values satisfy $x_Ax_Bx_C=1$. Conversely, given t
 
 ::: {.unnumbered-env}
 **Example.**
-Fixing points $A,B,C,D$, we will use the method in the previous remark to investigate @thm-isoconjugate. Let the locations of $P,Q,X,Y$ be 
+Fixing reference points $A,B,C,D$, we will use the method in the previous remark to investigate @thm-isoconjugate. Let the locations of $P,Q,X,Y$ be 
 $$
 (p_A,p_B,p_C),\,(q_A,q_B,q_C),\,(x_A,x_B,x_C),\,(y_A,y_B,y_C)
 $$
@@ -601,3 +601,66 @@ $$
 We will write $Y=P\times Q\div X$ for short.
 :::
 
+## Projectivr Transformation 
+
+::: {.unnumbered-env}
+**Definition.**
+Let $\rho:\mathbb{P}\to \mathbb{P}$ be a function. Suppose that $\rho$ preserves collinearity and cross ratios, i.e. $\rho$ satisfies
+
+(1) If $P,Q,R$ are collinear, then $\rho(P),\rho(Q),\rho(R)$ are collinear.
+
+(2) If $P,Q,R,S$ are collinear, then 
+$$
+(P,Q;R,S)=(\rho(P),\rho(Q);\rho(R),\rho(S))
+$$ 
+
+(from (2), $\rho$ is bijective), then $\rho$ is said to be a **projective transformation**.
+:::
+
+Since projective transformation preserves collinearity, the dual of projective transformation is essentially the same thing, i.e. each projective transformation give rise to a function $\rho:\mathbb{L}\to\mathbb{L}$ such that
+$$
+(P,\ell)\in\mathcal{I}\iff (\rho(P),\rho(\ell))\in\mathcal{I}
+$$
+
+Projective transformations preserve every property related to cross ratios, so we would get nothing new by taking the projective transformation of a statement. The problems we are interested in have to include both the original and transformed side, for example, the fixed-point problem, which will be discussed in later chapters.
+
+A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva's theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a protective transformation is characterized by the value at four points such that any three of them are not collinear.
+
+::: {#thm-projtransunique}
+Suppose that any three points among $W,X,Y,Z$ are not collinear, and any three points among $W_1,X_1,Y_1,Z_1$ are not collinear, then there exists a projective transformation $\rho$ such that
+$$
+\rho(W)=W_1,\,\rho(X)=X_1,\,\rho(Y)=Y_1,\,\rho(Z)=Z_1
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have shown the uniqueness in the previous argument. For the existence, define the projective map
+$$
+f_W:\mathbb{L}_W\to \mathbb{L}_{W_1},\,f_W(WX)=W_1X_1,\, f_W(WY)=W_1Y_1,\, f_W(WZ)=W_1Z_1
+$$
+and define $f_X:\mathbb{L}_X\to\mathbb{L}_{X_1}$ similarly, then set 
+$$
+\rho(P)=f_W(WP)\cap f_X(XP)
+$$
+It suffices to verify that $\rho$ preserves collinearity and cross ratios. Suppose that $P,Q,R$ are collinear, then
+$$
+W_1(\rho(P),\rho(Q);\rho(R),X_1)\mathop{=}\limits^{f_W}W(P,Q;R,X)=X(P,Q;R,W)\mathop{=}\limits^{f_X}X_1(\rho(P),\rho(Q);\rho(R),W_1)
+$$
+From @thm-collinear, $\rho(P),\rho(Q),\rho(R)$ are collinear. Furthermore, suppose that $P,Q,R,S$ are collinear, then
+$$
+W(P,Q;R,S)=W_1(\rho(P),\rho(Q);\rho(R),\rho(S))
+$$
+This shows that $\rho$ is a projective transformation.
+:::
+
+Supoose that there are four fixed points (any three of them are not collinear) of $\rho$, then $\rho$ is the identity transformation (i.e. $\rho(X)=X$ for $X\in\mathbb{P}$). In the following, we consider projective transformation with three fixed points.
+
+::: {.unnumbered-env}
+**Example.**
+Let $\rho$ be a projective transformation such that the vertices of triangle $ABC$ are fixed. Set $\rho(P)=Q$, then for any point $X$ not on the three sides,
+$$
+A(B,C;\rho(X),Q)=A(B,C;X,P)
+$$
+i.e. $\rho(X)=X\times Q\div P$. Note that from @thm-isoconjugate, $\rho$ is the composition of the $(Q,R)$-isoconjugation and the $(R,P)$-isoconjugation, where $R$ is some arbitrary point.
+:::
