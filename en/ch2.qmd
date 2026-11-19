@@ -301,3 +301,138 @@ Consider a projective map $f:\mathcal{C}_1\to \mathcal{C}_2$ and its extension $
 ::: {#cor-projaxisconic}
 Let $\mathcal{C}$ be a conic and $f:\mathcal{C}\to\mathcal{C}$ be a projective map with projective axis $\ell$. Fix points $P,Q \in\ell$, then the locus of $PX\cap Qf(X)$ ($X\in \mathcal{C}$) is a conic.
 :::
+
+## Poles and Polars
+
+::: {.unnumbered-env}
+**Definition.**
+若 $P\in \mathcal{C}$，定義 $P$ 對 $\mathcal{C}$ 的兩切線都是 $P$ 的切線（也就是次數是 $2$）；若 $m$ 與 $\mathcal{C}$ 相切，則定義 $m$ 與 $\mathcal{C}$ 的兩個交點都是 $m$ 的切點。
+:::
+
+這個定義下，任意點都可以對錐線作兩條切線，且任意直線都與錐線有兩交點。
+
+::: {.unnumbered-env}
+**Definition.**
+給定錐線 $\mathcal{C}$ 與點 $P$ 及直線 $m$。
+
+(1) 令 $P$ 對 $\mathcal{C}$ 的兩切線切 $\mathcal{C}$ 於 $P_1,P_2$。定義 $P$ 對 $\mathcal{C}$ 的極線 $\mathfrak{p}_\mathcal{C}(P)$ 為直線 $P_1P_2$。
+
+(2) 令 $m$ 與 $\mathcal{C}$ 的兩交點為 $Q_1,Q_2$。定義 $m$ 對 $\mathcal{C}$ 的極點 $\mathfrak{p}_\mathcal{C}(m)$ 為 $Q_1,Q_2$ 的切線交點。
+
+配極指的就是變換 $\mathfrak{p}_\mathcal{C}$，也就是 $\mathfrak{p}_\mathcal{C}:\mathbb{P}\to \mathbb{L}$ 與 $\mathfrak{p}_\mathcal{C}:\mathbb{L}\to \mathbb{P}$，且 $\mathfrak{p}_\mathcal{C}\circ \mathfrak{p}_\mathcal{C}$ 是恆同變換。
+:::
+
+注意到 $P$ 對 $\mathcal{C}$ 的極線就是 @lem-polar 中的 $\ell$。另外，當 $P\in\mathcal{C}$，則 $\mathfrak{p}_\mathcal{C}(P)$ 就是 $P$ 的切線；當 $m$ 與 $\mathcal{C}$ 相切，則 $\mathfrak{p}_\mathcal{C}(m)$ 就是 $m$ 的切點。
+
+::: {#thm-lahire}
+## La Hire
+給定點 $A,B$，令 $AB$ 交 $\mathcal{C}$ 於 $Q_1,Q_2$。以下條件等價：
+
+(1) $A$ 的極線過 $B$。
+
+(2) $B$ 的極線過 $A$。
+
+(3) $(A,B;Q_1,Q_2)=-1$。
+
+此時稱 $A,B$ 關於 $\mathcal{C}$ 共軛（conjugate）。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+由 @lem-polar，有 (1)$\iff$(3) 及 (2)$\iff$(3)。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+若 $\ell$ 與 $\mathcal{C}$ 不相切，則 $\mathcal{C}$ 會在 $\ell$ 上引出一對合 $X\mapsto \ell\cap\mathfrak{p}_\mathcal{C}(X)$，此對合的不動點就是 $\ell$ 與 $\mathcal{C}$ 的兩交點。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+給定錐線 $\mathcal{C}$，若三點滿足任兩點皆關於 $\mathcal{C}$ 共軛，則稱這三點為一關於 $\mathcal{C}$ 的自共軛三角形。
+:::
+
+::: {#thm-brocard}
+## Brocard
+若 $ABCD$ 皆在 $\mathcal{C}$ 上，則
+$$
+AB\cap CD,\,AC\cap BD,\,AD\cap BC
+$$
+三點為關於 $\mathcal{C}$ 的自共軛三角形。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $AB\cap CD=P$，則 $P$ 的極線經過 $P$ 對 $A|B$ 與 $C|D$ 的調和共軛，由 @thm-collinear 可知 $P$ 的極線亦過 $AC\cap BD,AD\cap BC$。同理可知三點為自共軛三角形。
+:::
+
+::: {#cor-brocardconj}
+$A,B,C$ 在 $\mathcal{C}$ 上，$X\in BC$，$AB,\,AC$ 交 $\mathfrak{p}_\mathcal{C}(X)$ 於 $Y,Z$，則 $Y,Z$ 共軛。
+:::
+
+::: {#thm-polarproj}
+配極變換保交比：給定錐線 $\mathcal{C}$ 與直線 $\ell$，$\ell$ 的極點為 $P$，則
+$$
+f:\mathbb{P}_\ell\to\mathbb{L}_P,\,\,X\mapsto \mathfrak{p}_\mathcal{C}(X)
+$$
+保交比（所以 $f$ 的反函數也保交比）。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+當 $\ell$ 不與 $\mathcal{C}$ 相切，則 $X\mapsto \ell\cap \mathfrak{p}_\mathcal{C}(X)$ 為對合，故 $f:X\mapsto P(\ell\cap \mathfrak{p}_\mathcal{C}(X))$ 保交比。當 $\ell$ 與 $\mathcal{C}$ 相切，固定 $A,B\in\mathcal{C}$，令 $XA$ 與 $XB$ 再交 $\mathcal{C}$ 於 $X_A,X_B$，則由 Steiner conic，
+$$
+g:\mathbb{L}_A\to \mathbb{L}_B,\,AX_B\mapsto BX_A\text{ 保交比}\implies AX_B\cap BX_A\text{ 軌跡為過 }P\text{ 的錐線}
+$$
+故由 Brocard 定理，$f:X\mapsto AX_B\cap BX_A\mapsto P(AX_B\cap BX_A)$ 保交比。
+:::
+
+::: {.unnumbered-env}
+**Example.**
+對兩個不同錐線的配極變換的合成 $\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ 是射影變換。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+因為五點決定一個錐線，所以兩錐線最多有四個交點。假設 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 交於四點 $A,\,B,\,C,\,D$，則 $\rho=\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ 的不動點就是滿足 $\mathfrak{p}_{\mathcal{C}_1}=\mathfrak{p}_{\mathcal{C}_2}$ 的點，由 Brocard 定理，$ABCD$ 的西瓦三角形頂點都是 $\rho$ 的不動點。這說明 $\rho$ 跟錐線交點有很大的關聯。
+:::
+
+配極變換會把直線與點交換並滿足 $P\in m\iff \mathfrak{p}_\mathcal{C}(m)\in \mathfrak{p}_\mathcal{C}(P)$ 且保交比。這說明了配極變換實現了對偶：要得到對偶命題只需要將原命題對任意的錐線配極就好了。
+
+::: {.unnumbered-env}
+**Remark.**
+考慮所有可以實現對偶的變換 $\mathfrak{p}$，也就是
+$$
+\text{保交比的 }\mathfrak{p}:\mathbb{P}\to \mathbb{L}\text{ 與 }\mathfrak{p}:\mathbb{L}\to \mathbb{P}\text{ 使得 }P\in m\iff\mathfrak{p}(m)\in \mathfrak{p}(P)
+$$
+稱這類型的變換為對偶變換。與射影變換一樣，對偶變換被四個任三點不共線的點唯一刻劃（證明方法與 @thm-projtransunique 相同）。注意到配極變換還滿足 $\mathfrak{p}\circ\mathfrak{p}(P)=P$，容易構造出一個不滿足這個的 $\mathfrak{p}$，也就是存在非配極變換的對偶變換。
+:::
+
+三角形對錐線配極後會與原三角形透視。
+
+::: {#thm-poleperspective}
+給定錐線 $\mathcal{C}$ 與 $ABC$，令
+$$
+A_1=\mathfrak{p}_\mathcal{C}(BC),\,B_1=\mathfrak{p}_\mathcal{C}(CA),\,C_1=\mathfrak{p}_\mathcal{C}(AB)
+$$
+則三角形 $ABC$ 與 $A_1B_1C_1$ 透視。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+若 $A,\,B,\,C$ 皆在 $\mathcal{C}$ 上，則對六折線 $AABBCC$ 使用帕斯卡定理可知 $ABC$ 與 $A_1B_1C_1$ 有透視軸。故不失一般性假設 $A\notin\mathcal{C}$。
+
+令 $BB_1\cap CC_1=P$，$B_1C_1$ 分別與 $BC,\,CA,\,AB,\,AP$ 交於 $D,\,E,\,F,\,Q$，則
+$$
+(D,Q;B_1,C_1)\mathop{=}\limits^{P}(D,AP\cap BC;B,C)\mathop{=}\limits^{A}(D,Q;F,E)=(Q,D;E,F)
+$$
+也就是 $(D,Q),\,(B_1,E),\,(C_1,F)$ 為對合對。
+
+注意到 $B_1$, $E$ 關於 $\mathcal{C}$ 共軛，$C_1$, $F$ 關於 $\mathcal{C}$ 共軛，故上面的對合就是 $\mathcal{C}$ 在 $B_1C_1$ 上引出的對合，也就是說 $Q$, $D$ 關於 $\mathcal{C}$ 共軛，所以 $Q\in\mathfrak{p}_\mathcal{C}(D)=\mathfrak{p}_\mathcal{C}(B_1C_1)\cap \mathfrak{p}_\mathcal{C}(BC)=AA_1$，
+故 $AA_1\cap B_1C_1=Q$，也就是 $A$, $A_1$, $P$ 共線，$ABC$ 與 $A_1B_1C_1$ 透視。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+@thm-poleperspective 一開始證明 $(D,Q),\,(B_1,E),\,(C_1,F)$ 為對合，這可以用後面的 Desargues 對合定理來看。
+:::
