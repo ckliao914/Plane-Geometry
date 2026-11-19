@@ -243,7 +243,7 @@ This is true for any cross-ratio set.
 ## Proof
 Let the tangent of $P$ to $\mathcal{C}$ be $\ell$, and set $Y=f(X)$, then $Xf(Y)\cap Yf(X)\in \ell$, i.e. $Xf(f(X))$ passes through the intersection of the tangents of $f(X),P$ to $\mathcal{C}$. The harmonicity follows from @cor-harmonicquad.
 
-For any cross ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$, then we apply the conclusion on conics to the map $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
+For any cross-ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$, then we apply the conclusion on conics to the map $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
 :::
 
 ## 錐線與延拓射影變換
