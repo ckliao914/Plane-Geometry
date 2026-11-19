@@ -269,13 +269,13 @@ Since projective transformations preserve cross ratio, for all $X\in\mathcal{C}_
 
 ::: {.unnumbered-env}
 **Remark.**
-Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the existence of the extension. Since $f$ is the composition of two involutions, without loss of generality, we assume that $f$ is the involution with perspector $P$, and $\ell$ is the projective axis of $f$.
+Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the existence of the extension. Since $f$ is the composition of two involutions, without loss of generality, we may assume that $f$ is the involution with perspector $P$, and $\ell$ is the projective axis of $f$.
 
 Given $A,B,C\in \mathcal{C}$, define $\rho$ to be the perspective transformation from $ABC$ to $f(A)f(B)f(C)$. From @lem-polar and @lem-perspectivefix,
 $$
 (f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1
 $$
-This implies $\rho(f(A))=A$. Similarly, $\rho$ is an involutive transformation, so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$.
+This implies that $\rho(f(A))=A$ and that $\rho$ is an involutive transformation (from the second equality), so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$.
 :::
 
 ::: {.unnumbered-env}
