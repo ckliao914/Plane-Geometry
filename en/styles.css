@@ -26,6 +26,13 @@ div.theorem, div.lemma, div.corollary {
   background-color: #f8f9fa;
 }
 
+/* 讓定理／引理／推論標題後方加上句點 */
+div.theorem .theorem-title::after,
+div.lemma .theorem-title::after,
+div.corollary .theorem-title::after {
+  content: ".";
+}
+
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
 .unnumbered-env {
   margin: 1em 0;
