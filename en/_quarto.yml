@@ -18,6 +18,14 @@ format:
       text: |
         <script>
         window.MathJax = {
+          tex: {
+            macros: {
+              sangle: "\\sphericalangle",
+              X: "\\mathsf{X}",
+              comp: "\\raisebox{-0.2ex}{\\complement}",
+              anticomp: "\\scalebox{-1}[1]{\\comp}"
+            }
+          },
           output: {
             font: 'mathjax-tex'
           },
@@ -29,7 +37,6 @@ format:
           }
         };
         </script>
-
 crossref:
   chapters: true
   thm-title: "Theorem"
