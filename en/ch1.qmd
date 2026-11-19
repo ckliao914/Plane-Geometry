@@ -740,7 +740,7 @@ Given triangle $ABC$, let $P_aP_bP_c$ be the cevian triangle of $P$. We define $
 We call $\comp_P(X)$ the $P$-**complement** of $X$ and $\comp_P^{-1}(X)$ the $P$-**anticomplement** of $X$. We sometimes write $\comp_P^{-1}(X)=\anticomp_P(X)$. Let $P_A,P_B,P_C$ be the $P$-anticomplement of $A,B,C$, then $P_AP_BP_C$ is said to be the anticevian triangle of $P$ (with respect to $ABC$). In this case, the cevian triangle of the quadrangle $PP_AP_BP_C$ is $ABC$.
 :::
 
-::: {.unnumbered-env data-title}
+::: {.unnumbered-env}
 **Example**
 When $\ell$ is the tripolar of $P$ with respect to $ABC$, we have 
 $$
