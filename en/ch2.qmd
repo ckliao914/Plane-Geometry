@@ -427,7 +427,7 @@ $$
 and that $\mathfrak{p}$ preserves cross ratio. In this case, $\mathfrak{p}$ is said to be a dual transformation. Similar to the case of projective transformations, a dual transformation is characterized by the value at four points (no three of which are collinear) by the same argument in @thm-projtransunique. Suppose that $\mathfrak{p}$ is some polar transformation, then $\mathfrak{p}\circ\mathfrak{p}(P)=P$, so it is clear that there exist dual transformations that are not polar transformations.
 :::
 
-We will show that a triangle and its image under some polar transformation are perspective.
+Let $\mathcal{C}$ be a conic. We will show that a triangle and its image under $\mathfrak{p}_\mathcal{C}$ are perspective.
 
 ::: {#thm-poleperspective}
 Given a conic $\mathcal{C}$ and a triangle $ABC$, set 
