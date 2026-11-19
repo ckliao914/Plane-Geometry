@@ -218,7 +218,7 @@ $$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $f_P:\mathcal{C}\to \mathcal{C}$ 為過 $P$ 的對合，$P_1,P_2$ 為不動點（@thm-invfix），則 $PP_1,PP_2$ 為切線。
+令 $f_P:\mathcal{C}\to \mathcal{C}$ 為過 $P$ 的對合，$P_1,P_2$ 為不動點（@lem-invfix），則 $PP_1,PP_2$ 為切線。
 
 取 $R,S\in m$，過 $R$ 與 $S$ 的切線分別切 $\mathcal{C}$ 於 $A,A'$ 與 $B,B'$，令 $Q=AA'\cap BB'$。由 @lem-polar，過 $Q$ 的對合 $f_Q$ 的射影軸為 $m$，故不動點 $Q_1,Q_2$ 就是 $m$ 與 $\mathcal{C}$ 的交點。
 :::
