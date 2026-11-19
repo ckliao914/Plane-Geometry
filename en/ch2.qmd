@@ -132,3 +132,166 @@ When applying Pascal theorem, we usually say we apply it to the hexagon $ABCDEF$
 **Remark.**
 Note that Pappus theorem is the special case of Pascal theorem on two lines; or in @lem-steinerconstruct, when $f(AB)=BA$, the locus of all points $\ell\cap f(\ell)$ is the union of a line and $AB$. This suggests that we may view the union of two lines as a degenerate conic. In what follows, conics are assumed to be nondegenerate unless stated otherwise.
 :::
+
+## 錐線上的交比、保交比函數與對合
+
+::: {.unnumbered-env}
+**Definition.**
+定義錐線 $\mathcal{C}$ 上四點 $ABCD$ 的交比為
+$$
+(A,B;C,D)_\mathcal{C}=P(A,B;C,D)
+$$
+其中 $P$ 為 $\mathcal{C}$ 上任一點（直線 $AA$ 的意思就是 $A$ 的切線）。由錐線的定義及 @lem-tangentlem 知道這個交比的值與 $P$ 的選取無關。
+:::
+
+::: {#thm-steinerconic}
+## Steiner conic
+$P,Q$ 為相異點，$f:\mathbb{L}_P\to \mathbb{L}_Q$ 保交比，則
+
+(1) 若 $f(PQ)=QP$，則存在定線 $m$ 使得 $\ell$，$f(\ell)$，$m$ 共點（$\ell\in\mathbb{L}_P$）。
+
+(2) 若 $f(PQ)\neq QP$，則 $\ell\cap f(\ell)$ 的軌跡為一過 $P,Q$ 的錐線（$\ell\in \mathbb{L}_P$）。
+
+且函數 $\ell\mapsto \ell\cap f(\ell)$ 保交比。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+由 @thm-collinear 及 @lem-steinerconstruct 可知。
+:::
+
+::: {#thm-projaxis}
+$\mathcal{C}$ 為錐線，$f:\mathcal{C}\to\mathcal{C}$ 保交比（$f$ 非恆同變換），則存在唯一的直線 $\ell$ 使
+$$
+\forall \,X,Y\in \mathcal{C},\,\,Xf(Y)\cap Yf(X)\in\ell
+$$
+稱此線 $\ell$ 為 $f$ 的射影軸。注意到 $\ell$ 與 $\mathcal{C}$ 的交點就是 $f$ 的不動點。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+固定 $A\in\mathcal{C}$，則考慮保交比的
+$$
+g:\mathbb{L}_{f(A)}\to\mathbb{L}_A, \,f(A)X\mapsto X\mapsto f(X)\mapsto Af(X)
+$$
+因 $g(f(A)A)=Af(A)$，由 Steiner conic，$f(A)X\cap Af(X)$ 的軌跡為一直線 $\ell$。也就是
+$$
+\forall \, X,Y\in\mathcal{C},\,\,Af(X)\cap Xf(A),\,Af(Y)\cap Yf(A)\in\ell
+$$
+對六折線 $Af(X)Yf(A)Xf(Y)$ 使用 Pascal 定理，可知 $Xf(Y)\cap Yf(X)$ 亦在 $\ell$ 上。
+:::
+
+::: {#lem-polar}
+給定點 $P\notin\mathcal{C}$。對於 $X\in\mathcal{C}$，令 $X'$ 為 $PX$ 與 $\mathcal{C}$ 的第二個交點，則
+
+(1) 存在唯一的直線 $\ell$ 使得對於所有 $X\in\mathcal{C}$，$P$ 對 $X|X'$ 的調和共軛 $X_0$ 皆在 $\ell$ 上。
+
+(2) 函數 $f:\mathcal{C}\to \mathcal{C}$，$X\mapsto X'$ 為對合，且 $f$ 的射影軸為 $\ell$，$X$ 與 $X'$ 的切線交在 $\ell$ 上。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+固定點 $A,B\in\mathcal{C}$ 使 $P,A, B$ 不共線，$PA,PB$ 分別再交 $\mathcal{C}$ 於 $A',B'$。$P$ 對 $A|A'$，$B|B'$ 的調和共軛為 $A_0,B_0$，則由 @thm-collinear 知
+$$
+AB\cap A'B', \,AB'\cap A'B,\, A_0,\, B_0\text{ 共線}
+$$
+對三角形 $ABX$ 與三角形 $A'B'X'$ 使用 Desargues 定理，可知
+$$
+AB\cap A'B',\, BX\cap B'X',\, AX\cap A'X'\text{ 共線}
+$$
+對六折線 $BXAB'X'A'$ 使用 Pascal 定理，可知
+$$
+BX\cap B'X',\, AX\cap A'X',\, AB'\cap BA'\text{ 共線}
+$$
+令 $A_0B_0=\ell$，則綜合以上可知 $\ell$ 過 $BX\cap B'X'$，將 $X$ 與 $X'$ 交換可知 $BX'\cap B'X\in\ell$。由 @thm-collinear 知 $B_0,\, BX\cap B'X',\, BX'\cap B'X,\,X_0$ 共線 $\ell$。這證明了 (1)。
+
+因為 $BX\cap B'X'\in\ell$ 上，$f:X\mapsto X'=B'(BX\cap\ell)\cap\mathcal{C}$ 保交比。這證明了 (2)。
+:::
+
+::: {#cor-conicinvolution}
+給定函數 $f:\mathcal{C}\to \mathcal{C}$，則 $f$ 是對合若且唯若 $Xf(X)$ 通過定點 $\forall X\in\mathcal{C}$。
+:::
+
+::: {#thm-twointersect}
+給定錐線 $\mathcal{C}$ 及 $P\notin \mathcal{C}$，則存在恰兩條過 $P$ 的線與 $\mathcal{C}$ 相切。給定直線 $m$，若 $m$ 與 $\mathcal{C}$ 不相切，則 $m$ 與 $\mathcal{C}$ 交於兩點。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $f_P:\mathcal{C}\to \mathcal{C}$ 為過 $P$ 的對合，$P_1,P_2$ 為不動點（@thm-invfix），則 $PP_1,PP_2$ 為切線。
+
+取 $R,S\in m$，過 $R$ 與 $S$ 的切線分別切 $\mathcal{C}$ 於 $A,A'$ 與 $B,B'$，令 $Q=AA'\cap BB'$。由 @lem-polar，過 $Q$ 的對合 $f_Q$ 的射影軸為 $m$，故不動點 $Q_1,Q_2$ 就是 $m$ 與 $\mathcal{C}$ 的交點。
+:::
+
+::: {#cor-harmonicquad}
+$(P_1,P_2;X,Y)_\mathcal{C}=-1$ 若且唯若 $P_1,P_2$ 對 $\mathcal{C}$ 的切線的交點在 $XY$ 上。
+:::
+
+結合 @thm-projaxis 與 @thm-twointersect，可知道一個保交比的 $f:\mathcal{C}\to \mathcal{C}$ 有一個（當射影軸與 $\mathcal{C}$ 相切）或兩個不動點。
+
+::: {#lem-uniquefixedpoint}
+給定錐線 $\mathcal{C}$ 及保交比的 $f:\mathcal{C}\to\mathcal{C}$，若 $f$ 非恆同變換，則 $f$ 的不動點為射影軸與 $\mathcal{C}$ 的交點，可能有一個或兩個。若 $f$ 只有一個不動點 $P$，則 $f$ 會滿足
+$$
+(P,f(X);X,f(f(X)))=-1\,\forall X\in \mathcal{C}
+$$
+這個結論可以推到任意賦交比集都是對的。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $P$ 對 $\mathcal{C}$ 的切線為 $\ell$，$Y=f(X)$，則 $Xf(Y)\cap Yf(X)\in \ell$，也就是 $Xf(f(X))$ 和 $f(X),P$ 對 $\mathcal{C}$ 的切線共點，由 @cor-harmonicquad 得證。對於任意賦交比集 $\mathscr{A}$ 與 $f:\mathscr{A}\to \mathscr{A}$，固定一個保交比的 $g:\mathcal{C}\to\mathscr{A}$ 並考慮 $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$ 即可。
+:::
+
+## 錐線與延拓射影變換
+
+考慮將保交比函數延伸成一個射影變換的問題。
+
+::: {#thm-extension}
+給定錐線 $\mathcal{C}_1, \mathcal{C}_2$ 及保交比的 $f:\mathcal{C}_1\to \mathcal{C}_2$，則存在唯一的射影變換 $\rho$ 使得對於所有 $X\in\mathcal{C}_1$，$\rho(X)=f(X)$，$\rho$ 稱為 $f$ 的延拓（extension）。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+考慮 $X_1,X_2,X_3,X_4\in\mathcal{C}_1$，令 $c=(X_1,X_2;X_3,X_4)_{\mathcal{C}_1}$，$\rho$ 為滿足 $\rho(X_i)=f(X_i)$ 的射影變換（$i=1,2,3,4$），則（所以 $\rho$ 是唯一的）
+$$
+\mathcal{C}_1=\{X\mid X(X_1,X_2;X_3,X_4)=c\}
+$$
+在 $\rho$ 作用過後，因為 $(f(X_1),f(X_2);f(X_3),f(X_4))_{\mathcal{C}_2}=c$，所以
+$$
+\rho(\mathcal{C}_1)=\{Y\mid Y(f(X_1),f(X_2);f(X_3),f(X_4))=c\}=\mathcal{C}_2
+$$
+因為射影變換保交比，故對於所有 $X\in\mathcal{C}_1$，$\rho(X)=f(X)$。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+如果 $f:\mathcal{C}\to\mathcal{C}$，要證明延拓的存在性，還有另一種看法。因為 $f$ 總是可以寫成兩個對合變換的合成，不失一般性假設 $f$ 為過點 $P$ 的對合，$\ell$ 為 $f$ 的射影軸。此時給定 $A,B,C\in \mathcal{C}$，定義 $\rho$ 為 $ABC$ 到 $f(A)f(B)f(C)$ 的透視變換，則由 @lem-polar 與 @thm-perspectivefix，可知
+$$
+(f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1\implies \rho(f(A))=A
+$$
+同理有 $\rho$ 為對合透視，故 $\rho(\mathcal{C})=\mathcal{C}$，且滿足 $\rho(X)=f(X)$ 對於所有 $X\in\mathcal{C}$。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+假設 $f:\mathcal{C}\to \mathcal{C}$ 有兩個不動點 $P_1,P_2$，$\rho$ 為 $f$ 的延拓。令 $\ell_1,\ell_2$ 為 $P_1,P_2$ 的切線，則 $\rho(\ell_1)$ 仍與 $\mathcal{C}$ 相切於 $\rho(P_1)=P_1$，也就是 $\rho(\ell_1)=\ell_1$，同理 $\rho(\ell_2)=\ell_2$。令 $P=\ell_1\cap \ell_2$，則 $\rho(P)=P$，也就是 $P_1,P_2,P$ 為 $\rho$ 的不動點。
+:::
+
+::: {#lem-projfixlineintersection}
+給定射影變換 $\rho$，直線 $\ell$ 為不動線，即 $\rho(\ell)=\ell$。選定 $\ell$ 上兩點 $P,Q$，$X$ 為任意點，令
+$$
+\rho_1:X\mapsto PX\cap Q\rho(X)
+$$
+則 $\rho_1$ 為射影變換。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $X$ 在直線 $m\neq\ell$ 上變動，則 $PX\mapsto Q\rho(X)$ 保交比，且考慮 $X=\ell\cap m$ 的時候，可知 $PX=Q\rho(X)$，故由 Steiner conic，$\rho_1(X)$ 的軌跡為直線，且 $X\mapsto \rho_1(X)$ 保交比。所以 $\rho_1$ 保共線及交比，為射影變換。
+:::
+
+若給一個保交比的 $f:\mathcal{C}_1\to \mathcal{C}_2$，則可以考慮 $f$ 的延拓 $\rho$，若 $\rho$ 有不動線 $PQ$ 則可以使用 @lem-projfixlineintersection 知道 $PX\cap Q\rho(X)$ 的軌跡（$X\in\mathcal{C}_1$）為錐線。特別地，取 $f:\mathcal{C}\to\mathcal{C}$，則 $f$ 的射影軸為 $\rho$ 的不動線，用 @lem-projfixlineintersection 可以得到下面的推論。
+
+::: {#cor-projaxisconic}
+給定錐線 $\mathcal{C}$ 及 $f:\mathcal{C}\to\mathcal{C}$，$\ell$ 為射影軸，$P,Q$ 在 $\ell$ 上，則 $PX\cap Qf(X)$ 的軌跡為一錐線（$X\in \mathcal{C}$）。
+:::
