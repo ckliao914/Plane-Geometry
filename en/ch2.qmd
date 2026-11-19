@@ -1,1 +1,120 @@
+# Conics and Pole-Polar Duality
 
+## Definition and Existence of Conics
+
+::: {#lem-pascalcond}
+$A,B,C,D,E,F$ 滿足任三點不共線，則
+$$
+A(B,D;E,F)=C(B,D;E,F)
+$$
+若且唯若 $P=AB\cap DE$，$Q=BC\cap EF$，$R=CD\cap FA$ 共線。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+因為
+$$
+A(B,D;E,F)=(P,D;E,AF\cap DE),\,\,C(B,D;E,F)=(Q,CD\cap EF;E,F)
+$$
+故
+$$
+A(B,D;E,F)=C(B,D;E,F)\iff(P,D;E,AF\cap DE)=(Q,CD\cap EF;E,F)
+$$
+這等價 $PQ,CD,AF$ 共點，也就是 $P,Q,R$ 共線。
+:::
+
+@lem-pascalcond 中的 $PQR$ 共線可以看成是六折線 $ABCDEF$ 的對邊交點，所以依據對稱性這也等價 $B(A,C;E,F)=D(A,C;E,F)$，也就是說六點中只要有兩點對其他四點的交比相同，那任取六點中的兩點對其他四點的交比皆相同，這六點的關係是對稱的。以下暫時把這個交比相等的關係稱為 Pascal 條件。
+
+::: {#lem-pascaltrans}
+相異點 $A,B,C,D,E,F,G$ 滿足任三點不共線，若 $ABCDEF$ 與 $ABCDEG$ 皆滿足 Pascal 條件，則 $ABCDFG$ 亦滿足 Pascal 條件。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+考慮保交比的函數
+$$
+f:\mathbb{L}_A\to\mathbb{L}_B,\,f(AC)=BC,\, f(AD)=BD,\, f(AE)=BE
+$$
+則由帕斯卡條件，$f(AF)=BF$，$f(AG)=BG$，所以 $ABCDFG$ 滿足帕斯卡條件。
+:::
+
+由此可以構造出一個 $\mathbb{P}$ 的子集使其中任六點都滿足 Pascal 條件。
+
+::: {#lem-steinerconstruct}
+給定相異點 $A,B$，及保交比的 $f:\mathbb{L}_A\to\mathbb{L}_B$ 滿足 $f(AB)\neq BA$，則 $\ell\cap f(\ell)$ 蒐集的所有點任三點皆不共線，且任六點皆滿足 Pascal 條件。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $\ell_i\cap f(\ell_i)=X_i$，$i=1,\ldots,6$，其中 $X_i\neq A,B$。因為 $f$ 保交比，$A$ 與 $B$ 皆不可能跟另外兩個 $X_i$ 共線。若 $X_1,X_2,X_3$ 共線，則
+$$
+A(X_1,X_2;X_3,B)=B(X_1,X_2;X_3,A)\text{ ，即 }f(AB)=BA
+$$
+矛盾，故任三點不共線。
+
+因為 $AX_1X_2X_3BX_4$ 與 $AX_1X_2X_3BX_5$ 滿足 Pascal 條件，故 $AX_1X_2X_3X_4X_5$ 滿足 Pascal 條件，同理 $AX_1X_2X_3X_4X_6$ 滿足 Pascal 條件，故由 @lem-pascaltrans，$X_1X_2X_3X_4X_5X_6$ 滿足 Pascal 條件。
+:::
+
+::: {#lem-tangentlem}
+若 $A,B,C,D,E$ 任三點不共線，$\ell\in\mathbb{L}_A$ 滿足
+$$
+(AC,AD;AE,\ell)=B(C,D;E,A)
+$$
+則 $\ell$ 上不會存在 $F\neq A$ 使得 $F(C,D;E,A)=B(C,D;E,A)$。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+若存在 $F$，則 $F(C,D;E,A)=A(C,D;E,F)$，$CDE$ 共線（@thm-collinear），矛盾。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+一個集合 $\mathcal{C}\subset\mathbb{P}$ 被稱為（非退化）錐線（conic）如果
+
+(1) $\mathcal{C}$ 中任三相異點不共線（$\mathcal{C}$ 非空）。
+
+(2) $\mathcal{C}$ 中任意六相異點皆滿足 Pascal 條件。
+
+(3) 對於任意 $P\in\mathcal{C}$，存在唯一一條過 $P$ 的直線 $\ell$ 使得 $\mathbb{P}_\ell\cap\mathcal{C}=\{P\}$，稱 $\ell$ 為 $P$ 對 $\mathcal{C}$ 的切線（tangent）。這代表其他過 $P$ 的直線都會再過 $\mathcal{C}$ 上另一點。
+:::
+
+注意到 @lem-tangentlem 中的 $\ell$ 的構造說明了切線一定要存在。
+
+::: {#thm-conicexist}
+給定五點 $A,B,C,D,E$，其中任三點不共線，則存在唯一的非退化錐線 $\mathcal{C}$ 經過這五點，此錐線記為 $(ABCDE)$。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+考慮保交比的函數
+$$
+f:\mathbb{L}_A\to\mathbb{L}_B,\,f(AC)=BC, \,f(AD)=BD,\, f(AE)=BE
+$$
+若 $f(AB)=BA$，由 @thm-collinear 可知 $C$，$D$，$E$ 共線，矛盾。
+
+由 @lem-steinerconstruct，令 $\ell\cap f(\ell)$ 的集合為 $\mathcal{C}$，可知 $\mathcal{C}$ 中任三點不共線，任六點滿足帕斯卡條件。令 $P$ 為 $\mathcal{C}$ 上一點，若 $\ell$ 過 $P$ 且僅與 $\mathcal{C}$ 交於一點 $P$，則考慮保交比的函數
+$$
+g:\mathbb{L}_P\to\mathbb{L}_A,\,g(PC)=AC,\, g(PD)=AD,\, g(PE)=AE
+$$
+考慮 $\ell\cap g(\ell)=X$，則 $PACDEX$ 滿足帕斯卡條件，又 $ABCDEP$ 滿足帕斯卡條件，故 $ABCDEX$ 滿足帕斯卡條件，也就是 $X\in\mathcal{C}$，$X=P$，所以 $g(\ell)=AP$，$\ell$ 是唯一的，也就是 $\mathcal{C}$ 為錐線，並且容易從此構造看出 $\mathcal{C}$ 的唯一性。
+:::
+
+這說明了錐線的存在以及構造方式。
+
+::: {#thm-Pascal}
+## Pascal theorem
+$ABCDEF$ 滿足任三點不共線，則 $ABCDEF$ 共錐線若且唯若 $AB\cap DE$，$BC\cap EF$，$CD\cap FA$ 共線。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+這就是 @lem-pascalcond 的敘述。
+:::
+
+要使用 Pascal 定理時通常會說對六折線 $ABCDEF$ 使用。注意到 Pascal 定理與錐線的交比條件是等價的，故考慮錐線 $(ABCDE)$ 時亦可對 $AABCDE$ 這類的六折線使用，此時 $AA$ 會是 $A$ 的切線。
+
+::: {.unnumbered-env}
+**Remark.**
+注意到 Pappus 定理是 Pascal 定理在兩直線上的特例；或是 @lem-steinerconstruct 中當 $f(AB)=BA$ 時，所有 $\ell\cap f(\ell)$ 的軌跡是一直線與 $AB$ 的聯集。這說明兩條直線也是某種退化的錐線，以下若容許錐線退化會特別說明。
+:::
