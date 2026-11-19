@@ -375,68 +375,86 @@ Let $A,B,C$ be points on a conic $\mathcal{C}$. For $X\in BC$, let $AB,\,AC$ mee
 :::
 
 ::: {#thm-polarproj}
-配極變換保交比：給定錐線 $\mathcal{C}$ 與直線 $\ell$，$\ell$ 的極點為 $P$，則
+Polar transformation preserves cross ratio: given a conic $\mathcal{C}$ and a line $\ell$ with pole $P$ the function
 $$
 f:\mathbb{P}_\ell\to\mathbb{L}_P,\,\,X\mapsto \mathfrak{p}_\mathcal{C}(X)
 $$
-保交比（所以 $f$ 的反函數也保交比）。
+is a projective map (the inverse of $f$ is also projective).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-當 $\ell$ 不與 $\mathcal{C}$ 相切，則 $X\mapsto \ell\cap \mathfrak{p}_\mathcal{C}(X)$ 為對合，故 $f:X\mapsto P(\ell\cap \mathfrak{p}_\mathcal{C}(X))$ 保交比。當 $\ell$ 與 $\mathcal{C}$ 相切，固定 $A,B\in\mathcal{C}$，令 $XA$ 與 $XB$ 再交 $\mathcal{C}$ 於 $X_A,X_B$，則由 Steiner conic，
+When $\ell$ is not tangent to $\mathcal{C}$, then $X\mapsto \ell\cap \mathfrak{p}_\mathcal{C}(X)$ is an involution, i.e. 
 $$
-g:\mathbb{L}_A\to \mathbb{L}_B,\,AX_B\mapsto BX_A\text{ 保交比}\implies AX_B\cap BX_A\text{ 軌跡為過 }P\text{ 的錐線}
+f:X\mapsto P(\ell\cap \mathfrak{p}_\mathcal{C}(X))
+$$ 
+is projective. When $\ell$ is tangent to $\mathcal{C}$, we fix $A,B\in\mathcal{C}$, and let $XA,XB$ intersect $\mathcal{C}$ again at $X_A,X_B$. Consider the projective map
 $$
-故由 Brocard 定理，$f:X\mapsto AX_B\cap BX_A\mapsto P(AX_B\cap BX_A)$ 保交比。
+g:\mathbb{L}_A\to \mathbb{L}_B,\,AX_B\mapsto BX_A
+$$
+By Steiner conic, the locus of $AX_B\cap BX_A$ is a conic through $P$. From Brocard theorem, 
+$$
+f:X\mapsto AX_B\cap BX_A\mapsto P(AX_B\cap BX_A)
+$$
+is projective.
 :::
 
 ::: {.unnumbered-env}
 **Example.**
-對兩個不同錐線的配極變換的合成 $\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ 是射影變換。
+The composition $\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ of the polar transformation with respect to two conics $\mathcal{C}_1$ and $\mathcal{C}_2$ is a projective transformation.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-因為五點決定一個錐線，所以兩錐線最多有四個交點。假設 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 交於四點 $A,\,B,\,C,\,D$，則 $\rho=\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ 的不動點就是滿足 $\mathfrak{p}_{\mathcal{C}_1}=\mathfrak{p}_{\mathcal{C}_2}$ 的點，由 Brocard 定理，$ABCD$ 的西瓦三角形頂點都是 $\rho$ 的不動點。這說明 $\rho$ 跟錐線交點有很大的關聯。
+Since five points determine a conic, so there are at most $4$ intersections of two distinct conics. Assume that $\mathcal{C}_1$ and $\mathcal{C}_2$ intersect at four distinct points $A,\,B,\,C,\,D$, then the fixed points of $\rho=\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ are exactly the points satisfying $\mathfrak{p}_{\mathcal{C}_1}=\mathfrak{p}_{\mathcal{C}_2}$. From Brocard theorem, the cevian triangle of $ABCD$ are the fixed points of $\rho$. This suggests that there is a close relation between the projective transformation $\rho$ and the intersection of conics.
 :::
 
-配極變換會把直線與點交換並滿足 $P\in m\iff \mathfrak{p}_\mathcal{C}(m)\in \mathfrak{p}_\mathcal{C}(P)$ 且保交比。這說明了配極變換實現了對偶：要得到對偶命題只需要將原命題對任意的錐線配極就好了。
+The polar transformation $\mathfrak{p}_\mathcal{C}$ interchanges points and lines, satisfies the relation
+$$P\in m\iff \mathfrak{p}_\mathcal{C}(m)\in \mathfrak{p}_\mathcal{C}(P)
+$$ 
+and preserves cross ratio. This shows that polar transformations realize duality: to obtain the dual statement, we take the polar transformation of any conic.
 
 ::: {.unnumbered-env}
 **Remark.**
-考慮所有可以實現對偶的變換 $\mathfrak{p}$，也就是
+Consider all transformations $\mathfrak{p}$ that realize duality, i.e. $\mathfrak{p}$ consists of functions
 $$
-\text{保交比的 }\mathfrak{p}:\mathbb{P}\to \mathbb{L}\text{ 與 }\mathfrak{p}:\mathbb{L}\to \mathbb{P}\text{ 使得 }P\in m\iff\mathfrak{p}(m)\in \mathfrak{p}(P)
+\mathfrak{p}:\mathbb{P}\to \mathbb{L}, \mathfrak{p}:\mathbb{L}\to \mathbb{P}
 $$
-稱這類型的變換為對偶變換。與射影變換一樣，對偶變換被四個任三點不共線的點唯一刻劃（證明方法與 @thm-projtransunique 相同）。注意到配極變換還滿足 $\mathfrak{p}\circ\mathfrak{p}(P)=P$，容易構造出一個不滿足這個的 $\mathfrak{p}$，也就是存在非配極變換的對偶變換。
+such that
+$$
+P\in m\iff\mathfrak{p}(m)\in \mathfrak{p}(P)
+$$
+and that $\mathfrak{p}$ preserves cross ratio. In this case, $\mathfrak{p}$ is said to be a dual transform. Similar to the case of projective transformations, a dual transformation is characterized by the value at four points (no three of which are collinear) by the same argument in @thm-projtransunique. Suppose that $\mathfrak{p}$ is some polar transformation, then $\mathfrak{p}\circ\mathfrak{p}(P)=P$, so it is clear that there exist dual transformations that are not polar transformations.
 :::
 
-三角形對錐線配極後會與原三角形透視。
+We will show that a triangle and its image under some polar transformation are perspective.
 
 ::: {#thm-poleperspective}
-給定錐線 $\mathcal{C}$ 與 $ABC$，令
+Given conic $\mathcal{C}$ and triangle $ABC$, set 
 $$
 A_1=\mathfrak{p}_\mathcal{C}(BC),\,B_1=\mathfrak{p}_\mathcal{C}(CA),\,C_1=\mathfrak{p}_\mathcal{C}(AB)
 $$
-則三角形 $ABC$ 與 $A_1B_1C_1$ 透視。
+then $ABC$ and $A_1B_1C_1$ are perspective.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-若 $A,\,B,\,C$ 皆在 $\mathcal{C}$ 上，則對六折線 $AABBCC$ 使用帕斯卡定理可知 $ABC$ 與 $A_1B_1C_1$ 有透視軸。故不失一般性假設 $A\notin\mathcal{C}$。
+Suppose that $A,\,B,\,C$ are on $\mathcal{C}$. Applying Pascal theorem to the hexagon $AABBCC$, we obtain the perspectrix of $ABC$ and $A_1B_1C_1$. 
 
-令 $BB_1\cap CC_1=P$，$B_1C_1$ 分別與 $BC,\,CA,\,AB,\,AP$ 交於 $D,\,E,\,F,\,Q$，則
+Without loss of generality, we may assume that $A\notin\mathcal{C}$. Set $BB_1\cap CC_1=P$, and let $B_1C_1$ intersect lines $BC,\,CA,\,AB,\,AP$ at $D,\,E,\,F,\,Q$, respectively, then
 $$
 (D,Q;B_1,C_1)\mathop{=}\limits^{P}(D,AP\cap BC;B,C)\mathop{=}\limits^{A}(D,Q;F,E)=(Q,D;E,F)
 $$
-也就是 $(D,Q),\,(B_1,E),\,(C_1,F)$ 為對合對。
+i.e. $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution.
 
-注意到 $B_1$, $E$ 關於 $\mathcal{C}$ 共軛，$C_1$, $F$ 關於 $\mathcal{C}$ 共軛，故上面的對合就是 $\mathcal{C}$ 在 $B_1C_1$ 上引出的對合，也就是說 $Q$, $D$ 關於 $\mathcal{C}$ 共軛，所以 $Q\in\mathfrak{p}_\mathcal{C}(D)=\mathfrak{p}_\mathcal{C}(B_1C_1)\cap \mathfrak{p}_\mathcal{C}(BC)=AA_1$，
-故 $AA_1\cap B_1C_1=Q$，也就是 $A$, $A_1$, $P$ 共線，$ABC$ 與 $A_1B_1C_1$ 透視。
+Note that $B_1,E$ are conjugate, and $C_1,F$ are conjugate (with respect to $\mathcal{C}$), so the involution is the one induced by $\mathcal{C}$, i.e. $Q, D$ are conjugate with respect to $\mathcal{C}$, and 
+$$
+Q\in\mathfrak{p}_\mathcal{C}(D)=\mathfrak{p}_\mathcal{C}(B_1C_1)\cap \mathfrak{p}_\mathcal{C}(BC)=AA_1
+$$
+We see that $AA_1\cap B_1C_1=Q$, i.e. $A,A_1,P$ are collinear.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-@thm-poleperspective 一開始證明 $(D,Q),\,(B_1,E),\,(C_1,F)$ 為對合，這可以用後面的 Desargues 對合定理來看。
+In the beginning of the proof of @thm-poleperspective, we showed that $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution. This is direct from Desargues involution theorem, which will be introduced later.
 :::
