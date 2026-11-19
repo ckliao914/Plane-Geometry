@@ -246,56 +246,58 @@ Let the tangent of $P$ to $\mathcal{C}$ be $\ell$, and set $Y=f(X)$, then $Xf(Y)
 For any cross-ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$ and apply the conclusion on conics to $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
 :::
 
-## 錐線與延拓射影變換
+## Extension of Projective Maps Between Conics
 
-考慮將保交比函數延伸成一個射影變換的問題。
+We investigate the problem of extending projective maps to projective transformations.
 
 ::: {#thm-extension}
-給定錐線 $\mathcal{C}_1, \mathcal{C}_2$ 及保交比的 $f:\mathcal{C}_1\to \mathcal{C}_2$，則存在唯一的射影變換 $\rho$ 使得對於所有 $X\in\mathcal{C}_1$，$\rho(X)=f(X)$，$\rho$ 稱為 $f$ 的延拓（extension）。
+Given conics $\mathcal{C}_1, \mathcal{C}_2$ and a projective map $f:\mathcal{C}_1\to \mathcal{C}_2$, there exists a unique projective transformation $\rho$ such that for each $X\in\mathcal{C}_1$, $\rho(X)=f(X)$. The projective transformation $\rho$ is called the extension of $f$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-考慮 $X_1,X_2,X_3,X_4\in\mathcal{C}_1$，令 $c=(X_1,X_2;X_3,X_4)_{\mathcal{C}_1}$，$\rho$ 為滿足 $\rho(X_i)=f(X_i)$ 的射影變換（$i=1,2,3,4$），則（所以 $\rho$ 是唯一的）
+Fix $X_1,X_2,X_3,X_4\in\mathcal{C}_1$. Let $c=(X_1,X_2;X_3,X_4)_{\mathcal{C}_1}$, $\rho$ be the projective transformation satisfying $\rho(X_i)=f(X_i)$ for $i=1,2,3,4$ (so $\rho$ is unique), then
 $$
 \mathcal{C}_1=\{X\mid X(X_1,X_2;X_3,X_4)=c\}
 $$
-在 $\rho$ 作用過後，因為 $(f(X_1),f(X_2);f(X_3),f(X_4))_{\mathcal{C}_2}=c$，所以
+Applying $\rho$, $(f(X_1),f(X_2);f(X_3),f(X_4))_{\mathcal{C}_2}=c$, so
 $$
 \rho(\mathcal{C}_1)=\{Y\mid Y(f(X_1),f(X_2);f(X_3),f(X_4))=c\}=\mathcal{C}_2
 $$
-因為射影變換保交比，故對於所有 $X\in\mathcal{C}_1$，$\rho(X)=f(X)$。
+Since projective transformations preserve cross ratio, for all $X\in\mathcal{C}_1$, $\rho(X)=f(X)$。
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-如果 $f:\mathcal{C}\to\mathcal{C}$，要證明延拓的存在性，還有另一種看法。因為 $f$ 總是可以寫成兩個對合變換的合成，不失一般性假設 $f$ 為過點 $P$ 的對合，$\ell$ 為 $f$ 的射影軸。此時給定 $A,B,C\in \mathcal{C}$，定義 $\rho$ 為 $ABC$ 到 $f(A)f(B)f(C)$ 的透視變換，則由 @lem-polar 與 @lem-perspectivefix，可知
+Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the existence of the extension. Since $f$ is the composition of two involutions, without loss of generality we assume that $f$ is the involution with perspector $P$, and $\ell$ is the projective axis of $f$.
+
+Given $A,B,C\in \mathcal{C}$, define $\rho$ to be the perspective transformation from $ABC$ to $f(A)f(B)f(C)$. From @lem-polar and @lem-perspectivefix,
 $$
 (f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1\implies \rho(f(A))=A
 $$
-同理有 $\rho$ 為對合透視，故 $\rho(\mathcal{C})=\mathcal{C}$，且滿足 $\rho(X)=f(X)$ 對於所有 $X\in\mathcal{C}$。
+Similarly, $\rho$ is an involutive transformation, so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$。
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-假設 $f:\mathcal{C}\to \mathcal{C}$ 有兩個不動點 $P_1,P_2$，$\rho$ 為 $f$ 的延拓。令 $\ell_1,\ell_2$ 為 $P_1,P_2$ 的切線，則 $\rho(\ell_1)$ 仍與 $\mathcal{C}$ 相切於 $\rho(P_1)=P_1$，也就是 $\rho(\ell_1)=\ell_1$，同理 $\rho(\ell_2)=\ell_2$。令 $P=\ell_1\cap \ell_2$，則 $\rho(P)=P$，也就是 $P_1,P_2,P$ 為 $\rho$ 的不動點。
+Suppose that $P_1,P_2$ are two distinct fixed points of the projective map $f:\mathcal{C}\to \mathcal{C}$, and $\rho$ is the extension of $f$. Let $\ell_1,\ell_2$ be the tangent of $P_1,P_2$ to $\mathcal{C}$, respectively, then $\rho(\ell_1)$ is tangent to $\mathcal{C}$ at $\rho(P_1)=P_1$, i.e. $\rho(\ell_1)=\ell_1$, and similarly, $\rho(\ell_2)=\ell_2$. Let $P=\ell_1\cap \ell_2$, then $\rho(P)=P$, i.e. $P_1,P_2,P$ are the fixed points of $\rho$.
 :::
 
 ::: {#lem-projfixlineintersection}
-給定射影變換 $\rho$，直線 $\ell$ 為不動線，即 $\rho(\ell)=\ell$。選定 $\ell$ 上兩點 $P,Q$，$X$ 為任意點，令
+Given a projective transformation $\rho$ with $\ell$ its fixed line (i.e. $\rho(\ell)=\ell$). Fix $P,Q\in \ell$, and for any point $X\in \mathbb{P}$, define
 $$
 \rho_1:X\mapsto PX\cap Q\rho(X)
 $$
-則 $\rho_1$ 為射影變換。
+then $\rho_1$ is a projective transformation.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $X$ 在直線 $m\neq\ell$ 上變動，則 $PX\mapsto Q\rho(X)$ 保交比，且考慮 $X=\ell\cap m$ 的時候，可知 $PX=Q\rho(X)$，故由 Steiner conic，$\rho_1(X)$ 的軌跡為直線，且 $X\mapsto \rho_1(X)$ 保交比。所以 $\rho_1$ 保共線及交比，為射影變換。
+Let $X$ vary on $m\neq\ell$, then $PX\mapsto Q\rho(X)$ is a projective map, and when $X=\ell\cap m$, $PX=Q\rho(X)$, so by Steiner conic,  the locus of $\rho_1(X)$ is a line, and $X\mapsto \rho_1(X)$ is projective, so $\rho_1$ preserves collinearity and cross ratio.
 :::
 
-若給一個保交比的 $f:\mathcal{C}_1\to \mathcal{C}_2$，則可以考慮 $f$ 的延拓 $\rho$，若 $\rho$ 有不動線 $PQ$ 則可以使用 @lem-projfixlineintersection 知道 $PX\cap Q\rho(X)$ 的軌跡（$X\in\mathcal{C}_1$）為錐線。特別地，取 $f:\mathcal{C}\to\mathcal{C}$，則 $f$ 的射影軸為 $\rho$ 的不動線，用 @lem-projfixlineintersection 可以得到下面的推論。
+Given a projective map $f:\mathcal{C}_1\to \mathcal{C}_2$ and its extension $\rho$. Suppose that $PQ$ is a fixed line of $\rho$, then from @lem-projfixlineintersection, the locus of $PX\cap Q\rho(X)$ ($X\in\mathcal{C}_1$) is a conic. In particular, take $f:\mathcal{C}\to\mathcal{C}$, then the projective axis of $f$ is a fixed line of $\rho$, from @lem-projfixlineintersection we obtain the following corollary.
 
 ::: {#cor-projaxisconic}
-給定錐線 $\mathcal{C}$ 及 $f:\mathcal{C}\to\mathcal{C}$，$\ell$ 為射影軸，$P,Q$ 在 $\ell$ 上，則 $PX\cap Qf(X)$ 的軌跡為一錐線（$X\in \mathcal{C}$）。
+Let $\mathcal{C}$ be a conic and $f:\mathcal{C}\to\mathcal{C}$ be a projective map with projective axis $\ell$. Fix points $P,Q \in\ell$, then the locus of $PX\cap Qf(X)$ ($X\in \mathcal{C}$) is a conic.
 :::
