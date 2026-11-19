@@ -273,7 +273,7 @@ Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the
 
 Given $A,B,C\in \mathcal{C}$, define $\rho$ to be the perspective transformation from $ABC$ to $f(A)f(B)f(C)$ (the perspector and perspectrix are $P$ and $\ell$, respectively). From @lem-polar and @lem-perspectivefix,
 $$
-(f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1
+(f(A),\rho(f(A));P,f(A)P\cap \ell)=-1=(A,\rho(A);P,AP\cap \ell)
 $$
 This implies that $\rho(f(A))=A$ and that $\rho$ is an involutive transformation (from the second equality), so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$.
 :::
