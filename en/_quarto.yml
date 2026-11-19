@@ -23,7 +23,7 @@ format:
               sangle: "\\sphericalangle",
               X: "\\mathsf{X}",
               comp: "\\raise{-0.2ex}{\\complement}",
-              anticomp: ["\\style{display: inline-block; transform: scaleX(-1);}{#1}", 1]
+              anticomp: ["\\style{display: inline-block; transform: scaleX(-1);}{\\comp}", 0]
             }
           },
           output: {
