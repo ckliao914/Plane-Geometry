@@ -256,7 +256,7 @@ Given conics $\mathcal{C}_1, \mathcal{C}_2$ and a projective map $f:\mathcal{C}_
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Fix $X_1,X_2,X_3,X_4\in\mathcal{C}_1$. Let $c=(X_1,X_2;X_3,X_4)_{\mathcal{C}_1}$, $\rho$ be the projective transformation satisfying $\rho(X_i)=f(X_i)$ for $i=1,2,3,4$ (so $\rho$ is unique), then
+Fix $X_1,X_2,X_3,X_4\in\mathcal{C}_1$ and set $c=(X_1,X_2;X_3,X_4)_{\mathcal{C}_1}$. Let $\rho$ be the projective transformation satisfying $\rho(X_i)=f(X_i)$ for $i=1,2,3,4$ (so $\rho$ is unique). Note that
 $$
 \mathcal{C}_1=\{X\mid X(X_1,X_2;X_3,X_4)=c\}
 $$
@@ -264,27 +264,27 @@ Applying $\rho$, $(f(X_1),f(X_2);f(X_3),f(X_4))_{\mathcal{C}_2}=c$, so
 $$
 \rho(\mathcal{C}_1)=\{Y\mid Y(f(X_1),f(X_2);f(X_3),f(X_4))=c\}=\mathcal{C}_2
 $$
-Since projective transformations preserve cross ratio, for all $X\in\mathcal{C}_1$, $\rho(X)=f(X)$。
+Since projective transformations preserve cross ratio, for all $X\in\mathcal{C}_1$, $\rho(X)=f(X)$.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the existence of the extension. Since $f$ is the composition of two involutions, without loss of generality we assume that $f$ is the involution with perspector $P$, and $\ell$ is the projective axis of $f$.
+Let $f:\mathcal{C}\to\mathcal{C}$. In this case, there is another way to see the existence of the extension. Since $f$ is the composition of two involutions, without loss of generality, we assume that $f$ is the involution with perspector $P$, and $\ell$ is the projective axis of $f$.
 
 Given $A,B,C\in \mathcal{C}$, define $\rho$ to be the perspective transformation from $ABC$ to $f(A)f(B)f(C)$. From @lem-polar and @lem-perspectivefix,
 $$
-(f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1\implies \rho(f(A))=A
+(f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1
 $$
-Similarly, $\rho$ is an involutive transformation, so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$。
+This implies $\rho(f(A))=A$. Similarly, $\rho$ is an involutive transformation, so $\rho(\mathcal{C})=\mathcal{C}$ and $\rho(X)=f(X)$ for all $X\in\mathcal{C}$.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-Suppose that $P_1,P_2$ are two distinct fixed points of the projective map $f:\mathcal{C}\to \mathcal{C}$, and $\rho$ is the extension of $f$. Let $\ell_1,\ell_2$ be the tangent of $P_1,P_2$ to $\mathcal{C}$, respectively, then $\rho(\ell_1)$ is tangent to $\mathcal{C}$ at $\rho(P_1)=P_1$, i.e. $\rho(\ell_1)=\ell_1$, and similarly, $\rho(\ell_2)=\ell_2$. Let $P=\ell_1\cap \ell_2$, then $\rho(P)=P$, i.e. $P_1,P_2,P$ are the fixed points of $\rho$.
+Suppose that $P_1,P_2$ are two distinct fixed points of the projective map $f:\mathcal{C}\to \mathcal{C}$, and $\rho$ is the extension of $f$. Let $\ell_1,\ell_2$ be the tangents of $P_1,P_2$ to $\mathcal{C}$, respectively, then $\rho(\ell_1)$ is tangent to $\mathcal{C}$ at $\rho(P_1)=P_1$, i.e. $\rho(\ell_1)=\ell_1$, and similarly, $\rho(\ell_2)=\ell_2$. Let $P=\ell_1\cap \ell_2$, then $\rho(P)=P$, i.e. $P_1,P_2,P$ are the fixed points of $\rho$.
 :::
 
 ::: {#lem-projfixlineintersection}
-Given a projective transformation $\rho$ with $\ell$ its fixed line (i.e. $\rho(\ell)=\ell$). Fix $P,Q\in \ell$, and for any point $X\in \mathbb{P}$, define
+Let $\rho$ be a projective transformation with a fixed line $\ell$ (i.e. $\rho(\ell)=\ell$). Fix $P,Q\in \ell$, and for any point $X\in \mathbb{P}$, define
 $$
 \rho_1:X\mapsto PX\cap Q\rho(X)
 $$
@@ -296,7 +296,7 @@ then $\rho_1$ is a projective transformation.
 Let $X$ vary on $m\neq\ell$, then $PX\mapsto Q\rho(X)$ is a projective map, and when $X=\ell\cap m$, $PX=Q\rho(X)$, so by Steiner conic,  the locus of $\rho_1(X)$ is a line, and $X\mapsto \rho_1(X)$ is projective, so $\rho_1$ preserves collinearity and cross ratio.
 :::
 
-Given a projective map $f:\mathcal{C}_1\to \mathcal{C}_2$ and its extension $\rho$. Suppose that $PQ$ is a fixed line of $\rho$, then from @lem-projfixlineintersection, the locus of $PX\cap Q\rho(X)$ ($X\in\mathcal{C}_1$) is a conic. In particular, take $f:\mathcal{C}\to\mathcal{C}$, then the projective axis of $f$ is a fixed line of $\rho$, from @lem-projfixlineintersection we obtain the following corollary.
+Consider a projective map $f:\mathcal{C}_1\to \mathcal{C}_2$ and its extension $\rho$. Suppose that $PQ$ is a fixed line of $\rho$, then from @lem-projfixlineintersection, the locus of $PX\cap Q\rho(X)$ ($X\in\mathcal{C}_1$) is a conic. In particular, take $f:\mathcal{C}\to\mathcal{C}$, then the projective axis of $f$ is a fixed line of $\rho$. From @lem-projfixlineintersection, we obtain the following corollary.
 
 ::: {#cor-projaxisconic}
 Let $\mathcal{C}$ be a conic and $f:\mathcal{C}\to\mathcal{C}$ be a projective map with projective axis $\ell$. Fix points $P,Q \in\ell$, then the locus of $PX\cap Qf(X)$ ($X\in \mathcal{C}$) is a conic.
