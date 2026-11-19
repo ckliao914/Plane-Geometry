@@ -3,118 +3,132 @@
 ## Definition and Existence of Conics
 
 ::: {#lem-pascalcond}
-$A,B,C,D,E,F$ 滿足任三點不共線，則
+Let $A,B,C,D,E,F$ be points such that no three of them are collinear, then
 $$
 A(B,D;E,F)=C(B,D;E,F)
 $$
-若且唯若 $P=AB\cap DE$，$Q=BC\cap EF$，$R=CD\cap FA$ 共線。
+if and only if 
+$$P=AB\cap DE,\,Q=BC\cap EF,\,R=CD\cap FA$$ 
+are collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-因為
+Since
 $$
 A(B,D;E,F)=(P,D;E,AF\cap DE),\,\,C(B,D;E,F)=(Q,CD\cap EF;E,F)
 $$
-故
+we see that
 $$
 A(B,D;E,F)=C(B,D;E,F)\iff(P,D;E,AF\cap DE)=(Q,CD\cap EF;E,F)
 $$
-這等價 $PQ,CD,AF$ 共點，也就是 $P,Q,R$ 共線。
+This is equivalent to $PQ,CD,AF$ being concurrent, i.e. $P,Q,R$ are collinear.
 :::
 
-@lem-pascalcond 中的 $PQR$ 共線可以看成是六折線 $ABCDEF$ 的對邊交點，所以依據對稱性這也等價 $B(A,C;E,F)=D(A,C;E,F)$，也就是說六點中只要有兩點對其他四點的交比相同，那任取六點中的兩點對其他四點的交比皆相同，這六點的關係是對稱的。以下暫時把這個交比相等的關係稱為 Pascal 條件。
+In @lem-pascalcond, the points $P,Q,R$ are the intersections of the three pairs of opposite sides of the hexagon $ABCDEF$, so by symmetry this is equivalent to $B(A,C;E,F)=D(A,C;E,F)$. In conclusion, if two points among the six can be chosen so that the cross ratio of the remaining four points from each of them is the same, then this holds for any choice of two points among them. That is, the relation among these six points is symmetric. We temporarily call this relation the Pascal condition.
 
 ::: {#lem-pascaltrans}
-相異點 $A,B,C,D,E,F,G$ 滿足任三點不共線，若 $ABCDEF$ 與 $ABCDEG$ 皆滿足 Pascal 條件，則 $ABCDFG$ 亦滿足 Pascal 條件。
+Let $A,B,C,D,E,F,G$ be points such that no three of them are collinear. Suppose that $ABCDEF$ and $ABCDEG$ satisfy the Pascal condition, then $ABCDFG$ also satisfies the Pascal condition.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-考慮保交比的函數
+Consider the projective map
 $$
 f:\mathbb{L}_A\to\mathbb{L}_B,\,f(AC)=BC,\, f(AD)=BD,\, f(AE)=BE
 $$
-則由帕斯卡條件，$f(AF)=BF$，$f(AG)=BG$，所以 $ABCDFG$ 滿足帕斯卡條件。
+From the Pascal condition of $ABCDEF$ and $ABCDEG$, $f(AF)=BF$, $f(AG)=BG$, so $ABCDFG$ satisfies the Pascal condition.
 :::
 
-由此可以構造出一個 $\mathbb{P}$ 的子集使其中任六點都滿足 Pascal 條件。
+From this we construct a subset of $\mathbb{P}$ such that any six-point subset satisfies the Pascal condition.
 
 ::: {#lem-steinerconstruct}
-給定相異點 $A,B$，及保交比的 $f:\mathbb{L}_A\to\mathbb{L}_B$ 滿足 $f(AB)\neq BA$，則 $\ell\cap f(\ell)$ 蒐集的所有點任三點皆不共線，且任六點皆滿足 Pascal 條件。
+Given distinct points $A,B$ and a projective map $f:\mathbb{L}_A\to\mathbb{L}_B$ such that $f(AB)\neq BA$, then any six-point subset of the set
+$$
+\{\ell\cap f(\ell)\mid \ell\in \mathbb{L}_A\}
+$$ 
+satisfies the Pascal condition (so no three points are collinear).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $\ell_i\cap f(\ell_i)=X_i$，$i=1,\ldots,6$，其中 $X_i\neq A,B$。因為 $f$ 保交比，$A$ 與 $B$ 皆不可能跟另外兩個 $X_i$ 共線。若 $X_1,X_2,X_3$ 共線，則
+Let $\ell_i\cap f(\ell_i)=X_i$ where $i=1,\ldots,6$, and $X_i\neq A,B$. Since $f$ is projective, $A,X_i,X_j$ cannot be collinear where $i\neq j$ (similarly $B,X_i,X_j$ cannot be collinear). If $X_1,X_2,X_3$ are collinear, then
 $$
-A(X_1,X_2;X_3,B)=B(X_1,X_2;X_3,A)\text{ ，即 }f(AB)=BA
+A(X_1,X_2;X_3,B)=B(X_1,X_2;X_3,A)
 $$
-矛盾，故任三點不共線。
+i.e. $f(AB)=BA$, contradiction. We conclude that no three points in the set are collinear.
 
-因為 $AX_1X_2X_3BX_4$ 與 $AX_1X_2X_3BX_5$ 滿足 Pascal 條件，故 $AX_1X_2X_3X_4X_5$ 滿足 Pascal 條件，同理 $AX_1X_2X_3X_4X_6$ 滿足 Pascal 條件，故由 @lem-pascaltrans，$X_1X_2X_3X_4X_5X_6$ 滿足 Pascal 條件。
+Since $AX_1X_2X_3BX_4$ and $AX_1X_2X_3BX_5$ satisfy the Pascal condition, $AX_1X_2X_3X_4X_5$ also satisfies the Pascal condition. Analogously, $AX_1X_2X_3X_4X_6$ satisfies the Pascal condition, so from @lem-pascaltrans, $X_1X_2X_3X_4X_5X_6$ satisfies the Pascal condition.
 :::
 
 ::: {#lem-tangentlem}
-若 $A,B,C,D,E$ 任三點不共線，$\ell\in\mathbb{L}_A$ 滿足
+Let $A,B,C,D,E$ be points such that no three of them are collinear. Suppose that $\ell\in\mathbb{L}_A$ satisfies
 $$
 (AC,AD;AE,\ell)=B(C,D;E,A)
 $$
-則 $\ell$ 上不會存在 $F\neq A$ 使得 $F(C,D;E,A)=B(C,D;E,A)$。
+then for any $F\neq A$ on $\ell$, $F(C,D;E,A)\neq B(C,D;E,A)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-若存在 $F$，則 $F(C,D;E,A)=A(C,D;E,F)$，$CDE$ 共線（@thm-collinear），矛盾。
+Suppose that $F\neq A\in \ell$ satisfies $F(C,D;E,A)= B(C,D;E,A)$, then $F(C,D;E,A)=A(C,D;E,F)$, i.e. $C,D,E$ are collinear by @thm-collinear, which is a contradiction.
 :::
 
 ::: {.unnumbered-env}
 **Definition.**
-一個集合 $\mathcal{C}\subset\mathbb{P}$ 被稱為（非退化）錐線（conic）如果
+A non-empty set $\mathcal{C}\subset\mathbb{P}$ is said to be a (nondegenerate) **conic** if
 
-(1) $\mathcal{C}$ 中任三相異點不共線（$\mathcal{C}$ 非空）。
+(1) No three points in $\mathcal{C}$ are collinear.
 
-(2) $\mathcal{C}$ 中任意六相異點皆滿足 Pascal 條件。
+(2) Any six-point set in $\mathcal{C}$ satisfies the Pascal condition.
 
-(3) 對於任意 $P\in\mathcal{C}$，存在唯一一條過 $P$ 的直線 $\ell$ 使得 $\mathbb{P}_\ell\cap\mathcal{C}=\{P\}$，稱 $\ell$ 為 $P$ 對 $\mathcal{C}$ 的切線（tangent）。這代表其他過 $P$ 的直線都會再過 $\mathcal{C}$ 上另一點。
+(3) For any $P\in\mathcal{C}$, there exists a unique line $\ell$ through $P$ such that 
+$$
+\mathbb{P}_\ell\cap\mathcal{C}=\{P\}
+$$
+the line $\ell$ is called the **tangent** of $P$ to $\mathcal{C}$. This implies that any other line passing through $P$ passes through a second point on $\mathcal{C}$.
 :::
 
-注意到 @lem-tangentlem 中的 $\ell$ 的構造說明了切線一定要存在。
+Note that the construction in @lem-tangentlem implies the existence of the tangent $\ell$.
 
 ::: {#thm-conicexist}
-給定五點 $A,B,C,D,E$，其中任三點不共線，則存在唯一的非退化錐線 $\mathcal{C}$ 經過這五點，此錐線記為 $(ABCDE)$。
+Given $A,B,C,D,E$ (no three of them are collinear), there exists a unique (nondegenerate) conic $\mathcal{C}$ passing through the five points. This conic is denoted by $(ABCDE)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-考慮保交比的函數
+Consider the projective map
 $$
 f:\mathbb{L}_A\to\mathbb{L}_B,\,f(AC)=BC, \,f(AD)=BD,\, f(AE)=BE
 $$
-若 $f(AB)=BA$，由 @thm-collinear 可知 $C$，$D$，$E$ 共線，矛盾。
+Suppose that $f(AB)=BA$, then @thm-collinear implies that $C,D,E$ are collinear, which is a contradiction.
 
-由 @lem-steinerconstruct，令 $\ell\cap f(\ell)$ 的集合為 $\mathcal{C}$，可知 $\mathcal{C}$ 中任三點不共線，任六點滿足帕斯卡條件。令 $P$ 為 $\mathcal{C}$ 上一點，若 $\ell$ 過 $P$ 且僅與 $\mathcal{C}$ 交於一點 $P$，則考慮保交比的函數
+From @lem-steinerconstruct, let $\mathcal{C}=\{\ell\cap f(\ell)\mid \ell\in \mathbb{L}_A\}$, then no three points in $\mathcal{C}$ are collinear, and any six-point set in $\mathcal{C}$ satisfies the Pascal condition. 
+
+Let $P$ be a point on $\mathcal{C}$. Suppose that $\ell$ passes through $P$ such that $\ell$ and $\mathcal{C}$ intersect at exactly one point $P$, then we consider the projective map
 $$
 g:\mathbb{L}_P\to\mathbb{L}_A,\,g(PC)=AC,\, g(PD)=AD,\, g(PE)=AE
 $$
-考慮 $\ell\cap g(\ell)=X$，則 $PACDEX$ 滿足帕斯卡條件，又 $ABCDEP$ 滿足帕斯卡條件，故 $ABCDEX$ 滿足帕斯卡條件，也就是 $X\in\mathcal{C}$，$X=P$，所以 $g(\ell)=AP$，$\ell$ 是唯一的，也就是 $\mathcal{C}$ 為錐線，並且容易從此構造看出 $\mathcal{C}$ 的唯一性。
+Set $\ell\cap g(\ell)=X$, then $PACDEX$ satisfies the Pascal condition, and $ABCDEP$ satisfies the Pascal condition, so $ABCDEX$ satisfies the Pascal condition. We see that $X\in\mathcal{C}$, $X=P$, i.e. $g(\ell)=AP$ and $\ell$ is unique. We conclude that $\mathcal{C}$ is a conic, and the uniqueness of $\mathcal{C}$ is clear from this construction.
 :::
 
-這說明了錐線的存在以及構造方式。
+We have established the existence of conics by construction. If six points lie on the same conic, they are said to be conconic.
 
 ::: {#thm-Pascal}
 ## Pascal theorem
-$ABCDEF$ 滿足任三點不共線，則 $ABCDEF$ 共錐線若且唯若 $AB\cap DE$，$BC\cap EF$，$CD\cap FA$ 共線。
+Suppose that no three of $ABCDEF$ are collinear, then $ABCDEF$ are conconic if and only if 
+$$AB\cap DE,\,BC\cap EF,\,CD\cap FA$ 
+are collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-這就是 @lem-pascalcond 的敘述。
+This is the statement of @lem-pascalcond.
 :::
 
-要使用 Pascal 定理時通常會說對六折線 $ABCDEF$ 使用。注意到 Pascal 定理與錐線的交比條件是等價的，故考慮錐線 $(ABCDE)$ 時亦可對 $AABCDE$ 這類的六折線使用，此時 $AA$ 會是 $A$ 的切線。
+In the statement of Pascal theorem, we say that we apply Pascal theorem to the hexagon $ABCDEF$. Since Pascal theorem and the cross ratio condition are equivalent, we may apply Pascal theorem to the hexagon $AABCDE$ on the conic $(ABCDE)$. In this case, $AA$ is viewed as the tangent of $A$ to $(ABCDE)$.
 
 ::: {.unnumbered-env}
 **Remark.**
-注意到 Pappus 定理是 Pascal 定理在兩直線上的特例；或是 @lem-steinerconstruct 中當 $f(AB)=BA$ 時，所有 $\ell\cap f(\ell)$ 的軌跡是一直線與 $AB$ 的聯集。這說明兩條直線也是某種退化的錐線，以下若容許錐線退化會特別說明。
+Note that Pappus theorem is the special case of Pascal theorem on two lines; or in @lem-steinerconstruct, when $f(AB)=BA$, the locus of all points $\ell\cap f(\ell)$ is the union of a line and $AB$. This suggests that we may view the union of two lines as a degenerate conic. In the following, we will specify if conics may be degenerate.
 :::
