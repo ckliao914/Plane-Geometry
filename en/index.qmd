@@ -17,5 +17,8 @@ In the complex projective plane, the hypothesis is satisfied, and we call the po
 
 * [Chapter 1: The Complex Projective Plane and Cross Ratio](ch1.html)
 
+* [Chapter 2: Conics and Pole-Polar Duality](ch2.html)
+
+
 ---
 [← Back to Main Site](../index.html)
