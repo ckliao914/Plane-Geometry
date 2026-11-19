@@ -163,7 +163,7 @@ This follows from @thm-collinear and @lem-steinerconstruct.
 :::
 
 ::: {#thm-projaxis}
-Let $\mathcal{C}$ be a conic, $f:\mathcal{C}\to\mathcal{C}$ be a projective map (that is not the identity), then there exists a unique line such that for each $X,Y\in \mathcal{C}$,
+Let $\mathcal{C}$ be a conic, $f:\mathcal{C}\to\mathcal{C}$ be a projective map (that is not the identity), then there exists a unique line $\ell$ such that for each $X,Y\in \mathcal{C}$,
 $$
 Xf(Y)\cap Yf(X)\in\ell
 $$
@@ -172,7 +172,7 @@ We call $\ell$ the **projective axis** of $f$. Note that the intersections of $\
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Fix $A\in\mathcal{C}$, considert the projective map
+Fix $A\in\mathcal{C}$, consider the projective map
 $$
 g:\mathbb{L}_{f(A)}\to\mathbb{L}_A, \,f(A)X\mapsto X\mapsto f(X)\mapsto Af(X)
 $$
@@ -186,14 +186,14 @@ Apply Pascal theorem to the hexagon $Af(X)Yf(A)Xf(Y)$, $Xf(Y)\cap Yf(X)$ is also
 ::: {#lem-polar}
 Let $P\notin\mathcal{C}$. For any point $X\in\mathcal{C}$, let $X'$ be the second intersection of $PX$ and $\mathcal{C}$, then
 
-(1) There exists a unique line $\ell$ such that for any $X\in\mathcal{C}$, the harmonic conjugate $X_0$ of $P$ with respective to $X|X'$ is on $\ell$.
+(1) There exists a unique line $\ell$ such that for any $X\in\mathcal{C}$, the harmonic conjugate $X_0$ of $P$ with respect to $X|X'$ is on $\ell$.
 
-(2) The function $f:\mathcal{C}\to \mathcal{C}, X\mapsto X'$ is an involution, and the projective axis of $f$ is $\ell$. The intersection of the tangents of $X,X'$ to $\mathcal{C}$ intersect on $\ell$.
+(2) The function $f:\mathcal{C}\to \mathcal{C}, X\mapsto X'$ is an involution, and the projective axis of $f$ is $\ell$. The intersection of the tangents of $X,X'$ to $\mathcal{C}$ is on $\ell$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Fix point $A,B\in\mathcal{C}$ such that $P,A, B$ are not collinear, let $PA,PB$ interect $\mathcal{C}$ again at $A',B'$, and the harmonic conjugates of $P$ with respect to $A|A'$ and $B|B'$ are $A_0,B_0$, respectively. From @thm-collinear, the points
+Fix points $A,B\in\mathcal{C}$ such that $P,A, B$ are not collinear, let $PA,PB$ intersect $\mathcal{C}$ again at $A',B'$, and the harmonic conjugates of $P$ with respect to $A|A'$ and $B|B'$ are $A_0,B_0$, respectively. From @thm-collinear, the points
 $$
 AB\cap A'B', \,AB'\cap A'B,\, A_0,\, B_0
 $$
@@ -215,14 +215,14 @@ Let $f:\mathcal{C}\to \mathcal{C}$ be a projective map, then $f$ is an involutio
 :::
 
 ::: {#thm-twointersect}
-Given a conic $\mathcal{C}$ and a point $P\notin \mathcal{C}$, there exists two lines through $P$ tangent to $\mathcal{C}$. Given a line $m$ not tangent to $\mathcal{C}$, then $m$ and $\mathcal{C}$ intersect at two points.
+Given a conic $\mathcal{C}$ and a point $P\notin \mathcal{C}$, there exist two lines through $P$ tangent to $\mathcal{C}$. Given a line $m$ not tangent to $\mathcal{C}$, then $m$ and $\mathcal{C}$ intersect at two points.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Let $f_P:\mathcal{C}\to \mathcal{C}$ be the involution with perspector $P$. Let $P_1,P_2$ be the fixed points of $f_P$ (by @lem-invfix), then $PP_1,PP_2$ are the tangents.
 
-Fix $R,S\in m$, let the tangency points of the two tangents of $R$ (resp. $S$) to $\mathcal{C}$ be $A,A'$ (resp. $B,B'$). Set $Q=AA'\cap BB'$. From @lem-polar, let $f_Q$ be the involution on $\mathcal{C}$ with perspector $Q$, then the projective axis of $f_Q$ is $m$, so the fixed points $Q_1,Q_2$ of $f_Q$ is the intersection of $m$ and $\mathcal{C}$.
+Fix $R,S\in m$, let the tangency points of the two tangents of $R$ (resp. $S$) to $\mathcal{C}$ be $A,A'$ (resp. $B,B'$). Set $Q=AA'\cap BB'$. From @lem-polar, let $f_Q$ be the involution on $\mathcal{C}$ with perspector $Q$, then the projective axis of $f_Q$ is $m$, so the fixed points $Q_1,Q_2$ of $f_Q$ are the intersections of $m$ and $\mathcal{C}$.
 :::
 
 ::: {#cor-harmonicquad}
@@ -243,7 +243,7 @@ This is true for any cross-ratio set.
 ## Proof
 Let the tangent of $P$ to $\mathcal{C}$ be $\ell$, and set $Y=f(X)$, then $Xf(Y)\cap Yf(X)\in \ell$, i.e. $Xf(f(X))$ passes through the intersection of the tangents of $f(X),P$ to $\mathcal{C}$. The harmonicity follows from @cor-harmonicquad.
 
-For any cross-ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$, then we apply the conclusion on conics to the map $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
+For any cross-ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$ and apply the conclusion on conics to $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
 :::
 
 ## 錐線與延拓射影變換
