@@ -133,113 +133,117 @@ When applying Pascal theorem, we usually say we apply it to the hexagon $ABCDEF$
 Note that Pappus theorem is the special case of Pascal theorem on two lines; or in @lem-steinerconstruct, when $f(AB)=BA$, the locus of all points $\ell\cap f(\ell)$ is the union of a line and $AB$. This suggests that we may view the union of two lines as a degenerate conic. In what follows, conics are assumed to be nondegenerate unless stated otherwise.
 :::
 
-## 錐線上的交比、保交比函數與對合
+## Cross Ratios, Projective Maps, and Involutions on Conics
 
 ::: {.unnumbered-env}
 **Definition.**
-定義錐線 $\mathcal{C}$ 上四點 $ABCD$ 的交比為
+Define the cross ratio of points $A,B,C,D$ on $\mathcal{C}$ to be
 $$
 (A,B;C,D)_\mathcal{C}=P(A,B;C,D)
 $$
-其中 $P$ 為 $\mathcal{C}$ 上任一點（直線 $AA$ 的意思就是 $A$ 的切線）。由錐線的定義及 @lem-tangentlem 知道這個交比的值與 $P$ 的選取無關。
+where $P$ is an arbitrary point on $\mathcal{C}$ (the line $AA$ means the tangent at $A$). From the definition of conics and @lem-tangentlem, the value of the cross ratio does not depend on the choice of $P$.
 :::
+
+Conics are cross-ratio sets.
 
 ::: {#thm-steinerconic}
 ## Steiner conic
-$P,Q$ 為相異點，$f:\mathbb{L}_P\to \mathbb{L}_Q$ 保交比，則
+Let $P,Q$ be distinct points, $f:\mathbb{L}_P\to \mathbb{L}_Q$ be a projective map.
 
-(1) 若 $f(PQ)=QP$，則存在定線 $m$ 使得 $\ell$，$f(\ell)$，$m$ 共點（$\ell\in\mathbb{L}_P$）。
+(1) If $f(PQ)=QP$, then there exists a line $m$ such that $\ell, f(\ell), m$ are concurrent for each $\ell\in\mathbb{L}_P$.
 
-(2) 若 $f(PQ)\neq QP$，則 $\ell\cap f(\ell)$ 的軌跡為一過 $P,Q$ 的錐線（$\ell\in \mathbb{L}_P$）。
+(2) If $f(PQ)\neq QP$, then the locus of $\ell\cap f(\ell)$ (where $\ell\in \mathbb{L}_P$) is a conic passing through $P,Q$.
 
-且函數 $\ell\mapsto \ell\cap f(\ell)$ 保交比。
+Moreover, the function $\ell\mapsto \ell\cap f(\ell)$ is projective.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-由 @thm-collinear 及 @lem-steinerconstruct 可知。
+This follows from @thm-collinear and @lem-steinerconstruct.
 :::
 
 ::: {#thm-projaxis}
-$\mathcal{C}$ 為錐線，$f:\mathcal{C}\to\mathcal{C}$ 保交比（$f$ 非恆同變換），則存在唯一的直線 $\ell$ 使
+Let $\mathcal{C}$ be a conic, $f:\mathcal{C}\to\mathcal{C}$ be a projective map (that is not the identity), then there exists a unique line such that for each $X,Y\in \mathcal{C}$,
 $$
-\forall \,X,Y\in \mathcal{C},\,\,Xf(Y)\cap Yf(X)\in\ell
+Xf(Y)\cap Yf(X)\in\ell
 $$
-稱此線 $\ell$ 為 $f$ 的射影軸。注意到 $\ell$ 與 $\mathcal{C}$ 的交點就是 $f$ 的不動點。
+We call $\ell$ the **projective axis** of $f$. Note that the intersections of $\ell$ and $\mathcal{C}$ are the fixed points of $f$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-固定 $A\in\mathcal{C}$，則考慮保交比的
+Fix $A\in\mathcal{C}$, considert the projective map
 $$
 g:\mathbb{L}_{f(A)}\to\mathbb{L}_A, \,f(A)X\mapsto X\mapsto f(X)\mapsto Af(X)
 $$
-因 $g(f(A)A)=Af(A)$，由 Steiner conic，$f(A)X\cap Af(X)$ 的軌跡為一直線 $\ell$。也就是
+Since $g(f(A)A)=Af(A)$, from Steiner conic, the locus of $f(A)X\cap Af(X)$ is a line $\ell$, i.e. for any $X,Y\in \mathcal{C}$,
 $$
-\forall \, X,Y\in\mathcal{C},\,\,Af(X)\cap Xf(A),\,Af(Y)\cap Yf(A)\in\ell
+Af(X)\cap Xf(A),\,Af(Y)\cap Yf(A)\in\ell
 $$
-對六折線 $Af(X)Yf(A)Xf(Y)$ 使用 Pascal 定理，可知 $Xf(Y)\cap Yf(X)$ 亦在 $\ell$ 上。
+Apply Pascal theorem to the hexagon $Af(X)Yf(A)Xf(Y)$, $Xf(Y)\cap Yf(X)$ is also on $\ell$.
 :::
 
 ::: {#lem-polar}
-給定點 $P\notin\mathcal{C}$。對於 $X\in\mathcal{C}$，令 $X'$ 為 $PX$ 與 $\mathcal{C}$ 的第二個交點，則
+Let $P\notin\mathcal{C}$. For any point $X\in\mathcal{C}$, let $X'$ be the second intersection of $PX$ and $\mathcal{C}$, then
 
-(1) 存在唯一的直線 $\ell$ 使得對於所有 $X\in\mathcal{C}$，$P$ 對 $X|X'$ 的調和共軛 $X_0$ 皆在 $\ell$ 上。
+(1) There exists a unique line $\ell$ such that for any $X\in\mathcal{C}$, the harmonic conjugate $X_0$ of $P$ with respective to $X|X'$ is on $\ell$.
 
-(2) 函數 $f:\mathcal{C}\to \mathcal{C}$，$X\mapsto X'$ 為對合，且 $f$ 的射影軸為 $\ell$，$X$ 與 $X'$ 的切線交在 $\ell$ 上。
+(2) The function $f:\mathcal{C}\to \mathcal{C}, X\mapsto X'$ is an involution, and the projective axis of $f$ is $\ell$. The intersection of the tangents of $X,X'$ to $\mathcal{C}$ intersect on $\ell$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-固定點 $A,B\in\mathcal{C}$ 使 $P,A, B$ 不共線，$PA,PB$ 分別再交 $\mathcal{C}$ 於 $A',B'$。$P$ 對 $A|A'$，$B|B'$ 的調和共軛為 $A_0,B_0$，則由 @thm-collinear 知
+Fix point $A,B\in\mathcal{C}$ such that $P,A, B$ are not collinear, let $PA,PB$ interect $\mathcal{C}$ again at $A',B'$, and the harmonic conjugates of $P$ with respect to $A|A'$ and $B|B'$ are $A_0,B_0$, respectively. From @thm-collinear, the points
 $$
-AB\cap A'B', \,AB'\cap A'B,\, A_0,\, B_0\text{ 共線}
+AB\cap A'B', \,AB'\cap A'B,\, A_0,\, B_0
 $$
-對三角形 $ABX$ 與三角形 $A'B'X'$ 使用 Desargues 定理，可知
+are collinear. Apply Desargues theorem to the triangles $ABX$ and $A'B'X'$, the points
 $$
-AB\cap A'B',\, BX\cap B'X',\, AX\cap A'X'\text{ 共線}
+AB\cap A'B',\, BX\cap B'X',\, AX\cap A'X'
 $$
-對六折線 $BXAB'X'A'$ 使用 Pascal 定理，可知
+are collinear. Apply Pascal theorem to the hexagon $BXAB'X'A'$, the points
 $$
-BX\cap B'X',\, AX\cap A'X',\, AB'\cap BA'\text{ 共線}
+BX\cap B'X',\, AX\cap A'X',\, AB'\cap BA'
 $$
-令 $A_0B_0=\ell$，則綜合以上可知 $\ell$ 過 $BX\cap B'X'$，將 $X$ 與 $X'$ 交換可知 $BX'\cap B'X\in\ell$。由 @thm-collinear 知 $B_0,\, BX\cap B'X',\, BX'\cap B'X,\,X_0$ 共線 $\ell$。這證明了 (1)。
+are collinear. Let $A_0B_0=\ell$, then $\ell$ passes through $BX\cap B'X'$ from the three collinearities. Interchanging $X$ and $X'$, $BX'\cap B'X\in\ell$. From @thm-collinear, $B_0,\, BX\cap B'X',\, BX'\cap B'X,\,X_0$ are collinear on $\ell$, which proves (1).
 
-因為 $BX\cap B'X'\in\ell$ 上，$f:X\mapsto X'=B'(BX\cap\ell)\cap\mathcal{C}$ 保交比。這證明了 (2)。
+Since $BX\cap B'X'\in\ell$, the function $f:X\mapsto X'=B'(BX\cap\ell)\cap\mathcal{C}$ is a projective map, which proves (2).
 :::
 
 ::: {#cor-conicinvolution}
-給定函數 $f:\mathcal{C}\to \mathcal{C}$，則 $f$ 是對合若且唯若 $Xf(X)$ 通過定點 $\forall X\in\mathcal{C}$。
+Let $f:\mathcal{C}\to \mathcal{C}$ be a projective map, then $f$ is an involution if and only if $Xf(X)$ passes through a fixed point for all $X\in\mathcal{C}$. The fixed point is called the perspector of $f$.
 :::
 
 ::: {#thm-twointersect}
-給定錐線 $\mathcal{C}$ 及 $P\notin \mathcal{C}$，則存在恰兩條過 $P$ 的線與 $\mathcal{C}$ 相切。給定直線 $m$，若 $m$ 與 $\mathcal{C}$ 不相切，則 $m$ 與 $\mathcal{C}$ 交於兩點。
+Given a conic $\mathcal{C}$ and a point $P\notin \mathcal{C}$, there exists two lines through $P$ tangent to $\mathcal{C}$. Given a line $m$ not tangent to $\mathcal{C}$, then $m$ and $\mathcal{C}$ intersect at two points.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $f_P:\mathcal{C}\to \mathcal{C}$ 為過 $P$ 的對合，$P_1,P_2$ 為不動點（@lem-invfix），則 $PP_1,PP_2$ 為切線。
+Let $f_P:\mathcal{C}\to \mathcal{C}$ be the involution with perspector $P$. Let $P_1,P_2$ be the fixed points of $f_P$ (by @lem-invfix), then $PP_1,PP_2$ are the tangents.
 
-取 $R,S\in m$，過 $R$ 與 $S$ 的切線分別切 $\mathcal{C}$ 於 $A,A'$ 與 $B,B'$，令 $Q=AA'\cap BB'$。由 @lem-polar，過 $Q$ 的對合 $f_Q$ 的射影軸為 $m$，故不動點 $Q_1,Q_2$ 就是 $m$ 與 $\mathcal{C}$ 的交點。
+Fix $R,S\in m$, let the tangency points of the two tangents of $R$ (resp. $S$) to $\mathcal{C}$ be $A,A'$ (resp. $B,B'$). Set $Q=AA'\cap BB'$. From @lem-polar, let $f_Q$ be the involution on $\mathcal{C}$ with perspector $Q$, then the projective axis of $f_Q$ is $m$, so the fixed points $Q_1,Q_2$ of $f_Q$ is the intersection of $m$ and $\mathcal{C}$.
 :::
 
 ::: {#cor-harmonicquad}
-$(P_1,P_2;X,Y)_\mathcal{C}=-1$ 若且唯若 $P_1,P_2$ 對 $\mathcal{C}$ 的切線的交點在 $XY$ 上。
+Let $P_1,P_2,X,Y\in \mathcal{C}$, then $(P_1,P_2;X,Y)_\mathcal{C}=-1$ if and only if the intersection of the tangents of $P_1,P_2$ to $\mathcal{C}$ is on $XY$.
 :::
 
-結合 @thm-projaxis 與 @thm-twointersect，可知道一個保交比的 $f:\mathcal{C}\to \mathcal{C}$ 有一個（當射影軸與 $\mathcal{C}$ 相切）或兩個不動點。
+Combining @thm-projaxis and @thm-twointersect, for any projective map $f:\mathcal{C}\to \mathcal{C}$, there are $1$ (when the projective axis and $\mathcal{C}$ are tangent) or $2$ fixed points of $f$.
 
 ::: {#lem-uniquefixedpoint}
-給定錐線 $\mathcal{C}$ 及保交比的 $f:\mathcal{C}\to\mathcal{C}$，若 $f$ 非恆同變換，則 $f$ 的不動點為射影軸與 $\mathcal{C}$ 的交點，可能有一個或兩個。若 $f$ 只有一個不動點 $P$，則 $f$ 會滿足
+Given a conic $\mathcal{C}$ and a projective map $f:\mathcal{C}\to\mathcal{C}$ that is not the identity, then the fixed points of $f$ are the intersections of the projective axis and $\mathcal{C}$ (there may be $1$ or $2$ fixed points). If $f$ has a unique fixed point $P$, then for all $X\in \mathcal{C}$,
 $$
-(P,f(X);X,f(f(X)))=-1\,\forall X\in \mathcal{C}
+(P,f(X);X,f(f(X)))=-1
 $$
-這個結論可以推到任意賦交比集都是對的。
+This is true for any cross-ratio set.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $P$ 對 $\mathcal{C}$ 的切線為 $\ell$，$Y=f(X)$，則 $Xf(Y)\cap Yf(X)\in \ell$，也就是 $Xf(f(X))$ 和 $f(X),P$ 對 $\mathcal{C}$ 的切線共點，由 @cor-harmonicquad 得證。對於任意賦交比集 $\mathscr{A}$ 與 $f:\mathscr{A}\to \mathscr{A}$，固定一個保交比的 $g:\mathcal{C}\to\mathscr{A}$ 並考慮 $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$ 即可。
+Let the tangent of $P$ to $\mathcal{C}$ be $\ell$, and set $Y=f(X)$, then $Xf(Y)\cap Yf(X)\in \ell$, i.e. $Xf(f(X))$ passes through the intersection of the tangents of $f(X),P$ to $\mathcal{C}$. The harmonicity follows from @cor-harmonicquad.
+
+For any cross ratio set $\mathscr{A}$ and a projective map $f:\mathscr{A}\to \mathscr{A}$, fix a projective map $g:\mathcal{C}\to\mathscr{A}$, then we apply the conclusion on conics to the map $g^{-1}\circ f\circ g:\mathcal{C}\to \mathcal{C}$.
 :::
 
 ## 錐線與延拓射影變換
