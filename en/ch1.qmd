@@ -669,13 +669,13 @@ i.e. $\rho(X)=X\times Q\div P$. Note that from @thm-isoconjugate, $\rho$ is the 
 
 ::: {.unnumbered-env}
 **Definition.**
-Let $\rho$ be a projective transformation. Suppose that there is a line $\ell$ such that $\rho(X)=X$ for all $X\in \ell$, then $\rho$ is said to be a **perspective transformation**. Suppose that $\rho$ is not the identity, then such $\ell$ is unique, which is called the perspectrix of $\rho$. For any triangle $ABC$, the perspectrix of $ABC$ and $\rho(A)\rho(B)\rho(C)$ is $\ell$. By Desargues theorem, let $P$ be the perspector. Note that $P$ does not depend on the choice of triangle $ABC$, and $P$ is called the perspector of $\rho$. For each $m\in\mathbb{L}_P$, $\rho(m)=m$.
+Let $\rho$ be a projective transformation. Suppose that there is a line $\ell$ such that $\rho(X)=X$ for all $X\in \ell$, then $\rho$ is said to be a **perspective transformation**. When $\rho$ is not the identity, this $\ell$ is unique, which is called the perspectrix of $\rho$. For any triangle $ABC$, the perspectrix of $ABC$ and $\rho(A)\rho(B)\rho(C)$ is $\ell$. By Desargues theorem, let $P$ be the perspector. Note that $P$ does not depend on the choice of triangle $ABC$, and $P$ is called the perspector of $\rho$. For each $m\in\mathbb{L}_P$, $\rho(m)=m$.
 :::
 
 We see that the dual of a perspective transformation is also perspective. The previous argument implies the following theorem.
 
 ::: {#thm-persptrans}
-Given perspective triangles $ABC$ and $DEF$ with perspector $P$ and perspectrix $\ell$, then there exists a unique perspective transformation $\rho$ with perspector $P$ and perspectrix $\ell$, such that
+Given perspective triangles $ABC$ and $DEF$ with perspector $P$ and perspectrix $\ell$, there exists a unique perspective transformation $\rho$ with perspector $P$ and perspectrix $\ell$, such that
 $$
 \rho(A)= D,\,\rho(B)= E,\,\rho(C)= F
 $$
@@ -704,7 +704,8 @@ $$
 i.e. the value is fixed.
 :::
 
-::: {.unnumbered-env data-title="定義"}
+::: {.unnumbered-env}
+**Definition.**
 Suppose that the perspective transformation $\rho$ satisfies（$P,\,\ell$ are the perspector and perspectrix）
 $$
 (X,\rho(X);P,PX\cap \ell)=-1
@@ -718,7 +719,7 @@ Given a projective transformation $\rho$, suppose that $\rho\circ\rho$ is the id
 
 ::: {.callout-note collapse="true"}
 ## Proof
-Suppose that $\rho$ is not the identity, let $X,Y$ be points such that $\rho(X)\neq X$, $\rho(Y)\neq Y$, and any three points among $X,\rho(X),Y,\rho(Y)$ are not collinear. Let 
+Suppose that $\rho$ is not the identity. Let $X,Y$ be points such that $\rho(X)\neq X$, $\rho(Y)\neq Y$, and any three points among $X,\rho(X),Y,\rho(Y)$ are not collinear. Let 
 $$
 P=X\rho(X)\cap Y\rho(Y),\,Z=XY\cap \rho(X)\rho(Y)
 $$
@@ -737,24 +738,24 @@ Any projective transformation is a composition of finitely many involutive trans
 ::: {.unnumbered-env}
 **Definition.**
 Given triangle $ABC$, let $P_aP_bP_c$ be the cevian triangle of $P$. We define $\comp_P$ to be the perspective transformation from $ABC$ to $P_aP_bP_c$.
-We call $\comp_P(X)$ the $P$-**complement** of $X$ and $\comp_P^{-1}(X)$ the $P$-**anticomplement** of $X$. We sometimes write $\comp_P^{-1}(X)=\anticomp_P(X)$. Let $P_A,P_B,P_C$ be the $P$-anticomplement of $A,B,C$, then $P_AP_BP_C$ is said to be the anticevian triangle of $P$ (with respect to $ABC$). In this case, the cevian triangle of the quadrangle $PP_AP_BP_C$ is $ABC$.
+We call $\comp_P(X)$ the $P$-**complement** of $X$ and $\comp_P^{-1}(X)$ the $P$-**anticomplement** of $X$. We sometimes write $\comp_P^{-1}(X)=\anticomp_P(X)$. Let $P_A,P_B,P_C$ be the $P$-anticomplements of $A,B,C$, then $P_AP_BP_C$ is said to be the anticevian triangle of $P$ (with respect to $ABC$). In this case, the cevian triangle of the quadrangle $PP_AP_BP_C$ is $ABC$.
 :::
 
 ::: {.unnumbered-env}
-**Example**
+**Example.**
 When $\ell$ is the tripolar of $P$ with respect to $ABC$, we have 
 $$
 (X,\comp_P(X);P,PX\cap\ell)=-\iota(-1)
 $$
-To see this, take $X=A$, then
+To see this, take $X=A$. We have
 $$
 (A,P_a;P,AP\cap \ell)=(A,P_a;P,P_A)\cdot(A,P_a;P_A,AP\cap \ell)=(-1)\cdot (A,P_a;P_A,AP\cap \ell)
 $$
-and since $Q_c=\ell\cap AB,\,P_A,\,P_B,\,C$ are collinear,
+Since $Q_c=\ell\cap AB,\,P_A,\,P_B,\,C$ are collinear,
 $$
-(A,P_A;P_a,AP\cap \ell)\mathop{=}\limits^{Q_c}(A,C;P_b;\ell\cap AC)=-1
+(A,P_A;P_a,AP\cap \ell)\mathop{=}\limits^{Q_c}(A,C;P_b,\ell\cap AC)=-1
 $$
-we see that 
+We see that 
 $$(A,P_a;P,AP\cap \ell)=(-1)\cdot (A,P_a;P_A,AP\cap \ell)=-\iota(-1)
 $$
 :::
