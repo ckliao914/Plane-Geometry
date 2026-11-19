@@ -456,5 +456,5 @@ We see that $AA_1\cap B_1C_1=Q$, i.e. $A,A_1,P$ are collinear.
 
 ::: {.unnumbered-env}
 **Remark.**
-In the beginning of the proof of @thm-poleperspective, we showed that $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution. This is direct from Desargues involution theorem, which will be introduced later.
+In the beginning of the proof of @thm-poleperspective, we showed that $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution. This follows directly from Desargues involution theorem, which we will see later.
 :::
