@@ -371,7 +371,7 @@ Let $AB\cap CD=P$, then the polar of $P$ passes through the harmonic conjugates 
 :::
 
 ::: {#cor-brocardconj}
-Let $A,B,C$ be points on a conic $\mathcal{C}$. For $X\in BC$ let $AB,\,AC$ meet $\mathfrak{p}_\mathcal{C}(X)$ at $Y,Z$, then $Y,Z$ are conjugate.
+Let $A,B,C$ be points on a conic $\mathcal{C}$. For $X\in BC$, let $AB,\,AC$ meet $\mathfrak{p}_\mathcal{C}(X)$ at $Y,Z$, then $Y,Z$ are conjugate.
 :::
 
 ::: {#thm-polarproj}
