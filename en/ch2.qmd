@@ -86,7 +86,7 @@ A non-empty set $\mathcal{C}\subset\mathbb{P}$ is said to be a (nondegenerate) *
 $$
 \mathbb{P}_\ell\cap\mathcal{C}=\{P\}
 $$
-the line $\ell$ is called the **tangent** of $P$ to $\mathcal{C}$. This implies that any other line passing through $P$ passes through a second point on $\mathcal{C}$.
+The line $\ell$ is called the **tangent** of $P$ to $\mathcal{C}$. This implies that any other line passing through $P$ passes through a second point on $\mathcal{C}$.
 :::
 
 Note that the construction in @lem-tangentlem implies the existence of the tangent $\ell$.
@@ -109,7 +109,7 @@ Let $P$ be a point on $\mathcal{C}$. Suppose that $\ell$ passes through $P$ such
 $$
 g:\mathbb{L}_P\to\mathbb{L}_A,\,g(PC)=AC,\, g(PD)=AD,\, g(PE)=AE
 $$
-Set $\ell\cap g(\ell)=X$, then $PACDEX$ satisfies the Pascal condition, and $ABCDEP$ satisfies the Pascal condition, so $ABCDEX$ satisfies the Pascal condition. We see that $X\in\mathcal{C}$, $X=P$, i.e. $g(\ell)=AP$ and $\ell$ is unique. We conclude that $\mathcal{C}$ is a conic, and the uniqueness of $\mathcal{C}$ follows from this construction.
+Set $\ell\cap g(\ell)=X$, then $PACDEX$ satisfies the Pascal condition, and $ABCDEP$ satisfies the Pascal condition, so $ABCDEX$ satisfies the Pascal condition. We see that $X\in\mathcal{C}$, so $X=P$, i.e. $g(\ell)=AP$ and $\ell$ is unique. We conclude that $\mathcal{C}$ is a conic, and the uniqueness of $\mathcal{C}$ follows from this construction.
 :::
 
 We have established the existence of conics by construction. If six points lie on the same conic, they are said to be conconic.
@@ -117,7 +117,7 @@ We have established the existence of conics by construction. If six points lie o
 ::: {#thm-Pascal}
 ## Pascal theorem
 Suppose that no three of $ABCDEF$ are collinear, then $ABCDEF$ are conconic if and only if 
-$$AB\cap DE,\,BC\cap EF,\,CD\cap FA$ 
+$$AB\cap DE,\,BC\cap EF,\,CD\cap FA$$ 
 are collinear.
 :::
 
@@ -126,7 +126,7 @@ are collinear.
 This is the statement of @lem-pascalcond.
 :::
 
-When applying the Pascal theorem, we usually say we apply it to the hexagon $ABCDEF$ (with the points labeled as in @thm-Pascal). Since Pascal theorem and the cross ratio condition are equivalent, we may apply Pascal theorem to the hexagon $AABCDE$ on the conic $(ABCDE)$. In this case, $AA$ is viewed as the tangent of $A$ to $(ABCDE)$.
+When applying Pascal theorem, we usually say we apply it to the hexagon $ABCDEF$ (with the points labeled as in @thm-Pascal). Since Pascal theorem and the cross ratio condition are equivalent, we may apply Pascal theorem to the hexagon $AABCDE$ on the conic $(ABCDE)$. In this case, $AA$ is viewed as the tangent of $A$ to $(ABCDE)$.
 
 ::: {.unnumbered-env}
 **Remark.**
