@@ -31,6 +31,7 @@ div.theorem .theorem-title::after,
 div.lemma .theorem-title::after,
 div.corollary .theorem-title::after {
   content: ".";
+  font-weight: bold;
 }
 
 /* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
