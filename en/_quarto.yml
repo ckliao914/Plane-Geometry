@@ -22,8 +22,8 @@ format:
             macros: {
               sangle: "\\sphericalangle",
               X: "\\mathsf{X}",
-              comp: "\\raisebox{-0.2ex}{\\complement}",
-              anticomp: "\\scalebox{-1}[1]{\\comp}"
+              comp: "\\raise{-0.2ex}{\\complement}",
+              anticomp: ["\\style{display: inline-block; transform: scaleX(-1);}{#1}", 1]
             }
           },
           output: {
@@ -37,6 +37,7 @@ format:
           }
         };
         </script>
+        
 crossref:
   chapters: true
   thm-title: "Theorem"
