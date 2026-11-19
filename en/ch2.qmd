@@ -265,7 +265,7 @@ $$
 
 ::: {.unnumbered-env}
 **Remark.**
-如果 $f:\mathcal{C}\to\mathcal{C}$，要證明延拓的存在性，還有另一種看法。因為 $f$ 總是可以寫成兩個對合變換的合成，不失一般性假設 $f$ 為過點 $P$ 的對合，$\ell$ 為 $f$ 的射影軸。此時給定 $A,B,C\in \mathcal{C}$，定義 $\rho$ 為 $ABC$ 到 $f(A)f(B)f(C)$ 的透視變換，則由 @lem-polar 與 @thm-perspectivefix，可知
+如果 $f:\mathcal{C}\to\mathcal{C}$，要證明延拓的存在性，還有另一種看法。因為 $f$ 總是可以寫成兩個對合變換的合成，不失一般性假設 $f$ 為過點 $P$ 的對合，$\ell$ 為 $f$ 的射影軸。此時給定 $A,B,C\in \mathcal{C}$，定義 $\rho$ 為 $ABC$ 到 $f(A)f(B)f(C)$ 的透視變換，則由 @lem-polar 與 @lem-perspectivefix，可知
 $$
 (f(A),\rho(f(A));P,f(A)P\cap \ell)=(A,\rho(A);P,AP\cap \ell)=-1\implies \rho(f(A))=A
 $$
