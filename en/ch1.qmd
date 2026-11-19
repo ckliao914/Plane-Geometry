@@ -682,7 +682,7 @@ $$
 This $\rho$ is said to be the perspective transformation from $ABC$ to $DEF$.
 :::
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="true" icon="false"}
 ## Proof
 From @thm-projtransunique, a perspective transformation $\rho$ with perspectrix $\ell$ such that $\rho(B)=E$, $\rho(C)=F$ is unique, with $P$ being the perspector, so $\rho(A)=D$.
 :::
@@ -695,7 +695,7 @@ $$
 is independent of the choice of $X\in\mathbb{P}$.
 :::
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="true" icon="false"}
 ## Proof
 When $P\in \ell$, the value is $1$, so we assume that $P\notin\ell$. Fix $A,B\notin \ell$ such that $A,B,P$ are not collinear. Let $AB\cap \rho(A)\rho(B)=Y\in \ell$, then
 $$
@@ -717,7 +717,7 @@ then $\rho$ is said to be involutive. For an involutive transformation $\rho$, $
 Given a projective transformation $\rho$, suppose that $\rho\circ\rho$ is the identity, then $\rho$ is either the identity or an involutive transformation.
 :::
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Suppose that $\rho$ is not the identity. Let $X,Y$ be points such that $\rho(X)\neq X$, $\rho(Y)\neq Y$, and any three points among $X,\rho(X),Y,\rho(Y)$ are not collinear. Let 
 $$
