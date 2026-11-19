@@ -59,7 +59,7 @@ $$
 
 (4) Given line $\ell$ and distinct points $P_1,P_2,P_3\in \ell$, then for any $c\in \mathbb{C}^\times$, there exists a unique $P\in \ell$ such that $(P_1,P_2;P_3,P)=c$ ($P\neq P_1,P_2$).
 
-A projective space equipped with a cross ratio is called a complex projective plane.
+A projective plane equipped with a cross ratio is called a complex projective plane.
 :::
 
 ::: {.unnumbered-env}
@@ -97,7 +97,7 @@ We only defined the cross ratio of four points, but hypothesis (3) allows us to 
 **Definition.**
 Four lines $m_1,m_2,n_1,n_2$ pass through $P$, where $m_i\neq n_j$ ($i,j=1,2$). Define the cross ratio of the four lines by
 $$
-(m_1,m_2;n_1,n_2)=(\ell\cap m_1,\ell\cap m_2;\ell\cap n_1;\ell\cap n_2)
+(m_1,m_2;n_1,n_2)=(\ell\cap m_1,\ell\cap m_2;\ell\cap n_1,\ell\cap n_2)
 $$
 where $\ell$ is any line that does not pass through $P$. From hypothesis (3) this does not depend on the choice of $\ell$.
 :::
@@ -114,7 +114,7 @@ $$
 $$
 :::
 
-Since the roles of lines and points are interchangeable, and by definition we may check that the cross ratio of four lines also satisfies the four hypotheses of the cross ratio (of four points). For a statement, its dual statement is given by interchanging the roles of points and lines of the original statement. We see that the dual statement and the original statement are equivalent from the above arguments.
+Since the roles of lines and points are interchangeable, we may check that the cross ratio of four lines also satisfies the four hypotheses of the cross ratio (of four points) by definition. For a statement, its dual statement is given by interchanging the roles of points and lines of the original statement. We see that the dual statement and the original statement are equivalent from the above arguments.
 
 ::: {.unnumbered-env}
 **Example.**
@@ -122,7 +122,7 @@ In the definition of the cross ratio, the dual statement of (4) is: given point 
 
 We now prove this dual statement. Given a line $m$ not passing through $P$, then for each $c\in \mathbb{C}^\times$, there exists a unique $Q\in m$ such that
 $$
-(\ell_1,\ell_2;\ell_3;PQ)=(\ell_1\cap m,\ell_2\cap m;\ell_3\cap m,Q)=c
+(\ell_1,\ell_2;\ell_3,PQ)=(\ell_1\cap m,\ell_2\cap m;\ell_3\cap m,Q)=c
 $$
 Let $\ell=PQ$, then $(\ell_1,\ell_2;\ell_3,\ell)=c$, and $\ell$ is unique.
 :::
@@ -255,7 +255,7 @@ We can rewrite the proof in pure cross ratios. One may compare the two proofs.
 ## Alternative proof
 Let $Q'=PR\cap A_3B_1$. Since
 $$
-R(A_2B_1\cap A_3B_2,B_2,A_3;P)=(B_1,A_3B_1\cap A_1B_2;A_2,Q')
+R(A_2B_1\cap A_3B_2,B_2;A_3,P)=(B_1,A_3B_1\cap A_1B_2;A_2,Q')
 $$
 and 
 $$
@@ -316,7 +316,7 @@ then there exists a projective map $f$ such that $f(\mathfrak{a}_i)=\mathfrak{b}
 $$
 (\mathfrak{a}_1,\mathfrak{a}_3;\mathfrak{a}_2,\mathfrak{a}_4)=(\mathfrak{b}_1,\mathfrak{b}_3;\mathfrak{b}_2,\mathfrak{b}_4):=\iota(c)
 $$
-i.e. $\iota(c)$ does not depend on the choice of $\mathfrak{a}_i,\mathfrak{b}_i$, the structure of the cross ratio gives rise to a function
+i.e. $\iota(c)$ does not depend on the choice of $\mathfrak{a}_i,\mathfrak{b}_i$, so the structure of the cross ratio gives rise to a function
 $$
 \iota:\mathbb C^\times\setminus\{1\}\to \mathbb C^\times\setminus\{1\}
 $$
@@ -337,7 +337,7 @@ is projective.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Given line $\ell$, let $f_0:\mathscr{A}\to \mathbb{P}_\ell$ be a projective map, and set 
+Given a line $\ell$, let $f_0:\mathscr{A}\to \mathbb{P}_\ell$ be a projective map, and set 
 $$
 f_0(\mathfrak{a}_1)=P_1, f_0(\mathfrak{a}_2)=P_2
 $$
@@ -394,7 +394,7 @@ so $R=S$, and $P_b,P_c,Q_a$ are collinear.
 
 ::: {.unnumbered-env}
 **Remark.**
-In general projective planes, $P_a,P_b,P_c$ may be collinear. An example is the $7$-point projective plane. Here, the cross ratio structure ensures the existence of harmonic conjugates, and avoids the case when $P_a,P_b,P_c$ are collinear.
+In general projective planes, $P_a,P_b,P_c$ may be collinear. An example is the $7$-point projective plane. Here, the cross ratio structure ensures the existence of harmonic conjugates, and avoids the case where $P_a,P_b,P_c$ are collinear.
 
 When we defined cross ratios, we used $\mathbb{C}^\times$ as the multiplicative group. One may try to replace $\mathbb{C}^\times$ with other multiplicative groups, for instance, equipping the $7$-point projective plane with a cross ratio whose multiplicative group is trivial. For cross ratios in a more general setting, see Appendix A.
 :::
@@ -417,7 +417,7 @@ $$
 and $f$ is not the identity (i.e. there exists $\mathfrak{a}'$ such that $f(\mathfrak{a}')\neq \mathfrak{a}'$), then $f$ is said to be an **involution** on $\mathscr{A}$. The pairs 
 $$
 (\mathfrak{a}_1,\mathfrak{a}_1'), \ldots, (\mathfrak{a}_n,\mathfrak{a}_n')$$
-are said to be involution pairs if there exists a unique involution $f$ such that $f(\mathfrak{a}_i)=\mathfrak{a}_i'$ for $i=1,...,n$ (we may also say that the set of pairs is an involution).
+are said to be involution pairs if there exists a unique involution $f$ such that $f(\mathfrak{a}_i)=\mathfrak{a}_i'$ for $i=1,\ldots,n$ (we may also say that the set of pairs is an involution).
 :::
 
 ::: {.unnumbered-env}
@@ -458,7 +458,7 @@ $$
 then $f=h\circ g$. This shows that any projective map on $\mathscr{A}$ is a composition (not unique) of two involutions. Sometimes, to prove a property of projective maps, it suffices to prove for the case when the map is an involution.
 :::
 
-An element $\mathfrak{a}\in \mathscr{A}$ is said to be the fixed point of a function $f:\mathscr{A}\to \mathscr{A}$ (not necessarily a projective map) if $f(\mathfrak{a})=\mathfrak{a}$.
+An element $\mathfrak{a}\in \mathscr{A}$ is said to be a fixed point of a function $f:\mathscr{A}\to \mathscr{A}$ (not necessarily a projective map) if $f(\mathfrak{a})=\mathfrak{a}$.
 
 ::: {#lem-invfix}
 Let $f$ be an involution on a line $\ell$, then $f$ has exactly two fixed points $P_1,P_2$, and $f$ is the harmonic conjugation with respect to $P_1|P_2$. 
@@ -470,7 +470,7 @@ Given $X\neq Y$ on $\ell$, let
 $$
 c=(X,f(X);Y,f(Y))
 $$ 
-then there exists $c_1\neq c_2$ such that $c_1^2=c_2^2=c$ (since $c\neq 0$), so there exists $P_i$ such that 
+then there exists $c_1\neq c_2$ such that $c_1^2=c_2^2=c$ (since $c\neq 0$), so there exists $P_1,P_2\in \ell$ such that 
 $$
 (X,f(X);Y,P_i)=c_i\,\,\forall i=1,2
 $$
@@ -488,7 +488,7 @@ Now, let $Q\neq P_1,P_2$ be on $\ell$, then
 $$
 (P_1,P_2;Q,f(Q))=(P_1,P_2;f(Q),Q)
 $$
-since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic conjugation with respect to $P_1|P_2$.
+Since $Q\neq f(Q)$, we see that $(P_1,P_2;Q,f(Q))=-1$, so $f$ is the harmonic conjugation with respect to $P_1|P_2$.
 :::
 
 Clearly, @lem-invfix holds for any cross-ratio set. (The reason we stated it for a line is simple: we wouldn't want a bunch of fraktur fonts flying all around in the proof, would we?)
@@ -579,7 +579,7 @@ we conclude that $\ell_A$, $\ell_B$, $\ell_C$ are concurrent.
 **Remark.**
 Fix four reference points $A,B,C,D$ such that any three of them are not collinear. For any $X\in \mathbb{P}$ not on the three sides of $ABC$, consider the three values
 $$
-x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
+x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=C(A,B;D,X)
 $$
 From Ceva theorem, the three values satisfy $x_Ax_Bx_C=1$. Conversely, given three values $x_A,x_B,x_C$ whose product is $1$, then they determine a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
 :::
@@ -617,7 +617,7 @@ $$
 (from (2), $\rho$ is bijective), then $\rho$ is said to be a **projective transformation**.
 :::
 
-Since projective transformation preserves collinearity, the dual of projective transformation is essentially the same thing, i.e. each projective transformation gives rise to a function $\rho:\mathbb{L}\to\mathbb{L}$ such that
+Since projective transformations preserve collinearity, the dual of a projective transformation is essentially the same thing, i.e. each projective transformation gives rise to a function $\rho:\mathbb{L}\to\mathbb{L}$ such that
 $$
 (P,\ell)\in\mathcal{I}\iff (\rho(P),\rho(\ell))\in\mathcal{I}
 $$
@@ -706,11 +706,11 @@ i.e. the value is fixed.
 
 ::: {.unnumbered-env}
 **Definition.**
-Suppose that the perspective transformation $\rho$ satisfies（$P,\,\ell$ are the perspector and perspectrix）
+Suppose that the perspective transformation $\rho$ satisfies ($P,\,\ell$ are the perspector and perspectrix)
 $$
 (X,\rho(X);P,PX\cap \ell)=-1
 $$
-then $\rho$ is said to be involutive. For an involutive transformation $\rho$, $\rho\circ\rho$ is the identity. 
+then $\rho$ is said to be **involutive**. For an involutive transformation $\rho$, $\rho\circ\rho$ is the identity. 
 :::
 
 ::: {#lem-perspectiveinvolution}
