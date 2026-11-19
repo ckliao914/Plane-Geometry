@@ -401,7 +401,7 @@ is projective.
 
 ::: {.unnumbered-env}
 **Example.**
-The composition $\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ of the polar transformation with respect to two conics $\mathcal{C}_1$ and $\mathcal{C}_2$ is a projective transformation.
+The composition $\mathfrak{p}_{\mathcal{C}_1}\circ \mathfrak{p}_{\mathcal{C}_2}$ of the polar transformations with respect to two conics $\mathcal{C}_1$ and $\mathcal{C}_2$ is a projective transformation.
 :::
 
 ::: {.unnumbered-env}
