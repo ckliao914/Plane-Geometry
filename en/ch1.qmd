@@ -498,7 +498,7 @@ Clearly, @lem-invfix holds for any cross-ratio set. (The reason we stated it for
 The fact that involutions are equivalent to harmonic conjugations (i.e. @lem-invfix) depends on the property that square roots exist in $\mathbb{C}^\times$.
 :::
 
-## Ceva's Theorem and Menelaus's Theorem    
+## Ceva Theorem and Menelaus Theorem    
 
 ::: {#lem-cevatriproduct}
 Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangles of $P,Q$ with respect to $ABC$, respectively, then
@@ -520,10 +520,10 @@ $$
 This is equal to $(BC\cap PQ,BC\cap PQ;P,Q)=1$.
 :::
 
-Fixing $P$ in @lem-cevatriproduct, we obtain Ceva's theorem.
+Fixing $P$ in @lem-cevatriproduct, we obtain Ceva theorem.
 
 ::: {#thm-ceva}
-## Ceva's theorem
+## Ceva theorem
 Given point $P$, let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $D,E,F$ be points on $BC,CA,AB$, respectively, then $AD,BE,CF$ are concurrent if and only if
 $$
 (B,C;P_a,D)\cdot (C,A;P_b,E)\cdot (A,B;P_c,F)=1
@@ -536,7 +536,7 @@ This follows from @lem-cevatriproduct and the uniqueness of cross ratios.
 :::
 
 ::: {#thm-Menelaus}
-## Menelaus's theorem
+## Menelaus theorem
 Given point $P$, let $P_aP_bP_c$ be the cevian triangle of $P$ with respect to $ABC$. Let $D,E,F$ be points on $BC,CA,AB$, respectively, then $D,E,F$ are collinear if and only if 
 $$
 (B,C;P_a,D)\cdot (C,A;P_b,E)\cdot (A,B;P_c,F)=-1
@@ -552,7 +552,7 @@ $$
 The rest follows from @lem-cevatriproduct and the uniqueness of cross ratios.
 :::
         
-We give an application of Ceva's theorem.
+We give an application of Ceva theorem.
 
 ::: {#thm-isoconjugate}
  Given triangle $ABC$ and points $P,Q$ not on its three sides. Let $X$ be any point not on the three sides of $ABC$, and define $\ell_A$ to be the line through $A$ such that
@@ -568,7 +568,7 @@ Let the cevian triangle of $P,Q,X$ with respect to $ABC$ be $P_aP_bP_c$, $Q_aQ_b
 $$
 (B,C;P_a,X_a)=(C,B;Q_a,\ell_A\cap BC)
 $$
-Applying Ceva's theorem, since (denote by $\mathrm{cyc}$ the product over the three sides)
+Applying Ceva theorem, since (denote by $\mathrm{cyc}$ the product over the three sides)
 $$
 1=\prod_{\text{cyc}}(B,C;P_a,X_a)=\prod_{\text{cyc}}(C,B;Q_a,\ell_A\cap BC)
 $$
@@ -581,7 +581,7 @@ Fix four reference points $A,B,C,D$ such that any three of them are not collinea
 $$
 x_A=A(B,C;D,X),\,x_B=B(C,A;D,X),\,x_C=(A,B;D,X)
 $$
-From Ceva's theorem, the three values satisfy $x_Ax_Bx_C=1$. Conversely, given three values $x_A,x_B,x_C$ whose product is $1$, then they determine a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
+From Ceva theorem, the three values satisfy $x_Ax_Bx_C=1$. Conversely, given three values $x_A,x_B,x_C$ whose product is $1$, then they determine a unique $X$. In conclusion, the points $A,B,C,D$ and the $3$-tuple $(x_A,x_B,x_C)$ give a way to represent the location of a point.
 :::
 
 ::: {.unnumbered-env}
@@ -624,7 +624,7 @@ $$
 
 Projective transformations preserve every property related to cross ratios, so we would get nothing new by taking the projective transformation of a statement. The problems we are interested in have to include both the original and transformed sides, for example, the fixed-point problem, which will be discussed in later chapters.
 
-A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva's theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a projective transformation is characterized by the value at four points (no three of which are collinear).
+A projective map is characterized by the value at three points. We ask the same question on projective transformations. From Ceva theorem (and the remark), fix reference points $A,B,C,D$. Given $X$ and its location $(x_A,x_B,x_C)$, the location of $\rho(X)$ under the reference points $\rho(A),\rho(B),\rho(C),\rho(D)$ is also $(x_A,x_B,x_C)$. In the following, we show that a projective transformation is characterized by the value at four points (no three of which are collinear).
 
 ::: {#thm-projtransunique}
 Suppose that any three points among $W,X,Y,Z$ are not collinear, and any three points among $W_1,X_1,Y_1,Z_1$ are not collinear, then there exists a unique projective transformation $\rho$ such that
@@ -663,4 +663,98 @@ $$
 A(B,C;\rho(X),Q)=A(B,C;X,P)
 $$
 i.e. $\rho(X)=X\times Q\div P$. Note that from @thm-isoconjugate, $\rho$ is the composition of the $(P,R)$-isoconjugation followed by the $(R,Q)$-isoconjugation, where $R$ is some arbitrary point.
+:::
+
+## Perspective Transformations and Complements
+
+::: {.unnumbered-env}
+**Definition.**
+Let $\rho$ be a projective transformation. Suppose that there is a line $\ell$ such that $\rho(X)=X$ for all $X\in \ell$, then $\rho$ is said to be a **perspective transformation**. Suppose that $\rho$ is not the identity, then such $\ell$ is unique, which is called the perspectrix of $\rho$. For any triangle $ABC$, the perspectrix of $ABC$ and $\rho(A)\rho(B)\rho(C)$ is $\ell$. By Desargues theorem, let $P$ be the perspector. Note that $P$ does not depend on the choice of triangle $ABC$, and $P$ is called the perspector of $\rho$. For each $m\in\mathbb{L}_P$, $\rho(m)=m$.
+:::
+
+We see that the dual of a perspective transformation is also perspective. The previous argument implies the following theorem.
+
+::: {#thm-persptrans}
+Given perspective triangles $ABC$ and $DEF$ with perspector $P$ and perspectrix $\ell$, then there exists a unique perspective transformation $\rho$ with perspector $P$ and perspectrix $\ell$, such that
+$$
+\rho(A)= D,\,\rho(B)= E,\,\rho(C)= F
+$$
+This $\rho$ is said to be the perspective transformation from $ABC$ to $DEF$.
+:::
+
+::: {.callout-note collapse="true"}
+## Proof
+From @thm-projtransunique, a perspective transformation $\rho$ with perspectrix $\ell$ such that $\rho(B)=E$, $\rho(C)=F$ is unique, with $P$ being the perspector, so $\rho(A)=D$.
+:::
+
+::: {#lem-perspectivefix}
+Given a perspective transformation $\rho$ with perspector $P$ and perspectrix $\ell$, the value
+$$
+(X,\rho(X);P,PX\cap \ell)
+$$
+is independent of the choice of $X\in\mathbb{P}$.
+:::
+
+::: {.callout-note collapse="true"}
+## Proof
+When $P\in \ell$, the value is $1$, so we assume that $P\notin\ell$. Fix $A,B\notin \ell$ such that $A,B,P$ are not collinear. Let $AB\cap \rho(A)\rho(B)=Y\in \ell$, then
+$$
+(A,\rho(A);P,AP\cap \ell)\mathop{=}\limits^{Y}(B,\rho(B);P,BP\cap \ell)
+$$
+i.e. the value is fixed.
+:::
+
+::: {.unnumbered-env data-title="定義"}
+Suppose that the perspective transformation $\rho$ satisfies（$P,\,\ell$ are the perspector and perspectrix）
+$$
+(X,\rho(X);P,PX\cap \ell)=-1
+$$
+then $\rho$ is said to be involutive. For an involutive transformation $\rho$, $\rho\circ\rho$ is the identity. 
+:::
+
+::: {#lem-perspectiveinvolution}
+Given a projective transformation $\rho$, suppose that $\rho\circ\rho$ is the identity, then $\rho$ is either the identity or an involutive transformation.
+:::
+
+::: {.callout-note collapse="true"}
+## Proof
+Suppose that $\rho$ is not the identity, let $X,Y$ be points such that $\rho(X)\neq X$, $\rho(Y)\neq Y$, and any three points among $X,\rho(X),Y,\rho(Y)$ are not collinear. Let 
+$$
+P=X\rho(X)\cap Y\rho(Y),\,Z=XY\cap \rho(X)\rho(Y)
+$$
+then
+$$
+\rho(P)=P\implies\rho(PX)=PX,\,\rho(PY)=PY,\,\rho(PZ)=PZ
+$$
+From the projective map method, for $m\in \mathbb{L}_P$, $\rho(m)=m$ (we checked for $m=PX,PY,PZ$), i.e. $\rho$ is a perspective transformation with perspector $P$, so $\rho$ is involutive.
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+Any projective transformation is a composition of finitely many involutive transformations.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Given triangle $ABC$, let $P_aP_bP_c$ be the cevian triangle of $P$. We define $\comp_P$ to be the perspective transformation from $ABC$ to $P_aP_bP_c$.
+We call $\comp_P(X)$ the $P$-**complement** of $X$ and $\comp_P^{-1}(X)$ the $P$-**anticomplement** of $X$. We sometimes write $\comp_P^{-1}(X)=\anticomp_P(X)$. Let $P_A,P_B,P_C$ be the $P$-anticomplement of $A,B,C$, then $P_AP_BP_C$ is said to be the anticevian triangle of $P$ (with respect to $ABC$). In this case, the cevian triangle of the quadrangle $PP_AP_BP_C$ is $ABC$.
+:::
+
+::: {.unnumbered-env data-title}
+**Example**
+When $\ell$ is the tripolar of $P$ with respect to $ABC$, we have 
+$$
+(X,\comp_P(X);P,PX\cap\ell)=-\iota(-1)
+$$
+To see this, take $X=A$, then
+$$
+(A,P_a;P,AP\cap \ell)=(A,P_a;P,P_A)\cdot(A,P_a;P_A,AP\cap \ell)=(-1)\cdot (A,P_a;P_A,AP\cap \ell)
+$$
+and since $Q_c=\ell\cap AB,\,P_A,\,P_B,\,C$ are collinear,
+$$
+(A,P_A;P_a,AP\cap \ell)\mathop{=}\limits^{Q_c}(A,C;P_b;\ell\cap AC)=-1
+$$
+we see that 
+$$(A,P_a;P,AP\cap \ell)=(-1)\cdot (A,P_a;P_A,AP\cap \ell)=-\iota(-1)
+$$
 :::
