@@ -358,20 +358,20 @@ Given a conic $\mathcal{C}$ and a triangle $ABC$. Suppose that any two of $A,B,C
 
 ::: {#thm-brocard}
 ## Brocard
-若 $ABCD$ 皆在 $\mathcal{C}$ 上，則
+Suppose that points $A,B,C,D$ are on a conic $\mathcal{C}$, then the three points
 $$
 AB\cap CD,\,AC\cap BD,\,AD\cap BC
 $$
-三點為關於 $\mathcal{C}$ 的自共軛三角形。
+form a self-conjugate triangle with respect to $\mathcal{C}$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $AB\cap CD=P$，則 $P$ 的極線經過 $P$ 對 $A|B$ 與 $C|D$ 的調和共軛，由 @thm-collinear 可知 $P$ 的極線亦過 $AC\cap BD,AD\cap BC$。同理可知三點為自共軛三角形。
+Let $AB\cap CD=P$, then the polar of $P$ passes through the harmonic conjugates of $P$ with respect to $A|B$ and $C|D$. From @thm-collinear, the polar of $P$ passes through $AC\cap BD,AD\cap BC$.
 :::
 
 ::: {#cor-brocardconj}
-$A,B,C$ 在 $\mathcal{C}$ 上，$X\in BC$，$AB,\,AC$ 交 $\mathfrak{p}_\mathcal{C}(X)$ 於 $Y,Z$，則 $Y,Z$ 共軛。
+Let $A,B,C$ be points on a conic $\mathcal{C}$. For $X\in BC$ let $AB,\,AC$ meet $\mathfrak{p}_\mathcal{C}(X)$ at $Y,Z$, then $Y,Z$ are conjugate.
 :::
 
 ::: {#thm-polarproj}
