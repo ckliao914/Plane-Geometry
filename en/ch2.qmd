@@ -704,21 +704,25 @@ then $f$ is the harmonic conjugate with respect to $B|C$, and $f(B_1C_1\cap BC)=
 $$
 (B,C;B_1C_1\cap BC,AA_1\cap BC)=-1=A_1(B,C;B_1C_1\cap BC,BB_1\cap CC_1)
 $$
-We see that $A_1,AA_1\cap BC,BB_1\cap CC_1$ are collinear, i.e. $A_1B_1C_1$ and $ABC$ are perspective. Let $\mathcal{C}$ be the conic passing through $A,B,C$ and tangent to the three sides of $A_1B_1C_1$ (it exists from Pascal theorem on the hexagon $AABBCC$), then $\mathfrak{p}_\mathcal{C}=\mathfrak{p}$ (check the points $A,B,C,A_1$), i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
+We see that $A_1,AA_1\cap BC,BB_1\cap CC_1$ are collinear, i.e. $A_1B_1C_1$ and $ABC$ are perspective. Let $\mathcal{C}$ be the conic passing through $A,B,C$ and tangent to the three sides of $A_1B_1C_1$ (it exists from Pascal theorem on the hexagon $AABBCC$), then $\mathfrak{p}_\mathcal{C}=\mathfrak{p}$ (check the points $A,B,C,A_1,B_1,C_1$, and $BB_1\cap CC_1$), i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
 
-現假設 $\mathfrak{p}^2$ 非恆同變換。令 $A,D\in \mathbb{P}_\mathfrak{p}$ 滿足
+Now we assume that $\mathfrak{p}^2$ is not the identity. Let $A,D\in \mathbb{P}_\mathfrak{p}$ be points such that
 $$
-A,\,B=\mathfrak{p}^2(A),\,C=\mathfrak{p}^2(B),\,D,\,E=\mathfrak{p}^2(D)\text{ 為相異點}
+A,\,B=\mathfrak{p}^2(A),\,C=\mathfrak{p}^2(B),\,D,\,E=\mathfrak{p}^2(D)
 $$
-注意到若 $A\neq B$，但若 $C=A$，則 $\mathfrak{p}(A)=\mathfrak{p}(B)=AB$，矛盾，所以滿足這個條件的 $A,D$ 存在。令 $\mathcal{C}=(ABCDE)$，並考慮保交比的
+are pairwise distinct (suppose that $A\neq B$ but $C=A$, then $\mathfrak{p}(A)=\mathfrak{p}(B)=AB$, contradiction, so the points $A,D$ exist). Let $\mathcal{C}=(ABCDE)$, and consider the projective map
 $$
-g:\mathcal{C}\to \mathcal{C}\text{ 滿足 }g(A)=B,\,g(B)=C,\,g(D)=E
+g:\mathcal{C}\to \mathcal{C},\,g(A)=B,\,g(B)=C,\,g(D)=E
 $$
-由 `@autenvelope`，因為 $g$ 不是對合，故 $h:\mathcal{C}\to \mathcal{E},\,X\mapsto Xg(X)$ 保交比，其中錐點 $\mathcal{E}$ 為 $Xg(X)$ 的軌跡。令對偶變換 $\mathfrak{p}_h:\mathbb{P}\to \mathbb{L}$ 為 $h$ 的延拓（存在性與 `@extension` 證明一樣），也就是對所有 $X\in \mathcal{C}$，$\mathfrak{p}_h(X)=h(X)$。令 $F=BC\cap DE$，則
+From @thm-autenvelope, since $g$ is not an involution, the map
+$$
+h:\mathcal{C}\to \mathcal{E},\,X\mapsto Xg(X)
+$$ 
+is projective, where the dual conic $\mathcal{E}$ is the locus of $Xg(X)$. Let $\mathfrak{p}_h:\mathbb{P}\to \mathbb{L}$ be the exension of $h$ (the existence follows from the same argument as @thm-extension), i.e. for all $X\in \mathcal{C}$, $\mathfrak{p}_h(X)=h(X)$. Set $F=BC\cap DE$, then
 $$
 \mathfrak{p}_h(A)=AB=\mathfrak{p}(A),\mathfrak{p}_h(B)=BC=\mathfrak{p}(B),\mathfrak{p}_h(D)=DE=\mathfrak{p}(D),\mathfrak{p}_h(F)=CE=\mathfrak{p}(F)
 $$
-故 $\mathfrak{p}_h=\mathfrak{p}$。注意到 $\mathcal{C}\subset \mathbb{P}_{\mathfrak{p}_h}$，且給定 $Q\in\mathbb{P}_{\mathfrak{p}_h}$，總是找得到 $\mathcal{C}$ 上的兩點連線過 $Q$，由非退化的假設可知 $Q\in \mathcal{C}$，也就是 $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
+We see that $\mathfrak{p}_h=\mathfrak{p}$. Note that $\mathcal{C}\subset \mathbb{P}_{\mathfrak{p}_h}$, and for any $Q\in\mathbb{P}_{\mathfrak{p}_h}$, we may find two points in $\mathcal{C}$ collinear with $Q$. Since $\mathfrak{p}$ is nondegenerate, $Q\in \mathcal{C}$, i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
 :::
 
 ::: {.unnumbered-env}
