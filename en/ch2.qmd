@@ -458,3 +458,83 @@ We see that $AA_1\cap B_1C_1=Q$, i.e. $A,A_1,P$ are collinear.
 **Remark.**
 In the beginning of the proof of @thm-poleperspective, we showed that $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution. This follows directly from Desargues involution theorem, which we will see later.
 :::
+
+## 錐線的對偶
+
+觀察到錐線為 $\mathbb{P}$ 的子集，那 $\mathbb{L}$ 中也有錐線的對偶，就是滿足任意六線都有 $m(\ell_1,\ell_2;\ell_3,\ell_4)=n(\ell_1,\ell_2;\ell_3,\ell_4)$ 的這種集合，暫時稱此條件為 Brianchon 條件。
+
+::: {.unnumbered-env}
+**Definition.**
+一個集合 $\mathcal{E}\subset\mathbb{L}$ 被稱為（非退化）錐點如果
+
+(1) $\mathcal{E}$ 中任三相異線不共點（$\mathcal{E}$ 非空）。
+
+(2) $\mathcal{E}$ 中任意六相異線皆滿足 Brianchon 條件。
+
+(3) 對於任意 $\ell\in\mathcal{E}$，存在唯一一個 $\ell$ 上的點 $P$ 使得 $\mathbb{L}_P\cap\mathcal{E}=\{\ell\}$（所以其他 $\ell$ 上的點都會有另一條 $\mathcal{E}$ 中的直線通過），稱 $P$ 為 $\ell$ 對 $\mathcal{E}$ 的切點。
+
+定義錐點上的交比為 $(\ell_1,\ell_2;\ell_3,\ell_4)_\mathcal{E}=m(\ell_1,\ell_2;\ell_3,\ell_4)$，其中 $m$ 為任意在 $\mathcal{E}$ 中的直線。
+:::
+
+錐點也可以定義配極，但錐點的配極一樣是一個點線交換且保交比的變換，也就是說錐點與錐線可能存在某種對應的關係。注意到因為配極實現了對偶，所以把錐線配極會得到錐點，也就是 $\mathcal{E}_1=\{\mathfrak{p}_\mathcal{C}(X)\mid X\in \mathcal{C}_1\}$ 為錐點。
+
+::: {#thm-dualconic}
+集合 $\mathcal{E}\subset\mathbb{L}$ 為一錐點若且唯若 $\mathcal{E}$ 是某個錐線的所有切線形成的集合。對偶的，$\mathbb{P}$ 的子集為錐線若且唯若其為某個錐點的切點集。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+考慮錐線 $\mathcal{C}$ 對自己配極，會得到 $\mathcal{C}$ 的切線集，故切線集為錐點。對偶地，錐點的切點集為錐線。給定錐點 $\mathcal{E}$，令其切點集為錐線 $\mathcal{C}$，則僅需證明 $\mathcal{C}$ 的切線集為 $\mathcal{E}$。
+
+給定 $\ell\in\mathcal{E}$，若 $\ell$ 通過 $Q\in\mathcal{C}$，且 $Q$ 為 $m\in\mathcal{E}$ 的切點，則由切點的定義，$m=\ell$，故 $\ell$ 只與 $\mathcal{C}$ 交於 $\ell$ 對 $\mathcal{E}$ 的切點，也就是 $\ell$ 為 $\mathcal{C}$ 的切線。相反的，若 $\ell\notin\mathcal{E}$，則 $\ell$ 上有兩個 $\mathcal{E}$ 的切點（這個的對偶就是在不在錐線上的點可以作兩條切線），也就是 $\ell$ 不與 $\mathcal{C}$ 相切。這說明了 $\mathcal{C}$ 的切線集就是 $\mathcal{E}$。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+錐線 $\mathcal{C}$ 的切線集 $\mathcal{T}_\mathcal{C}$ 稱為 $\mathcal{C}$ 的包絡線；同理錐點 $\mathcal{E}$ 的切點集 $\mathcal{T}_\mathcal{E}$ 稱為 $\mathcal{E}$ 的包絡點。有 $\mathcal{T}_{\mathcal{T}_\mathcal{C}}=\mathcal{C}$。通常包絡線的交比會記為 $(\ell_1,\ell_2;\ell_3,\ell_4)_\mathcal{C}:=(\ell_1,\ell_2;\ell_3,\ell_4)_{\mathcal{T}_\mathcal{C}}$。
+:::
+
+錐線與錐點有一一對應的關係：錐線關於其切線集，以及錐點關於其切點集。事實上兩者的配極是相同的變換。
+
+::: {#lem-dualpolar}
+對錐線 $\mathcal{C}$ 與對 $\mathcal{T}_\mathcal{C}$ 配極是一樣的，同理對錐點 $\mathcal{E}$ 與對 $\mathcal{T}_\mathcal{E}$ 配極是一樣的。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+注意到點 $P$ 對錐線 $\mathcal{C}$ 配極就是取兩個 $\mathcal{T}_\mathcal{C}$ 中通過 $P$ 的線，其切點 $P_1,P_2$ 的連線 $\ell$；而 $\ell$ 對 $\mathcal{T}_\mathcal{C}$ 的極線就是兩個 $\ell$ 與 $\mathcal{C}$ 的交點 $P_1,P_2$ 的切線交點 $P$。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+受傳統觀點的影響，通常會以一個 $\mathbb{P}$ 的子集來看 $\mathbb{L}$ 中的元素，錐點相對的比較不好想像，所以通常都會想成是某個錐線的包絡線，有時也會把 $\mathcal{T}_\mathcal{C}$ 直接當成 $\mathcal{C}$ 來看待，例如 $\mathcal{T}_\mathcal{C}$ 上的交比會直接簡寫成 $\mathcal{C}$ 上的交比。這裡使用 $\mathcal{E}$ 作為錐點的記號就是因為包絡線（envelope）的緣故。
+:::
+
+::: {.unnumbered-env}
+**Example.**
+若 $\{\mathfrak{p}_\mathcal{C}(X)\mid X\in \mathcal{C}_1\}=\mathcal{T}_{\mathcal{C}_2}$，則簡記為 $\mathfrak{p}_{\mathcal{C}}(\mathcal{C}_1)=\mathcal{C}_2$。
+:::
+
+::: {#thm-brianchon}
+## Brianchon
+直線 $AB,BC,CD,DE,EF,FA$ 任三線不共點，則此六線共錐點（也就是切同一錐線）若且唯若 $AD,BE,CF$ 共點。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+這就是 Pascal 定理的對偶。
+:::
+
+::: {#thm-dualsteiner}
+## Dual of Steiner conic
+給定 $\ell,m$ 為相異線，$f:\mathbb{P}_\ell\to \mathbb{P}_m$ 保交比。
+
+(1) 若 $f(\ell\cap m)=m\cap \ell$，則存在定點 $Q$ 使得 $P$, $f(P)$, $Q$ 共線（$P\in\mathbb{P}_\ell$）。
+
+(2) 若 $f(\ell\cap m)\neq m\cap \ell$，則直線 $Pf(P)$ 的軌跡為一包含 $\ell,m$ 的錐點（$P\in\mathbb{P}_\ell$）。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+這就是 Steiner Conic 的對偶。
+:::
