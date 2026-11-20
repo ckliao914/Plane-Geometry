@@ -896,11 +896,13 @@ Suppose that $\mathcal{C}$ is nondegenerate, then consider $g:X\mapsto Xf(X)$, l
 
 Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Odd}(\ell_1\cup \ell_2)$. Consider $g:X\mapsto Xf(X)$ (this is a projective map from a degenerate conic to a degenerate dual conic). Let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
 
-現在假設 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，且 $f$ 在 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中，令 $P=\ell_1\cap \ell_2$，$f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$。若 $X_0=Y_0=P$，則 $\rho$ 是透視變換使透視點在透視軸上。若 $X_0\neq P$，$Y_0\neq P$，則任取一非退化錐線 $\mathcal{C}_1$ 與 $\ell_1,\,\ell_2$ 相切於 $X_0,\,Y_0$，對於 $Q\in \mathcal{C}_1$，令 $X_0Q\cap \ell_2=Y$，$Y_0Q\cap \ell_1=X$，則有 $f_2(Y)=X_0\rho(Q)\cap \ell_2$，故
+Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Even}(\ell_1\cup \ell_2)$. Set $P=\ell_1\cap \ell_2$, and let the fixed points of $f_1:\ell_1\to \ell_1$ be $P,X_0$, and let the fixed points of $f_2:\ell_2\to \ell_2$ be $P,Y_0$. When $X_0=Y_0=P$, then $\rho$ is a perspective transformation with its perspector on the perspectrix. When $X_0\neq P$, $Y_0\neq P$, take any nondegenerate conic $\mathcal{C}_1$ that is tangent to $\ell_1,\,\ell_2$ at $X_0,\,Y_0$, respectively. For $Q\in \mathcal{C}_1$, let $X_0Q\cap \ell_2=Y$, $Y_0Q\cap \ell_1=X$, then $f_2(Y)=X_0\rho(Q)\cap \ell_2$, 
 $$
 X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_2(X))=Y_0(X_0,P;Q,\rho(Q))
 $$
-（這是由 $\mathrm{Even}(\ell_1\cup \ell_2)$ 的定義），也就是 $\rho(Q)\in \mathcal{C}_1$，故 $\rho$ 為某個 $\mathrm{Inn}(\mathcal{C}_1)$ 中函數的延拓，前面的論證說明了存在 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，也就是 $(2)\implies(1)$。
+(this follows from the definition of $\mathrm{Even}(\ell_1\cup \ell_2)$), i.e. $\rho(Q)\in \mathcal{C}_1$. We see that $\rho$ is the extension of a map in $\mathrm{Inn}(\mathcal{C}_1)$. From the previous arguments for nondegenerate conics, there exists a dual transformation $\mathfrak{p}$ such that $\mathfrak{p}^2=\rho$.
+
+This shows that (2)$\implies$(1)$.
 :::
 
 ::: {.unnumbered-env}
