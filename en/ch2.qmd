@@ -886,7 +886,15 @@ Suppose that $\rho$ is a perspective transformation with its perspector $P$ on t
 
 This shows that (1)$\implies$(2).
 
-現在給定一錐線 $\mathcal{C}$ 與 $f\in \mathrm{Inn}(\mathcal{C})$，令 $\rho$ 為 $f$ 的延拓。若 $f$ 是對合，則 $\rho$ 為對合透視，取 $\mathfrak{p}$ 使 $\mathbb{P}_\mathfrak{p}$ 為 $\rho$ 的透視軸，$\mathbb{L}_\mathfrak{p}$ 為 $\rho$ 的透視點，則 $\mathfrak{p}^2=\rho$。接下來令 $f$ 不是對合。若 $\mathcal{C}$ 非退化，則考慮 $g:X\mapsto Xf(X)$，令 $g$ 的延拓為 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。若 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，$f$ 在 $\mathrm{Odd}(\ell_1\cup \ell_2)$ 中，考慮 $g:X\mapsto Xf(X)$（這是一個從退化錐線到退化錐點的保交比變換）的延拓 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。
+___ 
+
+Conversely, let $\mathcal{C}$ be a conic and $f\in \mathrm{Inn}(\mathcal{C})$ with extension $\rho$. 
+
+Suppose that $f$ is an involution, then $\rho$ is an involutive transformation. Take a degenerate dual transformation $\mathfrak{p}$ such that $\mathbb{P}_\mathfrak{p}$ is the perspectrix of $\rho$, and $\mathbb{L}_\mathfrak{p}$ is the perspector of $\rho$, then $\mathfrak{p}^2=\rho$. In the following we assume that $f$ is not an involution.
+
+Suppose that $\mathcal{C}$ is nondegenerate, then consider $g:X\mapsto Xf(X)$, let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
+
+Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Odd}(\ell_1\cup \ell_2)$. Consider $g:X\mapsto Xf(X)$ (this is a projective map from a degenerate conic to a degenerate dual conic). Let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
 
 現在假設 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，且 $f$ 在 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中，令 $P=\ell_1\cap \ell_2$，$f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$。若 $X_0=Y_0=P$，則 $\rho$ 是透視變換使透視點在透視軸上。若 $X_0\neq P$，$Y_0\neq P$，則任取一非退化錐線 $\mathcal{C}_1$ 與 $\ell_1,\,\ell_2$ 相切於 $X_0,\,Y_0$，對於 $Q\in \mathcal{C}_1$，令 $X_0Q\cap \ell_2=Y$，$Y_0Q\cap \ell_1=X$，則有 $f_2(Y)=X_0\rho(Q)\cap \ell_2$，故
 $$
