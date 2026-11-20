@@ -776,7 +776,7 @@ Define the polarity with respect to $\ell_1\cup\ell_2$: let $\ell_1\cap\ell_2=P$
 The polar transformation with respect to $\ell_1\cup \ell_2$ is not a dual transformation, for the polar of $P$ is not a line. In later chapters, we will encounter the isoconjugate of a pencil of conics, in which the polarity of degenerate conics is needed. We will not consider the envelope of a degenerate conic since it is not a degenerate dual conic (i.e. two points).
 :::
 
-After defining the polarity, we define projective maps between degenerate conics: given degenerate conics $\ell_1\cup \ell_2$ and $m_1\cup m_2$, the function $f:\ell_1\cup \ell_2\to m_1\cup m_2$ is said to be a projective map if there are projective maps $f_1:\ell_1\to m_1$ and $f_2:\ell_2\to m_2$（or $f_1:\ell_1\to m_2,\,f_2:\ell_2\to m_1$, such that $f_1(X)=f(X),\,f_2(Y)=f(Y)$ for all $X\in \ell_1,\,Y\in \ell_2$. We write $f=f_1\cup f_2$.
+After defining the polarity, we define projective maps between degenerate conics: given degenerate conics $\ell_1\cup \ell_2$ and $m_1\cup m_2$, the function $f:\ell_1\cup \ell_2\to m_1\cup m_2$ is said to be a projective map if there are projective maps $f_1:\ell_1\to m_1$ and $f_2:\ell_2\to m_2$ (or $f_1:\ell_1\to m_2,\,f_2:\ell_2\to m_1$), such that $f_1(X)=f(X),\,f_2(Y)=f(Y)$ for all $X\in \ell_1,\,Y\in \ell_2$. We write $f=f_1\cup f_2$.
 
 ::: {.unnumbered-env}
 **Corollary.**
@@ -871,13 +871,13 @@ Let $\rho$ be a projective transformation, then the following are equivalent.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-給定對偶變換 $\mathfrak{p}$。若 $\mathfrak{p}$ 非退化，則取 $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$，有 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，故 $\mathfrak{p}^2$ 為某個 $\mathrm{Inn}(\mathcal{C})$ 中函數的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為一直線，則由 `@greatdegeneratedual`，$\mathfrak{p}^2$ 為對合透視，取任意 $\mathcal{C}$ 使透視軸是透視點的極點，則 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，$\mathfrak{p}^2$ 為 $\mathcal{C}$ 上某個對合的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為兩直線 $\ell_1\cup\ell_2$，則 $\mathfrak{p}^2$ 為某個 $\mathrm{Odd}(\ell_1\cup\ell_2)$ 中函數的延拓（因為 $\mathfrak{p}(\ell_1\cap\ell_2)$ 通過三點 $\ell_1\cap\ell_2$，$\mathfrak{p}(\ell_1)$，$\mathfrak{p}(\ell_2)$）。若 $\rho$ 為透視變換使透視點在透視軸上，則取任意兩過透視點的直線 $\ell_1\cup \ell_2$，$\rho$ 為某個 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中函數的延拓。這說明了 $(1)\implies(2)$。
+給定對偶變換 $\mathfrak{p}$。若 $\mathfrak{p}$ 非退化，則取 $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$，有 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，故 $\mathfrak{p}^2$ 為某個 $\mathrm{Inn}(\mathcal{C})$ 中函數的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為一直線，則由 @lem-greatdegeneratedual，$\mathfrak{p}^2$ 為對合透視，取任意 $\mathcal{C}$ 使透視軸是透視點的極點，則 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，$\mathfrak{p}^2$ 為 $\mathcal{C}$ 上某個對合的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為兩直線 $\ell_1\cup\ell_2$，則 $\mathfrak{p}^2$ 為某個 $\mathrm{Odd}(\ell_1\cup\ell_2)$ 中函數的延拓（因為 $\mathfrak{p}(\ell_1\cap\ell_2)$ 通過三點 $\ell_1\cap\ell_2$，$\mathfrak{p}(\ell_1)$，$\mathfrak{p}(\ell_2)$）。若 $\rho$ 為透視變換使透視點在透視軸上，則取任意兩過透視點的直線 $\ell_1\cup \ell_2$，$\rho$ 為某個 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中函數的延拓。這說明了 $(1)\implies(2)$。
 
 現在給定一錐線 $\mathcal{C}$ 與 $f\in \mathrm{Inn}(\mathcal{C})$，令 $\rho$ 為 $f$ 的延拓。若 $f$ 是對合，則 $\rho$ 為對合透視，取 $\mathfrak{p}$ 使 $\mathbb{P}_\mathfrak{p}$ 為 $\rho$ 的透視軸，$\mathbb{L}_\mathfrak{p}$ 為 $\rho$ 的透視點，則 $\mathfrak{p}^2=\rho$。接下來令 $f$ 不是對合。若 $\mathcal{C}$ 非退化，則考慮 $g:X\mapsto Xf(X)$，令 $g$ 的延拓為 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。若 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，$f$ 在 $\mathrm{Odd}(\ell_1\cup \ell_2)$ 中，考慮 $g:X\mapsto Xf(X)$（這是一個從退化錐線到退化錐點的保交比變換）的延拓 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。
 
 現在假設 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，且 $f$ 在 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中，令 $P=\ell_1\cap \ell_2$，$f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$。若 $X_0=Y_0=P$，則 $\rho$ 是透視變換使透視點在透視軸上。若 $X_0\neq P$，$Y_0\neq P$，則任取一非退化錐線 $\mathcal{C}_1$ 與 $\ell_1,\,\ell_2$ 相切於 $X_0,\,Y_0$，對於 $Q\in \mathcal{C}_1$，令 $X_0Q\cap \ell_2=Y$，$Y_0Q\cap \ell_1=X$，則有 $f_2(Y)=X_0\rho(Q)\cap \ell_2$，故
 $$
-X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_2(X))=Y_0(X_0,P;Q;\rho(Q))
+X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_2(X))=Y_0(X_0,P;Q,\rho(Q))
 $$
 （這是由 $\mathrm{Even}(\ell_1\cup \ell_2)$ 的定義），也就是 $\rho(Q)\in \mathcal{C}_1$，故 $\rho$ 為某個 $\mathrm{Inn}(\mathcal{C}_1)$ 中函數的延拓，前面的論證說明了存在 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，也就是 $(2)\implies(1)$。
 :::
