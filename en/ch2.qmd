@@ -865,7 +865,7 @@ From the classification in @lem-classifyinn, we see that when $f\in \mathrm{Inn}
 :::
 
 ::: {#thm-innextension}
-Let $\rho$ be a projective transformation, then the following are equivalent.
+Let $\rho$ be a projective transformation. The following are equivalent.
 
 (1) There exists a dual transformation $\mathfrak{p}$ such that $\mathfrak{p}^2=\rho$, or $\rho$ is a perspective transformation with its perspector on the perspectrix.
 
@@ -878,7 +878,7 @@ Let $\mathfrak{p}$ be a dual transformation.
 
 Suppose that $\mathfrak{p}$ is nondegenerate. Set $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$, then $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$, i.e. $\mathfrak{p}^2$ is the extension of a map in $\mathrm{Inn}(\mathcal{C})$. 
 
-Suppose that $\mathfrak{p}$ is degenerate, and $\mathbb{P}_\mathfrak{p}$ is a single line, then from @lem-greatdegeneratedual, $\mathfrak{p}^2$ is an involutive transformation. Take any (nondegenerate) conic $\mathcal{C}$ such that the perspector is the pole of the perspectrix, then $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$, and $\mathfrak{p}^2$ is the extension of an involution on $\mathcal{C}$.
+Suppose that $\mathfrak{p}$ is degenerate, and $\mathbb{P}_\mathfrak{p}$ is a single line, then from @lem-greatdegeneratedual, $\mathfrak{p}^2$ is an involutive transformation. Take any (nondegenerate) conic $\mathcal{C}$ such that the perspector of $\mathfrak{p}^2$ is the pole of its perspectrix, then $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$, and $\mathfrak{p}^2$ is the extension of an involution on $\mathcal{C}$.
 
 Suppose that $\mathfrak{p}$ is degenerate, and $\mathbb{P}_\mathfrak{p}$ is the union of two lines $\ell_1\cup\ell_2$, then $\mathfrak{p}^2$ is the extension of a map in $\mathrm{Odd}(\ell_1\cup\ell_2)$ (since $\mathfrak{p}(\ell_1\cap\ell_2)$ passes through $\ell_1\cap\ell_2,\mathfrak{p}(\ell_1),\mathfrak{p}(\ell_2)$).
 
@@ -892,13 +892,13 @@ Conversely, let $\mathcal{C}$ be a conic and $f\in \mathrm{Inn}(\mathcal{C})$ wi
 
 Suppose that $f$ is an involution, then $\rho$ is an involutive transformation. Take a degenerate dual transformation $\mathfrak{p}$ such that $\mathbb{P}_\mathfrak{p}$ is the perspectrix of $\rho$, and $\mathbb{L}_\mathfrak{p}$ is the perspector of $\rho$, then $\mathfrak{p}^2=\rho$. In the following we assume that $f$ is not an involution.
 
-Suppose that $\mathcal{C}$ is nondegenerate, then consider $g:X\mapsto Xf(X)$, let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
+Suppose that $\mathcal{C}$ is nondegenerate. Consider $g:X\mapsto Xf(X)$, and let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
 
 Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Odd}(\ell_1\cup \ell_2)$. Consider $g:X\mapsto Xf(X)$ (this is a projective map from a degenerate conic to a degenerate dual conic). Let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
 
-Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Even}(\ell_1\cup \ell_2)$. Set $P=\ell_1\cap \ell_2$. Let the fixed points of $f_1:\ell_1\to \ell_1$ be $P,X_0$, and let the fixed points of $f_2:\ell_2\to \ell_2$ be $P,Y_0$. When $X_0=Y_0=P$, $\rho$ is a perspective transformation with its perspector on the perspectrix. When $X_0\neq P$, $Y_0\neq P$, take any nondegenerate conic $\mathcal{C}_1$ that is tangent to $\ell_1,\,\ell_2$ at $X_0,\,Y_0$, respectively. For $Q\in \mathcal{C}_1$, let $X_0Q\cap \ell_2=Y$, $Y_0Q\cap \ell_1=X$, then $f_2(Y)=X_0\rho(Q)\cap \ell_2$, 
+Suppose that $\mathcal{C}=\ell_1\cup \ell_2$ is degenerate, and $f$ is in $\mathrm{Even}(\ell_1\cup \ell_2)$. Set $P=\ell_1\cap \ell_2$. Let the fixed points of $f_1:\ell_1\to \ell_1$ be $P,X_0$, and let the fixed points of $f_2:\ell_2\to \ell_2$ be $P,Y_0$. When $X_0=Y_0=P$, $\rho$ is a perspective transformation with its perspector on the perspectrix. When $X_0\neq P$ and $Y_0\neq P$, take any nondegenerate conic $\mathcal{C}_1$ that is tangent to $\ell_1,\,\ell_2$ at $X_0,\,Y_0$, respectively. For $Q\in \mathcal{C}_1$, let $X_0Q\cap \ell_2=Y$, $Y_0Q\cap \ell_1=X$, then $f_2(Y)=X_0\rho(Q)\cap \ell_2$, 
 $$
-X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_2(X))=Y_0(X_0,P;Q,\rho(Q))
+X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_1(X))=Y_0(X_0,P;Q,\rho(Q))
 $$
 (this follows from the definition of $\mathrm{Even}(\ell_1\cup \ell_2)$), i.e. $\rho(Q)\in \mathcal{C}_1$. We see that $\rho$ is the extension of a map in $\mathrm{Inn}(\mathcal{C}_1)$. From the previous arguments for nondegenerate conics, there exists a dual transformation $\mathfrak{p}$ such that $\mathfrak{p}^2=\rho$.
 
