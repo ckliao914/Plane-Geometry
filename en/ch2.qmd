@@ -844,19 +844,19 @@ $$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-We will show the inclusion $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$ first. Note that an involution with a perspectrix is a composition of two involutions with perspectors. For $Q\notin\mathcal{C}$, let $f_Q$ be the involution of perspector $Q$. By induction it suffices to show that the composition of $f_Q$ followed by a map in $\mathrm{Odd}(\mathcal{C})$ (resp. $\mathrm{Even}(\mathcal{C})$) is in $\mathrm{Even}(\mathcal{C})$ (resp. $\mathrm{Odd}(\mathcal{C})$).
+We will show the inclusion $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$ first. Note that an involution with a perspectrix is a composition of two involutions with perspectors. For $Q\notin\mathcal{C}$, let $f_Q$ be the involution with perspector $Q$. By induction, it suffices to show that the composition of $f_Q$ followed by a map in $\mathrm{Odd}(\mathcal{C})$ (resp. $\mathrm{Even}(\mathcal{C})$) is in $\mathrm{Even}(\mathcal{C})$ (resp. $\mathrm{Odd}(\mathcal{C})$).
 
 Given $f=f_1\cup f_2\in \mathrm{Odd}(\mathcal{C})$, let $Q_1,Q_2$ be the fixed points associated to $f_1,f_2$, respectively, and let $g=f_Q\circ f$, then
 $$
-(P,Q_1Q\cap \ell_1,X,g(X))\mathop{=}\limits^{Q_1}(Q_1P\cap f_1(X)Q,Q;f_1(X),g(X))=(PQ_1,PQ;\ell_2,\ell_1)
+(P,Q_1Q\cap \ell_1;X,g(X))\mathop{=}\limits^{Q_1}(Q_1P\cap f_1(X)Q,Q;f_1(X),g(X))=(PQ_1,PQ;\ell_2,\ell_1)
 $$
-Similarly $X_0=Q_1Q\cap \ell_1$ is a fixed point of $f_1$, $Y_0=Q_2Q\cap \ell_2$ is a fixed point of $f_2$, and
+Similarly, $X_0=Q_1Q\cap \ell_1$ is a fixed point of $f_1$, $Y_0=Q_2Q\cap \ell_2$ is a fixed point of $f_2$, and
 $$
-(P,X_0,X,g(X))\cdot (P,Y_0;Y,g(Y))=(PQ_1,PQ;\ell_2,\ell_1)\cdot (PQ_2,PQ;\ell_1,\ell_2)=1
+(P,X_0;X,g(X))\cdot (P,Y_0;Y,g(Y))=(PQ_1,PQ;\ell_2,\ell_1)\cdot (PQ_2,PQ;\ell_1,\ell_2)=1
 $$
 i.e. $g\in \mathrm{Even}(\mathcal{C})$. The same argument shows that for $f\in \mathrm{Even}(\mathcal{C})$, $f_Q\circ f\in \mathrm{Odd}(\mathcal{C})$.
 
-We have proven that $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$. Given $f\in \mathrm{Odd}(\mathcal{C})$, let $Q_1,Q_2$ be the fixed points associated to $f_1,f_2$, and let $Q\neq P$ be conjugate to $Q_1,Q_2$, then $g=f_Q\circ f$ is an involution on $\mathcal{C}$, i.e. $f=f_Q\circ g\in \mathrm{Inn}(\mathcal{C})$ is a composition of involutions. Given $f\in \mathrm{Even}(\mathcal{C})$, then $f_Q\circ f\in \mathrm{Odd}(\mathcal{C})\subset \mathrm{Inn}(\mathcal{C})$. Since $f_Q$ is an involution, $f\in \mathrm{Inn}(\mathcal{C})$. We conclude that $\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$.
+We have proven that $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$. Given $f\in \mathrm{Odd}(\mathcal{C})$, let $Q_1,Q_2$ be the fixed points associated to $f_1,f_2$, and let $Q\neq P$ be conjugate to both $Q_1$ and $Q_2$, then $g=f_Q\circ f$ is an involution on $\mathcal{C}$, i.e. $f=f_Q\circ g\in \mathrm{Inn}(\mathcal{C})$ is a composition of involutions. Given $f\in \mathrm{Even}(\mathcal{C})$, then $f_Q\circ f\in \mathrm{Odd}(\mathcal{C})\subset \mathrm{Inn}(\mathcal{C})$. Since $f_Q$ is an involution, $f\in \mathrm{Inn}(\mathcal{C})$. We conclude that $\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$.
 :::
 
 ::: {.unnumbered-env}
