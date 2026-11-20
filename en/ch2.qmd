@@ -776,7 +776,7 @@ Define the polarity with respect to $\ell_1\cup\ell_2$: let $\ell_1\cap\ell_2=P$
 The polar transformation with respect to $\ell_1\cup \ell_2$ is not a dual transformation, for the polar of $P$ is not a line. In later chapters, we will encounter the isoconjugate of a pencil of conics, in which the polarity of degenerate conics is needed. We will not consider the envelope of a degenerate conic since it is not a degenerate dual conic (i.e. two points).
 :::
 
-After defining the polarity, we define projective maps between degenerate conics: given degenerate conics $\ell_1\cup \ell_2$ and $m_1\cup m_2$, the function $f:\ell_1\cup \ell_2\to m_1\cup m_2$ is said to be a projective map if there are projective maps $f_1:\ell_1\to m_1$ and $f_2:\ell_2\to m_2$（or $f_1:\ell_1\to m_2,\,f_2:\ell_2\to m_1$, such that $f_1(X)=f(X),\,f_2(Y)=f(Y)$ for all $X\in \ell_1,\,Y\in \ell_2$.
+After defining the polarity, we define projective maps between degenerate conics: given degenerate conics $\ell_1\cup \ell_2$ and $m_1\cup m_2$, the function $f:\ell_1\cup \ell_2\to m_1\cup m_2$ is said to be a projective map if there are projective maps $f_1:\ell_1\to m_1$ and $f_2:\ell_2\to m_2$（or $f_1:\ell_1\to m_2,\,f_2:\ell_2\to m_1$, such that $f_1(X)=f(X),\,f_2(Y)=f(Y)$ for all $X\in \ell_1,\,Y\in \ell_2$. We write $f=f_1\cup f_2$.
 
 ::: {.unnumbered-env}
 **Corollary.**
@@ -792,7 +792,7 @@ There are two types of an involution $f$:
 
 (1) There exists $Q\notin\ell_1\cup\ell_2$ such that $Xf(X)$ pass through $Q$ for all $X\in \ell_1\cup \ell_2$. In this case, $Q$ is called the perspector of $f$.
 
-(2) There exist involutions $f_1:\ell_1\to \ell_1,\,f_2:\ell_2\to \ell_2$. In this case, $f_1$ (resp. $f_2$) has a fixed point $R_1$ (resp. $R_2$) other than $\ell_1\cap \ell_2$. The line $R_1R_2$ is called the perspectrix of $f$.
+(2) There exist involutions $f_1:\ell_1\to \ell_1,\,f_2:\ell_2\to \ell_2$ such that $f=f_1\cup f_2$. In this case, $f_1$ (resp. $f_2$) has a fixed point $R_1$ (resp. $R_2$) other than $\ell_1\cap \ell_2$. The line $R_1R_2$ is called the perspectrix of $f$.
 
 ::: {.unnumbered-env}
 **Remark.**
@@ -801,7 +801,12 @@ Similar to Brocard theorem, if $Q,R\notin \ell_1\cup \ell_2$ are conjugate, let 
 
 ::: {.unnumbered-env}
 **Definition.**
-Let $\mathcal{C}$ be a conic (possibly degenerate), and let $f:\mathcal{C}\to \mathcal{C}$ be a projective map. Suppose that $f$ is a composition of finitely many involutions on $\mathcal{C}$, then $f$ is said to be an inner automorphism on $\mathcal{C}$, the set of all inner automorphisms on $\mathcal{C}$ is denoted by $\mathrm{Inn}(\mathcal{C})$.
+Let $\mathcal{C}$ be a conic (possibly degenerate), and let $f:\mathcal{C}\to \mathcal{C}$ be a projective map. Suppose that $f$ is a composition of finitely many involutions on $\mathcal{C}$, then $f$ is said to be an **inner automorphism** on $\mathcal{C}$. The set of all inner automorphisms on $\mathcal{C}$ is denoted by $\mathrm{Inn}(\mathcal{C})$.
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+An automorphism is a "suitable map" from an object to itself. In group theory, the inner automorphism of a group $G$ is the subgroup of the automorphism group of $G$ consisting of the conjugation automorphisms. I borrowed the term because I couldn't think of a better description, but as far as I know, there are barely any connections between the two concepts.
 :::
 
 If $\mathcal{C}$ is nondegenerate, then any projective map $f:\mathcal{C}\to \mathcal{C}$ is an inner automorphism. We will show that this is not true when $\mathcal{C}$ is degenerate.
@@ -813,20 +818,30 @@ The composition of two inner automorphisms is again an inner automorphism. This 
 
 ::: {.unnumbered-env}
 **Definition.**
-令 $\mathcal{C}=\ell_1\cup \ell_2$，$P=\ell_1\cap \ell_2$。定義兩類 $f:\mathcal{C}\to \mathcal{C}$。
+Let $\mathcal{C}=\ell_1\cup \ell_2$ be degenerate, $P=\ell_1\cap \ell_2$. Define two types of $f=f_1\cup f_2:\mathcal{C}\to \mathcal{C}$.
 
-(1) 存在定點 $Q_1,Q_2$ 使得 $f_1:\ell_1\to \ell_2,\,X\mapsto Q_1X\cap \ell_2$，與 $f_2:\ell_2\to \ell_1,\,Y\mapsto Q_2Y\cap \ell_1$，且 $P,Q_1,Q_2$ 共線。記 $f\in \mathrm{Odd}(\mathcal{C})$。
+(1) Suppose that there exists fixed points $Q_1,Q_2$ such that 
+$$
+f_1:\ell_1\to \ell_2,\,X\mapsto Q_1X\cap \ell_2,\,f_2:\ell_2\to \ell_1,\,Y\mapsto Q_2Y\cap \ell_1
+$$
+and $P,Q_1,Q_2$ are collinear, then $f$ is said to be an **odd automorphism**.
 
-(2) 令 $f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$，且滿足 $(P,X_0;X,f_1(X))\cdot (P,Y_0;Y,f_2(Y))=1$ 對於 $X\in \ell_1,\,Y\in \ell_2$。記 $f\in \mathrm{Even}(\mathcal{C})$。
+(2) Let the fixed points of $f_1:\ell_1\to \ell_1$ be $P,X_0$, and let the fixed points of $f_2:\ell_2\to \ell_2$ be $P,Y_0$. Suppose that 
+$$
+(P,X_0;X,f_1(X))\cdot (P,Y_0;Y,f_2(Y))=1
+$$ 
+for all $X\in \ell_1,\,Y\in \ell_2$, then $f$ is said to be an **even automorphism**.
 :::
 
+The set of odd (resp. even) automorphisms is denoted by $\mathrm{Odd}(\mathcal{C})$ (resp. $\mathrm{Even}(\mathcal{C})$).
+
 ::: {#lem-classifyinn}
-$\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。
+$\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-先證明 $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。注意到以一直線為中心的對合可以寫成兩個以點為中心的對合的合成。給定 $Q\notin\mathcal{C}$，$f_Q$ 為以 $Q$ 為中心的對合，由數學歸納法僅須證明 $f_Q$ 合成 $\mathrm{Odd}(\mathcal{C})$ 的函數在 $\mathrm{Even}(\mathcal{C})$ 中，及 $f_Q$ 合成 $\mathrm{Even}(\mathcal{C})$ 的函數在 $\mathrm{Odd}(\mathcal{C})$ 中。
+We will show the inclusion $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$ first. 注意到以一直線為中心的對合可以寫成兩個以點為中心的對合的合成。給定 $Q\notin\mathcal{C}$，$f_Q$ 為以 $Q$ 為中心的對合，由數學歸納法僅須證明 $f_Q$ 合成 $\mathrm{Odd}(\mathcal{C})$ 的函數在 $\mathrm{Even}(\mathcal{C})$ 中，及 $f_Q$ 合成 $\mathrm{Even}(\mathcal{C})$ 的函數在 $\mathrm{Odd}(\mathcal{C})$ 中。
 
 給定 $f\in \mathrm{Odd}(\mathcal{C})$，令 $Q_1,Q_2$ 為 $f_1,f_2$ 的透視定點，並令 $g=f_Q\circ f$，則
 $$
@@ -843,15 +858,15 @@ $$
 
 ::: {.unnumbered-env}
 **Remark.**
-利用 `@classifyinn` 的分類，可以發現對於 $f\in \mathrm{Inn}(\mathcal{C})$，射影軸 $\ell$ 存在，也就是對於任意 $X,Y\in \mathcal{C}$，$Xf(Y)\cap Yf(X)\in \ell$（不採用射影軸的存在性當作定義是因為當 $f_1$ 是恆同變換，$f_2$ 有兩個不動點時射影軸也存在）。
+From the classification in @lem-classifyinn, we see that when $f\in \mathrm{Inn}(\mathcal{C})$, the projective axis $\ell$ of $f$ exists, i.e. for any $X,Y\in \mathcal{C}$, $Xf(Y)\cap Yf(X)\in \ell$. One may wonder whether it is possible to define inner automorphisms to be those projective maps with a projective axis. Regrettably, the projective axis exists when $f_1$ is the identity and $f_2$ has two fixed points, so this definition is not equivalent (and $\mathrm{Inn}(\mathcal{C})$ wouldn't be a group).
 :::
 
 ::: {#thm-innextension}
-令 $\rho$ 為一射影變換，則以下兩條件等價：
+Let $\rho$ be a projective transformation, then the following are equivalent.
 
-(1) 存在對偶變換 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，或 $\rho$ 是透視變換使透視點在透視軸上。
+(1) There exists a dual transformation $\mathfrak{p}$ such that $\mathfrak{p}^2=\rho$, or $\rho$ is a perspective transformation with its perspector on the perspectrix.
 
-(2) 存在一（可退化）錐線 $\mathcal{C}$，及 $f\in \mathrm{Inn}(\mathcal{C})$ 使得 $\rho$ 為 $f$ 的延拓。
+(2) There exists a (possibly degenerate) conic $\mathcal{C}$ and $f\in \mathrm{Inn}(\mathcal{C})$ such that $\rho$ is the extension of $f$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -869,5 +884,5 @@ $$
 
 ::: {.unnumbered-env}
 **Remark.**
-由 `@innextension` 的證明可以看出有些射影變換並不是一個內自同構的延拓。
+From the proof of @thm-innextension, we see that some projective transformations are not the extension of inner automorphisms.
 :::
