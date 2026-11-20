@@ -576,25 +576,27 @@ Dually, the locus of the pole of $Xf(X)$ is a line or a conic.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-We have shown the case where $f$ is an involution. If $f$ is the identity, then the locus of $Xf(X)$ is the envelope of $\mathcal{C}$.。故假設 $f$ 非恆同變換也不是對合，令 $\ell$ 為 $f$ 的射影軸。
+We have shown the case where $f$ is an involution. When $f$ is the identity, then the locus of $Xf(X)$ is the envelope of $\mathcal{C}$. We may assume that $f$ is neither an involution or the identity. Let $\ell$ be the projective axis of $f$.
 
-給定 $A$ 在 $\mathcal{C}$ 上，滿足 $\mathfrak{p}_\mathcal{C}(Af(A))\notin \ell$（因為 $f$ 不是對合），令
+Let $A$ be a point on $\mathcal{C}$ satisfying $\mathfrak{p}_\mathcal{C}(Af(A))\notin \ell$ (since $f$ is not an involution). Set
 $$
 Af(A)\cap Xf(X)=P,\,Af(X)\cap Xf(A)=Q
 $$
-由 Brocard 定理，$\mathfrak{p}_\mathcal{C}(P)$ 過 $Q$ 與 $\mathfrak{p}_\mathcal{C}(Af(A))$，可知
+By Brocard theorem, $\mathfrak{p}_\mathcal{C}(P)$ pass through $Q$ and $\mathfrak{p}_\mathcal{C}(Af(A))$, so
 $$
-X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto\mathfrak{p}_\mathcal{C}(Af(A))Q=\mathfrak{p}_\mathcal{C}(P)\mapsto P \text{ 保交比}
+X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto\mathfrak{p}_\mathcal{C}(Af(A))Q=\mathfrak{p}_\mathcal{C}(P)\mapsto P
 $$
-若給定 $X_1,X_2,X_3\in\mathcal{C}$，令 $Af(A)=\ell_A$，$X_i f(X_i)=\ell_i$ $\forall i=1,2,3$，則由 $X\mapsto P$ 保交比，
+is projective.
+
+Given $X_1,X_2,X_3\in\mathcal{C}$, set $Af(A)=\ell_A$ and $X_i f(X_i)=\ell_i$ for $i=1,2,3$, then
 $$
 (X_1,X_2;X_3,X)_\mathcal{C}=\ell_A(\ell_1,\ell_2;\ell_3,Xf(X))
 $$
-若將 $A$ 換成另一滿足 $\mathfrak{p}_\mathcal{C}(Bf(B))\notin \ell$ 的點 $B$，則對 $B$ 也有如此的交比關係，也就是說
+(since $X\mapsto P$ is projective). Replacing $A$ with another point $B\in \mathcal{C}$ such that $\mathfrak{p}_\mathcal{C}(Bf(B))\notin \ell$, we get
 $$
 \ell_A(\ell_1,\ell_2;\ell_3,Xf(X))=(X_1,X_2;X_3,X)_\mathcal{C}=\ell_B(\ell_1,\ell_2;\ell_3,Xf(X))
 $$
-故 $Xf(X)$ 的軌跡為 $Af(A),Bf(B),\ell_1,\ell_2,\ell_3$ 決定的錐點，且 $X\mapsto Xf(X)$ 保交比。
+so the locus of $Xf(X)$ a dual conic determined by the lines $Af(A),Bf(B),\ell_1,\ell_2,\ell_3$, and $X\mapsto Xf(X)$ is projective.
 :::
 
 ::: {.unnumbered-env}
