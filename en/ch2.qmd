@@ -760,3 +760,113 @@ Suppose that $\mathfrak{p}^2$ is the identity. If $\mathfrak{p}$ is nondegenerat
 **Remark.**
 Suppose that unlike $\mathbb{C}^\times$, we cannot take the square root in the multiplicative group of the cross ratio, i.e. lines and conics may not intersect, then we may adopt the characterization in @thm-polarequiv as the definition of polar transformations (or even conics).
 :::
+
+## 退化錐線
+
+退化錐線有可能是兩相異直線，或是兩重合的直線（就是兩相異直線再退化的情況）。這裡只探討兩相異直線的情況。
+
+::: {.unnumbered-env}
+**Definition.**
+定義對退化的錐線 $\ell_1\cup\ell_2$ 配極：令 $\ell_1\cap\ell_2=P$，則
+$$
+X,\,Y\,\text{共軛}\,\iff PY\,\text{為}\,PX\,\text{關於}\,\ell_1| \ell_2\,\text{的調和共軛}
+$$
+並且 $P$ 與所有點共軛。一個點的極線就是所有與其共軛的點，所以 $P$ 的極線是整個平面；一條線的極點就是與線上的點都共軛的點的集合。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+對 $\ell_1\cup \ell_2$ 配極不是對偶變換，因為 $P$ 的極線不是一直線。考慮退化錐線的配極是因為在後面研究錐線族的等共軛變換時會用到這種情況。注意到這裡不會定義退化錐線的包絡線，因為退化錐線的包絡線不是退化錐點（兩個點）。
+:::
+
+定義完配極，接著在退化錐線間定義保交比變換：給定退化的 $\ell_1\cup \ell_2$ 與 $m_1\cup m_2$，稱 $f:\ell_1\cup \ell_2\to m_1\cup m_2$ 保交比若存在保交比的 $f_1:\ell_1\to m_1$ 與 $f_2:\ell_2\to m_2$（或是 $f_1:\ell_1\to m_2,\,f_2:\ell_2\to m_1$），使 $f_1(X)=f(X),\,f_2(Y)=f(Y)$ 對所有 $X\in \ell_1,\,Y\in \ell_2$。
+
+::: {.unnumbered-env}
+**Corollary.**
+對於退化錐線間保交比函數，存在唯一的延拓射影變換。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+給定退化錐線 $\ell_1\cup \ell_2$，若 $f:\ell_1\cup \ell_2\to \ell_1\cup \ell_2$ 保交比滿足 $f\circ f$ 是恆同變換，且不存在三個共線的不動點，則 $f$ 稱為 $\ell_1\cup\ell_2$ 上的對合。
+:::
+
+對合 $f$ 有兩種：一種是存在 $Q\notin\ell_1\cup\ell_2$ 使 $Xf(X)$ 經過 $Q$，此時稱 $Q$ 為對合中心；另一種是存在兩個對合 $f_1:\ell_1\to \ell_1,\,f_2:\ell_2\to \ell_2$，此時 $f_1$ 與 $f_2$ 各有一個除了 $\ell_1\cap \ell_2$ 的不動點 $R_1,R_2$，則稱直線 $R_1R_2$ 為對合中心。
+
+::: {.unnumbered-env}
+**Remark.**
+與 Brocard 定理類似地，若 $Q,R\notin \ell_1\cup \ell_2$ 共軛，以 $Q,R$ 為中心的對合分別為 $f_Q,f_R$，則 $f_Q\circ f_R$ 為以 $QR$ 為中心的對合（非退化錐線的情況會是以 $\mathfrak{p}_\mathcal{C}(QR)$ 為中心的對合，但退化後 $QR$ 的極點就是 $\ell_1\cap \ell_2$，這樣子看不出來是哪一個對合）。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+給定（可退化）錐線 $\mathcal{C}$，並令 $f:\mathcal{C}\to \mathcal{C}$ 保交比。若 $f$ 可以被表示為有限個 $\mathcal{C}$ 上對合的合成，則稱 $f$ 為 $\mathcal{C}$ 上的內自同構（inner automorphism），所有 $\mathcal{C}$ 上的內自同構集合記為 $\mathrm{Inn}(\mathcal{C})$。
+:::
+
+若 $\mathcal{C}$ 非退化，則任何保交比的 $f:\mathcal{C}\to \mathcal{C}$ 都是內自同構。當 $\mathcal{C}$ 退化的時候，以下將會看到這件事不是對的。
+
+::: {.unnumbered-env}
+**Remark.**
+明顯地，任意兩個內自同構的合成還是內自同構，這說明 $\mathrm{Inn}(\mathcal{C})$ 是一個群。
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+令 $\mathcal{C}=\ell_1\cup \ell_2$，$P=\ell_1\cap \ell_2$。定義兩類 $f:\mathcal{C}\to \mathcal{C}$。
+
+(1) 存在定點 $Q_1,Q_2$ 使得 $f_1:\ell_1\to \ell_2,\,X\mapsto Q_1X\cap \ell_2$，與 $f_2:\ell_2\to \ell_1,\,Y\mapsto Q_2Y\cap \ell_1$，且 $P,Q_1,Q_2$ 共線。記 $f\in \mathrm{Odd}(\mathcal{C})$。
+
+(2) 令 $f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$，且滿足 $(P,X_0;X,f_1(X))\cdot (P,Y_0;Y,f_2(Y))=1$ 對於 $X\in \ell_1,\,Y\in \ell_2$。記 $f\in \mathrm{Even}(\mathcal{C})$。
+:::
+
+::: {#lem-classifyinn}
+$\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+先證明 $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。注意到以一直線為中心的對合可以寫成兩個以點為中心的對合的合成。給定 $Q\notin\mathcal{C}$，$f_Q$ 為以 $Q$ 為中心的對合，由數學歸納法僅須證明 $f_Q$ 合成 $\mathrm{Odd}(\mathcal{C})$ 的函數在 $\mathrm{Even}(\mathcal{C})$ 中，及 $f_Q$ 合成 $\mathrm{Even}(\mathcal{C})$ 的函數在 $\mathrm{Odd}(\mathcal{C})$ 中。
+
+給定 $f\in \mathrm{Odd}(\mathcal{C})$，令 $Q_1,Q_2$ 為 $f_1,f_2$ 的透視定點，並令 $g=f_Q\circ f$，則
+$$
+(P,Q_1Q\cap \ell_1,X,g(X))\mathop{=}\limits^{Q_1}(Q_1P\cap f_1(X)Q,Q;f_1(X),g(X))=(PQ_1,PQ;\ell_2,\ell_1)
+$$
+同理可知 $X_0=Q_1Q\cap \ell_1$ 為 $f_1$ 的不動點，$Y_0=Q_2Q\cap \ell_2$ 為 $f_2$ 的不動點，且
+$$
+(P,X_0,X,g(X))\cdot (P,Y_0;Y,g(Y))=(PQ_1,PQ;\ell_2,\ell_1)\cdot (PQ_2,PQ;\ell_1,\ell_2)=1
+$$
+也就是 $g\in \mathrm{Even}(\mathcal{C})$。一樣的方法可知若 $f\in \mathrm{Even}(\mathcal{C})$，則 $f_Q\circ f\in \mathrm{Odd}(\mathcal{C})$。
+
+這說明了 $\mathrm{Inn}(\mathcal{C})\subset \mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。現在給定 $f\in \mathrm{Odd}(\mathcal{C})$，令 $Q_1,Q_2$ 為 $f_1,f_2$ 的透視定點，並令 $Q\neq P$ 與 $Q_1,Q_2$ 共軛，則 $g=f_Q\circ f$ 為 $\mathcal{C}$ 上的對合，也就是 $f=f_Q\circ g\in \mathrm{Inn}(\mathcal{C})$ 為對合的合成。若給定 $f\in \mathrm{Even}(\mathcal{C})$，則 $f_Q\circ f\in \mathrm{Odd}(\mathcal{C})\subset \mathrm{Inn}(\mathcal{C})$，因為 $f_Q$ 是對合，故 $f\in \mathrm{Inn}(\mathcal{C})$。綜合以上，$\mathrm{Inn}(\mathcal{C})=\mathrm{Odd}(\mathcal{C})\cup \mathrm{Even}(\mathcal{C})$。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+利用 `@classifyinn` 的分類，可以發現對於 $f\in \mathrm{Inn}(\mathcal{C})$，射影軸 $\ell$ 存在，也就是對於任意 $X,Y\in \mathcal{C}$，$Xf(Y)\cap Yf(X)\in \ell$（不採用射影軸的存在性當作定義是因為當 $f_1$ 是恆同變換，$f_2$ 有兩個不動點時射影軸也存在）。
+:::
+
+::: {#thm-innextension}
+令 $\rho$ 為一射影變換，則以下兩條件等價：
+
+(1) 存在對偶變換 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，或 $\rho$ 是透視變換使透視點在透視軸上。
+
+(2) 存在一（可退化）錐線 $\mathcal{C}$，及 $f\in \mathrm{Inn}(\mathcal{C})$ 使得 $\rho$ 為 $f$ 的延拓。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+給定對偶變換 $\mathfrak{p}$。若 $\mathfrak{p}$ 非退化，則取 $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$，有 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，故 $\mathfrak{p}^2$ 為某個 $\mathrm{Inn}(\mathcal{C})$ 中函數的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為一直線，則由 `@greatdegeneratedual`，$\mathfrak{p}^2$ 為對合透視，取任意 $\mathcal{C}$ 使透視軸是透視點的極點，則 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，$\mathfrak{p}^2$ 為 $\mathcal{C}$ 上某個對合的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為兩直線 $\ell_1\cup\ell_2$，則 $\mathfrak{p}^2$ 為某個 $\mathrm{Odd}(\ell_1\cup\ell_2)$ 中函數的延拓（因為 $\mathfrak{p}(\ell_1\cap\ell_2)$ 通過三點 $\ell_1\cap\ell_2$，$\mathfrak{p}(\ell_1)$，$\mathfrak{p}(\ell_2)$）。若 $\rho$ 為透視變換使透視點在透視軸上，則取任意兩過透視點的直線 $\ell_1\cup \ell_2$，$\rho$ 為某個 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中函數的延拓。這說明了 $(1)\implies(2)$。
+
+現在給定一錐線 $\mathcal{C}$ 與 $f\in \mathrm{Inn}(\mathcal{C})$，令 $\rho$ 為 $f$ 的延拓。若 $f$ 是對合，則 $\rho$ 為對合透視，取 $\mathfrak{p}$ 使 $\mathbb{P}_\mathfrak{p}$ 為 $\rho$ 的透視軸，$\mathbb{L}_\mathfrak{p}$ 為 $\rho$ 的透視點，則 $\mathfrak{p}^2=\rho$。接下來令 $f$ 不是對合。若 $\mathcal{C}$ 非退化，則考慮 $g:X\mapsto Xf(X)$，令 $g$ 的延拓為 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。若 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，$f$ 在 $\mathrm{Odd}(\ell_1\cup \ell_2)$ 中，考慮 $g:X\mapsto Xf(X)$（這是一個從退化錐線到退化錐點的保交比變換）的延拓 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。
+
+現在假設 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，且 $f$ 在 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中，令 $P=\ell_1\cap \ell_2$，$f_1:\ell_1\to \ell_1$ 的不動點為 $P,X_0$，$f_2:\ell_2\to \ell_2$ 的不動點為 $P,Y_0$。若 $X_0=Y_0=P$，則 $\rho$ 是透視變換使透視點在透視軸上。若 $X_0\neq P$，$Y_0\neq P$，則任取一非退化錐線 $\mathcal{C}_1$ 與 $\ell_1,\,\ell_2$ 相切於 $X_0,\,Y_0$，對於 $Q\in \mathcal{C}_1$，令 $X_0Q\cap \ell_2=Y$，$Y_0Q\cap \ell_1=X$，則有 $f_2(Y)=X_0\rho(Q)\cap \ell_2$，故
+$$
+X_0(P,Y_0;Q,\rho(Q))=(P,Y_0;Y,f_2(Y))=(X_0,P;X,f_2(X))=Y_0(X_0,P;Q;\rho(Q))
+$$
+（這是由 $\mathrm{Even}(\ell_1\cup \ell_2)$ 的定義），也就是 $\rho(Q)\in \mathcal{C}_1$，故 $\rho$ 為某個 $\mathrm{Inn}(\mathcal{C}_1)$ 中函數的延拓，前面的論證說明了存在 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，也就是 $(2)\implies(1)$。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+由 `@innextension` 的證明可以看出有些射影變換並不是一個內自同構的延拓。
+:::
