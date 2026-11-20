@@ -536,7 +536,7 @@ Suppose that $\{\mathfrak{p}_\mathcal{C}(X)\mid X\in \mathcal{C}_1\}=\mathcal{T}
 
 ::: {#thm-brianchon}
 ## Brianchon
-Let $AB,BC,CD,DE,EF,FA$ be six lines (no three of which are concurrent), then these six lines are on the same dual conic (i.e. tangent to the same conic) if and only if $AD,BE,CF$ are concurrent. By abuse of language, we also say that the six lines are conconic.
+Given six lines $AB,BC,CD,DE,EF,FA$ (no three of which are concurrent), then these six lines are on the same dual conic (i.e. tangent to the same conic) if and only if $AD,BE,CF$ are concurrent. By abuse of language, we also say that the six lines are conconic.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
