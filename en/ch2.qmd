@@ -562,14 +562,14 @@ This is the dual of Steiner Conic.
 
 ## A Generalization of Steiner Conic
 
-給定錐線 $\mathcal{C}$ 與 $f:\mathcal{C}\to\mathcal{C}$，由 `@conicinvolution` 知道 $f$ 是對合若且唯若存在一點 $P\notin\mathcal{C}$ 使得 $f$ 就是把 $X$ 送到 $XP$ 與 $\mathcal{C}$ 的另一交點的變換。
+Let $\mathcal{C}$ be a conic and $f:\mathcal{C}\to\mathcal{C}$ be a projective map. From @cor-conicinvolution, $f$ is an involution if and only if there exists a point $P\notin\mathcal{C}$ such that $f$ is the map sending $X$ to the second intersection of $XP$ and $\mathcal{C}$.
 
 ::: {#thm-autenvelope}
-$\mathcal{C}$ 為錐線，$f:\mathcal{C}\to\mathcal{C}$ 保交比。
+Let $\mathcal{C}$ be a conic, $f:\mathcal{C}\to\mathcal{C}$ be a projective map.
 
-(1) 若 $f$ 是對合，則 $Xf(X)$ 過定點（此時 $X\mapsto Xf(X)$ 不保交比）。
+(1) If $f$ is an involution, then $Xf(X)$ passes through a fixed point independent of $X\in \mathcal{C}$ (in this case, $X\mapsto Xf(X)$ is not a projective map).
 
-(2) 若 $f$ 不是對合，則 $Xf(X)$ 的軌跡為錐點，且 $X\mapsto Xf(X)$ 保交比。
+(2) If $f$ is not an involution, then the locus of $Xf(X)$ is a dual conic, and $X\mapsto Xf(X)$ is a projective map ($X\in \mathcal{C}$).
 
 對偶的，可知 $Xf(X)$ 的極點軌跡為定線或是一錐線。
 :::
