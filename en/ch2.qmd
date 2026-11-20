@@ -643,6 +643,7 @@ Fix $P\in\ell$, then the locus of $PX\cap f_1(X)f_2(X)$ is a line or a conic as 
 ## Dual Transformations
 
 We have defined the concept of dual transformations in an earlier remark. We state the definition again.
+
 ::: {.unnumbered-env}
 **Definition.**
 Suppose that the function $\mathfrak{p}:\mathbb{P}\to \mathbb{L}$ satisfies
