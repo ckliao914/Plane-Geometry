@@ -521,7 +521,7 @@ The polar transformations of a conic $\mathcal{C}$ and its envelope $\mathcal{T}
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-It suffices to show that $\mathfrak{p}_{\mathcal{C}}$ and $\mathfrak{p}_{\mathcal{T}_{\mathcal{C}}$ agree on $\mathcal{C}$ (since they are dual transformations, we check for four noncollinear points), which follows the previous arguments.
+It suffices to show that $\mathfrak{p}_{\mathcal{C}}$ and $\mathfrak{p}_{\mathcal{T}_{\mathcal{C}}}$ agree on $\mathcal{C}$ (since they are dual transformations, we check for four noncollinear points), which follows the previous arguments.
 :::
 
 ::: {.unnumbered-env}
