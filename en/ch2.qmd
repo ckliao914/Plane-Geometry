@@ -559,3 +559,85 @@ Let $\ell,m$ be distinct lines, and $f:\mathbb{P}_\ell\to \mathbb{P}_m$ be a pro
 ## Proof
 This is the dual of Steiner Conic.
 :::
+
+## A Generalization of Steiner Conic
+
+給定錐線 $\mathcal{C}$ 與 $f:\mathcal{C}\to\mathcal{C}$，由 `@conicinvolution` 知道 $f$ 是對合若且唯若存在一點 $P\notin\mathcal{C}$ 使得 $f$ 就是把 $X$ 送到 $XP$ 與 $\mathcal{C}$ 的另一交點的變換。
+
+::: {#thm-autenvelope}
+$\mathcal{C}$ 為錐線，$f:\mathcal{C}\to\mathcal{C}$ 保交比。
+
+(1) 若 $f$ 是對合，則 $Xf(X)$ 過定點（此時 $X\mapsto Xf(X)$ 不保交比）。
+
+(2) 若 $f$ 不是對合，則 $Xf(X)$ 的軌跡為錐點，且 $X\mapsto Xf(X)$ 保交比。
+
+對偶的，可知 $Xf(X)$ 的極點軌跡為定線或是一錐線。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+已經證明 $f$ 是對合的情形。若 $f$ 是恆同變換，則 $Xf(X)$ 的軌跡為 $\mathcal{C}$ 的包絡線。故假設 $f$ 非恆同變換也不是對合，令 $\ell$ 為 $f$ 的射影軸。
+
+給定 $A$ 在 $\mathcal{C}$ 上，滿足 $\mathfrak{p}_\mathcal{C}(Af(A))\notin \ell$（因為 $f$ 不是對合），令
+$$
+Af(A)\cap Xf(X)=P,\,Af(X)\cap Xf(A)=Q
+$$
+由 Brocard 定理，$\mathfrak{p}_\mathcal{C}(P)$ 過 $Q$ 與 $\mathfrak{p}_\mathcal{C}(Af(A))$，可知
+$$
+X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto\mathfrak{p}_\mathcal{C}(Af(A))Q=\mathfrak{p}_\mathcal{C}(P)\mapsto P \text{ 保交比}
+$$
+若給定 $X_1,X_2,X_3\in\mathcal{C}$，令 $Af(A)=\ell_A$，$X_i f(X_i)=\ell_i$ $\forall i=1,2,3$，則由 $X\mapsto P$ 保交比，
+$$
+(X_1,X_2;X_3,X)_\mathcal{C}=\ell_A(\ell_1,\ell_2;\ell_3,Xf(X))
+$$
+若將 $A$ 換成另一滿足 $\mathfrak{p}_\mathcal{C}(Bf(B))\notin \ell$ 的點 $B$，則對 $B$ 也有如此的交比關係，也就是說
+$$
+\ell_A(\ell_1,\ell_2;\ell_3,Xf(X))=(X_1,X_2;X_3,X)_\mathcal{C}=\ell_B(\ell_1,\ell_2;\ell_3,Xf(X))
+$$
+故 $Xf(X)$ 的軌跡為 $Af(A),Bf(B),\ell_1,\ell_2,\ell_3$ 決定的錐點，且 $X\mapsto Xf(X)$ 保交比。
+:::
+
+::: {.unnumbered-env}
+**Remark.**
+Steiner conic 的對偶其實是 @thm-autenvelope 中的錐線退化為兩直線的情況。
+:::
+
+@thm-autenvelope 可以換個方法看。
+
+::: {#lem-alternativeenvelope}
+給定 $P\in\mathcal{C}$，$\ell$ 為一過 $P$ 的直線。假設
+$$
+f:\mathcal{C}\to\mathbb{P}_\ell\,\text{保交比},\, f(P)=P
+$$
+令 $Xf(X)$ 與 $\mathcal{C}$ 的第二個交點為 $X_1$，則 $X_1$ 為定點或是 $X\mapsto X_1$ 保交比。
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+令 $\ell$ 再交 $\mathcal{C}$ 於 $Q$。固定非 $P,Q$ 的點 $S,T\in \mathcal{C}$，$S_1,\,T_1$ 為 $Sf(S),\,Tf(T)$ 與 $\mathcal{C}$ 的第二個交點。若 $S_1=T_1=A$，則由大保交比知 $f(X)=AX\cap \ell$。假設 $S_1\neq T_1$，令
+$$
+g:\mathcal{C}\to\mathcal{C}\text{保交比},\,\, g(S)=S_1,\,g(T)=T_1,\, g(Q)=P
+$$
+因為 $g$ 不可能是對合，故 @thm-autenvelope 有 $Xg(X)$ 的軌跡為一錐點 $\mathcal{E}$，且因為 $\ell\in\mathcal{E}$，故 $f':X\mapsto Xg(X)\cap \ell$ 保交比，由大保交比，$f(X)=f'(X)$（檢查 $X=P,\,S,\,T$ 時）。故函數 $X\mapsto X_1$ 就是保交比的函數 $g$。
+:::
+
+@lem-alternativeenvelope 中，$Xf(X)$ 的軌跡會過定點或是一個錐點。對 $\mathcal{C}$ 配極可以得到 $Xf(X)$ 的極點軌跡為一直線或是一錐線。
+
+::: {#cor-dualenvelope}
+$\mathcal{C}$ 為一錐線，$\ell$ 與 $\mathcal{C}$ 切於 $P$。$Q$ 為一 $\ell$ 上的點，
+$$
+f:\mathcal{C}\mapsto \mathbb{L}_Q\,\text{保交比},\,\,f(P)=QP
+$$
+則 $X$ 對 $\mathcal{C}$ 的切線與 $f(X)$ 的交點為一錐線或一直線。
+:::
+
+結合 @cor-dualenvelope 與 Steiner conic 可以證明以下的例子。
+
+::: {.unnumbered-env}
+**Example.**
+$\ell$ 為一線，$m,\,m_1,\,m_2$ 為三條相異的直線，
+$$
+f_1:\mathbb{P}_m\to\mathbb{P}_{m_1}, \,f_2:\mathbb{P}_m\to\mathbb{P}_{m_2}\,\text{皆保交比，且}\, X\in\ell\iff f_1(X)\in\ell\iff f_2(X)\in \ell
+$$
+若 $P\in\ell$，則 $PX\cap f_1(X)f_2(X)$ 的軌跡為直線或錐線。
+:::
