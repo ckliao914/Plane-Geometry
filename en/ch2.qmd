@@ -459,9 +459,9 @@ We see that $AA_1\cap B_1C_1=Q$, i.e. $A,A_1,P$ are collinear.
 In the beginning of the proof of @thm-poleperspective, we showed that $(D,Q),\,(B_1,E),\,(C_1,F)$ is an involution. This follows directly from Desargues involution theorem, which we will see later.
 :::
 
-## The Dual of Conics
+## Dual Conics
 
-Observe that conics are subsets of $\mathbb{P}$. Correspondingly, there are dual conics in $\mathbb{L}$, that is, subsets $\mathcal{E}$ such that any six lines $m,n,\ell_1,\ell_2,\ell_3,\ell_4$ in $\mathcal{E}$ satisfy 
+Observe that conics are subsets of $\mathbb{P}$. Correspondingly, there are dual conics in $\mathbb{L}$, that is, subsets $\mathcal{E}\subset\mathbb{L}$ such that any six lines $m,n,\ell_1,\ell_2,\ell_3,\ell_4$ in $\mathcal{E}$ satisfy 
 $$
 m(\ell_1,\ell_2;\ell_3,\ell_4)=n(\ell_1,\ell_2;\ell_3,\ell_4)
 $$ 
@@ -479,7 +479,7 @@ A nonempty set $\mathcal{E}\subset\mathbb{L}$ is called a (nondegenerate) dual c
 $$
 \mathbb{L}_P\cap\mathcal{E}=\{\ell\}
 $$
-The point $P$ is called the tangent point of $\ell$ to $\mathcal{E}$. This implies for any other point on $\ell$, there is a second line in $\mathcal{E}$ through it.
+The point $P$ is called the tangent point of $\ell$ to $\mathcal{E}$. This implies that for any other point on $\ell$, there is a second line in $\mathcal{E}$ through it.
 
 For any four lines $\ell_1,\ell_2,\ell_3,\ell_4\in \mathcal{E}$, define their cross ratio to be
 $$
@@ -513,7 +513,7 @@ $$
 $$
 :::
 
-In conclusion, there is a 1-1 correspondence between conics and dual conics: the conics (resp. dual conics) and their envelopes. In fact, the polar transformations with respect to $\mathcal{C}$ and $\mathcal{T}_{\mathcal{C}}$ are the same.
+In conclusion, there is a 1-1 correspondence between conics and dual conics: conics and their envelopes (and dually, dual conics and their envelopes). In fact, the polar transformations with respect to $\mathcal{C}$ and $\mathcal{T}_{\mathcal{C}}$ are the same.
 
 ::: {#lem-dualpolar}
 The polar transformations of a conic $\mathcal{C}$ and its envelope $\mathcal{T}_\mathcal{C}$ are the same. Dually, the polar transformations of the dual conic $\mathcal{E}$ and its envelope $\mathcal{T}_\mathcal{E}$ are the same.
@@ -526,7 +526,7 @@ It suffices to show that $\mathfrak{p}_{\mathcal{C}}$ and $\mathfrak{p}_{\mathca
 
 ::: {.unnumbered-env}
 **Remark.**
-From historical reasons, an element in $\mathbb{L}$ is viewed as a subset of $\mathbb{P}$, so it is not easy to get a picture of a dual conic. Usually we think of it as the envelope of some conic, and sometimes identify $\mathcal{T}_\mathcal{C}$ and $\mathcal{C}$, for example, the cross ratio on $\mathcal{T}_\mathcal{C}$ would be written as the cross ratio on $\mathcal{C}$. The notation $\mathcal{E}$ for dual conics stands for "envelope".
+For historical reasons, an element in $\mathbb{L}$ is viewed as a subset of $\mathbb{P}$, so it is not easy to visualize a dual conic. Usually we think of it as the envelope of some conic, and sometimes identify $\mathcal{T}_\mathcal{C}$ and $\mathcal{C}$, for example, the cross ratio on $\mathcal{T}_\mathcal{C}$ would be written as the cross ratio on $\mathcal{C}$. The notation $\mathcal{E}$ for dual conics stands for "envelope".
 :::
 
 ::: {.unnumbered-env}
@@ -536,7 +536,7 @@ Suppose that $\{\mathfrak{p}_\mathcal{C}(X)\mid X\in \mathcal{C}_1\}=\mathcal{T}
 
 ::: {#thm-brianchon}
 ## Brianchon
-Let $AB,BC,CD,DE,EF,FA$ be six lines (no three of which are concurrent), then these six lines are on the same dual conic (i.e. tangent to the same conic) if and only if $AD,BE,CF$ are concurrent. In this case we abuse of language and also say that the six lines are conconic.
+Let $AB,BC,CD,DE,EF,FA$ be six lines (no three of which are concurrent), then these six lines are on the same dual conic (i.e. tangent to the same conic) if and only if $AD,BE,CF$ are concurrent. By abuse of language, we also say that the six lines are conconic.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -550,9 +550,9 @@ This is the dual of Pascal theorem.
 ## Dual of Steiner conic
 Let $\ell,m$ be distinct lines, and $f:\mathbb{P}_\ell\to \mathbb{P}_m$ be a projective map.
 
-(1) If $f(\ell\cap m)=m\cap \ell$, then there exists a point $Q$ such that $P,f(P),Q$ are collienar for each $P\in\mathbb{P}_\ell$.
+(1) If $f(\ell\cap m)=m\cap \ell$, then there exists a point $Q$ such that $P,f(P),Q$ are collinear for each $P\in\mathbb{P}_\ell$.
 
-(2) If $f(\ell\cap m)\neq m\cap \ell$, then the locus of $Pf(P)$ (where $P\in \mathbb{P}_{\ell}$) is a dual conic passing through $\ell,m$.
+(2) If $f(\ell\cap m)\neq m\cap \ell$, then the locus of $Pf(P)$ (where $P\in \mathbb{P}_{\ell}$) is a dual conic containing $\ell,m$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
