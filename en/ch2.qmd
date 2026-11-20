@@ -642,7 +642,7 @@ Fix $P\in\ell$, then the locus of $PX\cap f_1(X)f_2(X)$ is a line or a conic as 
 
 ## Dual Transformations
 
-We have defined the concept of dual transformations in a remark before. We state the definition again.
+We have defined the concept of dual transformations in an earlier remark. We state the definition again.
 ::: {.unnumbered-env}
 **Definition.**
 Suppose that the function $\mathfrak{p}:\mathbb{P}\to \mathbb{L}$ satisfies
@@ -675,7 +675,7 @@ When $\mathfrak{p}=\mathfrak{p}_\mathcal{C}$ is a polar transformation, then $\m
 $$
 f_\ell:\mathbb{P}_\ell\to \mathbb{P}_\ell,\,X\mapsto \mathfrak{p}(X)\cap \ell
 $$
-then the fixed points of $f_\ell$ are in $\mathbb{P}_\mathfrak{p}$, contradiction. In conclusion, for any line $\ell$,  $\mathcal{P}_{\ell}\cap \mathbb{P}_\mathfrak{p}$ is nonempty.
+then the fixed points of $f_\ell$ are in $\mathbb{P}_\mathfrak{p}$, contradiction. In conclusion, for any line $\ell$,  $\mathbb{P}_{\ell}\cap \mathbb{P}_\mathfrak{p}$ is nonempty.
 
 (2) Suppose that there are three collinear points $X_1,X_2,X_3\in \mathbb{P}_\mathfrak{p}$ (collinear on line $\ell$), then $\mathfrak{p}(X_i)$ passes through $X_i$ and $P=\mathfrak{p}(\ell)$. Since $\mathfrak{p}$ is bijective, $P\notin\ell$. From the projective map method, for $X\in \ell$, $\mathfrak{p}(X)=PX$, i.e. $\mathfrak{p}$ is degenerate. In conclusion, if $\mathfrak{p}$ is nondegenerate, then for any line $\ell$, $\mathbb{P}_{\ell}\cap \mathbb{P}_\mathfrak{p}$ consists of $1$ or $2$ points.
 
@@ -704,7 +704,7 @@ then $f$ is the harmonic conjugate with respect to $B|C$, and $f(B_1C_1\cap BC)=
 $$
 (B,C;B_1C_1\cap BC,AA_1\cap BC)=-1=A_1(B,C;B_1C_1\cap BC,BB_1\cap CC_1)
 $$
-We see that $A_1,AA_1\cap BC,BB_1\cap CC_1$ are collinear, i.e. $A_1B_1C_1$ and $ABC$ are perspective. Let $\mathcal{C}$ be the conic passing through $A,B,C$ and tangent to the three sides of $A_1B_1C_1$ (it exists from Pascal theorem on the hexagon $AABBCC$), then $\mathfrak{p}_\mathcal{C}=\mathfrak{p}$ (check the points $A,B,C,A_1,B_1,C_1$, and $BB_1\cap CC_1$), i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
+We see that $A_1,AA_1\cap BC,BB_1\cap CC_1$ are collinear, i.e. $A_1B_1C_1$ and $ABC$ are perspective. Let $\mathcal{C}$ be the conic passing through $A,B,C$ and tangent to the three sides of $A_1B_1C_1$ (it exists from Pascal theorem on the hexagon $AABBCC$), then $\mathfrak{p}_\mathcal{C}=\mathfrak{p}$ (check the points $A,B,C,A_1,B_1,C_1$, and $BB_1\cap CC_1$), i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$.
 
 Now we assume that $\mathfrak{p}^2$ is not the identity. Let $A,D\in \mathbb{P}_\mathfrak{p}$ be points such that
 $$
@@ -718,41 +718,45 @@ From @thm-autenvelope, since $g$ is not an involution, the map
 $$
 h:\mathcal{C}\to \mathcal{E},\,X\mapsto Xg(X)
 $$ 
-is projective, where the dual conic $\mathcal{E}$ is the locus of $Xg(X)$. Let $\mathfrak{p}_h:\mathbb{P}\to \mathbb{L}$ be the exension of $h$ (the existence follows from the same argument as @thm-extension), i.e. for all $X\in \mathcal{C}$, $\mathfrak{p}_h(X)=h(X)$. Set $F=BC\cap DE$, then
+is projective, where the dual conic $\mathcal{E}$ is the locus of $Xg(X)$. Let $\mathfrak{p}_h:\mathbb{P}\to \mathbb{L}$ be the extension of $h$ (the existence follows from the same argument as @thm-extension), i.e. for all $X\in \mathcal{C}$, $\mathfrak{p}_h(X)=h(X)$. Set $F=BC\cap DE$, then
 $$
 \mathfrak{p}_h(A)=AB=\mathfrak{p}(A),\mathfrak{p}_h(B)=BC=\mathfrak{p}(B),\mathfrak{p}_h(D)=DE=\mathfrak{p}(D),\mathfrak{p}_h(F)=CE=\mathfrak{p}(F)
 $$
-We see that $\mathfrak{p}_h=\mathfrak{p}$. Note that $\mathcal{C}\subset \mathbb{P}_{\mathfrak{p}_h}$, and for any $Q\in\mathbb{P}_{\mathfrak{p}_h}$, we may find two points in $\mathcal{C}$ collinear with $Q$. Since $\mathfrak{p}$ is nondegenerate, $Q\in \mathcal{C}$, i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$。
+We see that $\mathfrak{p}_h=\mathfrak{p}$. Note that $\mathcal{C}\subset \mathbb{P}_{\mathfrak{p}_h}$, and for any $Q\in\mathbb{P}_{\mathfrak{p}_h}$, we may find two points in $\mathcal{C}$ collinear with $Q$. Since $\mathfrak{p}$ is nondegenerate, $Q\in \mathcal{C}$, i.e. $\mathbb{P}_\mathfrak{p}=\mathcal{C}$.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-若 $f:\mathcal{C}\to \mathcal{C}$ 保交比且不是對合，則存在對偶變換 $\mathfrak{p}$ 使 $\mathfrak{p}^2=\rho$，其中 $\rho$ 為 $f$ 的延拓。
+Suppose that the projective map $f:\mathcal{C}\to \mathcal{C}$ is not an involution, then there exists a dual transformation $\mathfrak{p}$ such that $\mathfrak{p}^2=\rho$, where the projective transformation $\rho$ is the extension of $f$.
 :::
 
 ::: {#lem-greatdegeneratedual}
-令 $\mathfrak{p}$ 為對偶變換使得 $\mathbb{P}_\mathfrak{p}$ 為一直線，則 $\mathfrak{p}^2$ 為一對合透視。
+Let $\mathfrak{p}$ be a dual transformation such that $\mathbb{P}_\mathfrak{p}$ is a single line, then $\mathfrak{p}^2$ is an involutive transformation.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $P=\mathbb{L}_\mathfrak{p}$，$\ell=\mathbb{P}_\mathfrak{p}$。令 $X$ 為任意點，$PX\cap \ell=Q$。令 $R\neq Q$ 為 $\ell$ 上一點，並考慮點 $\mathfrak{p}(X)\cap PR=Y$，$XY\cap \ell=Z$，$QY\cap PZ=W$，則
+Set $P=\mathbb{L}_\mathfrak{p}$, $\ell=\mathbb{P}_\mathfrak{p}$. Let $X$ be any point and define $PX\cap \ell=Q$. Let $R\neq Q$ be a point on $\ell$, and set 
+$$
+\mathfrak{p}(X)\cap PR=Y,\,XY\cap \ell=Z,\,QY\cap PZ=W
+$$
+then
 $$
 \mathfrak{p}(X)=QY,\quad \mathfrak{p}(Y)=\mathfrak{p}(PR\cap XZ)=R\mathfrak{p}(XZ)=R(QY\cap PZ)=RW
 $$
-故 $\mathfrak{p}^2(X)=\mathfrak{p}(Q)\cap \mathfrak{p}(Y)=PQ\cap RW$ 為 $X$ 對 $P|Q$ 的調和共軛（`@cevaharmonic`）。
+We conclude that $\mathfrak{p}^2(X)=\mathfrak{p}(Q)\cap \mathfrak{p}(Y)=PQ\cap RW$ is the harmonic conjugate of $X$ with respect to $P|Q$ (by @lem-cevaharmonic).
 :::
 
 ::: {#thm-polarequiv}
-令 $\mathfrak{p}$ 是一個對偶變換，則 $\mathfrak{p}$ 為配極變換若且唯若 $\mathfrak{p}^2$ 為恆同射影變換，也就是對所有 $X\in \mathbb{P}$，$\mathfrak{p}^2(X)=X$。
+Let $\mathfrak{p}$ be a dual transformation, then $\mathfrak{p}$ is a polar transformation if and only if $\mathfrak{p}^2$ is the identity.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-假設 $\mathfrak{p}^2$ 為恆同變換。若 $\mathfrak{p}$ 非退化，由 `@nondegeneratedual` 的證明可知 $\mathfrak{p}$ 為對 $\mathbb{P}_\mathfrak{p}$ 的配極變換。現在假設 $\mathfrak{p}$ 退化，則 $\mathbb{P}_\mathfrak{p}$ 為一直線或是兩直線。若 $\mathbb{P}_\mathfrak{p}$ 為兩直線 $\ell\cup m$，則 $\mathfrak{p}^2(\ell)=m$，矛盾；若 $\mathbb{P}_\mathfrak{p}$ 為一直線，由 `@greatdegeneratedual` 有矛盾。
+Suppose that $\mathfrak{p}^2$ is the identity. If $\mathfrak{p}$ is nondegenerate, then from the proof of @thm-nondegeneratedual,  $\mathfrak{p}$ is the polar transformation with respect to $\mathbb{P}_\mathfrak{p}$. Now suppose that $\mathfrak{p}$ is degenerate, then $\mathbb{P}_\mathfrak{p}$ is a line or the union of two lines. If $\mathbb{P}_\mathfrak{p} =\ell\cup m$ is a union of two lines, then $\mathfrak{p}^2(\ell)=m$, contradiction; if $\mathbb{P}_\mathfrak{p}$ is a line, then we have a contradiction from @lem-greatdegeneratedual.
 :::
 
 ::: {.unnumbered-env}
 **Remark.**
-若交比的乘法群不像 $\mathbb{C}^\times$ 可以開根號，也就是直線可能與錐線沒有交點，則配極變換（或是錐線）的定義就可以採用 `@polarequiv` 的刻劃。
+Suppose that unlike $\mathbb{C}^\times$, we cannot take the square root in the multiplicative group of the cross ratio, i.e. lines and conics may not intersect, then we may adopt the characterization in @thm-polarequiv as the definition of polar transformations (or even conics).
 :::
