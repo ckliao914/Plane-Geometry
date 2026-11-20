@@ -576,7 +576,7 @@ Dually, the locus of the pole of $Xf(X)$ is a line or a conic.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-We have shown the case where $f$ is an involution. When $f$ is the identity, then the locus of $Xf(X)$ is the envelope of $\mathcal{C}$. We may assume that $f$ is neither an involution or the identity. Let $\ell$ be the projective axis of $f$.
+We have shown the case where $f$ is an involution. When $f$ is the identity, the locus of $Xf(X)$ is the envelope of $\mathcal{C}$. We may assume that $f$ is neither an involution or the identity. Let $\ell$ be the projective axis of $f$.
 
 Let $A$ be a point on $\mathcal{C}$ satisfying $\mathfrak{p}_\mathcal{C}(Af(A))\notin \ell$ (since $f$ is not an involution). Set
 $$
@@ -601,45 +601,41 @@ so the locus of $Xf(X)$ a dual conic determined by the lines $Af(A),Bf(B),\ell_1
 
 ::: {.unnumbered-env}
 **Remark.**
-Steiner conic 的對偶其實是 @thm-autenvelope 中的錐線退化為兩直線的情況。
+The dual of Steiner conic is the special case of @thm-autenvelope where $\mathcal{C}$ degenerates to two lines.
 :::
 
-@thm-autenvelope 可以換個方法看。
+There is another way to view @thm-autenvelope.
 
 ::: {#lem-alternativeenvelope}
-給定 $P\in\mathcal{C}$，$\ell$ 為一過 $P$ 的直線。假設
-$$
-f:\mathcal{C}\to\mathbb{P}_\ell\,\text{保交比},\, f(P)=P
-$$
-令 $Xf(X)$ 與 $\mathcal{C}$ 的第二個交點為 $X_1$，則 $X_1$ 為定點或是 $X\mapsto X_1$ 保交比。
+Let $P$ be a point on a conic $\mathcal{C}$, $\ell$ be a line through $P$. Assume that $f:\mathcal{C}\to\mathbb{P}_\ell$ is a projective map such that $f(P)=P$. Let $Xf(X)$ and $\mathcal{C}$ intersect again at $X_1$, then as $X$ varies on $\mathcal{C}$, either $X_1$ is a fixed point or $X\mapsto X_1$ is a projective map.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-令 $\ell$ 再交 $\mathcal{C}$ 於 $Q$。固定非 $P,Q$ 的點 $S,T\in \mathcal{C}$，$S_1,\,T_1$ 為 $Sf(S),\,Tf(T)$ 與 $\mathcal{C}$ 的第二個交點。若 $S_1=T_1=A$，則由大保交比知 $f(X)=AX\cap \ell$。假設 $S_1\neq T_1$，令
+Let $\ell$ intersect $\mathcal{C}$ again at $Q$. Fix $S,T\in \mathcal{C}$ that is not equal to $P,Q$, and let $S_1,\,T_1$ be the second intersection of $\mathcal{C}$ and $Sf(S),\,Tf(T)$, respectively. Suppose that $S_1=T_1=A$, then by the projective map method, $f(X)=AX\cap \ell$. Suppose that $S_1\neq T_1$. Define the projective map
 $$
-g:\mathcal{C}\to\mathcal{C}\text{保交比},\,\, g(S)=S_1,\,g(T)=T_1,\, g(Q)=P
+g:\mathcal{C}\to\mathcal{C},\, g(S)=S_1,\,g(T)=T_1,\, g(Q)=P
 $$
-因為 $g$ 不可能是對合，故 @thm-autenvelope 有 $Xg(X)$ 的軌跡為一錐點 $\mathcal{E}$，且因為 $\ell\in\mathcal{E}$，故 $f':X\mapsto Xg(X)\cap \ell$ 保交比，由大保交比，$f(X)=f'(X)$（檢查 $X=P,\,S,\,T$ 時）。故函數 $X\mapsto X_1$ 就是保交比的函數 $g$。
+Since $g$ is not an involution, from @thm-autenvelope, the locus of $Xg(X)$ is a dual conic $\mathcal{E}$ containing $\ell$. We see that $f':X\mapsto Xg(X)\cap \ell$ is a projective map, so $f(X)=f'(X)$ by the projective map method (check $X=P,\,S,\,T$). The function $X\mapsto X_1$ is the projective map $g$。
 :::
 
-@lem-alternativeenvelope 中，$Xf(X)$ 的軌跡會過定點或是一個錐點。對 $\mathcal{C}$ 配極可以得到 $Xf(X)$ 的極點軌跡為一直線或是一錐線。
+In @lem-alternativeenvelope, either $Xf(X)$ passes through a fixed point or that the locus of $Xf(X)$ is a dual conic. Taking the polar transformation with respect to $\mathcal{C}$, then locus of the pole of $Xf(X)$ is a line or a conic.
 
 ::: {#cor-dualenvelope}
-$\mathcal{C}$ 為一錐線，$\ell$ 與 $\mathcal{C}$ 切於 $P$。$Q$ 為一 $\ell$ 上的點，
-$$
-f:\mathcal{C}\mapsto \mathbb{L}_Q\,\text{保交比},\,\,f(P)=QP
-$$
-則 $X$ 對 $\mathcal{C}$ 的切線與 $f(X)$ 的交點為一錐線或一直線。
+Let $\mathcal{C}$ be a conic, a line $\ell$ and $\mathcal{C}$ is tangent at $P$. Fix a point $Q$ on $\ell$, let $f:\mathcal{C}\mapsto \mathbb{L}_Q$ be a projective map such that $f(P)=QP$, then the locus of $\mathfrak{p}_{\mathcal{C}}(X)\cap f(X)$ is a line or a conic as $X$ varies on $\mathcal{C}$
 :::
 
-結合 @cor-dualenvelope 與 Steiner conic 可以證明以下的例子。
+Combining @cor-dualenvelope and Steiner conic, we obtain the following example.
 
 ::: {.unnumbered-env}
 **Example.**
-$\ell$ 為一線，$m,\,m_1,\,m_2$ 為三條相異的直線，
+Let $\ell$ be a line, and $m,\,m_1,\,m_2$ be three distinct lines. Suppose that the functions
 $$
-f_1:\mathbb{P}_m\to\mathbb{P}_{m_1}, \,f_2:\mathbb{P}_m\to\mathbb{P}_{m_2}\,\text{皆保交比，且}\, X\in\ell\iff f_1(X)\in\ell\iff f_2(X)\in \ell
+f_1:\mathbb{P}_m\to\mathbb{P}_{m_1}, \,f_2:\mathbb{P}_m\to\mathbb{P}_{m_2}
 $$
-若 $P\in\ell$，則 $PX\cap f_1(X)f_2(X)$ 的軌跡為直線或錐線。
+are projective maps such that
+$$
+X\in\ell\iff f_1(X)\in\ell\iff f_2(X)\in \ell
+$$
+Fix $P\in\ell$, then the locus of $PX\cap f_1(X)f_2(X)$ is a line or conic as $X$ varies on $\ell$.
 :::
