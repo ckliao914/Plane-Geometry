@@ -571,12 +571,12 @@ Let $\mathcal{C}$ be a conic, $f:\mathcal{C}\to\mathcal{C}$ be a projective map.
 
 (2) If $f$ is not an involution, then the locus of $Xf(X)$ is a dual conic, and $X\mapsto Xf(X)$ is a projective map ($X\in \mathcal{C}$).
 
-對偶的，可知 $Xf(X)$ 的極點軌跡為定線或是一錐線。
+Dually, the locus of the pole of $Xf(X)$ is a line or a conic.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-已經證明 $f$ 是對合的情形。若 $f$ 是恆同變換，則 $Xf(X)$ 的軌跡為 $\mathcal{C}$ 的包絡線。故假設 $f$ 非恆同變換也不是對合，令 $\ell$ 為 $f$ 的射影軸。
+We have shown the case where $f$ is an involution. If $f$ is the identity, then the locus of $Xf(X)$ is the envelope of $\mathcal{C}$.。故假設 $f$ 非恆同變換也不是對合，令 $\ell$ 為 $f$ 的射影軸。
 
 給定 $A$ 在 $\mathcal{C}$ 上，滿足 $\mathfrak{p}_\mathcal{C}(Af(A))\notin \ell$（因為 $f$ 不是對合），令
 $$
