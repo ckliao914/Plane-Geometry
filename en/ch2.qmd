@@ -52,7 +52,7 @@ satisfies the Pascal condition (so no three points are collinear).
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $\ell_i\cap f(\ell_i)=X_i$ where $i=1,\ldots,6$, and $X_i\neq A,B$. Since $f$ is projective, $A,X_i,X_j$ cannot be collinear where $i\neq j$ (similarly $B,X_i,X_j$ cannot be collinear). If $X_1,X_2,X_3$ are collinear, then
+Let $\ell_i\in \mathbb{L}_A$, and define $\ell_i\cap f(\ell_i)=X_i$ where $i=1,\ldots,6$. Assume that $X_i\neq A,B$. Since $f$ is projective, $A,X_i,X_j$ cannot be collinear where $i\neq j$ (similarly $B,X_i,X_j$ cannot be collinear). If $X_1,X_2,X_3$ are collinear, then
 $$
 A(X_1,X_2;X_3,B)=B(X_1,X_2;X_3,A)
 $$
