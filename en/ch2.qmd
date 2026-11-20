@@ -890,7 +890,7 @@ ___
 
 Conversely, let $\mathcal{C}$ be a conic and $f\in \mathrm{Inn}(\mathcal{C})$ with extension $\rho$. 
 
-Suppose that $f$ is an involution, then $\rho$ is an involutive transformation. Take a degenerate dual transformation $\mathfrak{p}$ such that $\mathbb{P}_\mathfrak{p}$ is the perspectrix of $\rho$, and $\mathbb{L}_\mathfrak{p}$ is the perspector of $\rho$, then $\mathfrak{p}^2=\rho$. In the following we assume that $f$ is not an involution.
+Suppose that $f$ is an involution, then $\rho$ is an involutive transformation. Take a degenerate dual transformation $\mathfrak{p}$ such that $\mathbb{P}_\mathfrak{p}$ is the perspectrix of $\rho$, and $\mathbb{L}_\mathfrak{p}$ is the perspector of $\rho$, then $\mathfrak{p}^2=\rho$. In the following, we assume that $f$ is not an involution.
 
 Suppose that $\mathcal{C}$ is nondegenerate. Consider $g:X\mapsto Xf(X)$, and let the extension of $g$ be $\mathfrak{p}$, then $\mathfrak{p}^2=\rho$.
 
