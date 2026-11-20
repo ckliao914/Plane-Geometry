@@ -801,14 +801,14 @@ Similar to Brocard theorem, if $Q,R\notin \ell_1\cup \ell_2$ are conjugate, let 
 
 ::: {.unnumbered-env}
 **Definition.**
-給定（可退化）錐線 $\mathcal{C}$，並令 $f:\mathcal{C}\to \mathcal{C}$ 保交比。若 $f$ 可以被表示為有限個 $\mathcal{C}$ 上對合的合成，則稱 $f$ 為 $\mathcal{C}$ 上的內自同構（inner automorphism），所有 $\mathcal{C}$ 上的內自同構集合記為 $\mathrm{Inn}(\mathcal{C})$。
+Let $\mathcal{C}$ be a conic (possibly degenerate), and let $f:\mathcal{C}\to \mathcal{C}$ be a projective map. Suppose that $f$ is a composition of finitely many involutions on $\mathcal{C}$, then $f$ is said to be an inner automorphism on $\mathcal{C}$, the set of all inner automorphisms on $\mathcal{C}$ is denoted by $\mathrm{Inn}(\mathcal{C})$.
 :::
 
-若 $\mathcal{C}$ 非退化，則任何保交比的 $f:\mathcal{C}\to \mathcal{C}$ 都是內自同構。當 $\mathcal{C}$ 退化的時候，以下將會看到這件事不是對的。
+If $\mathcal{C}$ is nondegenerate, then any projective map $f:\mathcal{C}\to \mathcal{C}$ is an inner automorphism. We will show that this is not true when $\mathcal{C}$ is degenerate.
 
 ::: {.unnumbered-env}
 **Remark.**
-明顯地，任意兩個內自同構的合成還是內自同構，這說明 $\mathrm{Inn}(\mathcal{C})$ 是一個群。
+The composition of two inner automorphisms is again an inner automorphism. This shows that $\mathrm{Inn}(\mathcal{C})$ is a group.
 :::
 
 ::: {.unnumbered-env}
