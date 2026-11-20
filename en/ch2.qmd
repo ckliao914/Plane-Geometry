@@ -874,7 +874,17 @@ Let $\rho$ be a projective transformation, then the following are equivalent.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-給定對偶變換 $\mathfrak{p}$。若 $\mathfrak{p}$ 非退化，則取 $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$，有 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，故 $\mathfrak{p}^2$ 為某個 $\mathrm{Inn}(\mathcal{C})$ 中函數的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為一直線，則由 @lem-greatdegeneratedual，$\mathfrak{p}^2$ 為對合透視，取任意 $\mathcal{C}$ 使透視軸是透視點的極點，則 $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$，$\mathfrak{p}^2$ 為 $\mathcal{C}$ 上某個對合的延拓。若 $\mathfrak{p}$ 退化，且 $\mathbb{P}_\mathfrak{p}$ 為兩直線 $\ell_1\cup\ell_2$，則 $\mathfrak{p}^2$ 為某個 $\mathrm{Odd}(\ell_1\cup\ell_2)$ 中函數的延拓（因為 $\mathfrak{p}(\ell_1\cap\ell_2)$ 通過三點 $\ell_1\cap\ell_2$，$\mathfrak{p}(\ell_1)$，$\mathfrak{p}(\ell_2)$）。若 $\rho$ 為透視變換使透視點在透視軸上，則取任意兩過透視點的直線 $\ell_1\cup \ell_2$，$\rho$ 為某個 $\mathrm{Even}(\ell_1\cup \ell_2)$ 中函數的延拓。這說明了 $(1)\implies(2)$。
+Let $\mathfrak{p}$ be a dual transformation.
+
+Suppose that $\mathfrak{p}$ is nondegenerate. Set $\mathcal{C}=\mathbb{P}_{\mathfrak{p}}$, then $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$, i.e. $\mathfrak{p}^2$ is the extension of a map in $\mathrm{Inn}(\mathcal{C})$. 
+
+Suppose that $\mathfrak{p}$ is degenerate, and $\mathbb{P}_\mathfrak{p}$ is a single line, then from @lem-greatdegeneratedual, $\mathfrak{p}^2$ is an involutive transformation. Take any (nondegenerate) conic $\mathcal{C}$ such that the perspector is the pole of the perspectrix, then $\mathfrak{p}^2(\mathcal{C})=\mathcal{C}$, and $\mathfrak{p}^2$ is the extension of an involution on $\mathcal{C}$.
+
+Suppose that $\mathfrak{p}$ is degenerate, and $\mathbb{P}_\mathfrak{p}$ is the union of two lines $\ell_1\cup\ell_2$, then $\mathfrak{p}^2$ is the extension of a map in $\mathrm{Odd}(\ell_1\cup\ell_2)$ (since $\mathfrak{p}(\ell_1\cap\ell_2)$ passes through $\ell_1\cap\ell_2,\mathfrak{p}(\ell_1),\mathfrak{p}(\ell_2)$).
+
+Suppose that $\rho$ is a perspective transformation with its perspector $P$ on the perspectrix. Take a degenerate conic $\ell_1\cup \ell_2$ such that $\ell_1\cap \ell_2=P$, then $\rho$ is the extension of a map in $\mathrm{Even}(\ell_1\cup \ell_2)$.
+
+This shows that (1)$\implies$(2).
 
 現在給定一錐線 $\mathcal{C}$ 與 $f\in \mathrm{Inn}(\mathcal{C})$，令 $\rho$ 為 $f$ 的延拓。若 $f$ 是對合，則 $\rho$ 為對合透視，取 $\mathfrak{p}$ 使 $\mathbb{P}_\mathfrak{p}$ 為 $\rho$ 的透視軸，$\mathbb{L}_\mathfrak{p}$ 為 $\rho$ 的透視點，則 $\mathfrak{p}^2=\rho$。接下來令 $f$ 不是對合。若 $\mathcal{C}$ 非退化，則考慮 $g:X\mapsto Xf(X)$，令 $g$ 的延拓為 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。若 $\mathcal{C}=\ell_1\cup \ell_2$ 退化，$f$ 在 $\mathrm{Odd}(\ell_1\cup \ell_2)$ 中，考慮 $g:X\mapsto Xf(X)$（這是一個從退化錐線到退化錐點的保交比變換）的延拓 $\mathfrak{p}$，則 $\mathfrak{p}^2=\rho$。
 
