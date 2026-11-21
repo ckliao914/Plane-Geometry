@@ -1,1 +1,319 @@
+## Rectangular Hyperbolas and Poncelet Points
 
+::: {.unnumbered-env}
+**Definition.**
+The **center** of a conic section $\mathcal{C}$ is $\mathcal{P}_{\mathcal{C}}(\ell_\infty)$.
+:::
+
+::: {#lem-14point1}
+For a point $P$ on a conic section $\mathcal{C}$, its reflection across the center of $\mathcal{C}$ also lies on $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $M$ be the center of $\mathcal{C}$, and let $PM$ meet $\mathcal{C}$ again at $P'$.
+
+By @lem-8point10, $(P,P';M,\infty_{PM})=-1$, so $M$ is the midpoint of $PP'$.
+:::
+
+::: {#lem-14point2}
+If the two points at infinity on a hyperbola $\mathcal{H}$ are $\infty_1,\infty_2$, and $P,P'$ form a pair of antipodal points ($P,P'$ pass through the center), then $(P,P';\infty_1,\infty_2)_{\mathcal{H}}=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The tangents to $\mathcal{H}$ at $\infty_1$ and $\infty_2$ intersect at the center, and $P,P'$ also pass through the center; the result follows from @lem-8point9.
+:::
+
+::: {#lem-14point3}
+Suppose $A,B,C$ lie on a rectangular hyperbola $\mathcal{H}$ with center $P$. Then $P$ lies on the nine-point circle of $\triangle ABC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point1, the reflection $W$ of $H$ across $P$ lies on $\mathcal{H}$.
+
+Let the two points at infinity on $\mathcal{H}$ be $\infty_1,\infty_2$, and let the isogonal conjugate of $\mathcal{H}$ be the line $\ell$.
+
+Let the isogonal conjugates of $W,\infty_1,\infty_2$ be $W',Q_1,Q_2$; then $Q_1,Q_2$ lie on the circumcircle and the midpoint of $Q_1Q_2$ is $O$.
+
+By @lem-14point2 and isogonal conjugation,
+$$
+-1=(H,W;\infty_1,\infty_2)=(O,W';Q_1,Q_2).
+$$
+Hence $W'=\infty_{\ell}$, so $W$ lies on the circumcircle, and by the proof of @thm-1point7, the midpoint $P$ of $HW$ lies on the nine-point circle.
+:::
+
+::: {#lem-14point4}
+Let $\mathcal{H}=(ABCHX)$ be a rectangular hyperbola. Then the pedal circle of $X$ with respect to $\triangle ABC$ passes through the center $P$ of $\mathcal{H}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point3, $P$ lies on the nine-point circles of $\triangle ABX$ and $\triangle ACX$. Let the pedal triangle of $X$ with respect to $\triangle ABC$ be $X_AX_BX_C$.
+
+Then $PM_{AX}M_{AB}X_C$, $PM_{AX}M_{AC}X_B$, $XX_CX_AX_B$ (i.e., $X,X_C,X_A,X_B$), and $XX_BX_AX_C$ are cyclic.
+
+Thus
+$$
+\measuredangle X_BX_AX_C=\measuredangle X_BX_AX+\measuredangle XX_AX_C=\measuredangle X_BCX+\measuredangle XBX_C=\measuredangle ACX+\measuredangle XBA.
+$$
+Also,
+$$
+\measuredangle X_BPX_C=\measuredangle X_BPM_{AX}+\measuredangle M_{AX}PX_C=\measuredangle X_BM_{AC}M_{AX}+\measuredangle M_{AX}M_{AB}X_C.
+$$
+Comparing the two expressions, since $M_{AC}M_{AX}\parallel CX$ and $M_{AB}M_{AX}\parallel BX$, the two angles are equal.
+
+Hence $\measuredangle X_BX_AX_C=\measuredangle X_BPX_C$, so the pedal circle of $X$ passes through $P$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **Poncelet point** $P$ of $X$ (or of $ABCX$) is the center of the rectangular hyperbola $\mathcal{H}=(ABCHX)$. The **antigonal conjugate** of $X$ is the reflection of $X$ across $P$, which is also the antipodal point of $X$ on $\mathcal{H}$.
+:::
+
+::: {#lem-14point5}
+The antigonal conjugate of $X$ is the isogonal conjugate of the inverse of the isogonal conjugate of $X$ with respect to the circumcircle.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $Y$ be the antigonal conjugate of $X$, and let the points at infinity on $\mathcal{H}=(ABCHX)$ be $\infty_1,\infty_2$.
+
+By @lem-14point2, $(X,Y;\infty_1,\infty_2)_{\mathcal{H}}=-1$. Let $X',Y',Q_1,Q_2$ be the isogonal conjugates of $X,Y,\infty_1,\infty_2$.
+
+Then $X',Y',Q_1,Q_2,O$ are collinear, $Q_1,Q_2$ lie on the circumcircle, and $(X',Y';Q_1,Q_2)=-1$.
+
+By @lem-6point4, $Y'$ is the inverse of $X'$ with respect to the circumcircle.
+:::
+
+::: {#lem-14point6}
+If $X,Y$ form a pair of antipodal points on a rectangular hyperbola $\mathcal{H}$ and $S,T$ lie on $\mathcal{H}$, then $\measuredangle SXT=\measuredangle TYS$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $W$ be the orthocenter of $\triangle SXY$, and let $W'$ be the reflection of $W$ across the midpoint of $XY$ (the center of $\mathcal{H}$); then $W,W'\in\mathcal{H}$.
+
+Taking the isogonal conjugate of $\mathcal{H}$ with respect to $\triangle SXY$ sends $W,W'$ to the circumcenter of $\triangle SXY$ and $\infty_{\perp XY}$, so $\mathcal{H}$ is mapped to the perpendicular bisector of $XY$.
+
+Let $U$ be the isogonal conjugate of $T$, which lies on the perpendicular bisector of $XY$; then $\measuredangle SXT=\measuredangle UXY=\measuredangle XYU=\measuredangle TYS$.
+:::
+
+::: {#lem-14point7}
+Let a rectangular hyperbola $\mathcal{H}$ have points at infinity $\infty_1,\infty_2$ and center $P$. For any point $A$, let $\ell=\mathcal{P}_{\mathcal{H}}(A)$. Then $(\infty_1,\infty_2;\infty_\ell,\infty_{AP})=-1$, and the internal and external angle bisectors of $AP$ and $\ell$ pass through $\infty_1,\infty_2$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have $\infty_\ell=\ell_\infty\cap\ell=\mathcal{P}_{\mathcal{H}}(PA)$, so $\infty_\ell$ and $\infty_{AP}$ are conjugate with respect to $\mathcal{H}$.
+
+By @lem-8point10, $(\infty_1,\infty_2;\infty_\ell,\infty_{AP})=-1$.
+
+Since $\infty_1,\infty_2$ are perpendicular points at infinity, they give the directions of the angle bisectors.
+:::
+
+::: {#lem-14point8}
+For any two points $A,B$ and a rectangular hyperbola $\mathcal{H}$ with center $P$, we have $\measuredangle(\mathcal{P}_{\mathcal{H}}(A),\mathcal{P}_{\mathcal{H}}(B))=\measuredangle BPA$ (or equivalently $\measuredangle(\mathcal{P}_{\mathcal{H}}(A),PB)=\measuredangle(\mathcal{P}_{\mathcal{H}}(B),PA)$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point7, the angle bisector directions of $\mathcal{P}_{\mathcal{H}}(A),AP$ coincide with those of $\mathcal{P}_{\mathcal{H}}(B),BP$.
+:::
+
+::: {#cor-14point1}
+For a rectangular hyperbola $\mathcal{H}$, the circumcircle of any self-polar triangle passes through the center of $\mathcal{H}$.
+:::
+
+::: {#cor-14point2}
+Let $\omega_A$ be the nine-point circle of $\triangle BCX$, and let $\Omega_A$ be the pedal circle of $A$ with respect to $\triangle BCX$. Define $\omega_B,\omega_C,\omega_X$ and $\Omega_B,\Omega_C,\Omega_X$ analogously. Then the Poncelet point of $ABCX$ is the common point of these eight circles and the cevian circle of $X$.
+:::
+
+::: {#lem-14point9}
+Let $\mathcal{H}$ be a rectangular hyperbola with center $P$, and let $U,V,W$ be three points such that $P$ lies on $(UVW)$. Set $U'=\mathcal{P}_{\mathcal{H}}(VW)$, $V'=\mathcal{P}_{\mathcal{H}}(WU)$, and $W'=\mathcal{P}_{\mathcal{H}}(UV)$. Then $P$ also lies on $(U'V'W')$, and $P$ is the spiral center sending $\triangle UVW$ to $\triangle U'V'W'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point8, $\measuredangle U'PV'=\measuredangle UWV=\measuredangle UPV=\measuredangle U'W'V'$, so $P$ lies on $(U'V'W')$.
+
+Moreover,
+$$
+\measuredangle PU'V'=\measuredangle(PU',\mathcal{P}_{\mathcal{H}}(W))=\measuredangle(PW,\mathcal{P}_{\mathcal{H}}(U'))=\measuredangle PWV=\measuredangle PUV.
+$$
+By the same argument, $P$ is the spiral center sending $\triangle UVW$ to $\triangle U'V'W'$.
+:::
+
+::: {#cor-14point3}
+Continuing with the notation of @lem-14point9, by @lem-10point4, $\triangle UVW$ and $\triangle U'V'W'$ are perspective, and the perspector is the second intersection of $(UVW)$ and $(U'V'W')$ other than $P$ (by properties of the spiral similarity).
+:::
+
+::: {#lem-14point10}
+Let $\mathcal{H}$ be a rectangular hyperbola passing through $A,B,C$. If $X$ lies on $\mathcal{H}$ with isogonal conjugate $Y$, and $D=Y_{\perp BC}$, then $\mathcal{P}_{\mathcal{H}}(D)\perp AX$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix $\mathcal{H},A,B,C$, let the isogonal conjugate of $\mathcal{H}$ be the line $\ell$ passing through $O$, and let $X$ vary along $\mathcal{H}$ so that $Y$ and $D$ move along $\ell$ and $BC$.
+
+The chain
+$$
+f:D\mapsto\mathcal{P}_{\mathcal{H}}(D)\mapsto\mathcal{P}_{\mathcal{H}}(D)\cap\ell_\infty
+$$
+preserves cross ratio (since $\mathcal{P}_{\mathcal{H}}(D)$ passes through the fixed point $\mathcal{P}_{\mathcal{H}}(BC)$).
+
+The chain
+$$
+g:D\mapsto D\infty_{\perp BC}\mapsto Y\mapsto X\mapsto AX\mapsto\infty_{AX}\mapsto\infty_{\perp AX}
+$$
+also preserves cross ratio.
+
+When $D=M_{BC}$, $\mathcal{P}_{\mathcal{H}}(D)\cap\ell_\infty=\infty_{BC}$ (@lem-8point10), while $Y=O$, $X=H$, and $\infty_{\perp AX}=\infty_{BC}$, so $f(M_{BC})=g(M_{BC})$.
+
+When $D=AH\cap BC$, $\mathcal{P}_{\mathcal{H}}(D)$ is the line joining $AB\cap CH$ and $AC\cap BH$ (by Brocard's theorem), which is perpendicular to $AO$; at the same time $Y=\ell\cap AD$ and $X$ is the second intersection of $\mathcal{H}$ with $AO$, giving $g(AH\cap BC)=\infty_{\perp AO}=f(AH\cap BC)$.
+
+When $D=\infty_{BC}$, if $P$ is the center of $\mathcal{H}$, then $\mathcal{P}_{\mathcal{H}}(D)=PM_{BC}$ (@lem-8point10), while $Y=\infty_\ell$ and $X$ is the fourth intersection of the circumcircle with $\mathcal{H}$, so $AX\parallel M_{AH}M_{XH}$. By the proof of @lem-14point3, $M_{XH}=P$ lies on the nine-point circle $(M_{AH}M_{BC})$, giving $g(\infty_{BC})=f(\infty_{BC})$.
+
+By @thm-10point1, $f=g$, hence $\mathcal{P}_{\mathcal{H}}(D)\perp AX$.
+:::
+
+::: {#lem-14point11}
+Let $\mathcal{H}=(ABCHX)$, and let $Y$ be the isogonal conjugate of $X$. If the pedal triangle of $Y$ is $DEF$, then $(DEF)$ is tangent to $(\mathcal{P}_{\mathcal{H}}(EF)\mathcal{P}_{\mathcal{H}}(FD)\mathcal{P}_{\mathcal{H}}(DE))$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The line $AY$ passes through the circumcenter of $\triangle AEF$, so $AX\perp EF$; by @lem-14point10, $EF\parallel\mathcal{P}_{\mathcal{H}}(D)$.
+
+Analogously, $\triangle DEF$ and $\triangle\mathcal{P}_{\mathcal{H}}(EF)\mathcal{P}_{\mathcal{H}}(FD)\mathcal{P}_{\mathcal{H}}(DE)$ are homothetic.
+
+By @lem-3point18, $(DEF)$ is the pedal circle of $X$, so by @lem-14point3, $(DEF)$ passes through the center $P$ of $\mathcal{H}$.
+
+By @cor-14point3, the homothetic center of the two triangles is the perspector, which lies on $(DEF)$.
+
+By properties of homothety, $(DEF)$ is tangent to $(\mathcal{P}_{\mathcal{H}}(EF)\mathcal{P}_{\mathcal{H}}(FD)\mathcal{P}_{\mathcal{H}}(DE))$.
+:::
+
+::: {#lem-14point12}
+Let the Poncelet point of $X$ be $P$, and let the tangents from $P$ to the nine-point circle and the pedal circle of $X$ be $\ell_N$ and $\ell_P$, respectively. Then
+$$
+\measuredangle(\ell_N,\ell_P)=\measuredangle XBC+\measuredangle XCA+\measuredangle XAB+90^\circ\ (=\measuredangle XCB+\measuredangle XAC+\measuredangle XBA+90^\circ).
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the pedal triangle of $X$ be $DEF$, the midpoints of the sides be $UVW$, and the feet be $RST$.
+
+We have
+$$
+\measuredangle(\ell_N,\ell_P)=\measuredangle(\ell_N,PU)+\measuredangle(PU,PD)+\measuredangle(PD,\ell_P)=\measuredangle PVU+\measuredangle UPD+\measuredangle DEP.
+$$
+Also,
+$$
+\measuredangle PVU+\measuredangle DEP=\measuredangle(DE,VU)+\measuredangle VPE=\measuredangle(DE,AB)+\measuredangle VPE.
+$$
+Note that $(UPD)$ is the nine-point circle of $\triangle BXC$, so by properties of the nine-point circle, $\measuredangle UPD=\measuredangle XCB+\measuredangle XBC$.
+
+Similarly, $(VPE)$ is the nine-point circle of $\triangle AXC$, so $\measuredangle VPE=\measuredangle XCA+\measuredangle XAC$.
+
+Since $CDEX$ is cyclic, $\measuredangle(DE,AB)=\measuredangle DEX+\measuredangle(EX,AB)=\measuredangle BCX+\measuredangle CAB+90^\circ$.
+
+Summing these gives $\measuredangle(\ell_N,\ell_P)=\measuredangle XBC+\measuredangle XCA+\measuredangle XAB+90^\circ$.
+:::
+
+::: {#cor-14point4}
+We have $\measuredangle XBC+\measuredangle XCA+\measuredangle XAB=90^\circ$ if and only if the pedal circle of $X$ is tangent to the nine-point circle.
+:::
+
+::: {#cor-14point5}
+The pedal circle of $I$, namely the incircle, is tangent to the nine-point circle. Likewise, each excircle is tangent to the nine-point circle.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(11)$ (the **Feuerbach point**) is the point of tangency between the incircle and the nine-point circle; when unspecified, it is denoted by $Fe$.
+:::
+
+::: {#cor-14point6}
+The point $Fe$ is the Poncelet point of $I$, so it is the center of $\mathcal{H}_{Fe}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(12)$ is the internal center of similitude of the incircle and the nine-point circle ($X(11)$ is the external center of similitude).
+:::
+
+::: {#cor-14point7}
+The points $I,N_9,Fe,X(12)$ are collinear and $(I,N_9;Fe,X(12))=-1$.
+:::
+
+::: {#lem-14point13}
+The quadruples $H,Fe,X(56)$, $G,Fe,X(55)$, $H,X(12),X(55)$, and $G,X(12),X(56)$ are each collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying Monge's theorem to the incircle, the nine-point circle, and the circumcircle yields the result.
+:::
+
+::: {#lem-14point14}
+Let the $A$-excircle touch the nine-point circle at $T$. Then $A,T,X(12)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying Monge's theorem to the incircle, the nine-point circle, and the $A$-excircle yields the result.
+:::
+
+::: {#lem-14point15}
+Let the intouch triangle be $DEF$, and let $D'$ lie on the incircle such that $DD'\parallel EF$. Then $Fe,D',M_{BC}$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The tangent to the incircle at $D'$ is parallel to the tangent to the nine-point circle at $M_{BC}$, so the line joining them passes through the center of similitude.
+:::
+
+::: {#lem-14point16}
+The points $Sp,X(12),X(65)$ are collinear, and $SpFe$ bisects $IH$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the intouch triangle be $DEF$, and let $D_1$ lie on the incircle such that $DD_1\perp EF$, with $E_1,F_1$ defined analogously.
+
+Then the incenter of $\triangle D_1E_1F_1$ is the orthocenter $X(65)$ of $\triangle DEF$, and the incenter of $\triangle M_{BC}M_{CA}M_{AB}$ is $Sp$.
+
+Moreover, $\triangle D_1E_1F_1$ and $\triangle M_{BC}M_{CA}M_{AB}$ are homothetic (as seen from their tangents) with center $X(12)$.
+
+Similarly, the incenter of $\triangle M_{HA}M_{HB}M_{HC}$ is $M_{IH}$, and $\triangle M_{HA}M_{HB}M_{HC}$ is homothetic to $\triangle D_1E_1F_1$ centered at $Fe$.
+
+Hence $Sp,X(12),X(65)$ are collinear and $Sp,Fe,M_{IH}$ are collinear.
+:::
+
+::: {#lem-14point17}
+Let $H_A$ be the orthocenter of $\triangle BIC$. Then the tangent at $Fe$ to the incircle (or the nine-point circle) passes through $BC\cap AH_A$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $M=C_{\perp BI}$ and $N=B_{\perp CI}$, and let the intouch triangle be $DEF$; then $(H_A,I;MN\cap ID,D)=-1$.
+
+By the proof of @lem-1point4, $M,N,E,F$ are collinear, so by @lem-9point1, $MN\cap ID$ lies on $AM_{BC}$.
+
+Thus
+$$
+-1=A(H_A,I;MN\cap ID,D)=(AH_A\cap BC,AI\cap BC;M_{BC},D).
+$$
+Let the other tangent from $M_{BC}$ to the incircle touch it at $X$, and let $D'$ lie on the incircle such that $DD'\parallel EF$.
+
+By @lem-8point9 and @lem-14point15, $(D,X;Fe,D')=-1$; let the tangent at $Fe$ meet $BC$ at $Y$.
+
+Projecting this harmonic range to the intersections of the tangents to the incircle with $BC$, and noting that the tangent at $D'$ passes through $AI\cap BC$, we obtain
+$$
+(D,M_{BC};Y,AI\cap BC)=-1,
+$$
+so $Y=AH_A\cap BC$.
+:::
