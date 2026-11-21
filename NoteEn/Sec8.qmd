@@ -248,11 +248,21 @@ Hence $AC\cap BD=Y$ and $BC\cap AD=Z$; applying @thm-8point4 again shows that $Y
 
 ::: {.unnumbered-env}
 **Definition.**
-Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils, or conics). A map $f:E\to F$ is called a **projective map** if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
+Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils of lines, or conics). A map $f:E\to F$ is called a **projective map** if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
 :::
 
 ::: {#cor-8point6}
-Projecting a range onto a pencil ($X_i\mapsto AX_i$), intersecting a pencil with a line ($\ell_i\mapsto \ell_i\cap\mathcal{L}$), projecting a pencil from a point on a conic to its intersections with the conic ($AX_i\mapsto AX_i\cap\mathcal{C}\neq A$), projecting points on a conic from a point off the conic to their second intersections ($X_i\mapsto X_iA\cap\mathcal{C}\neq X_i$), as well as inversion (on ranges and circles), reflections, and rotations are all projective maps.
+The following are projective maps.
+
+(1) The map from a line $\ell$ to a pencil of lines through $A$ given by $X_i\mapsto AX_i$.
+
+(2) The map from a pencil of lines to a line $m$  given by $\ell_i\mapsto \ell_i\cap m$.
+
+(3) The map from a pencil of lines through $A\in \mathcal{C}$ to a conic $\mathcal{C}$ given by $\ell_i\mapsto \ell_i\cap\mathcal{C}\neq A$.
+
+(4) The map from a conic $\mathcal{C}$ to itself given by $X_i\mapsto X_iA\cap\mathcal{C}\neq X_i$ where $A\notin \mathcal{C}$ (@lem-8point6). 
+
+(5) Inversion, reflections, and rotations (on lines and circles).
 :::
 
 ::: {.unnumbered-env}
