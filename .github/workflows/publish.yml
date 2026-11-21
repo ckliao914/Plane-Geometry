@@ -27,7 +27,7 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: en
-          
+
       - name: Render NoteEn
         uses: quarto-dev/quarto-actions/render@v2
         with:
@@ -36,28 +36,35 @@ jobs:
       - name: Prepare Public Directory
         run: |
           mkdir -p public
-          
-          # 1. 複製根目錄的主頁面
+
           if [ -f "index.html" ]; then
             cp index.html public/
           fi
-          
-          # 2. 複製 PDF 檔案到發布根目錄（確保網頁上的 PDF 連結能正常下載）
+
           if [ -f "Planar_Geometry_over_C.pdf" ]; then
             cp Planar_Geometry_over_C.pdf public/
           fi
           if [ -f "Geometry_Notes.pdf" ]; then
             cp Geometry_Notes.pdf public/
           fi
-          
-          # 3. 將 en/ 底下編譯好的書本內容放入 public/en/ 子目錄
-          mkdir -p public/en
-          cp -r en/_book/* public/en/
 
-          # 4. 將 NoteEn/ 底下編譯好的書本內容放入 public/NoteEn/ 子目錄
-          mkdir -p public/NoteEn
-          cp -r NoteEn/_book/* public/NoteEn/
+          if [ -d "en/_book" ]; then
+            mkdir -p public/en
+            cp -r en/_book/* public/en/
+          else
+            echo "Warning: en/_book not found"
+            ls -la en
+            exit 1
+          fi
 
+          if [ -d "NoteEn/_book" ]; then
+            mkdir -p public/NoteEn
+            cp -r NoteEn/_book/* public/NoteEn/
+          else
+            echo "Warning: NoteEn/_book not found"
+            ls -la NoteEn
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
