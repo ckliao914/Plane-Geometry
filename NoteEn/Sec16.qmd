@@ -89,7 +89,7 @@ The points $X(13)$, $X(14)$, $X(115)$, $K$, and $M_{GH}$ are collinear, and $(X(
 ## Proof
 Take the polars of $X(115)$ and $K$ with respect to $\mathcal{K}$, which are $\ell_\infty$ and $GH$, respectively.
 
-By @lem-8point10, $\mathcal{P}_{\mathcal{K}}(M_{GH})$ passes through $\infty_{GH}$, so the three polars concur, meaning $X(115)$, $K$, and $M_{GH}$ are collinear.
+By @lem-8point10, $\mathfrak{p}_{\mathcal{K}}(M_{GH})$ passes through $\infty_{GH}$, so the three polars concur, meaning $X(115)$, $K$, and $M_{GH}$ are collinear.
 
 By @lem-16point3,
 $$
