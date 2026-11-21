@@ -153,3 +153,42 @@ In @lem-12point6, the map $X\mapsto Y$ is called the **isoconjugate** transforma
 The isoconjugate transformation sending $I$ to $I$ is the isogonal conjugate transformation, and the isoconjugate transformation sending $G$ to $G$ is the isotomic conjugate transformation.
 :::
 
+::: {#thm-12point3}
+Given an isoconjugate transformation, it swaps lines $\ell$ not passing through any vertex of $\triangle ABC$ with conic sections $\mathcal{C}$ passing through $A,B,C$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\phi$ be the isoconjugate transformation with $\phi(X)=Y$.
+
+If $X$ lies on $\ell$, then $f:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a conic passing through $B,C$ (since $f(BC)\neq CB$), and analogously through $A$.
+
+If $X$ lies on $\mathcal{C}$, then $g:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a line (since $g(BC)=CB$) not passing through any vertex.
+:::
+
+::: {#lem-12point7}
+Let $\phi$ be the isoconjugate transformation sending $P$ to $P$. Then $\phi(X)=X$ if and only if $X$ is $P$ or a vertex of the anticevian triangle of $P$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Here $\phi$ maps the line $AX$ to itself, so
+$$
+A(B,C;P,X)=A(C,B;P,X)=A(B,C;X,P).
+$$
+Thus $A,X,P$ are collinear or $A(B,C;P,X)=-1$. Applying the same reasoning to the other two vertices and using @lem-6point3 shows that $X$ can only be $P$ or a vertex of the anticevian triangle of $P$.
+:::
+
+::: {#lem-12point8}
+Let $\phi$ be the isoconjugate transformation sending $P$ to $P$. Then the line $P\phi(X)$ is tangent to $(ABCPX)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P\phi(X)$ meet $(ABCPX)$ again at $Y$. By @thm-12point3, $\phi$ swaps $P\phi(X)$ and $(ABCPX)$.
+
+Hence $\phi(Y)$ is the second intersection of $P\phi(X)$ with $(ABCPX)$, so $\phi(Y)=Y$.
+
+By @lem-12point7, $Y$ is $P$ or a vertex of the anticevian triangle of $P$; since the vertices of the anticevian triangle lie on $AP,BP,CP$ and not on $(ABCPX)$, we must have $Y=P$.
+:::
+
