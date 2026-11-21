@@ -301,7 +301,7 @@ Since these three circles share the common radical axis $OX(15)X(16)$, their cen
 :::
 
 ::: {#lem-4point17}
-Using the notation of @lem-4point16, the inverse of the $A$-Humpty point with respect to $(ABC)$ is $A_1$ (equivalently, the inverse of the $A$-Dumpty point with respect to $(ABC)$ is $A_1$—see proof).
+Using the notation of @lem-4point16, the inverse of the $A$-Dumpty point with respect to $(ABC)$ is $A_1$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
