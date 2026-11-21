@@ -1,1 +1,234 @@
+## Projective Transformations
 
+::: {.unnumbered-env}
+**Definition.**
+If $\mathbb{P}$ is a projective plane and $f:\mathbb{P}\to\mathbb{P}$ preserves collinearity and cross ratio—meaning that if $P,Q,R$ are collinear then $f(P),f(Q),f(R)$ are collinear, and if $X$ lies on $PQ$ then $(P,Q;R,X)=(f(P),f(Q);f(R),f(X))$—then $f$ is called a **projective transformation**.
+:::
+
+::: {#cor-21point1}
+Projective transformations preserve collinearity, cross ratios on lines, intersections, cross ratios of pencils, conic incidences, envelopes, poles and polars, and other projective properties.
+:::
+
+::: {#thm-21point1}
+Suppose no three of $W,X,Y,Z$ are collinear, and no three of $W_1,X_1,Y_1,Z_1$ are collinear. Then there exists a unique projective transformation $f$ such that $f(W)=W_1$, $f(X)=X_1$, $f(Y)=Y_1$, and $f(Z)=Z_1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+First we prove uniqueness. Set $U=WX\cap YZ$ and $V=WY\cap XZ$.
+
+Since collinearity is preserved, $f(U)=W_1X_1\cap Y_1Z_1=U_1$ and $f(V)=W_1Y_1\cap X_1Z_1=V_1$.
+
+For any point $L$, preservation of cross ratio gives
+$$
+U(W,Y;V,L)=U_1(W_1,Y_1;V_1,f(L)).
+$$
+Let $g_1:\mathbb{L}_U\to\mathbb{L}_{U_1}$ be a cross-ratio-preserving map sending $UW\mapsto U_1W_1$, $UY\mapsto U_1Y_1$, and $UV\mapsto U_1V_1$.
+
+By @thm-10point1, $g_1$ is unique, so $f(L)$ lies on $g_1(UL)$.
+
+Similarly, there is a unique cross-ratio-preserving map $g_2:\mathbb{L}_V\to\mathbb{L}_{V_1}$ such that $f(L)$ lies on $g_2(VL)$.
+
+Thus $f(L)=g_1(UL)\cap g_2(VL)$, proving uniqueness. For existence, it suffices to verify that $f$ defined above preserves collinearity and cross ratio.
+
+If $P,Q,R$ are collinear, then $U(P,Q;R,V)=V(P,Q;R,U)$.
+
+Since $U_1f(L)=g_1(UL)$ and $V_1f(L)=g_2(VL)$ and the maps $UL\mapsto U_1f(L)$ and $VL\mapsto V_1f(L)$ preserve cross ratio, we have
+$$
+U_1(f(P),f(Q);f(R),V_1)=V_1(f(P),f(Q);f(R),U_1),
+$$
+so $f(P),f(Q),f(R)$ are collinear.
+
+If $P,Q,R,S$ are collinear, then $U(P,Q;R,S)=U_1(f(P),f(Q);f(R),f(S))$.
+
+Hence $f$ preserves collinearity and cross ratio, establishing existence.
+:::
+
+::: {#cor-21point2}
+If $\phi_1$ and $\phi_2$ are two isogonal transformations on $\triangle ABC$, then $f=\phi_1\circ\phi_2$ is a projective transformation with $f(A)=A$, $f(B)=B$, and $f(C)=C$ (since lines map to circumconics and then to lines, $f$ preserves lines and cross ratios).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Given a point $P$ with cevian triangle $P_AP_BP_C$, let $f$ be the projective transformation satisfying $f(A)=P_A$, $f(B)=P_B$, $f(C)=P_C$, and $f(P)=P$. Then $f(X)$ is defined as the **$P$-complement** of $X$, and $f^{-1}(X)$ is defined as the **$P$-anticomplement** of $X$.
+:::
+
+::: {#cor-21point3}
+The complement is the $G$-complement, and the anticomplement is the $G$-anticomplement.
+:::
+
+::: {#lem-21point1}
+Let $\ell$ be the trilinear polar of $P$, and let $P_AP_BP_C$ be the cevian triangle of $P$. If $AX$, $BX$, and $CX$ meet $\ell$ at $U$, $V$, and $W$, respectively, then $P_AU$, $P_BV$, and $P_CW$ concur at the $P$-complement of $X$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $f$ be the projective transformation satisfying $f(A)=A$, $f(B)=B$, $f(C)=C$, and $f(G)=P$, and set $Y=f^{-1}(X)$.
+
+Let $Y'$ be the $G$-complement of $Y$; then $AY\cap M_{BC}Y'$ lies on $\ell_\infty$ (the trilinear polar of $G$).
+
+Since $f$ preserves projective properties, letting $X'$ be the $P$-complement of $X$, we have $f(Y')=X'$ and $f(M_{BC})=AP\cap BC$.
+
+Applying $f$ gives that $f(A)f(Y)\cap f(M_{BC})f(Y')=AX\cap P_AX'$ lies on $\ell$ (the trilinear polar of $P$).
+
+Thus $P_A,U,X'$ are collinear, and by symmetry $P_AU$, $P_BV$, and $P_CW$ concur at $X'$.
+:::
+
+::: {#cor-21point4}
+If $X$ lies on the trilinear polar of $P$, then the $P$-complement of $X$ is $X$; if $X$ is a vertex of the anticevian triangle of $P$, then the $P$-complement of $X$ is $A$, $B$, or $C$; and if $X'$ and $Y'$ are the $P$-complements of $X$ and $Y$, then $XY\cap X'Y'$ lies on the trilinear polar of $P$.
+:::
+
+::: {#cor-21point5}
+Let $\ell$ be the trilinear polar of $P$, and let $X'$ be the $P$-complement of $X$. Then $(X,X';P,\ell\cap XP)=-2$.
+:::
+
+::: {#lem-21point2}
+Let $\phi$ be an isogonal transformation such that $\phi(P)=P$. Then the crosspoint of $P$ and $X$ is the $P$-complement of $\phi(X)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $f$ be the projective transformation satisfying $f(A)=A$, $f(B)=B$, $f(C)=C$, and $f(G)=P$, and set $Y=f^{-1}(X)$.
+
+By @lem-11point12, the crosspoint of $Y$ and $G$ is the $G$-complement of the isotomic conjugate of $Y$.
+
+Applying $f$ shows that the crosspoint of $X$ and $P$ is the $P$-complement of $\phi(X)$.
+:::
+
+::: {#lem-21point3}
+The $I$-complement of $O$ is $X(65)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point11, $X(65)$ is the crosspoint of $I$ and $H$.
+
+By @lem-21point2, $X(65)$ is the $I$-complement of $O$ (the isogonal conjugate of $H$).
+:::
+
+::: {#lem-21point4}
+The pole of the trilinear polar of $I$ with respect to the circumcircle is $X(55)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $T$ be the intersection of $OI$ with the trilinear polar of $I$; by @lem-15point6, it is equivalent to show that the inverse of $X(55)$ with respect to the circumcircle is $T$.
+
+Since the crosspoint of $I$ and $X(80)$ is $\infty_{OI}$ (@cor-13point3 and @lem-15point13), and $X(36)$ is the isogonal conjugate of $X(80)$, @lem-21point2 implies that $\infty_{OI}$ is the $I$-complement of $X(36)$.
+
+By @cor-21point5, $(X(36),\infty_{OI};I,T)=-2$.
+
+Let $T^*$ be the inverse of $T$ with respect to the circumcircle, set $D=I_{\perp BC}$, let $I'$ be the reflection of $I$ across $D$, and let $M$ be the midpoint of the lower arc $BC$.
+
+By @lem-15point11,
+$$
+-2=(I,O;X(36),T^*)\stackrel{M}{=}(I,\infty_{ID};I',MT^*\cap ID).
+$$
+Thus $MT^*\cap ID$ is the reflection $D'$ of $D$ across $I$, and by homothety $MD'T^*$ passes through $X(55)$.
+
+By symmetry, $T^*=X(55)$, so the pole of the trilinear polar of $I$ with respect to the circumcircle is $X(55)$.
+:::
+
+::: {#cor-21point6}
+The point $X(55)$ is the $I$-complement of $X(57)$ (@cor-13point5 and @lem-21point2).
+:::
+
+::: {#lem-21point5}
+Set $S=BI_A\cap AC$ and $T=CI_A\cap AB$. If $N$ is the midpoint of the upper arc $BC$ and $P=BN\cap AC$ and $Q=CN\cap AB$, and $DEF$ is the intouch triangle, then $AD_{\perp EF}$, $ST$, and $PQ$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By Brocard's theorem, the polar of $X=NA\cap BC$ with respect to the circumcircle is $PQ$.
+
+By @lem-8point10 and @lem-21point4, $\mathcal{P}_{(ABC)}(X)$ also passes through $R=AI\cap BC$ and $X(55)$.
+
+By @lem-21point1 and @cor-21point6, $AX(57)$ and $RX(55)$ intersect on $ST$ (the trilinear polar of $I$).
+
+By @lem-13point5, $AD_{\perp EF}$ is $AX(57)$, and $RX(55)$ is $PQ$, so $AD_{\perp EF}$, $ST$, and $PQ$ concur.
+:::
+
+::: {#cor-21point7}
+With the notation of @lem-21point5, set $S'=BI\cap AC$, $T'=CI\cap AB$, and $L=PQ\cap S'T'$. Then $AL$ and $AD_{\perp EF}$ are isogonal lines (the excenter version of @lem-21point5).
+:::
+
+::: {#lem-21point6}
+If $Y$ is the cevapoint of $X$ and $G$, then $Y$ is the isotomic conjugate of the complement of $X$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\triangle UVW$ be the anticomplementary triangle; then the cevapoint of $X$ and $G$ is the crosspoint of $X$ and $G$ with respect to $\triangle UVW$.
+
+Taking complements shows that the complement of $Y$ is the crosspoint of the complement of $X$ and $G$ with respect to $\triangle ABC$.
+
+By @lem-11point12, the complement of $Y$ is the complement of the isotomic conjugate of the complement of $X$.
+
+Hence $Y$ is the isotomic conjugate of the complement of $X$.
+:::
+
+::: {#cor-21point8}
+Let $\phi$ be an isogonal transformation such that $\phi(P)=P$, and let $X'$ be the $P$-complement of $X$. Then the cevapoint of $P$ and $X$ is $\phi(X')$ (by applying a projective transformation to @lem-21point6).
+:::
+
+::: {#lem-21point7}
+The $I$-complement of $X(40)$ is $X(56)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @cor-20point1, the cevapoint of $I$ and $X(40)$ is $Na$.
+
+By @cor-21point8, the isogonal conjugate $X(56)$ of $Na$ is the $I$-complement of $X(40)$.
+:::
+
+::: {#lem-21point8}
+Let $L$ be the cevapoint of $P$ and $Q$. Then $(AL\cap PQ,BC\cap PQ;P,Q)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P_AP_BP_C$ be the anticevian triangle of $P$ and set $\mathcal{C}=(PP_AP_BP_CQ)$; then $\mathcal{P}_{\mathcal{C}}(A)=BC$ (Brocard's theorem).
+
+Considering $\mathcal{P}_{\mathcal{C}}(BC\cap PQ)=AL$, the points $AL\cap PQ$ and $BC\cap PQ$ are conjugate with respect to $\mathcal{C}$.
+
+By @lem-8point10, $(AL\cap PQ,BC\cap PQ;P,Q)=-1$.
+:::
+
+::: {#lem-21point9}
+Let a line $\ell$ through $O$ meet $(BOC)$, $(COA)$, and $(AOB)$ again at $X$, $Y$, and $Z$, respectively. Then $AX$, $BY$, and $CZ$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the two intersections $U$ and $V$ of $\ell$ with $(ABC)$, and let $P$ be the cevapoint of $U$ and $V$.
+
+By @lem-21point8, $(AP\cap UV,BC\cap UV;U,V)=-1$.
+
+By @lem-6point4, since $(ABC)=(UV)$, the inverse of $BC\cap UV$ with respect to $(ABC)$ is $AP\cap UV$.
+
+Hence $AP\cap UV$ lies on $(BOC)$, so $AP\cap UV=X$; by symmetry, $AX$, $BY$, and $CZ$ concur at $P$.
+:::
+
+::: {#lem-21point10}
+Let $L$ and $S$ be the cevapoint and crosspoint of $P$ and $Q$, respectively, and let $\phi$ be an isogonal transformation such that $\phi(P)=Q$. Then $\phi(L)=S$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $\mathcal{C}=(ABCPQ)$, and let $R$ lie on $\mathcal{C}$ so that $AR$, $BC$, and $PQ$ concur.
+
+Let $SA$ and $SR$ meet $\mathcal{C}$ again at $A'$ and $R'$; then $AR\cap A'R'$ lies on $\mathcal{P}_{\mathcal{C}}(S)=PQ$ (Brocard's theorem).
+
+Thus $AR$, $BC$, $PQ$, and $A'R'$ concur, so by @lem-12point3, $(B,C)$, $(P,Q)$, and $(A',R')$ form an involution on $\mathcal{C}$.
+
+We have
+$$
+-1=(R,R';P,Q)_{\mathcal{C}}\stackrel{A}{=}(BC\cap PQ,AR'\cap PQ;P,Q),
+$$
+and by @lem-21point8, $A,R',L$ are collinear.
+
+Since $A,A',S$ are also collinear, $(AB,AC)$, $(AP,AQ)$, and $(AS,AL)$ belong to the same involution.
+
+By symmetry, the isogonal transformation sending $P$ to $Q$ also sends $L$ to $S$.
+:::
