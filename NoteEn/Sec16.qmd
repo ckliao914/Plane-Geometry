@@ -110,7 +110,8 @@ Let $P$ be the reflection of $X(14)$ across $M_{GH}$; then $G,H,X(13),P$ are con
 Since $X(13),X(14)$ pass through $M_{GH}$, power of a point from $M_{GH}$ shows that $GH$ is tangent to $(HX(13)X(14))$.
 :::
 
-::: {#cor-16point3 .callout-note title="Lester circle"}
+::: {#cor-16point3}
+## Lester circle
 The points $X(13)$, $X(14)$, $O$, and $N_9$ are concyclic (by power of a point from $M_{GH}$).
 :::
 
