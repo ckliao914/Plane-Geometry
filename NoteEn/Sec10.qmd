@@ -1,7 +1,7 @@
-
 ## Projective Map Method and Steiner Conic
 
 ::: {#thm-10point1}
+## Projective map method
 Suppose cross ratios are defined on sets $E$ and $F$, and let $f, f': E\to F$ be two projective maps. If there exist three points $P_1, P_2, P_3\in E$ such that $f(P_i)=f'(P_i)$ for $i=1,2,3$, then $f=f'$. In fact, given any $Q_1, Q_2, Q_3\in F$, there exists a unique projective map $f:E\to F$ satisfying $f(P_i)=Q_i$ for $i=1,2,3$.
 :::
 
