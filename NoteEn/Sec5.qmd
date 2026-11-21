@@ -1,1 +1,318 @@
 
+## Mixtilinear Incircles
+
+::: {.unnumbered-env}
+**Definition.**
+Distinct inversion powers are related by homotheties, so the notion of inversion can also be extended to negative inversion powers.
+:::
+
+::: {#lem-5point1}
+Let $(AH)$ intersect $(ABC)$ again at $X$. Then $(XHB)$ and $(XHC)$ are both tangent to $BC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the feet of the altitudes from $A,B,C$ to the opposite sides be $D,E,F$, respectively.
+
+By power of a point, there exists an inversion centered at $H$ sending $A^*=D$, $B^*=E$, and $C^*=F$.
+
+This inversion swaps the nine-point circle with $(ABC)$, and swaps $(AH)$ with $BC$.
+
+Hence $X^*=M_{BC}$, and $(XHB)$ maps to the line $M_{BC}E$, which is tangent to $(AH)$ (and similarly for $(XHC)$ and $M_{BC}F$) by @lem-3point12, yielding the tangency with $BC$ after inverting back.
+:::
+
+::: {#lem-5point2}
+Using the notation of @lem-5point1, let $AH$ intersect $(ABC)$ again at $Y$. Then $BYCX$ is a harmonic quadrilateral.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point8 and @lem-5point1, the $X$-Humpty point of $\triangle XBC$ is $H$.
+
+By @lem-3point9, the reflection $Y$ of $H$ across $BC$ lies on the $X$-symmedian of $\triangle XBC$, which implies that $BYCX$ is a harmonic quadrilateral.
+:::
+
+::: {#lem-5point3}
+If $P,Q,R,S$ lie on a generalized circle, then for any inversion center $O$ (with the convention $P_\infty A / P_\infty B = 1$),
+$$
+\frac{PR/PS}{QR/QS}=\frac{P^*R^*/P^*S^*}{Q^*R^*/Q^*S^*}.
+$$
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows by computing lengths using @thm-4point2.
+:::
+
+::: {#cor-5point1}
+A harmonic quadrilateral remains a harmonic quadrilateral under inversion (provided the center of inversion does not lie on the circumcircle of the four points).
+:::
+
+::: {#lem-5point4}
+Using the notation of @lem-5point1, let $D$ be the foot of the perpendicular from $A$ to $BC$. If $T$ lies on $(ABC)$ such that $ABTC$ is a harmonic quadrilateral, then $D,X,T$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @lem-5point2, invert about $D$ with power sending $A^*=Y$ and swapping $B$ and $C$.
+
+Then the harmonic quadrilateral $ABTC$ maps to $YCT^*B$.
+
+By @lem-5point2 and @cor-5point1, it follows that $T^*=X$, so $D,X,T$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **circumcevian triangle** of a point $P$ is the triangle formed by the second intersections of $AP, BP, CP$ with $(ABC)$.
+:::
+
+::: {#cor-5point2}
+If the circumcevian triangle of a point is $\triangle XYZ$, then there exists an inversion sending $A^*=X$, $B^*=Y$, and $C^*=Z$.
+:::
+
+::: {#cor-5point3}
+The circumcevian triangle of a point is similar to its pedal triangle.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+There are two circles tangent to $(ABC)$, $AB$, and $AC$ whose centers lie on $AI$: the one inside $(ABC)$ is called the **$A$-mixtilinear incircle**, and the one outside $(ABC)$ is called the **$A$-mixtilinear excircle**.
+:::
+
+::: {#lem-5point5}
+Suppose the $A$-mixtilinear incircle and the $A$-excircle touch $(ABC)$ and $BC$ at $T$ and $Q$, respectively. Then $\measuredangle BAT=\measuredangle QAC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Under the inversion followed by reflection in @cor-4point6, the $A$-mixtilinear incircle and the $A$-excircle are swapped, so $T^*=Q$, giving $\measuredangle BAT=\measuredangle QAC$.
+:::
+
+::: {#lem-5point6}
+If the $A$-mixtilinear incircle touches $AB$ and $AC$ at $K$ and $L$, respectively, then the midpoint of $KL$ is $I$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since the points of tangency of the $A$-excircle with $AC$ and $AB$, together with $A$ and $I_A$, lie on $(AI_A)$, applying the transformation in @cor-4point6 shows that the midpoint of $KL$ is $I$.
+:::
+
+::: {#lem-5point7}
+Let $N$ be the midpoint of arc $BC$ of $(ABC)$ not containing $A$. Then $IN$ passes through the point of tangency of the $A$-mixtilinear incircle with $(ABC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @lem-5point5, applying the transformation in @cor-4point6 reduces the claim to showing that $AN\cap BC$, $Q$, $A$, and $I_A$ are concyclic.
+
+These four points all lie on the circle with diameter joining $AN\cap BC$ and $I_A$.
+:::
+
+::: {#lem-5point8}
+Let $A'$ lie on $(ABC)$ such that $AA'\parallel BC$, and let the incircle touch $BC$ at $P$. Then $A'P$ passes through the point of tangency of the $A$-mixtilinear incircle with $(ABC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @lem-5point5, by @lem-2point3 and @lem-5point5, reflecting $A'$, $P$, and $T$ across the perpendicular bisector of $BC$ maps them to $A$, $Q$, and the intersection of $AQ$ with $(ABC)$.
+
+Hence $A',P,T$ are collinear.
+:::
+
+::: {#lem-5point9}
+Using the notation of @lem-5point5 and @lem-5point6, let $R$ and $S$ be the midpoints of arcs $AB$ and $AC$ (not containing $C$ and $B$, respectively) of $(ABC)$. Then $R,K,T$ are collinear and $S,L,T$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying the homothety centered at $T$ sending the $A$-mixtilinear incircle to $(ABC)$ (whose tangents at the corresponding points are parallel to $AB$ and $AC$) shows that $R,K,T$ and $S,L,T$ are collinear.
+:::
+
+::: {#lem-5point10}
+Using the notation of @lem-5point9, $ARTS$ is a harmonic quadrilateral.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$ of $(ABC)$, respectively. Invert about $I$ with the power that leaves $(ABC)$ invariant.
+
+Then $A^*=M$, $S^*=B$, $R^*=C$, and by @lem-5point7, $T^*=N$.
+
+Since $MCNB$ is a harmonic quadrilateral, @cor-5point1 implies that $ARTS$ is a harmonic quadrilateral.
+:::
+
+::: {#lem-5point11}
+Using the notation of @lem-5point9, both $BKIT$ and $CLIT$ are harmonic quadrilaterals.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Apply the transformation in @cor-4point6.
+
+The points $B,K,I,T$ map to $C$, the point of tangency of the $A$-excircle with $AC$, $I_A$, and the point of tangency of the $A$-excircle with $BC$.
+
+These four image points clearly form a harmonic quadrilateral, so by @cor-5point1, $BKIT$ (and analogously $CLIT$) is a harmonic quadrilateral.
+:::
+
+::: {#lem-5point12}
+Using the notation of @lem-5point9, $CI$ is tangent to $(BKIT)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from $\measuredangle BIC=\measuredangle BKI$ by angle chasing.
+:::
+
+::: {#lem-5point13}
+Using the notation of @lem-5point9, $BR$ is tangent to $(BKIT)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-5point9 and @lem-5point12, the line through $I$ tangent to $(BKIT)$ intersects $KT$ at $R$.
+
+Hence by @lem-5point11 and @cor-3point4, the tangent to $(BKIT)$ at $B$ also passes through $R$.
+:::
+
+::: {#lem-5point14}
+Using the notation of @lem-5point9, $T$ is the center of spiral similarity sending $BI$ to $IC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-5point12 and @lem-3point5, $T$ is the $I$-Dumpty point of $\triangle BIC$, which is the center of spiral similarity sending $BI$ to $IC$.
+:::
+
+::: {#lem-5point15}
+Using the notation of @lem-5point8, $T$ is the center of spiral similarity sending $AI$ to $IP$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$ of $(ABC)$, respectively. By @lem-5point7 and @lem-5point8, we have
+$$
+\measuredangle ATI=\measuredangle ATN=\measuredangle NTA'=\measuredangle ITP
+$$
+and
+$$
+\measuredangle TAI=\measuredangle TAM=\measuredangle TNM=\measuredangle TIP.
+$$
+Thus $\triangle ATI\sim \triangle ITP$, so $T$ is the spiral similarity center taking $AI$ to $IP$.
+:::
+
+::: {#lem-5point16}
+Using the notation of @lem-5point15, the second intersection of $(BIC)$ and $(AIP)$ is the reflection of $I$ across $T$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-5point14 and @lem-5point15, $T$ is the $I$-Dumpty point of both $\triangle BIC$ and $\triangle AIP$, from which the claim follows.
+:::
+
+::: {#lem-5point17}
+Using the notation of @lem-5point15, let $MT\cap BC=X$. Then $AI\perp IX$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the radical center of $(MIT)$, $(IBC)$, and $(ABC)$. Since $(MIT)$ has diameter $MI$, it is orthogonal to $(IBC)$ (or tangent to $BC$ at $I$), which gives $AI\perp IX$.
+:::
+
+::: {#lem-5point18}
+Using the notation of @lem-5point9, the tangent to $(ABC)$ at $A$, the tangent to $(ABC)$ at $T$, the line $RS$, and the line through $I$ parallel to $BC$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Reflecting the tangent at $A$ across $RS$ gives the line through $I$ parallel to $BC$; the concurrency then follows from @lem-5point10 and @cor-3point4.
+:::
+
+::: {#lem-5point19}
+Using the notation of @lem-5point18, let the line through $I$ parallel to $BC$ intersect $AB$ and $AC$ at $U$ and $V$, respectively. Then $(UVT)$ is tangent to $(ABC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the radical center of $(UVT)$, $(AUV)$, and $(ABC)$. Since $UV\parallel BC$, $(AUV)$ is tangent to $(ABC)$ at $A$.
+
+Thus the radical axis of $(UVT)$ and $(ABC)$ passes through the intersection of the tangent to $(ABC)$ at $A$ with $UV$.
+
+By @lem-5point18, this radical axis is the tangent to $(ABC)$ at $T$, so $(UVT)$ is tangent to $(ABC)$.
+:::
+
+::: {#lem-5point20}
+If the $A$-mixtilinear incircle touches $(ABC)$ at $T$, then $AT\cap OI$ is $X(56)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying @thm-2point3 (Monge's theorem) to the $A$-mixtilinear incircle, the incircle, and $(ABC)$ shows that $AT$ passes through $X(56)$, the external center of homothety of $(ABC)$ and the incircle, which lies on $OI$.
+:::
+
+::: {#lem-5point21}
+Suppose the $A$-mixtilinear incircle touches $(ABC)$ at $T$, let the contact triangle of the incircle be $\triangle DEF$, and let $D'$ lie on the incircle such that $D'D\perp EF$. Then $A,D',T$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The tangent to the incircle at $D'$ is parallel to the tangent to $(ABC)$ at $A$, so $AD'$ passes through $X(56)$. The collinearity of $A,D',T$ then follows from @lem-5point20.
+:::
+
+::: {#cor-5point4}
+Many properties of mixtilinear incircles correspond directly to properties of mixtilinear excircles by exchanging the roles of the incenter/incircle and the $A$-excenter/$A$-excircle.
+:::
+
+::: {#cor-5point5}
+The isogonal conjugate of $X(56)$ is $Na$; analogously, the isogonal conjugate of $X(55)$ (the internal center of homothety of $(ABC)$ and the incircle) is $Ge$.
+:::
+
+::: {#lem-5point22}
+The line joining the points of tangency of the $A$-mixtilinear incircle and the $A$-mixtilinear excircle with $(ABC)$, the line $BC$, and the tangent to $(ABC)$ at $A$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $J$ be the intersection of $BC$ with the tangent to $(ABC)$ at $A$.
+
+The point $A$, the reflection of $A$ across the perpendicular bisector of $BC$, and the points of tangency of the incircle and $A$-excircle with $BC$ form an isosceles trapezoid and hence are concyclic.
+
+Applying the transformation in @cor-4point6 then shows that the line joining the tangency points of the $A$-mixtilinear incircle and $A$-mixtilinear excircle with $(ABC)$ passes through $J$.
+:::
+
+::: {#cor-5point6}
+If $D$ satisfies that $ABDC$ is a harmonic quadrilateral, and the $A$-mixtilinear incircle and $A$-mixtilinear excircle touch $(ABC)$ at $T_1$ and $T_2$, respectively, then $AT_1DT_2$ is a harmonic quadrilateral.
+:::
+
+::: {#lem-5point23}
+Suppose the $A$-mixtilinear incircle and $A$-mixtilinear excircle touch $(ABC)$ at $T_1$ and $T_2$, respectively. Let $M$ be the midpoint of the lower arc $BC$, and let $A'$ be the antipode of $A$ on $(ABC)$. Then $T_1A'T_2M$ is a harmonic quadrilateral.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the radical center $X$ of the $A$-mixtilinear incircle, the $A$-mixtilinear excircle, and $(ABC)$.
+
+The radical axes of the two mixtilinear circles with $(ABC)$ are the tangents to $(ABC)$ at $T_1$ and $T_2$, which intersect at $X$.
+
+Let the $A$-mixtilinear incircle touch $AB,AC$ at $K_1,L_1$, and let the $A$-mixtilinear excircle touch $AB,AC$ at $K_2,L_2$.
+
+By power of a point, the midpoints $M_{K_1K_2}$ and $M_{L_1L_2}$ both lie on the radical axis of the $A$-mixtilinear incircle and the $A$-mixtilinear excircle.
+
+By @lem-5point6, $K_1L_1$ passes through $I$ perpendicular to $AI$, and analogously $K_2L_2$ passes through $I_A$ perpendicular to $AI$.
+
+Hence the line through $M_{K_1K_2}$ and $M_{L_1L_2}$ is perpendicular to $AI$ and passes through the midpoint of $II_A$, which is $M$; thus $M_{K_1K_2}$, $M_{L_1L_2}$, and $MA'$ are collinear.
+
+Consequently, $M,A',X$ are collinear, and by @cor-3point4, $T_1A'T_2M$ is a harmonic quadrilateral.
+:::
+
+::: {#lem-5point24}
+Let $N$ be the midpoint of the upper arc $BC$, let the incircle touch $AC$ and $AB$ at $E$ and $F$, and let $BI\cap EF=X$ and $CI\cap EF=Y$. Then $I$, the midpoint of $XY$, and $N$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point4 and @lem-5point14, the tangency point of the $A$-mixtilinear incircle with $(ABC)$ lies on the $I$-symmedian of $\triangle BIC$.
+
+By @lem-5point7, $N$ also lies on this $I$-symmedian.
+
+By @lem-1point4, $B,C,X,Y$ are concyclic, so the $I$-symmedian of $\triangle BIC$ is the midline/median line associated with $XIY$ (passing through the midpoint of $XY$ and $I$).
+:::
