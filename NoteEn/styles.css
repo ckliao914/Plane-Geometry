@@ -17,6 +17,7 @@ ol[type="1"] > li::before {
   text-align: right;
 }
 
+
 div.theorem, div.lemma, div.corollary {
   /* 共用的顏色與邊框設定 */
   margin: 1em 0;
