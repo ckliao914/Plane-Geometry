@@ -216,7 +216,7 @@ $$
 $$
 By @thm-6point4, $Af(X)\cap\ell=Xf(A)\cap\ell$, meaning that for all $X,Y\in\mathcal{C}$, both $Af(X)\cap Xf(A)$ and $Af(Y)\cap Yf(A)$ lie on $\ell$.
 
-By @thm-8point6, $Xf(Y)\cap Yf(X)$ also lies on $\ell$.
+By @thm-8point6 on $Af(X)Yf(A)Xf(Y)$, $Xf(Y)\cap Yf(X)$ also lies on $\ell$.
 :::
 
 ::: {#thm-10point5}
