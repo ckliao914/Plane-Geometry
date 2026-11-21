@@ -342,3 +342,4 @@ Hence $\mathcal{P}_{\mathcal{H}_{Fe}}(X)$ passes through $D$ and $Y$, so $\mathc
 
 Since $E',F',\infty_{BC}$ are collinear, $\mathcal{P}_{\mathcal{H}_{Fe}}(E'F')=BC\cap FeM_{BC}=M_{BC}$ (@lem-8point10).
 :::
+
