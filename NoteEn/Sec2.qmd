@@ -1,0 +1,345 @@
+## Length Chasing and Incircles
+
+::: {.unnumbered-env}
+**Definition.**
+Ratios of directed lengths are treated as ratios of vectors along the same line.
+:::
+
+::: {#thm-2point1}
+## Menelaus's Theorem
+Let $D,E,F$ lie on $BC,AC,AB$, respectively. Then
+$$
+\frac{BD}{DC}\times\frac{CE}{EA}\times\frac{AF}{FB}=-1
+$$
+if and only if $D,E,F$ are collinear (where lengths are directed).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+In three-dimensional space, choose points $P,Q,R$ such that $PA,QB,RC$ are perpendicular to plane $ABC$.
+
+Since the product of ratios is $-1$, we can choose the signed distances of $P,Q,R$ from plane $ABC$ so that the triples $(Q,D,R)$, $(R,E,P)$, and $(P,F,Q)$ are each collinear.
+
+Hence plane $PQR$ intersects plane $ABC$ along the line through $D,E,F$, so $D,E,F$ are collinear.
+:::
+
+::: {#thm-2point2}
+## Ceva's Theorem
+Let $D,E,F$ lie on $BC,AC,AB$, respectively. Then
+$$
+\frac{BD}{DC}\times\frac{CE}{EA}\times\frac{AF}{FB}=1
+$$
+if and only if $AD,BE,CF$ are concurrent (where lengths are directed).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the three lines concur at $P$. The ratios of directed segments correspond to ratios of signed areas of $\triangle BCP$, $\triangle CAP$, and $\triangle ABP$, whose product is clearly $1$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are **perspective** if $A_1A_2, B_1B_2, C_1C_2$ are concurrent; their point of concurrency is called the **center of perspectivity**.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **Cevian triangle** of a point $X$ is the triangle with vertices $AX\cap BC$, $BX\cap CA$, and $CX\cap AB$, and the **Cevian circle** of $X$ is the circumcircle of these three points.
+:::
+
+::: {#lem-2point1}
+Let $D,E,F$ lie on $BC,AC,AB$, respectively, such that $\triangle DEF$ and $\triangle ABC$ are perspective. Then $BC\cap EF$, $CA\cap FD$, and $AB\cap DE$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows by length chasing using @thm-2point1 and @thm-2point2.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If the center of perspectivity in @lem-2point1 is $P$ and the line of collinearity is $\ell$, then $\ell$ is called the **trilinear polar** of $P$, and $P$ is called the **trilinear pole** of $\ell$.
+:::
+
+::: {#lem-2point2}
+The trilinear polar of $H$ is perpendicular to the Euler line.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Considering the radical center of $(ABC)$, the nine-point circle, and $(BC)$ shows that the radical axis of $(ABC)$ and the nine-point circle is precisely the trilinear polar of $H$.
+:::
+
+::: {#thm-2point3}
+## Monge's Theorem
+The external centers of homothety of three circles taken pairwise are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Take the triangle formed by the three centers as the reference triangle; the result follows from the ratio of radii and @thm-2point1.
+:::
+
+::: {#thm-2point4}
+The reference triangle and its contact triangle are perspective.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately by length chasing and @thm-2point2.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of perspectivity of the reference triangle and its contact triangle is the **Gergonne point** $X(7)$, denoted by $Ge$ unless otherwise stated.
+:::
+
+::: {#thm-2point5}
+Let $DEF$ be the Cevian triangle of $X$, and let $D',E',F'$ be the reflections of $D,E,F$ across $M_{BC},M_{CA},M_{AB}$, respectively. Then $\triangle ABC$ and $\triangle D'E'F'$ are perspective.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately by length chasing and @thm-2point2.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of perspectivity in @thm-2point5 is called the **isotomic conjugate** of $X$.
+:::
+
+::: {#cor-2point1}
+The isotomic conjugate of $G$ is $G$ itself.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isotomic conjugate of $Ge$ is the **Nagel point** $X(8)$, denoted by $Na$ unless otherwise stated.
+:::
+
+::: {#lem-2point3}
+If the incircle and the $A$-excircle touch $BC$ at $D$ and $T$, respectively, then $M_{BC}=M_{DT}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By length chasing, $BT=CD$.
+:::
+
+::: {#cor-2point2}
+$A$, $Na$, and the point of tangency of the $A$-excircle with $BC$ are collinear.
+:::
+
+::: {#lem-2point4}
+Let the incircle and the $A$-excircle of $\triangle ABC$ touch $BC$ at $D$ and $T$, respectively, and let $D'$ be the reflection of $D$ across $I$. Then $A,D',T$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that $A$ is the external center of homothety of the incircle and the $A$-excircle.
+
+Moreover, $D'$ and $T$ are corresponding points under this homothety (their tangents to the two circles are both parallel to $BC$).
+
+Hence $D'T$ passes through the external center of homothety $A$.
+:::
+
+::: {#lem-2point5}
+If the $A$-excircle touches $BC$ at $T$, then $TI$ passes through the midpoint of the $A$-altitude.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A_{\perp BC}=F$ and $M_{AF}=N$, and keep the notation of @lem-2point4.
+
+The homothety centered at $T$ sending $D$ and $D'$ to $F$ and $A$ maps $I$ (the midpoint of $DD'$) to $N$ (the midpoint of $FA$).
+:::
+
+::: {#cor-2point3}
+Using the notation of @lem-2point4 and @lem-2point5, if $T'$ is the reflection of $T$ across $I_A$, then $A,D,T'$ are collinear, and $D,I_A,N$ are collinear.
+:::
+
+::: {#lem-2point6}
+Let $I_A'$ be the reflection of $I_A$ across $BC$. Then $I_A'I$ passes through the foot of the $A$-altitude.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Keep the notation of @lem-2point4 and @lem-2point5.
+
+By @lem-2point4, the homothety centered at $I$ sending $A$ and $N$ to $I_A$ and $T$ maps $F$ to $I_A'$.
+:::
+
+::: {#cor-2point4}
+If $A_{\perp BC}=F$, then $BC$ bisects $\angle IFI_A$.
+:::
+
+::: {#lem-2point7}
+The anticomplement of $I$ is $Na$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Keep the notation of @lem-2point4 and @lem-2point5.
+
+By @lem-2point3, applying a homothety centered at $D$ with ratio $2$ maps $IM_{BC}$ to $D'T$.
+
+By @lem-2point4, $A,Na,D',T$ are collinear and $D'T\parallel M_{BC}I$, which yields the result.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The radical center of the three excircles is $X(10)$ (the **Spieker center**), denoted by $Sp$ unless otherwise stated.
+:::
+
+::: {#lem-2point8}
+The complement of $I$ is $Sp$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The radical axis of $(I_B)$ and $(I_C)$ passes through $M_{BC}$ and is parallel to $AI$; hence $Sp$ is the incenter of the medial triangle.
+:::
+
+::: {#cor-2point5}
+$I,G,Na,Sp$ are collinear, and the midpoint of $INa$ is $Sp$.
+:::
+
+::: {#lem-2point9}
+Let $AI$ intersect $BC$ and $(ABC)$ at $P$ and $M$, respectively. Then $MB^2=MC^2=MP\cdot MA$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By angle chasing, $(BAP)$ is tangent to $BA$, from which the result follows.
+:::
+
+::: {#cor-2point6}
+Let $A,B,M$ lie on a circle $\omega$ with $AM=BM$. If $P$ and $Q$ are chosen on $\omega$ and $MP,MQ$ intersect $AB$ at $P',Q'$, respectively, then $P,Q,P',Q'$ are concyclic.
+:::
+
+::: {#lem-2point10}
+Let the incircle touch $BC$ at $D$, and let $AI$ intersect $(ABC)$ again at $M$. Then $MD$, $(AI)$, and $(ABC)$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $MD$ intersect $(ABC)$ again at $X$. By @lem-1point3 and @lem-2point9, we have $MI^2=MX\cdot MD$.
+
+Thus $(IXD)$ is tangent to $MI$. Letting $N$ be the antipode of $M$ on $(ABC)$, we have
+$$
+\measuredangle AXI=\measuredangle MIX+\measuredangle XAM=\measuredangle IDM+\measuredangle XNM=\measuredangle NMX+\measuredangle XNM=90^\circ.
+$$
+:::
+
+::: {#cor-2point7}
+Let $T$ be the foot of the perpendicular from $I_A$ to $BC$, and let $AI$ intersect $(ABC)$ again at $M$. Then $MT$, $(ABC)$, and $(AI_A)$ are concurrent.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+$X(56)$ and $X(55)$ are the external and internal centers of homothety of the circumcircle and the incircle, respectively; both lie on $OI$.
+:::
+
+::: {#cor-2point8}
+Using the notation of @lem-2point10, $X(56),M,D,X$ are collinear.
+:::
+
+::: {#lem-2point11}
+$(AI)$ is tangent to $(IBC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-1point3, the line of centers passes through the intersection point $I$ and is perpendicular to the common internal tangent (the external angle bisector at $I$), so the two circles are tangent at $I$.
+:::
+
+::: {#lem-2point12}
+Let $S$ lie on $(ABC)$ such that $AS\perp SI$, and let $AS\cap BC=X$. Then $XI\perp IA$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the radical center $X$ of $(AI)$, $(IBC)$, and $(ABC)$.
+
+By @lem-2point11, the common tangent to $(AI)$ and $(IBC)$ at $I$ passes through $X$ and is perpendicular to $AI$.
+:::
+
+::: {#cor-2point9}
+Let $S'$ lie on $(ABC)$ such that $AS'\perp S'I_A$, and let $AS'\cap BC=Y$. Then $YI_A\perp IA$.
+:::
+
+::: {#lem-2point13}
+Using the notation of @lem-2point12 and @cor-2point9, $SS'\parallel BC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $D$ and $T$ be the feet of the perpendiculars from $I$ and $I_A$ to $BC$, and let $M$ be the midpoint of the lower arc $BC$.
+
+By @lem-2point10 and @cor-2point7, the triples $(M,D,S)$ and $(M,T,S')$ are collinear. The result then follows from @lem-2point3 and symmetry across the perpendicular bisector of $BC$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The reflection of $I$ across $O$ is $X(40)$ (the **Bevan point**).
+:::
+
+::: {#lem-2point14}
+$X(40)$ is the circumcenter of $\triangle I_AI_BI_C$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-1point3, the midpoints of $II_A, II_B, II_C$ lie on $(ABC)$.
+
+Applying a homothety centered at $I$ with ratio $2$ shows that $(I_AI_BI_C)$ is the image of $(ABC)$ under this homothety.
+
+Hence the circumcenter of $(I_AI_BI_C)$ is the image of $O$ under the homothety centered at $I$ with ratio $2$, which is $X(40)$.
+:::
+
+::: {#lem-2point15}
+The midpoint of $H$ and $X(40)$ is $Sp$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The complements of $I$ and $H$ are $Sp$ and $O$, respectively, so $IH\parallel SpO$.
+
+Moreover, the directed length of $IH$ is $-2$ times that of $SpO$, meaning $IH$ has twice the directed length of $OSp$.
+
+Therefore, the reflection of $I$ across $O$ and the reflection of $H$ across $Sp$ coincide at the same point $X(40)$.
+:::
+
+::: {#cor-2point10}
+The centroid of $\triangle IHX(40)$ is $G$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The reflection of $H$ across $O$ is $X(20)$ (the **de Longchamps point**).
+:::
+
+::: {#cor-2point11}
+The complement of $X(20)$ is $H$.
+:::
+
+::: {#lem-2point16}
+The midpoint of $Na$ and $X(20)$ is $X(40)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider $\triangle GIO$. Since $X(40)$ is the reflection of $I$ across $O$, it lies on $IO$ with $\dfrac{IX(40)}{X(40)O}=-2$.
+
+Because $X(20)$ is the anticomplement of $H$ (and $H$ is the anticomplement of $O$), $X(20)$ lies on $OG$ with $\dfrac{OX(20)}{X(20)G}=-\dfrac{3}{4}$.
+
+By @lem-2point7, $Na$ lies on $GI$ with $\dfrac{GNa}{NaI}=-\dfrac{2}{3}$.
+
+By @thm-2point1, $X(40), X(20), Na$ are collinear.
+
+Applying @thm-2point1 to $\triangle X(20)NaG$ with transversal $I-X(40)-O$ gives
+$$
+-1=\frac{NaI}{IG}\times \frac{GO}{OX(20)}\times \frac{X(20)X(40)}{X(40)Na}=-3\times \frac{1}{3}\times \frac{X(20)X(40)}{X(40)Na},
+$$
+so $X(40)$ is the midpoint of $Na$ and $X(20)$.
+:::
