@@ -51,7 +51,7 @@ Let the Cevian triangle of $P$ be $\triangle P_AP_BP_C$. If a conic $\mathcal{C}
 :::
 
 ::: {#lem-11point3}
-Using the notation of @lem-11point2, suppose $P_A,P_B,P_C,Q_A,Q_B,Q_C$ lie on a conic $\mathcal{C}$, and set $A_1=P_BP_C\cap Q_BQ_C$, $B_1=P_CP_A\cap Q_CQ_A$, and $C_1=P_AP_B\cap Q_AQ_B$. Then $\mathcal{P}_{\mathcal{C}}(A_1)$ passes through $A$, $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$; in particular, $\triangle A_1B_1C_1$ is a self-polar triangle with respect to $\mathcal{C}$.
+Using the notation of @lem-11point2, suppose $P_A,P_B,P_C,Q_A,Q_B,Q_C$ lie on a conic $\mathcal{C}$, and set $A_1=P_BP_C\cap Q_BQ_C$, $B_1=P_CP_A\cap Q_CQ_A$, and $C_1=P_AP_B\cap Q_AQ_B$. Then $\mathfrak{p}_{\mathcal{C}}(A_1)$ passes through $A$, $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$; in particular, $\triangle A_1B_1C_1$ is a self-polar triangle with respect to $\mathcal{C}$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -70,7 +70,7 @@ Hence $A$, $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$ are collinear and all lie on th
 :::
 
 ::: {#lem-11point4}
-Let $A,U,V$ lie on a conic $\mathcal{C}$. If $X$ and $Y$ lie on $AU$ and $AV$, respectively, and are conjugate with respect to $\mathcal{C}$, then $UY\cap VX$ lies on $\mathcal{C}$, and $X,Y,\mathcal{P}_{\mathcal{C}}(UV)$ are collinear.
+Let $A,U,V$ lie on a conic $\mathcal{C}$. If $X$ and $Y$ lie on $AU$ and $AV$, respectively, and are conjugate with respect to $\mathcal{C}$, then $UY\cap VX$ lies on $\mathcal{C}$, and $X,Y,\mathfrak{p}_{\mathcal{C}}(UV)$ are collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -79,7 +79,7 @@ Let $UY$ meet $\mathcal{C}$ again at $W$. By @thm-8point4 (Brocard's Theorem), $
 
 Thus $X=AU\cap WV$, so $W,V,X$ are collinear and $UY\cap VX=W$ lies on $\mathcal{C}$.
 
-Since $\mathcal{P}_{\mathcal{C}}(XY)=AW\cap UV$ lies on $UV$, applying a polar transformation gives collinearity of $X,Y,\mathcal{P}_{\mathcal{C}}(UV)$.
+Since $\mathfrak{p}_{\mathcal{C}}(XY)=AW\cap UV$ lies on $UV$, applying a polar transformation gives collinearity of $X,Y,\mathfrak{p}_{\mathcal{C}}(UV)$.
 :::
 
 ::: {#lem-11point5}
@@ -146,7 +146,7 @@ Since $O_{\Gamma}M=O_{\Gamma}N$, we have $MN\parallel M^*N^*$; as $M^*,N^*,A_3,B
 
 ::: {.unnumbered-env}
 **Definition.**
-Given two points $P$ and $Q$, let $\mathcal{C}$ be the conic passing through $A,B,C,P,Q$ (denoted $(ABCPQ)=\mathcal{C}$). Then $\mathcal{P}_{\mathcal{C}}(PQ)$ is called the **crosspoint** of $P$ and $Q$.
+Given two points $P$ and $Q$, let $\mathcal{C}$ be the conic passing through $A,B,C,P,Q$ (denoted $(ABCPQ)=\mathcal{C}$). Then $\mathfrak{p}_{\mathcal{C}}(PQ)$ is called the **crosspoint** of $P$ and $Q$.
 :::
 
 ::: {#thm-11point1}
@@ -159,9 +159,9 @@ Let $(ABCPQ)=\mathcal{C}$. By @thm-8point4 (Brocard's Theorem), $\triangle P_AP_
 
 Thus $P_A$ and $Q'_A$ are conjugate with respect to $\mathcal{C}$, with $P_A$ on $AP$ and $Q'_A$ on $AQ$.
 
-By @lem-11point4, $P_A$, $Q'_A$, and $\mathcal{P}_{\mathcal{C}}(PQ)$ are collinear.
+By @lem-11point4, $P_A$, $Q'_A$, and $\mathfrak{p}_{\mathcal{C}}(PQ)$ are collinear.
 
-Similarly, all six lines pass through $\mathcal{P}_{\mathcal{C}}(PQ)$, the crosspoint of $P$ and $Q$.
+Similarly, all six lines pass through $\mathfrak{p}_{\mathcal{C}}(PQ)$, the crosspoint of $P$ and $Q$.
 :::
 
 ::: {#lem-11point8}
