@@ -25,7 +25,8 @@ div.theorem, div.lemma, div.corollary {
   border-left: 3px solid #2b5c8f;
   background-color: #f4f8fb;
 }
-  
+
+
 /* 讓定理／引理／推論標題後方加上句點 */
 div.theorem .theorem-title::after,
 div.lemma .theorem-title::after,
