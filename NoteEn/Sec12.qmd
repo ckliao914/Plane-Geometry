@@ -1,4 +1,4 @@
-## Desargues Involution
+## Desargues Involution Theorem
 
 ::: {.unnumbered-env}
 **Definition.**
