@@ -8,7 +8,7 @@ Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ 
 ## Proof
 Note that the direction of $EF$ is perpendicular to $AI$. Let $R$ be the harmonic conjugate of $Q_{\perp BC}$ with respect to $BC$.
 
-Then the chains
+Then the maps
 $$
 f:P\mapsto Q\mapsto Q_{\perp BC}\mapsto R
 $$
@@ -16,7 +16,7 @@ and
 $$
 g:P\mapsto E\mapsto E\infty_{\perp AI}\mapsto EF\cap BC
 $$
-preserve cross ratio.
+are projective.
 
 When $P=I$ or $P=I_A$, @lem-9point10 gives $f(I)=g(I)$ and $f(I_A)=g(I_A)$.
 
@@ -50,17 +50,17 @@ Suppose $X$ lies on $AI$ with pedal triangle $DEF$, and let $D'$ be the reflecti
 ## Proof
 Set $Y=EF\cap BC$, so that $YD'\perp AO$.
 
-As $X$ varies along $AI$, the chain
+As $X$ varies along $AI$, the map
 $$
 \infty_{\perp AO}Y\mapsto Y\mapsto E\mapsto X\mapsto D\mapsto D\infty_{AI}
 $$
-preserves cross ratio.
+is projective
 
 When $X=\infty_{AI}$, both $\infty_{\perp AO}Y$ and $D\infty_{AI}$ coincide with $\ell_\infty$.
 
 By Steiner's conic theorem, the locus of $D'=\infty_{\perp AO}Y\cap D\infty_{AI}$ is a line $\ell$.
 
-Hence the chains
+Hence the maps
 $$
 f:X\mapsto D\mapsto D\infty_{AI}\mapsto D'\mapsto AD'\cap BC
 $$
@@ -68,7 +68,7 @@ and
 $$
 g:X\mapsto OX\cap BC
 $$
-preserve cross ratio.
+are projective.
 
 By @lem-15point2 (and its excenter version), $f(I)=g(I)$ and $f(I_A)=g(I_A)$.
 
@@ -228,7 +228,7 @@ Let the intouch triangle be $DEF$, and let a homothety centered at $I$ send $DEF
 ## Proof
 By @cor-13point2, $R=BY\cap CZ$ lies on $\mathcal{H}_{Fe}$ and on $AX$, and the isogonal conjugate $R'$ of $R$ lies on $OI$.
 
-As $X$ varies along $ID$, the chains
+As $X$ varies along $ID$, the maps
 $$
 f:X\mapsto AX\mapsto R\mapsto R'
 $$
@@ -236,7 +236,7 @@ and
 $$
 g:X\mapsto X'\mapsto MX'\cap OI
 $$
-both preserve cross ratio.
+are projective.
 
 When $X=I$, we have $f(I)=I=g(I)$; when $X=\infty_{DI}$, we have $R=H$, so $f(\infty_{DI})=O=g(\infty_{DI})$.
 
