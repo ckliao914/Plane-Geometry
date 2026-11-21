@@ -10,5 +10,39 @@ This is a note I wrote several years ago. I was trying to introduce pencils of c
 
 * [Section 4: ](Sec4.html)
 
+* [Section 5: ](Sec5.html)
+
+* [Section 6: ](Sec6.html)
+
+* [Section 7: ](Sec7.html)
+
+* [Section 8: ](Sec8.html)
+
+* [Section 9: ](Sec9.html)
+
+* [Section 10: ](Sec10.html)
+
+* [Section 11: ](Sec11.html)
+
+* [Section 12: ](Sec12.html)
+
+* [Section 13: ](Sec13.html)
+
+* [Section 14: ](Sec14.html)
+
+* [Section 15: ](Sec15.html)
+
+* [Section 16: ](Sec16.html)
+
+* [Section 17: ](Sec17.html)
+
+* [Section 18: ](Sec18.html)
+
+* [Section 19: ](Sec19.html)
+
+* [Section 20: ](Sec20.html)
+
+* [Section 21: ](Sec21.html)
+
 ---
 [← Back to Main Site](../index.html)
