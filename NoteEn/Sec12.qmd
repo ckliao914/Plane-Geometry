@@ -1,1 +1,221 @@
+## Desargues Involution
 
+::: {.unnumbered-env}
+**Definition.**
+Suppose cross ratios can be defined on a set $E$. If a map $f:E\to E$ is a non-identity projective map and $f(f(X))=X$ for all $X\in E$, then $f$ is called an **involution** on $E$, and $(X,f(X))$ is called an **involution pair** of $f$.
+:::
+
+::: {#lem-12point1}
+Let $f:E\to E$ be a projective map. If there exist $A\neq B$ such that $f(A)=B$ and $f(B)=A$, then $f$ is an involution.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since $f$ preserves cross ratio,
+$$
+(A,B;X,f(X))=(B,A;f(X),f(f(X)))=(A,B;f(f(X)),f(X)).
+$$
+By @thm-6point4, $f(f(X))=X$ for all $X\in E$.
+:::
+
+::: {#lem-12point2}
+Let $\ell$ be a line. A map $f:\ell\to\ell$ is an involution if and only if $f$ is an inversion.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If $f$ is an involution, set $P=f(\ell_{\infty})$, so $f(P)=\ell_{\infty}$. Then
+$$
+(P,\ell_{\infty};A,X)=(\ell_{\infty},P;f(A),f(X))=(P,\ell_{\infty};f(X),f(A)),
+$$
+which gives $PA/PX=Pf(X)/Pf(A)$; hence $f$ is the inversion centered at $P$ sending $A$ to $f(A)$.
+
+Conversely, if $f$ is an inversion, it naturally preserves cross ratio (inversion with respect to the point at infinity is a reflection about a point).
+:::
+
+::: {#cor-12point1}
+Let $f$ be an involution on a line $\ell$, and let $P$ not lie on $\ell$. Then all circles $(PXf(X))$ share a common radical axis as $X$ varies over $\ell$.
+:::
+
+::: {#lem-12point3}
+Let $\mathcal{C}$ be a conic section, and let $f:\mathcal{C}\to\mathcal{C}$ be an involution. Then the line $Xf(X)$ passes through a fixed point.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $P=Af(A)\cap Bf(B)$, and let $XP$ meet $\mathcal{C}$ again at $Y$.
+
+By @cor-8point6, projecting from $P$ to the second intersection with $\mathcal{C}$ preserves cross ratio, so
+$$
+(f(A),f(f(A));f(B),f(X))=(A,f(A);B,X)=(f(A),A;f(B),Y).
+$$
+Since $f(f(A))=A$, @thm-6point4 gives $f(X)=Y$; hence $XY=Xf(X)$ passes through the fixed point $P$.
+:::
+
+::: {#cor-12point2}
+In @thm-10point5, for a projective map $f:\mathcal{C}\to\mathcal{C}$, if $f$ is an involution then $Xf(X)$ passes through a fixed point; otherwise $Xf(X)$ belongs to the envelope of a conic section and $X\mapsto Xf(X)$ is a projective map.
+:::
+
+::: {#cor-12point3}
+Projective maps preserve involution pairs: that is, if $\phi:E\to F$ is a projective map and $f$ is an involution on $E$, then $\phi\circ f\circ \phi^{-1}$ is an involution on $F$.
+:::
+
+::: {#thm-12point1}
+## Desargues Involution Theorem
+Let $A,B,C,D$ lie on a conic section $\mathcal{C}$, and let a line $\ell$ meet $\mathcal{C}$ at $X$ and $Y$. Then the four point pairs
+$$
+(X,Y),\quad (\ell\cap AB,\ell\cap CD),\quad (\ell\cap AC,\ell\cap BD),\quad (\ell\cap AD,\ell\cap BC)
+$$
+are involution pairs of a common involution.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Projecting cross ratios gives
+$$
+(X,Y;\ell\cap AB,\ell\cap AC)\stackrel{A}{=}(X,Y;B,C)_{\mathcal{C}}\stackrel{D}{=}(X,Y;\ell\cap DB,\ell\cap DC),
+$$
+that is,
+$$
+(X,Y;\ell\cap AB,\ell\cap AC)=(Y,X;\ell\cap DC,\ell\cap DB).
+$$
+There exists an involution $f$ with $f(X)=Y$ and $f(\ell\cap AB)=\ell\cap DC$ (hence $f(Y)=X$). Thus
+$$
+(X,Y;\ell\cap AB,\ell\cap AC)=(Y,X;\ell\cap DC,f(\ell\cap AC)),
+$$
+so @thm-6point4 gives $f(\ell\cap AC)=\ell\cap DB$.
+
+Hence $(X,Y)$, $(\ell\cap AB,\ell\cap CD)$, and $(\ell\cap AC,\ell\cap BD)$ are involution pairs of $f$, and the remaining pair follows analogously.
+:::
+
+::: {#thm-12point2}
+## Dual of Desargues Involution Theorem (DDIT)
+Let a conic section $\mathcal{C}$ touch the four sides of a complete quadrilateral $ABCD$, and set $E=AB\cap CD$ and $F=AD\cap BC$. If $P$ lies outside $\mathcal{C}$ and $PX,PY$ are tangent to $\mathcal{C}$, then $(PX,PY)$, $(PA,PC)$, $(PB,PD)$, and $(PE,PF)$ belong to a common involution.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This is the dual of @thm-12point1.
+:::
+
+::: {#lem-12point4}
+Let the two common external tangents to the circumcircle and the $A$-excircle meet $BC$ at $X$ and $Y$. Then $AX$ and $AY$ are isogonal lines.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P=\ell_A\cap \ell_B$, and let the $A$-excircle touch $BC$ at $T$.
+
+Applying @thm-12point2 to the $A$-excircle and its four tangents $\ell_A,\ell_B,BC,BC$ (regarding $BC\cap BC$ as the point of tangency $T$) and projecting from $A$, we see that $(AB,AC)$, $(AT,AP)$, and $(AX,AY)$ belong to a common involution.
+
+Since $P$ is the external center of similitude of the circumcircle and the $A$-excircle, and $A$ is the external center of similitude of the incircle and the $A$-excircle, @thm-2point3 (Monge's Theorem) implies that $AP$ passes through the external center of similitude $X(56)$ of the circumcircle and the incircle.
+
+By @cor-5point5, $AX(56)$ and $AT$ are isogonal, so $(AB,AC)$ and $(AT,AP)$ belong to the involution given by reflection across the internal angle bisector of $\angle BAC$; hence $AX$ and $AY$ are isogonal lines.
+:::
+
+::: {#lem-12point5}
+Let $P$ be a point, and let $X,Y,Z$ lie on $BC,CA,AB$, respectively, such that $AP\perp PX$, $BP\perp PY$, and $CP\perp PZ$. Then $X,Y,Z$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Notice that $(PA,PX)$, $(PB,PY)$, and $(PC,PZ)$ belong to a common involution (rotation by $90^{\circ}$).
+
+Set $X'=YZ\cap BC$. Applying @thm-12point2 to the complete quadrilateral $YZBC$ and projecting from $P$ shows that $(PA,PX')$, $(PB,PY)$, and $(PC,PZ)$ belong to the same involution.
+
+Hence $X=X'$, so $X,Y,Z$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The line containing $X,Y,Z$ in @lem-12point5 is called the **orthotransversal** (or **orthogonal transversal**).
+:::
+
+::: {#lem-12point6}
+Given $P$ and $Q$ not lying on the sidelines of $\triangle ABC$, let $X$ be a point, and let $\ell_A$ be the line through $A$ such that $(AB,AC)$, $(AP,AQ)$, and $(AX,\ell_A)$ belong to a common involution. Defining $\ell_B$ and $\ell_C$ symmetrically, the lines $\ell_A$, $\ell_B$, and $\ell_C$ concur at a point $Y$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $P_A=AP\cap BC$, $Q_A=AQ\cap BC$, $X_A=AX\cap BC$, and $A_1=\ell_A\cap BC$.
+
+Then $(B,C;P_A,X_A)=(C,B;Q_A,A_1)$, from which the ratio $BA_1/A_1C$ is determined.
+
+The corresponding ratios on the other two sides follow analogously, so @thm-2point2 (Ceva's Theorem) implies that $\ell_A,\ell_B,\ell_C$ concur.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+In @lem-12point6, the map $X\mapsto Y$ is called the **isoconjugate** transformation sending $P$ to $Q$.
+:::
+
+::: {#cor-12point4}
+The isoconjugate transformation sending $I$ to $I$ is the isogonal conjugate transformation, and the isoconjugate transformation sending $G$ to $G$ is the isotomic conjugate transformation.
+:::
+
+::: {#thm-12point3}
+Given an isoconjugate transformation, it swaps lines $\ell$ not passing through any vertex of $\triangle ABC$ with conic sections $\mathcal{C}$ passing through $A,B,C$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\phi$ be the isoconjugate transformation with $\phi(X)=Y$.
+
+If $X$ lies on $\ell$, then $f:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a conic passing through $B,C$ (since $f(BC)\neq CB$), and analogously through $A$.
+
+If $X$ lies on $\mathcal{C}$, then $g:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a line (since $g(BC)=CB$) not passing through any vertex.
+:::
+
+::: {#lem-12point7}
+Let $\phi$ be the isoconjugate transformation sending $P$ to $P$. Then $\phi(X)=X$ if and only if $X$ is $P$ or a vertex of the anticevian triangle of $P$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Here $\phi$ maps the line $AX$ to itself, so
+$$
+A(B,C;P,X)=A(C,B;P,X)=A(B,C;X,P).
+$$
+Thus $A,X,P$ are collinear or $A(B,C;P,X)=-1$. Applying the same reasoning to the other two vertices and using @lem-6point3 shows that $X$ can only be $P$ or a vertex of the anticevian triangle of $P$.
+:::
+
+::: {#lem-12point8}
+Let $\phi$ be the isoconjugate transformation sending $P$ to $P$. Then the line $P\phi(X)$ is tangent to $(ABCPX)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P\phi(X)$ meet $(ABCPX)$ again at $Y$. By @thm-12point3, $\phi$ swaps $P\phi(X)$ and $(ABCPX)$.
+
+Hence $\phi(Y)$ is the second intersection of $P\phi(X)$ with $(ABCPX)$, so $\phi(Y)=Y$.
+
+By @lem-12point7, $Y$ is $P$ or a vertex of the anticevian triangle of $P$; since the vertices of the anticevian triangle lie on $AP,BP,CP$ and not on $(ABCPX)$, we must have $Y=P$.
+:::
+
+::: {#thm-12point4}
+Given an isoconjugate transformation $\phi$, set $Z=XY\cap \phi(X)\phi(Y)$ and $Z'=X\phi(Y)\cap Y\phi(X)$. Then $\phi(Z)=Z'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying @thm-12point2 to the complete quadrilateral $XY\phi(X)\phi(Y)$ and projecting from $A$ shows that $(AX,A\phi(X))$, $(AY,A\phi(Y))$, and $(AZ,AZ')$ belong to a common involution.
+
+By definition, $(AZ,A\phi(Z))$ belongs to the same involution, and $A,Z',\phi(Z)$ are collinear; hence $Z'=\phi(Z)$.
+:::
+
+::: {#lem-12point9}
+Suppose $P,P'$ and $Q,Q'$ are two pairs of isogonal conjugates, and set $R=PQ\cap P'Q'$. Then the pedal circles $\omega_P,\omega_Q,\omega_R$ of $P,Q,R$ are coaxial.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $R'=PQ'\cap P'Q$; by @thm-12point4, $R'$ is the isogonal conjugate of $R$.
+
+Let $P_1,P_2,Q_1,Q_2,R_1,R_2$ be the projections of $P,P',Q,Q',R,R'$ onto $BC$.
+
+Applying @thm-12point2 to the complete quadrilateral $PQP'Q'$ and projecting from $\infty_{\perp BC}$ onto $BC$ shows that $(P_1,P_2)$, $(Q_1,Q_2)$, and $(R_1,R_2)$ belong to a common involution.
+
+By @lem-12point2, this involution is an inversion with center $A_1$. By @lem-3point18, $P_1,P_2$ lie on $\omega_P$, and similarly $A_1$ has equal power with respect to $\omega_P,\omega_Q,\omega_R$.
+
+Analogously, there exist points $B_1$ on $CA$ and $C_1$ on $AB$ with equal power with respect to $\omega_P,\omega_Q,\omega_R$, so the three pedal circles are coaxial.
+:::
