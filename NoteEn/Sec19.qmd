@@ -1,1 +1,319 @@
+## Feuerbach Point
 
+::: {#lem-19point1}
+Let $DEF$ be the intouch triangle, let $I'$ be the reflection of $I$ across $EF$, and let $R$ lie on the incircle such that $DR\perp EF$. Then $Fe,R,I'$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the other tangent from $M_{BC}$ to the incircle touch it at $X$, and let $D'$ lie on the incircle with $DD'\parallel EF$.
+
+Let $DI$ meet the incircle again at $L$; by polarity,
+$$
+-1=(B,C;M_{BC},\infty_{BC})=D(F,E;X,L).
+$$
+Thus $XL$ is the $X$-symmedian of $\triangle XEF$, and since $RL\parallel EF$, the points $X,M_{EF},R$ are collinear, so $RX\cap AI=M_{EF}$.
+
+By @lem-8point9 and @lem-14point15,
+$$
+-1=(D,X;Fe,D')\stackrel{R}{=}(\infty_{AI},M_{EF};RFe\cap AI,I).
+$$
+Hence $RFe\cap AI$ is the reflection of $I$ across $M_{EF}$, namely $I'$, so $R,Fe,I'$ are collinear.
+:::
+
+::: {#lem-19point2}
+The Steiner lines of $Fe$ with respect to the intouch triangle $DEF$ and with respect to the medial triangle are both $OI$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Reflecting @lem-19point1 across $EF$ shows that $X(65)I$ passes through the reflection of $Fe$ across $EF$.
+
+Similarly, the Steiner line of $Fe$ with respect to $\triangle DEF$ is $X(65)I$, which by @cor-9point7 is $OI$.
+
+Moreover, by @lem-18point1, the Steiner line of $Fe$ with respect to the medial triangle is also $OI$.
+:::
+
+::: {#cor-19point1}
+The point $X(110)$ of the intouch triangle is $Fe$.
+:::
+
+::: {#lem-19point3}
+Let $DEF$ be the intouch triangle, let $D'$ be the reflection of $D$ across $EF$, and set $U=A\infty_{BC}\cap DI$. Then $UD'\parallel OI$ (hence the line joining the foot of $D$ on $EF$ to the foot of $D$ on the $A$-midline is parallel to $OI$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-19point2, the line joining the reflections of $Fe$ across $EF$ and across $M_{AB}M_{AC}$ is $OI$.
+
+By @thm-18point1, $DFe$ passes through $X=EF\cap M_{AB}M_{AC}$.
+
+Considering the homothety centered at $X$ sending $Fe$ to $D$, the line $D'U$ (joining the reflections of $D$ across $EF$ and across the midline) is parallel to $OI$.
+:::
+
+::: {#lem-19point4}
+Let $(BOC)$ meet $AB$ and $AC$ again at $P$ and $Q$, respectively. Then $OH\parallel A_{\perp BC}A_{\perp PQ}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Take $\triangle DEF$ in @lem-19point3 as the reference triangle, and apply the midline property from @lem-1point4.
+:::
+
+::: {#lem-19point5}
+Let the tangent to the incircle at $Fe$ meet $BC$ at $L$. If $DEF$ is the intouch triangle and $W=EM_{AB}\cap FM_{AC}$, then $A,L,W$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The polar of $X=EF\cap M_{AB}M_{AC}$ with respect to the incircle passes through $A$ and $L$ (since $D,Fe,X$ are collinear by @thm-18point1).
+
+By @lem-6point2, $-1=(X,AW\cap EF;E,F)$.
+
+Hence by @lem-8point10, $\mathcal{P}_{(DEF)}(X)$ passes through $AW\cap EF$ and $A$, so $A,W,L$ lie on the polar of $X$.
+:::
+
+::: {#cor-19point2}
+If $DEF$ is the intouch triangle and $H_A$ is the orthocenter of $\triangle BIC$, then $AH_A$, $EM_{AB}$, and $FM_{AC}$ concur.
+:::
+
+::: {#lem-19point6}
+Let $DEF$ be the intouch triangle, and let $H_A,H_B,H_C$ be the orthocenters of $\triangle BIC,\triangle CIA,\triangle AIB$, respectively. Then the cevian triangle of $I$ with respect to $\triangle H_AH_BH_C$ is $\triangle DEF$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The polar of $H_A$ with respect to the incircle is the $A$-midline (by @lem-1point4).
+
+Note that the $B$-midline, the $C$-midline, and $BC$ concur at $M_{BC}$.
+
+Taking polars with respect to the incircle shows that $H_B$, $H_C$, and $D$ lie on the polar of $M_{BC}$ with respect to the incircle.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(104)$ is the reflection of $H$ across $Fe$; hence it is the intersection of the circumcircle with $\mathcal{H}_{Fe}$, and the isogonal conjugate of $\infty_{OI}$.
+:::
+
+::: {#lem-19point7}
+Let $(AI)$ meet $(ABC)$ again at $S$, and let $H_A$ be the orthocenter of $\triangle BIC$. Then $H_A,S,X(104)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have $H_A\in\mathcal{H}_{Fe}$. Let $X(104)H_A$ meet $(ABC)$ again at $S'$, and let $M$ be the midpoint of the lower arc $BC$, so that $A,I,M$ are collinear.
+
+Applying @lem-17point5 to $(ABC)$, $\mathcal{H}_{Fe}$, and the lines $X(104)H_A$ and $AI$ shows that $S'M$, $H_AI$, and $BC$ concur, so $S'M$ passes through $I_{\perp BC}$.
+
+By @lem-2point10, $S'=S$; hence $X(104),H_A,S$ are collinear.
+:::
+
+::: {#lem-19point8}
+Let $DEF$ be the intouch triangle, let $D_1$ be the reflection of $D$ across $M_{EF}$, let $AD_1$ meet $(ABC)$ again at $P$, and let $(AI)$ meet $(ABC)$ again at $S$. Then $SP$, $BC$, and the tangent to the incircle at $Fe$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+From the proof of @lem-15point5, $AD_1$ is tangent to $\mathcal{H}_{Fe}$. Let $H_A$ be the orthocenter of $\triangle BIC$.
+
+Applying @lem-17point5 to $(ABC)$, $\mathcal{H}_{Fe}$, and the lines $AD_1P$ and $X(104)H_AS$ (@lem-19point7) shows that $PS$, $AH_A$, and $BC$ concur.
+
+By @lem-14point17, the tangent to the incircle at $Fe$ passes through this point of concurrency.
+:::
+
+::: {#lem-19point9}
+Let $A'$ be the reflection of $A$ across $OI$, and let $M$ be the midpoint of the lower arc $BC$. Then $A'M$, $BC$, and the tangent to the incircle at $Fe$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X$ be the intersection of $BC$ with the tangent to the incircle at $Fe$, let the incircle touch $BC$ at $D$, and let $MD$ meet $(ABC)$ again at $S$.
+
+By the proof of @lem-14point17, $-1=(X,AI\cap BC;M_{BC},D)$; let $N$ be the midpoint of the upper arc $BC$.
+
+By the proof of @lem-15point9,
+$$
+-1=M(A',A;N,S)=(MA'\cap BC,AI\cap BC;M_{BC},D).
+$$
+Hence $MA'\cap BC=X$, so $A'M$, $BC$, and the tangent to the incircle at $Fe$ concur.
+:::
+
+::: {#lem-19point10}
+Let the tangent to the incircle at $Fe$ meet $BC$ at $X$, let $A_1$ be the reflection of $A$ across $Fe$, let $M$ be the midpoint of the lower arc $BC$, and let $M'$ be the reflection of $M$ across $BC$. Then $I,X,M',A_1$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A'$ be the reflection of $A$ across $OI$; by @lem-15point11, $A'M$ passes through the reflection of $I$ across $BC$.
+
+By @lem-19point9, $A',M,X$ are collinear; reflecting this line across $BC$ gives that $M',X,I$ are collinear.
+
+Since $IX\perp DFe$, letting $D'$ be the reflection of $D$ across $I$, we have $IX\parallel D'Fe$.
+
+Let $U$ be the reflection of $I$ across $D'$; then a homothety centered at $I$ with ratio $2$ gives $D'Fe\parallel UX(80)$ (@lem-15point13).
+
+By @cor-15point3, $UX(80)$ passes through $A$, so $AX(80)\parallel D'Fe$.
+
+Reflecting across $Fe$ yields $A_1I\parallel AX(80)\parallel D'Fe\parallel IX$, hence $A_1,I,X,M'$ are collinear.
+:::
+
+::: {#lem-19point11}
+If the tangent to the incircle at $Fe$ meets $BC$ at $X$, then $IX$ and $IO$ are isogonal lines in $\triangle BIC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-16point11 and @lem-17point1, $AN_9$ passes through the reflection of $O$ across $BC$.
+
+By @lem-19point10, $IX$ passes through the reflection of the circumcenter $M$ of $\triangle IBC$ across $BC$, so $IX$ passes through the nine-point center of $\triangle IBC$.
+
+Moreover, $O$ is the circumcenter of $\triangle BMC$, so $IO$ passes through $X(54)$ of $\triangle IBC$; hence $IX$ and $IO$ are isogonal lines in $\triangle BIC$.
+:::
+
+::: {#lem-19point12}
+Let $H_A$ be the orthocenter of $\triangle BIC$. Then $H_ANa\parallel AI$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P$ be the reflection of $A$ across $M_{BC}$; note that the reflection of $H_A$ across $M_{BC}$ is $I_A$.
+
+Hence $AI_A\parallel PH_A$, and by @lem-2point7 we have $PNa\parallel AI$, so $P,H_A,Na$ are collinear and the line is parallel to $AI$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If a line $\ell$ meets the sidelines of $\triangle ABC$ at $D,E,F$, and $D'$ is the reflection of $D$ across $M_{BC}$ (with $E',F'$ defined analogously), then $D',E',F'$ are collinear (clearly by Menelaus's theorem); the line $D'E'F'$ is called the **isotomic line** of $\ell$.
+:::
+
+::: {#lem-19point13}
+The isotomic line of the tangent to the incircle at $Fe$ is $INa$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $H_A$ be the orthocenter of $\triangle BIC$, and let the tangent to the incircle at $Fe$ meet $BC$ at $X$; by @lem-14point17, $A,H_A,X$ are collinear.
+
+Applying Desargues's involution theorem (@thm-12point1) to the four points $A,H_A,I,Na$ on $\mathcal{H}_{Fe}$ and the line $BC$ shows that
+$$
+(B,C),\quad (ANa\cap BC, IH_A\cap BC),\quad (X, NaI\cap BC)
+$$
+belong to the same involution.
+
+Since $ANa\cap BC$ and $IH_A\cap BC$ are the tangency points of the $A$-excircle and the incircle with $BC$, this involution is the reflection across $M_{BC}$, so the midpoint of $X$ and $NaI\cap BC$ is $M_{BC}$.
+
+By symmetry, the isotomic line of the tangent to the incircle at $Fe$ is $INa$.
+:::
+
+::: {#lem-19point14}
+The perpendicular from $A$ to $OI$ and the perpendicular from $I$ to $AI$ intersect on $\mathcal{H}_{Fe}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the orthocenter of the degenerate triangle $AII$ inscribed in $\mathcal{H}_{Fe}$, which lies on $\mathcal{H}_{Fe}$ (@lem-13point1).
+
+That is, the intersection of the perpendicular from $A$ to $OI$ (the tangent to $\mathcal{H}_{Fe}$ at $I$, by @cor-13point3) and the perpendicular from $I$ to $AI$ lies on $\mathcal{H}_{Fe}$.
+:::
+
+::: {#lem-19point15}
+Let the $A$-mixtilinear incircle touch the circumcircle at $T$. Then $A\infty_{\perp OI}$, $I\infty_{\perp AI}$, and $X(104)T$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-19point14, $U=A\infty_{\perp OI}\cap I\infty_{\perp AI}$ lies on $\mathcal{H}_{Fe}$; let $X(104)U$ meet $(ABC)$ again at $T'$.
+
+Let $M$ be the midpoint of the lower arc $BC$; applying @lem-17point5 to $(ABC)$, $\mathcal{H}_{Fe}$, and the lines $AIM$ and $X(104)UT'$ shows that $IU$, $MT'$, and $BC$ concur.
+
+Since $IU\perp AI$, @lem-9point15 gives $T'=T$, establishing concurrency.
+:::
+
+::: {#lem-19point16}
+Let $A'$ be the reflection of $A$ across $OI$, let $M$ be the midpoint of the lower arc $BC$, and let $(AI)$ meet $(ABC)$ again at $S$. If $V=X(104)S\cap A'M$, then $AI\perp IV$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $T$ be the tangency point of the $A$-mixtilinear incircle with $(ABC)$. Applying Pascal's theorem to $ASX(104)TMA'$ shows that
+$$
+Y=AS\cap TM,\quad V=SX(104)\cap MA',\quad U=X(104)T\cap A'A
+$$
+are collinear.
+
+By @lem-9point15 and @lem-19point15, both $Y$ and $U$ lie on the line through $I$ perpendicular to $AI$, so $AI\perp IV$.
+:::
+
+::: {#lem-19point17}
+We have $X(56)I^2=X(56)O\cdot X(56)X(65)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $DEF$ be the intouch triangle, let $D_1$ lie on the incircle with $DD_1\perp EF$, and define $E_1,F_1$ analogously.
+
+Then $\triangle ABC$ and $\triangle D_1E_1F_1$ are homothetic from $X(56)$; their incenters are $I$ and $X(65)$, and their circumcenters are $O$ and $I$.
+
+Hence homothety gives $\dfrac{X(56)I}{X(56)X(65)}=\dfrac{X(56)O}{X(56)I}$.
+:::
+
+::: {#lem-19point18}
+The points $O,Na,X(104)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-19point17, $(X(56),\infty_{OI})$, $(I,I)$, and $(O,X(65))$ belong to an involution on $OI$.
+
+Taking isogonal conjugates gives an involution on $\mathcal{H}_{Fe}$ containing $(Na,X(104))$, $(I,I)$, and $(H,Sc)$.
+
+By @lem-12point3, $NaX(104)$, the tangent to $\mathcal{H}_{Fe}$ at $I$, and $HSc$ concur.
+
+By @cor-13point3 and @lem-13point3, this point of concurrency is $O$, so $NaX(104)$ passes through $O$.
+:::
+
+::: {#lem-19point19}
+The points $X(104),X(110),Sc$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X(104)Sc$ and $AH$ meet $(ABC)$ again at $W$ and $D$, respectively. Consider $(ABC)$, $\mathcal{H}_{Fe}$, and the lines $X(104)Sc$ and $AH$.
+
+By @lem-17point5, $ScH$, $WD$, and $BC$ concur, so the Steiner line of $W$ is the Euler line $ScH$.
+
+By @cor-17point3, $W=X(110)$, hence $X(104),X(110),Sc$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $DEF$ be the intouch triangle, let $D_1$ be the reflection of $I$ across $D$, and define $E_1,F_1$ analogously. Then the perspector of $\triangle ABC$ and $\triangle D_1E_1F_1$ is $X(79)$ (by @cor-13point2, $X(79)$ lies on $\mathcal{H}_{Fe}$).
+:::
+
+::: {#lem-19point20}
+We have $IX(79)\parallel OH$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Projecting from $A$ onto $I\infty_{\perp BC}$ gives
+$$
+-1=(I,H;X(80),X(79))_{\mathcal{H}_{Fe}}\stackrel{I}{=}(O,H;N_9,IX(79)\cap OH),
+$$
+where $I,N_9,X(80),Fe$ are collinear by @cor-14point7 and @lem-15point13; hence $IX(79)\parallel OH$.
+:::
+
+::: {#lem-19point21}
+The points $X(104),X(36),X(80)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have
+$$
+-1=(I,H;X(80),X(79))_{\mathcal{H}_{Fe}}\stackrel{I}{=}(X(36),IH\cap FeX(36);Fe,X(30))
+$$
+(@lem-16point10).
+
+Hence $IH$ passes through the reflection of $X(36)$ across $Fe$; reflecting across $Fe$ shows that $X(80)X(104)$ passes through $X(36)$ (@lem-15point13).
+:::
