@@ -1,4 +1,4 @@
-## Variants of Fonténé's Theorem and Characterization of the Cyclocevian Conjugate
+## Variants of Fonténé's Theorem on Cyclocevian Conjugates
 
 ::: {#lem-20point1}
 Let $P_AP_BP_C$ and $Q_AQ_BQ_C$ be the anticevian triangles of $P$ and $Q$, respectively. Then $P,P_A,P_B,P_C,Q,Q_A,Q_B,Q_C$ lie on a conic section.
