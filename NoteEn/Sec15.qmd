@@ -1,4 +1,4 @@
-## On Incenter-Circumcenter Configurations
+## On Incenter Circumcenter Configurations
 
 ::: {#lem-15point1}
 Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ is $Q$, then $(B,C;Q_{\perp BC},EF\cap BC)=-1$.
@@ -75,5 +75,271 @@ By @lem-15point2 (and its excenter version), $f(I)=g(I)$ and $f(I_A)=g(I_A)$.
 When $X=AI\cap BC$, we have $f(AI\cap BC)=g(AI\cap BC)=AI\cap BC$.
 
 By @thm-10point1, $f=g$, so $AD'$, $OX$, and $BC$ concur.
+:::
+
+::: {#lem-15point4}
+Let an excircle touch the sides of $\triangle ABC$ at $DEF$, and let $Q$ be the reflection of $D$ across $EF$. Then $A,Q,Sc$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P$ be the foot of $D$ on $EF$; by @lem-11point11, $A,Mt,P$ are collinear.
+
+By @cor-13point6,
+$$
+-1=(Mt,I;Sc,Na)_{\mathcal{H}_{Fe}}\stackrel{A}{=}(P,\infty_{DP};ASc\cap DP,D).
+$$
+Thus $ASc\cap DP$ is the reflection of $D$ across $P$, namely $Q$, so $A,Q,Sc$ are collinear.
+:::
+
+::: {#cor-15point1}
+The lines $ASc$, $BC$, and $OI_A$ concur (by the excenter version of @lem-15point2).
+:::
+
+::: {#lem-15point5}
+Let the $A$-excircle touch the sidelines at $PQR$. Then the tangent from $A$ to $\mathcal{H}_{Fe}$ passes through the orthocenter $L$ of $\triangle PQR$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since the isogonal conjugate of $\mathcal{H}_{Fe}$ is the line $OI$, points on $\mathcal{H}_{Fe}$ near $A$ map under isogonal conjugation to points near $X=BC\cap OI$.
+
+Thus the tangent from $A$ to $\mathcal{H}_{Fe}$ is isogonal to $AX$. Let the intouch triangle be $DEF$, and let $D'$ be the reflection of $D$ across $EF$.
+
+By @lem-15point2, $A,X,D'$ are collinear.
+
+Reflecting $A,E,F,D'$ across the internal angle bisector of $\angle BAC$ gives a configuration homothetic from $A$ to $A,R,Q,L$.
+
+Hence $AL$ and $AD'$ are isogonal lines, so the tangent from $A$ to $\mathcal{H}_{Fe}$ passes through $L$.
+:::
+
+::: {#lem-15point6}
+The trilinear polar of $I$ is perpendicular to $OI$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the trilinear polar of $I$ meet the sidelines at $P,Q,R$; by harmonicity, $AP$ is the external angle bisector of $\angle BAC$.
+
+Consider $\triangle I_AI_BI_C$, whose orthocenter is $I$, and whose trilinear polar with respect to $I$ is precisely the line $PQR$.
+
+By @lem-2point2, the line $PQR$ is perpendicular to the Euler line of $\triangle I_AI_BI_C$.
+
+The Euler line of $\triangle I_AI_BI_C$ passes through its nine-point center $O$ and its orthocenter $I$, so the line $PQR$ is perpendicular to $OI$.
+:::
+
+::: {#cor-15point2}
+Let the cevian triangle of $I$ be $DEF$. Then $EF\perp OI_A$ ($EF$ is the trilinear polar of $I_A$).
+:::
+
+::: {#lem-15point7}
+Let $B_1$ lie on line $AB$ with $BC=BB_1$ and $B$ on segment $AB_1$, and let $C_1$ lie on line $AC$ with $CB=CC_1$ and $C$ on segment $AC_1$. Then $B_1C_1\perp OI_A$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the cevian triangle of $I$ be $DEF$; then $BE\parallel B_1C$ and $CF\parallel C_1B$.
+
+Applying Pappus's theorem to $BEFCB_1C_1$ gives $EF\parallel B_1C_1$. By @cor-15point2, $B_1C_1\parallel EF\perp OI_A$.
+:::
+
+::: {#lem-15point8}
+Let the perpendicular bisector of $AI$ meet $BC$ at $T$. Then $TI\perp OI_A$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the cevian triangle of $I$ be $DEF$, and let $BI,CI$ meet the circumcircle again at $R,S$; note that the perpendicular bisector of $I$ is $RS$.
+
+Applying Pascal's theorem to $BAACSR$ shows that $EF$, $SR$, and the tangent from $A$ to the circumcircle concur.
+
+By @lem-5point18, $SR$, $EF$, and $I\infty_{BC}$ concur.
+
+Since $(A,I;EF\cap AI,D)=-1$, set $M=M_{AI}$ and $U=EF\cap AI$.
+
+By @lem-6point5, $MI^2=MU\cdot MD$, so there is a homothety centered at $M$ sending $UI$ to $ID$.
+
+This homothety sends the point of concurrency of $SR$, $EF$, and $I\infty_{BC}$ to the point of concurrency of $SR$, $I\infty_{EF}$, and $BC$.
+
+By @cor-15point2, $SR$, $I\infty_{\perp OI_A}$, and $BC$ concur, meaning $TI\perp OI_A$.
+:::
+
+::: {#lem-15point9}
+Let $DEF$ be the intouch triangle, let $D'$ be the reflection of $D$ across $EF$, and let $A'$ be the reflection of $A$ across $OI$. Then $A'D\cap AD'$ lies on the circumcircle.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A_1$ be the reflection of $A$ across $I$, and let $A_2$ be the antipode of $A$ on the circumcircle; then $A_1,A_2,A'$ are collinear and $A'$ lies on the circumcircle.
+
+Let $A_2I$ meet the circumcircle again at $S$, let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$, and let $AD$ meet the circumcircle again at $T$.
+
+We have
+$$
+-1=(A,A_1;I,\infty_{AI})\stackrel{A_2}{=}(A,A';S,N),
+$$
+and let $A'D$ and $ND$ meet the circumcircle again at $X$ and $Y$.
+
+By @lem-2point10, $S,M,D$ are collinear, and projecting from $D$ to the circumcircle gives
+$$
+-1=(T,X;M,Y)\stackrel{A}{=}(D,AX\cap DD';\infty_{AI},AY\cap DD').
+$$
+By @lem-9point7 and @lem-9point9, $AY$ passes through $D_{\perp EF}$, so $AY\cap DD'=M_{DD'}$.
+
+Hence $AX\cap DD'=D'$, so $A,X,D'$ are collinear, meaning $A'D\cap AD'$ lies on the circumcircle.
+:::
+
+::: {#lem-15point10}
+Let $A'$ be the reflection of $A$ across $OI$, and let $I'$ be the reflection of $I$ across $BC$. Then $A'I'$ passes through the midpoint $M$ of the lower arc $BC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $D=I_{\perp BC}$, let $MI'$ and $MD$ meet the circumcircle again at $Z$ and $S$, and let $N$ be the midpoint of the upper arc $BC$.
+
+Then
+$$
+-1=(I,I';D,\infty_{ID})\stackrel{M}{=}(A,Z;S,N).
+$$
+From the proof of @lem-15point9 we know that $(A,A';S,N)=-1$, so $A'=Z$ and $A',I',M$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The inverse of $I$ with respect to the circumcircle is $X(36)$ (hence $X(36)$ lies on $OI$).
+:::
+
+::: {#lem-15point11}
+With the notation of @lem-15point10, $A', I', M$, and $X(36)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $M'$ be the reflection of $M$ across $OI$; then $AM\cap A'M'=I$.
+
+By Brocard's theorem, $AM'\cap A'M$ lies on $\mathcal{P}_{(ABC)}(I)$ and also on $OI$, so $A'M\cap OI=X(36)$.
+:::
+
+::: {#lem-15point12}
+Let the intouch triangle be $DEF$, and let a homothety centered at $I$ send $DEF$ to $XYZ$. If $X'$ is the reflection of $X$ across $I$ and $M$ is the midpoint of the lower arc $BC$, then the isogonal conjugate of $BY\cap CZ$ is $OI\cap MX'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @cor-13point2, $R=BY\cap CZ$ lies on $\mathcal{H}_{Fe}$ and on $AX$, and the isogonal conjugate $R'$ of $R$ lies on $OI$.
+
+As $X$ varies along $ID$, the chains
+$$
+f:X\mapsto AX\mapsto R\mapsto R'
+$$
+and
+$$
+g:X\mapsto X'\mapsto MX'\cap OI
+$$
+both preserve cross ratio.
+
+When $X=I$, we have $f(I)=I=g(I)$; when $X=\infty_{DI}$, we have $R=H$, so $f(\infty_{DI})=O=g(\infty_{DI})$.
+
+When $X=D$, we have $R=Ge$, and by homothety $X'M$ passes through $X(55)$, so $f(D)=X(55)=g(D)$.
+
+By @thm-10point1, $f=g$, so the isogonal conjugate of $R$ is $OI\cap MX'$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $X(36)$ is $X(80)$.
+:::
+
+::: {#cor-15point3}
+Let $X$ be the reflection of $I$ across $BC$, and let $X'$ be the reflection of $X$ across $I$. Then $AX'$ passes through $X(80)$.
+:::
+
+::: {#lem-15point13}
+The point $X(80)$ is the antigonal conjugate of $I$, that is, the reflection of $I$ across $Fe$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point5, taking the isogonal conjugate of the inverse of the isogonal conjugate of $I$ with respect to the circumcircle yields $X(80)$.
+:::
+
+::: {#cor-15point4}
+Set $D=I_{\perp BC}$, and let $D'$ be the reflection of $D$ across $I$. Then $D',Fe,M_{AI}$ are collinear.
+:::
+
+::: {#lem-15point14}
+Let $J$ be the reflection of $I_A$ across $BC$. Then both $JA$ and $(JBC)$ pass through $X(80)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Continuing with the notation of @cor-15point3, the homothety centered at $A$ sending the incircle to the $A$-excircle maps $X'$ to $J$.
+
+By @cor-15point3, line $AJX'$ passes through $X(80)$. Note that $X(80)$ and $I$ are antipodal points on $\mathcal{H}_{Fe}$.
+
+Thus by @lem-14point6,
+$$
+\measuredangle BX(80)C=\measuredangle CIB=\measuredangle CI_AB=\measuredangle BJC,
+$$
+so $(JBC)$ passes through $X(80)$.
+:::
+
+::: {#lem-15point15}
+Set $D=I_{\perp BC}$. Then $\triangle AIO\sim\triangle FeDM_{BC}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the inversion from @cor-4point6, we have $I^*=I_A$ and $O^*$ is the reflection $A'$ of $A$ across $BC$.
+
+Thus $\measuredangle AIO=\measuredangle AA'I_A$ (since inversion reverses/reflects angle bisectors).
+
+Let $J$ be the reflection of $I_A$ across $BC$, so $\measuredangle AA'I_A=\measuredangle JAA'$; let $D'$ be the reflection of $D$ across $I$.
+
+By @cor-15point4 and @lem-15point14, line $JAX(80)$ is parallel to $D'Fe$.
+
+Hence $\measuredangle AIO=\measuredangle JAA'=\measuredangle FeD'D=\measuredangle FeDM_{BC}$.
+
+If $D_1$ lies on the incircle with $DD_1\perp AI$, then by @lem-14point15, $Fe,D_1,M_{BC}$ are collinear.
+
+Thus $\measuredangle DFe M_{BC}=\measuredangle D FeD_1=\measuredangle DD'D_1=\measuredangle IAO$, giving the similarity.
+:::
+
+::: {#lem-15point16}
+The orthotransversal of $Fe$ is $OI$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $X=OI\cap BC$; then $X$ is the spiral center sending $IO$ to $I_{\perp BC}M_{BC}$.
+
+By @lem-15point15, this spiral similarity also sends $A$ to $Fe$, so $\measuredangle XFeA=\measuredangle XM_{BC}O=90^\circ$.
+
+Hence $X$ lies on the orthotransversal of $Fe$; similarly, the orthotransversal of $Fe$ is $OI$.
+:::
+
+::: {#lem-15point17}
+Let $DEF$ be the intouch triangle, and let $E',F'$ lie on the incircle such that $DF\parallel EE'$ and $DE\parallel FF'$. Then $\mathcal{P}_{\mathcal{H}_{Fe}}(M_{BC})=E'F'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $X=E'F'\cap EF$ and $D_1=EE'\cap FF'$; by Brocard's theorem, $\mathcal{P}_{(DEF)}(X)=AD_1$.
+
+Hence $IX\perp AD_1$, and by @lem-14point8,
+$$
+\measuredangle\mathcal{P}_{\mathcal{H}_{Fe}}(AD_1)Fe\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=90^\circ.
+$$
+Since $D_1$ is the reflection of $D$ across $M_{EF}$, by the proof of @lem-15point5 we have $\mathcal{P}_{\mathcal{H}_{Fe}}(AD_1)=A$.
+
+By @cor-13point3, $\mathcal{P}_{\mathcal{H}_{Fe}}(I)=OI$, so $\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=OI\cap\mathcal{P}_{\mathcal{H}_{Fe}}(X)$.
+
+If $Y=OI\cap BC$, then by @lem-15point16, $Fe,Y,\mathcal{P}_{\mathcal{H}_{Fe}}(IX)$ are collinear (perpendicular to $AFe$).
+
+Thus $\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=FeY\cap OI=Y$, and $\mathcal{P}_{\mathcal{H}_{Fe}}(EF)=D$ (since $DEF$ is the cevian triangle of $Ge$).
+
+Hence $\mathcal{P}_{\mathcal{H}_{Fe}}(X)$ passes through $D$ and $Y$, so $\mathcal{P}_{\mathcal{H}_{Fe}}(X)=BC$ and $\mathcal{P}_{\mathcal{H}_{Fe}}(E'F')$ lies on $BC$.
+
+Since $E',F',\infty_{BC}$ are collinear, $\mathcal{P}_{\mathcal{H}_{Fe}}(E'F')=BC\cap FeM_{BC}=M_{BC}$ (@lem-8point10).
 :::
 
