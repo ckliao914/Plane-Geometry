@@ -1,4 +1,4 @@
-## Line Joining Incenter and Circumcenter
+## On Incenter-Circumcenter Configuations
 
 ::: {#lem-15point1}
 Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ is $Q$, then $(B,C;Q_{\perp BC},EF\cap BC)=-1$.
