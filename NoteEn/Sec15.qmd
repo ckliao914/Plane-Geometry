@@ -255,7 +255,7 @@ Let $X$ be the reflection of $I$ across $BC$, and let $X'$ be the reflection of 
 :::
 
 ::: {#lem-15point13}
-The point $X(80)$ is the antigonal conjugate of $I$, that is, the reflection of $I$ across $\mathcal{H}_{Fe}$.
+The point $X(80)$ is the antigonal conjugate of $I$, that is, the reflection of $I$ across $Fe$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -265,11 +265,6 @@ By @lem-14point5, taking the isogonal conjugate of the inverse of the isogonal c
 
 ::: {#cor-15point4}
 Set $D=I_{\perp BC}$, and let $D'$ be the reflection of $D$ across $I$. Then $D',Fe,M_{AI}$ are collinear.
-:::
-
-::: {.callout-note collapse="true" icon="false"}
-## Proof
-(Follows from the corresponding reflection and homothety relations.)
 :::
 
 ::: {#lem-15point14}
@@ -290,7 +285,7 @@ so $(JBC)$ passes through $X(80)$.
 :::
 
 ::: {#lem-15point15}
-Set $D=I_{\perp BC}$. Then $\triangle AIO\sim\triangle\mathcal{H}_{Fe}DM_{BC}$.
+Set $D=I_{\perp BC}$. Then $\triangle AIO\sim\triangle FeDM_{BC}$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -301,26 +296,26 @@ Thus $\measuredangle AIO=\measuredangle AA'I_A$ (since inversion reverses/reflec
 
 Let $J$ be the reflection of $I_A$ across $BC$, so $\measuredangle AA'I_A=\measuredangle JAA'$; let $D'$ be the reflection of $D$ across $I$.
 
-By @cor-15point4 and @lem-15point14, line $JAX(80)$ is parallel to $D'\mathcal{H}_{Fe}$.
+By @cor-15point4 and @lem-15point14, line $JAX(80)$ is parallel to $D'Fe$.
 
-Hence $\measuredangle AIO=\measuredangle JAA'=\measuredangle\mathcal{H}_{Fe}D'D=\measuredangle\mathcal{H}_{Fe}DM_{BC}$.
+Hence $\measuredangle AIO=\measuredangle JAA'=\measuredangle FeD'D=\measuredangle FeDM_{BC}$.
 
-If $D_1$ lies on the incircle with $DD_1\perp AI$, then by @lem-14point15, $\mathcal{H}_{Fe},D_1,M_{BC}$ are collinear.
+If $D_1$ lies on the incircle with $DD_1\perp AI$, then by @lem-14point15, $Fe,D_1,M_{BC}$ are collinear.
 
-Thus $\measuredangle D\mathcal{H}_{Fe}M_{BC}=\measuredangle D\mathcal{H}_{Fe}D_1=\measuredangle DD'D_1=\measuredangle IAO$, giving the similarity.
+Thus $\measuredangle DFe M_{BC}=\measuredangle D FeD_1=\measuredangle DD'D_1=\measuredangle IAO$, giving the similarity.
 :::
 
 ::: {#lem-15point16}
-The orthotransversal of $\mathcal{H}_{Fe}$ is $OI$.
+The orthotransversal of $Fe$ is $OI$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Set $X=OI\cap BC$; then $X$ is the spiral center sending $IO$ to $I_{\perp BC}M_{BC}$.
 
-By @lem-15point15, this spiral similarity also sends $A$ to $\mathcal{H}_{Fe}$, so $\measuredangle X\mathcal{H}_{Fe}A=\measuredangle XM_{BC}O=90^\circ$.
+By @lem-15point15, this spiral similarity also sends $A$ to $Fe$, so $\measuredangle XFeA=\measuredangle XM_{BC}O=90^\circ$.
 
-Hence $X$ lies on the orthotransversal of $\mathcal{H}_{Fe}$; similarly, the orthotransversal of $\mathcal{H}_{Fe}$ is $OI$.
+Hence $X$ lies on the orthotransversal of $Fe$; similarly, the orthotransversal of $Fe$ is $OI$.
 :::
 
 ::: {#lem-15point17}
