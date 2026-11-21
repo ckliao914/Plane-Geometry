@@ -1,4 +1,4 @@
-## Angles and Radical Axes
+## Angle Chasing and Radical Axes
 
 ::: {.unnumbered-env}
 **Definition.**
