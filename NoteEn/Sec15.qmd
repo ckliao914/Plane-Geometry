@@ -217,7 +217,7 @@ With the notation of @lem-15point10, $A', I', M$, and $X(36)$ are collinear.
 ## Proof
 Let $M'$ be the reflection of $M$ across $OI$; then $AM\cap A'M'=I$.
 
-By Brocard's theorem, $AM'\cap A'M$ lies on $\mathcal{P}_{(ABC)}(I)$ and also on $OI$, so $A'M\cap OI=X(36)$.
+By Brocard's theorem, $AM'\cap A'M$ lies on $\mathfrak{p}_{(ABC)}(I)$ and also on $OI$, so $A'M\cap OI=X(36)$.
 :::
 
 ::: {#lem-15point12}
@@ -319,27 +319,27 @@ Hence $X$ lies on the orthotransversal of $Fe$; similarly, the orthotransversal 
 :::
 
 ::: {#lem-15point17}
-Let $DEF$ be the intouch triangle, and let $E',F'$ lie on the incircle such that $DF\parallel EE'$ and $DE\parallel FF'$. Then $\mathcal{P}_{\mathcal{H}_{Fe}}(M_{BC})=E'F'$.
+Let $DEF$ be the intouch triangle, and let $E',F'$ lie on the incircle such that $DF\parallel EE'$ and $DE\parallel FF'$. Then $\mathfrak{p}_{\mathcal{H}_{Fe}}(M_{BC})=E'F'$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Set $X=E'F'\cap EF$ and $D_1=EE'\cap FF'$; by Brocard's theorem, $\mathcal{P}_{(DEF)}(X)=AD_1$.
+Set $X=E'F'\cap EF$ and $D_1=EE'\cap FF'$; by Brocard's theorem, $\mathfrak{p}_{(DEF)}(X)=AD_1$.
 
 Hence $IX\perp AD_1$, and by @lem-14point8,
 $$
-\measuredangle\mathcal{P}_{\mathcal{H}_{Fe}}(AD_1)Fe\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=90^\circ.
+\measuredangle\mathfrak{p}_{\mathcal{H}_{Fe}}(AD_1)Fe\mathfrak{p}_{\mathcal{H}_{Fe}}(IX)=90^\circ.
 $$
-Since $D_1$ is the reflection of $D$ across $M_{EF}$, by the proof of @lem-15point5 we have $\mathcal{P}_{\mathcal{H}_{Fe}}(AD_1)=A$.
+Since $D_1$ is the reflection of $D$ across $M_{EF}$, by the proof of @lem-15point5 we have $\mathfrak{p}_{\mathcal{H}_{Fe}}(AD_1)=A$.
 
-By @cor-13point3, $\mathcal{P}_{\mathcal{H}_{Fe}}(I)=OI$, so $\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=OI\cap\mathcal{P}_{\mathcal{H}_{Fe}}(X)$.
+By @cor-13point3, $\mathfrak{p}_{\mathcal{H}_{Fe}}(I)=OI$, so $\mathfrak{p}_{\mathcal{H}_{Fe}}(IX)=OI\cap\mathfrak{p}_{\mathcal{H}_{Fe}}(X)$.
 
-If $Y=OI\cap BC$, then by @lem-15point16, $Fe,Y,\mathcal{P}_{\mathcal{H}_{Fe}}(IX)$ are collinear (perpendicular to $AFe$).
+If $Y=OI\cap BC$, then by @lem-15point16, $Fe,Y,\mathfrak{p}_{\mathcal{H}_{Fe}}(IX)$ are collinear (perpendicular to $AFe$).
 
-Thus $\mathcal{P}_{\mathcal{H}_{Fe}}(IX)=FeY\cap OI=Y$, and $\mathcal{P}_{\mathcal{H}_{Fe}}(EF)=D$ (since $DEF$ is the cevian triangle of $Ge$).
+Thus $\mathfrak{p}_{\mathcal{H}_{Fe}}(IX)=FeY\cap OI=Y$, and $\mathfrak{p}_{\mathcal{H}_{Fe}}(EF)=D$ (since $DEF$ is the cevian triangle of $Ge$).
 
-Hence $\mathcal{P}_{\mathcal{H}_{Fe}}(X)$ passes through $D$ and $Y$, so $\mathcal{P}_{\mathcal{H}_{Fe}}(X)=BC$ and $\mathcal{P}_{\mathcal{H}_{Fe}}(E'F')$ lies on $BC$.
+Hence $\mathfrak{p}_{\mathcal{H}_{Fe}}(X)$ passes through $D$ and $Y$, so $\mathfrak{p}_{\mathcal{H}_{Fe}}(X)=BC$ and $\mathfrak{p}_{\mathcal{H}_{Fe}}(E'F')$ lies on $BC$.
 
-Since $E',F',\infty_{BC}$ are collinear, $\mathcal{P}_{\mathcal{H}_{Fe}}(E'F')=BC\cap FeM_{BC}=M_{BC}$ (@lem-8point10).
+Since $E',F',\infty_{BC}$ are collinear, $\mathfrak{p}_{\mathcal{H}_{Fe}}(E'F')=BC\cap FeM_{BC}=M_{BC}$ (@lem-8point10).
 :::
 
