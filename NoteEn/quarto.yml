@@ -1,1 +1,50 @@
 
+project:
+  type: book
+
+book:
+  title: "Complex Projective Planar Geometry"
+  chapters:
+    - index.qmd
+    - ch1.qmd
+    - ch2.qmd
+
+# 這裡移到頂層，讓整本書啟用章節編號
+number-sections: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    include-in-header:
+      text: |
+        <script>
+        window.MathJax = {
+          tex: {
+            macros: {
+              sangle: "\\sphericalangle",
+              X: "\\mathsf{X}",
+              comp: "\\raise{-0.2ex}{\\complement}",
+              anticomp: ["\\style{display: inline-block; transform: scaleX(-1);}{\\comp}", 0]
+            }
+          },
+          output: {
+            font: 'mathjax-tex'
+          },
+          chtml: {
+            linebreaks: {
+              automatic: false,
+              inline: false
+            }
+          }
+        };
+        </script>
+        
+crossref:
+  chapters: true
+  thm-title: "Theorem"
+  lem-title: "Lemma"
+  cor-title: "Corollary"
+  thm-prefix: "Theorem"
+  lem-prefix: "Lemma"
+  cor-prefix: "Corollary"
