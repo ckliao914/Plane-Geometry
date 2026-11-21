@@ -1,6 +1,12 @@
 # Overview {.unnumbered}
 
-This is a note I wrote several years ago. I was trying to introduce pencils of conics and their isoconjugations, but found this too complicated over the real projective plane, so I instead made another note on the complex projective plane. That means, I am unlikely to update this note in the future. The following translation is AI-generated.
+This is a note I wrote several years ago. I was trying to introduce pencils of conics and their isoconjugations, but found this too complicated over the real projective plane, so I instead made another note on the complex projective plane. That means, I am unlikely to update this note in the future.
+
+Since this was intended to be a note, I didn't give a title to each section until this whole note was finished. These titles are just a suggestion of what would probably be in that section.
+
+The following translation is AI-generated.
+
+# Table of Contents {.unnumbered}
 
 * [Section 1: Angle Chasing and Radical Axes](Sec1.html)
 
@@ -40,7 +46,7 @@ This is a note I wrote several years ago. I was trying to introduce pencils of c
 
 * [Section 19: More on the Feuerbach Hyperbola Configuration](Sec19.html)
 
-* [Section 20: 20  Variants of Fonténé’s Theorem and Characterization of the Cyclocevian Conjugate](Sec20.html)
+* [Section 20: Variants of Fonténé’s Theorem and Characterization of the Cyclocevian Conjugate](Sec20.html)
 
 * [Section 21: Projective Transformations](Sec21.html)
 
