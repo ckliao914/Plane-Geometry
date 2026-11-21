@@ -46,7 +46,7 @@ The following translation is AI-generated.
 
 * [Section 19: More on the Feuerbach Hyperbola Configuration](Sec19.html)
 
-* [Section 20: Variants of Fonténé’s Theorem and Characterization of the Cyclocevian Conjugate](Sec20.html)
+* [Section 20: Variants of Fonténé’s Theorem on Cyclocevian Conjugates](Sec20.html)
 
 * [Section 21: Projective Transformations](Sec21.html)
 
