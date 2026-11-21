@@ -211,7 +211,7 @@ Hence $AP\cap UV$ lies on $(BOC)$, so $AP\cap UV=X$; by symmetry, $AX$, $BY$, an
 :::
 
 ::: {#lem-21point10}
-Let $L$ and $S$ be the cevapoint and crosspoint of $P$ and $Q$, respectively, and let $\phi$ be an isogonal transformation such that $\phi(P)=Q$. Then $\phi(L)=S$.
+Let $L$ and $S$ be the cevapoint and crosspoint of $P$ and $Q$, respectively, and let $\phi$ be an isoconjugate transformation such that $\phi(P)=Q$. Then $\phi(L)=S$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -230,5 +230,5 @@ and by @lem-21point8, $A,R',L$ are collinear.
 
 Since $A,A',S$ are also collinear, $(AB,AC)$, $(AP,AQ)$, and $(AS,AL)$ belong to the same involution.
 
-By symmetry, the isogonal transformation sending $P$ to $Q$ also sends $L$ to $S$.
+By symmetry, the isoconjugate transformation sending $P$ to $Q$ also sends $L$ to $S$.
 :::
