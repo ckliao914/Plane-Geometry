@@ -160,7 +160,7 @@ From the proof of @thm-8point3, $(AB)$ passes through $A^*$ and $B^*$, so $(AB)$
 
 ::: {.unnumbered-env}
 **Definition.**
-Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, together with a plane section $E_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $E_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $E_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathcal{P}_{\mathcal{C}}(A)$ and $A=\mathcal{P}_{\mathcal{C}}(\ell)$.
+Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, together with a plane section $E_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $E_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $E_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathfrak{p}_{\mathcal{C}}(A)$ and $A=\mathfrak{p}_{\mathcal{C}}(\ell)$.
 :::
 
 ::: {#cor-8point4}
@@ -169,7 +169,7 @@ Since projection preserves lines and intersections, @cor-8point2, @thm-8point3, 
 
 ::: {.unnumbered-env}
 **Definition.**
-If $\mathcal{P}_{\mathcal{C}}(A)$ passes through $B$, then $A$ and $B$ are called **conjugate** with respect to $\mathcal{C}$.
+If $\mathfrak{p}_{\mathcal{C}}(A)$ passes through $B$, then $A$ and $B$ are called **conjugate** with respect to $\mathcal{C}$.
 :::
 
 ::: {.unnumbered-env}
@@ -213,7 +213,7 @@ Let $A,B,C,D$ lie on a conic $\mathcal{C}$, and set $P=AB\cap CD$, $Q=AC\cap BD$
 ## Proof
 Let the polar of $R$ intersect $AD$ and $BC$ at $M$ and $N$, respectively. By @lem-8point10, $(R,M;A,D)=(R,N;B,C)=-1$.
 
-By @lem-6point2, $M,N,P,Q$ are collinear and all lie on $\mathcal{P}_{\mathcal{C}}(R)$; the remaining conjugacies follow analogously.
+By @lem-6point2, $M,N,P,Q$ are collinear and all lie on $\mathfrak{p}_{\mathcal{C}}(R)$; the remaining conjugacies follow analogously.
 :::
 
 ::: {#cor-8point5}
@@ -232,11 +232,11 @@ We have $EM\cdot EF=EA\cdot EB=\operatorname{Pow}_{\omega}(E)=EO^2-r_\omega^2$, 
 
 Subtracting gives $(EM-MF)EF=EO^2-FO^2$, so by the Pythagorean theorem, $EF\perp OM$.
 
-By @thm-8point4, $EF=\mathcal{P}_{\omega}(AC\cap BD)$, so the inverse of $M$ with respect to $\omega$ is $AC\cap BD$.
+By @thm-8point4, $EF=\mathfrak{p}_{\omega}(AC\cap BD)$, so the inverse of $M$ with respect to $\omega$ is $AC\cap BD$.
 :::
 
 ::: {#lem-8point12}
-Let $A,B,C$ lie on a conic $\mathcal{C}$, let $X$ lie on $AB$, and let $CA$ and $CB$ intersect $\mathcal{P}_{\mathcal{C}}(X)$ at $Y$ and $Z$, respectively. Then $Y$ and $Z$ are conjugate with respect to $\mathcal{C}$.
+Let $A,B,C$ lie on a conic $\mathcal{C}$, let $X$ lie on $AB$, and let $CA$ and $CB$ intersect $\mathfrak{p}_{\mathcal{C}}(X)$ at $Y$ and $Z$, respectively. Then $Y$ and $Z$ are conjugate with respect to $\mathcal{C}$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -276,7 +276,7 @@ A polar transformation preserves cross ratio (for collinear points or concurrent
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $X$ vary along a line $\ell$, set $\mathcal{P}_{\mathcal{C}}(\ell)=P$, and choose two points $Q,R$ on $\mathcal{C}$ collinear with $P$.
+Let $X$ vary along a line $\ell$, set $\mathfrak{p}_{\mathcal{C}}(\ell)=P$, and choose two points $Q,R$ on $\mathcal{C}$ collinear with $P$.
 
 Let $XQ$ intersect $\mathcal{C}$ again at $S$, and let $SR$ intersect $\ell$ at $Y$. By @lem-8point12, $PY$ is the polar of $X$.
 
