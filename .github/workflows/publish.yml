@@ -56,7 +56,7 @@ jobs:
 
           # 4. 將 NoteEn/ 底下編譯好的書本內容放入 public/NoteEn/ 子目錄
           mkdir -p public/NoteEn
-          cp -r en/_book/* public/NoteEn/
+          cp -r NoteEn/_book/* public/NoteEn/
 
 
       - name: Setup Pages
