@@ -3,25 +3,3 @@
 ::: {#lem-15point1}
 Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ is $Q$, then $(B,C;Q_{\perp BC},EF\cap BC)=-1$.
 :::
-
-::: {.callout-note collapse="true" icon="false"}
-## Proof
-Note that the direction of $EF$ is perpendicular to $AI$. Let $R$ be the harmonic conjugate of $Q_{\perp BC}$ with respect to $BC$.
-
-Then the chains
-$$
-f:P\mapsto Q\mapsto Q_{\perp BC}\mapsto R
-$$
-and
-$$
-g:P\mapsto E\mapsto E\infty_{\perp AI}\mapsto EF\cap BC
-$$
-preserve cross ratio.
-
-When $P=I$ or $P=I_A$, @lem-9point10 gives $f(I)=g(I)$ and $f(I_A)=g(I_A)$.
-
-When $P=\infty_{AI}$, since $Q$ lies on the circumcircle we have $Q_{\perp BC}=M_{BC}$, so $f(\infty_{AI})=g(\infty_{AI})=\infty_{BC}$.
-
-By @thm-10point1, $f=g$, hence $(B,C;Q_{\perp BC},EF\cap BC)=-1$.
-:::
-
