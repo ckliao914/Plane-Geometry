@@ -2,25 +2,25 @@
 
 This is a note I wrote several years ago. I was trying to introduce pencils of conics and their isoconjugations, but found this too complicated over the real projective plane, so I instead made another note on the complex projective plane. That means, I am unlikely to update this note in the future. The following translation is AI-generated.
 
-* [Section 1: ](Sec1.html)
+* [Section 1: Angle Chasing and Radical Axes](Sec1.html)
 
-* [Section 2: ](Sec2.html)
+* [Section 2: Length Chasing and Incircles](Sec2.html)
 
-* [Section 3: ](Sec3.html)
+* [Section 3: Isogonal Conjugates and Humpty-Dumpty Points](Sec3.html)
 
-* [Section 4: ](Sec4.html)
+* [Section 4: Inversion](Sec4.html)
 
-* [Section 5: ](Sec5.html)
+* [Section 5: Mixtilinear Incircles](Sec5.html)
 
-* [Section 6: ](Sec6.html)
+* [Section 6: Cross Ratio](Sec6.html)
 
-* [Section 7: ](Sec7.html)
+* [Section 7: Conic Sections and Optical Properties](Sec7.html)
 
-* [Section 8: ](Sec8.html)
+* [Section 8: Cross Ratio and Polarity on Conics](Sec8.html)
 
-* [Section 9: ](Sec9.html)
+* [Section 9: Feet of the Contact Triangle](Sec9.html)
 
-* [Section 10: ](Sec10.html)
+* [Section 10: Projective Map Method and Steiner Conic](Sec10.html)
 
 * [Section 11: ](Sec11.html)
 
