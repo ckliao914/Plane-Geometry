@@ -1,1 +1,235 @@
+## Conic Sections and Optical Properties
 
+::: {.unnumbered-env}
+**Definition.**
+A **conic section** (or **conic**) $\mathcal{C}$ is the curve of intersection of a plane $E$ with a conical surface (the surface swept out by rotating a line $\ell$ about an intersecting axis line $\mathcal{L}$, with vertex/center $\ell\cap\mathcal{L}$). Unless otherwise stated, $\mathcal{C}$ denotes a conic section.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Using the notation of the preceding Definition, let $\ell$ and $\mathcal{L}$ form an acute angle $\theta$, and let $E$ and $\mathcal{L}$ form an angle $\phi$ (measured with respect to the axis). If $\theta>\phi$, the intersection is a **hyperbola**; if $\theta=\phi$, it is a **parabola**; if $\theta<\phi$, it is an **ellipse** (when $E$ passes through the vertex of the conical surface, degenerate cases occur, such as a point, a single line, or two intersecting lines).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Using the notation of the preceding Definition, there are two spheres tangent to the conical surface (along all generators $\ell$) and tangent to $E$, called **Dandelin spheres** ($S_1,S_2$). The points of tangency of $S_1$ and $S_2$ with $E$ are denoted $F_1$ and $F_2$, and are called the **foci**. When the conic is a parabola, one of the spheres becomes infinitely large and one focus moves to infinity, so the focus of a parabola refers to the finite focus.
+:::
+
+::: {#thm-7point1}
+For any point on an ellipse, the sum of its distances to the two foci is constant; for any point on a hyperbola, the difference of its distances to the two foci is constant.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Keep the notation of the preceding Definitions. For $X$ on $\mathcal{C}$, $XF_1$ and $XF_2$ are tangent segments from $X$ to $S_1$ and $S_2$, respectively.
+
+Let $O$ be the vertex of the conical surface; if the line $OX$ touches the two spheres at $T_1$ and $T_2$, then $T_1T_2$ is constant as $X$ varies.
+
+When $\mathcal{C}$ is an ellipse or a hyperbola, $X$ lies on or outside the segment $T_1T_2$, so $|XF_1\pm XF_2|=|XT_1\pm XT_2|=T_1T_2$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Using the notation of the preceding three Definitions, $S_1$ touches the conical surface along a circle lying in a plane $P_1$; the line of intersection of $P_1$ and $E$ is called the **directrix** corresponding to $F_1$.
+:::
+
+::: {#thm-7point2}
+For any point on a conic section (not on a directrix), the ratio of its distance to a focus to its distance to the corresponding directrix is constant.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Keep the notation of @thm-7point1 and the preceding Definition.
+
+Let $d_1$ be the directrix corresponding to $F_1$, and let $R$ and $S$ be the feet of the perpendiculars from $X$ to $d_1$ and $P_1$, respectively.
+
+Then $RS\perp SX$ and $\angle SXR=\phi$, so $XS=XR\cos\phi$.
+
+Also $T_1S\perp SX$ and $\angle T_1XS=\theta$, so $XS=\cos\theta\cdot XT_1=\cos\theta\cdot XF_1$.
+
+Hence $XF_1/XR=\cos\phi/\cos\theta$ is constant.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The constant distance ratio in @thm-7point2 is called the **eccentricity**.
+:::
+
+::: {#cor-7point1}
+An ellipse has eccentricity less than $1$ (a circle has eccentricity $0$), a parabola has eccentricity $1$, and a hyperbola has eccentricity greater than $1$.
+:::
+
+::: {#lem-7point1}
+A line intersects a conic section in at most two points (a tangent line counts as intersecting in two coincident points).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If a line met a conic in three points, there would be a line meeting the conical surface in three points, which is impossible.
+:::
+
+::: {#cor-7point2}
+An ellipse, a parabola, and a hyperbola intersect the line at infinity in $0$, $1$, and $2$ points, respectively.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The tangents to a hyperbola at its two points at infinity are called its **asymptotes**.
+:::
+
+::: {#lem-7point2}
+Let $\mathcal{C}$ have foci $F_1,F_2$, and let $X$ lie on $\mathcal{C}$. Then the tangent to $\mathcal{C}$ at $X$ bisects $\angle F_1XF_2$ (for a hyperbola, it bisects one of the two angles between $XF_1$ and $XF_2$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We prove the ellipse case; the other cases are analogous. Suppose the external angle bisector of $\angle F_1XF_2$ meets the ellipse again at $Y\neq X$.
+
+By @thm-7point1, $XF_1+XF_2=YF_1+YF_2$.
+
+However, among points on the line through $X$ and $Y$, the sum of distances to $F_1$ and $F_2$ is uniquely minimized at $X$, so $X=Y$.
+:::
+
+::: {#cor-7point3}
+As $X$ varies on $\mathcal{C}$ with foci $F_1,F_2$, let $F_1'$ be the reflection of $F_1$ across the tangent to $\mathcal{C}$ at $X$. Then $F_2,X,F_1'$ are collinear and $F_1'F_2$ has constant length.
+:::
+
+::: {#lem-7point3}
+The two foci of a conic inscribed in $\triangle ABC$ (tangent to $BC,CA,AB$) are isogonal conjugates with respect to $\triangle ABC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the foci be $F_1,F_2$. By @cor-7point3, the circumcenter of the three reflections of $F_1$ across the sidelines is $F_2$.
+
+By @lem-3point19, $F_2$ is therefore the isogonal conjugate of $F_1$.
+:::
+
+::: {#lem-7point4}
+There is a unique conic inscribed in $\triangle ABC$ with two given isogonal conjugates as its foci.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P,Q$ be the foci; by @cor-7point3, the tangency points on the sidelines are the intersections of the sidelines with the lines joining the reflections of $P$ across the sidelines to $Q$.
+
+At most one such conic exists, and the construction in @cor-7point3 establishes existence.
+:::
+
+::: {#cor-7point4}
+Let $\mathcal{C}$ have foci $F_1,F_2$, and let two tangents to $\mathcal{C}$ intersect at $X$. Then these two tangents are isogonal lines with respect to $\angle F_1XF_2$.
+:::
+
+::: {#lem-7point5}
+Let $F$ be a focus of $\mathcal{C}$, and suppose $X,Y$ lie on $\mathcal{C}$ with tangents intersecting at $M$. Then $FM$ bisects $\angle XFY$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the tangents at $X$ and $Y$ be $\ell_X$ and $\ell_Y$, let the other focus be $F'$, and let $F_X,F_Y$ be the reflections of $F'$ across $\ell_X,\ell_Y$, respectively.
+
+Then $MF'=MF_X=MF_Y$, and by @cor-7point3 also $FF_X=FF_Y$.
+
+Hence $MF_XFF_Y$ is a kite, so $FM$ bisects $\angle F_XFF_Y$.
+
+Since $F,X,F_X$ and $F,Y,F_Y$ are collinear, $FM$ bisects $\angle XFY$.
+:::
+
+::: {#lem-7point6}
+For any point $X$ on a parabola, its distance to the focus $F$ equals its distance to the directrix; moreover, the reflection of $XF$ across the tangent at $X$ is the perpendicular from $X$ to the directrix, and the reflection of $F$ across the tangent at $X$ is the foot of the perpendicular from $X$ to the directrix.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Equality of distances follows from @cor-7point1.
+
+By @lem-7point2, moving one focus of an ellipse to a point at infinity $F_\infty$ turns the ellipse into a parabola.
+
+The reflection of $XF$ across the tangent then becomes $XF_\infty$, which is the line through $X$ perpendicular to the directrix.
+
+The last statement follows from the first two.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **vertex** of a parabola is the unique finite intersection of the parabola with the line through the focus perpendicular to the directrix.
+:::
+
+::: {#lem-7point7}
+The feet of the perpendiculars from the focus of a parabola to all tangent lines lie on the tangent line at the vertex.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-7point6, this follows by a homothety centered at the focus with ratio $0.5$.
+:::
+
+::: {#lem-7point8}
+For two points $X,Y$ on a parabola, the midpoint of the feet of the perpendiculars from $X$ and $Y$ to the directrix is the foot of the perpendicular from the intersection of their tangents to the directrix.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the tangents at $X$ and $Y$ intersect at $M$, and let $P,Q$ be the feet of the perpendiculars from $X,Y$ to the directrix.
+
+By @lem-7point6, $P$ and $Q$ are the reflections of the focus $F$ across the two tangents.
+
+Thus $MP=MQ=MF$, so $M$ lies on the perpendicular bisector of $PQ$.
+:::
+
+::: {#cor-7point5}
+For two points $X,Y$ on a parabola whose tangents intersect at $M$, the line $MM_{XY}$ is perpendicular to the directrix.
+:::
+
+::: {#lem-7point9}
+For any point $M$ on the directrix of a parabola, the two tangents from $M$ to the parabola are perpendicular, and the chord of tangency passes through the focus.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the points of tangency be $X$ and $Y$, and let $P$ and $Q$ be the reflections of the focus $F$ across the tangents at $X$ and $Y$, respectively.
+
+By @lem-7point6, $P$ is the foot of the perpendicular from $X$ to the directrix, so $\angle XFM=\angle XPM=90^\circ$.
+
+Similarly $\angle YFM=90^\circ$, so $X,F,Y$ are collinear.
+
+Since $\angle XMY=\angle XMF+\angle YMF=\angle XMP+\angle YMQ=180^\circ-\angle XMY$, we have $\angle XMY=90^\circ$, so $MX\perp MY$.
+:::
+
+::: {#cor-7point6}
+If the chord $XY$ of a parabola passes through the focus, then the circle with diameter $XY$ is tangent to the directrix; the foot of the perpendicular from $M_{XY}$ to the directrix is the intersection $M$ of the tangents at $X$ and $Y$, and the midpoint of $M_{XY}M$ lies on the parabola.
+:::
+
+::: {#lem-7point10}
+The feet of the perpendiculars from a point $P$ to the three sidelines of $\triangle ABC$ are collinear if and only if $P$ lies on $(ABC)$ or $P$ is a point at infinity.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If $P$ is a point at infinity this is clear, and if $P$ lies on $(ABC)$ it follows from @lem-1point2.
+
+If $P$ is in neither case, consider the pedal circle of $P$ and its isogonal conjugate.
+
+There are six points lying on a generalized circle, yet three of them lie on distinct sidelines of $\triangle ABC$ and cannot be collinear.
+:::
+
+::: {#lem-7point11}
+Given three tangents to a parabola, the circumcircle of the triangle they form passes through the focus, and its orthocenter lies on the directrix.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-7point7, the feet of the perpendiculars from the focus to the three tangents are collinear, so by @lem-7point10 the focus lies on the circumcircle.
+
+By @lem-7point6, the reflections of the focus across the three sidelines all lie on the directrix.
+
+Finally, by @lem-1point8, since the focus lies on the circumcircle, the directrix is the Steiner line and therefore passes through the orthocenter.
+:::
+
+::: {#cor-7point7}
+Given a point $P$ on $(ABC)$, the parabola with focus $P$ and directrix equal to the Steiner line of $P$ is tangent to all three sidelines of $\triangle ABC$. Consequently, the isogonal conjugate $P'$ of $P$ is the point at infinity in the direction perpendicular to the Steiner line of $P$.
+:::
+
+::: {#cor-7point8}
+Given a complete quadrilateral formed by four lines, there exists a unique parabola tangent to all four lines; its focus is the Miquel point and its directrix is the Steiner line.
+:::
