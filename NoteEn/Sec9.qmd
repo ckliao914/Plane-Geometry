@@ -1,1 +1,244 @@
 
+## Feet of the Contact Triangle
+
+::: {#lem-9point1}
+Let the incircle $\omega$ touch $BC,CA,AB$ at $D,E,F$, respectively. Then $DI$, $EF$, and $AM_{BC}$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $X=AM_{BC}\cap EF$, $X'=DI\cap EF$, and $Y=A\infty_{BC}\cap EF$.
+
+By @cor-6point3, $-1=(B,C;M_{BC},\infty_{BC})\stackrel{A}{=}(F,E;X,Y)$.
+
+By @cor-8point3, $\mathcal{P}_{\omega}(X')=\mathcal{P}_{\omega}(DI)\cap\mathcal{P}_{\omega}(EF)=\infty_{BC}A$, so $Y$ lies on the polar of $X'$.
+
+By @lem-8point10, $(F,E;X',Y)=-1$, hence $X'=X$.
+:::
+
+::: {#lem-9point2}
+Let the incircle touch $BC,CA,AB$ at $D,E,F$, respectively. Then the inverse of the circumcircle with respect to the incircle is the nine-point circle of $\triangle DEF$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The polar of $A$ with respect to the incircle is $EF$, so $A^*=M_{EF}$; analogously for the other vertices, giving the nine-point circle of $\triangle DEF$.
+:::
+
+::: {#lem-9point3}
+Let the incircle touch $BC,CA,AB$ at $D,E,F$, respectively. Then the Euler line of $\triangle DEF$ is $OI$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-9point2, the nine-point center of $\triangle DEF$ is collinear with $O$ and $I$.
+
+Also, the Euler line of $\triangle DEF$ passes through the nine-point center of $\triangle DEF$ and the circumcenter of $\triangle DEF$ (which is $I$).
+:::
+
+::: {#lem-9point4}
+Let the incircle touch $BC,CA,AB$ at $D,E,F$, respectively. Let $P$ be the foot of the perpendicular from $D$ to $EF$, and let $A'$ be the reflection of $A$ across $O$. Then $P,I,A'$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The points $A,I,E,F$ are concyclic; letting $S$ be the second intersection of $AI$ with $(ABC)$, $S,I,A'$ are collinear.
+
+By @lem-9point2, the inverse of $S$ with respect to the incircle is the second intersection of the nine-point circle of $\triangle DEF$ with $EF$ (other than $M_{EF}$), which is the foot $P$ of the perpendicular from $D$ to $EF$; hence $P,S,I,A'$ are collinear.
+:::
+
+::: {#lem-9point5}
+Let $A,B,C,D$ lie on a conic $\mathcal{C}$, let the tangents at $A$ and $B$ intersect at $T_{AB}$, and define $T_{BC},T_{CD},T_{DA}$ analogously. Then $AC$, $BD$, $T_{AB}T_{CD}$, and $T_{BC}T_{DA}$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X=AC\cap BD$. The pole of $T_{AB}T_{CD}$ with respect to $\mathcal{C}$ is $AB\cap CD$.
+
+By @thm-8point4, the polar of $X$ passes through $AB\cap CD$, and concurrency follows analogously.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $WXYZ$ is a cyclic quadrilateral, lines $WX$ and $YZ$ are called **antiparallel** with respect to $WZ$ and $XY$. Unless stated otherwise, a line $\ell$ being **antiparallel** to $BC$ means with respect to $AC$ and $AB$.
+:::
+
+::: {#cor-9point1}
+If $\ell$ is antiparallel to $BC$, then $\ell$ is parallel to the tangent to $(ABC)$ at $A$.
+:::
+
+::: {#lem-9point6}
+Using the notation of @lem-9point4, $\measuredangle ABP=\measuredangle PCA$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $DP$ meet the incircle again at $R$.
+
+Then the tangent to the incircle at $R$ is antiparallel to $BC$; let it intersect $AB$ and $AC$ at $X$ and $Y$, respectively.
+
+By @lem-9point5, $XC$, $YB$, $EF$, and $RD$ concur at $P$, so concyclicity yields the angle relation.
+:::
+
+::: {#cor-9point2}
+Using the notation of @lem-9point4, the isogonal conjugate of $P$ lies on the perpendicular bisector of $BC$.
+:::
+
+::: {#lem-9point7}
+Using the notation of @lem-9point4, let $S$ be the second intersection of $AI$ with $(ABC)$, and let $L$ be the second intersection of $AP$ with $(ABC)$. Then $(B,C;L,S)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X=AS\cap EF$. By @lem-9point4, $(B,C;L,S)\stackrel{A}{=}(F,E;P,X)\stackrel{S}{=}(F,E;I,A)=-1$.
+:::
+
+::: {#lem-9point8}
+Using the notation of @lem-9point7, let $N$ be the midpoint of the arc $BC$ of $(ABC)$ not containing $A$. Then $NI$, $BC$, and $AP$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $U=IN\cap BC$, and let the tangent to $(IBC)$ at $I$ intersect $BC$ at $V$.
+
+From the proof of @lem-5point24, $IN$ is the $I$-symmedian of $\triangle BIC$, so $(B,C;U,V)=-1$.
+
+By @lem-9point7, $(B,C;L,S)=-1=A(B,C;U,V)$.
+
+By @lem-2point12, $A,S,V$ are collinear, so $A,U,L,P$ are collinear.
+:::
+
+::: {#lem-9point9}
+Using the notation of @lem-9point4 and @lem-9point7, $DL$ passes through the midpoint of the arc $BC$ not containing $A$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$ of $(ABC)$, respectively, and let $L'$ be the second intersection of $DN$ with $(ABC)$. By @lem-2point10, $M,S,D$ are collinear.
+
+Projecting from $D$ to the second intersections with $(ABC)$ gives $-1=(B,C;M,N)=(C,B;S,L')$.
+
+By @lem-9point7, $(C,B;S,L)$ is also harmonic, so $L=L'$.
+:::
+
+::: {#cor-9point3}
+Using the notation of @lem-9point9, $\measuredangle AID=\measuredangle ALD$, so $A,I,L,D$ are concyclic.
+:::
+
+::: {#lem-9point10}
+Let a conic $\mathcal{C}$ touch $BC,CA,AB$ at $X,Y,Z$, respectively. Then $(YZ\cap BC,X;B,C)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $AX$ meet $\mathcal{C}$ again at $W$. Applying a polar transformation with respect to $\mathcal{C}$ gives $(YZ\cap BC,X;B,C)=X(A,B;Z,Y)=(W,X;Z,Y)_{\mathcal{C}}$.
+
+By @lem-8point9, this cross ratio equals $-1$.
+:::
+
+::: {#lem-9point11}
+Let the $A$-mixtilinear incircle touch $AC$, $AB$, and $(ABC)$ at $E'$, $F'$, and $T$, respectively, and let $(AE'F')$ intersect $(ABC)$ again at $Q$. Then $(B,C;T,Q)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Invert about $A$; the $A$-excircle $\omega$ of $\triangle AB^*C^*$ touches $B^*C^*$ at $T^*$.
+
+Let $Q^*$ be the intersection of $B^*C^*$ with the line joining the points of tangency of $\omega$ with $AB^*$ and $AC^*$.
+
+By @lem-9point10, $-1=(B^*,C^*;T^*,Q^*)=(B,C;T,Q)$.
+:::
+
+::: {#lem-9point12}
+Using the notation of @lem-9point4, @lem-9point7, and @lem-9point11, let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$ of $(ABC)$, let $J$ be the reflection of $A$ across $MN$, and let $Z$ be the second intersection of $AD$ with $(AI)$. Then $NS$, $ML$, $EF$, $BC$, $JQ$, and $IZ$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the orthocenter $W$ of $\triangle NMD$, and set $Y=M_{BC}$.
+
+By @lem-9point9 and @lem-2point10, $NS$, $ML$, and $BC$ concur at $W$.
+
+From the orthocenter and power of a point, $YB\cdot YC=YM\cdot YN=YD\cdot YW$.
+
+By @lem-6point5, $(W,D;B,C)=-1$.
+
+By @lem-9point10, $W,E,F$ are collinear.
+
+By @lem-5point8, $J,D,T$ are collinear.
+
+From $-1=J(Q,T;B,C)$, projecting onto $BC$ shows that $JT$ passes through $W$.
+
+Collinearity of $I,W,Z$ is equivalent to $IW\perp AD$, which follows since the pole of $AD$ with respect to the incircle is $BC\cap EF=W$.
+:::
+
+::: {#cor-9point4}
+Using the notation of @lem-9point4 and @lem-9point12, if $W=EF\cap BC$, then $P,L,S,Z$ all lie on $(WD)$, which is the $P$-Apollonius circle of $\triangle BPC$; hence both $EF$ and $PD$ bisect $\angle BPC$.
+:::
+
+::: {#lem-9point13}
+Using the notation of @lem-9point4 and @lem-9point12, the intersection $QD\cap AM_{BC}$ lies on $(ABC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X$ be the second intersection of $AM_{BC}$ with $(ABC)$, so $-1=(J,X;B,C)$.
+
+By @lem-5point8, $J,D,T$ are collinear.
+
+Projecting from $D$ to the second intersections with $(ABC)$ gives $(T,Q';C,B)=-1$.
+
+By @lem-9point11, $Q,X,D$ are collinear.
+:::
+
+::: {#lem-9point14}
+Using the notation of @lem-9point7 and @lem-9point11, $AL$, $BE'$, and $CF'$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $U=AL\cap BC$ and $V=E'F'\cap BC$; by @lem-6point2, this is equivalent to showing $(V,U;B,C)=-1$.
+
+This follows from @lem-5point6 and the proof of @lem-9point8.
+:::
+
+::: {#lem-9point15}
+Using the notation of @lem-9point11 and @lem-9point12, $MT$, $NQ$, $E'F'$, $AS$, and $BC$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-2point12, @lem-5point6, and @lem-5point17, $MT$, $E'F'$, $AS$, and $BC$ concur at $V$.
+
+Projecting the harmonic quadrilateral $MBNC$ from $V$ to the second intersections with $(ABC)$ gives $TCQ'B$.
+
+By @lem-9point11, $Q'=Q$, so all five lines concur.
+:::
+
+::: {#cor-9point5}
+Using the notation of @lem-9point8 and @lem-9point15, $NT$, $BC$, $AP$, and $MQ$ are concurrent.
+:::
+
+::: {#cor-9point6}
+Using the notation of @lem-9point4, @lem-9point7, and @lem-9point11, if $V=E'F'\cap BC$ and $R$ is the second intersection of $DP$ with the incircle, then $D,T,S,R$ lie on $(IV)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The orthocenter of the contact triangle is denoted $X(65)$.
+:::
+
+::: {#cor-9point7}
+$X(65)$ lies on the Euler line $OI$ of the contact triangle $\triangle DEF$.
+:::
+
+::: {#lem-9point16}
+Let $\triangle DEF$ be the contact triangle, and suppose the $A$-mixtilinear incircle touches $(ABC)$ at $T$. Then the inverse of $T$ with respect to the incircle is the midpoint of $DX(65)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-9point2, $T^*$ lies on the nine-point circle of the contact triangle.
+
+By @cor-9point6, $T^*$ lies on the line through $D$ perpendicular to $EF$, so $T^*$ is the midpoint of the orthocenter of $\triangle DEF$ and $D$.
+:::
