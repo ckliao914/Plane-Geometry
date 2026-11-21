@@ -45,7 +45,7 @@ Hence $f$ preserves collinearity and cross ratio, establishing existence.
 :::
 
 ::: {#cor-21point2}
-If $\phi_1$ and $\phi_2$ are two isogonal transformations on $\triangle ABC$, then $f=\phi_1\circ\phi_2$ is a projective transformation with $f(A)=A$, $f(B)=B$, and $f(C)=C$ (since lines map to circumconics and then to lines, $f$ preserves lines and cross ratios).
+If $\phi_1$ and $\phi_2$ are two isoconjugates on $\triangle ABC$, then $f=\phi_1\circ\phi_2$ is a projective transformation with $f(A)=A$, $f(B)=B$, and $f(C)=C$ (since lines map to circumconics and then to lines, $f$ preserves lines and cross ratios).
 :::
 
 ::: {.unnumbered-env}
@@ -83,7 +83,7 @@ Let $\ell$ be the trilinear polar of $P$, and let $X'$ be the $P$-complement of 
 :::
 
 ::: {#lem-21point2}
-Let $\phi$ be an isogonal transformation such that $\phi(P)=P$. Then the crosspoint of $P$ and $X$ is the $P$-complement of $\phi(X)$.
+Let $\phi$ be an isoconjugate such that $\phi(P)=P$. Then the crosspoint of $P$ and $X$ is the $P$-complement of $\phi(X)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -168,7 +168,7 @@ Hence $Y$ is the isotomic conjugate of the complement of $X$.
 :::
 
 ::: {#cor-21point8}
-Let $\phi$ be an isogonal transformation such that $\phi(P)=P$, and let $X'$ be the $P$-complement of $X$. Then the cevapoint of $P$ and $X$ is $\phi(X')$ (by applying a projective transformation to @lem-21point6).
+Let $\phi$ be an isoconjugate such that $\phi(P)=P$, and let $X'$ be the $P$-complement of $X$. Then the cevapoint of $P$ and $X$ is $\phi(X')$ (by applying a projective transformation to @lem-21point6).
 :::
 
 ::: {#lem-21point7}
