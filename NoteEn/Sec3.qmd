@@ -167,4 +167,170 @@ The $A$-Humpty point lies on $(AH)$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Using the notation of @lem-3point
+Using the notation of @lem-3point5 and @lem-3point8, @lem-3point10 gives $\triangle ASO\stackrel{-}{\sim}\triangle ATH$.
+
+Therefore, $\measuredangle ATH=\measuredangle OSA=90^\circ$ (or equivalently, $\measuredangle ASH=\measuredangle ATO=90^\circ$).
+:::
+
+::: {#lem-3point12}
+Let $B_{\perp AC}=E$ and $C_{\perp AB}=F$. Then $M_{BC}E$, $M_{BC}F$, and the line through $A$ parallel to $BC$ are all tangent to $(AH)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since $A,H,E,F$ and $B,C,E,F$ are concyclic, the result follows immediately by angle chasing.
+:::
+
+::: {#lem-3point13}
+Using the notation of @lem-3point8 and @lem-3point12, $AESF$ is a harmonic quadrilateral.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from @lem-3point3, @lem-3point7, and @lem-3point12.
+:::
+
+::: {#lem-3point14}
+Let $(AH)$ intersect $(ABC)$ again at $N$. Using the notation of @lem-3point8 and @lem-3point12, the lines $AN, HS, EF, BC$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Considering the radical center of $(AH)$, $(ABC)$, and $(BC)$ together with the radical center of $(AH)$, $(HBC)$, and $(ABC)$ shows that all four lines pass through a common point.
+:::
+
+::: {#cor-3point6}
+Using the notation of @lem-3point14, the orthocenter of $\triangle AHM_{BC}$ is $EF\cap BC$.
+:::
+
+::: {#cor-3point7}
+Let $S_A$ and $T_A$ be the $A$-Humpty and $A$-Dumpty points, and define $S_B,S_C,T_B,T_C$ analogously. Then $S_A,S_B,S_C$ all lie on $(HG)$, and $T_A,T_B,T_C$ all lie on $(OK)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If a point $P$ satisfies $\measuredangle PAB=\measuredangle PBC=\measuredangle PCA=\omega$, then $P$ is called the **first Brocard point**, its isogonal conjugate is called the **second Brocard point**, and $\omega$ is called the **Brocard angle**.
+:::
+
+::: {#cor-3point8}
+Let $Br$ and $Br'$ denote the first and second Brocard points, respectively. Then $(BrAC)$ is tangent to $AB$, and $(Br'AB)$ is tangent to $AC$.
+:::
+
+::: {#lem-3point15}
+Using the notation of @cor-3point8, $Br$ and $Br'$ lie on $(OK)$, and $OK$ is the perpendicular bisector of $BrBr'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @cor-3point7, @lem-3point5 implies that $A,C,T_A,Br$ and $A,B,T_A,Br'$ are concyclic.
+
+Thus
+$$
+\measuredangle BrT_AA=\measuredangle BrCA=\omega=\measuredangle AT_ABr',
+$$
+so
+$$
+\measuredangle BrT_ABr'=2\omega=\measuredangle BrT_BBr'=\measuredangle BrT_CBr'.
+$$
+By @cor-3point7, $Br,Br',T_A,T_B,T_C$ all lie on $(OK)$.
+
+Furthermore, $\measuredangle BrT_AK=\measuredangle BrT_AA=\omega=\measuredangle KT_ABr'$, so arcs $KBr$ and $KBr'$ on $(OK)$ are equal.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The line $OK$ is called the **Brocard axis**, and the circle $(OK)$ is called the **Brocard circle**.
+:::
+
+::: {#lem-3point16}
+Using the notation of @lem-3point15, the intersections $BBr\cap CBr'$, $CBr\cap ABr'$, and $ABr\cap BBr'$ (which lie on the perpendicular bisectors of $BC,CA,AB$, respectively) all lie on the Brocard circle, and the triangle they form is oppositely similar to $\triangle ABC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P=BBr\cap CBr'$.
+
+By @lem-3point15, a point $X$ lies on $(OK)$ if and only if $\measuredangle BrXBr'=2\omega$.
+
+Hence $P$ lies on $(OK)$, and $OP\perp BC$.
+
+It follows that $KP\parallel BC$, and the opposite similarity is immediate by angle chasing.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The triangle in @lem-3point16 is called the **first Brocard triangle**.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The triangle formed by the feet of the perpendiculars from $P$ to the sidelines of $\triangle ABC$ is called the **pedal triangle** of $P$, and its circumcircle is called the **pedal circle** of $P$.
+:::
+
+::: {#thm-3point2}
+## Reim's Theorem
+Let circles $\omega$ and $\Omega$ intersect at $A$ and $B$. Let lines $\ell_A$ and $\ell_B$ pass through $A$ and $B$, respectively, with $\ell_A$ intersecting $\omega$ and $\Omega$ again at $P$ and $P'$, and $\ell_B$ intersecting $\omega$ and $\Omega$ again at $Q$ and $Q'$. Then $PQ\parallel P'Q'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately by angle chasing, or by considering the power of $\ell_A\cap\ell_B$.
+:::
+
+::: {#lem-3point17}
+If $\measuredangle XAB=\measuredangle CAY$, then the four feet $X_{\perp AB}$, $X_{\perp AC}$, $Y_{\perp AB}$, and $Y_{\perp AC}$ are concyclic.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X'$ be the reflection of $X$ across $AI$. By symmetry, the four feet from $X$ and $X'$ to $AB$ and $AC$ are concyclic.
+
+Since $A,X',Y$ are collinear, the segments joining the feet from $X'$ and $Y$ to $AB$ and $AC$ are parallel; the result then follows from @thm-3point2.
+:::
+
+::: {#lem-3point18}
+The pedal circles of two isogonal conjugates $P$ and $Q$ coincide, and their common center is $M_{PQ}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point17, we obtain three cyclic quadruples of pedal projections. If their circumcircles did not coincide, their pairwise radical axes $AB,BC,CA$ would be concurrent, a contradiction.
+
+Moreover, $M_{PQ}$ lies on the perpendicular bisector of $P_{\perp BC}Q_{\perp BC}$, and similarly for the other two sides, so $M_{PQ}$ is the center of this circle.
+:::
+
+::: {#lem-3point19}
+Let $P$ and $Q$ be isogonal conjugates. Then the circumcircle of the reflections of $P$ across the three sidelines of $\triangle ABC$ has center $Q$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying a homothety centered at $P$ with ratio $2$ to @lem-3point18 yields the result.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $A_\alpha$ lie on $BC$ such that $\measuredangle PA_\alpha B=\alpha$, and define $B_\alpha,C_\alpha$ analogously. Then $(A_\alpha B_\alpha C_\alpha)$ is called the **$\alpha$-pedal circle** of $P$.
+:::
+
+::: {#lem-3point20}
+If $P$ and $Q$ are isogonal conjugates, then the $\alpha$-pedal circle of $P$ coincides with the $(-\alpha)$-pedal circle of $Q$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows by the same concyclicity argument as in @lem-3point17 and @lem-3point18.
+:::
+
+::: {#lem-3point21}
+Suppose a circle $\Gamma$ intersects $BC$ at $A_1,A_2$, $CA$ at $B_1,B_2$, and $AB$ at $C_1,C_2$. Then the Miquel points $P$ and $Q$ associated with $\triangle A_1B_1C_1$ and $\triangle A_2B_2C_2$ in @lem-1point1 are isogonal conjugates.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By angle chasing, there exists an angle $\alpha$ such that $(A_1B_1C_1)$ is the $\alpha$-pedal circle of $P$.
+
+By @lem-3point20, $(A_1B_1C_1)$ is also the $(-\alpha)$-pedal circle of the isogonal conjugate $P'$ of $P$.
+
+Angle chasing then shows that $A,B_2,C_2,P'$ are concyclic, and similarly for the other vertices, so $P'=Q$.
+:::
