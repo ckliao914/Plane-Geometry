@@ -1,4 +1,4 @@
-## Cross Ratio on Conics and Polar Transformation
+## Cross Ratio and Polarity on Conics
 
 ::: {.unnumbered-env}
 **Definition.**
