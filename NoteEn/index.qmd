@@ -6,6 +6,52 @@ Since this was intended to be a note, I didn't give a title to each section unti
 
 The following translation is AI-generated.
 
+# Notations
+
+Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
+
+::: {.callout-note collapse="true" icon=false}
+## Notations throughout the note
+
+* Let $\ell_1\cap \ell_2$ denote the intersection of lines $\ell_1$ and $\ell_2$.
+
+* Let $(XYZ)$ denote the circumcircle of $XYZ$, and let $(XY)$ denote the circle of diameter $XY$.
+
+* Let $X_{\perp \ell}$ denote the foot of the perpendicular from $X$ to line $\ell$.
+
+* Let $M_{XY}$ denote the midpoint of $XY$.
+
+* We use $\measuredangle$ for directed angles.
+
+* The power of a point $X$ with respect to a circle $\omega$ is denoted by $\mathrm{Pow}_\omega(X)$.
+
+* Let $\ell_\infty$ denote the line at infinity.
+
+* Let $\infty_\ell$ denote the point of infinity on $\ell$, and let $\infty_{\perp \ell}$ denote the point at infinity in the direction perpendicular to $XY$.
+
+* Let $\mathbb{L}_X$ denote the pencil of lines through $X$.
+
+* The cross ratio of four points is denoted by $(X_1,X_2;X_3,X_4)$.
+
+* We use $\mathfrak{p}_{\mathcal{C}}$ for the polar transform.
+
+* Let $\mathcal{T}_\mathcal{C}$ denote the envelope of the conic $\mathcal{C}$.
+
+* Let $I$ denote the incenter of $ABC$, and let $I_A,I_B,I_C$ denote the $A,B,C$-excenters, respectively.
+
+* Let $O,H,G,N_9$ denote the circumcenter, orthocenter, centroid, and nine-point center of $ABC$, respectively.
+
+* Let $Ge,Na,Sp,Be$ denote the Gergonne point, Nagel point, Spieker center, and Bevan point of $ABC$, respectively.
+
+* Let $K,Br,Br'$ denote the symmedian point and the two Brocard points of $ABC$, respectively.
+
+* Let $\mathcal{H}_{Fe}$ denote the Feuerbach hyperbola, and let $Mt,Sc, Fe$ denote the Mittenpunkt, Schiffler point, and Feuerbach point of $ABC$, respectively.
+
+* Let $\mathcal{K}$ denote the Kiepert hyperbola, and let $K_\theta\in\mathcal{K}$ be the standard parametrization.
+
+* Let $\mathcal{H}_{Je}$ denote the Jerabek hyperbola, and let $Ko$ denote the Kosnita point of $ABC$.
+:::
+
 # Table of Contents {.unnumbered}
 
 * [Section 1: Angle Chasing and Radical Axes](Sec1.html)
