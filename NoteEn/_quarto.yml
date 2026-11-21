@@ -7,6 +7,26 @@ book:
   chapters:
     - index.qmd
     - Sec1.qmd
+    - Sec2.qmd
+    - Sec3.qmd
+    - Sec4.qmd
+    - Sec5.qmd
+    - Sec6.qmd
+    - Sec7.qmd
+    - Sec8.qmd
+    - Sec9.qmd
+    - Sec10.qmd
+    - Sec11.qmd
+    - Sec12.qmd
+    - Sec13.qmd
+    - Sec14.qmd
+    - Sec15.qmd
+    - Sec16.qmd
+    - Sec17.qmd
+    - Sec18.qmd
+    - Sec19.qmd
+    - Sec20.qmd
+    - Sec21.qmd
 
 # 這裡移到頂層，讓整本書啟用章節編號
 number-sections: true
