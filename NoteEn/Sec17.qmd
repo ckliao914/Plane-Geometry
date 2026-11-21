@@ -246,7 +246,7 @@ Thus $X(20)$, $X(64)$, $A_3$, and $B_3$ are collinear, so $X(20)$, $X(64)$, and 
 :::
 
 ::: {#lem-17point13}
-If $\phi$ is the isogonal transformation sending $K$ to $K$, then $\phi(O)=X(25)$.
+If $\phi$ is the isoconjugate transformation sending $K$ to $K$, then $\phi(O)=X(25)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -262,7 +262,7 @@ The line $KX(25)$ is the tangent to $\mathcal{H}_{Je}$ at $K$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $\phi$ be the isogonal transformation sending $K$ to $K$; by @lem-17point13, $\phi(O)=X(25)$.
+Let $\phi$ be the isoconjugate transformation sending $K$ to $K$; by @lem-17point13, $\phi(O)=X(25)$.
 
 By @lem-12point8, $K\phi(O)$ is tangent to $(ABCKO)$, so $KX(25)$ is tangent to $\mathcal{H}_{Je}$ at $K$.
 :::
