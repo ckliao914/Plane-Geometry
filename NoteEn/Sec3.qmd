@@ -1,0 +1,170 @@
+## Isogonal Conjugates and Humpty-Dumpty Points
+
+::: {#lem-3point1}
+## Trigonometric Ceva's Theorem
+In $\triangle ABC$, let $X,Y,Z$ lie on segments $BC,CA,AB$, respectively. Then $AX,BY,CZ$ are concurrent if and only if
+$$\frac{\sin\angle BAX\sin\angle CBY\sin\angle ACZ}{\sin\angle XAC\sin\angle YBA\sin\angle ZCB}=1$$
+(if $X,Y,Z$ do not all lie on the segments, the lines may instead be parallel or the points collinear).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows directly from Ceva's theorem and the Law of Sines.
+:::
+
+::: {#thm-3point1}
+Let $\ell_A$ be the reflection of $AP$ across $AI$, and define $\ell_B,\ell_C$ analogously. Then $\ell_A,\ell_B,\ell_C$ concur at a single point $Q$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately from @lem-3point1.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $Q$ in @thm-3point1 is called the **isogonal conjugate** of $P$.
+:::
+
+::: {#cor-3point1}
+The isogonal conjugate of $I$ is $I$ itself.
+:::
+
+::: {#cor-3point2}
+$O$ and $H$ are isogonal conjugates.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $G$ is the **symmedian point** (or **Lemoine point**) $X(6)$, denoted by $K$ unless otherwise stated. The line $AK$ is called the **$A$-symmedian**.
+:::
+
+::: {#lem-3point2}
+$A$, $K$, and the intersection of the tangents to $(ABC)$ at $B$ and $C$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A'$ be the reflection of $A$ across $M_{BC}$. Then the isogonal conjugate of $A'$ is the intersection $X$ of the tangents to $(ABC)$ at $B$ and $C$ (as can be seen by computing $\angle BCA'$ and $\angle CBA'$). Taking the isogonal conjugate of the median $AA'$ shows that $X$ lies on the $A$-symmedian.
+:::
+
+::: {#cor-3point3}
+$Ge$ is the symmedian point of the contact triangle.
+:::
+
+::: {#lem-3point3}
+If the $A$-symmedian intersects $(ABC)$ again at $D$, then $AB\cdot CD=AC\cdot BD$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the tangents to $(ABC)$ at $B$ and $C$ intersect at $X$. By @lem-3point2, $A,D,X$ are collinear.
+
+Since $\triangle XBD\stackrel{-}{\sim}\triangle XAB$ and $\triangle XCD\stackrel{-}{\sim}\triangle XAC$, we have
+$$\frac{AB}{BD}=\frac{XA}{XB}=\frac{XA}{XC}=\frac{AC}{CD}.$$
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A cyclic quadrilateral $PQRS$ satisfying $PQ\cdot RS=PS\cdot QR$ is called a **harmonic quadrilateral**.
+:::
+
+::: {#cor-3point4}
+In a harmonic quadrilateral $PQRS$, the intersection of the tangents to its circumcircle at $Q$ and $S$ is collinear with $P$ and $R$.
+:::
+
+::: {#lem-3point4}
+Using the notation of @lem-3point3, the center of spiral similarity sending $BA$ to $AC$ is $M_{AD}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since $M_{AD}$ lies on $(XO)$, we have
+$$\measuredangle M_{AD}BA=\measuredangle M_{AD}BC+\measuredangle CBA=\measuredangle M_{AD}XC+\measuredangle XCA=\measuredangle M_{AD}AC.$$
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $M_{AD}$ in @lem-3point4 is called the **$A$-Dumpty point**.
+:::
+
+::: {#lem-3point5}
+If $T$ is the $A$-Dumpty point, then $(ATC)$ is tangent to $AB$ and $(ATB)$ is tangent to $AC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the degenerate complete quadrilateral $(BA,AA,AC,CB)$; the result follows from @thm-1point2 and @cor-1point1.
+:::
+
+::: {#lem-3point6}
+Let $(P,P')$ and $(Q,Q')$ be pairs of isogonal conjugates. If $P,Q,B,C$ are concyclic, then $P',Q',B,C$ are also concyclic.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately by angle chasing.
+:::
+
+::: {#cor-3point5}
+If $P$ and $P'$ are isogonal conjugates, then the isogonal conjugate of $(BPC)$ is $(BP'C)$. In particular, the isogonal conjugate of the $A$-mixtilinear/incentral circle $(BIC)$ is itself.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of the $A$-Dumpty point is called the **$A$-Humpty point**.
+:::
+
+::: {#lem-3point7}
+The $A$-Humpty point lies on both $(BHC)$ and the $A$-median.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @cor-3point5, the isogonal conjugate of $(BOC)$ is $(BHC)$.
+
+Since the $A$-Dumpty point lies on $(BOC)$ and the $A$-symmedian, its isogonal conjugate—the $A$-Humpty point—lies on $(BHC)$ and the $A$-median.
+:::
+
+::: {#lem-3point8}
+If $S$ is the $A$-Humpty point, then $(ASC)$ and $(ASB)$ are both tangent to $BC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from @lem-3point5 and @lem-3point6 (and its limiting case).
+:::
+
+::: {#lem-3point9}
+Using the notation of @lem-3point3 and @lem-3point8, the reflection of $S$ across $BC$ is $D$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point7, $S$ lies on the $A$-median and $(HBC)$.
+
+By @lem-1point6, the reflection of $S$ across $M_{BC}$ lies on $(ABC)$, so it is the second intersection of the $A$-median with $(ABC)$.
+
+Consequently, the reflection of $S$ across $BC$ is the intersection $D$ of the $A$-symmedian with $(ABC)$.
+:::
+
+::: {#lem-3point10}
+Using the notation of @lem-3point6, if $B,C,P,Q$ are concyclic, then $\triangle APQ\stackrel{-}{\sim}\triangle AP'Q'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point6, $B,C,P',Q'$ are concyclic. Let $AP$ and $AP'$ intersect $(BCP)$ and $(BCP')$ again at $R$ and $R'$, respectively.
+
+By @cor-3point5, $R$ and $R'$ are isogonal conjugates. Angle chasing then gives
+$$\measuredangle APQ=\measuredangle RPQ=\measuredangle RBQ=\measuredangle Q'BR'=\measuredangle Q'P'R'=\measuredangle Q'P'A,$$
+and similarly $\measuredangle AQP=\measuredangle AQ'P'$, proving the opposite similarity.
+:::
+
+::: {#lem-3point11}
+The $A$-Humpty point lies on $(AH)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @lem-3point
