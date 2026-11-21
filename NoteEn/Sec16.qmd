@@ -1,1 +1,289 @@
 
+## Kiepert Hyperbola
+
+::: {.unnumbered-env}
+**Definition.**
+The **Kiepert hyperbola** is the isogonal conjugate locus of the line $OK$, namely $(ABCHG)$; when unspecified, it is denoted by $\mathcal{K}$.
+:::
+
+::: {#cor-16point1}
+The points $X(13)$ and $X(14)$ lie on the Kiepert hyperbola $\mathcal{K}$.
+:::
+
+::: {#cor-16point2}
+The isotomic conjugate of the Kiepert hyperbola is the line $GK$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Define $A_\theta$ as the point on the perpendicular bisector of $BC$ such that $\measuredangle BCA_\theta=\theta$ (where $\theta>0$ corresponds to constructing an outward isosceles triangle), and define $B_\theta$ and $C_\theta$ analogously.
+:::
+
+::: {#lem-16point1}
+For a fixed $\theta$, the lines $AA_\theta$, $BB_\theta$, and $CC_\theta$ concur at a point on $\mathcal{K}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A_\theta,B_\theta,C_\theta$ vary so that the chain
+$$
+BB_\theta\mapsto B_\theta\mapsto C_\theta\mapsto CC_\theta
+$$
+preserves cross ratio; then $X=BB_\theta\cap CC_\theta$ traces out a line or a conic section.
+
+When $\theta=0$, we have $B_\theta=M_{CA}$ and $C_\theta=M_{AB}$, so $X=G$.
+
+When $\theta=90^\circ$, we have $B_\theta=\infty_{\perp CA}$ and $C_\theta=\infty_{\perp AB}$, so $X=H$.
+
+When $\theta=-\angle A$, we have $B_\theta=OM_{CA}\cap AB$ and $C_\theta=OM_{AB}\cap AC$, so $X=A$.
+
+Thus the locus of $X$ is $(ABCHG)$; by symmetry, the three lines concur on the Kiepert hyperbola.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point of concurrence in @lem-16point1 is denoted by $K_\theta$; for example, $X(13)=K_{60^\circ}$ and $X(14)=K_{-60^\circ}\ (=K_{120^\circ})$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(115)$ is the center of the Kiepert hyperbola.
+:::
+
+::: {#lem-16point2}
+The midpoint of $X(13)X(14)$ is $X(115)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-4point15, $X(15)$ and $X(16)$ are inverses of each other with respect to the circumcircle.
+
+Hence by @lem-14point5, $X(14)$ is the antigonal conjugate of $X(13)$.
+:::
+
+::: {#lem-16point3}
+We have $(X(13),X(14);G,H)_{\mathcal{K}}=-1$ (so $(X(15),X(16);K,O)=-1$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Projecting $(X(13),X(14);G,H)_{\mathcal{K}}$ from $A$ onto the perpendicular bisector of $BC$ shows harmonicity.
+:::
+
+::: {#lem-16point4}
+The points $X(13)$, $X(14)$, and $K$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-11point9, the tangents to $\mathcal{K}$ at $G$ and $H$ intersect at $K$.
+
+Thus @lem-8point9 and @lem-16point3 imply that $X(13)$, $X(14)$, and $K$ are collinear.
+:::
+
+::: {#lem-16point5}
+The points $X(13)$, $X(14)$, $X(115)$, $K$, and $M_{GH}$ are collinear, and $(X(13),X(14);K,M_{GH})=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Take the polars of $X(115)$ and $K$ with respect to $\mathcal{K}$, which are $\ell_\infty$ and $GH$, respectively.
+
+By @lem-8point10, $\mathcal{P}_{\mathcal{K}}(M_{GH})$ passes through $\infty_{GH}$, so the three polars concur, meaning $X(115)$, $K$, and $M_{GH}$ are collinear.
+
+By @lem-16point3,
+$$
+-1=G(X(13),X(14);G,H)_{\mathcal{K}}=(X(13),X(14);K,M_{GH}).
+$$
+:::
+
+::: {#lem-16point6}
+The line $GH$ is tangent to $(HX(13)X(14))$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-14point6, $\measuredangle GX(13)H=\measuredangle HX(14)G$.
+
+Let $P$ be the reflection of $X(14)$ across $M_{GH}$; then $G,H,X(13),P$ are concyclic.
+
+Since $X(13),X(14)$ pass through $M_{GH}$, power of a point from $M_{GH}$ shows that $GH$ is tangent to $(HX(13)X(14))$.
+:::
+
+::: {#cor-16point3 .callout-note title="Lester circle"}
+The points $X(13)$, $X(14)$, $O$, and $N_9$ are concyclic (by power of a point from $M_{GH}$).
+:::
+
+::: {#lem-16point7}
+We have $X(13)X(16)\cap X(14)X(15)=G$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The pairs $X(13),X(15)$ and $X(14),X(16)$ are two pairs of isogonal conjugates.
+
+By @lem-4point18 and @lem-16point4, $X(13)X(14)\cap X(15)X(16)=K$.
+
+Hence by @thm-12point4, $X(13)X(16)\cap X(14)X(15)$ is the isogonal conjugate $G$ of $K$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(30)=\infty_{OH}$ is the point at infinity on the Euler line.
+:::
+
+::: {#lem-16point8}
+We have $X(13)X(15)\cap X(14)X(16)=X(30)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $L=M_{GH}$; then $G$ is the midpoint of $LO$, so $(X(30),G;O,L)=-1$.
+
+By @lem-16point7,
+$$
+-1=(X(13),X(14);K,L)\stackrel{X(15)}{=}(X(15)X(13)\cap OG,G;O,L).
+$$
+Hence $X(13)X(15)$ passes through $X(30)$, and likewise for $X(14)X(16)$.
+:::
+
+::: {#lem-16point9}
+We have $(I,X(36);X(56),O)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Projecting from the midpoint of the lower arc $BC$ onto the perpendicular from $I$ to $BC$, harmonicity follows from @cor-2point8 and @lem-15point11.
+:::
+
+::: {#lem-16point10}
+The line $FeX(36)$ passes through $X(30)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-16point9,
+$$
+2=(I,O;X(36),X(56))=\dfrac{IX(36)/OX(36)}{IX(56)/OX(56)}.
+$$
+Let $R$ and $r$ be the circumradius and inradius; then
+$$
+\dfrac{r}{R}=\dfrac{IX(36)}{OX(36)}=\dfrac{2IX(56)}{OX(56)}=\dfrac{r}{0.5R}=\dfrac{IFe}{N_9Fe}.
+$$
+Thus $FeX(36)\parallel ON_9$, so $FeX(36)$ passes through $X(30)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The points $K_{30^\circ}=X(17)$ and $K_{-30^\circ}=X(18)$ are the **Napoleon points**. The points $X(61)$ and $X(62)$ are the isogonal conjugates of $X(17)$ and $X(18)$, respectively.
+:::
+
+::: {#cor-16point4}
+The lines $X(13)X(14)$, $X(15)X(16)$, and $X(17)X(18)$ concur at $K$ (by the same method as @lem-16point4).
+:::
+
+::: {#lem-16point11}
+The lines $AA_{\angle A-\theta}$ and $AA_\theta$ are isogonal lines.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The map $f:AA_{\angle A-\theta}\mapsto AA_\theta$ is an involution. Since $f(AM_{BC})=AK$ and $f(AO)=AH$, $f$ is an isogonal transformation.
+:::
+
+::: {#lem-16point12}
+The line $K_\alpha K_\beta$ passes through the isogonal conjugate of $K_{-\alpha-\beta}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix $\alpha+\beta=\theta$; then $f:K_\alpha\mapsto K_\beta$ is an involution, so by @lem-12point3, $K_\alpha K_\beta$ passes through a fixed point $X$.
+
+Since $A=K_{-\angle A}$, we have $f(A)=K_{\theta+\angle A}$, and $Af(A)$ passes through $X$.
+
+By @lem-16point11, the isogonal line of $Af(A)$ is $AA_{-\theta}$; similarly, the isogonal line of $Bf(B)$ is $BB_{-\theta}$, which also passes through $X$.
+
+Thus the isogonal conjugate of $X$ is $K_{-\theta}$, so $K_\alpha K_\beta$ passes through the isogonal conjugate of $K_{-\alpha-\beta}$.
+:::
+
+::: {#cor-16point5}
+The point $X(17)X(13)\cap X(18)X(14)$ is the isogonal conjugate of $K_{90^\circ}$, namely $O$.
+:::
+
+::: {#cor-16point6}
+We have $X(15)X(17)\cap X(16)X(18)=H$ and $X(17)X(62)\cap X(18)X(61)=G$.
+:::
+
+::: {#cor-16point7}
+The point $X(15)$ is the crosspoint of $X(13)$ and $X(18)$, and $X(16)$ is the crosspoint of $X(14)$ and $X(17)$.
+:::
+
+::: {#lem-16point13}
+The six points $X(13)$, $X(14)$, $X(15)$, $X(16)$, $X(17)$, and $X(18)$ lie on a conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Apply Pascal's theorem to the hexagon $X(15)X(17)X(13)X(16)X(18)X(14)$.
+
+By @lem-16point7, @cor-16point5, and @cor-16point6, since $H,O,G$ are collinear, the six points lie on a conic section.
+:::
+
+::: {#lem-16point14}
+The points $N_9,X(13),X(18),X(62)$ are collinear, and the points $N_9,X(14),X(17),X(61)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-8point10 and @lem-11point9, $O,N_9,K$ are self-polar with respect to $\mathcal{K}$.
+
+Applying Brocard's theorem to $X(13)X(18)X(14)X(17)$, @cor-16point4 and @cor-16point5 yield
+$$
+X(13)X(18)\cap X(14)X(17)=N_9;
+$$
+combining this with @lem-16point12 gives the two collinearities.
+:::
+
+::: {#cor-16point8}
+The line $K_\theta K_{90^\circ+\theta}$ passes through $N_9$ (since an involution passes through a fixed point, by @lem-16point14).
+:::
+
+::: {#lem-16point15}
+Let $I'$ be the reflection of $I$ across $M_{BC}$. Then the midpoint of $AI'$ is $Sp$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+A homothety centered at $A$ with ratio $2$ maps $\triangle M_{AB}M_{AC}Sp$ to $\triangle BCI'$.
+:::
+
+::: {#lem-16point16}
+The point $Sp$ lies on $\mathcal{K}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider points $P,Q$ on $BC$ such that $AP\parallel IB$ and $AQ\parallel IC$, and let $I'$ be the reflection of $I$ across $M_{BC}$.
+
+Then $\triangle APQ$ and $\triangle IBC$ are homothetic from $AI\cap BC$, so $AI\cap BC$ is the external center of similitude of the circles on diameters $PQ$ and $BC$.
+
+Since $BP=BA$ and $CQ=CA$, the midpoint of $PQ$ is the foot of $I'$ on $BC$ (the excircle tangency point).
+
+Note that the two centers and the internal and external centers of similitude of the two circles form a harmonic range; let $X$ be the internal center of similitude.
+
+Then
+$$
+-1=(I'_{\perp BC},M_{BC};X,AI\cap BC)\stackrel{A}{=}(Na,G;AX\cap IG,I),
+$$
+and length relations show that $AX\cap IG=Sp$.
+
+Consider the homothety centered at $X$ mapping the circle on $PQ$ to the circle on $CB$, and let it send $I'$ to $J$; then $J,I',X$ are collinear.
+
+Since $A,Sp,X$ are collinear, @lem-16point15 implies that $A,Sp,I',J,X$ are collinear.
+
+Since $PQI'$ is isosceles, $J$ lies on the perpendicular bisector of $BC$ and satisfies that $A,Sp,J$ are collinear.
+
+Thus $\triangle JBC$ is similar to the isosceles triangle whose base is the perimeter of $\triangle ABC$ and whose height is the inradius.
+
+Similarly, $BSp$ meets the perpendicular bisector of $AC$ at $J'$, giving $\triangle JBC\sim\triangle J'CA$, so $Sp\in\mathcal{K}$ by @lem-16point1.
+:::
