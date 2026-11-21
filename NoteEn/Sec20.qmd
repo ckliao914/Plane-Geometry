@@ -1,1 +1,226 @@
+## Variants of Fonténé's Theorem and Characterization of the Cyclocevian Conjugate
 
+::: {#lem-20point1}
+Let $P_AP_BP_C$ and $Q_AQ_BQ_C$ be the anticevian triangles of $P$ and $Q$, respectively. Then $P,P_A,P_B,P_C,Q,Q_A,Q_B,Q_C$ lie on a conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\mathcal{C}=(PP_AP_BP_CQ)$; then $\triangle ABC$ is self-polar with respect to $\mathcal{C}$ (Brocard's theorem).
+
+Note that $(A,AQ\cap BC;Q,Q_A)=-1$ (@lem-6point3). Since $A$ and $AQ\cap BC$ are conjugate with respect to $\mathcal{C}$, @lem-8point10 and $Q\in\mathcal{C}$ imply that $Q_A$ also lies on $\mathcal{C}$. By symmetry, all eight points lie on the conic $\mathcal{C}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The pole of the line $PQ$ with respect to the eight-point conic in @lem-20point1 is called the **cevapoint** of $P$ and $Q$.
+:::
+
+::: {#lem-20point2}
+The point $G$ is the cevapoint of $O$ and $K$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\triangle UVW$ be the anticevian triangle of $K$, so that $(ABC)$ is tangent to the three sidelines of $\triangle UVW$, and set $\mathcal{C}=(KUVWO)$.
+
+By @thm-11point1, $\mathcal{P}_{\mathcal{C}}(KO)$ passes through $A$ and $UO\cap BC$ (viewing crosspoints with $\triangle UVW$ as reference triangle).
+
+Since $UO\cap BC=M_{BC}$, symmetry shows that the cevapoint of $K$ and $O$ is the centroid $G$.
+:::
+
+::: {#cor-20point1}
+The cevapoint of $I$ and $X(40)$ is $Na$ (since the anticevian triangle of $I$ is the excentral triangle, by the same argument as in @lem-20point2).
+:::
+
+::: {#lem-20point3}
+The three sidelines of the cevian triangle of $P$, the three sidelines of the cevian triangle of $Q$, and the trilinear polars of $P$ and $Q$ (eight lines in total) are all tangent to a single conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This is the dual statement of @lem-20point1.
+:::
+
+::: {#lem-20point4}
+The three sidelines of the cevian triangle of $P$ and the three sidelines of the medial triangle are all tangent to a single parabola.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Setting $Q=G$ in @lem-20point3 shows that the three sidelines of the cevian triangle of $P$ and the three sidelines of the medial triangle are tangent to a conic $\mathcal{C}$.
+
+Since $\ell_\infty$ (the trilinear polar of $G$) is also tangent to $\mathcal{C}$, the center of $\mathcal{C}$ lies on $\ell_\infty$, so $\mathcal{C}$ is a parabola.
+:::
+
+::: {#cor-20point2}
+For any three lines chosen from the six lines consisting of the three sidelines of the cevian triangle of $P$ and the three sidelines of the medial triangle (or together with the trilinear polar of $P$), the circumcircle of the triangle they form passes through the focus of the parabola tangent to the six lines (@lem-7point11).
+:::
+
+::: {#thm-20point1}
+Let $DEF$ be the cevian triangle of $P$ and $\triangle A'B'C'$ be the medial triangle. Let $(DEF)$ meet $BC,CA,AB$ again at $D',E',F'$, and set $X=EF\cap B'C'$, with $Y$ and $Z$ defined analogously. Then $D'X$, $E'Y$, $F'Z$, $(DEF)$, and $(A'B'C')$ concur at a single point.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the Miquel point $M$ of the complete quadrilateral formed by $DE,EF,FD,B'C'$, and set $L=DE\cap B'C'$.
+
+By @cor-20point2, $M$ lies on both the nine-point circle and $(DEF)$, and $M,E,L,X$ are concyclic.
+
+Thus
+$$
+\measuredangle MD'D=\measuredangle MED=\measuredangle MEL=\measuredangle MXL=\measuredangle(MX,D'D),
+$$
+so $M,D',X$ are collinear.
+
+By symmetry, $D'X$, $E'Y$, $F'Z$, $(DEF)$, and $(A'B'C')$ all concur at $M$.
+:::
+
+::: {#lem-20point5}
+With the notation of @thm-20point1, let $\ell$ be the trilinear polar of $P$, meeting the sidelines of $\triangle ABC$ at $U,V,W$, and set $R=B'C'\cap\ell$. Then $(XUR)$ passes through $A_{\perp BC}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have
+$$
+-1=(W,F;A,B)\stackrel{U}{=}(R,X;UA\cap B'C',\infty_{B'C'}),
+$$
+so $UA$ passes through the midpoint $M_{RX}$ of $RX$, which lies on $B'C'$.
+
+Hence $M_{RX}=M_{AU}$ is the circumcenter of $\triangle AA_{\perp BC}U$; since $UA_{\perp BC}\parallel RX$, the quadrilateral $UA_{\perp BC}RX$ is an isosceles trapezoid.
+:::
+
+::: {#lem-20point6}
+With the notation of @thm-20point1, let the line through $D'$ perpendicular to $EF$ meet $AH$ at $S$. Then $(D'SA_{\perp BC})$, $(A'B'C')$, and $(DEF)$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the Miquel point $M$ of the complete quadrilateral formed by $DE,EF,FD,B'C'$; by @thm-20point1, $D',X,M$ are collinear.
+
+With the notation of @lem-20point5, @cor-20point2 and @lem-20point5 imply that $X,U,R,A_{\perp BC},M$ are concyclic.
+
+Thus
+$$
+\measuredangle A_{\perp BC}MD'=\measuredangle A_{\perp BC}MX=\measuredangle A_{\perp BC}UX=\measuredangle(BC,EF)=\measuredangle A_{\perp BC}SD',
+$$
+so $(A_{\perp BC}D'S)$, $(A'B'C')$, and $(DEF)$ concur at $M$.
+:::
+
+::: {#lem-20point7}
+With the notation of @thm-20point1 and @lem-20point6, let $Q$ be the cyclocevian conjugate of $P$. Then $(D'SA_{\perp BC})$ passes through the Poncelet point $M'$ of $Q$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $\mathcal{H}=(ABCHQ)$; then $\mathcal{P}_{\mathcal{H}}(D')=E'F'$ (the cevian triangle of $Q$) and $\mathcal{P}_{\mathcal{H}}(A_{\perp BC})=B_{\perp AC}C_{\perp AB}$.
+
+By @lem-14point8,
+$$
+\measuredangle D'M'A_{\perp BC}=\measuredangle(B_{\perp AC}C_{\perp AB},E'F').
+$$
+Taking antiparallels with respect to $AB$ and $AC$, this angle equals $\measuredangle(EF,BC)=\measuredangle D'SA_{\perp BC}$, so $D',S,A_{\perp BC},M'$ are concyclic.
+:::
+
+::: {#cor-20point3}
+The point of concurrency in @thm-20point1 is the Poncelet point of the cyclocevian conjugate of $P$ (by considering the second intersection of $(A_{\perp BC}D'S)$ with the nine-point circle using @lem-20point6 and @lem-20point7).
+:::
+
+::: {#cor-20point4}
+Let $M$ be the Poncelet point of the cyclocevian conjugate of $P$, and let $DEF$ be the cevian triangle of $P$. Then the Steiner lines of $M$ with respect to $\triangle DEF$ and with respect to the medial triangle coincide (the line joining $O$ and the orthocenter of $\triangle DEF$).
+:::
+
+::: {#cor-20point5}
+Let $P_AP_BP_C$ be the anticevian triangle of $P$, and let $Q,Q_A,Q_B,Q_C$ be the cyclocevian conjugates of $P,P_A,P_B,P_C$, respectively. Then $A,B,C,H,Q,Q_A,Q_B,Q_C$ lie on a conic section (whose center is the Miquel point of the complete quadrilateral formed by the three sidelines of the cevian triangle of $P$ and the trilinear polar of $P$).
+:::
+
+::: {#thm-20point2}
+Let $Q$ be the cyclocevian conjugate of $P$, and let $DEF$ and $D'E'F'$ be the cevian triangles of $P$ and $Q$, respectively. Then $(DEF)$ is tangent to the nine-point circle if and only if $A,B,C,P,Q,H$ lie on a conic section, if and only if the orthocenter of $\triangle DEF$, the orthocenter of $\triangle D'E'F'$, and $O$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Suppose $(DEF)$ is tangent to the nine-point circle. Since the Poncelet points of $P$ and $Q$ are both intersection points of the two circles, the Poncelet points of $P$ and $Q$ coincide, so $A,B,C,P,Q,H$ lie on a conic section.
+
+Conversely, suppose $A,B,C,P,Q,H$ lie on a conic section $\mathcal{H}$ with center $M$, and let $\ell_C$ and $\ell_N$ be the tangents from $M$ to $(DEF)$ and to the nine-point circle, respectively.
+
+Then
+$$
+\measuredangle(\ell_N,\ell_C)=\measuredangle(\ell_N,MA_{\perp BC})+\measuredangle A_{\perp BC}MD'+\measuredangle(MD',\ell_C),
+$$
+and
+$$
+\measuredangle(\ell_N,MA_{\perp BC})+\measuredangle(MD',\ell_C)=\measuredangle MM_{BC}A_{\perp BC}+\measuredangle D'DM=\measuredangle M_{BC}MD.
+$$
+By @lem-8point10, the polar of $M_{BC}$ with respect to $\mathcal{H}$ is parallel to $BC$, while the polar of $D$ with respect to $\mathcal{H}$ is $EF$.
+
+Thus @lem-14point8 gives $\measuredangle M_{BC}MD=\measuredangle(BC,EF)$.
+
+From the proof of @lem-20point7, $\measuredangle A_{\perp BC}MD'=\measuredangle(EF,BC)$.
+
+Hence $\measuredangle(\ell_N,\ell_C)=\measuredangle M_{BC}MD+\measuredangle A_{\perp BC}MD'=0$, so the nine-point circle and $(DEF)$ are tangent.
+
+By @cor-20point4, $A,B,C,P,Q,H$ lying on a conic section is equivalent to the collinearity of the orthocenter of $\triangle DEF$, the orthocenter of $\triangle D'E'F'$, and $O$.
+:::
+
+::: {#cor-20point6}
+Let $Q$ be the cyclocevian conjugate of $P$. If the cevian circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $Q$ (they cannot coincide); likewise, if $P$ and $P'$ are isogonal conjugates and the pedal circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $P'$ (@thm-18point3 and @thm-20point2).
+:::
+
+::: {#lem-20point8}
+Let $P$ be the crosspoint of $Q$ and $X$, let $Q_AQ_BQ_C$ be the cevian triangle of $Q$, and let $Y$ be the intersection of $Q_BQ_C$ with the trilinear polar $\ell$ of $X$. Then $A(B,C;P,Y)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix $X$ and a conic $\mathcal{C}$ passing through $A,B,C,X$, let $Q$ vary along $\mathcal{C}$, and let $X_AX_BX_C$ be the cevian triangle of $X$.
+
+Note that the chain $Q\mapsto XQ\mapsto P\mapsto AP$ preserves cross ratio (by polarity).
+
+Also, $Q_BQ_C$ always passes through $\mathcal{P}_{\mathcal{C}}(BC)$ (Brocard's theorem), so the chain
+$$
+Q\mapsto Q_B\mapsto \mathcal{P}_{\mathcal{C}}(BC)Q_B\mapsto Y\mapsto AY
+$$
+preserves cross ratio.
+
+When $Q=X$, we have $P=X$ and $Y=\ell\cap BC$, so @lem-6point2 gives $A(B,C;P,Y)=-1$.
+
+When $Q=C$, set $\ell_C=\mathcal{P}_{\mathcal{C}}(C)$; then $P=\mathcal{P}_{\mathcal{C}}(XC)=\ell_C\cap X_AX_B$ (Brocard's theorem) and $Y=\ell_C\cap\ell$. Thus
+$$
+A(B,C;P,Y)=(\ell_C\cap AB,C;P,Y)\stackrel{\ell\cap AB}{=}(B,C;X_A,\ell\cap BC)=-1.
+$$
+Similarly when $Q=B$. By @thm-10point1, the map $AP\mapsto AY$ is the harmonic conjugate with respect to $AB$ and $AC$.
+:::
+
+::: {#cor-20point7}
+Let $Q$ be the isotomic conjugate of the anticomplement of $P$, and let $UVW$ be the cevian triangle of $Q$. Then $A(B,C;P,\infty_{VW})=-1$ (setting $X=G$ in @lem-20point8, by @lem-11point12).
+:::
+
+::: {#lem-20point9}
+Let $P_1$ and $P_2$ satisfy $\measuredangle BAP_1=\measuredangle P_2AC$, let $Q_1$ and $Q_2$ be the isotomic conjugates of the anticomplements of $P_1$ and $P_2$, respectively, and let $U_1V_1W_1$ and $U_2V_2W_2$ be the cevian triangles of $Q_1$ and $Q_2$. Then $V_1,W_1,V_2,W_2$ are concyclic.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @cor-20point7,
+$$
+A(B,C;P_1,\infty_{V_1W_1})=-1=A(C,B;P_2,\infty_{V_2W_2}).
+$$
+Reflecting the pencil across the internal angle bisector of $\angle BAC$ shows that the reflection of $A\infty_{V_1W_1}$ is $A\infty_{V_2W_2}$.
+
+Hence $V_1W_1$ and $V_2W_2$ are antiparallel with respect to $AB$ and $AC$, so $V_1,W_1,V_2,W_2$ are concyclic.
+:::
+
+::: {#thm-20point3}
+The cyclocevian conjugate of $Q$ is the isotomic conjugate of the anticomplement of the isogonal conjugate of the complement of the isotomic conjugate of $Q$ (equivalently, if $Q_1$ and $Q_2$ are cyclocevian conjugates and $P_1,P_2$ are the crosspoints of $Q_1,Q_2$ with $G$, respectively, then $P_1$ and $P_2$ are isogonal conjugates).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Suppose $P_1$ and $P_2$ are isogonal conjugates, and let $Q_1$ and $Q_2$ be the isotomic conjugates of the anticomplements of $P_1$ and $P_2$, with cevian triangles $U_1V_1W_1$ and $U_2V_2W_2$. By @lem-20point9, $V_1,W_1,V_2,W_2$ are concyclic.
+
+By symmetry there are three such concyclic quadruples; if they did not coincide, their radical axes could not concur, a contradiction.
+
+Thus $U_1,V_1,W_1,U_2,V_2,W_2$ are concyclic, meaning $Q_1$ and $Q_2$ are cyclocevian conjugates.
+:::
