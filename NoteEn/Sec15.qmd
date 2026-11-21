@@ -245,27 +245,3 @@ When $X=D$, we have $R=Ge$, and by homothety $X'M$ passes through $X(55)$, so $f
 By @thm-10point1, $f=g$, so the isogonal conjugate of $R$ is $OI\cap MX'$.
 :::
 
-::: {.unnumbered-env}
-**Definition.**
-The isogonal conjugate of $X(36)$ is $X(80)$.
-:::
-
-::: {#cor-15point3}
-Let $X$ be the reflection of $I$ across $BC$, and let $X'$ be the reflection of $X$ across $I$. Then $AX'$ passes through $X(80)$.
-:::
-
-::: {#lem-15point13}
-The point $X(80)$ is the antigonal conjugate of $I$, that is, the reflection of $I$ across $Fe$.
-:::
-
-::: {.callout-note collapse="true" icon="false"}
-## Proof
-By @lem-14point5, taking the isogonal conjugate of the inverse of the isogonal conjugate of $I$ with respect to the circumcircle yields $X(80)$.
-:::
-
-::: {#cor-15point4}
-Set $D=I_{\perp BC}$, and let $D'$ be the reflection of $D$ across $I$. Then $D',Fe,M_{AI}$ are collinear.
-:::
-
-
-
