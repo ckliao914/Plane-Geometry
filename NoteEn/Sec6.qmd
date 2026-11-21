@@ -1,1 +1,295 @@
+## Cross Ratio
 
+::: {.unnumbered-env}
+**Definition.**
+In the projective plane, two distinct points determine a unique line, and two distinct lines intersect at a unique point.
+:::
+
+::: {#thm-6point1}
+Parallel lines (in a given direction) concur at a single point.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A,B,C$ lie on three parallel lines; these lines are isogonal conjugates with respect to $\triangle ABC$, and angle chasing shows they concur on the circumcircle.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Parallel lines intersect at a **point at infinity**, and lines in the same direction intersect at the same point at infinity.
+:::
+
+::: {#thm-6point2}
+All points at infinity are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Taking the trilinear polar of the centroid of an arbitrary $\triangle ABC$ shows that the points at infinity along the three side directions are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+All points at infinity lie on the **line at infinity** $\ell_\infty$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $XY\cap\ell_\infty=\infty_{XY}$ denote the point at infinity of $XY$, and let $\infty_{\perp XY}$ denote the point at infinity in the direction perpendicular to $XY$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The set of lines passing through a common point $X$ is called a **pencil of lines**, denoted $\mathbb{L}_X$; a pencil whose base point is a point at infinity is called a **pencil of parallel lines**.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+For four collinear points $A,B,C,D$, their **cross ratio** is defined by
+$$
+(A,B;C,D)=\frac{AC/AD}{BC/BD},
+$$
+where lengths are directed and we set $\infty_{AB}A/\infty_{AB}B=1$.
+:::
+
+::: {#cor-6point1}
+$(A,B;C,D)=(B,A;D,C)=(C,D;A,B)=(D,C;B,A)$.
+:::
+
+::: {#cor-6point2}
+If $A,B,C$ are collinear, then $(A,B;C,\infty_{AB})=AC/BC$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+For four lines $\ell_1,\ell_2,\ell_3,\ell_4$ through a point $P$, their **cross ratio** is defined by
+$$
+(\ell_1,\ell_2;\ell_3,\ell_4)=\frac{\sin\measuredangle(\ell_1,\ell_3)/\sin\measuredangle(\ell_1,\ell_4)}{\sin\measuredangle(\ell_2,\ell_3)/\sin\measuredangle(\ell_2,\ell_4)}.
+$$
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+$P(A,B;C,D)=(PA,PB;PC,PD)$.
+:::
+
+::: {#thm-6point3}
+If $A,B,C,D$ are collinear, then $(A,B;C,D)=P(A,B;C,D)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from the Law of Sines and length chasing.
+:::
+
+::: {#thm-6point4}
+If $A,B,C$ are collinear, then for every $c$ there exists a unique point $X$ such that $(A,B;C,X)=c$ (where $c$ may be a real number or $\infty$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows by solving the equation for the directed length.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Four collinear points satisfying $(A,B;C,D)=-1$ form a **harmonic range** (or **harmonic quadruple**), and $D$ is called the **harmonic conjugate** of $C$ with respect to $A$ and $B$.
+:::
+
+::: {#cor-6point3}
+$(A,B;M_{AB},\infty_{AB})=-1$.
+:::
+
+::: {#cor-6point4}
+If the internal and external angle bisectors of $\angle BAC$ intersect $BC$ at $K$ and $L$, respectively, then $(B,C;K,L)=-1$.
+:::
+
+::: {#lem-6point1}
+For $A\neq B$ and $C\neq D$, if $(A,B;C,D)=(A,B;D,C)$, then $(A,B;C,D)$ is harmonic.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+$(A,B;C,D)\times(A,B;D,C)=1$, while $(A,B;C,D)\neq 1$.
+:::
+
+::: {#lem-6point2}
+Let the Cevian triangle of $P$ be $\triangle DEF$. Then $(B,C;D,EF\cap BC)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that
+$$
+(B,C;D,EF\cap BC)\stackrel{A}{=}(F,E;EF\cap AP,EF\cap BC)\stackrel{P}{=}(C,B;D,EF\cap BC),
+$$
+so the four points are harmonic by @lem-6point1 (where $\stackrel{X}{=}$ denotes projecting cross ratio from the pencil at $X$).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If the Cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, then $\triangle XYZ$ is called the **anticevian triangle** of $P$ with respect to $\triangle ABC$.
+:::
+
+::: {#lem-6point3}
+If the Cevian triangle and anticevian triangle of $P$ are $\triangle DEF$ and $\triangle XYZ$, respectively, then $(A,D;P,X)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that
+$$
+(A,D;P,X)\stackrel{C}{=}(CA\cap XZ,B;Z,X).
+$$
+Since the Cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, this cross ratio equals $-1$ by @lem-6point2.
+:::
+
+::: {#cor-6point5}
+The anticevian triangle is unique.
+:::
+
+::: {#cor-6point6}
+The anticevian triangle of the incenter is the triangle of the three excenters, and the anticevian triangle of the centroid is the anticomplementary triangle.
+:::
+
+::: {#thm-6point5}
+Given four concyclic points $A,B,C,D$, as $P$ varies along the circle, $P(A,B;C,D)$ is constant.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows from inscribed angles and the definition of cross ratio of a pencil.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $A,B,C,D$ lie on a circle and $P$ also lies on the circle, the **cross ratio of four concyclic points** is defined by $(A,B;C,D)=P(A,B;C,D)$.
+:::
+
+::: {#thm-6point6}
+For four concyclic points $A,B,C,D$, we have $|(A,B;C,D)|=\dfrac{AC/AD}{BC/BD}$, and the cross ratio is positive if $C,D$ lie on the same side of $AB$ and negative if they lie on opposite sides.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Pick any point $P$ on the circle and apply the Law of Sines with length chasing.
+:::
+
+::: {#cor-6point7}
+In a harmonic quadrilateral $ABCD$, we have $(A,C;B,D)=-1$.
+:::
+
+::: {#thm-6point7}
+Inversion preserves cross ratio; that is, $(A,B;C,D)=(A^*,B^*;C^*,D^*)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-5point3 the magnitude/value of the cross ratio is unchanged, and the cyclic/collinear order of the four points is preserved under inversion.
+:::
+
+::: {#lem-6point4}
+Inverting a point $P$ on line $XY$ with respect to the circle with diameter $XY$ gives $P^*$ as the harmonic conjugate of $P$ with respect to $X$ and $Y$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @thm-6point7, $(P,P^*;X,Y)=(P^*,P;X,Y)$, and the result follows from @lem-6point1.
+:::
+
+::: {#lem-6point5}
+If $(A,B;C,D)=-1$ and $M_{AB}=M$, then $MC\cdot MD=MA^2=MB^2$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-6point4, $C$ and $D$ are mutual inverses with respect to $(AB)$; since $M$ is the center, this follows from the definition of inversion.
+:::
+
+::: {#lem-6point6}
+If a circle $\Gamma$ inverts to $\Gamma^*$ with respect to $\omega$, and $\Gamma,\omega$ have centers $X,O$, respectively, then $X^*$ is the inverse of $O$ with respect to $\Gamma^*$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $XO$ intersect $\Gamma$ at $P$ and $Q$. By @cor-6point3 and @thm-6point7,
+$$
+-1=(P,Q;X,\infty_{PQ})=(P^*,Q^*;X^*,O).
+$$
+By @lem-6point4, $X^*$ and $O$ are mutual inverses with respect to $\Gamma^*$.
+:::
+
+::: {#lem-6point7}
+Given four concyclic points $A,B,C,D$ and a point $X$ not on the circle, let $XA,XB,XC,XD$ intersect the circle again at $A',B',C',D'$, respectively. Then $(A,B;C,D)=(A',B';C',D')$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+There exists an inversion centered at $X$ mapping $A,B,C,D$ to $A',B',C',D'$, so the result follows from @thm-6point7.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+For a point $A$ on a circle, the tangent to the circle at $A$ may be regarded as the line $AA$.
+:::
+
+::: {#lem-6point8}
+Let the incircle touch $BC$ at $D$, and let $P$ and $Q$ be the feet of the perpendiculars from $A$ to $BI$ and $CI$, respectively. Then $AD$ bisects $PQ$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $AD$ intersect the incircle and $PQ$ at $X$ and $R$, respectively, and let the incircle touch $AC$ and $AB$ at $E$ and $F$.
+
+By @lem-1point4, $PQ$ is the $A$-midline, and $D,E,P$ as well as $D,F,Q$ are collinear.
+
+By @cor-3point4,
+$$
+-1=(E,F;X,D)\stackrel{D}{=}(P,Q;R,\infty_{PQ}),
+$$
+and the result follows from @cor-6point3.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A family of circles sharing a common radical axis is called a **pencil of circles** (or **coaxal system**): if the circles pass through two common points it is an **elliptic pencil**, if they are mutually tangent it is a **parabolic pencil**, and if they have no intersection points it is a **hyperbolic pencil**.
+:::
+
+::: {#lem-6point9}
+Inverting a point $P$ with respect to $\omega$ makes $\omega$ an Apollonius circle for $P$ and $P^*$ with respect to some ratio.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $PP^*$ intersect $\omega$ at $X$ and $Y$. For any point $A$ on $\omega$, we have $\angle XAY=90^\circ$.
+
+By @lem-6point4, $(X,Y;P,P^*)=-1$, so by @cor-6point4, $AX$ and $AY$ bisect $\angle PAP^*$.
+
+Hence $(XAY)$ is the $A$-Apollonius circle of $\triangle APP^*$.
+:::
+
+::: {#lem-6point10}
+Every hyperbolic pencil of circles consists of Apollonius circles with varying ratios for two fixed points.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $O$ be the intersection of the line of centers of the pencil with its radical axis. By power of a point, there exists a circle $\omega$ centered at $O$ orthogonal to every circle in the pencil.
+
+Let $\omega$ intersect the line of centers at $X$ and $Y$. By @lem-4point8, $X$ and $Y$ are mutual inverses with respect to every circle in the pencil.
+
+Hence by @lem-6point9, the pencil consists of Apollonius circles for $X$ and $Y$ with varying ratios.
+:::
+
+::: {#lem-6point11}
+A pencil of circles remains a pencil of circles under inversion.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+For an elliptic or parabolic pencil, the images clearly still share two points or are mutually tangent.
+
+For a hyperbolic pencil, first find the two points $X$ and $Y$ from @lem-6point10.
+
+Under inversion centered at $O$, a circle defined by $PX/PY=c$ maps to a circle satisfying $P^*X^*/P^*Y^*=c\cdot(OY/OX)$, which is still constant, so the image is again a hyperbolic pencil.
+:::
