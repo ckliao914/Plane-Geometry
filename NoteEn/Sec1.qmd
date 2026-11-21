@@ -1,1 +1,302 @@
+## Angles and Radical Axes
 
+::: {.unnumbered-env}
+**Definition.**
+Let $\ell_1\cap \ell_2$ denote the intersection of $\ell_1$ and $\ell_2$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $(XYZ)$ denote the circumcircle of $\triangle XYZ$, and let $(XY)$ denote the circle with diameter $XY$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $X_{\perp \ell}$ denote the foot of the perpendicular from $X$ to $\ell$, and let $M_{XY}$ denote the midpoint of $XY$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Directed angles ($\measuredangle$) are oriented angles taken modulo $\pi$ ($180^\circ$).
+:::
+
+::: {#thm-1point1}
+Four points $A,B,C,D$ are concyclic if and only if $\measuredangle ACB=\measuredangle ADB$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows directly from the inscribed angle theorem.
+:::
+
+::: {#lem-1point1}
+## Miquel Point
+Let $D,E,F$ lie on $BC,CA,AB$, respectively. Then $(AEF)$, $(BDF)$, and $(CDE)$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $(BDF)$ and $(CDE)$ intersect at $X\neq D$. Then
+$$
+\measuredangle AEX=\measuredangle CEX=\measuredangle CDX=\measuredangle BDX=\measuredangle BFX=\measuredangle AFX,
+$$
+so $A,E,F,X$ are concyclic.
+:::
+
+::: {#cor-1point1}
+Let $AB\cap CD=E$ and $AD\cap BC=F$. Then $(ADE)$, $(BCE)$, $(ABF)$, and $(CDF)$ are concurrent.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A configuration of four lines $(\ell_1,\ell_2,\ell_3,\ell_4)$ is called a **complete quadrilateral**, and the point of concurrency of the circumcircles of the four triangles formed by these lines is called its **Miquel point**. The complete quadrilateral $ABCD$ refers to $(AB,BC,CD,DA)$.
+:::
+
+::: {#thm-1point2}
+Let $M$ be the Miquel point of the complete quadrilateral $ABCD$. Then $\triangle MAB\sim\triangle MDC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately from angle chasing using the four cyclic quadrilaterals.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $\triangle MAB\sim\triangle MDC$, then $M$ is called the **spiral similarity center** sending $AB$ to $DC$. @thm-1point2 establishes the existence of $M$, while its uniqueness follows by considering the intersection of the loci of $\measuredangle MAB=\measuredangle MDC$ and $\measuredangle MBA=\measuredangle MCD$ (two circles). Note that $M$ is also the spiral similarity center sending $AD$ to $BC$.
+:::
+
+::: {#lem-1point2}
+## Simson Line
+If $A,B,C,P$ are concyclic, then the feet of the perpendiculars from $P$ to $AB$, $BC$, and $CA$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P_{\perp BC}=D$, $P_{\perp AC}=E$, and $P_{\perp AB}=F$. Then $P,C,D,E$ and $P,B,D,F$ are concyclic, so
+$$
+\measuredangle PDE=\measuredangle PCE=\measuredangle PCA=\measuredangle PBA=\measuredangle PBF=\measuredangle PDF.
+$$
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+$X(n)$ denotes a triangle center (Kimberling center), whose definition is symmetric with respect to the three vertices.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of the incircle is the **incenter** $X(1)$, denoted by $I$ unless otherwise stated; $I$ is the intersection of the three internal angle bisectors. Similarly, the centers of the three excircles are defined as $I_A,I_B,I_C$ (the excenters are not triangle centers).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of the circumcircle is the **circumcenter** $X(3)$, denoted by $O$ unless otherwise stated; $O$ is the intersection of the three perpendicular bisectors.
+:::
+
+::: {#lem-1point3}
+## Incenter-Excenter Lemma
+$B,I,C,I_A$ are concyclic, and the center of this circle lies on $(ABC)$ (at the midpoint $M$ of arc $BC$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By angle chasing, $\angle BIM=\angle IBM$, so $MI=MB$. Similarly, $M$ is the center of $(II_ABC)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of $(BIC)$ is called the **midpoint of the lower arc** $BC$, and the midpoint of arc $BAC$ is called the **midpoint of the upper arc** $BC$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **$A$-midline** is the line $M_{AB}M_{AC}$.
+:::
+
+::: {#lem-1point4}
+Let the incircle of $\triangle ABC$ touch $AC$ and $AB$ at $E$ and $F$, respectively. Then $BI$, $EF$, and the $C$-midline are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $BI$ intersect the $C$-midline at $X$. By angle chasing, $X$ lies on $(BC)$, and hence $X$ also lies on $(IC)$. Thus $X,I,C,E$ are concyclic, which gives
+$$
+\measuredangle XEC=\measuredangle XIC=\measuredangle BIC=\measuredangle FEC,
+$$
+so $X,E,F$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **power** of a point $X$ with respect to a circle $\omega$ (with center $O$ and radius $r$) is $\mathrm{Pow}_\omega(X)=XO^2-r^2$.
+:::
+
+::: {#thm-1point3}
+The locus of points having equal power with respect to two circles is a line, called the **radical axis** of the two circles, and it is perpendicular to the line of centers.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+This follows immediately from the Pythagorean theorem.
+:::
+
+::: {#thm-1point4}
+The pairwise radical axes of three circles (if not all coinciding) are concurrent at a point called the **radical center**.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If two of the radical axes intersect at $X$, then by the definition of the radical axis, $X$ also lies on the third.
+:::
+
+::: {#thm-1point5}
+The three altitudes of a triangle are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the radical center of $(AB)$, $(BC)$, and $(CA)$; their pairwise radical axes are precisely the three altitudes.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point of concurrency of the three altitudes is the **orthocenter** $X(4)$, denoted by $H$ unless otherwise stated.
+:::
+
+::: {#cor-1point2}
+The orthocenter of $\triangle BCH$ is $A$, and $A,B,C,H$ form an **orthocentric system**.
+:::
+
+::: {#lem-1point5}
+The incenter and excenters of the orthic triangle are $A,B,C,H$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Angle chasing immediately shows that the altitudes and sidelines are the angle bisectors of the orthic triangle, so their intersections are its incenter and excenters.
+:::
+
+::: {#lem-1point6}
+The reflection of $(ABC)$ across $BC$ is $(HBC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By angle chasing, the reflection of $H$ across $BC$ lies on $(ABC)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Let $\omega$ be a circle and $X$ be a point on $\omega$. The **antipode** of $X$ with respect to $\omega$ is the reflection of $X$ across the center of $\omega$. Unless otherwise specified, the antipode of $X$ refers to its antipode with respect to the circumcircle $(ABC)$.
+:::
+
+::: {#cor-1point3}
+The reflection of $H$ across $M_{BC}$ is the antipode of $A$, and $HM_{BC}$, $(ABC)$, and $(AH)$ are concurrent.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A **homothety** centered at $X$ with ratio $t$ is the dilation centered at $X$ by a factor of $t$.
+:::
+
+::: {#thm-1point6}
+If $A_iA_j\parallel B_iB_j$ for all $i,j$, then all lines $A_iB_i$ pass through the center of homothety.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $A_1B_1\cap A_2B_2=X$; then $X$ is the center of homothety sending $A_1A_2$ to $B_1B_2$. Mapping $A_3$ to $B_3'$ under this homothety gives a point $B_3'$ satisfying the same parallel conditions, so $B_3'=B_3$. Similarly, all lines $A_iB_i$ pass through the center of homothety.
+:::
+
+::: {#thm-1point7}
+The midpoints of the six segments connecting $A,B,C,H$ pairwise and the three feet of the altitudes lie on a single circle, called the **nine-point circle**.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-1point6 and @cor-1point3, applying a homothety centered at $H$ with ratio $2$ sends all nine points onto the circumcircle $(ABC)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The center of the nine-point circle is $X(5)$, denoted by $N_9$ unless otherwise stated. We have $N_9=M_{OH}$.
+:::
+
+::: {#thm-1point8}
+The three medians are concurrent at a point $G$, and $AG=2GM_{BC}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The medial triangle is the image of $\triangle ABC$ under a homothety with ratio $-1/2$; the result follows from @thm-1point6.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The intersection of the three medians is the **centroid** $X(2)$, denoted by $G$ unless otherwise stated.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The **complement** of a point $X$ is its image under the homothety centered at $G$ with ratio $-1/2$, and its **anticomplement** is its image under the homothety centered at $G$ with ratio $-2$.
+:::
+
+::: {#lem-1point7}
+The complement of $O$ is $N_9$, and the anticomplement of $O$ is $H$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The anticomplement of the medial triangle is $\triangle ABC$. Since $N_9$ is the circumcenter of the medial triangle and $O$ is its orthocenter, the anticomplement of $N_9$ is $O$, and the anticomplement of $O$ is $H$.
+:::
+
+::: {#cor-1point4}
+$O,H,G,N_9$ are collinear on the **Euler line**. Moreover, $G$ and $H$ are the internal and external centers of homothety of the circumcircle and the nine-point circle, respectively.
+:::
+
+::: {#lem-1point8}
+## Steiner Line
+Let $P$ lie on $(ABC)$, and let $D,E,F$ be the reflections of $P$ across $BC,CA,AB$, respectively. Then $D,E,F,H$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that $H,A,C,E$ and $H,A,B,F$ are concyclic. Thus
+$$
+\measuredangle AHE=\measuredangle ACE=\measuredangle PCA=\measuredangle PBA=\measuredangle ABF=\measuredangle AHF,
+$$
+so $E,F,H$ are collinear. Similarly, $D$ also lies on this line.
+:::
+
+::: {#lem-1point9}
+The Simson line of $P$ bisects $PH$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The homothety centered at $P$ with ratio $2$ maps the Simson line of $P$ to its Steiner line.
+:::
+
+::: {#cor-1point5}
+The reflections of the Miquel point of a complete quadrilateral across its four sides and the orthocenters of the four triangles formed by its sides (eight points in total) lie on a single line, called the **Steiner line** of the complete quadrilateral.
+:::
+
+::: {#thm-1point9}
+The midpoints of the three diagonals of a complete quadrilateral are collinear, and this line is perpendicular to the Steiner line.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the diagonals be $AC,BD,EF$, and consider the radical axis of $(AC)$ and $(BD)$. Computing powers shows that all four orthocenters lie on this radical axis. Hence the Steiner line is the radical axis of $(AC)$ and $(BD)$, and similarly of $(EF)$. Therefore, the centers of these three circles are collinear on a line perpendicular to their common radical axis.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The line passing through the midpoints of the three diagonals of a complete quadrilateral is called the **Newton line** (or **Newton-Gauss line**).
+:::
