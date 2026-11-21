@@ -141,7 +141,7 @@ Set $S=BI_A\cap AC$ and $T=CI_A\cap AB$. If $N$ is the midpoint of the upper arc
 ## Proof
 By Brocard's theorem, the polar of $X=NA\cap BC$ with respect to the circumcircle is $PQ$.
 
-By @lem-8point10 and @lem-21point4, $\mathcal{P}_{(ABC)}(X)$ also passes through $R=AI\cap BC$ and $X(55)$.
+By @lem-8point10 and @lem-21point4, $\mathfrak{p}_{(ABC)}(X)$ also passes through $R=AI\cap BC$ and $X(55)$.
 
 By @lem-21point1 and @cor-21point6, $AX(57)$ and $RX(55)$ intersect on $ST$ (the trilinear polar of $I$).
 
@@ -188,9 +188,9 @@ Let $L$ be the cevapoint of $P$ and $Q$. Then $(AL\cap PQ,BC\cap PQ;P,Q)=-1$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $P_AP_BP_C$ be the anticevian triangle of $P$ and set $\mathcal{C}=(PP_AP_BP_CQ)$; then $\mathcal{P}_{\mathcal{C}}(A)=BC$ (Brocard's theorem).
+Let $P_AP_BP_C$ be the anticevian triangle of $P$ and set $\mathcal{C}=(PP_AP_BP_CQ)$; then $\mathfrak{p}_{\mathcal{C}}(A)=BC$ (Brocard's theorem).
 
-Considering $\mathcal{P}_{\mathcal{C}}(BC\cap PQ)=AL$, the points $AL\cap PQ$ and $BC\cap PQ$ are conjugate with respect to $\mathcal{C}$.
+Considering $\mathfrak{p}_{\mathcal{C}}(BC\cap PQ)=AL$, the points $AL\cap PQ$ and $BC\cap PQ$ are conjugate with respect to $\mathcal{C}$.
 
 By @lem-8point10, $(AL\cap PQ,BC\cap PQ;P,Q)=-1$.
 :::
@@ -218,7 +218,7 @@ Let $L$ and $S$ be the cevapoint and crosspoint of $P$ and $Q$, respectively, an
 ## Proof
 Set $\mathcal{C}=(ABCPQ)$, and let $R$ lie on $\mathcal{C}$ so that $AR$, $BC$, and $PQ$ concur.
 
-Let $SA$ and $SR$ meet $\mathcal{C}$ again at $A'$ and $R'$; then $AR\cap A'R'$ lies on $\mathcal{P}_{\mathcal{C}}(S)=PQ$ (Brocard's theorem).
+Let $SA$ and $SR$ meet $\mathcal{C}$ again at $A'$ and $R'$; then $AR\cap A'R'$ lies on $\mathfrak{p}_{\mathcal{C}}(S)=PQ$ (Brocard's theorem).
 
 Thus $AR$, $BC$, $PQ$, and $A'R'$ concur, so by @lem-12point3, $(B,C)$, $(P,Q)$, and $(A',R')$ form an involution on $\mathcal{C}$.
 
