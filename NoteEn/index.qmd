@@ -6,7 +6,7 @@ Since this was intended to be a note, I didn't give a title to each section unti
 
 The following translation is AI-generated.
 
-# Notations
+# Notations {.unnumbered}
 
 Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
@@ -27,7 +27,7 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * Let $\ell_\infty$ denote the line at infinity.
 
-* Let $\infty_\ell$ denote the point of infinity on $\ell$, and let $\infty_{\perp \ell}$ denote the point at infinity in the direction perpendicular to $XY$.
+* Let $\infty_\ell$ denote the point of infinity on $\ell$, and let $\infty_{\perp \ell}$ denote the point at infinity in the direction perpendicular to $\ell$.
 
 * Let $\mathbb{L}_X$ denote the pencil of lines through $X$.
 
