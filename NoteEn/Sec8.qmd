@@ -1,1 +1,314 @@
+## Conic Cross Ratio and Polarity
 
+::: {.unnumbered-env}
+**Definition.**
+Given a point $O$ in space and two planes $E_1, E_2$, the **projection** of a point $X\in E_1$ from $O$ onto $E_2$ is the intersection $OX\cap E_2$.
+:::
+
+::: {#lem-8point1}
+Given two planes $E_1, E_2$ and a line $\ell_1$ in $E_1$, the projection of $\ell_1$ from $O$ onto $E_2$ is a line (or a point if $O\in\ell_1$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+$O$ and $\ell_1$ determine a plane, whose intersection with $E_2$ is clearly the locus of projections.
+:::
+
+::: {#lem-8point2}
+Given two planes $E_1, E_2$ and four collinear points $A,B,C,D$ in $E_1$, let their projections from $O$ onto $E_2$ be $A',B',C',D'$. Then $(A,B;C,D)=(A',B';C',D')$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The four points and $O$ determine a plane $E$. By @lem-8point1, $A',B',C',D'$ are collinear, so taking cross ratio from $O$ inside $E$ gives the result.
+:::
+
+::: {#lem-8point3}
+Given two planes $E_1, E_2$ and four concurrent lines $\ell_1,\ell_2,\ell_3,\ell_4$ in $E_1$, let their projections from $O$ onto $E_2$ be $L_1,L_2,L_3,L_4$. Then $(\ell_1,\ell_2;\ell_3,\ell_4)=(L_1,L_2;L_3,L_4)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Take a line in $E_1$ intersecting $\ell_1,\ell_2,\ell_3,\ell_4$ at $A,B,C,D$, and project these four points from $O$ onto $E_2$ as $A',B',C',D'$.
+
+By @lem-8point2, $(A,B;C,D)=(A',B';C',D')$, and the cross ratios of the two pencils equal these values.
+:::
+
+::: {#thm-8point1}
+If six points $A,B,C,D,P,Q$ lie on a conic section, then $P(A,B;C,D)=Q(A,B;C,D)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\mathcal{C}$ be a conic passing through $A,B,C,D,P,Q$. There exist a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, as well as another plane section $E_2$ cutting out a circle.
+
+Projecting $A,B,C,D,P,Q$ from $O$ onto $E_2$ yields six concyclic points $A',B',C',D',P',Q'$.
+
+By @thm-6point5 and @lem-8point3,
+$$
+P(A,B;C,D)=P'(A',B';C',D')=Q'(A',B';C',D')=Q(A,B;C,D).
+$$
+:::
+
+::: {#thm-8point2}
+If $P(A,B;C,D)=Q(A,B;C,D)$ (with no three of the six points collinear), then $A,B,C,D,P,Q$ lie on a common conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\mathcal{C}$ be a conic passing through $A,B,C,P,Q$, and let $D_1$ be the second intersection of $PD$ with $\mathcal{C}$. By @thm-8point1,
+$$
+Q(A,B;C,D)=P(A,B;C,D)=P(A,B;C,D_1)=Q(A,B;C,D_1),
+$$
+so $D=D_1$.
+:::
+
+::: {#cor-8point1}
+Five points with no three collinear determine a unique conic section.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+For a point $X$ varying on a conic $\mathcal{C}$ passing through $A,B,C,D$, the constant value $X(A,B;C,D)$ is called the **cross ratio on the conic**, denoted $(A,B;C,D)_{\mathcal{C}}$.
+:::
+
+::: {#lem-8point4}
+Suppose circles $\omega$ and $\Omega$ intersect at $P$ and $Q$, with $AB$ on $\omega$ and $CD$ on $\Omega$. If $AB\parallel CD$, then $A,B,C,D,P,Q$ lie on a common conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $CP, CQ, DP, DQ$ intersect $\omega$ again at $W, X, Y, Z$, respectively.
+
+By @thm-3point2, $WZ, CD, XY, AB$ are all parallel, so reflecting across the perpendicular bisector of $AB$ gives
+$$
+P(A,B;C,D)=(A,B;W,Y)=(B,A;Z,X)=Q(B,A;D,C)=Q(A,B;C,D).
+$$
+Hence $A,B,C,D,P,Q$ lie on a conic by @thm-8point2.
+:::
+
+::: {#lem-8point5}
+## Butterfly Theorem
+Let $A,B,C,D,P,Q$ lie on a conic $\mathcal{C}$ such that both $AB$ and $CD$ pass through the midpoint $M_{PQ}$. Then $M_{PQ}$ is the midpoint of $XY$, where $X=AC\cap PQ$ and $Y=BD\cap PQ$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have
+$$
+(P,Q;M_{PQ},X)\stackrel{A}{=}(P,Q;B,C)_{\mathcal{C}}\stackrel{D}{=}(P,Q;Y,M_{PQ}),
+$$
+so $Y$ must be the reflection of $X$ across $M_{PQ}$.
+:::
+
+::: {#lem-8point6}
+Let $A,B,C,D$ lie on a conic $\mathcal{C}$, and let $X$ be a point not on $\mathcal{C}$ such that $XA,XB,XC,XD$ intersect $\mathcal{C}$ again at $K,L,M,N$, respectively. Then $(A,B;C,D)_{\mathcal{C}}=(K,L;M,N)_{\mathcal{C}}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @thm-8point1, let $K,L,M,N,X$ project to $K',L',M',N',X'$.
+
+By @lem-8point1, $X',A',K'$ (and likewise the other three triples) are collinear.
+
+From the proof of @thm-8point1 and @thm-6point7,
+$$
+(A,B;C,D)_{\mathcal{C}}=(A',B';C',D')=(K',L';M',N')=(K,L;M,N)_{\mathcal{C}}.
+$$
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $A^*$ is the inverse of $A$ with respect to a circle $\omega$ centered at $O$, then the **polar** of $A$ with respect to $\omega$ is the line through $A^*$ with direction $\infty_{\perp OA}$; conversely, the **pole** of a line $\ell$ with respect to $\omega$ is the inverse of the foot of the perpendicular from $O$ to $\ell$ with respect to $\omega$.
+:::
+
+::: {#cor-8point2}
+If the polar of $A$ is $\ell$, then the pole of $\ell$ is $A$. The polar of a point on a circle is the tangent line at that point.
+:::
+
+::: {#lem-8point7}
+Applying a homothety centered at $A$ with ratio $2$ to the radical axis of the degenerate circle $A$ and the circle $\omega$ gives the polar of $A$ with respect to $\omega$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+It suffices to show that the midpoint of $AA^*$ lies on the radical axis. Letting $AA^*$ meet $\omega$ at $X$ and $Y$, @lem-6point4 gives $(X,Y;A,A^*)=-1$, so the result follows from @lem-6point5.
+:::
+
+::: {#thm-8point3}
+## La Hire's Theorem
+If the polar of $A$ passes through $B$, then the polar of $B$ passes through $A$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By inversion, $A,B,A^*,B^*$ are concyclic; since $AA^*\perp A^*B$, we have $BB^*\perp B^*A$, so $A$ lies on the polar of $B$.
+:::
+
+::: {#cor-8point3}
+The polar of a point $P$ outside a circle is the chord joining the points of tangency of the two tangents from $P$ to the circle; the polar of a point $Q$ inside a circle is the locus of intersections of tangents at the endpoints of chords passing through $Q$.
+:::
+
+::: {#lem-8point8}
+The polar of $A$ with respect to $\omega$ passes through $B$ if and only if the circle with diameter $AB$ is orthogonal to $\omega$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+From the proof of @thm-8point3, $(AB)$ passes through $A^*$ and $B^*$, so $(AB)$ is invariant under inversion; the equivalence follows from @lem-4point8.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, together with a plane section $E_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $E_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $E_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathcal{P}_{\mathcal{C}}(A)$ and $A=\mathcal{P}_{\mathcal{C}}(\ell)$.
+:::
+
+::: {.cor-8point4}
+Since projection preserves lines and intersections, @cor-8point2, @thm-8point3, and @cor-8point3 also hold for conic sections (hence poles and polars are independent of the choice of conical surface in the definition).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $\mathcal{P}_{\mathcal{C}}(A)$ passes through $B$, then $A$ and $B$ are called **conjugate** with respect to $\mathcal{C}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A point from which two tangents can be drawn to $\mathcal{C}$ is said to lie **outside** $\mathcal{C}$; a point from which no tangent can be drawn to $\mathcal{C}$ is said to lie **inside** $\mathcal{C}$.
+:::
+
+::: {#lem-8point9}
+Let $P,Q,R,S$ lie on a conic $\mathcal{C}$. If the tangents to $\mathcal{C}$ at $P$ and $Q$ intersect at $M$, and $R,S,M$ are collinear, then $(P,Q;R,S)_{\mathcal{C}}=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-8point6, projecting from $M$ to the second intersections with $\mathcal{C}$ gives $(P,Q;R,S)_{\mathcal{C}}=(P,Q;S,R)_{\mathcal{C}}$, so the four points form a harmonic range on $\mathcal{C}$ by @lem-6point1.
+:::
+
+::: {#lem-8point10}
+Let $X$ and $Y$ lie on a conic $\mathcal{C}$, and let $A$ and $B$ lie on the line $XY$. If $A$ and $B$ are conjugate with respect to $\mathcal{C}$, then $(X,Y;A,B)=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If $A$ lies inside $\mathcal{C}$ then $B$ lies outside $\mathcal{C}$, so at least one of $A,B$ lies outside $\mathcal{C}$.
+
+Suppose $A$ lies outside $\mathcal{C}$ and the tangents from $A$ to $\mathcal{C}$ touch $\mathcal{C}$ at $C$ and $D$; by @cor-8point3, the polar of $A$ is $CD$ and passes through $B$.
+
+By @lem-8point9, $(X,Y;A,B)\stackrel{C}{=}(X,Y;C,D)_{\mathcal{C}}=-1$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+If $A,B,C$ are pairwise conjugate with respect to $\mathcal{C}$, then $\triangle ABC$ is called a **self-polar triangle** with respect to $\mathcal{C}$.
+:::
+
+::: {#thm-8point4}
+## Brocard's Theorem
+Let $A,B,C,D$ lie on a conic $\mathcal{C}$, and set $P=AB\cap CD$, $Q=AC\cap BD$, and $R=AD\cap BC$. Then $\triangle PQR$ is a self-polar triangle with respect to $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the polar of $R$ intersect $AD$ and $BC$ at $M$ and $N$, respectively. By @lem-8point10, $(R,M;A,D)=(R,N;B,C)=-1$.
+
+By @lem-6point2, $M,N,P,Q$ are collinear and all lie on $\mathcal{P}_{\mathcal{C}}(R)$; the remaining conjugacies follow analogously.
+:::
+
+::: {#cor-8point5}
+If $A,B,C,D$ lie on a circle centered at $O$, then $O$ is the orthocenter of the diagonal triangle formed by $AB\cap CD$, $AC\cap BD$, and $AD\cap BC$.
+:::
+
+::: {#lem-8point11}
+If $A,B,C,D$ lie on a circle $\omega$, then the Miquel point $M$ of the complete quadrilateral determined by $ABCD$ inverts with respect to $\omega$ to $AC\cap BD$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $E=AB\cap CD$ and $F=AD\cap BC$; angle chasing shows $M,E,F$ are collinear.
+
+We have $EM\cdot EF=EA\cdot EB=\operatorname{Pow}_{\omega}(E)=EO^2-r_\omega^2$, and similarly $FM\cdot FE=FO^2-r_\omega^2$.
+
+Subtracting gives $(EM-MF)EF=EO^2-FO^2$, so by the Pythagorean theorem, $EF\perp OM$.
+
+By @thm-8point4, $EF=\mathcal{P}_{\omega}(AC\cap BD)$, so the inverse of $M$ with respect to $\omega$ is $AC\cap BD$.
+:::
+
+::: {#lem-8point12}
+Let $A,B,C$ lie on a conic $\mathcal{C}$, let $X$ lie on $AB$, and let $CA$ and $CB$ intersect $\mathcal{P}_{\mathcal{C}}(X)$ at $Y$ and $Z$, respectively. Then $Y$ and $Z$ are conjugate with respect to $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $CX$ intersect $\mathcal{C}$ again at $D$. By @thm-8point4, the polar of $X$ passes through $AC\cap BD$ and $BC\cap AD$.
+
+Hence $AC\cap BD=Y$ and $BC\cap AD=Z$; applying @thm-8point4 again shows that $Y$ and $Z$ are conjugate.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils, or conics). A map $f:E\to F$ is called a **cross-ratio-preserving map** (or **projectivity**) if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
+:::
+
+::: {#cor-8point6}
+Projecting a range onto a pencil ($X_i\mapsto AX_i$), intersecting a pencil with a line ($\ell_i\mapsto \ell_i\cap\mathcal{L}$), projecting a pencil from a point on a conic to its intersections with the conic ($AX_i\mapsto AX_i\cap\mathcal{C}\neq A$), projecting points on a conic from a point off the conic to their second intersections ($X_i\mapsto X_iA\cap\mathcal{C}\neq X_i$), as well as inversion (on ranges and circles), reflections, and rotations are all cross-ratio-preserving maps.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+A **polarity** sends poles to polars and polars to poles; under a polarity, points of tangency correspond to tangent lines, collinear points correspond to concurrent lines, and vice versa.
+:::
+
+::: {#thm-8point5}
+A polarity preserves cross ratio (for collinear points or concurrent lines).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X$ vary along a line $\ell$, set $\mathcal{P}_{\mathcal{C}}(\ell)=P$, and choose two points $Q,R$ on $\mathcal{C}$ collinear with $P$.
+
+Let $XQ$ intersect $\mathcal{C}$ again at $S$, and let $SR$ intersect $\ell$ at $Y$. By @lem-8point12, $PY$ is the polar of $X$.
+
+By @cor-8point6, the chain $X\mapsto QX\mapsto S\mapsto RS\mapsto Y\mapsto PY$ preserves cross ratio.
+:::
+
+::: {#thm-8point6}
+## Pascal's Theorem
+Let six points $A,B,C,D,E,F$ (with no three collinear) be given, and set $P=AB\cap DE$, $Q=BC\cap EF$, and $R=CD\cap FA$. Then $P,Q,R$ are collinear if and only if $A,B,C,D,E,F$ lie on a common conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Suppose $A,B,C,D,E$ lie on a conic $\mathcal{C}$. If $P,Q,R$ are collinear, let $FA$ and $FE$ intersect $\mathcal{C}$ again at $K$ and $L$, respectively. Then
+$$
+(C,B;D,K)_{\mathcal{C}}\stackrel{A}{=}(C,BA\cap CD;D,R)\stackrel{P}{=}(C,B;ED\cap BC,Q)\stackrel{E}{=}(C,B;D,L)_{\mathcal{C}},
+$$
+so $K=L$.
+
+Conversely, if $F$ lies on $\mathcal{C}$, then
+$$
+(C,BA\cap CD;D,R)\stackrel{A}{=}(C,B;D,F)_{\mathcal{C}}\stackrel{E}{=}(C,B;ED\cap BC,Q)\stackrel{P}{=}(C,BA\cap CD;D,QP\cap CD),
+$$
+so $QP\cap CD=R$.
+:::
+
+::: {#thm-8point7}
+## Pappus's Theorem
+If $A,C,E$ are collinear and $B,D,F$ are collinear, then the three points $AB\cap DE$, $BC\cap EF$, and $CD\cap FA$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Apply @thm-8point6 to a hyperbola and degenerate the hyperbola into two lines.
+:::
+
+::: {#thm-8point8}
+## Brianchon's Theorem
+There exists a conic section tangent to the six lines $AB, BC, CD, DE, EF, FA$ if and only if $AD, BE, CF$ are concurrent.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Apply polarity to @thm-8point6: collinearity of three points dualizes to concurrency of three lines.
+:::
