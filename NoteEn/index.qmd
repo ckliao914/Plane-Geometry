@@ -4,5 +4,10 @@ This is a note I wrote several years ago. I was trying to introduce pencils of c
 
 * [Section 1: ](Sec1.html)
 
+* [Section 2: ](Sec2.html)
+
+* [Section 3: ](Sec3.html)
+
+* [Section 4: ](Sec4.html)
 ---
 [← Back to Main Site](../index.html)
