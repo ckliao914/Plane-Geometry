@@ -70,7 +70,7 @@ The polar of $X=EF\cap M_{AB}M_{AC}$ with respect to the incircle passes through
 
 By @lem-6point2, $-1=(X,AW\cap EF;E,F)$.
 
-Hence by @lem-8point10, $\mathcal{P}_{(DEF)}(X)$ passes through $AW\cap EF$ and $A$, so $A,W,L$ lie on the polar of $X$.
+Hence by @lem-8point10, $\mathfrak{p}_{(DEF)}(X)$ passes through $AW\cap EF$ and $A$, so $A,W,L$ lie on the polar of $X$.
 :::
 
 ::: {#cor-19point2}
