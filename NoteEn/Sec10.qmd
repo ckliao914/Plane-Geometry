@@ -90,7 +90,7 @@ Suppose $\ell_1,\ell_2,\ell_3,\ell_4\in \mathcal{T}_{\mathcal{C}}$, and let $\el
 ## Proof
 Let a line $m$ touch $\mathcal{C}$ at $M$, and let $\ell_i, \ell_i'$ touch $\mathcal{C}$ at $L_i, L_i'$, respectively.
 
-Under polarity, $L_i, L_i'$, and $\mathcal{P}_{\mathcal{C}}(\ell)$ are collinear, so $L_i\mapsto L_i'$ is a projective map by @lem-8point6.
+Under polarity, $L_i, L_i'$, and $\mathfrak{p}_{\mathcal{C}}(\ell)$ are collinear, so $L_i\mapsto L_i'$ is a projective map by @lem-8point6.
 
 By @thm-8point5, a polar transformation also preserves cross ratio of points and lines, so the chain
 $$
@@ -118,12 +118,12 @@ Let $A,B,C,P,Q$ lie on a conic $\mathcal{C}_1$; then there exists a conic $\math
 
 If $X$ also lies on $\mathcal{C}_1$, then $P(A,B;C,X)=Q(A,B;C,X)$. Since a polar transformation preserves cross ratio,
 $$
-\mathcal{P}_{\mathcal{C}}(P)(\mathcal{P}_{\mathcal{C}}(A),\mathcal{P}_{\mathcal{C}}(B);\mathcal{P}_{\mathcal{C}}(C),\mathcal{P}_{\mathcal{C}}(X))
-=\mathcal{P}_{\mathcal{C}}(Q)(\mathcal{P}_{\mathcal{C}}(A),\mathcal{P}_{\mathcal{C}}(B);\mathcal{P}_{\mathcal{C}}(C),\mathcal{P}_{\mathcal{C}}(X)).
+\mathfrak{p}_{\mathcal{C}}(P)(\mathfrak{p}_{\mathcal{C}}(A),\mathfrak{p}_{\mathcal{C}}(B);\mathfrak{p}_{\mathcal{C}}(C),\mathfrak{p}_{\mathcal{C}}(X))
+=\mathfrak{p}_{\mathcal{C}}(Q)(\mathfrak{p}_{\mathcal{C}}(A),\mathfrak{p}_{\mathcal{C}}(B);\mathfrak{p}_{\mathcal{C}}(C),\mathfrak{p}_{\mathcal{C}}(X)).
 $$
 By @lem-10point1, all six polars are tangent to $\mathcal{C}_2$.
 
-The cross ratios above also show that $(A,B;C,X)_{\mathcal{C}_1}=(\mathcal{P}_{\mathcal{C}}(A),\mathcal{P}_{\mathcal{C}}(B);\mathcal{P}_{\mathcal{C}}(C),\mathcal{P}_{\mathcal{C}}(X))_{\mathcal{C}_2}$, so the map preserves cross ratio.
+The cross ratios above also show that $(A,B;C,X)_{\mathcal{C}_1}=(\mathfrak{p}_{\mathcal{C}}(A),\mathfrak{p}_{\mathcal{C}}(B);\mathfrak{p}_{\mathcal{C}}(C),\mathfrak{p}_{\mathcal{C}}(X))_{\mathcal{C}_2}$, so the map preserves cross ratio.
 :::
 
 ::: {#thm-10point3}
@@ -166,34 +166,34 @@ In @thm-10point3, the map $\ell\mapsto \ell\cap f(\ell)$ is a projective map; in
 :::
 
 ::: {#lem-10point4}
-Given a conic section $\mathcal{C}$, $\triangle ABC$ and the triangle formed by $\mathcal{P}_{\mathcal{C}}(BC)$, $\mathcal{P}_{\mathcal{C}}(CA)$, and $\mathcal{P}_{\mathcal{C}}(AB)$ are perspective.
+Given a conic section $\mathcal{C}$, $\triangle ABC$ and the triangle formed by $\mathfrak{p}_{\mathcal{C}}(BC)$, $\mathfrak{p}_{\mathcal{C}}(CA)$, and $\mathfrak{p}_{\mathcal{C}}(AB)$ are perspective.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Set $D=\mathcal{P}_{\mathcal{C}}(BC)$, $E=\mathcal{P}_{\mathcal{C}}(CA)$, and $F=\mathcal{P}_{\mathcal{C}}(AB)$.
+Set $D=\mathfrak{p}_{\mathcal{C}}(BC)$, $E=\mathfrak{p}_{\mathcal{C}}(CA)$, and $F=\mathfrak{p}_{\mathcal{C}}(AB)$.
 
 Let $\mathcal{C}_1$ be a conic through $A,B,C,D$, and fix $\mathcal{C}$, $\mathcal{C}_1$, $B$, $C$, and $D$ while letting $A$ vary on $\mathcal{C}_1$ (degenerate cases where $A$ lies on a side of $\triangle BCD$ are immediate).
 
-Then $E$ varies along $\mathcal{P}_{\mathcal{C}}(C)$ and $F$ varies along $\mathcal{P}_{\mathcal{C}}(B)$.
+Then $E$ varies along $\mathfrak{p}_{\mathcal{C}}(C)$ and $F$ varies along $\mathfrak{p}_{\mathcal{C}}(B)$.
 
-By @lem-10point3, $\mathcal{P}_{\mathcal{C}}(A)$ belongs to the envelope of some conic $\mathcal{C}_2$; when $A$ takes the positions $B$ and $C$, $\mathcal{P}_{\mathcal{C}}(A)$ becomes $\mathcal{P}_{\mathcal{C}}(B)$ and $\mathcal{P}_{\mathcal{C}}(C)$, both tangent to $\mathcal{C}_2$.
+By @lem-10point3, $\mathfrak{p}_{\mathcal{C}}(A)$ belongs to the envelope of some conic $\mathcal{C}_2$; when $A$ takes the positions $B$ and $C$, $\mathfrak{p}_{\mathcal{C}}(A)$ becomes $\mathfrak{p}_{\mathcal{C}}(B)$ and $\mathfrak{p}_{\mathcal{C}}(C)$, both tangent to $\mathcal{C}_2$.
 
-By @lem-10point3, $A\mapsto \mathcal{P}_{\mathcal{C}}(A)\mapsto \mathcal{P}_{\mathcal{C}}(B)\cap \mathcal{P}_{\mathcal{C}}(A)=F$ is a projective map; similarly $A\mapsto E$ is a projective map, so $f:\mathbb{L}_B\to \mathbb{L}_C$ given by $BE\mapsto E\mapsto A\mapsto F\mapsto CF$ is a projective map.
+By @lem-10point3, $A\mapsto \mathfrak{p}_{\mathcal{C}}(A)\mapsto \mathfrak{p}_{\mathcal{C}}(B)\cap \mathfrak{p}_{\mathcal{C}}(A)=F$ is a projective map; similarly $A\mapsto E$ is a projective map, so $f:\mathbb{L}_B\to \mathbb{L}_C$ given by $BE\mapsto E\mapsto A\mapsto F\mapsto CF$ is a projective map.
 
-When $A=D$, $\mathcal{P}_{\mathcal{C}}(A)=BC$, so both $E$ and $F$ lie on $BC$ and $f(BC)=CB$.
+When $A=D$, $\mathfrak{p}_{\mathcal{C}}(A)=BC$, so both $E$ and $F$ lie on $BC$ and $f(BC)=CB$.
 
 By @thm-10point3, the locus of $BE\cap CF$ is a line $\ell$.
 
 Then $g:\mathcal{C}_1\to \ell$ given by $A\mapsto BE\mapsto BE\cap \ell=BE\cap CF$ is a projective map, and $g':\mathcal{C}_1\to \ell$ given by $A\mapsto DA\mapsto DA\cap \ell$ is also a projective map.
 
-Let $B'$ and $C'$ be the second intersections of $\mathcal{P}_{\mathcal{C}}(B)$ and $\mathcal{P}_{\mathcal{C}}(C)$ with $\mathcal{C}_1$, so $\mathcal{P}_{\mathcal{C}}(B)=DB'$ and $\mathcal{P}_{\mathcal{C}}(C)=DC'$.
+Let $B'$ and $C'$ be the second intersections of $\mathfrak{p}_{\mathcal{C}}(B)$ and $\mathfrak{p}_{\mathcal{C}}(C)$ with $\mathcal{C}_1$, so $\mathfrak{p}_{\mathcal{C}}(B)=DB'$ and $\mathfrak{p}_{\mathcal{C}}(C)=DC'$.
 
-When $A=B'$, $\mathcal{P}_{\mathcal{C}}(A)$ passes through $B$, so $BE=\mathcal{P}_{\mathcal{C}}(B')$ and $F=\mathcal{P}_{\mathcal{C}}(B')\cap DB'$; thus
+When $A=B'$, $\mathfrak{p}_{\mathcal{C}}(A)$ passes through $B$, so $BE=\mathfrak{p}_{\mathcal{C}}(B')$ and $F=\mathfrak{p}_{\mathcal{C}}(B')\cap DB'$; thus
 $$
-g(B')=BE\cap\ell=BE\cap CF=F=\mathcal{P}_{\mathcal{C}}(B')\cap DB'=DB'\cap\ell=g'(B').
+g(B')=BE\cap\ell=BE\cap CF=F=\mathfrak{p}_{\mathcal{C}}(B')\cap DB'=DB'\cap\ell=g'(B').
 $$
-Analogously, $g(C')=g'(C')$. When $A=B$, $E=\mathcal{P}_{\mathcal{C}}(A)\cap \mathcal{P}_{\mathcal{C}}(C)=\mathcal{P}_{\mathcal{C}}(B)\cap \mathcal{P}_{\mathcal{C}}(C)=D$, so $g(B)=BE\cap\ell=DB\cap\ell=g'(B)$.
+Analogously, $g(C')=g'(C')$. When $A=B$, $E=\mathfrak{p}_{\mathcal{C}}(A)\cap \mathfrak{p}_{\mathcal{C}}(C)=\mathfrak{p}_{\mathcal{C}}(B)\cap \mathfrak{p}_{\mathcal{C}}(C)=D$, so $g(B)=BE\cap\ell=DB\cap\ell=g'(B)$.
 
 By @thm-10point1, $g=g'$; hence $AD$, $BE$, $\ell$, and $CF$ concur, establishing perspectivity.
 :::
@@ -220,22 +220,22 @@ By @thm-8point6 on $Af(X)Yf(A)Xf(Y)$, $Xf(Y)\cap Yf(X)$ also lies on $\ell$.
 :::
 
 ::: {#thm-10point5}
-Let $f:\mathcal{C}\to\mathcal{C}$ be a projective map on a conic $\mathcal{C}$. Then the line $Xf(X)$ either passes through a fixed point or belongs to the envelope of a conic section; accordingly, the locus of $\mathcal{P}_{\mathcal{C}}(Xf(X))$ is a line or a conic section.
+Let $f:\mathcal{C}\to\mathcal{C}$ be a projective map on a conic $\mathcal{C}$. Then the line $Xf(X)$ either passes through a fixed point or belongs to the envelope of a conic section; accordingly, the locus of $\mathfrak{p}_{\mathcal{C}}(Xf(X))$ is a line or a conic section.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 If $f$ is the identity map, then $Xf(X)$ is tangent to $\mathcal{C}$ and thus belongs to the envelope of $\mathcal{C}$. Assume $f$ is not the identity map.
 
-Given $A\in\mathcal{C}$, let $P=Af(A)\cap Xf(X)$ and $Q=Af(X)\cap Xf(A)$. By @thm-8point3 and @thm-8point4, $\mathcal{P}_{\mathcal{C}}(P)$ passes through both $Q$ and $\mathcal{P}_{\mathcal{C}}(Af(A))$.
+Given $A\in\mathcal{C}$, let $P=Af(A)\cap Xf(X)$ and $Q=Af(X)\cap Xf(A)$. By @thm-8point3 and @thm-8point4, $\mathfrak{p}_{\mathcal{C}}(P)$ passes through both $Q$ and $\mathfrak{p}_{\mathcal{C}}(Af(A))$.
 
 By @lem-10point5, let $\ell$ be the line containing $Xf(Y)\cap Yf(X)$ for all $X,Y\in\mathcal{C}$.
 
-If $\mathcal{P}_{\mathcal{C}}(X'f(X'))$ lies on $\ell$ for all $X'\in\mathcal{C}$, then $\mathcal{P}_{\mathcal{C}}(\ell)$ lies on $X'f(X')$ for all $X'\in\mathcal{C}$; since $\ell$ is independent of $X'$, every $X'f(X')$ passes through the fixed point $\mathcal{P}_{\mathcal{C}}(\ell)$.
+If $\mathfrak{p}_{\mathcal{C}}(X'f(X'))$ lies on $\ell$ for all $X'\in\mathcal{C}$, then $\mathfrak{p}_{\mathcal{C}}(\ell)$ lies on $X'f(X')$ for all $X'\in\mathcal{C}$; since $\ell$ is independent of $X'$, every $X'f(X')$ passes through the fixed point $\mathfrak{p}_{\mathcal{C}}(\ell)$.
 
-Otherwise, choose $A\in\mathcal{C}$ such that $\mathcal{P}_{\mathcal{C}}(Af(A))$ does not lie on $\ell$. Then the chain
+Otherwise, choose $A\in\mathcal{C}$ such that $\mathfrak{p}_{\mathcal{C}}(Af(A))$ does not lie on $\ell$. Then the chain
 $$
-X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto \mathcal{P}_{\mathcal{C}}(Af(A))Q=\mathcal{P}_{\mathcal{C}}(P)\mapsto P
+X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto \mathfrak{p}_{\mathcal{C}}(Af(A))Q=\mathfrak{p}_{\mathcal{C}}(P)\mapsto P
 $$
 consists of projective maps.
 
@@ -247,5 +247,5 @@ and similarly $\ell_A(\ell_1,\ell_2;\ell_3,\ell_X)=\ell_B(\ell_1,\ell_2;\ell_3,\
 
 By @lem-10point1, $\ell_X$ belongs to the envelope of a conic tangent to $\ell_1,\ell_2,\ell_3,\ell_A,\ell_B$.
 
-Applying a polar transformation with respect to $\mathcal{C}$ (@lem-10point3) shows that the locus of $\mathcal{P}_{\mathcal{C}}(Xf(X))$ is a line or a conic section.
+Applying a polar transformation with respect to $\mathcal{C}$ (@lem-10point3) shows that the locus of $\mathfrak{p}_{\mathcal{C}}(Xf(X))$ is a line or a conic section.
 :::
