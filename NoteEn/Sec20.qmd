@@ -58,6 +58,7 @@ For any three lines chosen from the six lines consisting of the three sidelines 
 :::
 
 ::: {#thm-20point1}
+## Variant of Fonténé's First Theorem
 Let $DEF$ be the cevian triangle of $P$ and $\triangle A'B'C'$ be the medial triangle. Let $(DEF)$ meet $BC,CA,AB$ again at $D',E',F'$, and set $X=EF\cap B'C'$, with $Y$ and $Z$ defined analogously. Then $D'X$, $E'Y$, $F'Z$, $(DEF)$, and $(A'B'C')$ concur at a single point.
 :::
 
@@ -136,6 +137,7 @@ Let $P_AP_BP_C$ be the anticevian triangle of $P$, and let $Q,Q_A,Q_B,Q_C$ be th
 :::
 
 ::: {#thm-20point2}
+## Variant of Fonténé's Third Theorem
 Let $Q$ be the cyclocevian conjugate of $P$, and let $DEF$ and $D'E'F'$ be the cevian triangles of $P$ and $Q$, respectively. Then $(DEF)$ is tangent to the nine-point circle if and only if $A,B,C,P,Q,H$ lie on a conic section, if and only if the orthocenter of $\triangle DEF$, the orthocenter of $\triangle D'E'F'$, and $O$ are collinear.
 :::
 
