@@ -189,7 +189,7 @@ The lines $AA_{\angle A-\theta}$ and $AA_\theta$ are isogonal lines.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The map $f:AA_{\angle A-\theta}\mapsto AA_\theta$ is an involution. Since $f(AM_{BC})=AK$ and $f(AO)=AH$, $f$ is an isogonal transformation.
+The map $f:AA_{\angle A-\theta}\mapsto AA_\theta$ is an involution. Since $f(AM_{BC})=AK$ and $f(AO)=AH$, $f$ is the isogonal involution.
 :::
 
 ::: {#lem-16point12}
