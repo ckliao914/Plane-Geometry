@@ -114,7 +114,7 @@ From the proof of @lem-3point21, $M$ and $N$ are isogonal conjugates, and we may
 
 By @lem-3point18, since the pedal circles of $M$ and $N$ coincide, their common center is the midpoint $M_{MN}$ of $MN$.
 
-The point $M$ is the spiral center sending $\triangle A_1B_1C_1$ to the pedal triangle of $M$, and this spiral similarity also sends $O_{\Gamma}$ to $M_{MN}$; hence $\alpha=\measuredangle MA_1M_{\perp BC}=\measuredangle MO_{\Gamma}M_{MN}$.
+The point $M$ is the spiral center sending $\triangle A_1B_1C_1$ to the pedal triangle of $M$ (with respect to $ABC$), and this spiral similarity also sends $O_{\Gamma}$ to $M_{MN}$; hence $\alpha=\measuredangle MA_1M_{\perp BC}=\measuredangle MO_{\Gamma}M_{MN}$.
 
 Similarly, $-\alpha=\measuredangle NO_{\Gamma}M_{MN}$, so $O_{\Gamma}$ lies on the perpendicular bisector of $MN$ and $O_{\Gamma}M=O_{\Gamma}N$.
 
@@ -221,7 +221,7 @@ By @cor-11point7, $AGe\parallel M_{BC}Mt$; applying the same argument to the oth
 :::
 
 ::: {#cor-11point8}
-Let $N$ be the midpoint of the arc $BAC$ of $(ABC)$. Then $AMt$, $I_AN$, and $BC$ are concurrent (applying @cor-11point7 to the excentral triangle).
+Let $N$ be the midpoint of the arc $BAC$ of $(ABC)$. Then $AMt$, $I_AN$, and $BC$ are concurrent (applying @cor-11point6 to the excentral triangle).
 :::
 
 ::: {#lem-11point11}
