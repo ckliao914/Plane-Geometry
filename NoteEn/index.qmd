@@ -2,9 +2,8 @@
 
 This is a note I wrote several years ago. I was trying to introduce pencils of conics and their isoconjugations, but found this too complicated over the real projective plane, so I instead made another note on the complex projective plane. That means, I am unlikely to update this note in the future. The following translation is AI-generated.
 
-* [Chapter 1: ](ch1.html)
+* [Section 1: ](Sec1.html)
 
-* [Chapter 2: ](ch2.html)
 
 
 ---
