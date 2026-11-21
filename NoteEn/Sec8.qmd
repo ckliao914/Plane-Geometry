@@ -1,4 +1,4 @@
-## Conic Cross Ratio and Polarity
+## Cross Ratio on Conics and Polar Transformation
 
 ::: {.unnumbered-env}
 **Definition.**
@@ -248,20 +248,20 @@ Hence $AC\cap BD=Y$ and $BC\cap AD=Z$; applying @thm-8point4 again shows that $Y
 
 ::: {.unnumbered-env}
 **Definition.**
-Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils, or conics). A map $f:E\to F$ is called a **cross-ratio-preserving map** (or **projectivity**) if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
+Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils, or conics). A map $f:E\to F$ is called a **projective map** if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
 :::
 
 ::: {#cor-8point6}
-Projecting a range onto a pencil ($X_i\mapsto AX_i$), intersecting a pencil with a line ($\ell_i\mapsto \ell_i\cap\mathcal{L}$), projecting a pencil from a point on a conic to its intersections with the conic ($AX_i\mapsto AX_i\cap\mathcal{C}\neq A$), projecting points on a conic from a point off the conic to their second intersections ($X_i\mapsto X_iA\cap\mathcal{C}\neq X_i$), as well as inversion (on ranges and circles), reflections, and rotations are all cross-ratio-preserving maps.
+Projecting a range onto a pencil ($X_i\mapsto AX_i$), intersecting a pencil with a line ($\ell_i\mapsto \ell_i\cap\mathcal{L}$), projecting a pencil from a point on a conic to its intersections with the conic ($AX_i\mapsto AX_i\cap\mathcal{C}\neq A$), projecting points on a conic from a point off the conic to their second intersections ($X_i\mapsto X_iA\cap\mathcal{C}\neq X_i$), as well as inversion (on ranges and circles), reflections, and rotations are all projective maps.
 :::
 
 ::: {.unnumbered-env}
 **Definition.**
-A **polarity** sends poles to polars and polars to poles; under a polarity, points of tangency correspond to tangent lines, collinear points correspond to concurrent lines, and vice versa.
+A **polar transformation** sends poles to polars and polars to poles; under a polar transformation, points of tangency correspond to tangent lines, collinear points correspond to concurrent lines, and vice versa.
 :::
 
 ::: {#thm-8point5}
-A polarity preserves cross ratio (for collinear points or concurrent lines).
+A polar transformation preserves cross ratio (for collinear points or concurrent lines).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -270,7 +270,7 @@ Let $X$ vary along a line $\ell$, set $\mathcal{P}_{\mathcal{C}}(\ell)=P$, and c
 
 Let $XQ$ intersect $\mathcal{C}$ again at $S$, and let $SR$ intersect $\ell$ at $Y$. By @lem-8point12, $PY$ is the polar of $X$.
 
-By @cor-8point6, the chain $X\mapsto QX\mapsto S\mapsto RS\mapsto Y\mapsto PY$ preserves cross ratio.
+By @cor-8point6, the chain $X\mapsto QX\mapsto S\mapsto RS\mapsto Y\mapsto PY$ consists of projective maps, hence preserves cross ratio.
 :::
 
 ::: {#thm-8point6}
@@ -310,5 +310,5 @@ There exists a conic section tangent to the six lines $AB, BC, CD, DE, EF, FA$ i
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Apply polarity to @thm-8point6: collinearity of three points dualizes to concurrency of three lines.
+Apply a polar transformation to @thm-8point6: collinearity of three points dualizes to concurrency of three lines.
 :::
