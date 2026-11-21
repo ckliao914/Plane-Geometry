@@ -1,4 +1,3 @@
-
 ## Cyclocevian Conjugate and Crosspoint
 
 ::: {#lem-11point1}
@@ -188,7 +187,7 @@ The crosspoint of $G$ and $H$ is $K$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Using the notation of @lem-11point4, $AH$ meets $M_{CA}M_{AB}$ at the midpoint $M_{AD}$ of the altitude.
+Using the notation of @lem-11point8, $AH$ meets $M_{CA}M_{AB}$ at the midpoint $M_{AD}$ of the altitude.
 
 By @thm-11point1, $M_{BC}M_{AD}$ passes through the crosspoint of $G$ and $H$.
 
@@ -197,7 +196,7 @@ Similarly, if $E=B_{\perp AC}$, then $M_{AC}M_{BE}$ also passes through the cros
 By @lem-11point8, the crosspoint of $G$ and $H$ is $K$.
 :::
 
-::: {#cor-11point5}
+::: {#cor-11point6}
 $AM_{BC}\cap B_{\perp AC}C_{\perp AB}$, $K$, and $A_{\perp BC}$ are collinear.
 :::
 
@@ -206,7 +205,7 @@ $AM_{BC}\cap B_{\perp AC}C_{\perp AB}$, $K$, and $A_{\perp BC}$ are collinear.
 The symmedian point of the excentral triangle is $X(9)$ (the **Mittenpunkt**), denoted $Mt$ unless stated otherwise.
 :::
 
-::: {#cor-11point6}
+::: {#cor-11point7}
 $Mt$ lies on $I_AM_{BC}$ (since $I_B,I_C,B,C$ are concyclic).
 :::
 
@@ -218,11 +217,11 @@ The anticomplement of $Mt$ is $Ge$, and $Mt$, $Ge$, and $G$ are collinear.
 ## Proof
 If the incircle touches $BC$ at $D$, adapting the proof of @lem-2point7 to the excentral triangle gives $AD\parallel M_{BC}I_A$.
 
-By @cor-11point6, $AGe\parallel M_{BC}Mt$; applying the same argument to the other two sides shows that the anticomplement of $Mt$ is $Ge$.
+By @cor-11point7, $AGe\parallel M_{BC}Mt$; applying the same argument to the other two sides shows that the anticomplement of $Mt$ is $Ge$.
 :::
 
-::: {#cor-11point7}
-Let $N$ be the midpoint of the arc $BAC$ of $(ABC)$. Then $AMt$, $I_AN$, and $BC$ are concurrent (applying @cor-11point6 to the excentral triangle).
+::: {#cor-11point8}
+Let $N$ be the midpoint of the arc $BAC$ of $(ABC)$. Then $AMt$, $I_AN$, and $BC$ are concurrent (applying @cor-11point7 to the excentral triangle).
 :::
 
 ::: {#lem-11point11}
@@ -233,7 +232,7 @@ Let the $A$-excircle touch $BC,CA,AB$ at $D',E',F'$, respectively. Then $A$, $Mt
 ## Proof
 By the excentral analogue of @lem-9point8, if $N$ is the midpoint of the arc $BAC$ of $(ABC)$, then $NI_A$, $BC$, and $AD'_{\perp E'F'}$ are concurrent.
 
-By @cor-11point7, $A$, $Mt$, and $D'_{\perp E'F'}$ are collinear.
+By @cor-11point8, $A$, $Mt$, and $D'_{\perp E'F'}$ are collinear.
 :::
 
 ::: {#lem-11point12}
@@ -253,11 +252,11 @@ Setting $P_A=AP\cap BC$, we have $BP_A/P_AC=FA_1/A_1E=CA'_1/A'_1B$.
 Hence $AP_A$ and $AA'_1$ are isotomic conjugates, so the complement of $X$ is the isotomic conjugate of $P$.
 :::
 
-::: {#cor-11point8}
+::: {#cor-11point9}
 The crosspoint of $Ge$ and $G$ is $I$, and the crosspoint of $Na$ and $G$ is $Mt$.
 :::
 
-::: {#cor-11point9}
+::: {#cor-11point10}
 Let the $A$-excircle touch $BC$ at $T_A$, and define $T_B,T_C$ symmetrically. Then $T_BT_C$, $AM_{BC}$, and $MtT_A$ are concurrent.
 :::
 
@@ -266,6 +265,6 @@ Let the $A$-excircle touch $BC$ at $T_A$, and define $T_B,T_C$ symmetrically. Th
 $X(69)$ is the isotomic conjugate of the orthocenter.
 :::
 
-::: {#cor-11point10}
+::: {#cor-11point11}
 The complement of $X(69)$ is $K$, and $X(69)$, $G$, and $K$ are collinear.
 :::
