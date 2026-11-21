@@ -65,7 +65,7 @@ Let $\ell$ be a line passing through $O$, and let $\mathcal{H}$ be the isogonal 
 ## Proof
 Let $P$ be the center of $\mathcal{H}$; by @lem-14point8,
 $$
-\measuredangle(\mathcal{P}_{\mathcal{H}}(M_{BC}),\mathcal{P}_{\mathcal{H}}(N_9))=\measuredangle N_9PM_{BC}.
+\measuredangle(\mathfrak{p}_{\mathcal{H}}(M_{BC}),\mathfrak{p}_{\mathcal{H}}(N_9))=\measuredangle N_9PM_{BC}.
 $$
 Let $Q$ and $D$ be the reflections of $H$ across $P$ and $A_{\perp BC}$, respectively. Since both $P$ and $M_{BC}$ lie on the nine-point circle, angle chasing and homothety give
 $$
@@ -75,9 +75,9 @@ Since $Q$ is the isogonal conjugate of $\infty_{\ell}$, if $Q'$ lies on the circ
 
 Hence
 $$
-\measuredangle(\mathcal{P}_{\mathcal{H}}(M_{BC}),\mathcal{P}_{\mathcal{H}}(N_9))=\measuredangle QDA=\measuredangle QQ'A=\measuredangle(BC,\ell).
+\measuredangle(\mathfrak{p}_{\mathcal{H}}(M_{BC}),\mathfrak{p}_{\mathcal{H}}(N_9))=\measuredangle QDA=\measuredangle QQ'A=\measuredangle(BC,\ell).
 $$
-Since $\mathcal{P}_{\mathcal{H}}(M_{BC})\parallel BC$ (@lem-8point10), we have $\mathcal{P}_{\mathcal{H}}(N_9)\parallel\ell$, meaning that $N_9$ and $\infty_{\ell}$ are conjugate with respect to $\mathcal{H}$.
+Since $\mathfrak{p}_{\mathcal{H}}(M_{BC})\parallel BC$ (@lem-8point10), we have $\mathfrak{p}_{\mathcal{H}}(N_9)\parallel\ell$, meaning that $N_9$ and $\infty_{\ell}$ are conjugate with respect to $\mathcal{H}$.
 :::
 
 ::: {#thm-18point3}
@@ -95,9 +95,9 @@ Thus $A,B,C,H,X,Y$ lie on a conic section; taking isogonal conjugates shows that
 
 Conversely, suppose $O,X,Y$ are collinear; then by @lem-3point18, the center of the pedal circle of $X$ is $M_{XY}$.
 
-Consider $\mathcal{H}=(ABCHXY)$; then $\mathcal{P}_{\mathcal{H}}(\infty_{XY})$ passes through $M_{XY}$ (@lem-8point10) and the center $P'$ of $\mathcal{H}$.
+Consider $\mathcal{H}=(ABCHXY)$; then $\mathfrak{p}_{\mathcal{H}}(\infty_{XY})$ passes through $M_{XY}$ (@lem-8point10) and the center $P'$ of $\mathcal{H}$.
 
-By @lem-18point2, $\mathcal{P}_{\mathcal{H}}(\infty_{XY})$ also passes through $N_9$, so $N_9,P',M_{XY}$ are collinear.
+By @lem-18point2, $\mathfrak{p}_{\mathcal{H}}(\infty_{XY})$ also passes through $N_9$, so $N_9,P',M_{XY}$ are collinear.
 
 Since $P'$ is an intersection of the pedal circle of $X$ and the nine-point circle, and $N_9,M_{XY}$ are their respective centers, the two circles are tangent.
 :::
