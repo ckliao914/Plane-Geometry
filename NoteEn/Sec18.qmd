@@ -24,6 +24,7 @@ Hence $OQ\perp AP'\perp P'O$, so $O,Q,P'$ are collinear and $P'=A_{\perp OQ}$.
 :::
 
 ::: {#thm-18point1}
+## Fonténé's First Theorem
 Let $R$ be the isogonal conjugate of $Q$, and let $P$ be the Poncelet point of $R$. Let $DEF$ be the pedal triangle of $Q$, and set $X=EF\cap M_{AB}M_{AC}$. Then $D,X,P$ are collinear.
 :::
 
@@ -43,6 +44,7 @@ Hence $D',P',X$ are collinear, and reflecting across the midline yields that $D,
 :::
 
 ::: {#thm-18point2}
+## Fonténé's Second Theorem
 Let $\ell$ be a line passing through $O$, and let $X$ vary along $\ell$. Then the pedal circle of $X$ passes through a fixed point.
 :::
 
@@ -79,6 +81,7 @@ Since $\mathcal{P}_{\mathcal{H}}(M_{BC})\parallel BC$ (@lem-8point10), we have $
 :::
 
 ::: {#thm-18point3}
+## Fonténé's Third Theorem
 Let $Y$ be the isogonal conjugate of $X$. Then the nine-point circle and the pedal circle of $X$ are tangent if and only if $O,X,Y$ are collinear (equivalently, $\measuredangle XBC+\measuredangle XCA+\measuredangle XAB=90^\circ$).
 :::
 
