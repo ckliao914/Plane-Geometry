@@ -164,4 +164,166 @@ Let two circles $\omega_1,\omega_2$ with centers $O_1,O_2$ intersect at $A$ and 
 If $\omega$ and $\Omega$ are orthogonal, then the inverse of $\omega$ with respect to $\Omega$ is $\omega$ itself.
 :::
 
-::: {.callout
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\omega$ and $\Omega$ intersect at $X$ and $Y$, and let $O$ be the center of $\Omega$. Then $OX$ and $OY$ are tangent to $\omega$.
+
+Since $X$ and $Y$ are fixed by the inversion, $\omega^*$ still passes through $X,Y$ and remains tangent to $OX,OY$, so $\omega^*=\omega$.
+:::
+
+::: {#lem-4point9}
+The $A$-Apollonius circle is invariant under inversion with respect to $(ABC)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-4point7, the segment joining the center of the $A$-Apollonius circle to $A$ is tangent to $(ABC)$.
+
+Hence the two circles are orthogonal, and the result follows from @lem-4point8.
+:::
+
+::: {#lem-4point10}
+The three Apollonius circles intersect at two points.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-4point9, the inverse of $X(15)$ with respect to $(ABC)$ also lies on all three Apollonius circles.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The second intersection point in @lem-4point10 is called the **second isodynamic point** $X(16)$.
+:::
+
+::: {#cor-4point5}
+$O,X(15),X(16)$ are collinear, and $X(16)$ lies outside $(ABC)$.
+:::
+
+::: {#cor-4point6}
+Inverting $\triangle ABC$ about $A$ with radius $\sqrt{AB\cdot AC}$ followed by reflecting across the angle bisector of $\angle BAC$ maps $\triangle ABC$ to itself (with $B=C^*$ and $C=B^*$).
+:::
+
+::: {#cor-4point7}
+Under the transformation in @cor-4point6, $I^*=I_A$, and $O^*$ is the reflection of $A$ across $BC$.
+:::
+
+::: {#lem-4point11}
+The $A$-Humpty point lies on the $A$-Apollonius circle.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Apply the $\sqrt{AB\cdot AC}$-inversion followed by reflection in @cor-4point6.
+
+By @lem-3point8 (and @lem-3point2), the image of the $A$-Humpty point is the intersection of the tangents to $(ABC)$ at $B$ and $C$, which lies on the perpendicular bisector of $BC$.
+
+As shown in the proof of @thm-4point4, the image of the $A$-Apollonius circle is this same perpendicular bisector.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $X(15)$ is $X(13)$ (the **first isogonic center**, or **Fermat–Torricelli point**), and the isogonal conjugate of $X(16)$ is $X(14)$ (the **second isogonic center**).
+:::
+
+::: {#lem-4point12}
+Let $D$ (resp. $D'$) be the third vertex of the equilateral triangle erected outward (resp. inward) on side $BC$. Under the transformation in @cor-4point6, the image of $D$ (resp. $D'$) is $X(15)$ (resp. $X(16)$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The circle $\omega$ centered at $B$ with radius $BC$ maps to the $B$-Apollonius circle (as verified by computing the angle and inverse of one of the intersections of $\omega$ with $AB$). Similarly, the circle centered at $C$ with radius $BC$ maps to the $C$-Apollonius circle. Hence the image of $D$ is $X(15)$, and the inward case for $D'$ follows analogously.
+:::
+
+::: {#lem-4point13}
+Let $D,E,F$ be the vertices of the equilateral triangles erected outward (or all inward) on the sides of $\triangle ABC$. Then $\triangle ABC$ and $\triangle DEF$ are perspective, with center of perspectivity $X(13)$ (or $X(14)$, respectively).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-4point12, since the transformation in @cor-4point6 includes a reflection across the angle bisector of $\angle BAC$, the ray $AD$ is mapped to the isogonal conjugate of $AX(15)$. Thus the lines $AD,BE,CF$ concur at the isogonal conjugate of $X(15)$ (resp. $X(16)$), which is $X(13)$ (resp. $X(14)$).
+:::
+
+::: {#cor-4point8}
+Using the notation of @lem-4point12, $X(13),B,C,D$ are concyclic, and $X(14),B,C,D'$ are concyclic.
+:::
+
+::: {#thm-4point5}
+Given distinct points $X$ and $Y$, as $c>0$ varies, the resulting Apollonius circles share a common radical axis (namely, the perpendicular bisector of $XY$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Choose a circle $\omega$ with center $O$ and radius $r_\omega$ passing through $X$ and $Y$ (as $P$ varies along $\omega$, the ratio $PX/PY$ takes all positive values). Consider $\triangle PXY$.
+
+By @lem-4point9, $OP$ is tangent to the $P$-Apollonius circle $\Omega$.
+
+Thus $\operatorname{Pow}_{\Omega}(O)=OP^2=r_\omega^2$, which is independent of the choice of $P$ on $\omega$.
+
+Hence $O$ lies on the radical axis of any two $P$-Apollonius circles; since the radical axis of any pair is also perpendicular to $XY$, all such Apollonius circles share the same radical axis.
+:::
+
+::: {#lem-4point14}
+The triangle formed by the inverses of the vertices of $\triangle ABC$ with respect to $P$ is directly similar to the ($\alpha$-)pedal triangle of $P$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $DEF$ be the pedal triangle of $P$. Using cyclic quadrilaterals and @lem-4point1, we have
+$$
+\measuredangle EDF=\measuredangle EDP+\measuredangle PDF=\measuredangle ACP+\measuredangle PBA=\measuredangle PA^*C^*+\measuredangle B^*A^*P=\measuredangle B^*A^*C^*,
+$$
+and similarly for the other angles (the $\alpha$-pedal case follows identically by adding $\alpha$).
+:::
+
+::: {#lem-4point15}
+Inverting $\triangle ABC$ about an isodynamic point produces an equilateral triangle.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+From the proof of @thm-4point4 (or @thm-4point2), all three sides of $\triangle A^*B^*C^*$ have equal length.
+:::
+
+::: {#cor-4point9}
+The pedal triangle of an isodynamic point is equilateral, and the Miquel point (@lem-1point1) of any inscribed equilateral triangle is an isodynamic point.
+:::
+
+::: {#lem-4point16}
+Let the tangent to $(ABC)$ at $A$ intersect $BC$ at $A_1$, and define $B_1,C_1$ analogously. Then $A_1,B_1,C_1$ are collinear, and the line through them is perpendicular to the line $OX(15)X(16)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-4point7, $A_1,B_1,C_1$ are the centers of the three Apollonius circles.
+
+Since these three circles share the common radical axis $OX(15)X(16)$, their centers are collinear along a line perpendicular to this radical axis.
+:::
+
+::: {#lem-4point17}
+Using the notation of @lem-4point16, the inverse of the $A$-Humpty point with respect to $(ABC)$ is $A_1$ (equivalently, the inverse of the $A$-Dumpty point with respect to $(ABC)$ is $A_1$—see proof).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $D$ lie on $(ABC)$ such that $ABDC$ is a harmonic quadrilateral.
+
+By @cor-3point4, the intersection of the tangents to $(ABC)$ at $A$ and $D$ lies on $BC$, so this intersection is $A_1$.
+
+Angle chasing shows that $A$ and $D$ lie on $(OA_1)$; therefore, the inverse of $A_1$ with respect to $(ABC)$ is the midpoint $M_{AD}$, which is the $A$-Dumpty point.
+:::
+
+::: {#lem-4point18}
+$O,K,X(15),X(16)$ are collinear along the Brocard axis.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $T_A$ be the $A$-Dumpty point, and define $T_B,T_C$ analogously.
+
+Inverting @cor-3point7 with respect to $(ABC)$ shows that $T_A^*,T_B^*,T_C^*,K^*$ are collinear on a line perpendicular to $OK$.
+
+By @lem-4point17, $T_A^*=A_1$ is the intersection of the tangent to $(ABC)$ at $A$ with $BC$, and similarly for $T_B^*$ and $T_C^*$.
+
+By @lem-4point16, the line $T_A^*T_B^*T_C^*$ is perpendicular to $OX(15)X(16)$; hence $OK$ and $OX(15)X(16)$ coincide, so $O,K,X(15),X(16)$ are collinear.
+:::
