@@ -22,27 +22,27 @@ This is a note I wrote several years ago. I was trying to introduce pencils of c
 
 * [Section 10: Projective Map Method and Steiner Conic](Sec10.html)
 
-* [Section 11: ](Sec11.html)
+* [Section 11: Cyclocevian Conjugate and Crosspoint](Sec11.html)
 
-* [Section 12: ](Sec12.html)
+* [Section 12: Desargues Involution Theorem](Sec12.html)
 
-* [Section 13: ](Sec13.html)
+* [Section 13: Feuerbach Hyperbola](Sec13.html)
 
-* [Section 14: ](Sec14.html)
+* [Section 14: Rectangular Hyperbolas and Poncelet Points](Sec14.html)
 
-* [Section 15: ](Sec15.html)
+* [Section 15: On the Incenter-Circumcenter Configuration](Sec15.html)
 
-* [Section 16: ](Sec16.html)
+* [Section 16: Kiepert Hyperbola](Sec16.html)
 
-* [Section 17: ](Sec17.html)
+* [Section 17: Jerabek Hyperbola](Sec17.html)
 
 * [Section 18: ](Sec18.html)
 
-* [Section 19: ](Sec19.html)
+* [Section 19: More on the Feuerbach Hyperbola Configuration](Sec19.html)
 
 * [Section 20: ](Sec20.html)
 
-* [Section 21: ](Sec21.html)
+* [Section 21: Projective Transformations](Sec21.html)
 
 ---
 [← Back to Main Site](../index.html)
