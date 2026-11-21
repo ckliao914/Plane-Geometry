@@ -27,6 +27,11 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: en
+          
+      - name: Render NoteEn
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: NoteEn
 
       - name: Prepare Public Directory
         run: |
@@ -48,6 +53,11 @@ jobs:
           # 3. 將 en/ 底下編譯好的書本內容放入 public/en/ 子目錄
           mkdir -p public/en
           cp -r en/_book/* public/en/
+
+          # 4. 將 NoteEn/ 底下編譯好的書本內容放入 public/NoteEn/ 子目錄
+          mkdir -p public/NoteEn
+          cp -r en/_book/* public/NoteEn/
+
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
