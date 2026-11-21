@@ -1,1 +1,342 @@
+## Jerabek Hyperbola
 
+::: {.unnumbered-env}
+**Definition.**
+The **Jerabek hyperbola** is the isogonal conjugate of the line $OH$, namely $(ABCOH)$; when unspecified, it is denoted by $\mathcal{H}_{Je}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(54)$ (the **Kosnita point**) is the isogonal conjugate of $N_9$; when unspecified, it is denoted by $Ko$.
+:::
+
+::: {#cor-17point1}
+The points $K$, $Ko$, and $X(65)$ lie on $\mathcal{H}_{Je}$.
+:::
+
+::: {#lem-17point1}
+The line $AKo$ passes through the circumcenter of $\triangle BOC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $D=\mathcal{P}_{(ABC)}(BC)$; then
+$$
+A(G,H;O,N_9)=A(K,O;H,Ko)=(D,O;\infty_{OD},AKo\cap OD).
+$$
+Thus $AKo$ passes through the midpoint of $OD$; since $O,B,C,D$ are concyclic, $AKo$ passes through the circumcenter of $\triangle BOC$.
+:::
+
+::: {#lem-17point2}
+Let $B'$ and $C'$ be the reflections of $B$ and $C$ across $AC$ and $AB$, respectively. Then $B'C'\perp AKo$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider $L=B'C\cap C'B$; angle chasing shows that $L$ lies on $(BOC)$, and let $S$ be the center of $(BCLO)$.
+
+Then $A$ is the $L$-excenter of $\triangle BLC$ (in the acute case; similarly otherwise), and $C'B=BC=CB'$.
+
+Applying @lem-15point7 to $\triangle LBC$ gives $B'C'\perp SA$, and by @lem-17point1 we have $B'C'\perp AKo$.
+:::
+
+::: {#lem-17point3}
+Let $P$ and $Q$ be isogonal conjugates. Then the tangent from $A$ to $(APQ)$, the tangent from $B$ to $(BPQ)$, and the tangent from $C$ to $(CPQ)$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Taking isogonal conjugates of the three tangents turns them into the lines through $A,B,C$ parallel to $PQ$, which concur at $\infty_{PQ}$.
+:::
+
+::: {#lem-17point4}
+Suppose $P\in\mathcal{H}_{Je}$. Then the tangent from $A$ to $(AOP)$, the tangent from $B$ to $(BOP)$, and the tangent from $C$ to $(COP)$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $Q$ be the antigonal conjugate of $P$, and let $R$ be the inverse of $Q$ with respect to the circumcircle.
+
+Since $P$ and $Q$ are antipodal points on $\mathcal{H}_{Je}$, @lem-14point6 gives $\measuredangle RAO=\measuredangle OQA=\measuredangle APO$.
+
+Hence $AR$ is tangent to $(AOP)$ at $A$, so the three tangents concur at $R$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $X(30)$ is $X(74)$, which is the fourth intersection of $\mathcal{H}_{Je}$ with $(ABC)$.
+:::
+
+::: {#lem-17point5}
+Let $P,Q,X,Y$ be four points, and let $\mathcal{C}_1$ and $\mathcal{C}_2$ be two conics passing through $P,Q,X,Y$. Let a line $\ell_P$ through $P$ meet $\mathcal{C}_1$ and $\mathcal{C}_2$ again at $P_1$ and $P_2$, and let a line $\ell_Q$ through $Q$ meet $\mathcal{C}_1$ and $\mathcal{C}_2$ again at $Q_1$ and $Q_2$. Then $P_1Q_1$, $P_2Q_2$, and $XY$ concur.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix $P,Q,X,Y$, $\mathcal{C}_1$, $\mathcal{C}_2$, $Q_1$, and $Q_2$, and let $P_1$ and $P_2$ vary along $\mathcal{C}_1$ and $\mathcal{C}_2$.
+
+Then the chains
+$$
+f:P_1\mapsto Q_1P_1\mapsto Q_1P_1\cap XY
+$$
+and
+$$
+g:P_1\mapsto PP_1\mapsto P_2\mapsto Q_2P_2\cap XY
+$$
+both preserve cross ratio.
+
+Clearly $f(X)=g(X)=X$, $f(Y)=g(Y)=Y$, and $f(Q)=g(Q)=\ell_Q\cap XY$.
+
+By @thm-10point1, $f=g$, so $P_1Q_1$, $P_2Q_2$, and $XY$ concur.
+:::
+
+::: {#cor-17point2}
+Let a conic $\mathcal{C}_1$ pass through $A,B,C,R$, let $P$ be a point, and let $AP,BP,CP$ meet $\mathcal{C}_1$ again at $P_A,P_B,P_C$. Let a conic $\mathcal{C}_2$ pass through $A,B,C,P$ and meet $\mathcal{C}_1$ again at a fourth point $S$. If $SR$ meets $\mathcal{C}_2$ again at $V$, then $P$, $RP_A\cap BC$, $RP_B\cap CA$, $RP_C\cap AB$, and $V$ are collinear.
+:::
+
+::: {#lem-17point6}
+Let $R$ be a point on the circumcircle, and let $X(74)R$ meet $\mathcal{H}_{Je}$ again at $V$. Then the orthotransversal, trilinear polar, and Steiner line of $R$ concur at $V$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the case $\mathcal{C}_1=(ABC)$, $\mathcal{C}_2=\mathcal{H}_{Je}$, and $S=X(74)$ in @cor-17point2.
+
+When $P=O$, let $AO$ meet $(ABC)$ again at the antipode $A'$; then $RA'\cap BC$ lies on the orthotransversal of $R$.
+
+Likewise, $V$, $O$, and $RA'\cap BC$ all lie on the orthotransversal of $R$.
+
+When $P=K$, let $AK$ meet $(ABC)$ again at $L$; then
+$$
+-1=(A,L;B,C)\stackrel{R}{=}(RA\cap BC,RL\cap BC;B,C).
+$$
+Thus $RL\cap BC$ lies on the trilinear polar of $R$, and similarly $VK$ is the trilinear polar of $R$.
+
+When $P=H$, let $AH$ meet $(ABC)$ again at $D$, and let $R_A$ be the reflection of $R$ across $BC$; then $R_AH$, $RD$, and $BC$ concur.
+
+Thus $RD\cap BC$ lies on the Steiner line of $R$, and similarly $VH$ is the Steiner line of $R$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(125)$ is the center of $\mathcal{H}_{Je}$, and is the midpoint of $H$ and $X(74)$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(110)$ is the reflection of $X(74)$ across $O$ (the antipode of $X(74)$ on $(ABC)$).
+:::
+
+::: {#cor-17point3}
+The Steiner line of $X(110)$ is $OH$, its trilinear polar is $OK$, and its orthotransversal is the tangent from $O$ to $\mathcal{H}_{Je}$ (by the proof of @lem-17point6, $X(74)X(110)$ meets $\mathcal{H}_{Je}$ again at $O$).
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(25)$ is the homothetic center of the triangle formed by the tangents to the circumcircle at $A,B,C$ (the anticevian triangle of $K$) and the orthic triangle.
+:::
+
+::: {#lem-17point7}
+The point $X(25)$ lies on $OH$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+The incenter of the anticevian triangle of $K$ is $O$, and the incenter of the orthic triangle is $H$ (in the acute case).
+
+Hence $OH$ passes through their homothetic center $X(25)$.
+:::
+
+::: {#lem-17point8}
+The isogonal conjugate of $X(25)$ is $X(69)$ (the isotomic conjugate of $H$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the orthic triangle be $DEF$ and the anticevian triangle of $K$ be $PQR$.
+
+The homothety sending $\triangle PQR$ to $\triangle DEF$ sends $O$ to $H$, so it sends $O_{\perp QR}=A$ to $H_{\perp EF}=S$.
+
+Thus $A,S,X(25)$ are collinear. Let $A'$ be the reflection of $A$ across $O$; then $A'_{\perp BC}=AX(69)\cap BC=T$.
+
+Reflecting $A,H,E,F$ across the internal angle bisector of $\angle BAC$ gives a configuration homothetic from $A$ to $A,A',B,C$, which also sends $S$ to $T$.
+
+Hence $AS$ and $AT$ are isogonal lines, so $AX(25)$ and $AX(69)$ are isogonal lines and $X(25),X(69)$ are isogonal conjugates.
+:::
+
+::: {#cor-17point4}
+The point $X(69)$ lies on $\mathcal{H}_{Je}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The midpoint of $OK$ is $X(182)$ (the center of the Brocard circle).
+:::
+
+::: {#lem-17point9}
+The points $G$, $X(182)$, $X(110)$, and $X(125)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the polar of $\infty_{OK}$ with respect to $\mathcal{H}_{Je}$; clearly both $X(125)$ and $X(182)$ lie on it (@lem-8point10).
+
+Moreover, the anticomplements of $O$ and $K$ are $H$ and $X(69)$ (@cor-11point11), so $OK\cap HX(69)=\infty_{OK}$.
+
+By Brocard's theorem, $G=OH\cap KX(69)$ lies on $\mathcal{P}_{\mathcal{H}_{Je}}(\infty_{OK})$, so $G$, $X(182)$, and $X(125)$ are collinear.
+
+Also, $X(125)$, $X(110)$, and $G$ are collinear (since $G$ and $H$ are the internal and external centers of similitude of the circumcircle and nine-point circle).
+:::
+
+::: {#lem-17point10}
+The points $Ko$, $X(69)$, and $X(182)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+We have
+$$
+-1=(G,H;O,N_9)=(K,O;H,Ko)_{\mathcal{H}_{Je}}\stackrel{X(69)}{=}(K,O;\infty_{OK},X(69)Ko\cap OK).
+$$
+Hence $KoX(69)\cap OK=M_{OK}=X(182)$, so $Ko$, $X(69)$, and $X(182)$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(26)$ is the circumcenter of the triangle formed by the tangents to the circumcircle at $A,B,C$.
+:::
+
+::: {#lem-17point11}
+Let $\triangle PQR$ be the triangle formed by the tangents to the circumcircle at $A,B,C$. Then the internal and external centers of similitude of $(PQR)$ and the nine-point circle of $\triangle ABC$ are $O$ and $X(25)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Take the antipodes $D',E',F'$ of the orthic triangle $DEF$ on the nine-point circle, which lie on the three perpendicular bisectors.
+
+Then the internal and external centers of similitude are the points of concurrence of $D'P,E'Q,F'R$ and of $DP,EQ,FR$.
+
+Since $P,Q,R$ also lie on the three perpendicular bisectors, $D'P,E'Q,F'R$ concur at $O$ and $DP,EQ,FR$ concur at $X(25)$.
+:::
+
+::: {#cor-17point5}
+We have $(X(26),N_9;X(25),O)=-1$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $X(20)$ is $X(64)$, which lies on $\mathcal{H}_{Je}$.
+:::
+
+::: {#lem-17point12}
+The points $X(64)$, $X(20)$, and $X(69)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that the pedal triangle of $X(20)$ coincides with the cevian triangle of $X(69)$; call it $DEF$.
+
+If the pedal triangle of $X(64)$ is $PQR$, then by @lem-3point18, $P,Q,R,D,E,F$ lie on a circle $\Gamma$.
+
+By the proof of @lem-11point7, setting $A_3=QF\cap RE$ and defining $B_3,C_3$ analogously, $A_3,B_3,X(69)$ are collinear.
+
+Inverting with respect to $\Gamma$, $X(20)$, $X(64)$, $A_3^*$, and $B_3^*$ are collinear and pass through the center of $\Gamma$ (since the center is the midpoint of $X(20)X(64)$).
+
+Thus $X(20)$, $X(64)$, $A_3$, and $B_3$ are collinear, so $X(20)$, $X(64)$, and $X(69)$ all lie on $A_3B_3$.
+:::
+
+::: {#lem-17point13}
+If $\phi$ is the isogonal transformation sending $K$ to $K$, then $\phi(O)=X(25)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Note that $(AB,AC)$, $(AG,AG)$, and $(AH,AX(69))$ belong to the same involution (isotomic).
+
+Taking isogonal conjugates shows that $(AC,AB)$, $(AK,AK)$, and $(AO,AX(25))$ belong to the same involution, so $\phi(O)=X(25)$.
+:::
+
+::: {#lem-17point14}
+The line $KX(25)$ is the tangent to $\mathcal{H}_{Je}$ at $K$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\phi$ be the isogonal transformation sending $K$ to $K$; by @lem-17point13, $\phi(O)=X(25)$.
+
+By @lem-12point8, $K\phi(O)$ is tangent to $(ABCKO)$, so $KX(25)$ is tangent to $\mathcal{H}_{Je}$ at $K$.
+:::
+
+::: {#lem-17point15}
+The point $X(25)$ is the crosspoint of $K$ and $X(64)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider
+$$
+-1=(G,X(20);O,H)=(K,X(64);H,O)_{\mathcal{H}_{Je}}.
+$$
+By @lem-8point9, the tangents to $\mathcal{H}_{Je}$ at $K$ and $X(64)$ concur with $OH$.
+
+By @lem-17point7 and @lem-17point14, the tangent to $\mathcal{H}_{Je}$ at $K$ meets $OH$ at $X(25)$.
+
+Hence $X(64)X(25)$ is also tangent to $\mathcal{H}_{Je}$, so $X(25)$ is the crosspoint of $K$ and $X(64)$.
+:::
+
+::: {#lem-17point16}
+Let $\mathcal{C}=(ABCPQ)$, and let $R$ be the antipode of $P$ on $\mathcal{C}$. If $S$ is the reflection of $R$ across $Q$, $U$ is the midpoint of $PQ$, and $V$ lies on $\mathcal{C}$ such that $(P,Q;R,V)_{\mathcal{C}}=-1$, then $S$, $U$, and $V$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $X$ be the crosspoint of $P$ and $Q$; by @lem-8point9, $R$, $X$, and $V$ are collinear.
+
+Note that the tangents to $\mathcal{C}$ at $R$ and $P$ are parallel, so
+$$
+-1=(R,V;P,Q)_{\mathcal{C}}\stackrel{R}{=}(\infty_{PX},X;P,RQ\cap PX).
+$$
+Thus $RQ\cap PX$ is the reflection of $P$ across $X$, and $Q$ is the reflection of $P$ across $U$, so $RQ\parallel XU$.
+
+Also,
+$$
+-1=(R,V;P,Q)_{\mathcal{C}}\stackrel{Q}{=}(\infty_{UX},QV\cap UX;U,X),
+$$
+giving that $V$, $M_{UX}$, and $Q$ are collinear, while $V$, $X$, and $R$ are collinear.
+
+Since $XM_{UX}\parallel RQ$, the points $V$, the reflection of $X$ across $M_{UX}$, and the reflection $S$ of $R$ across $Q$ are collinear; hence $V$, $U$, and $S$ are collinear.
+:::
+
+::: {#lem-17point17}
+The points $N_9$, $Ko$, and $X(110)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the case $P=H$, $Q=O$, and $\mathcal{C}=\mathcal{H}_{Je}$ in @lem-17point16; then $R=X(74)$, $U=N_9$, and $S=X(110)$. Moreover,
+$$
+-1=(\infty_{OH},N_9;O,H)=(X(74),Ko;H,O)_{\mathcal{H}_{Je}},
+$$
+so $V=Ko$. Thus by @lem-17point16, $N_9$, $Ko$, and $X(110)$ are collinear.
+:::
+
+::: {#lem-17point18}
+Let $P$ be a point on $OH$, and let $Q$ be the isogonal conjugate of $P$. Then $HQ$ is tangent to $(ABCHP)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $P$ vary along $OH$, let $\ell$ be the tangent to $(ABCHP)$ at $H$, and let $\ell$ meet $\mathcal{H}_{Je}$ at $R$. Clearly $f:P\mapsto Q$ preserves cross ratio.
+
+Applying Pascal's theorem to $ABCHHP$ shows that $X=AB\cap\ell$, $Y=BC\cap OH$, and $Z=PA\cap CH$ are collinear.
+
+Hence the chain
+$$
+g:P\mapsto AP\mapsto Z\mapsto YZ\mapsto YZ\cap AB=X\mapsto HX\mapsto R
+$$
+preserves cross ratio.
+
+We have $f(Sc)=X(65)=g(Sc)$ (@lem-13point11 and @lem-13point12), $f(G)=K=g(G)$ (@lem-11point9), and $f(O)=H=g(O)$ (since $HH$ is the tangent to $\mathcal{H}_{Je}$ at $H$).
+
+By @thm-10point1, $f=g$, so $Q=R$ and $HQ$ is tangent to $(ABCHP)$.
+:::
