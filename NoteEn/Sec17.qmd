@@ -20,7 +20,7 @@ The line $AKo$ passes through the circumcenter of $\triangle BOC$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Set $D=\mathcal{P}_{(ABC)}(BC)$; then
+Set $D=\mathfrak{p}_{(ABC)}(BC)$; then
 $$
 A(G,H;O,N_9)=A(K,O;H,Ko)=(D,O;\infty_{OD},AKo\cap OD).
 $$
@@ -183,7 +183,7 @@ Consider the polar of $\infty_{OK}$ with respect to $\mathcal{H}_{Je}$; clearly 
 
 Moreover, the anticomplements of $O$ and $K$ are $H$ and $X(69)$ (@cor-11point11), so $OK\cap HX(69)=\infty_{OK}$.
 
-By Brocard's theorem, $G=OH\cap KX(69)$ lies on $\mathcal{P}_{\mathcal{H}_{Je}}(\infty_{OK})$, so $G$, $X(182)$, and $X(125)$ are collinear.
+By Brocard's theorem, $G=OH\cap KX(69)$ lies on $\mathfrak{p}_{\mathcal{H}_{Je}}(\infty_{OK})$, so $G$, $X(182)$, and $X(125)$ are collinear.
 
 Also, $X(125)$, $X(110)$, and $G$ are collinear (since $G$ and $H$ are the internal and external centers of similitude of the circumcircle and nine-point circle).
 :::
