@@ -24,7 +24,7 @@ The point $G$ is the cevapoint of $O$ and $K$.
 ## Proof
 Let $\triangle UVW$ be the anticevian triangle of $K$, so that $(ABC)$ is tangent to the three sidelines of $\triangle UVW$, and set $\mathcal{C}=(KUVWO)$.
 
-By @thm-11point1, $\mathcal{P}_{\mathcal{C}}(KO)$ passes through $A$ and $UO\cap BC$ (viewing crosspoints with $\triangle UVW$ as reference triangle).
+By @thm-11point1, $\mathfrak{p}_{\mathcal{C}}(KO)$ passes through $A$ and $UO\cap BC$ (viewing crosspoints with $\triangle UVW$ as reference triangle).
 
 Since $UO\cap BC=M_{BC}$, symmetry shows that the cevapoint of $K$ and $O$ is the centroid $G$.
 :::
@@ -115,7 +115,7 @@ With the notation of @thm-20point1 and @lem-20point6, let $Q$ be the cyclocevian
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Set $\mathcal{H}=(ABCHQ)$; then $\mathcal{P}_{\mathcal{H}}(D')=E'F'$ (the cevian triangle of $Q$) and $\mathcal{P}_{\mathcal{H}}(A_{\perp BC})=B_{\perp AC}C_{\perp AB}$.
+Set $\mathcal{H}=(ABCHQ)$; then $\mathfrak{p}_{\mathcal{H}}(D')=E'F'$ (the cevian triangle of $Q$) and $\mathfrak{p}_{\mathcal{H}}(A_{\perp BC})=B_{\perp AC}C_{\perp AB}$.
 
 By @lem-14point8,
 $$
@@ -180,15 +180,15 @@ Fix $X$ and a conic $\mathcal{C}$ passing through $A,B,C,X$, let $Q$ vary along 
 
 Note that the chain $Q\mapsto XQ\mapsto P\mapsto AP$ preserves cross ratio (by polarity).
 
-Also, $Q_BQ_C$ always passes through $\mathcal{P}_{\mathcal{C}}(BC)$ (Brocard's theorem), so the chain
+Also, $Q_BQ_C$ always passes through $\mathfrak{p}_{\mathcal{C}}(BC)$ (Brocard's theorem), so the chain
 $$
-Q\mapsto Q_B\mapsto \mathcal{P}_{\mathcal{C}}(BC)Q_B\mapsto Y\mapsto AY
+Q\mapsto Q_B\mapsto \mathfrak{p}_{\mathcal{C}}(BC)Q_B\mapsto Y\mapsto AY
 $$
 preserves cross ratio.
 
 When $Q=X$, we have $P=X$ and $Y=\ell\cap BC$, so @lem-6point2 gives $A(B,C;P,Y)=-1$.
 
-When $Q=C$, set $\ell_C=\mathcal{P}_{\mathcal{C}}(C)$; then $P=\mathcal{P}_{\mathcal{C}}(XC)=\ell_C\cap X_AX_B$ (Brocard's theorem) and $Y=\ell_C\cap\ell$. Thus
+When $Q=C$, set $\ell_C=\mathfrak{p}_{\mathcal{C}}(C)$; then $P=\mathfrak{p}_{\mathcal{C}}(XC)=\ell_C\cap X_AX_B$ (Brocard's theorem) and $Y=\ell_C\cap\ell$. Thus
 $$
 A(B,C;P,Y)=(\ell_C\cap AB,C;P,Y)\stackrel{\ell\cap AB}{=}(B,C;X_A,\ell\cap BC)=-1.
 $$
