@@ -1,1 +1,335 @@
+## Feuerbach Hyperbola
 
+::: {.unnumbered-env}
+**Definition.**
+If the two points at infinity on a hyperbola are perpendicular points at infinity, it is called a **rectangular hyperbola**.
+:::
+
+::: {#lem-13point1}
+Let $P,Q,R$ lie on a conic section $\mathcal{C}$. Then $\mathcal{C}$ is a rectangular hyperbola if and only if the orthocenter of $\triangle PQR$ lies on $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the isogonal conjugate transformation with respect to $\triangle PQR$. By @thm-12point3, $\mathcal{C}$ is mapped to a line $\ell$.
+
+$\mathcal{C}$ is a rectangular hyperbola if and only if the isogonal conjugates of the two points at infinity on $\mathcal{C}$ form a pair of antipodal points on $(PQR)$.
+
+This is equivalent to $\ell$ passing through the circumcenter of $\triangle PQR$, and taking the isogonal conjugate once more means $\mathcal{C}$ passes through the orthocenter of $\triangle PQR$.
+:::
+
+::: {#lem-13point2}
+Let the pedal triangle of $P$ be $DEF$, and let $X,Y,Z$ lie on $PD,PE,PF$, respectively, such that $PX\cdot PD=PY\cdot PE=PZ\cdot PF$ (directed lengths). Then $AX,BY,CZ$ concur at a point on $(ABCHP)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Fix $A,B,C,P,D,E,F$ and let $X,Y,Z$ vary along $PD,PE,PF$.
+
+Since $YZEF$ is cyclic, the correspondence $Y\mapsto Z$ preserves cross ratio; by Steiner's conic theorem, the locus of $BY\cap CZ$ is a line or a conic section.
+
+When $Y=\infty_{PE}$, we have $Z=\infty_{PF}$, and then $BY\cap CZ=H$.
+
+When $Y=P$, we have $Z=P$, so $BY\cap CZ=P$.
+
+When $Y=PE\cap AB$, we have $Z=PF\cap AC$ (so that $E,F$ both lie on $(YZ)$), hence $BY\cap CZ=A$.
+
+Thus the locus of $BY\cap CZ$ is not a line, so it is a conic section passing through $A,B,C,H,P$.
+
+By symmetry, the locus of $BY\cap AX$ also passes through $A,B,C,H,P$, and the lines $AX,BY,CZ$ concur.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate locus of the line $OI$ is the **Feuerbach hyperbola** $(ABCIH)$; when unspecified, it is denoted by $\mathcal{H}_{Fe}$.
+:::
+
+::: {#cor-13point1}
+The orthocenter of $\triangle BIC$, $Ge$, and $Na$ all lie on $\mathcal{H}_{Fe}$.
+:::
+
+::: {#cor-13point2}
+Let the intouch triangle be $DEF$, and suppose a homothety centered at $I$ maps $DEF$ to $XYZ$. Then $AX,BY,CZ$ concur at a point on $\mathcal{H}_{Fe}$.
+:::
+
+::: {#cor-13point3}
+The line $OI$ is tangent to $\mathcal{H}_{Fe}$ (by @lem-12point8).
+:::
+
+::: {#lem-13point3}
+The Euler lines of the four triangles $\triangle ABC$, $\triangle BIC$, $\triangle CIA$, and $\triangle AIB$ concur at a point on $\mathcal{H}_{Fe}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\mathcal{H}_{Fe}$ meet $OH$ again at $X\neq H$, and let $H_A$ be the orthocenter of $\triangle BIC$, which lies on $\mathcal{H}_{Fe}$.
+
+Applying Pascal's theorem to the hexagon $AHXH_AII$, and using @cor-13point3 so that the tangent to $\mathcal{H}_{Fe}$ at $I$ is $IO$, we obtain that $AH\cap H_AI=\infty_{AH}$, $HX\cap OI=O$, and $XH_A\cap IA$ are collinear.
+
+Thus $XH_A\cap IA$ is the midpoint of the arc $BC$ not containing $A$, which is the circumcenter of $\triangle BIC$; hence the Euler line of $\triangle BIC$ passes through $X$. The other cases follow analogously.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The point of concurrence in @lem-13point3 is $X(21)$ (the **Schiffler point**); when unspecified, it is denoted by $Sc$.
+:::
+
+::: {#lem-13point4}
+Let $\phi$ be the isoconjugate transformation sending $Mt$ to $Mt$. Then $\phi(Na)=X(55)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the $A$-excircle touch $BC,CA,AB$ at $D,E,F$, respectively, and let the line through $D$ perpendicular to $EF$ meet the $A$-excircle again at $R$.
+
+Let $\ell$ be the tangent to the $A$-excircle at $R$. Applying the Dual of Desargues Involution Theorem (@thm-12point2) to the $A$-excircle and its four tangents $BC,BC,\ell,\ell$ and projecting from $A$, let $V=BC\cap\ell$; then $(AB,AC)$, $(AV,AV)$, and $(AD,AR)$ belong to a common involution.
+
+The line $AD$ passes through $Na$, and by the excenter version of @lem-5point21, $AR$ passes through $X(55)$.
+
+The line through $I_A$ perpendicular to $DR$ also passes through $V$, meaning $AI_A\perp I_AV$ (the excenter version of @lem-2point12).
+
+If the circle with diameter $AI_A$ meets $(ABC)$ again at $S$, then $AS\cap BC=V$.
+
+Thus $(AB,AC)$, $(AS,AS)$, and $(ANa,AX(55))$ belong to a common involution.
+
+Let the line through $D$ perpendicular to $EF$ meet $(ABC)$ again at $L$; by the excenter version of @lem-9point7, $(B,C;L,S)=-1$.
+
+Hence $(AB,AC)$, $(AL,AL)$, and $(AS,AS)$ belong to a common involution, and by @lem-11point11, $A,L,Mt$ are collinear.
+
+Therefore $(AB,AC)$, $(AMt,AMt)$, and $(ANa,AX(55))$ belong to a common involution, and the remaining coordinates follow by symmetry.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $Mt$ is $X(57)$.
+:::
+
+::: {#lem-13point5}
+Let the intouch triangle be $DEF$, and set $P=D_{\perp EF}$. Then $A,X(57),P$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the $A$-excircle touch the sidelines at $D',E',F'$, set $P'=D'_{\perp EF}$, and let $R$ lie on the incircle such that $DR\perp EF$.
+
+Reflecting $A,D',E',F',P'$ across the internal angle bisector of $\angle BAC$ gives a configuration homothetic from $A$ to $A,R,E,F,P$ (as can be seen from the tangents at $D'$ and $R$).
+
+By @lem-11point11, $A,Mt,P'$ are collinear, and since $AP$ and $AP'$ are isogonal, $A,X(57),P$ are collinear.
+:::
+
+::: {#lem-13point6}
+The point $X(57)$ lies on $OI$, and $(X(57),I;X(65),X(56))=-1$ (@cor-9point7 shows that $X(65)$ lies on $OI$).
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the intouch triangle be $DEF$, and let the line through $D$ perpendicular to $EF$ meet $EF$ and the incircle at $P$ and $R$, respectively.
+
+By @lem-5point21 and @lem-13point5,
+$$
+A(X(57),I;X(65),X(56))=(P,\infty_{DP};X(65),R).
+$$
+Since $P$ is the midpoint of $X(65)R$ (@cor-1point3), this cross ratio equals $-1$.
+
+Consider the intersections $X=AX(57)\cap OI$ and $Y=BX(57)\cap OI$.
+
+By the same reasoning,
+$$
+(X,I;X(65),X(56))=-1=(Y,I;X(65),X(56)),
+$$
+so $X=Y=X(57)$.
+:::
+
+::: {#cor-13point4}
+The point $Mt$ lies on $\mathcal{H}_{Fe}$.
+:::
+
+::: {#lem-13point7}
+The line $MtX(55)$ is tangent to $\mathcal{H}_{Fe}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Consider the isoconjugate transformation $\phi$ sending $Mt$ to $Mt$.
+
+By @thm-12point3 and @lem-13point4, $\phi$ maps the line $MtX(55)$ to the conic $(ABCMtNa)$.
+
+By @cor-13point1 and @cor-13point4, $(ABCMtNa)$ is $\mathcal{H}_{Fe}$.
+
+By @lem-12point8, $MtX(55)$ is tangent to $(ABCMtNa)=\mathcal{H}_{Fe}$.
+:::
+
+::: {#cor-13point5}
+The point $X(55)$ is the crosspoint of $I$ and $Mt$.
+:::
+
+::: {#lem-13point8}
+If the isogonal conjugate of $X(65)$ is $S$, then $S,Na,X(55)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Taking the isogonal conjugate in @lem-13point6 gives $(Mt,I;S,Na)_{\mathcal{H}_{Fe}}=-1$.
+
+By @lem-8point9, the line $SNa$ passes through the intersection of the tangents to $\mathcal{H}_{Fe}$ at $Mt$ and $I$.
+
+By @cor-13point5, $S,Na,X(55)$ are collinear.
+:::
+
+::: {#lem-13point9}
+If the isogonal conjugate of $X(65)$ is $S$, then $S,Ge,X(56)$ are collinear and $Ge,Na,X(65)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point8, $X(65)X(56)\cap SNa=X(55)$. Since the isogonal conjugates of $X(65)$ and $X(56)$ are $S$ and $Na$, respectively, @thm-12point4 implies that the isogonal conjugate of $X(65)X(56)\cap SNa$ is $X(65)Na\cap X(56)S$.
+
+Hence $X(65)Na\cap X(56)S=Ge$.
+:::
+
+::: {#lem-13point10}
+$(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since $X(55)$ and $X(56)$ are the internal and external centers of similitude of the incircle and circumcircle, we have $(X(55),X(56);O,I)=-1$. Taking the isogonal conjugate gives $(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$.
+:::
+
+::: {#lem-13point11}
+The point $X(65)$ is the crosspoint of $I$ and $H$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point10, $(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$, so the tangents to $\mathcal{H}_{Fe}$ at $H$ and $I$ concur with $GeNa$.
+
+By @cor-13point3 and @lem-13point9, the tangent to $\mathcal{H}_{Fe}$ at $I$ is $OI$, which meets $GeNa$ at $X(65)$.
+
+Thus the tangent to $\mathcal{H}_{Fe}$ at $H$ also passes through $X(65)$, so $X(65)$ is the crosspoint of $I$ and $H$.
+:::
+
+::: {#lem-13point12}
+The isogonal conjugate of $X(65)$ is $Sc$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $S$ be the isogonal conjugate of $X(65)$.
+
+By @lem-13point8, @lem-13point9, and @lem-13point10,
+$$
+(X(56),X(55);O,I)=-1=(Ge,Na;H,I)_{\mathcal{H}_{Fe}}\stackrel{S}{=}(X(56),X(55);SH\cap OI,I).
+$$
+Hence $SH\cap OI=O$, so $S$ is the second intersection $Sc$ of the Euler line with $\mathcal{H}_{Fe}$ distinct from $H$.
+:::
+
+::: {#cor-13point6}
+$GeX(56)\cap NaX(55)=Sc$, and $(Mt,I;Sc,Na)_{\mathcal{H}_{Fe}}=-1$.
+:::
+
+::: {#lem-13point13}
+The points $I,K,Mt$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point1, note that $A,B,C,Ge,H,Na$ all lie on $\mathcal{H}_{Fe}$.
+
+Applying @thm-12point3 via the isotomic conjugate transformation gives that $Na,X(69),Ge$ are collinear.
+
+Taking the complement gives that $I,K,Mt$ are collinear (@lem-2point7, @cor-11point10, @cor-11point11).
+:::
+
+::: {#lem-13point14}
+The points $H,Sp,Mt,X(40)$ are collinear, and $I,Ge,X(20)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-2point7 and @cor-13point6,
+$$
+-1=(Mt,I;Sc,Na)_{\mathcal{H}_{Fe}}\stackrel{H}{=}(HMt\cap IG,I;G,Na).
+$$
+Length relations give $(Sp,I;G,Na)=-1$, so $HMt\cap IG=Sp$ and $H,Mt,Sp,X(40)$ are collinear (@lem-2point15).
+
+Taking the anticomplement of $H,Mt,Sp$ gives that $X(20),Ge,I$ are collinear (@lem-2point8, @lem-11point10).
+:::
+
+::: {#lem-13point15}
+The point $X(57)$ is the center of similitude of the excentral triangle and the intouch triangle.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Equivalently, we show that $X(57)$, $D=I_{\perp BC}$, and $I_A$ are collinear. Let $M$ be the midpoint of the arc $BC$ not containing $A$.
+
+By @cor-2point8, $M,D,X(56)$ are collinear. By @lem-13point6,
+$$
+-1=(X(57),I;X(65),X(56))\stackrel{D}{=}(DX(57)\cap AI,I;\infty_{AI},M),
+$$
+so $D,X(57),I_A$ are collinear.
+:::
+
+::: {#cor-13point7}
+The points $I_{\perp BC}$, $I_A$, $X(57)$, and $AH\cap M_{AB}M_{AC}$ are collinear.
+:::
+
+::: {#lem-13point16}
+The symmedian points of the excentral triangle and the intouch triangle are $Mt$ and $Ge$, respectively.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point15, $Mt,Ge,X(57)$ are collinear. By @lem-11point10, $G,Ge,Mt,X(57)$ are collinear.
+:::
+
+::: {#lem-13point17}
+$(I,X(40);X(55),X(65))=-1$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-13point11, the tangents to $\mathcal{H}_{Fe}$ at $I$ and $H$ intersect at $X(65)$.
+
+By @cor-13point5, the tangents to $\mathcal{H}_{Fe}$ at $I$ and $Mt$ intersect at $X(55)$.
+
+By @lem-13point14, $HMt$ meets the tangent to $\mathcal{H}_{Fe}$ at $I$ at $X(40)$.
+
+Hence by @lem-9point10 applied to the three tangents, $(I,X(40);X(55),X(65))=-1$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The isogonal conjugate of $X(40)$ (the **Bevan point**) is $X(84)$.
+:::
+
+::: {#lem-13point18}
+$X(84)=OMt\cap HX(57)$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+$O,H$ and $Mt,X(57)$ are two pairs of isogonal conjugates, and $OX(57)\cap HMt=X(40)$ (@lem-13point14).
+
+Hence by @thm-12point4, $OMt\cap HX(57)$ is the isogonal conjugate $X(84)$ of $X(40)$.
+:::
+
+::: {#lem-13point19}
+The points $Na,X(20),X(40),X(84)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $NaX(40)$ meet $\mathcal{H}_{Fe}$ again at $X$. Note the collinearities from @lem-13point9 and @cor-13point6.
+
+By @lem-13point17,
+$$
+-1=(I,X(40);X(55),X(65))\stackrel{Na}{=}(I,X;Sc,Ge)_{\mathcal{H}_{Fe}}.
+$$
+Also by isogonal conjugation,
+$$
+-1=(I,X(40);X(55),X(65))=(I,X(84);Ge,Sc)_{\mathcal{H}_{Fe}}.
+$$
+Hence $X=X(84)$, and by @lem-2point16, $Na,X(20),X(40),X(84)$ are collinear.
+:::
