@@ -1,4 +1,4 @@
-## Feuerbach Point
+## More on the Feuerbach Hyperbola Configuration
 
 ::: {#lem-19point1}
 Let $DEF$ be the intouch triangle, let $I'$ be the reflection of $I$ across $EF$, and let $R$ lie on the incircle such that $DR\perp EF$. Then $Fe,R,I'$ are collinear.
