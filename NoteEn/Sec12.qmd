@@ -128,7 +128,7 @@ Hence $X=X'$, so $X,Y,Z$ are collinear.
 
 ::: {.unnumbered-env}
 **Definition.**
-The line containing $X,Y,Z$ in @lem-12point5 is called the **orthotransversal** (or **orthogonal transversal**).
+The line containing $X,Y,Z$ in @lem-12point5 is called the **orthotransversal**.
 :::
 
 ::: {#lem-12point6}
