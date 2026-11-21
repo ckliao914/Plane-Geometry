@@ -163,7 +163,7 @@ From the proof of @thm-8point3, $(AB)$ passes through $A^*$ and $B^*$, so $(AB)$
 Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, together with a plane section $E_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $E_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $E_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathcal{P}_{\mathcal{C}}(A)$ and $A=\mathcal{P}_{\mathcal{C}}(\ell)$.
 :::
 
-::: {.cor-8point4}
+::: {#cor-8point4}
 Since projection preserves lines and intersections, @cor-8point2, @thm-8point3, and @cor-8point3 also hold for conic sections (hence poles and polars are independent of the choice of conical surface in the definition).
 :::
 
