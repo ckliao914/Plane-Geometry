@@ -6,8 +6,7 @@ book:
   title: "Geometry Notes"
   chapters:
     - index.qmd
-    - ch1.qmd
-    - ch2.qmd
+    - Sec1.qmd
 
 # 這裡移到頂層，讓整本書啟用章節編號
 number-sections: true
