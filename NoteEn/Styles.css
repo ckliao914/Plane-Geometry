@@ -1,0 +1,47 @@
+ol[type="1"] {
+  list-style-type: none;
+  counter-reset: list-counter;
+  padding-left: 1.5em;
+}
+
+ol[type="1"] > li {
+  counter-increment: list-counter;
+  position: relative;
+}
+
+ol[type="1"] > li::before {
+  content: "(" counter(list-counter) ")";
+  position: absolute;
+  left: -1.8em;
+  width: 1.5em;
+  text-align: right;
+}
+
+div.theorem, div.lemma, div.corollary {
+  /* 共用的顏色與邊框設定 */
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  border-left: 3px solid #6c757d;
+  background-color: #f8f9fa;
+}
+
+/* 讓定理／引理／推論標題後方加上句點 */
+div.theorem .theorem-title::after,
+div.lemma .theorem-title::after,
+div.corollary .theorem-title::after {
+  content: ".";
+  font-weight: bold;
+}
+
+/* 2. 自訂無編號的 Definition / Example / Remark 區塊樣式 */
+.unnumbered-env {
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  border-left: 3px solid #6c757d;
+  background-color: #f8f9fa;
+}
+
+/* 強制行內數學公式 ($...$) 保持完整，不在中間斷行 */
+mjx-container[jax="CHTML"]:not([display="true"]) {
+  white-space: nowrap !important;
+}
