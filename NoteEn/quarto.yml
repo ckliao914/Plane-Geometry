@@ -3,7 +3,7 @@ project:
   type: book
 
 book:
-  title: "Complex Projective Planar Geometry"
+  title: "Geometry Notes"
   chapters:
     - index.qmd
     - ch1.qmd
