@@ -192,3 +192,30 @@ Hence $\phi(Y)$ is the second intersection of $P\phi(X)$ with $(ABCPX)$, so $\ph
 By @lem-12point7, $Y$ is $P$ or a vertex of the anticevian triangle of $P$; since the vertices of the anticevian triangle lie on $AP,BP,CP$ and not on $(ABCPX)$, we must have $Y=P$.
 :::
 
+::: {#thm-12point4}
+Given an isoconjugate transformation $\phi$, set $Z=XY\cap \phi(X)\phi(Y)$ and $Z'=X\phi(Y)\cap Y\phi(X)$. Then $\phi(Z)=Z'$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying @thm-12point2 to the complete quadrilateral $XY\phi(X)\phi(Y)$ and projecting from $A$ shows that $(AX,A\phi(X))$, $(AY,A\phi(Y))$, and $(AZ,AZ')$ belong to a common involution.
+
+By definition, $(AZ,A\phi(Z))$ belongs to the same involution, and $A,Z',\phi(Z)$ are collinear; hence $Z'=\phi(Z)$.
+:::
+
+::: {#lem-12point9}
+Suppose $P,P'$ and $Q,Q'$ are two pairs of isogonal conjugates, and set $R=PQ\cap P'Q'$. Then the pedal circles $\omega_P,\omega_Q,\omega_R$ of $P,Q,R$ are coaxial.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $R'=PQ'\cap P'Q$; by @thm-12point4, $R'$ is the isogonal conjugate of $R$.
+
+Let $P_1,P_2,Q_1,Q_2,R_1,R_2$ be the projections of $P,P',Q,Q',R,R'$ onto $BC$.
+
+Applying @thm-12point2 to the complete quadrilateral $PQP'Q'$ and projecting from $\infty_{\perp BC}$ onto $BC$ shows that $(P_1,P_2)$, $(Q_1,Q_2)$, and $(R_1,R_2)$ belong to a common involution.
+
+By @lem-12point2, this involution is an inversion with center $A_1$. By @lem-3point18, $P_1,P_2$ lie on $\omega_P$, and similarly $A_1$ has equal power with respect to $\omega_P,\omega_Q,\omega_R$.
+
+Analogously, there exist points $B_1$ on $CA$ and $C_1$ on $AB$ with equal power with respect to $\omega_P,\omega_Q,\omega_R$, so the three pedal circles are coaxial.
+:::
