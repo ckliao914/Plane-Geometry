@@ -8,7 +8,7 @@ Let $P_AP_BP_C$ and $Q_AQ_BQ_C$ be the anticevian triangles of $P$ and $Q$, resp
 ## Proof
 Let $\mathcal{C}=(PP_AP_BP_CQ)$; then $\triangle ABC$ is self-polar with respect to $\mathcal{C}$ (Brocard's theorem).
 
-Note that $(A,AQ\cap BC;Q,Q_A)=-1$ (@lem-6point3). Since $A$ and $AQ\cap BC$ are conjugate with respect to $\mathcal{C}$, @lem-8point10 and $Q\in\mathcal{C}$ imply that $Q_A$ also lies on $\mathcal{C}$. By symmetry, all eight points lie on the conic $\mathcal{C}$.
+Note that $(A,AQ\cap BC;Q,Q_A)=-1$ (@lem-6point3). Since $A$ and $AQ\cap BC$ are conjugate with respect to $\mathcal{C}$, by @lem-8point10, $Q\in\mathcal{C}$, so $Q_A$ also lies on $\mathcal{C}$. By symmetry, all eight points lie on the conic $\mathcal{C}$.
 :::
 
 ::: {.unnumbered-env}
