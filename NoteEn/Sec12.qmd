@@ -161,9 +161,9 @@ Given an isoconjugate transformation, it swaps lines $\ell$ not passing through 
 ## Proof
 Let $\phi$ be the isoconjugate transformation with $\phi(X)=Y$.
 
-If $X$ lies on $\ell$, then $f:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a conic passing through $B,C$ (since $f(BC)\neq CB$), and analogously through $A$.
+If $X$ lies on $\ell$, then $f:BY\mapsto BX\mapsto X\mapsto CX\mapsto CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a conic passing through $B,C$ (since $f(BC)\neq CB$), and analogously through $A$.
 
-If $X$ lies on $\mathcal{C}$, then $g:BY\to BX\to X\to CX\to CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a line (since $g(BC)=CB$) not passing through any vertex.
+If $X$ lies on $\mathcal{C}$, then $g:BY\mapsto BX\mapsto X\mapsto CX\mapsto CY$ is a projective map. By @thm-10point3, the locus of $BY\cap CY$ is a line (since $g(BC)=CB$) not passing through any vertex.
 :::
 
 ::: {#lem-12point7}
