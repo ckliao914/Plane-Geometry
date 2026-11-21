@@ -1,1 +1,271 @@
 
+## Cyclocevian Conjugate and Crosspoint
+
+::: {#lem-11point1}
+Let a conic $\mathcal{C}$ pass through $A,B,C$, and let $S,T$ be two points. Suppose $AS,BS,CS,AT,BT,CT$ meet $\mathcal{C}$ again at $S_A,S_B,S_C,T_A,T_B,T_C$, respectively. Then the triangle formed by $S_AT_A$, $S_BT_B$, and $S_CT_C$ is perspective to $\triangle ABC$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Set $R_A=S_AT_A\cap BC$, $R_B=S_BT_B\cap CA$, and $R_C=S_CT_C\cap AB$.
+
+Fix $\mathcal{C},A,B,C,S,S_A,S_B,S_C,T_A,R_A$ and let $T$ vary along $AT_A$.
+
+Then $T_B,T_C$ vary on $\mathcal{C}$, while $R_B,R_C$ vary along $AC,AB$, respectively.
+
+Since $T\mapsto T_B\mapsto S_BT_B\mapsto R_B$ and $T\mapsto R_C$ are projective maps, $R_B\mapsto R_C$ is a projective map.
+
+When $T=A$, we have $T_B=T_C=R_B=R_C=A$.
+
+By @thm-10point4, $R_BR_C$ passes through a fixed point $X$.
+
+When $T=AT_A\cap BC$, we have $T_B=C$, $T_C=B$, and $R_BR_C=CB$; note that $R_A$ lies on $R_BR_C$ in this position.
+
+When $T=T_A$, we have $T_B=T_C=T_A$; applying @thm-8point6 (Pascal's Theorem) to $AS_AT_AS_BBC$ shows that $S$, $R_A$, and $T_AS_B\cap CA=R_B$ are collinear, and similarly $S,R_A,R_B,R_C$ are collinear.
+
+Thus $R_A$ also lies on $R_BR_C$ here, so the fixed point is $X=R_A$; hence $R_A,R_B,R_C$ are collinear and the triangles are perspective.
+:::
+
+::: {#cor-11point1}
+Let a conic $\mathcal{C}$ touch $BC,CA,AB$ at $D,E,F$, respectively, let $P$ be a point, and let $DP,EP,FP$ meet $\mathcal{C}$ again at $A_1,B_1,C_1$, respectively. Then $AA_1$, $BB_1$, and $CC_1$ are concurrent (the case $S=T$ of @lem-11point1).
+:::
+
+::: {#cor-11point2}
+Let a conic $\mathcal{C}$ pass through $A,B,C,X$, let $P$ be a point, and let $AP,BP,CP$ meet $\mathcal{C}$ again at $P_A,P_B,P_C$, respectively. Then $XP_A\cap BC$, $XP_B\cap CA$, $XP_C\cap AB$, and $P$ are collinear (the case where $T$ lies on the conic in @lem-11point1).
+:::
+
+::: {#lem-11point2}
+Let the Cevian triangles of $P$ and $Q$ be $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, respectively. Then $P_A,P_B,P_C,Q_A,Q_B,Q_C$ lie on a common conic section.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Applying @thm-8point7 (Pappus's Theorem) to $B,P_B,Q_C$ on $AB$ and $C,P_C,Q_B$ on $AC$ shows that $P$, $Q$, and $P_BQ_C\cap P_CQ_B$ are collinear.
+
+Similarly, $P,Q$, $P_BQ_C\cap P_CQ_B$, $P_CQ_A\cap P_AQ_C$, and $P_AQ_B\cap P_BQ_A$ are collinear.
+
+Applying @thm-8point6 (Pascal's Theorem) to $P_AQ_BP_CQ_AP_BQ_C$ shows that these six points lie on a common conic section.
+:::
+
+::: {#cor-11point3}
+Let the Cevian triangle of $P$ be $\triangle P_AP_BP_C$. If a conic $\mathcal{C}$ passes through $P_A,P_B,P_C$ and meets $BC,CA,AB$ again at $Q_A,Q_B,Q_C$, respectively, then $\triangle ABC$ and $\triangle Q_AQ_BQ_C$ are perspective.
+:::
+
+::: {#lem-11point3}
+Using the notation of @lem-11point2, suppose $P_A,P_B,P_C,Q_A,Q_B,Q_C$ lie on a conic $\mathcal{C}$, and set $A_1=P_BP_C\cap Q_BQ_C$, $B_1=P_CP_A\cap Q_CQ_A$, and $C_1=P_AP_B\cap Q_AQ_B$. Then $\mathcal{P}_{\mathcal{C}}(A_1)$ passes through $A$, $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$; in particular, $\triangle A_1B_1C_1$ is a self-polar triangle with respect to $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @thm-8point4 (Brocard's Theorem), the polar of $A_1=P_BP_C\cap Q_BQ_C$ passes through $P_BQ_B\cap P_CQ_C=A$ and $P_BQ_C\cap Q_BP_C$.
+
+Applying @thm-8point6 to $P_BQ_CQ_AQ_BP_CP_A$ shows that $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$ are collinear.
+
+Note that by @lem-6point2,
+$$
+P_A(B_1,C_1;Q_A,A)=(P_C,P_AP_B\cap AB;B,A)=-1,
+$$
+and similarly $P_A(B_1,C_1;Q_A,A)=Q_A(B_1,C_1;Q_A,A)$; by @thm-10point3, $B_1,C_1,A$ are collinear.
+
+Hence $A$, $P_BQ_C\cap Q_BP_C$, $B_1$, and $C_1$ are collinear and all lie on the polar of $A_1$.
+:::
+
+::: {#lem-11point4}
+Let $A,U,V$ lie on a conic $\mathcal{C}$. If $X$ and $Y$ lie on $AU$ and $AV$, respectively, and are conjugate with respect to $\mathcal{C}$, then $UY\cap VX$ lies on $\mathcal{C}$, and $X,Y,\mathcal{P}_{\mathcal{C}}(UV)$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $UY$ meet $\mathcal{C}$ again at $W$. By @thm-8point4 (Brocard's Theorem), $AU\cap WV$ is conjugate to $Y$ with respect to $\mathcal{C}$.
+
+Thus $X=AU\cap WV$, so $W,V,X$ are collinear and $UY\cap VX=W$ lies on $\mathcal{C}$.
+
+Since $\mathcal{P}_{\mathcal{C}}(XY)=AW\cap UV$ lies on $UV$, applying a polar transformation gives collinearity of $X,Y,\mathcal{P}_{\mathcal{C}}(UV)$.
+:::
+
+::: {#lem-11point5}
+Using the notation of @lem-11point3, the lines $P_AA_1$, $P_BB_1$, and $P_CC_1$ concur on $\mathcal{C}$; likewise, the lines $Q_AA_1$, $Q_BB_1$, and $Q_CC_1$ concur on $\mathcal{C}$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Since $B_1$ lies on $P_AP_C$, $C_1$ lies on $P_AP_B$, and $B_1,C_1$ are conjugate with respect to $\mathcal{C}$ by @lem-11point3, @lem-11point4 implies that $P_BB_1\cap P_CC_1$ lies on $\mathcal{C}$; the remaining claims follow analogously.
+:::
+
+::: {#cor-11point4}
+Let the anticevian triangle of $R$ with respect to $\triangle ABC$ be $\triangle R_AR_BR_C$, and let a conic $\mathcal{C}$ pass through $A,B,C$. Choose $A_1$ on $BC$ conjugate to $R_A$ with respect to $\mathcal{C}$, and define $B_1,C_1$ analogously. Then $AA_1$, $BB_1$, and $CC_1$ concur on $\mathcal{C}$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+In @cor-11point3, in the special case where $\mathcal{C}$ is a circle, the center of perspectivity of $\triangle ABC$ and $\triangle Q_AQ_BQ_C$ is called the **cyclocevian conjugate** of $P$.
+:::
+
+::: {#cor-11point5}
+$G$ and $H$ are cyclocevian conjugates of each other, and the Gergonne point is its own cyclocevian conjugate.
+:::
+
+::: {#lem-11point6}
+Let a circle $\Gamma$ with center $O_{\Gamma}$ intersect $BC$ at $A_1,A_2$, $CA$ at $B_1,B_2$, and $AB$ at $C_1,C_2$. As in @lem-1point1, let the Miquel points associated with $\triangle A_1B_1C_1$ and $\triangle A_2B_2C_2$ be $M$ and $N$, respectively; let $A'$ be the Miquel point of the complete quadrilateral $B_1C_1C_2B_2$, and define $B',C'$ analogously. Then $O_{\Gamma}M=O_{\Gamma}N$, and $O_{\Gamma},M,N,A',B',C'$ are concyclic.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+From the proof of @lem-3point21, $M$ and $N$ are isogonal conjugates, and we may take $\Gamma$ to be the $\alpha$-pedal circle of $M$ and the $(-\alpha)$-pedal circle of $N$.
+
+By @lem-3point18, since the pedal circles of $M$ and $N$ coincide, their common center is the midpoint $M_{MN}$ of $MN$.
+
+The point $M$ is the spiral center sending $\triangle A_1B_1C_1$ to the pedal triangle of $M$, and this spiral similarity also sends $O_{\Gamma}$ to $M_{MN}$; hence $\alpha=\measuredangle MA_1M_{\perp BC}=\measuredangle MO_{\Gamma}M_{MN}$.
+
+Similarly, $-\alpha=\measuredangle NO_{\Gamma}M_{MN}$, so $O_{\Gamma}$ lies on the perpendicular bisector of $MN$ and $O_{\Gamma}M=O_{\Gamma}N$.
+
+Since $A,B_1,C_1,A',M$ are concyclic and $A,B_2,C_2,A',N$ are concyclic,
+$$
+\measuredangle MA'N=\measuredangle MA'A+\measuredangle AA'N=\measuredangle MB_1A+\measuredangle AC_2N=2\alpha.
+$$
+Also, $\measuredangle MO_{\Gamma}N=\measuredangle MO_{\Gamma}M_{MN}+\measuredangle M_{MN}O_{\Gamma}N=2\alpha=\measuredangle MA'N$.
+
+Thus $M,N,A',O_{\Gamma}$ are concyclic, and $B',C'$ lie on the same circle analogously.
+:::
+
+::: {#lem-11point7}
+If $P$ and $Q$ are cyclocevian conjugates with Cevian triangles $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, and their associated Miquel points are $M$ and $N$, respectively, then $M$ and $N$ are isogonal conjugates and $MN\parallel PQ$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By @lem-3point21, $M$ and $N$ are isogonal conjugates; let $\Gamma=(P_AP_BP_C)$ with center $O_{\Gamma}$.
+
+Set $A_3=P_BQ_C\cap P_CQ_B$, and define $B_3,C_3$ analogously; from the proof of @lem-11point2, $P,Q,A_3,B_3,C_3$ are collinear.
+
+Inverting with respect to $\Gamma$, @lem-8point11 shows that $A_3^*$ is the Miquel point of $P_BP_CQ_CQ_B$.
+
+By @lem-11point6, $M,N,A_3^*,B_3^*,O_{\Gamma}$ are concyclic, so $M^*,N^*,A_3,B_3$ are collinear.
+
+Since $O_{\Gamma}M=O_{\Gamma}N$, we have $MN\parallel M^*N^*$; as $M^*,N^*,A_3,B_3,P,Q$ are collinear, $MN\parallel PQ$.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+Given two points $P$ and $Q$, let $\mathcal{C}$ be the conic passing through $A,B,C,P,Q$ (denoted $(ABCPQ)=\mathcal{C}$). Then $\mathcal{P}_{\mathcal{C}}(PQ)$ is called the **crosspoint** of $P$ and $Q$.
+:::
+
+::: {#thm-11point1}
+Let the Cevian triangles of $P$ and $Q$ be $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, respectively. Set $Q'_A=AQ\cap P_BP_C$ and $P'_A=AP\cap Q_BQ_C$, and define $Q'_B,Q'_C,P'_B,P'_C$ analogously. Then the six lines $P_AQ'_A$, $P_BQ'_B$, $P_CQ'_C$, $Q_AP'_A$, $Q_BP'_B$, and $Q_CP'_C$ concur at the crosspoint of $P$ and $Q$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $(ABCPQ)=\mathcal{C}$. By @thm-8point4 (Brocard's Theorem), $\triangle P_AP_BP_C$ is self-polar with respect to $\mathcal{C}$.
+
+Thus $P_A$ and $Q'_A$ are conjugate with respect to $\mathcal{C}$, with $P_A$ on $AP$ and $Q'_A$ on $AQ$.
+
+By @lem-11point4, $P_A$, $Q'_A$, and $\mathcal{P}_{\mathcal{C}}(PQ)$ are collinear.
+
+Similarly, all six lines pass through $\mathcal{P}_{\mathcal{C}}(PQ)$, the crosspoint of $P$ and $Q$.
+:::
+
+::: {#lem-11point8}
+Let $D=A_{\perp BC}$. Then $M_{AD}$, $M_{BC}$, and $K$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let the Cevian and anticevian triangles of the symmedian point $K$ be $\triangle PQR$ and $\triangle UVW$, respectively.
+
+Then $P=AK\cap BC$, and $U$ is the intersection of $AK$ with the perpendicular bisector of $BC$.
+
+By @lem-6point3,
+$$
+-1=(A,P;K,U)\stackrel{M_{BC}}{=}(A,D;M_{BC}K\cap AD,\infty_{AD}).
+$$
+By @cor-6point3, $M_{BC}K$ passes through the midpoint of $AD$, so $M_{AD}$, $M_{BC}$, and $K$ are collinear.
+:::
+
+::: {#lem-11point9}
+The crosspoint of $G$ and $H$ is $K$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Using the notation of @lem-11point4, $AH$ meets $M_{CA}M_{AB}$ at the midpoint $M_{AD}$ of the altitude.
+
+By @thm-11point1, $M_{BC}M_{AD}$ passes through the crosspoint of $G$ and $H$.
+
+Similarly, if $E=B_{\perp AC}$, then $M_{AC}M_{BE}$ also passes through the crosspoint of $G$ and $H$.
+
+By @lem-11point8, the crosspoint of $G$ and $H$ is $K$.
+:::
+
+::: {#cor-11point5}
+$AM_{BC}\cap B_{\perp AC}C_{\perp AB}$, $K$, and $A_{\perp BC}$ are collinear.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+The symmedian point of the excentral triangle is $X(9)$ (the **Mittenpunkt**), denoted $Mt$ unless stated otherwise.
+:::
+
+::: {#cor-11point6}
+$Mt$ lies on $I_AM_{BC}$ (since $I_B,I_C,B,C$ are concyclic).
+:::
+
+::: {#lem-11point10}
+The anticomplement of $Mt$ is $Ge$, and $Mt$, $Ge$, and $G$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+If the incircle touches $BC$ at $D$, adapting the proof of @lem-2point7 to the excentral triangle gives $AD\parallel M_{BC}I_A$.
+
+By @cor-11point6, $AGe\parallel M_{BC}Mt$; applying the same argument to the other two sides shows that the anticomplement of $Mt$ is $Ge$.
+:::
+
+::: {#cor-11point7}
+Let $N$ be the midpoint of the arc $BAC$ of $(ABC)$. Then $AMt$, $I_AN$, and $BC$ are concurrent (applying @cor-11point6 to the excentral triangle).
+:::
+
+::: {#lem-11point11}
+Let the $A$-excircle touch $BC,CA,AB$ at $D',E',F'$, respectively. Then $A$, $Mt$, and $D'_{\perp E'F'}$ are collinear.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+By the excentral analogue of @lem-9point8, if $N$ is the midpoint of the arc $BAC$ of $(ABC)$, then $NI_A$, $BC$, and $AD'_{\perp E'F'}$ are concurrent.
+
+By @cor-11point7, $A$, $Mt$, and $D'_{\perp E'F'}$ are collinear.
+:::
+
+::: {#lem-11point12}
+For any point $P$, the crosspoint of $P$ and $G$ is the complement of the isotomic conjugate of $P$.
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Proof
+Let $\triangle DEF$ be the medial triangle, let $AP$ meet $EF$ at $A_1$, and define $B_1,C_1$ analogously.
+
+By @thm-11point1, the crosspoint of $P$ and $G$ is the intersection $X$ of $DA_1$, $EB_1$, and $FC_1$.
+
+If $A'_1$ is the complement of $A_1$, and $B'_1,C'_1$ are defined analogously, then the complement of $X$ is the center of perspectivity of $\triangle ABC$ and $\triangle A'_1B'_1C'_1$.
+
+Setting $P_A=AP\cap BC$, we have $BP_A/P_AC=FA_1/A_1E=CA'_1/A'_1B$.
+
+Hence $AP_A$ and $AA'_1$ are isotomic conjugates, so the complement of $X$ is the isotomic conjugate of $P$.
+:::
+
+::: {#cor-11point8}
+The crosspoint of $Ge$ and $G$ is $I$, and the crosspoint of $Na$ and $G$ is $Mt$.
+:::
+
+::: {#cor-11point9}
+Let the $A$-excircle touch $BC$ at $T_A$, and define $T_B,T_C$ symmetrically. Then $T_BT_C$, $AM_{BC}$, and $MtT_A$ are concurrent.
+:::
+
+::: {.unnumbered-env}
+**Definition.**
+$X(69)$ is the isotomic conjugate of the orthocenter.
+:::
+
+::: {#cor-11point10}
+The complement of $X(69)$ is $K$, and $X(69)$, $G$, and $K$ are collinear.
+:::
