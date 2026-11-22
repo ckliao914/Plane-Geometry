@@ -270,7 +270,7 @@ Then $\triangle APQ$ and $\triangle IBC$ are homothetic from $AI\cap BC$, so $AI
 
 Since $BP=BA$ and $CQ=CA$, the midpoint of $PQ$ is the foot of $I'$ on $BC$ (the excircle tangency point).
 
-Note that the two centers and the internal and external centers of similitude of the two circles form a harmonic range; let $X$ be the internal center of similitude.
+Note that the two centers, the insimilicenter, and the exsimilicenter of the two circles $(PQ)$ and $(BC)$ form a harmonic range; let $X$ be the insimilicenter.
 
 Then
 $$
