@@ -119,7 +119,7 @@ $$
 
 ::: {.unnumbered-env}
 **Definition.**
-If $A^*$ is the inverse of $A$ with respect to a circle $\omega$ centered at $O$, then the **polar** of $A$ with respect to $\omega$ is the line through $A^*$ with direction $\infty_{\perp OA}$; conversely, the **pole** of a line $\ell$ with respect to $\omega$ is the inverse of the foot of the perpendicular from $O$ to $\ell$ with respect to $\omega$.
+If $A^{\star}$ is the inverse of $A$ with respect to a circle $\omega$ centered at $O$, then the **polar** of $A$ with respect to $\omega$ is the line through $A^{\star}$ with direction $\infty_{\perp OA}$; conversely, the **pole** of a line $\ell$ with respect to $\omega$ is the inverse of the foot of the perpendicular from $O$ to $\ell$ with respect to $\omega$.
 :::
 
 ::: {#cor-8point2}
@@ -132,7 +132,7 @@ Applying a homothety centered at $A$ with ratio $2$ to the radical axis of the d
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-It suffices to show that the midpoint of $AA^*$ lies on the radical axis. Letting $AA^*$ meet $\omega$ at $X$ and $Y$, @lem-6point4 gives $(X,Y;A,A^*)=-1$, so the result follows from @lem-6point5.
+It suffices to show that the midpoint of $AA^{\star}$ lies on the radical axis. Letting $AA^{\star}$ meet $\omega$ at $X$ and $Y$, @lem-6point4 gives $(X,Y;A,A^{\star})=-1$, so the result follows from @lem-6point5.
 :::
 
 ::: {#thm-8point3}
@@ -142,7 +142,7 @@ If the polar of $A$ passes through $B$, then the polar of $B$ passes through $A$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By inversion, $A,B,A^*,B^*$ are concyclic; since $AA^*\perp A^*B$, we have $BB^*\perp B^*A$, so $A$ lies on the polar of $B$.
+By inversion, $A,B,A^{\star},B^{\star}$ are concyclic; since $AA^{\star}\perp A^{\star}B$, we have $BB^{\star}\perp B^{\star}A$, so $A$ lies on the polar of $B$.
 :::
 
 ::: {#cor-8point3}
@@ -155,7 +155,7 @@ The polar of $A$ with respect to $\omega$ passes through $B$ if and only if the 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-From the proof of @thm-8point3, $(AB)$ passes through $A^*$ and $B^*$, so $(AB)$ is invariant under inversion; the equivalence follows from @lem-4point8.
+From the proof of @thm-8point3, $(AB)$ passes through $A^{\star}$ and $B^{\star}$, so $(AB)$ is invariant under inversion; the equivalence follows from @lem-4point8.
 :::
 
 ::: {.unnumbered-env}
