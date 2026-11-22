@@ -2,7 +2,7 @@
 
 ::: {.unnumbered-env}
 **Definition (Inversion).**
-Given a circle $\omega$ with center $O$ and radius $r$, if a point $X^\star$ lies on the ray $OX$ and satisfies $OX\cdot OX^\star =r^2$, then $X^\star$ is called the **inverse** of $X$ with respect to $\omega$. Unless otherwise stated, $X^\star$ denotes the inverse of $X$.
+Given a circle $\omega$ with center $O$ and radius $r$, if a point $X^\star$ lies on the ray $OX$ and satisfies $OX\cdot OX^\star =r^2$, then $X^\star$ is called the **inverse** of $X$ with respect to $\omega$. When there is no ambiguity about the inversion, $X^\star$ denotes the inverse of $X$ unless otherwise stated.
 :::
 
 ::: {.unnumbered-env}
