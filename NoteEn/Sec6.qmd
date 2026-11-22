@@ -149,7 +149,7 @@ The anticevian triangle is unique.
 :::
 
 ::: {#cor-6point6}
-The anticevian triangle of the incenter is the triangle of the three excenters, and the anticevian triangle of the centroid is the anticomplementary triangle.
+The anticevian triangle of the incenter is the excentral triangle $\triangle I_A I_B I_C$, and the anticevian triangle of the centroid is the anticomplementary triangle.
 :::
 
 ::: {#thm-6point5}
