@@ -121,11 +121,23 @@ Let $X(n)$ denote the $n$-th triangle center.
 
 * $X(69)$ is the isotomic conjugate of $X(4)$.
 
-* $X(74)$ the fourth intersection of the Feuerbach hyperbola and the circumcircle.
+* $X(74)$ is the fourth intersection of the Jerabek hyperbola and the circumcircle.
 
-* $X(79)$ ?
+* $X(79)$ is the concurrency point of $ABC$ and the triangle formed by the reflection of $X(1)$ over the three sides.
 
 * $X(80)$ is the antigonal conjugate of $X(1)$.
+
+* $X(84)$ is the isogonal conjugate of $X(40)$.
+
+* $X(104)$ is the second intersection of the Feuerbach hyperbola and the circumcircle.
+
+* $X(110)$ is the antipode of $X(74)$ on the circumcircle.
+
+* $X(115)$ is the center of the Kiepert hyperbola.
+
+* $X(125)$ is the center of the Jerabek hyperbola.
+
+* $X(182)$ ia the midpoint of $X(3)X(6)$.
 :::
 
 # Table of Contents {.unnumbered}
