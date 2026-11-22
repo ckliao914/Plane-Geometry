@@ -54,7 +54,7 @@ Using the notation of @lem-5point1, let $D$ be the foot of the perpendicular fro
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Using the notation of @lem-5point2, invert about $D$ with power sending $A^{\star}=Y$ and swapping $B$ and $C$.
+Using the notation of Lemma 5.2, invert about $D$ so that $A^\star = Y$ and $B, C$ are swapped.
 
 Then the harmonic quadrilateral $ABTC$ maps to $YCT^{\star}B$.
 
