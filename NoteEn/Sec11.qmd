@@ -137,11 +137,11 @@ By @lem-3point21, $M$ and $N$ are isogonal conjugates; let $\Gamma=(P_AP_BP_C)$ 
 
 Set $A_3=P_BQ_C\cap P_CQ_B$, and define $B_3,C_3$ analogously; from the proof of @lem-11point2, $P,Q,A_3,B_3,C_3$ are collinear.
 
-Inverting with respect to $\Gamma$, @lem-8point11 shows that $A_3^*$ is the Miquel point of $P_BP_CQ_CQ_B$.
+Inverting with respect to $\Gamma$, @lem-8point11 shows that $A_3^{\star}$ is the Miquel point of $P_BP_CQ_CQ_B$.
 
-By @lem-11point6, $M,N,A_3^*,B_3^*,O_{\Gamma}$ are concyclic, so $M^*,N^*,A_3,B_3$ are collinear.
+By @lem-11point6, $M,N,A_3^{\star},B_3^{\star},O_{\Gamma}$ are concyclic, so $M^{\star},N^{\star},A_3,B_3$ are collinear.
 
-Since $O_{\Gamma}M=O_{\Gamma}N$, we have $MN\parallel M^*N^*$; as $M^*,N^*,A_3,B_3,P,Q$ are collinear, $MN\parallel PQ$.
+Since $O_{\Gamma}M=O_{\Gamma}N$, we have $MN\parallel M^{\star}N^{\star}$; as $M^{\star},N^{\star},A_3,B_3,P,Q$ are collinear, $MN\parallel PQ$.
 :::
 
 ::: {.unnumbered-env}
