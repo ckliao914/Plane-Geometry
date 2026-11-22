@@ -283,7 +283,7 @@ If $\measuredangle XAB=\measuredangle CAY$, then the four feet $X_{\perp AB}$, $
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $X'$ be the reflection of $X$ across $AI$. By symmetry, the four feet from $X$ and $X'$ to $AB$ and $AC$ are concyclic.
+Let $X'$ be the reflection of $X$ across $AI$. By symmetry across $AI$, the four feet from $X$ and $X'$ to $AB$ and $AC$ are concyclic.
 
 Since $A,X',Y$ are collinear, the segments joining the feet from $X'$ and $Y$ to $AB$ and $AC$ are parallel; the result then follows from @thm-3point2.
 :::
