@@ -241,7 +241,7 @@ Let $D,E,F$ be the vertices of the equilateral triangles erected outward (or all
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @lem-4point12, since the transformation in @cor-4point6 includes a reflection across the angle bisector of $\angle BAC$, the ray $AD$ is mapped to the isogonal conjugate of $AX(15)$. Thus the lines $AD,BE,CF$ concur at the isogonal conjugate of $X(15)$ (resp. $X(16)$), which is $X(13)$ (resp. $X(14)$).
+By @lem-4point12, the inversion in @cor-4point6 maps the line $AD$ to $AX(15)$. Since the transformation includes a reflection across the angle bisector of $\angle BAC$, the lines $AD,BE,CF$ concur at the isogonal conjugate of $X(15)$ (resp. $X(16)$), which is $X(13)$ (resp. $X(14)$).
 :::
 
 ::: {#cor-4point8}
