@@ -259,7 +259,7 @@ The anticomplement of the medial triangle is $\triangle ABC$. Since $N_9$ is the
 
 ::: {.unnumbered-env}
 **Definition.**
-There are two homotheties between two circles, one with positive ratio, the other with negative ratio. The respective centers are called the exsimilicenter and insimilicenter.
+There are two homotheties between two circles, one with positive ratio, the other with negative ratio. The respective centers are called the **exsimilicenter** and **insimilicenter**.
 :::
 
 ::: {#cor-1point4}
