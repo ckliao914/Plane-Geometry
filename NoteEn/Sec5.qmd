@@ -246,7 +246,7 @@ If the $A$-mixtilinear incircle touches $(ABC)$ at $T$, then $AT\cap OI$ is $X(5
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Applying @thm-2point3 (Monge's theorem) to the $A$-mixtilinear incircle, the incircle, and $(ABC)$ shows that $AT$ passes through $X(56)$, the external center of homothety of $(ABC)$ and the incircle, which lies on $OI$.
+Applying @thm-2point3 (Monge's theorem) to the $A$-mixtilinear incircle, the incircle, and $(ABC)$ shows that $AT$ passes through $X(56)$, the exsimilicenter of $(ABC)$ and the incircle, which lies on $OI$.
 :::
 
 ::: {#lem-5point21}
