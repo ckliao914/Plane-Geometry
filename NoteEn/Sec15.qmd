@@ -290,7 +290,7 @@ Set $D=I_{\perp BC}$. Then $\triangle AIO\sim\triangle FeDM_{BC}$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Using the inversion from @cor-4point6, we have $I^*=I_A$ and $O^*$ is the reflection $A'$ of $A$ across $BC$.
+Using the inversion from @cor-4point6, we have $I^{\star}=I_A$ and $O^{\star}$ is the reflection $A'$ of $A$ across $BC$.
 
 Thus $\measuredangle AIO=\measuredangle AA'I_A$ (since inversion reverses/reflects angle bisectors).
 
