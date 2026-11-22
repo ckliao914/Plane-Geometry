@@ -263,7 +263,7 @@ Many properties of mixtilinear incircles correspond directly to properties of mi
 :::
 
 ::: {#cor-5point5}
-The isogonal conjugate of $X(56)$ is $Na$; analogously, the isogonal conjugate of $X(55)$ (the internal center of homothety of $(ABC)$ and the incircle) is $Ge$.
+The isogonal conjugate of $X(56)$ is $Na$; analogously, the isogonal conjugate of $X(55)$ (the insimilicenter of $(ABC)$ and the incircle) is $Ge$.
 :::
 
 ::: {#lem-5point22}
