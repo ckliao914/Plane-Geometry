@@ -285,7 +285,7 @@ The reflection of $I$ across $O$ is $X(40)$ (the **Bevan point**).
 :::
 
 ::: {#lem-2point14}
-$X(40)$ is the circumcenter of $\triangle I_AI_BI_C$.
+$X(40)$ is the circumcenter of the excentral triangle $\triangle I_AI_BI_C$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
