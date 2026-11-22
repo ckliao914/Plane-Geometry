@@ -11,7 +11,7 @@ Parallel lines (in a given direction) concur at a single point.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $A,B,C$ lie on three parallel lines; these lines are isogonal conjugates with respect to $\triangle ABC$, and angle chasing shows they concur on the circumcircle.
+Let $A, B, C$ lie on three parallel lines; taking their isogonal conjugates with respect to $\triangle ABC$, angle chasing shows the obtained lines concur on the circumcircle.
 :::
 
 ::: {.unnumbered-env}
