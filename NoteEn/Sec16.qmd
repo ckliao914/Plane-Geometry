@@ -266,7 +266,7 @@ The point $Sp$ lies on $\mathcal{K}$.
 ## Proof
 Consider points $P,Q$ on $BC$ such that $AP\parallel IB$ and $AQ\parallel IC$, and let $I'$ be the reflection of $I$ across $M_{BC}$.
 
-Then $\triangle APQ$ and $\triangle IBC$ are homothetic from $AI\cap BC$, so $AI\cap BC$ is the external center of similitude of the circles on diameters $PQ$ and $BC$.
+Then $\triangle APQ$ and $\triangle IBC$ are homothetic from $AI\cap BC$, so $AI\cap BC$ is the exsimilicenter of $(PQ)$ and $(BC)$.
 
 Since $BP=BA$ and $CQ=CA$, the midpoint of $PQ$ is the foot of $I'$ on $BC$ (the excircle tangency point).
 
