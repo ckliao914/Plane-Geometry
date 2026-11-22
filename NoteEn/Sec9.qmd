@@ -22,7 +22,7 @@ Let the incircle touch $BC,CA,AB$ at $D,E,F$, respectively. Then the inverse of 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The polar of $A$ with respect to the incircle is $EF$, so $A^*=M_{EF}$; analogously for the other vertices, giving the nine-point circle of $\triangle DEF$.
+The polar of $A$ with respect to the incircle is $EF$, so $A^{\star}=M_{EF}$; analogously for the other vertices, giving the nine-point circle of $\triangle DEF$.
 :::
 
 ::: {#lem-9point3}
@@ -142,11 +142,11 @@ Let the $A$-mixtilinear incircle touch $AC$, $AB$, and $(ABC)$ at $E'$, $F'$, an
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Invert about $A$; the $A$-excircle $\omega$ of $\triangle AB^*C^*$ touches $B^*C^*$ at $T^*$.
+Invert about $A$; the $A$-excircle $\omega$ of $\triangle AB^{\star}C^{\star}$ touches $B^{\star}C^{\star}$ at $T^{\star}$.
 
-Let $Q^*$ be the intersection of $B^*C^*$ with the line joining the points of tangency of $\omega$ with $AB^*$ and $AC^*$.
+Let $Q^{\star}$ be the intersection of $B^{\star}C^{\star}$ with the line joining the points of tangency of $\omega$ with $AB^{\star}$ and $AC^{\star}$.
 
-By @lem-9point10, $-1=(B^*,C^*;T^*,Q^*)=(B,C;T,Q)$.
+By @lem-9point10, $-1=(B^{\star},C^{\star};T^{\star},Q^{\star})=(B,C;T,Q)$.
 :::
 
 ::: {#lem-9point12}
@@ -238,7 +238,7 @@ Let $\triangle DEF$ be the contact triangle, and suppose the $A$-mixtilinear inc
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @lem-9point2, $T^*$ lies on the nine-point circle of the contact triangle.
+By @lem-9point2, $T^{\star}$ lies on the nine-point circle of the contact triangle.
 
-By @cor-9point6, $T^*$ lies on the line through $D$ perpendicular to $EF$, so $T^*$ is the midpoint of the orthocenter of $\triangle DEF$ and $D$.
+By @cor-9point6, $T^{\star}$ lies on the line through $D$ perpendicular to $EF$, so $T^{\star}$ is the midpoint of the orthocenter of $\triangle DEF$ and $D$.
 :::
