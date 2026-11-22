@@ -314,5 +314,5 @@ By @lem-3point4 and @lem-5point14, the tangency point of the $A$-mixtilinear inc
 
 By @lem-5point7, $N$ also lies on this $I$-symmedian.
 
-By @lem-1point4, $B,C,X,Y$ are concyclic, so the $I$-symmedian of $\triangle BIC$ is the midline/median line associated with $XIY$ (passing through the midpoint of $XY$ and $I$).
+By @lem-1point4, $B,C,X,Y$ are concyclic, so the $I$-symmedian of $\triangle BIC$ is the $I$-median of $\triangle XIY$.
 :::
