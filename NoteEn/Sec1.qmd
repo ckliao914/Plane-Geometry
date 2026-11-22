@@ -256,8 +256,13 @@ The complement of $O$ is $N_9$, and the anticomplement of $O$ is $H$.
 The anticomplement of the medial triangle is $\triangle ABC$. Since $N_9$ is the circumcenter of the medial triangle and $O$ is its orthocenter, the anticomplement of $N_9$ is $O$, and the anticomplement of $O$ is $H$.
 :::
 
+::: {.unnumbered-env}
+**Definition.**
+There are two homotheties between two circles, one with positive ratio, the other with negative ratio. The respective centers are called the exsimilicenter and insimilicenter.
+:::
+
 ::: {#cor-1point4}
-$O,H,G,N_9$ are collinear on the **Euler line**. Moreover, $G$ and $H$ are the internal and external centers of homothety of the circumcircle and the nine-point circle, respectively.
+$O,H,G,N_9$ are collinear on the **Euler line**. Moreover, $G$ and $H$ are the insimilicenter and exsimilicenter of the circumcircle and the nine-point circle, respectively.
 :::
 
 ::: {#lem-1point8}
