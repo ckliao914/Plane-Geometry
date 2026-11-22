@@ -25,6 +25,8 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * The power of a point $X$ with respect to a circle $\omega$ is denoted by $\mathrm{Pow}_\omega(X)$.
 
+* When there is no ambiguity about the inversion, $X^\star$ denotes the inverse of $X$ unless otherwise stated.
+
 * Let $\ell_\infty$ denote the line at infinity.
 
 * Let $\infty_\ell$ denote the point of infinity on $\ell$, and let $\infty_{\perp \ell}$ denote the point at infinity in the direction perpendicular to $\ell$.
