@@ -74,7 +74,7 @@ $P(A,B;C,D)=(PA,PB;PC,PD)$.
 :::
 
 ::: {#thm-6point3}
-If $A,B,C,D$ are collinear, then $(A,B;C,D)=P(A,B;C,D)$.
+If $A,B,C,D$ are collinear, then for any $P$ not on the line, $(A,B;C,D)=P(A,B;C,D)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
