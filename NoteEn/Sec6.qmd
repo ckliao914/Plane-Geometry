@@ -114,7 +114,7 @@ $(A,B;C,D)\times(A,B;D,C)=1$, while $(A,B;C,D)\neq 1$.
 :::
 
 ::: {#lem-6point2}
-Let the Cevian triangle of $P$ be $\triangle DEF$. Then $(B,C;D,EF\cap BC)=-1$.
+Let the cevian triangle of $P$ be $\triangle DEF$. Then $(B,C;D,EF\cap BC)=-1$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -128,11 +128,11 @@ so the four points are harmonic by @lem-6point1 (where $\stackrel{X}{=}$ denotes
 
 ::: {.unnumbered-env}
 **Definition.**
-If the Cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, then $\triangle XYZ$ is called the **anticevian triangle** of $P$ with respect to $\triangle ABC$.
+If the cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, then $\triangle XYZ$ is called the **anticevian triangle** of $P$ with respect to $\triangle ABC$.
 :::
 
 ::: {#lem-6point3}
-If the Cevian triangle and anticevian triangle of $P$ are $\triangle DEF$ and $\triangle XYZ$, respectively, then $(A,D;P,X)=-1$.
+If the cevian triangle and anticevian triangle of $P$ are $\triangle DEF$ and $\triangle XYZ$, respectively, then $(A,D;P,X)=-1$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -141,7 +141,7 @@ Note that
 $$
 (A,D;P,X)\stackrel{C}{=}(CA\cap XZ,B;Z,X).
 $$
-Since the Cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, this cross ratio equals $-1$ by @lem-6point2.
+Since the cevian triangle of $P$ with respect to $\triangle XYZ$ is $\triangle ABC$, this cross ratio equals $-1$ by @lem-6point2.
 :::
 
 ::: {#cor-6point5}
