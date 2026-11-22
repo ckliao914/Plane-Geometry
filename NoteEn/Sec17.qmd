@@ -133,7 +133,7 @@ The Steiner line of $X(110)$ is $OH$, its trilinear polar is $OK$, and its ortho
 
 ::: {.unnumbered-env}
 **Definition.**
-The point $X(25)$ is the homothetic center of the triangle formed by the tangents to the circumcircle at $A,B,C$ (the anticevian triangle of $K$) and the orthic triangle.
+The point $X(25)$ is the homothetic center of the triangle formed by the tangential triangle (the triangle formed by the tangents to the circumcircle at $A,B,C$, i.e the anticevian triangle of $K$) and the orthic triangle.
 :::
 
 ::: {#lem-17point7}
@@ -207,14 +207,14 @@ The point $X(26)$ is the circumcenter of the triangle formed by the tangents to 
 :::
 
 ::: {#lem-17point11}
-Let $\triangle PQR$ be the triangle formed by the tangents to the circumcircle at $A,B,C$. Then the internal and external centers of similitude of $(PQR)$ and the nine-point circle of $\triangle ABC$ are $O$ and $X(25)$.
+Let $\triangle PQR$ be the triangle formed by the tangents to the circumcircle at $A,B,C$. Then the insimilicenter and exsimilicenter of $(PQR)$ and the nine-point circle of $\triangle ABC$ are $O$ and $X(25)$, respectively.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Take the antipodes $D',E',F'$ of the orthic triangle $DEF$ on the nine-point circle, which lie on the three perpendicular bisectors.
 
-Then the internal and external centers of similitude are the points of concurrence of $D'P,E'Q,F'R$ and of $DP,EQ,FR$.
+Then the insimilicenter and exsimilicenter are the points of concurrence of $D'P,E'Q,F'R$ and of $DP,EQ,FR$, respectively.
 
 Since $P,Q,R$ also lie on the three perpendicular bisectors, $D'P,E'Q,F'R$ concur at $O$ and $DP,EQ,FR$ concur at $X(25)$.
 :::
