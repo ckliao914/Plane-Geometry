@@ -44,7 +44,7 @@ Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are **perspective** if $A_1A_2, B_1B_2
 
 ::: {.unnumbered-env}
 **Definition.**
-The **Cevian triangle** of a point $X$ is the triangle with vertices $AX\cap BC$, $BX\cap CA$, and $CX\cap AB$, and the **Cevian circle** of $X$ is the circumcircle of these three points.
+The **cevian triangle** of a point $X$ is the triangle with vertices $AX\cap BC$, $BX\cap CA$, and $CX\cap AB$, and the **cevian circle** of $X$ is the circumcircle of these three points.
 :::
 
 ::: {#lem-2point1}
@@ -72,7 +72,7 @@ Considering the radical center of $(ABC)$, the nine-point circle, and $(BC)$ sho
 
 ::: {#thm-2point3}
 ## Monge's Theorem
-The external centers of homothety of three circles taken pairwise are collinear.
+The exsimilicenter of three circles taken pairwise are collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
