@@ -52,6 +52,82 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 * Let $\mathcal{H}_{Je}$ denote the Jerabek hyperbola, and let $Ko$ denote the Kosnita point of $ABC$.
 :::
 
+::: {.callout-note collapse="true" icon=false}
+## List of triangle centers
+
+Let $X(n)$ denote the $n$-th triangle center.
+
+* $X(1)$ is the incenter (the center of the incircle).
+
+* $X(2)$ is the centroid (the concurrency point of the three medians).
+
+* $X(3)$ is the circumcenter (the center of the circumcircle).
+
+* $X(4)$ is the orthocenter (the concurrency point of the three altitudes).
+
+* $X(5)$ is the nine-point center (the center of the nine-point circle).
+
+* $X(6)$ is the symmedian point (the concurrency point of the three symmedians).
+
+* $X(7)$ is the Gergonne point (the perspector of $ABC$ and the contact triangle).
+
+* $X(8)$ is the Nagel point (the isotomic conjugate of $X(7)$).
+
+* $X(9)$ is the Mittenpunkt (the symmedian point of the excentral triangle).
+
+* $X(10)$ is the Spieker center (the incenter of the medial triangle).
+
+* $X(11)$ is the Feuerbach point.
+
+* $X(12)$ is the insimilicenter of the incircle and the nine-point circle.
+
+* $X(13)$ is the first isogonic center (the point $K_{60^\circ}$ on the Kiepert hyperbola).
+
+* $X(14)$ is the second isogonic center (the point $K_{-60^\circ}$ on the Kiepert hyperbola).
+
+* $X(15)$ is the first isodynamic point (the isogonal conjugate of $X(13)$).
+
+* $X(16)$ is the second isodynamic point (the isogonal conjugate of $X(14)$).
+
+* $X(17)$ is the first Napoleon point (the point $K_{30^\circ}$ on the Kiepert hyperbola).
+
+* $X(18)$ is the second Napoleon point (the point $K_{-30^\circ}$ on the Kiepert hyperbola).
+
+* $X(20)$ is the deLong Champs point (the anticomplement of $X(4)$).
+
+* $X(21)$ is the Schiffler point (second intersection of the Euler line and the Feuerbach hyperbola).
+
+* $X(25)$ is the homothety center of the orthic triangle and the tangential triangle.
+
+* $X(26)$ is the circumcenter of the tangential triangle.
+
+* $X(30)$ is the point of infinity on the Euler line.
+
+* $X(36)$ is the inverse of $X(1)$ with respect to the circumcircle.
+
+* $X(40)$ is the Bevan point (the reflection of $X(1)$ across $X(3)$).
+
+* $X(54)$ is the Kosnita point (the isogonal conjugate of $X(5)$).
+
+* $X(55)$ is the insimilicenter of the circumcircle and the incircle.
+
+* $X(56)$ is the exsimilicenter of the circumcircle and the incircle.
+
+* $X(57)$ is the homothety center of the excentral triangle and the contact triangle.
+
+* $X(64)$ is the isogonal conjugate of $X(20)$.
+
+* $X(65)$ is the orthocenter of the contact triangle.
+
+* $X(69)$ is the isotomic conjugate of $X(4)$.
+
+* $X(74)$ the fourth intersection of the Feuerbach hyperbola and the circumcircle.
+
+* $X(79)$ ?
+
+* $X(80)$ is the antigonal conjugate of $X(1)$.
+:::
+
 # Table of Contents {.unnumbered}
 
 ::: {.unnumbered-env}
