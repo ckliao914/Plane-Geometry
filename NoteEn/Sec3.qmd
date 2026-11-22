@@ -48,11 +48,6 @@ $A$, $K$, and the intersection of the tangents to $(ABC)$ at $B$ and $C$ are col
 Let $A'$ be the reflection of $A$ across $M_{BC}$. Then the isogonal conjugate of $A'$ is the intersection $X$ of the tangents to $(ABC)$ at $B$ and $C$ (as can be seen by computing $\angle BCA'$ and $\angle CBA'$). Taking the isogonal conjugate of the median $AA'$ shows that $X$ lies on the $A$-symmedian.
 :::
 
-::: {.unnumbered-env}
-**Definition.**
-The triangle formed by the three tangents to the circumcircle at $A,B,C$ is the **tangential triangle**. The cevian triangle of $K$ with respect to the tangential triangle is $\triangle ABC$.
-:::
-
 ::: {#cor-3point3}
 $Ge$ is the symmedian point of the contact triangle.
 :::
