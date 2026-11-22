@@ -115,6 +115,10 @@ Let $X(n)$ denote the $n$-th triangle center.
 
 * $X(57)$ is the homothety center of the excentral triangle and the contact triangle.
 
+* $X(61)$ is the isogonal conjugate of $X(17)$.
+
+* $X(62)$ is the isogonal conjugate of $X(18)$.
+
 * $X(64)$ is the isogonal conjugate of $X(20)$.
 
 * $X(65)$ is the orthocenter of the contact triangle.
