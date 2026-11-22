@@ -246,7 +246,7 @@ If the pedal triangle of $X(64)$ is $PQR$, then by @lem-3point18, $P,Q,R,D,E,F$ 
 
 By the proof of @lem-11point7, setting $A_3=QF\cap RE$ and defining $B_3,C_3$ analogously, $A_3,B_3,X(69)$ are collinear.
 
-Inverting with respect to $\Gamma$, $X(20)$, $X(64)$, $A_3^*$, and $B_3^*$ are collinear and pass through the center of $\Gamma$ (since the center is the midpoint of $X(20)X(64)$).
+Inverting with respect to $\Gamma$, $X(20)$, $X(64)$, $A_3^{\star}$, and $B_3^{\star}$ are collinear and pass through the center of $\Gamma$ (since the center is the midpoint of $X(20)X(64)$).
 
 Thus $X(20)$, $X(64)$, $A_3$, and $B_3$ are collinear, so $X(20)$, $X(64)$, and $X(69)$ all lie on $A_3B_3$.
 :::
