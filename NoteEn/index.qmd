@@ -53,7 +53,7 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 :::
 
 ::: {.callout-note collapse="true" icon=false}
-## List of triangle centers
+## List of triangle centers used 
 
 Let $X(n)$ denote the $n$-th triangle center.
 
@@ -127,7 +127,7 @@ Let $X(n)$ denote the $n$-th triangle center.
 
 * $X(74)$ is the fourth intersection of the Jerabek hyperbola and the circumcircle.
 
-* $X(79)$ is the concurrency point of $ABC$ and the triangle formed by the reflection of $X(1)$ over the three sides.
+* $X(79)$ is the concurrency point of $ABC$ and the triangle formed by the reflections of $X(1)$ over the three sides.
 
 * $X(80)$ is the antigonal conjugate of $X(1)$.
 
@@ -141,7 +141,7 @@ Let $X(n)$ denote the $n$-th triangle center.
 
 * $X(125)$ is the center of the Jerabek hyperbola.
 
-* $X(182)$ ia the midpoint of $X(3)X(6)$.
+* $X(182)$ is the midpoint of $X(3)X(6)$.
 :::
 
 # Table of Contents {.unnumbered}
