@@ -250,7 +250,7 @@ $(AI)$ is tangent to $(IBC)$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @lem-1point3, the line of centers passes through the intersection point $I$ and is perpendicular to the common internal tangent (the external angle bisector at $I$), so the two circles are tangent at $I$.
+By @lem-1point3, the line of centers passes through the intersection point $I$, so the two circles are tangent.
 :::
 
 ::: {#lem-2point12}
