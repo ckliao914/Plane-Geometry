@@ -216,7 +216,7 @@ The $A$-Humpty point lies on the $A$-Apollonius circle.
 ## Proof
 Apply the $\sqrt{AB\cdot AC}$-inversion followed by reflection in @cor-4point6.
 
-By @lem-3point8 (and @lem-3point2), the image of the $A$-Humpty point is the intersection of the tangents to $(ABC)$ at $B$ and $C$, which lies on the perpendicular bisector of $BC$.
+By @lem-3point8, the image of the $A$-Humpty point is the intersection of the tangents to $(ABC)$ at $B$ and $C$, which lies on the perpendicular bisector of $BC$.
 
 As shown in the proof of @thm-4point4, the image of the $A$-Apollonius circle is this same perpendicular bisector.
 :::
