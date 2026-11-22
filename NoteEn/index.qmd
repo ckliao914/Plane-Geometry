@@ -54,6 +54,8 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 # Table of Contents {.unnumbered}
 
+::: {.unnumbered-env}
+
 * [Section 1: Angle Chasing and Radical Axes](Sec1.html)
 
 * [Section 2: Length Chasing and Incircles](Sec2.html)
@@ -95,6 +97,8 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 * [Section 20: Variants of Fonténé’s Theorem on Cyclocevian Conjugates](Sec20.html)
 
 * [Section 21: Projective Transformations](Sec21.html)
+
+:::
 
 ---
 [← Back to Main Site](../index.html)
