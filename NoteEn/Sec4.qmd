@@ -236,7 +236,7 @@ The circle $\omega$ centered at $B$ with radius $BC$ maps to the $B$-Apollonius 
 :::
 
 ::: {#lem-4point13}
-Let $D,E,F$ be the vertices of the equilateral triangles erected outward (or all inward) on the sides of $\triangle ABC$. Then $\triangle ABC$ and $\triangle DEF$ are perspective, with center of perspectivity $X(13)$ (or $X(14)$, respectively).
+Let $D,E,F$ be the vertices of the equilateral triangles erected outward (or all inward) on the sides of $\triangle ABC$. Then $\triangle ABC$ and $\triangle DEF$ are perspective, with perspector $X(13)$ (or $X(14)$, respectively).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
