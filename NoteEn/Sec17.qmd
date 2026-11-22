@@ -185,7 +185,7 @@ Moreover, the anticomplements of $O$ and $K$ are $H$ and $X(69)$ (@cor-11point11
 
 By Brocard's theorem, $G=OH\cap KX(69)$ lies on $\mathfrak{p}_{\mathcal{H}_{Je}}(\infty_{OK})$, so $G$, $X(182)$, and $X(125)$ are collinear.
 
-Also, $X(125)$, $X(110)$, and $G$ are collinear (since $G$ and $H$ are the internal and external centers of similitude of the circumcircle and nine-point circle).
+Also, $X(125)$, $X(110)$, and $G$ are collinear (since $G$ and $H$ are the insimilicenter and exsimilicenter of the circumcircle and nine-point circle).
 :::
 
 ::: {#lem-17point10}
