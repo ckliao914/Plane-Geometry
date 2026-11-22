@@ -42,11 +42,11 @@ Thus $f(D)=f'(D)$ at these three points, so @thm-10point1 implies $W=f(D)=f'(D)=
 
 ::: {.unnumbered-env}
 **Definition.**
-The line containing the three collinear intersection points in @thm-10point2 is called the **axis of perspectivity** of the two triangles. Thus @thm-10point2 states that two triangles have a center of perspectivity if and only if they have an axis of perspectivity.
+The line containing the three collinear intersection points in @thm-10point2 is called the **perspectrix** (or **axis of perspectivity**) of the two triangles. Thus @thm-10point2 states that two triangles have a center of perspectivity if and only if they have an axis of perspectivity.
 :::
 
 ::: {#cor-10point1}
-The trilinear polar of a point is the axis of perspectivity of the reference triangle and the Cevian triangle of that point.
+The trilinear polar of a point is the perspectrix of the reference triangle and the cevian triangle of that point.
 :::
 
 ::: {.unnumbered-env}
