@@ -242,7 +242,7 @@ The point $Fe$ is the Poncelet point of $I$, so it is the center of $\mathcal{H}
 
 ::: {.unnumbered-env}
 **Definition.**
-The point $X(12)$ is the internal center of similitude of the incircle and the nine-point circle ($X(11)$ is the external center of similitude).
+The point $X(12)$ is the insimilicenter of the incircle and the nine-point circle ($X(11)$ is their exsimilicenter).
 :::
 
 ::: {#cor-14point7}
