@@ -298,7 +298,7 @@ The midpoints of the three diagonals of a complete quadrilateral are collinear, 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let the diagonals be $AC,BD,EF$, and consider the radical axis of $(AC)$ and $(BD)$. Computing powers shows that all four orthocenters lie on this radical axis. Hence the Steiner line is the radical axis of $(AC)$ and $(BD)$, and similarly of $(EF)$. Therefore, the centers of these three circles are collinear on a line perpendicular to their common radical axis.
+Let the diagonals be $AC,BD,EF$, and consider the radical axis of $(AC)$ and $(BD)$. Computing powers shows that all four orthocenters lie on this radical axis. Hence the Steiner line is the radical axis of $(AC)$ and $(BD)$, and similarly, of $(AC)$ and $(EF)$. Therefore, the centers of these three circles are collinear on a line perpendicular to their common radical axis.
 :::
 
 ::: {.unnumbered-env}
