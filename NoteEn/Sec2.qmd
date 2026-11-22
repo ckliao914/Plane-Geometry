@@ -136,11 +136,11 @@ Let the incircle and the $A$-excircle of $\triangle ABC$ touch $BC$ at $D$ and $
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Note that $A$ is the external center of homothety of the incircle and the $A$-excircle.
+Note that $A$ is the exsimilicenter of the incircle and the $A$-excircle.
 
 Moreover, $D'$ and $T$ are corresponding points under this homothety (their tangents to the two circles are both parallel to $BC$).
 
-Hence $D'T$ passes through the external center of homothety $A$.
+Hence $D'T$ passes through the exsimilicenter $A$.
 :::
 
 ::: {#lem-2point5}
