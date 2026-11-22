@@ -4,7 +4,7 @@
 ## Trigonometric Ceva's Theorem
 In $\triangle ABC$, let $X,Y,Z$ lie on segments $BC,CA,AB$, respectively. Then $AX,BY,CZ$ are concurrent if and only if
 $$\frac{\sin\angle BAX\sin\angle CBY\sin\angle ACZ}{\sin\angle XAC\sin\angle YBA\sin\angle ZCB}=1$$
-(if $X,Y,Z$ do not all lie on the segments, the lines may instead be parallel or the points collinear).
+(if $X,Y,Z$ do not all lie on the segments, $AX,BY,CZ$ may instead be concurrent or parallel, or $X,Y,Z$ may be collinear).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
