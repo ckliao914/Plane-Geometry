@@ -14,11 +14,11 @@ Let $(AH)$ intersect $(ABC)$ again at $X$. Then $(XHB)$ and $(XHC)$ are both tan
 ## Proof
 Let the feet of the altitudes from $A,B,C$ to the opposite sides be $D,E,F$, respectively.
 
-By power of a point, there exists an inversion centered at $H$ sending $A^*=D$, $B^*=E$, and $C^*=F$.
+By power of a point, there exists an inversion centered at $H$ sending $A^{\star}=D$, $B^{\star}=E$, and $C^{\star}=F$.
 
 This inversion swaps the nine-point circle with $(ABC)$, and swaps $(AH)$ with $BC$.
 
-Hence $X^*=M_{BC}$, and $(XHB)$ maps to the line $M_{BC}E$, which is tangent to $(AH)$ (and similarly for $(XHC)$ and $M_{BC}F$) by @lem-3point12, yielding the tangency with $BC$ after inverting back.
+Hence $X^{\star}=M_{BC}$, and $(XHB)$ maps to the line $M_{BC}E$, which is tangent to $(AH)$ (and similarly for $(XHC)$ and $M_{BC}F$) by @lem-3point12, yielding the tangency with $BC$ after inverting back.
 :::
 
 ::: {#lem-5point2}
@@ -35,7 +35,7 @@ By @lem-3point9, the reflection $Y$ of $H$ across $BC$ lies on the $X$-symmedian
 ::: {#lem-5point3}
 If $P,Q,R,S$ lie on a generalized circle, then for any inversion center $O$ (with the convention $P_\infty A / P_\infty B = 1$),
 $$
-\frac{PR/PS}{QR/QS}=\frac{P^*R^*/P^*S^*}{Q^*R^*/Q^*S^*}.
+\frac{PR/PS}{QR/QS}=\frac{P^{\star}R^{\star}/P^{\star}S^{\star}}{Q^{\star}R^{\star}/Q^{\star}S^{\star}}.
 $$
 :::
 
@@ -54,11 +54,11 @@ Using the notation of @lem-5point1, let $D$ be the foot of the perpendicular fro
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Using the notation of @lem-5point2, invert about $D$ with power sending $A^*=Y$ and swapping $B$ and $C$.
+Using the notation of @lem-5point2, invert about $D$ with power sending $A^{\star}=Y$ and swapping $B$ and $C$.
 
-Then the harmonic quadrilateral $ABTC$ maps to $YCT^*B$.
+Then the harmonic quadrilateral $ABTC$ maps to $YCT^{\star}B$.
 
-By @lem-5point2 and @cor-5point1, it follows that $T^*=X$, so $D,X,T$ are collinear.
+By @lem-5point2 and @cor-5point1, it follows that $T^{\star}=X$, so $D,X,T$ are collinear.
 :::
 
 ::: {.unnumbered-env}
@@ -67,7 +67,7 @@ The **circumcevian triangle** of a point $P$ is the triangle formed by the secon
 :::
 
 ::: {#cor-5point2}
-If the circumcevian triangle of a point is $\triangle XYZ$, then there exists an inversion sending $A^*=X$, $B^*=Y$, and $C^*=Z$.
+If the circumcevian triangle of a point is $\triangle XYZ$, then there exists an inversion sending $A^{\star}=X$, $B^{\star}=Y$, and $C^{\star}=Z$.
 :::
 
 ::: {#cor-5point3}
@@ -85,7 +85,7 @@ Suppose the $A$-mixtilinear incircle and the $A$-excircle touch $(ABC)$ and $BC$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Under the inversion followed by reflection in @cor-4point6, the $A$-mixtilinear incircle and the $A$-excircle are swapped, so $T^*=Q$, giving $\measuredangle BAT=\measuredangle QAC$.
+Under the inversion followed by reflection in @cor-4point6, the $A$-mixtilinear incircle and the $A$-excircle are swapped, so $T^{\star}=Q$, giving $\measuredangle BAT=\measuredangle QAC$.
 :::
 
 ::: {#lem-5point6}
@@ -136,7 +136,7 @@ Using the notation of @lem-5point9, $ARTS$ is a harmonic quadrilateral.
 ## Proof
 Let $N$ and $M$ be the midpoints of the upper and lower arcs $BC$ of $(ABC)$, respectively. Invert about $I$ with the power that leaves $(ABC)$ invariant.
 
-Then $A^*=M$, $S^*=B$, $R^*=C$, and by @lem-5point7, $T^*=N$.
+Then $A^{\star}=M$, $S^{\star}=B$, $R^{\star}=C$, and by @lem-5point7, $T^{\star}=N$.
 
 Since $MCNB$ is a harmonic quadrilateral, @cor-5point1 implies that $ARTS$ is a harmonic quadrilateral.
 :::
