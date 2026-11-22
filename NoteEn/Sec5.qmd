@@ -33,7 +33,7 @@ By @lem-3point9, the reflection $Y$ of $H$ across $BC$ lies on the $X$-symmedian
 :::
 
 ::: {#lem-5point3}
-If $P,Q,R,S$ lie on a generalized circle, then for any inversion center $O$ (with the convention $P_\infty A / P_\infty B = 1$),
+If $P,Q,R,S$ lie on a generalized circle, then for any inversion (with the convention $P_\infty A / P_\infty B = 1$),
 $$
 \frac{PR/PS}{QR/QS}=\frac{P^{\star}R^{\star}/P^{\star}S^{\star}}{Q^{\star}R^{\star}/Q^{\star}S^{\star}}.
 $$
