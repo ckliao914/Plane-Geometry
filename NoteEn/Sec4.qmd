@@ -49,7 +49,7 @@ $$\measuredangle A^\star P^\star B^\star =\measuredangle P^\star A^\star O+\meas
 
 ::: {.unnumbered-env}
 **Definition.**
-A **generalized circle** is a circle determined by three points; if one of the points is $P_{\infty}$, the generalized circle is the line passing through the other two points.
+A **generalized circle** (or **cline**, short for circle/line) is a circle determined by three points; if one of the points is $P_{\infty}$, the generalized circle is the line passing through the other two points.
 :::
 
 ::: {#cor-4point3}
