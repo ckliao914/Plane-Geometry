@@ -107,7 +107,7 @@ This follows immediately by angle chasing.
 :::
 
 ::: {#cor-3point5}
-If $P$ and $P'$ are isogonal conjugates, then the isogonal conjugate of $(BPC)$ is $(BP'C)$. In particular, the isogonal conjugate of the $A$-mixtilinear/incentral circle $(BIC)$ is itself.
+If $P$ and $P'$ are isogonal conjugates, then the isogonal conjugate of $(BPC)$ is $(BP'C)$. In particular, the isogonal conjugate of $(BIC)$ is itself.
 :::
 
 ::: {.unnumbered-env}
