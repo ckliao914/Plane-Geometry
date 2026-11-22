@@ -39,7 +39,7 @@ Let the three lines concur at $P$. The ratios of directed segments correspond to
 
 ::: {.unnumbered-env}
 **Definition.**
-Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are **perspective** if $A_1A_2, B_1B_2, C_1C_2$ are concurrent; their point of concurrency is called the **center of perspectivity**.
+Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are **perspective** if $A_1A_2, B_1B_2, C_1C_2$ are concurrent; their point of concurrency is called the **perspector** (or **center of perspectivity**).
 :::
 
 ::: {.unnumbered-env}
