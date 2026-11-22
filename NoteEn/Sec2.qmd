@@ -197,7 +197,7 @@ The complement of $I$ is $Sp$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The radical axis of $(I_B)$ and $(I_C)$ passes through $M_{BC}$ and is parallel to $AI$; hence $Sp$ is the incenter of the medial triangle.
+The radical axis of the $B$-excircle $(I_B)$ and the $C$-excircle $(I_C)$ passes through $M_{BC}$ and is parallel to $AI$; hence $Sp$ is the incenter of the medial triangle.
 :::
 
 ::: {#cor-2point5}
