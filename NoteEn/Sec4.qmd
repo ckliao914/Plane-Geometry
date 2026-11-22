@@ -2,7 +2,7 @@
 
 ::: {.unnumbered-env}
 **Definition (Inversion).**
-Given a circle $\omega$ with center $O$ and radius $r$, if a point $X^\star$ lies on the ray $OX$ and satisfies $OX\cdot OX^\star=r^2$, then $X^\star$ is called the **inverse** of $X$ with respect to $\omega$. Unless otherwise stated, $X^\star$ denotes the inverse of $X$.
+Given a circle $\omega$ with center $O$ and radius $r$, if a point $X^\star $ lies on the ray $OX$ and satisfies $OX\cdot OX^\star =r^2$, then $X^\star $ is called the **inverse** of $X$ with respect to $\omega$. Unless otherwise stated, $X^\star $ denotes the inverse of $X$.
 :::
 
 ::: {.unnumbered-env}
@@ -11,16 +11,16 @@ The inverse of $O$ with respect to $\omega$ is the **point at infinity** $P_{\in
 :::
 
 ::: {#cor-4point1}
-$(A^\star)^\star=A$.
+$(A^\star )^\star =A$.
 :::
 
 ::: {#lem-4point1}
-If $O$ is the center of inversion, then $\triangle OAB\stackrel{-}{\sim}\triangle OB^\starA^\star$.
+If $O$ is the center of inversion, then $\triangle OAB\stackrel{-}{\sim}\triangle OB^\star A^\star $.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By power of a point at $O$, $A,B,A^\star,B^\star$ are concyclic, from which the opposite similarity follows immediately.
+By power of a point at $O$, $A,B,A^\star ,B^\star $ are concyclic, from which the opposite similarity follows immediately.
 :::
 
 ::: {#cor-4point2}
@@ -34,7 +34,7 @@ The inverse of a circle $\Omega$ (with center $X$) passing through the center of
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Consider the antipode $D$ of $O$ on $\Omega$. For any point $P\neq O$ on $\Omega$, we have
-$$\measuredangle OD^\starP^\star=\measuredangle DPO=90^\circ.$$
+$$\measuredangle OD^\star P^\star =\measuredangle DPO=90^\circ.$$
 :::
 
 ::: {#lem-4point3}
@@ -44,7 +44,7 @@ The inverse of a circle $\Omega$ not passing through the center of inversion $O$
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Let $AB$ be the diameter of $\Omega$ whose line passes through $O$. For any point $P$ on $(AB)$, we have
-$$\measuredangle A^\starP^\starB^\star=\measuredangle P^\starA^\starO+\measuredangle OB^\starP^\star=\measuredangle OPA+\measuredangle BPO=90^\circ.$$
+$$\measuredangle A^\star P^\star B^\star =\measuredangle P^\star A^\star O+\measuredangle OB^\star P^\star =\measuredangle OPA+\measuredangle BPO=90^\circ.$$
 :::
 
 ::: {.unnumbered-env}
@@ -66,12 +66,12 @@ Considering the tangent lines at the point of intersection, inversion maps them 
 :::
 
 ::: {#lem-4point4}
-The inverse of the circumcenter of $(OAB)$ is the reflection of $O$ across $A^\starB^\star$.
+The inverse of the circumcenter of $(OAB)$ is the reflection of $O$ across $A^\star B^\star $.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By perpendicularity, the inverse of the antipode of $O$ on $(OAB)$ is the foot of the perpendicular from $O$ to $A^\starB^\star$. Applying a homothety centered at $O$ with ratio $2$ gives the result.
+By perpendicularity, the inverse of the antipode of $O$ on $(OAB)$ is the foot of the perpendicular from $O$ to $A^\star B^\star $. Applying a homothety centered at $O$ with ratio $2$ gives the result.
 :::
 
 ::: {#lem-4point5}
@@ -85,7 +85,7 @@ Inverting about the Miquel point maps the four circumcenters to the reflections 
 
 ::: {#thm-4point2}
 Given points $A,B$ and an inversion circle centered at $O$ with radius $R$, we have
-$$A^\starB^\star=\frac{R^2}{OA\cdot OB}\cdot AB.$$
+$$A^\star B^\star =\frac{R^2}{OA\cdot OB}\cdot AB.$$
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -101,9 +101,9 @@ $$AB\cdot CD+AD\cdot CB=AC\cdot BD.$$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Invert about $A$. By @lem-4point2, $C^\star$ lies on the segment $B^\starD^\star$.
+Invert about $A$. By @lem-4point2, $C^\star $ lies on the segment $B^\star D^\star $.
 
-Thus $B^\starC^\star+C^\starD^\star=B^\starD^\star$, and applying @thm-4point2 to compute the lengths yields the identity.
+Thus $B^\star C^\star +C^\star D^\star =B^\star D^\star $, and applying @thm-4point2 to compute the lengths yields the identity.
 :::
 
 ::: {#thm-4point4}
@@ -114,7 +114,7 @@ Given $c>0$ ($c\neq 1$) and distinct points $X,Y$, the locus of points $P$ satis
 ## Proof
 Pick one point $Q$ satisfying the condition, so $PX\cdot QY=PY\cdot QX$.
 
-Inverting about $Q$ gives $P^\starX^\star=P^\starY^\star$, so the locus of $P^\star$ is the perpendicular bisector of $X^\starY^\star$, and hence the locus of $P$ is a circle.
+Inverting about $Q$ gives $P^\star X^\star =P^\star Y^\star $, so the locus of $P^\star $ is the perpendicular bisector of $X^\star Y^\star $, and hence the locus of $P$ is a circle.
 :::
 
 ::: {.unnumbered-env}
@@ -128,10 +128,10 @@ If $P$ lies on the $A$-Apollonius circle, then $\measuredangle APB+\measuredangl
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @thm-4point4, inverting about $A$ gives $P^\starB^\star=P^\starC^\star$.
+By @thm-4point4, inverting about $A$ gives $P^\star B^\star =P^\star C^\star $.
 
 Therefore,
-$$0=\measuredangle P^\starB^\starC^\star+\measuredangle P^\starC^\starB^\star=\measuredangle P^\starB^\starA+\measuredangle AB^\starC^\star+\measuredangle P^\starC^\starA+\measuredangle AC^\starB^\star.$$
+$$0=\measuredangle P^\star B^\star C^\star +\measuredangle P^\star C^\star B^\star =\measuredangle P^\star B^\star A+\measuredangle AB^\star C^\star +\measuredangle P^\star C^\star A+\measuredangle AC^\star B^\star .$$
 By @lem-4point1, this translates to $\measuredangle APB+\measuredangle APC=\measuredangle ABC+\measuredangle ACB$.
 :::
 
@@ -168,7 +168,7 @@ If $\omega$ and $\Omega$ are orthogonal, then the inverse of $\omega$ with respe
 ## Proof
 Let $\omega$ and $\Omega$ intersect at $X$ and $Y$, and let $O$ be the center of $\Omega$. Then $OX$ and $OY$ are tangent to $\omega$.
 
-Since $X$ and $Y$ are fixed by the inversion, $\omega^\star$ still passes through $X,Y$ and remains tangent to $OX,OY$, so $\omega^\star=\omega$.
+Since $X$ and $Y$ are fixed by the inversion, $\omega^\star $ still passes through $X,Y$ and remains tangent to $OX,OY$, so $\omega^\star =\omega$.
 :::
 
 ::: {#lem-4point9}
@@ -201,11 +201,11 @@ $O,X(15),X(16)$ are collinear, and $X(16)$ lies outside $(ABC)$.
 :::
 
 ::: {#cor-4point6}
-Inverting $\triangle ABC$ about $A$ with radius $\sqrt{AB\cdot AC}$ followed by reflecting across the angle bisector of $\angle BAC$ maps $\triangle ABC$ to itself (with $B=C^\star$ and $C=B^\star$).
+Inverting $\triangle ABC$ about $A$ with radius $\sqrt{AB\cdot AC}$ followed by reflecting across the angle bisector of $\angle BAC$ maps $\triangle ABC$ to itself (with $B=C^\star $ and $C=B^\star $).
 :::
 
 ::: {#cor-4point7}
-Under the transformation in @cor-4point6, $I^\star=I_A$, and $O^\star$ is the reflection of $A$ across $BC$.
+Under the transformation in @cor-4point6, $I^\star =I_A$, and $O^\star $ is the reflection of $A$ across $BC$.
 :::
 
 ::: {#lem-4point11}
@@ -271,7 +271,7 @@ The triangle formed by the inverses of the vertices of $\triangle ABC$ with resp
 ## Proof
 Let $DEF$ be the pedal triangle of $P$. Using cyclic quadrilaterals and @lem-4point1, we have
 $$
-\measuredangle EDF=\measuredangle EDP+\measuredangle PDF=\measuredangle ACP+\measuredangle PBA=\measuredangle PA^\starC^\star+\measuredangle B^\starA^\starP=\measuredangle B^\starA^\starC^\star,
+\measuredangle EDF=\measuredangle EDP+\measuredangle PDF=\measuredangle ACP+\measuredangle PBA=\measuredangle PA^\star C^\star +\measuredangle B^\star A^\star P=\measuredangle B^\star A^\star C^\star ,
 $$
 and similarly for the other angles (the $\alpha$-pedal case follows identically by adding $\alpha$).
 :::
@@ -282,7 +282,7 @@ Inverting $\triangle ABC$ about an isodynamic point produces an equilateral tria
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-From the proof of @thm-4point4 (or @thm-4point2), all three sides of $\triangle A^\starB^\starC^\star$ have equal length.
+From the proof of @thm-4point4 (or @thm-4point2), all three sides of $\triangle A^\star B^\star C^\star $ have equal length.
 :::
 
 ::: {#cor-4point9}
@@ -321,9 +321,9 @@ $O,K,X(15),X(16)$ are collinear along the Brocard axis.
 ## Proof
 Let $T_A$ be the $A$-Dumpty point, and define $T_B,T_C$ analogously.
 
-Inverting @cor-3point7 with respect to $(ABC)$ shows that $T_A^\star,T_B^\star,T_C^\star,K^\star$ are collinear on a line perpendicular to $OK$.
+Inverting @cor-3point7 with respect to $(ABC)$ shows that $T_A^\star ,T_B^\star ,T_C^\star ,K^\star $ are collinear on a line perpendicular to $OK$.
 
-By @lem-4point17, $T_A^\star=A_1$ is the intersection of the tangent to $(ABC)$ at $A$ with $BC$, and similarly for $T_B^\star$ and $T_C^\star$.
+By @lem-4point17, $T_A^\star =A_1$ is the intersection of the tangent to $(ABC)$ at $A$ with $BC$, and similarly for $T_B^\star $ and $T_C^\star $.
 
-By @lem-4point16, the line $T_A^\starT_B^\starT_C^\star$ is perpendicular to $OX(15)X(16)$; hence $OK$ and $OX(15)X(16)$ coincide, so $O,K,X(15),X(16)$ are collinear.
+By @lem-4point16, the line $T_A^\star T_B^\star T_C^\star $ is perpendicular to $OX(15)X(16)$; hence $OK$ and $OX(15)X(16)$ coincide, so $O,K,X(15),X(16)$ are collinear.
 :::
