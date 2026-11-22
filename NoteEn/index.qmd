@@ -15,7 +15,7 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * Let $\ell_1\cap \ell_2$ denote the intersection of lines $\ell_1$ and $\ell_2$.
 
-* Let $(XYZ)$ denote the circumcircle of $XYZ$, and let $(XY)$ denote the circle of diameter $XY$.
+* Let $(XYZ)$ denote the circumcircle of $\triangle XYZ$, and let $(XY)$ denote the circle of diameter $XY$.
 
 * Let $X_{\perp \ell}$ denote the foot of the perpendicular from $X$ to line $\ell$.
 
@@ -37,15 +37,15 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * Let $\mathcal{T}_\mathcal{C}$ denote the envelope of the conic $\mathcal{C}$.
 
-* Let $I$ denote the incenter of $ABC$, and let $I_A,I_B,I_C$ denote the $A,B,C$-excenters, respectively.
+* Let $I$ denote the incenter of $\triangle ABC$, and let $I_A,I_B,I_C$ denote the $A,B,C$-excenters, respectively.
 
-* Let $O,H,G,N_9$ denote the circumcenter, orthocenter, centroid, and nine-point center of $ABC$, respectively.
+* Let $O,H,G,N_9$ denote the circumcenter, orthocenter, centroid, and nine-point center of $\triangle ABC$, respectively.
 
-* Let $Ge,Na,Sp,Be$ denote the Gergonne point, Nagel point, Spieker center, and Bevan point of $ABC$, respectively.
+* Let $Ge,Na,Sp,Be$ denote the Gergonne point, Nagel point, Spieker center, and Bevan point of $\triangle ABC$, respectively.
 
-* Let $K,Br,Br'$ denote the symmedian point and the two Brocard points of $ABC$, respectively.
+* Let $K,Br,Br'$ denote the symmedian point and the two Brocard points of $\triangle ABC$, respectively.
 
-* Let $\mathcal{H}_{Fe}$ denote the Feuerbach hyperbola, and let $Mt,Sc, Fe$ denote the Mittenpunkt, Schiffler point, and Feuerbach point of $ABC$, respectively.
+* Let $\mathcal{H}_{Fe}$ denote the Feuerbach hyperbola, and let $Mt,Sc, Fe$ denote the Mittenpunkt, Schiffler point, and Feuerbach point of $\triangle ABC$, respectively.
 
 * Let $\mathcal{K}$ denote the Kiepert hyperbola, and let $K_\theta\in\mathcal{K}$ be the standard parametrization.
 
