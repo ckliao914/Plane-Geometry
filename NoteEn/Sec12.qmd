@@ -99,16 +99,16 @@ This is the dual of @thm-12point1.
 :::
 
 ::: {#lem-12point4}
-Let the two common external tangents to the circumcircle and the $A$-excircle meet $BC$ at $X$ and $Y$. Then $AX$ and $AY$ are isogonal lines.
+Let the two common external tangents $\ell_1$ and $\ell_2$ to the circumcircle and the $A$-excircle meet $BC$ at $X$ and $Y$. Then $AX$ and $AY$ are isogonal lines.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $P=\ell_A\cap \ell_B$, and let the $A$-excircle touch $BC$ at $T$.
+Let $P=\ell_1\cap \ell_2$, and let the $A$-excircle touch $BC$ at $T$.
 
-Applying @thm-12point2 to the $A$-excircle and its four tangents $\ell_A,\ell_B,BC,BC$ (regarding $BC\cap BC$ as the point of tangency $T$) and projecting from $A$, we see that $(AB,AC)$, $(AT,AP)$, and $(AX,AY)$ belong to a common involution.
+Applying @thm-12point2 to the $A$-excircle and its four tangents $\ell_1,\ell_2,BC,BC$ (regarding $BC\cap BC$ as the point of tangency $T$) and projecting from $A$, we see that $(AB,AC)$, $(AT,AP)$, and $(AX,AY)$ belong to a common involution.
 
-Since $P$ is the external center of similitude of the circumcircle and the $A$-excircle, and $A$ is the external center of similitude of the incircle and the $A$-excircle, @thm-2point3 (Monge's Theorem) implies that $AP$ passes through the external center of similitude $X(56)$ of the circumcircle and the incircle.
+Since $P$ is the exsimilicenter of the circumcircle and the $A$-excircle, and $A$ is the exsimilicenter of the incircle and the $A$-excircle, @thm-2point3 (Monge's Theorem) implies that $AP$ passes through the exsimilicenter $X(56)$ of the circumcircle and the incircle.
 
 By @cor-5point5, $AX(56)$ and $AT$ are isogonal, so $(AB,AC)$ and $(AT,AP)$ belong to the involution given by reflection across the internal angle bisector of $\angle BAC$; hence $AX$ and $AY$ are isogonal lines.
 :::
