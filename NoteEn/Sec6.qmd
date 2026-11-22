@@ -180,7 +180,7 @@ In a harmonic quadrilateral $ABCD$, we have $(A,C;B,D)=-1$.
 :::
 
 ::: {#thm-6point7}
-Inversion preserves cross ratio; that is, $(A,B;C,D)=(A^*,B^*;C^*,D^*)$.
+Inversion preserves cross ratio; that is, $(A,B;C,D)=(A^{\star},B^{\star};C^{\star},D^{\star})$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -189,12 +189,12 @@ By @lem-5point3 the magnitude/value of the cross ratio is unchanged, and the cyc
 :::
 
 ::: {#lem-6point4}
-Inverting a point $P$ on line $XY$ with respect to the circle with diameter $XY$ gives $P^*$ as the harmonic conjugate of $P$ with respect to $X$ and $Y$.
+Inverting a point $P$ on line $XY$ with respect to the circle with diameter $XY$ gives $P^{\star}$ as the harmonic conjugate of $P$ with respect to $X$ and $Y$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @thm-6point7, $(P,P^*;X,Y)=(P^*,P;X,Y)$, and the result follows from @lem-6point1.
+By @thm-6point7, $(P,P^{\star};X,Y)=(P^{\star},P;X,Y)$, and the result follows from @lem-6point1.
 :::
 
 ::: {#lem-6point5}
@@ -207,16 +207,16 @@ By @lem-6point4, $C$ and $D$ are mutual inverses with respect to $(AB)$; since $
 :::
 
 ::: {#lem-6point6}
-If a circle $\Gamma$ inverts to $\Gamma^*$ with respect to $\omega$, and $\Gamma,\omega$ have centers $X,O$, respectively, then $X^*$ is the inverse of $O$ with respect to $\Gamma^*$.
+If a circle $\Gamma$ inverts to $\Gamma^{\star}$ with respect to $\omega$, and $\Gamma,\omega$ have centers $X,O$, respectively, then $X^{\star}$ is the inverse of $O$ with respect to $\Gamma^{\star}$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Let $XO$ intersect $\Gamma$ at $P$ and $Q$. By @cor-6point3 and @thm-6point7,
 $$
--1=(P,Q;X,\infty_{PQ})=(P^*,Q^*;X^*,O).
+-1=(P,Q;X,\infty_{PQ})=(P^{\star},Q^{\star};X^{\star},O).
 $$
-By @lem-6point4, $X^*$ and $O$ are mutual inverses with respect to $\Gamma^*$.
+By @lem-6point4, $X^{\star}$ and $O$ are mutual inverses with respect to $\Gamma^{\star}$.
 :::
 
 ::: {#lem-6point7}
@@ -256,16 +256,16 @@ A family of circles sharing a common radical axis is called a **pencil of circle
 :::
 
 ::: {#lem-6point9}
-Inverting a point $P$ with respect to $\omega$ makes $\omega$ an Apollonius circle for $P$ and $P^*$ with respect to some ratio.
+Inverting a point $P$ with respect to $\omega$ makes $\omega$ an Apollonius circle for $P$ and $P^{\star}$ with respect to some ratio.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $PP^*$ intersect $\omega$ at $X$ and $Y$. For any point $A$ on $\omega$, we have $\angle XAY=90^\circ$.
+Let $PP^{\star}$ intersect $\omega$ at $X$ and $Y$. For any point $A$ on $\omega$, we have $\angle XAY=90^\circ$.
 
-By @lem-6point4, $(X,Y;P,P^*)=-1$, so by @cor-6point4, $AX$ and $AY$ bisect $\angle PAP^*$.
+By @lem-6point4, $(X,Y;P,P^{\star})=-1$, so by @cor-6point4, $AX$ and $AY$ bisect $\angle PAP^{\star}$.
 
-Hence $(XAY)$ is the $A$-Apollonius circle of $\triangle APP^*$.
+Hence $(XAY)$ is the $A$-Apollonius circle of $\triangle APP^{\star}$.
 :::
 
 ::: {#lem-6point10}
@@ -291,5 +291,5 @@ For an elliptic or parabolic pencil, the images clearly still share two points o
 
 For a hyperbolic pencil, first find the two points $X$ and $Y$ from @lem-6point10.
 
-Under inversion centered at $O$, a circle defined by $PX/PY=c$ maps to a circle satisfying $P^*X^*/P^*Y^*=c\cdot(OY/OX)$, which is still constant, so the image is again a hyperbolic pencil.
+Under inversion centered at $O$, a circle defined by $PX/PY=c$ maps to a circle satisfying $P^{\star}X^{\star}/P^{\star}Y^{\star}=c\cdot(OY/OX)$, which is still constant, so the image is again a hyperbolic pencil.
 :::
