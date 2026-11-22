@@ -105,7 +105,7 @@ If the internal and external angle bisectors of $\angle BAC$ intersect $BC$ at $
 :::
 
 ::: {#lem-6point1}
-For $A\neq B$ and $C\neq D$, if $(A,B;C,D)=(A,B;D,C)$, then $(A,B;C,D)$ is harmonic.
+For $A\neq B$ and $C\neq D$, if $(A,B;C,D)=(A,B;D,C)$, then $(A,B;C,D)=-1$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
