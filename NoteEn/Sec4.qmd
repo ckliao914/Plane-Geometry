@@ -103,7 +103,7 @@ $$AB\cdot CD+AD\cdot CB=AC\cdot BD.$$
 ## Proof
 Invert about $A$. By @lem-4point2, $C^\star$ lies on the segment $B^\star D^\star$.
 
-Thus $B^\star C^\star +C^\star D^\star =B^\star D^\star $, and applying @thm-4point2 to compute the lengths yields the identity.
+Thus $B^\star C^\star +C^\star D^\star =B^\star D^\star$, and applying @thm-4point2 to compute the lengths yields the identity.
 :::
 
 ::: {#thm-4point4}
