@@ -294,7 +294,7 @@ The pedal circles of two isogonal conjugates $P$ and $Q$ coincide, and their com
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-By @lem-3point17, we obtain three cyclic quadruples of pedal projections. If their circumcircles did not coincide, their pairwise radical axes $AB,BC,CA$ would be concurrent, a contradiction.
+By @lem-3point17, we obtain three cyclic quadruples of pedal projections. If their circumcircles did not coincide, their pairwise radical axes $BC,CA,AB$ would be concurrent, a contradiction.
 
 Moreover, $M_{PQ}$ lies on the perpendicular bisector of $P_{\perp BC}Q_{\perp BC}$, and similarly for the other two sides, so $M_{PQ}$ is the center of this circle.
 :::
