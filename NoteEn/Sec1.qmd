@@ -200,6 +200,7 @@ Let $\omega$ be a circle and $X$ be a point on $\omega$. The **antipode** of $X$
 The reflection of $H$ across $M_{BC}$ is the antipode of $A$, and $HM_{BC}$, $(ABC)$, and $(AH)$ are concurrent.
 :::
 
+
 ::: {.unnumbered-env}
 **Definition.**
 A **homothety** centered at $X$ with ratio $t$ is the dilation centered at $X$ by a factor of $t$.
