@@ -215,7 +215,7 @@ Using the notation of @lem-5point15, let $MT\cap BC=X$. Then $AI\perp IX$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Consider the radical center of $(MIT)$, $(IBC)$, and $(ABC)$. Since $(MIT)$ has diameter $MI$, it is orthogonal to $(IBC)$ (or tangent to $BC$ at $I$), which gives $AI\perp IX$.
+Consider the radical center of $(MIT)$, $(IBC)$, and $(ABC)$. Since $(MIT)$ has diameter $MI$, it is tangent to $(IBC)$, which gives $AI\perp IX$.
 :::
 
 ::: {#lem-5point18}
