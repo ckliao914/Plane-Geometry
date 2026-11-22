@@ -193,7 +193,7 @@ $(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Since $X(55)$ and $X(56)$ are the internal and external centers of similitude of the incircle and circumcircle, we have $(X(55),X(56);O,I)=-1$. Taking the isogonal conjugate gives $(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$.
+Since $X(55)$ and $X(56)$ are the insimilicenter and exsimilicenter of the incircle and circumcircle, we have $(X(55),X(56);O,I)=-1$. Taking the isogonal conjugate gives $(Ge,Na;H,I)_{\mathcal{H}_{Fe}}=-1$.
 :::
 
 ::: {#lem-13point11}
