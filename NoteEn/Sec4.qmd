@@ -114,7 +114,7 @@ Given $c>0$ ($c\neq 1$) and distinct points $X,Y$, the locus of points $P$ satis
 ## Proof
 Pick one point $Q$ satisfying the condition, so $PX\cdot QY=PY\cdot QX$.
 
-Inverting about $Q$ gives $P^\star X^\star =P^\star Y^\star $, so the locus of $P^\star$ is the perpendicular bisector of $X^\star Y^\star $, and hence the locus of $P$ is a circle.
+Inverting about $Q$ gives $P^\star X^\star =P^\star Y^\star$, so the locus of $P^\star$ is the perpendicular bisector of $X^\star Y^\star$, and hence the locus of $P$ is a circle.
 :::
 
 ::: {.unnumbered-env}
