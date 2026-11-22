@@ -237,7 +237,7 @@ Let $T$ be the foot of the perpendicular from $I_A$ to $BC$, and let $AI$ inters
 
 ::: {.unnumbered-env}
 **Definition.**
-$X(56)$ and $X(55)$ are the external and internal centers of homothety of the circumcircle and the incircle, respectively; both lie on $OI$.
+$X(56)$ and $X(55)$ are the exsimilicenter and insimilicenter of the circumcircle and the incircle, respectively; both lie on $OI$.
 :::
 
 ::: {#cor-2point8}
