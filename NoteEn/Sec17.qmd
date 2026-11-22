@@ -133,7 +133,13 @@ The Steiner line of $X(110)$ is $OH$, its trilinear polar is $OK$, and its ortho
 
 ::: {.unnumbered-env}
 **Definition.**
-The point $X(25)$ is the homothetic center of the triangle formed by the tangential triangle (the triangle formed by the tangents to the circumcircle at $A,B,C$, i.e the anticevian triangle of $K$) and the orthic triangle.
+The triangle formed by the three tangents to the circumcircle at $A,B,C$ is the **tangential triangle**. This is the anticevian triangle of $K$.
+:::
+
+
+::: {.unnumbered-env}
+**Definition.**
+The point $X(25)$ is the homothetic center of the tangential triangle and the orthic triangle.
 :::
 
 ::: {#lem-17point7}
@@ -142,7 +148,7 @@ The point $X(25)$ lies on $OH$.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The incenter of the anticevian triangle of $K$ is $O$, and the incenter of the orthic triangle is $H$ (in the acute case).
+The incenter of the tangential triangle is $O$, and the incenter of the orthic triangle is $H$ (in the acute case).
 
 Hence $OH$ passes through their homothetic center $X(25)$.
 :::
@@ -153,7 +159,7 @@ The isogonal conjugate of $X(25)$ is $X(69)$ (the isotomic conjugate of $H$).
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let the orthic triangle be $DEF$ and the anticevian triangle of $K$ be $PQR$.
+Let the orthic triangle be $DEF$ and the tangential triangle be $PQR$.
 
 The homothety sending $\triangle PQR$ to $\triangle DEF$ sends $O$ to $H$, so it sends $O_{\perp QR}=A$ to $H_{\perp EF}=S$.
 
@@ -203,11 +209,11 @@ Hence $KoX(69)\cap OK=M_{OK}=X(182)$, so $Ko$, $X(69)$, and $X(182)$ are colline
 
 ::: {.unnumbered-env}
 **Definition.**
-The point $X(26)$ is the circumcenter of the triangle formed by the tangents to the circumcircle at $A,B,C$.
+The point $X(26)$ is the circumcenter of the tangential triangle.
 :::
 
 ::: {#lem-17point11}
-Let $\triangle PQR$ be the triangle formed by the tangents to the circumcircle at $A,B,C$. Then the insimilicenter and exsimilicenter of $(PQR)$ and the nine-point circle of $\triangle ABC$ are $O$ and $X(25)$, respectively.
+Let $\triangle PQR$ be the tangential triangle. Then the insimilicenter and exsimilicenter of $(PQR)$ and the nine-point circle of $\triangle ABC$ are $O$ and $X(25)$, respectively.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
