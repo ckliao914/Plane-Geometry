@@ -118,15 +118,15 @@ Since the crosspoint of $I$ and $X(80)$ is $\infty_{OI}$ (@cor-13point3 and @lem
 
 By @cor-21point5, $(X(36),\infty_{OI};I,T)=-2$.
 
-Let $T^*$ be the inverse of $T$ with respect to the circumcircle, set $D=I_{\perp BC}$, let $I'$ be the reflection of $I$ across $D$, and let $M$ be the midpoint of the lower arc $BC$.
+Let $T^{\star}$ be the inverse of $T$ with respect to the circumcircle, set $D=I_{\perp BC}$, let $I'$ be the reflection of $I$ across $D$, and let $M$ be the midpoint of the lower arc $BC$.
 
 By @lem-15point11,
 $$
--2=(I,O;X(36),T^*)\stackrel{M}{=}(I,\infty_{ID};I',MT^*\cap ID).
+-2=(I,O;X(36),T^{\star})\stackrel{M}{=}(I,\infty_{ID};I',MT^{\star}\cap ID).
 $$
-Thus $MT^*\cap ID$ is the reflection $D'$ of $D$ across $I$, and by homothety $MD'T^*$ passes through $X(55)$.
+Thus $MT^{\star}\cap ID$ is the reflection $D'$ of $D$ across $I$, and by homothety $MD'T^{\star}$ passes through $X(55)$.
 
-By symmetry, $T^*=X(55)$, so the pole of the trilinear polar of $I$ with respect to the circumcircle is $X(55)$.
+By symmetry, $T^{\star}=X(55)$, so the pole of the trilinear polar of $I$ with respect to the circumcircle is $X(55)$.
 :::
 
 ::: {#cor-21point6}
