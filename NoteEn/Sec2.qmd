@@ -58,7 +58,7 @@ This follows by length chasing using @thm-2point1 and @thm-2point2.
 
 ::: {.unnumbered-env}
 **Definition.**
-If the center of perspectivity in @lem-2point1 is $P$ and the line of collinearity is $\ell$, then $\ell$ is called the **trilinear polar** of $P$, and $P$ is called the **trilinear pole** of $\ell$.
+If the perspector in @lem-2point1 is $P$ and the line of collinearity is $\ell$, then $\ell$ is called the **trilinear polar** of $P$, and $P$ is called the **trilinear pole** of $\ell$.
 :::
 
 ::: {#lem-2point2}
@@ -91,11 +91,11 @@ This follows immediately by length chasing and @thm-2point2.
 
 ::: {.unnumbered-env}
 **Definition.**
-The center of perspectivity of the reference triangle and its contact triangle is the **Gergonne point** $X(7)$, denoted by $Ge$ unless otherwise stated.
+The perspector of the reference triangle and its contact triangle is the **Gergonne point** $X(7)$, denoted by $Ge$ unless otherwise stated.
 :::
 
 ::: {#thm-2point5}
-Let $DEF$ be the Cevian triangle of $X$, and let $D',E',F'$ be the reflections of $D,E,F$ across $M_{BC},M_{CA},M_{AB}$, respectively. Then $\triangle ABC$ and $\triangle D'E'F'$ are perspective.
+Let $DEF$ be the cevian triangle of $X$, and let $D',E',F'$ be the reflections of $D,E,F$ across $M_{BC},M_{CA},M_{AB}$, respectively. Then $\triangle ABC$ and $\triangle D'E'F'$ are perspective.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -105,7 +105,7 @@ This follows immediately by length chasing and @thm-2point2.
 
 ::: {.unnumbered-env}
 **Definition.**
-The center of perspectivity in @thm-2point5 is called the **isotomic conjugate** of $X$.
+The perspector in @thm-2point5 is called the **isotomic conjugate** of $X$.
 :::
 
 ::: {#cor-2point1}
