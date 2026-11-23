@@ -37,6 +37,8 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * Usually $\mathcal{C}$ denotes a conic. We use $\mathfrak{p}_{\mathcal{C}}$ for the polar transform.
 
+* Let $(X_1X_2X_3X_4X_5)$ denote the conic passing through the points $X_1,X_2,X_3,X_4,X_5$.
+
 * Let $\mathcal{T}_\mathcal{C}$ denote the envelope of the conic $\mathcal{C}$.
 
 * Let $I$ denote the incenter of $\triangle ABC$, and let $I_A,I_B,I_C$ denote the $A,B,C$-excenters, respectively.
