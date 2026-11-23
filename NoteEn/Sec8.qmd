@@ -155,7 +155,7 @@ The polar of $A$ with respect to $\omega$ passes through $B$ if and only if the 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-From the proof of @thm-8point3, $(AB)$ passes through $A^{\star}$ and $B^{\star}$, so $(AB)$ is invariant under inversion; the equivalence follows from @lem-4point8.
+Assume that the polar of $A$ with respect to $\omega$ passes through $B$. From the proof of @thm-8point3, $(AB)$ passes through $A^{\star}$ and $B^{\star}$, so $(AB)$ is invariant under inversion. From @lem-4point8, $(AB)$ is orthogonal to $\omega$. The converse is similar.
 :::
 
 ::: {.unnumbered-env}
