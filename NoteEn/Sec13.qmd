@@ -276,11 +276,13 @@ The points $I_{\perp BC}$, $I_A$, $X(57)$, and $AH\cap M_{AB}M_{AC}$ are colline
 :::
 
 ::: {#lem-13point16}
-The symmedian points of the excentral triangle and the intouch triangle are $Mt$ and $Ge$, respectively.
+$G,Ge,Mt,X(57)$ are collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
+The symmedian points of the excentral triangle and the intouch triangle are $Mt$ and $Ge$, respectively.
+
 By @lem-13point15, $Mt,Ge,X(57)$ are collinear. By @lem-11point10, $G,Ge,Mt,X(57)$ are collinear.
 :::
 
