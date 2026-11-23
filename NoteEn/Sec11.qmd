@@ -128,7 +128,7 @@ Thus $M,N,A',O_{\Gamma}$ are concyclic, and $B',C'$ lie on the same circle analo
 :::
 
 ::: {#lem-11point7}
-If $P$ and $Q$ are cyclocevian conjugates with Cevian triangles $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, and their associated Miquel points are $M$ and $N$, respectively, then $M$ and $N$ are isogonal conjugates and $MN\parallel PQ$.
+If $P$ and $Q$ are cyclocevian conjugates with cevian triangles $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, and their associated Miquel points are $M$ and $N$, respectively, then $M$ and $N$ are isogonal conjugates and $MN\parallel PQ$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
