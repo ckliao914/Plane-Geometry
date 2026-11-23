@@ -106,14 +106,14 @@ By @lem-3point19, $F_2$ is therefore the isogonal conjugate of $F_1$.
 :::
 
 ::: {#lem-7point4}
-There is a unique conic inscribed in $\triangle ABC$ with two given isogonal conjugates as its foci.
+There is a unique conic inscribed in $\triangle ABC$ with a pair of isogonal conjugates as its foci.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
 Let $P,Q$ be the foci; by @cor-7point3, the tangency points on the sidelines are the intersections of the sidelines with the lines joining the reflections of $P$ across the sidelines to $Q$.
 
-At most one such conic exists, and the construction in @cor-7point3 establishes existence.
+At most one such conic exists, which is the conic with foci $P,Q$ passing through the three intersections on the sidelines. The existence follows from the argument in @lem-7point3.
 :::
 
 ::: {#cor-7point4}
