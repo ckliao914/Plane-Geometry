@@ -42,7 +42,7 @@ Let the incircle touch $BC,CA,AB$ at $D,E,F$, respectively. Let $P$ be the foot 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The points $A,I,E,F$ are concyclic; letting $S$ be the second intersection of $AI$ with $(ABC)$, $S,I,A'$ are collinear.
+The points $A,I,E,F$ are concyclic; letting $S$ be the second intersection of $(AI)$ with $(ABC)$, $S,I,A'$ are collinear.
 
 By @lem-9point2, the inverse of $S$ with respect to the incircle is the second intersection of the nine-point circle of $\triangle DEF$ with $EF$ (other than $M_{EF}$), which is the foot $P$ of the perpendicular from $D$ to $EF$; hence $P,S,I,A'$ are collinear.
 :::
