@@ -2,17 +2,17 @@
 
 ::: {.unnumbered-env}
 **Definition.**
-A **conic section** (or **conic**) $\mathcal{C}$ is the curve of intersection of a plane $E$ with a conical surface (the surface swept out by rotating a line $\ell$ about an intersecting axis line $\mathcal{L}$, with vertex/center $\ell\cap\mathcal{L}$). Unless otherwise stated, $\mathcal{C}$ denotes a conic section.
+A **conic section** (or **conic**) $\mathcal{C}$ is the curve of intersection of a plane $\mathbf{E}$ with a conical surface (the surface swept out by rotating a line $\ell$ about an intersecting axis line $\mathcal{L}$, with vertex/center $\ell\cap\mathcal{L}$). Unless otherwise stated, $\mathcal{C}$ denotes a conic section.
 :::
 
 ::: {.unnumbered-env}
 **Definition.**
-Using the notation of the preceding Definition, let $\ell$ and $\mathcal{L}$ form an acute angle $\theta$, and let $E$ and $\mathcal{L}$ form an angle $\phi$ (measured with respect to the axis). If $\theta>\phi$, the intersection is a **hyperbola**; if $\theta=\phi$, it is a **parabola**; if $\theta<\phi$, it is an **ellipse** (when $E$ passes through the vertex of the conical surface, degenerate cases occur, such as a point, a single line, or two intersecting lines).
+Using the notation of the preceding Definition, let $\ell$ and $\mathcal{L}$ form an acute angle $\theta$, and let $\mathbf{E}$ and $\mathcal{L}$ form an angle $\phi$ (measured with respect to the axis). If $\theta>\phi$, the intersection is a **hyperbola**; if $\theta=\phi$, it is a **parabola**; if $\theta<\phi$, it is an **ellipse** (when $\mathbf{E}$ passes through the vertex of the conical surface, degenerate cases occur, such as a point, a single line, or two intersecting lines).
 :::
 
 ::: {.unnumbered-env}
 **Definition.**
-Using the notation of the preceding Definition, there are two spheres tangent to the conical surface (along all generators $\ell$) and tangent to $E$, called **Dandelin spheres** ($S_1,S_2$). The points of tangency of $S_1$ and $S_2$ with $E$ are denoted $F_1$ and $F_2$, and are called the **foci**. When the conic is a parabola, one of the spheres becomes infinitely large and one focus moves to infinity, so the focus of a parabola refers to the finite focus.
+Using the notation of the preceding Definition, there are two spheres tangent to the conical surface (along all generators $\ell$) and tangent to $\mathbf{E}$, called **Dandelin spheres** ($S_1,S_2$). The points of tangency of $S_1$ and $S_2$ with $\mathbf{E}$ are denoted $F_1$ and $F_2$, and are called the **foci**. When the conic is a parabola, one of the spheres becomes infinitely large and one focus moves to infinity, so the focus of a parabola refers to the finite focus.
 :::
 
 ::: {#thm-7point1}
@@ -30,7 +30,7 @@ When $\mathcal{C}$ is an ellipse or a hyperbola, $X$ lies on or outside the segm
 
 ::: {.unnumbered-env}
 **Definition.**
-Using the notation of the preceding three Definitions, $S_1$ touches the conical surface along a circle lying in a plane $P_1$; the line of intersection of $P_1$ and $E$ is called the **directrix** corresponding to $F_1$.
+Using the notation of the preceding three Definitions, $S_1$ touches the conical surface along a circle lying in a plane $P_1$; the line of intersection of $P_1$ and $\mathbf{E}$ is called the **directrix** corresponding to $F_1$.
 :::
 
 ::: {#thm-7point2}
