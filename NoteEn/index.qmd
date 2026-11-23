@@ -35,7 +35,7 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
 * The cross ratio of four points is denoted by $(X_1,X_2;X_3,X_4)$.
 
-* We use $\mathfrak{p}_{\mathcal{C}}$ for the polar transform.
+* Usually $\mathcal{C}$ denotes a conic. We use $\mathfrak{p}_{\mathcal{C}}$ for the polar transform.
 
 * Let $\mathcal{T}_\mathcal{C}$ denote the envelope of the conic $\mathcal{C}$.
 
