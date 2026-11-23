@@ -303,7 +303,7 @@ Hence by @lem-9point10 applied to the three tangents, $(I,X(40);X(55),X(65))=-1$
 
 ::: {.unnumbered-env}
 **Definition.**
-The isogonal conjugate of $X(40)$ (the **Bevan point**) is $X(84)$.
+The isogonal conjugate of $X(40)$ (the Bevan point) is $X(84)$.
 :::
 
 ::: {#lem-13point18}
