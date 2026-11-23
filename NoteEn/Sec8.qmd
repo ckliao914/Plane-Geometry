@@ -2,34 +2,34 @@
 
 ::: {.unnumbered-env}
 **Definition.**
-Given a point $O$ in space and two planes $E_1, E_2$, the **projection** of a point $X\in E_1$ from $O$ onto $E_2$ is the intersection $OX\cap E_2$.
+Given a point $O$ in space and two planes $\mathbf{E}_1, \mathbf{E}_2$, the **projection** of a point $X\in \mathbf{E}_1$ from $O$ onto $\mathbf{E}_2$ is the intersection $OX\cap \mathbf{E}_2$.
 :::
 
 ::: {#lem-8point1}
-Given two planes $E_1, E_2$ and a line $\ell_1$ in $E_1$, the projection of $\ell_1$ from $O$ onto $E_2$ is a line (or a point if $O\in\ell_1$).
+Given two planes $\mathbf{E}_1, \mathbf{E}_2$ and a line $\ell_1$ in $\mathbf{E}_1$, the projection of $\ell_1$ from $O$ onto $\mathbf{E}_2$ is a line (or a point if $O\in\ell_1$).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-$O$ and $\ell_1$ determine a plane, whose intersection with $E_2$ is clearly the locus of projections.
+$O$ and $\ell_1$ determine a plane, whose intersection with $\mathbf{E}_2$ is clearly the locus of projections.
 :::
 
 ::: {#lem-8point2}
-Given two planes $E_1, E_2$ and four collinear points $A,B,C,D$ in $E_1$, let their projections from $O$ onto $E_2$ be $A',B',C',D'$. Then $(A,B;C,D)=(A',B';C',D')$.
+Given two planes $\mathbf{E}_1, \mathbf{E}_2$ and four collinear points $A,B,C,D$ in $\mathbf{E}_1$, let their projections from $O$ onto $\mathbf{E}_2$ be $A',B',C',D'$. Then $(A,B;C,D)=(A',B';C',D')$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-The four points and $O$ determine a plane $E$. By @lem-8point1, $A',B',C',D'$ are collinear, so taking cross ratio from $O$ inside $E$ gives the result.
+The four points and $O$ determine a plane $\mathbf{E}$. By @lem-8point1, $A',B',C',D'$ are collinear, so taking cross ratio from $O$ inside $\mathbf{E}$ gives the result.
 :::
 
 ::: {#lem-8point3}
-Given two planes $E_1, E_2$ and four concurrent lines $\ell_1,\ell_2,\ell_3,\ell_4$ in $E_1$, let their projections from $O$ onto $E_2$ be $L_1,L_2,L_3,L_4$. Then $(\ell_1,\ell_2;\ell_3,\ell_4)=(L_1,L_2;L_3,L_4)$.
+Given two planes $\mathbf{E}_1, \mathbf{E}_2$ and four concurrent lines $\ell_1,\ell_2,\ell_3,\ell_4$ in $\mathbf{E}_1$, let their projections from $O$ onto $\mathbf{E}_2$ be $L_1,L_2,L_3,L_4$. Then $(\ell_1,\ell_2;\ell_3,\ell_4)=(L_1,L_2;L_3,L_4)$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Take a line in $E_1$ intersecting $\ell_1,\ell_2,\ell_3,\ell_4$ at $A,B,C,D$, and project these four points from $O$ onto $E_2$ as $A',B',C',D'$.
+Take a line in $\mathbf{E}_1$ intersecting $\ell_1,\ell_2,\ell_3,\ell_4$ at $A,B,C,D$, and project these four points from $O$ onto $\mathbf{E}_2$ as $A',B',C',D'$.
 
 By @lem-8point2, $(A,B;C,D)=(A',B';C',D')$, and the cross ratios of the two pencils equal these values.
 :::
@@ -40,9 +40,9 @@ If six points $A,B,C,D,P,Q$ lie on a conic section, then $P(A,B;C,D)=Q(A,B;C,D)$
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $\mathcal{C}$ be a conic passing through $A,B,C,D,P,Q$. There exist a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, as well as another plane section $E_2$ cutting out a circle.
+Let $\mathcal{C}$ be a conic passing through $A,B,C,D,P,Q$. There exist a conical surface (with vertex $O$) and a plane section $\mathbf{E}_1$ cutting out $\mathcal{C}$, as well as another plane section $\mathbf{E}_2$ cutting out a circle.
 
-Projecting $A,B,C,D,P,Q$ from $O$ onto $E_2$ yields six concyclic points $A',B',C',D',P',Q'$.
+Projecting $A,B,C,D,P,Q$ from $O$ onto $\mathbf{E}_2$ yields six concyclic points $A',B',C',D',P',Q'$.
 
 By @thm-6point5 and @lem-8point3,
 $$
@@ -160,7 +160,7 @@ Assume that the polar of $A$ with respect to $\omega$ passes through $B$. From t
 
 ::: {.unnumbered-env}
 **Definition.**
-Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $E_1$ cutting out $\mathcal{C}$, together with a plane section $E_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $E_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $E_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathfrak{p}_{\mathcal{C}}(A)$ and $A=\mathfrak{p}_{\mathcal{C}}(\ell)$.
+Given a conic $\mathcal{C}$ and a point $A$, choose a conical surface (with vertex $O$) and a plane section $\mathbf{E}_1$ cutting out $\mathcal{C}$, together with a plane section $\mathbf{E}_2$ cutting out a circle $\omega$. If the projection of $A$ from $O$ onto $\mathbf{E}_2$ is $A'$, the polar of $A'$ with respect to $\omega$ is $\ell'$, and the projection of $\ell'$ from $O$ onto $\mathbf{E}_1$ is $\ell$, then $\ell$ is called the **polar** of $A$ with respect to $\mathcal{C}$, and $A$ is called the **pole** of $\ell$ with respect to $\mathcal{C}$, written $\ell=\mathfrak{p}_{\mathcal{C}}(A)$ and $A=\mathfrak{p}_{\mathcal{C}}(\ell)$.
 :::
 
 ::: {#cor-8point4}
