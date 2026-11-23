@@ -166,7 +166,7 @@ In @thm-10point3, the map $\ell\mapsto \ell\cap f(\ell)$ is a projective map; in
 :::
 
 ::: {#lem-10point4}
-Given a conic section $\mathcal{C}$, $\triangle ABC$ and the triangle formed by $\mathfrak{p}_{\mathcal{C}}(BC)$, $\mathfrak{p}_{\mathcal{C}}(CA)$, and $\mathfrak{p}_{\mathcal{C}}(AB)$ are perspective.
+Given a conic section $\mathcal{C}$, $\triangle ABC$ and $\triangle \mathfrak{p}_{\mathcal{C}}(BC)\mathfrak{p}_{\mathcal{C}}(CA)\mathfrak{p}_{\mathcal{C}}(AB)$ are perspective.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
