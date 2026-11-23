@@ -135,7 +135,7 @@ Let $\mathbb{L}_P$ and $\mathbb{L}_Q$ be pencils of lines through $P$ and $Q$, r
 ## Proof
 If $f(PQ)=QP$, pick $\ell_1,\ell_2\in \mathbb{L}_P\setminus\{PQ\}$, and set $A=\ell_1\cap f(\ell_1)$ and $B=\ell_2\cap f(\ell_2)$.
 
-Preservation of cross ratio gives
+Since $f$ is a projective map,
 $$
 (f(\ell_1),f(\ell_2);f(PQ),f(\ell))=(\ell_1,\ell_2;PQ,\ell)=(A,B;PQ\cap AB,\ell\cap AB).
 $$
