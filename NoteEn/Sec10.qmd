@@ -2,20 +2,20 @@
 
 ::: {#thm-10point1}
 ## Projective map method
-Suppose cross ratios are defined on sets $E$ and $F$, and let $f, f': E\to F$ be two projective maps. If there exist three points $P_1, P_2, P_3\in E$ such that $f(P_i)=f'(P_i)$ for $i=1,2,3$, then $f=f'$. In fact, given any $Q_1, Q_2, Q_3\in F$, there exists a unique projective map $f:E\to F$ satisfying $f(P_i)=Q_i$ for $i=1,2,3$.
+Suppose cross ratios are defined on sets $\mathscr{E}$ and $\mathscr{F}$, and let $f, f': \mathscr{E}\to \mathscr{F}$ be two projective maps. If there exist three points $P_1, P_2, P_3\in E$ such that $f(P_i)=f'(P_i)$ for $i=1,2,3$, then $f=f'$. In fact, given any $Q_1, Q_2, Q_3\in F$, there exists a unique projective map $f:\mathscr{E}\to \mathscr{F}$ satisfying $f(P_i)=Q_i$ for $i=1,2,3$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-For every $X\in E$, since both maps preserve cross ratio,
+For every $X\in \mathscr{E}$, since both maps preserve cross ratio,
 $$
 (f(P_1),f(P_2);f(P_3),f(X))=(f'(P_1),f'(P_2);f'(P_3),f'(X)).
 $$
 Since $f(P_i)=f'(P_i)$ for $i=1,2,3$, this common value equals $(f(P_1),f(P_2);f(P_3),f'(X))$.
 
-By @thm-6point4, $f(X)=f'(X)$ for all $X\in E$, giving uniqueness $f=f'$.
+By @thm-6point4, $f(X)=f'(X)$ for all $X\in \mathscr{E}$, giving uniqueness $f=f'$.
 
-For existence, we may assume $E$ and $F$ are two lines $\ell_P$ and $\ell_Q$ (as we can compose with projective maps $E\to \ell_P$ and $\ell_Q\to F$).
+For existence, we may assume $\mathscr{E}$ and $\mathscr{F}$ are two lines $\ell_P$ and $\ell_Q$ (as we can compose with projective maps $\mathscr{E}\to \ell_P$ and $\ell_Q\to \mathscr{F}$).
 
 Let $\ell_R=P_1Q_2$, pick a point $T$ on $P_2Q_2$, set $R_3=TP_3\cap \ell_R$, and set $S=P_1Q_1\cap Q_3R_3$.
 
