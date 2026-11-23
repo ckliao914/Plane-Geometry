@@ -184,7 +184,7 @@ Using the notation of @lem-9point4 and @lem-9point12, the intersection $QD\cap A
 ## Proof
 Let $X$ be the second intersection of $AM_{BC}$ with $(ABC)$, so $-1=(J,X;B,C)$.
 
-By @lem-5point8, $J,D,T$ are collinear.
+By @lem-5point8, $J,D,T$ are collinear. Let $XD$ intersect $(ABC)$ again at $Q'$.
 
 Projecting from $D$ to the second intersections with $(ABC)$ gives $(T,Q';C,B)=-1$.
 
