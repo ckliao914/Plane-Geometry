@@ -41,7 +41,7 @@ For any point on a conic section (not on a directrix), the ratio of its distance
 ## Proof
 Keep the notation of @thm-7point1 and the preceding Definition.
 
-Let $d_1$ be the directrix corresponding to $F_1$, and let $R$ and $S$ be the feet of the perpendiculars from $X$ to $d_1$ and $P_1$, respectively.
+Let $d_1$ be the directrix corresponding to $F_1$, and let $R$ and $S$ be the feet of the perpendiculars from $X$ to $d_1$ and $\mathbf{P}_1$, respectively.
 
 Then $RS\perp SX$ and $\angle SXR=\phi$, so $XS=XR\cos\phi$.
 
