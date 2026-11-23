@@ -230,7 +230,7 @@ Let $E=AB\cap CD$ and $F=AD\cap BC$; angle chasing shows $M,E,F$ are collinear.
 
 We have $EM\cdot EF=EA\cdot EB=\operatorname{Pow}_{\omega}(E)=EO^2-r_\omega^2$, and similarly $FM\cdot FE=FO^2-r_\omega^2$.
 
-Subtracting gives $(EM-MF)EF=EO^2-FO^2$, so by the Pythagorean theorem, $EF\perp OM$.
+Subtracting gives $EM^2-FM^2=(EM-MF)EF=EO^2-FO^2$, so by the Pythagorean theorem, $EF\perp OM$.
 
 By @thm-8point4, $EF=\mathfrak{p}_{\omega}(AC\cap BD)$, so the inverse of $M$ with respect to $\omega$ is $AC\cap BD$.
 :::
