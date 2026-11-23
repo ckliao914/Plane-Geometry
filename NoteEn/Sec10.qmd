@@ -239,13 +239,13 @@ X\mapsto f(A)X\mapsto \ell\cap f(A)X=Q\mapsto \mathfrak{p}_{\mathcal{C}}(Af(A))Q
 $$
 consists of projective maps.
 
-For fixed $A,B\in\mathcal{C}$ and varying $X\in\mathcal{C}$, write $\ell_A=Af(A)$, $\ell_B=Bf(B)$, and $\ell_X=Xf(X)$. The projective chain above gives
+For fixed $A,B,X_1,X_2,X_3\in\mathcal{C}$, write $\ell_A=Af(A)$, $\ell_B=Bf(B)$, and $\ell_i=X_i f(X_i)$. The projective chain above gives
 $$
-(X_1,X_2;X_3,X)_{\mathcal{C}}=\ell_A(\ell_1,\ell_2;\ell_3,\ell_X),
+(X_1,X_2;X_3,X)_{\mathcal{C}}=\ell_A(\ell_1,\ell_2;\ell_3,Xf(X)),
 $$
-and similarly $\ell_A(\ell_1,\ell_2;\ell_3,\ell_X)=\ell_B(\ell_1,\ell_2;\ell_3,\ell_X)$.
+and similarly $\ell_A(\ell_1,\ell_2;\ell_3,Xf(X))=\ell_B(\ell_1,\ell_2;\ell_3,Xf(X))$.
 
-By @lem-10point1, $\ell_X$ belongs to the envelope of a conic tangent to $\ell_1,\ell_2,\ell_3,\ell_A,\ell_B$.
+By @lem-10point1, $Xf(X)$ belongs to the envelope of a conic tangent to $\ell_1,\ell_2,\ell_3,\ell_A,\ell_B$.
 
 Applying a polar transformation with respect to $\mathcal{C}$ (@lem-10point3) shows that the locus of $\mathfrak{p}_{\mathcal{C}}(Xf(X))$ is a line or a conic section.
 :::
