@@ -11,7 +11,7 @@ Set $X=AM_{BC}\cap EF$, $X'=DI\cap EF$, and $Y=A\infty_{BC}\cap EF$.
 
 By @cor-6point3, $-1=(B,C;M_{BC},\infty_{BC})\stackrel{A}{=}(F,E;X,Y)$.
 
-By @cor-8point3, $\mathfrak{p}_{\omega}(X')=\mathfrak{p}_{\omega}(DI)\cap\mathfrak{p}_{\omega}(EF)=\infty_{BC}A$, so $Y$ lies on the polar of $X'$.
+By @cor-8point3, $\mathfrak{p}_{\omega}(X')=\mathfrak{p}_{\omega}(DI)\mathfrak{p}_{\omega}(EF)=\infty_{BC}A$, so $Y$ lies on the polar of $X'$.
 
 By @lem-8point10, $(F,E;X',Y)=-1$, hence $X'=X$.
 :::
