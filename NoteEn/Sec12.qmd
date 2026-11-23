@@ -24,9 +24,9 @@ Let $\ell$ be a line. A map $f:\ell\to\ell$ is an involution if and only if $f$ 
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-If $f$ is an involution, set $P=f(\ell_{\infty})$, so $f(P)=\ell_{\infty}$. Then
+If $f$ is an involution, set $P=f(\infty_{\ell})$, so $f(P)=\infty_{\ell}$. Then
 $$
-(P,\ell_{\infty};A,X)=(\ell_{\infty},P;f(A),f(X))=(P,\ell_{\infty};f(X),f(A)),
+(P,\infty_{\ell};A,X)=(\infty_{\ell},P;f(A),f(X))=(P,\infty_{\ell};f(X),f(A)),
 $$
 which gives $PA/PX=Pf(X)/Pf(A)$; hence $f$ is the inversion centered at $P$ sending $A$ to $f(A)$.
 
