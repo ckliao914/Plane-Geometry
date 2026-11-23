@@ -201,7 +201,7 @@ By @lem-8point9, $(X,Y;A,B)\stackrel{C}{=}(X,Y;C,D)_{\mathcal{C}}=-1$.
 
 ::: {.unnumbered-env}
 **Definition.**
-If $A,B,C$ are pairwise conjugate with respect to $\mathcal{C}$, then $\triangle ABC$ is called a **self-polar triangle** with respect to $\mathcal{C}$.
+If $A,B,C$ are pairwise conjugate with respect to $\mathcal{C}$, then $\triangle ABC$ is called a **self-polar triangle** (or **self-conjugate triangle**) with respect to $\mathcal{C}$.
 :::
 
 ::: {#thm-8point4}
@@ -217,7 +217,7 @@ By @lem-6point2, $M,N,P,Q$ are collinear and all lie on $\mathfrak{p}_{\mathcal{
 :::
 
 ::: {#cor-8point5}
-If $A,B,C,D$ lie on a circle centered at $O$, then $O$ is the orthocenter of the diagonal triangle formed by $AB\cap CD$, $AC\cap BD$, and $AD\cap BC$.
+If $A,B,C,D$ lie on a circle centered at $O$, then $O$ is the orthocenter of the triangle formed by $AB\cap CD$, $AC\cap BD$, and $AD\cap BC$.
 :::
 
 ::: {#lem-8point11}
