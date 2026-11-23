@@ -146,11 +146,11 @@ Since $O_{\Gamma}M=O_{\Gamma}N$, we have $MN\parallel M^{\star}N^{\star}$; as $M
 
 ::: {.unnumbered-env}
 **Definition.**
-Given two points $P$ and $Q$, let $\mathcal{C}$ be the conic passing through $A,B,C,P,Q$ (denoted $(ABCPQ)=\mathcal{C}$). Then $\mathfrak{p}_{\mathcal{C}}(PQ)$ is called the **crosspoint** of $P$ and $Q$.
+Given two points $P$ and $Q$, let $\mathcal{C}=(ABCPQ)$ be the conic passing through $A,B,C,P,Q$. Then $\mathfrak{p}_{\mathcal{C}}(PQ)$ is called the **crosspoint** of $P$ and $Q$.
 :::
 
 ::: {#thm-11point1}
-Let the Cevian triangles of $P$ and $Q$ be $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, respectively. Set $Q'_A=AQ\cap P_BP_C$ and $P'_A=AP\cap Q_BQ_C$, and define $Q'_B,Q'_C,P'_B,P'_C$ analogously. Then the six lines $P_AQ'_A$, $P_BQ'_B$, $P_CQ'_C$, $Q_AP'_A$, $Q_BP'_B$, and $Q_CP'_C$ concur at the crosspoint of $P$ and $Q$.
+Let the cevian triangles of $P$ and $Q$ be $\triangle P_AP_BP_C$ and $\triangle Q_AQ_BQ_C$, respectively. Set $Q'_A=AQ\cap P_BP_C$ and $P'_A=AP\cap Q_BQ_C$, and define $Q'_B,Q'_C,P'_B,P'_C$ analogously. Then the six lines $P_AQ'_A$, $P_BQ'_B$, $P_CQ'_C$, $Q_AP'_A$, $Q_BP'_B$, and $Q_CP'_C$ concur at the crosspoint of $P$ and $Q$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -170,7 +170,7 @@ Let $D=A_{\perp BC}$. Then $M_{AD}$, $M_{BC}$, and $K$ are collinear.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let the Cevian and anticevian triangles of the symmedian point $K$ be $\triangle PQR$ and $\triangle UVW$, respectively.
+Let the cevian and anticevian triangles of the symmedian point $K$ be $\triangle PQR$ and $\triangle UVW$, respectively.
 
 Then $P=AK\cap BC$, and $U$ is the intersection of $AK$ with the perpendicular bisector of $BC$.
 
