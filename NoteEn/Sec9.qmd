@@ -94,7 +94,7 @@ Let $X=AS\cap EF$. By @lem-9point4, $(B,C;L,S)\stackrel{A}{=}(F,E;P,X)\stackrel{
 :::
 
 ::: {#lem-9point8}
-Using the notation of @lem-9point7, let $N$ be the midpoint of the arc $BC$ of $(ABC)$ not containing $A$. Then $NI$, $BC$, and $AP$ are concurrent.
+Using the notation of @lem-9point7, let $N$ be the midpoint of the upper arc $BC$. Then $NI$, $BC$, and $AP$ are concurrent.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -109,7 +109,7 @@ By @lem-2point12, $A,S,V$ are collinear, so $A,U,L,P$ are collinear.
 :::
 
 ::: {#lem-9point9}
-Using the notation of @lem-9point4 and @lem-9point7, $DL$ passes through the midpoint of the arc $BC$ not containing $A$.
+Using the notation of @lem-9point4 and @lem-9point7, $DL$ passes through the midpoint of the upper arc $BC$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
