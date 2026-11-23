@@ -12,7 +12,7 @@ Using the notation of the preceding Definition, let $\ell$ and $\mathcal{L}$ for
 
 ::: {.unnumbered-env}
 **Definition.**
-Using the notation of the preceding Definition, there are two spheres tangent to the conical surface (along all generators $\ell$) and tangent to $\mathbf{E}$, called **Dandelin spheres** ($S_1,S_2$). The points of tangency of $S_1$ and $S_2$ with $\mathbf{E}$ are denoted $F_1$ and $F_2$, and are called the **foci**. When the conic is a parabola, one of the spheres becomes infinitely large and one focus moves to infinity, so the focus of a parabola refers to the finite focus.
+Using the notation of the preceding Definition, there are two spheres tangent to the conical surface (along all generators $\ell$) and tangent to $\mathbf{E}$, called **Dandelin spheres** ($\mathbf{S}_1,\mathbf{S}_2$). The points of tangency of $\mathbf{S}_1$ and $\mathbf{S}_2$ with $\mathbf{E}$ are denoted $F_1$ and $F_2$, and are called the **foci**. When the conic is a parabola, one of the spheres becomes infinitely large and one focus moves to infinity, so the focus of a parabola refers to the finite focus.
 :::
 
 ::: {#thm-7point1}
@@ -21,7 +21,7 @@ For any point on an ellipse, the sum of its distances to the two foci is constan
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Keep the notation of the preceding Definitions. For $X$ on $\mathcal{C}$, $XF_1$ and $XF_2$ are tangent segments from $X$ to $S_1$ and $S_2$, respectively.
+Keep the notation of the preceding Definitions. For $X$ on $\mathcal{C}$, $XF_1$ and $XF_2$ are tangent segments from $X$ to $\mathbf{S}_1$ and $\mathbf{S}_2$, respectively.
 
 Let $O$ be the vertex of the conical surface; if the line $OX$ touches the two spheres at $T_1$ and $T_2$, then $T_1T_2$ is constant as $X$ varies.
 
@@ -30,7 +30,7 @@ When $\mathcal{C}$ is an ellipse or a hyperbola, $X$ lies on or outside the segm
 
 ::: {.unnumbered-env}
 **Definition.**
-Using the notation of the preceding three Definitions, $S_1$ touches the conical surface along a circle lying in a plane $P_1$; the line of intersection of $P_1$ and $\mathbf{E}$ is called the **directrix** corresponding to $F_1$.
+Using the notation of the preceding three Definitions, $\mathbf{S}_1$ touches the conical surface along a circle lying in a plane $\mathbf{P}_1$; the line of intersection of $\mathbf{P}_1$ and $\mathbf{E}$ is called the **directrix** corresponding to $F_1$.
 :::
 
 ::: {#thm-7point2}
