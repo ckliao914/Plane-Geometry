@@ -248,7 +248,7 @@ Hence $AC\cap BD=Y$ and $BC\cap AD=Z$; applying @thm-8point4 again shows that $Y
 
 ::: {.unnumbered-env}
 **Definition.**
-Suppose cross ratios are defined on sets $E$ and $F$ (such as lines, pencils of lines, or conics). A map $f:E\to F$ is called a **projective map** if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $E$.
+Suppose cross ratios are defined on sets $\mathscr{E}$ and $\mathscr{F}$ (such as lines, pencils of lines, or conics). A map $f:\mathscr{E}\to \mathscr{F}$ is called a **projective map** if $(P_1,P_2;P_3,P_4)=(f(P_1),f(P_2);f(P_3),f(P_4))$ for all four-tuples on $\mathscr{E}$.
 :::
 
 ::: {#cor-8point6}
