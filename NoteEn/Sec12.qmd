@@ -2,11 +2,11 @@
 
 ::: {.unnumbered-env}
 **Definition.**
-Suppose cross ratios can be defined on a set $E$. If a map $f:E\to E$ is a non-identity projective map and $f(f(X))=X$ for all $X\in E$, then $f$ is called an **involution** on $E$, and $(X,f(X))$ is called an **involution pair** of $f$.
+Suppose cross ratios can be defined on a set $\mathscr{E}$. If a map $f:\mathscr{E}\to \mathscr{E}$ is a non-identity projective map and $f(f(X))=X$ for all $X\in \mathscr{E}$, then $f$ is called an **involution** on $\mathscr{E}$, and $(X,f(X))$ is called an **involution pair** of $f$.
 :::
 
 ::: {#lem-12point1}
-Let $f:E\to E$ be a projective map. If there exist $A\neq B$ such that $f(A)=B$ and $f(B)=A$, then $f$ is an involution.
+Let $f:\mathscr{E}\to \mathscr{E}$ be a projective map. If there exist $A\neq B$ such that $f(A)=B$ and $f(B)=A$, then $f$ is an involution.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -15,7 +15,7 @@ Since $f$ preserves cross ratio,
 $$
 (A,B;X,f(X))=(B,A;f(X),f(f(X)))=(A,B;f(f(X)),f(X)).
 $$
-By @thm-6point4, $f(f(X))=X$ for all $X\in E$.
+By @thm-6point4, $f(f(X))=X$ for all $X\in \mathscr{E}$.
 :::
 
 ::: {#lem-12point2}
@@ -57,7 +57,7 @@ In @thm-10point5, for a projective map $f:\mathcal{C}\to\mathcal{C}$, if $f$ is 
 :::
 
 ::: {#cor-12point3}
-Projective maps preserve involution pairs: that is, if $\phi:E\to F$ is a projective map and $f$ is an involution on $E$, then $\phi\circ f\circ \phi^{-1}$ is an involution on $F$.
+Projective maps preserve involution pairs: that is, if $\phi:\mathscr{E}\to \mathscr{F}$ is a projective map and $f$ is an involution on $E$, then $\phi\circ f\circ \phi^{-1}$ is an involution on $\mathscr{F}$.
 :::
 
 ::: {#thm-12point1}
