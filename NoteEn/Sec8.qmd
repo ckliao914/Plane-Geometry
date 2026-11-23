@@ -64,7 +64,7 @@ so $D=D_1$.
 :::
 
 ::: {#cor-8point1}
-Five points with no three collinear determine a unique conic section.
+Five points with no three collinear determine a unique conic section. Denote by $(X_1X_2X_3X_4X_5)$ the conic section passing through the points $X_1,X_2,X_3,X_4,X_5$.
 :::
 
 ::: {.unnumbered-env}
