@@ -245,11 +245,11 @@ Let $\triangle DEF$ be the medial triangle, let $AP$ meet $EF$ at $A_1$, and def
 
 By @thm-11point1, the crosspoint of $P$ and $G$ is the intersection $X$ of $DA_1$, $EB_1$, and $FC_1$.
 
-If $A'_1$ is the anticomplement of $A_1$, and $B'_1,C'_1$ are defined analogously, then the complement of $X$ is the perspector of $\triangle ABC$ and $\triangle A'_1B'_1C'_1$.
+If $A'_1$ is the anticomplement of $A_1$, and $B'_1,C'_1$ are defined analogously, then the anticomplement of $X$ is the perspector of $\triangle ABC$ and $\triangle A'_1B'_1C'_1$.
 
 Setting $P_A=AP\cap BC$, we have $BP_A/P_AC=FA_1/A_1E=CA'_1/A'_1B$.
 
-Hence $AP_A$ and $AA'_1$ are isotomic conjugates, so the complement of $X$ is the isotomic conjugate of $P$.
+Hence $AP_A$ and $AA'_1$ are isotomic conjugates, so the anticomplement of $X$ is the isotomic conjugate of $P$.
 :::
 
 ::: {#cor-11point9}
