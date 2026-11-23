@@ -64,7 +64,7 @@ The Euler lines of the four triangles $\triangle ABC$, $\triangle BIC$, $\triang
 ## Proof
 Let $\mathcal{H}_{Fe}$ meet $OH$ again at $X\neq H$, and let $H_A$ be the orthocenter of $\triangle BIC$, which lies on $\mathcal{H}_{Fe}$.
 
-Applying Pascal's theorem to the hexagon $AHXH_AII$, and using @cor-13point3 so that the tangent to $\mathcal{H}_{Fe}$ at $I$ is $IO$, we obtain that $AH\cap H_AI=\infty_{AH}$, $HX\cap OI=O$, and $XH_A\cap IA$ are collinear.
+Applying Pascal's theorem to the hexagon $AHXH_AII$, since the tangent to $\mathcal{H}_{Fe}$ at $I$ is $IO$ (by @cor-13point3), we obtain that $AH\cap H_AI=\infty_{AH}$, $HX\cap OI=O$, and $XH_A\cap IA$ are collinear.
 
 Thus $XH_A\cap IA$ is the midpoint of the arc $BC$ not containing $A$, which is the circumcenter of $\triangle BIC$; hence the Euler line of $\triangle BIC$ passes through $X$. The other cases follow analogously.
 :::
