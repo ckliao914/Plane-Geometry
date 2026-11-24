@@ -227,7 +227,7 @@ By @lem-17point6, $X_1$ is the intersection of the three circles, and power of a
 
 Hence $X$ must be $X_1$ or $X_2$, so $X$ lies on the circumcircle or the nine-point circle.
 
-The converse follows from cross-ratio preservation in the argument above (@lem-17point6 and the map $X_2\mapsto X_1$).
+The converse follows from a @thm-10point1 type argument (use @lem-17point6 and the projective map $X_2\mapsto X_1$).
 :::
 
 ::: {#lem-18point9}
