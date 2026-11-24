@@ -12,7 +12,7 @@ The following translation is AI-generated.
 
 Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 
-::: {.callout-note collapse="true" icon=false}
+::: {.callout-note collapse="true" icon="false"}
 ## Notations throughout the note
 
 * Let $\ell_1\cap \ell_2$ denote the intersection of lines $\ell_1$ and $\ell_2$.
@@ -58,7 +58,7 @@ Unless otherwise stated, $\triangle ABC$ is taken as the reference triangle.
 * Let $\mathcal{H}_{Je}$ denote the Jerabek hyperbola, and let $Ko$ denote the Kosnita point of $ABC$.
 :::
 
-::: {.callout-note collapse="true" icon=false}
+::: {.callout-note collapse="true" icon="false"}
 ## List of triangle centers used 
 
 Let $X(n)$ denote the $n$-th triangle center.
