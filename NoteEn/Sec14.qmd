@@ -250,7 +250,7 @@ The points $I,N_9,Fe,X(12)$ are collinear and $(I,N_9;Fe,X(12))=-1$.
 :::
 
 ::: {#lem-14point13}
-The quadruples $H,Fe,X(56)$, $G,Fe,X(55)$, $H,X(12),X(55)$, and $G,X(12),X(56)$ are each collinear.
+The triples $H,Fe,X(56)$; $G,Fe,X(55)$; $H,X(12),X(55)$; and $G,X(12),X(56)$ are each collinear.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
