@@ -161,13 +161,13 @@ The chain
 $$
 f:D\mapsto\mathfrak{p}_{\mathcal{H}}(D)\mapsto\mathfrak{p}_{\mathcal{H}}(D)\cap\ell_\infty
 $$
-preserves cross ratio (since $\mathfrak{p}_{\mathcal{H}}(D)$ passes through the fixed point $\mathfrak{p}_{\mathcal{H}}(BC)$).
+is projective (since $\mathfrak{p}_{\mathcal{H}}(D)$ passes through the fixed point $\mathfrak{p}_{\mathcal{H}}(BC)$).
 
 The chain
 $$
 g:D\mapsto D\infty_{\perp BC}\mapsto Y\mapsto X\mapsto AX\mapsto\infty_{AX}\mapsto\infty_{\perp AX}
 $$
-also preserves cross ratio.
+is also projective.
 
 When $D=M_{BC}$, $\mathfrak{p}_{\mathcal{H}}(D)\cap\ell_\infty=\infty_{BC}$ (@lem-8point10), while $Y=O$, $X=H$, and $\infty_{\perp AX}=\infty_{BC}$, so $f(M_{BC})=g(M_{BC})$.
 
