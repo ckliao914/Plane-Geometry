@@ -219,7 +219,7 @@ Suppose the orthotransversal $\ell$ of $X$ passes through $O$, meets the sidelin
 
 Then $X$ is the intersection of $(ADP)$, $(BEQ)$, and $(CFR)$, which have at most two common points.
 
-Let $\ell$ meets $\mathcal{H}_{Je}$ again at $V$, and $VX(74)$ meets $(ABC)$ again at $X_1$.
+Let $\ell$ meet $\mathcal{H}_{Je}$ again at $V$, and let $VX(74)$ meet $(ABC)$ again at $X_1$.
 
 There is an inversion centered at $H$ sending $\triangle ABC$ to $\triangle PQR$, and let this inversion map $X_1$ to $X_2$.
 
