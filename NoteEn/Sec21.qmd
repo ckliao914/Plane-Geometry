@@ -23,17 +23,17 @@ For any point $L$, preservation of cross ratio gives
 $$
 U(W,Y;V,L)=U_1(W_1,Y_1;V_1,f(L)).
 $$
-Let $g_1:\mathbb{L}_U\to\mathbb{L}_{U_1}$ be a cross-ratio-preserving map sending $UW\mapsto U_1W_1$, $UY\mapsto U_1Y_1$, and $UV\mapsto U_1V_1$.
+Let $g_1:\mathbb{L}_U\to\mathbb{L}_{U_1}$ be a projective map sending $UW\mapsto U_1W_1$, $UY\mapsto U_1Y_1$, and $UV\mapsto U_1V_1$.
 
 By @thm-10point1, $g_1$ is unique, so $f(L)$ lies on $g_1(UL)$.
 
-Similarly, there is a unique cross-ratio-preserving map $g_2:\mathbb{L}_V\to\mathbb{L}_{V_1}$ such that $f(L)$ lies on $g_2(VL)$.
+Similarly, there is a unique projective map $g_2:\mathbb{L}_V\to\mathbb{L}_{V_1}$ such that $f(L)$ lies on $g_2(VL)$.
 
 Thus $f(L)=g_1(UL)\cap g_2(VL)$, proving uniqueness. For existence, it suffices to verify that $f$ defined above preserves collinearity and cross ratio.
 
 If $P,Q,R$ are collinear, then $U(P,Q;R,V)=V(P,Q;R,U)$.
 
-Since $U_1f(L)=g_1(UL)$ and $V_1f(L)=g_2(VL)$ and the maps $UL\mapsto U_1f(L)$ and $VL\mapsto V_1f(L)$ preserve cross ratio, we have
+Since $U_1f(L)=g_1(UL)$ and $V_1f(L)=g_2(VL)$ and the maps $UL\mapsto U_1f(L)$ and $VL\mapsto V_1f(L)$ are projective, we have
 $$
 U_1(f(P),f(Q);f(R),V_1)=V_1(f(P),f(Q);f(R),U_1),
 $$
