@@ -268,7 +268,7 @@ Consider points $P,Q$ on $BC$ such that $AP\parallel IB$ and $AQ\parallel IC$, a
 
 Then $\triangle APQ$ and $\triangle IBC$ are homothetic from $AI\cap BC$, so $AI\cap BC$ is the exsimilicenter of $(PQ)$ and $(BC)$.
 
-Since $BP=BA$ and $CQ=CA$, the midpoint of $PQ$ is the foot of $I'$ on $BC$ (the excircle tangency point).
+Since $BP=BA$ and $CQ=CA$, the midpoint of $PQ$ is the foot of $I'_{\perp BC}$ (the excircle tangency point).
 
 Note that the two centers, the insimilicenter, and the exsimilicenter of the two circles $(PQ)$ and $(BC)$ form a harmonic range; let $X$ be the insimilicenter.
 
