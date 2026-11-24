@@ -13,7 +13,7 @@ Note that $(A,AQ\cap BC;Q,Q_A)=-1$ (@lem-6point3). Since $A$ and $AQ\cap BC$ are
 
 ::: {.unnumbered-env}
 **Definition.**
-The pole of the line $PQ$ with respect to the eight-point conic in @lem-20point1 is called the **cevapoint** of $P$ and $Q$.
+The pole of the line $PQ$ with respect to the **eight-point conic** in @lem-20point1 is called the **cevapoint** of $P$ and $Q$.
 :::
 
 ::: {#lem-20point2}
