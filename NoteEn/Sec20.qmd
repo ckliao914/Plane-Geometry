@@ -100,7 +100,7 @@ With the notation of @thm-20point1, let the line through $D'$ perpendicular to $
 ## Proof
 Consider the Miquel point $M$ of the complete quadrilateral formed by $DE,EF,FD,B'C'$; by @thm-20point1, $D',X,M$ are collinear.
 
-With the notation of @lem-20point5, @cor-20point2 and @lem-20point5 imply that $X,U,R,A_{\perp BC},M$ are concyclic.
+With the notation of @lem-20point5, $X,U,R,A_{\perp BC},M$ are concyclic (by @cor-20point2 and @lem-20point5).
 
 Thus
 $$
@@ -167,7 +167,7 @@ By @cor-20point4, $A,B,C,P,Q,H$ lying on a conic section is equivalent to the co
 :::
 
 ::: {#cor-20point6}
-Let $Q$ be the cyclocevian conjugate of $P$. If the cevian circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $Q$ (they cannot coincide); likewise, if $P$ and $P'$ are isogonal conjugates and the pedal circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $P'$ (@thm-18point3 and @thm-20point2).
+Let $Q$ be the cyclocevian conjugate of $P$. If the cevian circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $Q$; likewise, if $P$ and $P'$ are isogonal conjugates and the pedal circle of $P$ and the nine-point circle intersect in two distinct points, then these two points are the Poncelet points of $P$ and $P'$ (@thm-18point3 and @thm-20point2).
 :::
 
 ::: {#lem-20point8}
@@ -178,13 +178,13 @@ Let $P$ be the crosspoint of $Q$ and $X$, let $Q_AQ_BQ_C$ be the cevian triangle
 ## Proof
 Fix $X$ and a conic $\mathcal{C}$ passing through $A,B,C,X$, let $Q$ vary along $\mathcal{C}$, and let $X_AX_BX_C$ be the cevian triangle of $X$.
 
-Note that the chain $Q\mapsto XQ\mapsto P\mapsto AP$ preserves cross ratio (by polarity).
+Note that the chain $Q\mapsto XQ\mapsto P\mapsto AP$ is projective (by polarity).
 
 Also, $Q_BQ_C$ always passes through $\mathfrak{p}_{\mathcal{C}}(BC)$ (Brocard's theorem), so the chain
 $$
 Q\mapsto Q_B\mapsto \mathfrak{p}_{\mathcal{C}}(BC)Q_B\mapsto Y\mapsto AY
 $$
-preserves cross ratio.
+is projective.
 
 When $Q=X$, we have $P=X$ and $Y=\ell\cap BC$, so @lem-6point2 gives $A(B,C;P,Y)=-1$.
 
@@ -192,7 +192,7 @@ When $Q=C$, set $\ell_C=\mathfrak{p}_{\mathcal{C}}(C)$; then $P=\mathfrak{p}_{\m
 $$
 A(B,C;P,Y)=(\ell_C\cap AB,C;P,Y)\stackrel{\ell\cap AB}{=}(B,C;X_A,\ell\cap BC)=-1.
 $$
-Similarly when $Q=B$. By @thm-10point1, the map $AP\mapsto AY$ is the harmonic conjugate with respect to $AB$ and $AC$.
+The case $Q=B$ is similar. By @thm-10point1, the map $AP\mapsto AY$ is the harmonic conjugate with respect to $AB$ and $AC$.
 :::
 
 ::: {#cor-20point7}
