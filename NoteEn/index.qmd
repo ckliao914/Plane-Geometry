@@ -83,7 +83,7 @@ Let $X(n)$ denote the $n$-th triangle center.
 
 * $X(10)$ is the Spieker center (the incenter of the medial triangle).
 
-* $X(11)$ is the Feuerbach point.
+* $X(11)$ is the Feuerbach point (the point of tangency of the incircle and nine-point circle).
 
 * $X(12)$ is the insimilicenter of the incircle and the nine-point circle.
 
