@@ -52,7 +52,7 @@ Let $\mathcal{H}=(ABCHX)$ be a rectangular hyperbola. Then the pedal circle of $
 ## Proof
 By @lem-14point3, $P$ lies on the nine-point circles of $\triangle ABX$ and $\triangle ACX$. Let the pedal triangle of $X$ with respect to $\triangle ABC$ be $X_AX_BX_C$.
 
-Then $PM_{AX}M_{AB}X_C$, $PM_{AX}M_{AC}X_B$, $XX_CX_AX_B$ (i.e., $X,X_C,X_A,X_B$), and $XX_BX_AX_C$ are cyclic.
+Then $PM_{AX}M_{AB}X_C$, $PM_{AX}M_{AC}X_B$, $XX_CX_AX_B$, and $XX_BX_AX_C$ are cyclic.
 
 Thus
 $$
