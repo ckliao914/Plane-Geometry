@@ -54,7 +54,7 @@ As $X$ varies along $AI$, the map
 $$
 \infty_{\perp AO}Y\mapsto Y\mapsto E\mapsto X\mapsto D\mapsto D\infty_{AI}
 $$
-is projective
+is projective.
 
 When $X=\infty_{AI}$, both $\infty_{\perp AO}Y$ and $D\infty_{AI}$ coincide with $\ell_\infty$.
 
