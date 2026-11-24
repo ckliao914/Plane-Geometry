@@ -123,7 +123,7 @@ $$
 $$
 By @lem-10point1, all six polars are tangent to $\mathcal{C}_2$.
 
-The cross ratios above also show that $(A,B;C,X)_{\mathcal{C}_1}=(\mathfrak{p}_{\mathcal{C}}(A),\mathfrak{p}_{\mathcal{C}}(B);\mathfrak{p}_{\mathcal{C}}(C),\mathfrak{p}_{\mathcal{C}}(X))_{\mathcal{C}_2}$, so the map preserves cross ratio.
+The cross ratios above also show that $(A,B;C,X)_{\mathcal{C}_1}=(\mathfrak{p}_{\mathcal{C}}(A),\mathfrak{p}_{\mathcal{C}}(B);\mathfrak{p}_{\mathcal{C}}(C),\mathfrak{p}_{\mathcal{C}}(X))_{\mathcal{C}_2}$, so the map is projective.
 :::
 
 ::: {#thm-10point3}
