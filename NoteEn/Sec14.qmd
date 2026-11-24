@@ -73,7 +73,7 @@ The **Poncelet point** $P$ of $X$ (or of $ABCX$) is the center of the rectangula
 :::
 
 ::: {#lem-14point5}
-The antigonal conjugate of $X$ is the isogonal conjugate of the inverse of the isogonal conjugate of $X$ with respect to the circumcircle.
+The antigonal conjugate of $X$ is the isogonal conjugate of the inverse (with respect to $(ABC)$) of the isogonal conjugate of $X$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
