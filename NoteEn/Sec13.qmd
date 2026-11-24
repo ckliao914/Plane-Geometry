@@ -26,7 +26,7 @@ Let the pedal triangle of $P$ be $DEF$, and let $X,Y,Z$ lie on $PD,PE,PF$, respe
 ## Proof
 Fix $A,B,C,P,D,E,F$ and let $X,Y,Z$ vary along $PD,PE,PF$.
 
-Since $YZEF$ is cyclic, the correspondence $Y\mapsto Z$ preserves cross ratio; by Steiner's conic theorem, the locus of $BY\cap CZ$ is a line or a conic section.
+Since $YZEF$ is cyclic, the correspondence $Y\mapsto Z$ is projective; by Steiner's conic theorem, the locus of $BY\cap CZ$ is a line or a conic section.
 
 When $Y=\infty_{PE}$, we have $Z=\infty_{PF}$, and then $BY\cap CZ=H$.
 
