@@ -198,13 +198,14 @@ By properties of homothety, $(DEF)$ is tangent to $(\mathfrak{p}_{\mathcal{H}}(E
 ::: {#lem-14point12}
 Let the Poncelet point of $X$ be $P$, and let the tangents from $P$ to the nine-point circle and the pedal circle of $X$ be $\ell_N$ and $\ell_P$, respectively. Then
 $$
-\measuredangle(\ell_N,\ell_P)=\measuredangle XBC+\measuredangle XCA+\measuredangle XAB+90^\circ\ (=\measuredangle XCB+\measuredangle XAC+\measuredangle XBA+90^\circ).
+\measuredangle(\ell_N,\ell_P)=\measuredangle XBC+\measuredangle XCA+\measuredangle XAB+90^\circ
 $$
+(or equivalently $\measuredangle(\ell_N,\ell_P)=\measuredangle XCB+\measuredangle XAC+\measuredangle XBA+90^\circ$).
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let the pedal triangle of $X$ be $DEF$, the midpoints of the sides be $UVW$, and the feet be $RST$.
+Let the pedal triangle of $X$ be $DEF$, the midpoints of the sides be $UVW$.
 
 We have
 $$
