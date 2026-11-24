@@ -4,6 +4,8 @@ This is a note I wrote several years ago. I was trying to introduce pencils of c
 
 Since this was intended to be a note, I didn't give a title to each section until this whole note was finished. These titles are just a suggestion of what would probably be in that section.
 
+In this note, some concepts are introduced intuitively—for example, the definition of projective planes. For the rigorous definitions, one may refer to the other note *Complex Projective Planar Geometry*.
+
 The following translation is AI-generated.
 
 # Notations {.unnumbered}
