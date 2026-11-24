@@ -114,7 +114,7 @@ Set $A_1=EF\cap M_{CA}M_{AB}$, and define $B_1$ and $C_1$ analogously.
 
 By @lem-11point5, $DA_1,EB_1,FC_1$ concur on $\mathcal{C}$.
 
-By @thm-18point1 applied to the pedal triangle of $I$, $D,A_1,Fe$ are collinear.
+By @thm-18point1 applied to the pedal triangle of $I$, we see that $D,A_1,Fe$ are collinear.
 
 Similarly, $DA_1$, $EB_1$, and $FC_1$ concur at $Fe$, so $D,E,F,M_{BC},M_{CA},M_{AB},Fe$ all lie on the conic $\mathcal{C}$.
 :::
