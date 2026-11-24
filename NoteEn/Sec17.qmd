@@ -340,7 +340,7 @@ Hence the chain
 $$
 g:P\mapsto AP\mapsto Z\mapsto YZ\mapsto YZ\cap AB=X\mapsto HX\mapsto R
 $$
-preserves cross ratio.
+is projective.
 
 We have $f(Sc)=X(65)=g(Sc)$ (@lem-13point11 and @lem-13point12), $f(G)=K=g(G)$ (@lem-11point9), and $f(O)=H=g(O)$ (since $HH$ is the tangent to $\mathcal{H}_{Je}$ at $H$).
 
