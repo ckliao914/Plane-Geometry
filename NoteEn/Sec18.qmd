@@ -215,7 +215,7 @@ The orthotransversal of $X$ passes through $O$ if and only if $X$ lies on the ci
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Suppose the orthotransversal $\ell$ of $X$ passes through $O$, meets the sidelines of $\triangle ABC$ at $D,E,F$, and let $PQR$ be the pedal triangle of $X$.
+Suppose the orthotransversal $\ell$ of $X$ passes through $O$, meets the sidelines of $\triangle ABC$ at $D,E,F$, and let $PQR$ be the orthic triangle.
 
 Then $X$ is the intersection of $(ADP)$, $(BEQ)$, and $(CFR)$, which have at most two common points.
 
@@ -236,7 +236,7 @@ If $X$ lies on the nine-point circle, then the isogonal conjugate of the orthotr
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $PQR$ be the pedal triangle of $X$, and consider the inversion centered at $H$ sending $\triangle PQR$ to $\triangle ABC$, mapping $X$ to $X_1$.
+Let $PQR$ be the orthic triangle, and consider the inversion centered at $H$ sending $\triangle PQR$ to $\triangle ABC$, mapping $X$ to $X_1$.
 
 From the proof of @lem-18point8, the orthotransversal of $X_1$ coincides with that of $X$, say $\ell$; let $W$ be the isogonal conjugate of $\infty_{\ell}$.
 
@@ -244,7 +244,7 @@ Then the chain
 $$
 X\mapsto X_1\mapsto\ell\mapsto\infty_{\ell}\mapsto W\mapsto M_{HW}
 $$
-preserves cross ratio, and $M_{HW}$ is the center of $\mathcal{H}$ (@lem-14point3).
+is projective, and $M_{HW}$ is the center of $\mathcal{H}$ (@lem-14point3).
 
 Substituting $X=P$ gives $\ell=AO$, so $M_{HW}=P$; similarly for $X=Q,R$.
 
