@@ -83,7 +83,7 @@ and
 $$
 g:P_1\mapsto PP_1\mapsto P_2\mapsto Q_2P_2\cap XY
 $$
-both preserve cross ratio.
+are both projective.
 
 Clearly $f(X)=g(X)=X$, $f(Y)=g(Y)=Y$, and $f(Q)=g(Q)=\ell_Q\cap XY$.
 
