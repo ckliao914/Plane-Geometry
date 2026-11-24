@@ -332,7 +332,7 @@ Let $P$ be a point on $OH$, and let $Q$ be the isogonal conjugate of $P$. Then $
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $P$ vary along $OH$, let $\ell$ be the tangent to $(ABCHP)$ at $H$, and let $\ell$ meet $\mathcal{H}_{Je}$ at $R$. Clearly $f:P\mapsto Q$ preserves cross ratio.
+Let $P$ vary along $OH$, let $\ell$ be the tangent to $(ABCHP)$ at $H$, and let $\ell$ meet $\mathcal{H}_{Je}$ at $R$. Clearly $f:P\mapsto Q$ is projective.
 
 Applying Pascal's theorem to $ABCHHP$ shows that $X=AB\cap\ell$, $Y=BC\cap OH$, and $Z=PA\cap CH$ are collinear.
 
