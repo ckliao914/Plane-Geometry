@@ -57,7 +57,7 @@ In @thm-10point5, for a projective map $f:\mathcal{C}\to\mathcal{C}$, if $f$ is 
 :::
 
 ::: {#cor-12point3}
-Projective maps preserve involution pairs: that is, if $\phi:\mathscr{E}\to \mathscr{F}$ is a projective map and $f$ is an involution on $E$, then $\phi\circ f\circ \phi^{-1}$ is an involution on $\mathscr{F}$.
+Projective maps preserve involution pairs: that is, if $\phi:\mathscr{E}\to \mathscr{F}$ is a projective map and $f$ is an involution on $\mathscr{E}$, then $\phi\circ f\circ \phi^{-1}$ is an involution on $\mathscr{F}$.
 :::
 
 ::: {#thm-12point1}
