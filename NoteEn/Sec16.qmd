@@ -25,11 +25,11 @@ For a fixed $\theta$, the lines $AA_\theta$, $BB_\theta$, and $CC_\theta$ concur
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Proof
-Let $A_\theta,B_\theta,C_\theta$ vary so that the chain
+Let $A_\theta,B_\theta,C_\theta$ vary, then the chain
 $$
 BB_\theta\mapsto B_\theta\mapsto C_\theta\mapsto CC_\theta
 $$
-preserves cross ratio; then $X=BB_\theta\cap CC_\theta$ traces out a line or a conic section.
+is projective; then $X=BB_\theta\cap CC_\theta$ traces out a line or a conic section.
 
 When $\theta=0$, we have $B_\theta=M_{CA}$ and $C_\theta=M_{AB}$, so $X=G$.
 
