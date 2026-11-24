@@ -112,7 +112,7 @@ By @lem-11point2, considering the cevian triangles of $Ge$ and $G$ shows that $D
 
 Set $A_1=EF\cap M_{CA}M_{AB}$, and define $B_1$ and $C_1$ analogously.
 
-By @lem-11point5, $D,A_1,E,B_1,F,C_1$ all lie on $\mathcal{C}$.
+By @lem-11point5, $DA_1,EB_1,FC_1$ concur on $\mathcal{C}$.
 
 By @thm-18point1 applied to the pedal triangle of $I$, $D,A_1,Fe$ are collinear.
 
