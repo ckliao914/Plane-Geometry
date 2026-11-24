@@ -150,9 +150,9 @@ Let $\triangle PQR$ and $\triangle UVW$ be two triangles. If the perpendiculars 
 ## Proof
 Fix $U,V,W,Q,R$, and let $X$ be the intersection of the perpendicular from $Q$ to $WU$ and the perpendicular from $R$ to $UV$.
 
-Let $P$ vary along the perpendicular from $X$ to $VW$; then $P\mapsto QP\mapsto W\infty_{\perp QP}$ preserves cross ratio.
+Let $P$ vary along the perpendicular from $X$ to $VW$; then $P\mapsto QP\mapsto W\infty_{\perp QP}$ is projective.
 
-Similarly, $V\infty_{\perp RP}\mapsto W\infty_{\perp QP}$ preserves cross ratio. When $P=\infty_{\perp VW}$, the lines $V\infty_{\perp RP}$ and $W\infty_{\perp QP}$ coincide.
+Similarly, $V\infty_{\perp RP}\mapsto W\infty_{\perp QP}$ is projective. When $P=\infty_{\perp VW}$, the lines $V\infty_{\perp RP}$ and $W\infty_{\perp QP}$ coincide.
 
 By Steiner's conic theorem, the locus of $Y=V\infty_{\perp RP}\cap W\infty_{\perp QP}$ is a line.
 
