@@ -1,7 +1,7 @@
 ## On the Incenter-Circumcenter Configuration
 
 ::: {#lem-15point1}
-Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ is $Q$, then $(B,C;Q_{\perp BC},EF\cap BC)=-1$.
+Let $P$ lie on $AI$ with pedal triangle $DEF$. If the isogonal conjugate of $P$ is $Q$, then $(B,C;Q_{\perp BC},EF\cap BC)=-1$. @Lem-14point10 implies that $\mathfrak{p}_{(ABCHP)}(Q_{\perp BC})=EF$.
 :::
 
 ::: {.callout-note collapse="true" icon="false"}
