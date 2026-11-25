@@ -95,3 +95,138 @@ are conconic. This conic is called the **Carnot conic** (or **Cevian conic**) of
 :::
 
 ## Isoconjugations and Circumconics
+
+
+In @thm-isoconjugate, we defined the $(P,Q)$-isoconjugation $\varphi$, denoted $\varphi=P\times Q$.
+
+:::{.unnumbered-env}
+**Remark**
+Let $\varphi$ be an isoconjugation on $ABC$. All points on side $BC$ (except for $B,C$) are sent to $A$ by $\varphi$, and $\varphi(A)$ is the entire line $BC$. This suggests that we should not consider the image of the vertices $A,B,C$ under isoconjugations when there is no additional structure (for instance, some lines or conics passing through the vertices).
+:::
+
+:::{.unnumbered-env}
+**Definition**
+Let $\varphi$ be an isoconjugation on $ABC$. A line $\ell$ passing through $A$ is sent to a line $\varphi(\ell)$ passing through $A$ by $\varphi$ (omitting the image of $A$ itself). We use the convention that $A\in \ell$ is sent to $\varphi(\ell)\cap BC\in \varphi(\ell)$ by $\varphi$. On the other hand, if a conic $\mathcal{C}$ passes through $A$, let $\ell$ be the tangent of $A$ to $\mathcal{C}$, and we use the convention that $A\in \mathcal{C}$ is sent to $\varphi(\ell)\cap BC\in\varphi(\mathcal{C})$ by $\varphi$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Let $\varphi$ be an isoconjugation on $ABC$. Suppose that the tripolar of $P$ and $\varphi(P)$ are $\ell$ and $m$, respectively, then $\varphi(AP)=A\varphi(P)$. From harmonicity, $\varphi(A(\ell\cap BC))=A(m\cap BC)$。
+:::
+
+:::{#lem-isoconjline}
+Let $\varphi$ be an isoconjugation on $ABC$. Suppose that the tripolar of point $P$ is $\ell$, the circumconic of $\varphi(P)$ is $\mathcal{C}$, then 
+$$\varphi(\ell)=\mathcal{C},\,\varphi(\mathcal{C})=\ell$$
+and $\varphi:\mathbb{P}_\ell\to \mathcal{C}$ is a projective map.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Suppose that $X$ is on $\ell$, then
+$$
+f:\mathbb{L}_B\to \mathbb{L}_C,\,B\varphi(X)\mapsto BX\mapsto X\mapsto CX\mapsto C\varphi(X)
+$$
+is projective. By Steiner conic, the locus of $\varphi(X)=B\varphi(X)\cap C\varphi(X)$ is a conic $\mathcal{C}'$ through $B,C$. Similarly, $\mathcal{C}'$ is a circumconic (i.e. a conic passing through the three vertices). Let the tripolar of $\varphi(P)$ be $m$, then the tangent of $C$ to $\mathcal{C}'$ is
+$$
+f(BC)=\varphi(C(\ell\cap AB))=C(m\cap AB)
+$$
+Note that this is the tangent of $C$ to $\mathcal{C}$, so we similarly see that $\mathcal{C}=\mathcal{C}'=\varphi(\ell)$。
+:::
+
+:::{.unnumbered-env}
+**Example**
+Let $\varphi=P\times P$. Suppose that $\ell$ is the tripolar of $P$, then $\varphi(\ell)$ is the circumconic of $P$.
+:::
+
+We may similarly prove the following example by Steiner conic.
+
+:::{.unnumbered-env}
+**Example**
+A conic $\mathcal{C}$ passing through $B$, $C$ (but not through $A$) is sent to a conic through $B,C$ by an isoconjugation.
+:::
+
+:::{#lem-trilineardual}
+Let $\varphi$ be an isoconjugation on $ABC$, and let $P,Q$ be points not on the sides of $ABC$. The following statements are equivalent.
+
+(1) $P$ is on the circumconic of $Q$.
+
+(2) $Q$ is on the tripolar of $P$.
+
+(3) $\varphi(Q)$ is on the circumconic of $\varphi(P)$.
+
+(4) $\varphi(P)$ is on the tripolar of $\varphi(Q)$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Suppose that $P$ is on the circumconic of $Q$. Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangles of $P$ and $Q$, respectively, then the tripolar of $P$ passes through the harmonic conjugate $P_b'$ of $P_b$ with respect to $A|C$ and the harmonic conjugate $P_c'$ of $P_c$ with respect to $A|B$. Consider the projective map
+$$
+f:\mathbb{L}_{AC}\to \mathbb{L}_{AB},\,P_b'\mapsto P_b\mapsto P\mapsto P_c\mapsto P_c'
+$$
+Since $f(A)=A,\,f(C)=Q_c,\,f(B)=Q_b$, the tripolar $P_b'P_c'$ of $P$ passes through a fixed point $Q$ as $P$ varies.
+
+This shows that (1)$\implies$(2) and (3)$\implies$(4). From @lem-isoconjline, (2)$\implies$(3) and (4)$\implies$(1).
+:::
+
+:::{.unnumbered-env}
+**Remark**
+Given an isoconjugation $\varphi$ on $ABC$, $P$ is on the tripolar of $\varphi(Q)$ if and only if $Q$ is on the tripolar of $\varphi(P)$. This may be regarded as the tripolar version of La Hire theorem. Define $\mathfrak{p}(X)$ to be the tripolar of $\varphi(X)$, then $\mathfrak{p}$ is a dual transformation such that $\mathfrak{p}^2$ is the identity, so $\mathfrak{p}$ is indeed a polar transformation by @polarequiv.
+:::
+
+:::{#lem-isoquadrilateral}
+Let $\varphi=X\times X'=Y\times Y'$ be an isoconjugation on $ABC$, then 
+$$
+\varphi(XY\cap X'Y')= XY'\cap X'Y
+$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Let $XY\cap X'Y'=Z$, $XY'\cap X'Y=Z'$. Apply DDIT to the quadrilateral formed by lines $XY,X'Y',XY',X'Y$ and point $A$,
+$$
+(AX,AX'),(AY,AY'),(AZ,AZ')
+$$
+is an involution. A similar argument on the vertices $B$ and $C$ shows that $\varphi(Z)=Z'$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+In @lem-isoquadrilateral, if $A,X,Y$ are collinear, then $X\varphi(Y)\cap Y\varphi(X)$ is on $BC$.
+:::
+
+:::{#lem-isoconconic}
+Let $\varphi$ be an isoconjugation on $ABC$. Suppose that $P,Q$ are points such that line $PQ$ does not pass through $A,B,C$, then 
+$$
+A,\,B,\,C,\,P,\,Q,\,P\varphi(Q)\cap Q\varphi(P)
+$$
+are conconic.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Note that $\varphi(P),\,\varphi(Q),\,PQ\cap\varphi(P)\varphi(Q)$ are collinear. From @lem-isoconjline and @lem-isoquadrilateral, $A,\,B,\,C,\,P,\,Q,\,P\varphi(Q)\cap Q\varphi(P)$ are conconic by applying $\varphi$.
+:::
+
+:::{#lem-fixed-points-isoconjugation}
+Suppose that $\varphi=P\times P$ is an isoconjugation on $ABC$, then $\varphi(X)=X$ if and only if $X$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Since $\varphi$ maps $AX$ to $AX$,
+$$
+A(B,C;P,X)=A(C,B;P,X)=A(B,C;X,P)
+$$
+We see that $A,X,P$ or $A(B,C;P,X)=-1$. Similarly, $X$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$.
+:::
+
+The following lemma is a special case of @lem-isoconconic.
+
+:::{#lem-tangent-conic-isoconjugation}
+Suppose that $\varphi=P\times P$ is an isoconjugation on $ABC$, then line $P\varphi(X)$ is tangent to $(ABCPX)$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Let $P\varphi(X)$ intersect $(ABCPX)$ again at $Y$. Applying $\varphi$, $P\varphi(X)$ is sent to $(ABCPX)$, so $\varphi(Y)=Y$. From @lem-fixed-points-isoconjugation, $Y$ is equal to $P$ or the vertices of the anticevian triangle of $P$, but the latter are not on $(ABCPX)$, so $Y=P$.
+:::
