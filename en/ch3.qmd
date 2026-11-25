@@ -1,1 +1,82 @@
+# Desargues Involution Theorem and Isoconjugations
 
+# Desargues對合定理
+
+:::{#thm-desarguesInvolutionTheorem}
+## Desargues Involution Theorem, DIT
+錐線$\mathcal{C}$上有四點$ABCD$，給定一不過$ABCD$的直線$\ell$與$\mathcal{C}$交於兩點$X,Y$，則
+$$(X,Y),\,(AB\cap \ell,CD\cap \ell),\, (AC\cap\ell,BD\cap \ell),\, (AD\cap\ell, BC\cap\ell)$$為對合相互對。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+注意到打交比有
+$$
+(X,Y;\ell\cap AB,\ell\cap AC)\stackrel{A}{=}(X,Y;B,C)_{\mathcal{C}}\stackrel{D}{=}(X,Y;\ell\cap DB,\ell\cap DC)=(Y,X;\ell\cap DC,\ell\cap DB)
+$$
+故$(X,Y),(\ell\cap AB,\ell\cap CD),(\ell\cap AC,\ell\cap BD)$為相互對。另一對同理。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+由DIT，給定點$ABCD$(任三點不共線)與不通過$ABCD$的直線$\ell$，
+$$
+g:\mathbb{P}_\ell\to\mathbb{P}_\ell\,\text{，}\,X\mapsto\ell\,\text{與}\,(ABCDX)\,\text{的另外一個交點}
+$$
+則$g$為一對合。在這個觀點下，將$\mathbb{P}_{AB}\cup\mathbb{P}_{CD}$視為一錐線也是合理的。
+:::
+
+:::{#cor-tangentConicsDit}
+給定點$ABCD$ (任三點不共線)與不通過$ABCD$的直線$\ell$，則通過$ABCD$與$\ell$相切的錐線恰有兩個(切點就是對合的不動點)。
+:::
+
+:::{#thm-ddit}
+## DDIT
+給定錐線$\mathcal{C}$，$\ell_1,\ell_2,\ell_3,\ell_4\in\mathcal{T}_\mathcal{C}$，令$\ell_i\cap \ell_j=A_{ij}$ ($1\leq i<j\leq 4$)，點$P$不在四條直線上，$m,n$為過$P$與$\mathcal{C}$相切的線，則以下點對為對合相互對。$$(m,n),(PA_{12},PA_{34}),(PA_{13},PA_{24}),(PA_{14},PA_{23})$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+這是DIT的對偶(Dual of Desargues Involution Theorem)。
+:::
+
+注意到在Desargues對合中，$ABCD$不必要相異，相同時連線就是切線；對偶的，DDIT中，相同直線的交點就是切點。
+
+:::{#thm-carnot}
+## Carnot
+給定三角形$ABC$，$A_1,A_2\in BC,\,B_1,B_2\in CA,\,C_1,C_2\in AB$。固定點$P$不在三邊上，則存在錐線$\mathcal{C}$交三邊於$A_1,A_2,B_1,B_2,C_1,C_2$若且唯若
+$$\prod_{i=1}^2 A(B,C;P,A_i)\cdot\prod_{i=1}^2 B(C,A;P,B_i)\cdot  \prod_{i=1}^2 C(A,B;P,C_i)=1$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+假設存在錐線$\mathcal{C}$，則對$B_1C_1B_2C_2\in\mathcal{C}$與直線$BC$使用DIT，
+$$
+(A_1,A_2),(B,C),(B_1C_1\cap BC,B_2C_2\cap BC)
+$$
+為對合相互對，也就是
+$$
+(B,C;B_1C_1\cap BC,A_1)\cdot (B,C;B_2C_2\cap BC,A_2)=1
+$$
+但$(B,C;B_iC_i\cap BC,A_i)=A(B,C;P,A_i)\cdot A(B,C;P,B_iC_i\cap BC)^{-1}$，由Menelaus定理，
+$$
+(B,C;B_iC_i\cap BC,A_i)=-A(B,C;P,A_i)\cdot B(C,A;P,B_i)\cdot C(A,B;P,C_i)
+$$
+對於$i=1,2$。將$i=1$與$i=2$相乘就得到Carnot定理。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+Carnot定理的關係式等價存在$ABC$上的等共軛變換$\varphi$使得
+$$
+\varphi(AA_1)=AA_2,\,\varphi(BB_1)=BB_2,\,\varphi(CC_1)=CC_2
+$$
+可以取$\varphi$為$(BB_1\cap CC_1,BB_2\cap CC_2)$-等共軛。
+:::
+
+由Carnot定理與Ceva定理可以得到兩個西瓦三角形頂點共錐線。
+
+:::{.unnumbered-env}
+**Definition**
+$P$與$Q$對$ABC$的西瓦三角形分別為$P_aP_bP_c$與$Q_aQ_bQ_c$，則$$P_a,\,P_b,\,P_c,\,Q_a,\,Q_b,\,Q_c\,\text{共錐線}$$此錐線稱為$P$與$Q$的卡諾錐線(或西瓦錐線)。$P$與$P$的卡諾錐線(與三邊相切於$P$的西瓦三角形)稱為$P$的內切錐線。$P$的內切錐線的$P$-反補像稱為$P$的外接錐線(也就是與反西瓦三角形三邊切於$ABC$的錐線)。
+:::
