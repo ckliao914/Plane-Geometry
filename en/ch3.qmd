@@ -30,7 +30,7 @@ $$
 :::
 
 :::{#cor-tangentConicsDit}
-Given points $A,B,C,D$ (no three of which are collinear) and a line $\ell$ not passing through any of them, there are exactly two conics passing through $A,B,C,D$ that is tangent to $\ell$ (the tangency points are the fixed points of the involution).
+Given points $A,B,C,D$ (no three of which are collinear) and a line $\ell$ not passing through any of them, there are exactly two conics passing through $A,B,C,D$ and tangent to $\ell$ (the tangency points are the fixed points of the involution).
 :::
 
 :::{#thm-ddit}
@@ -59,7 +59,7 @@ $$
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-Suppose that such conic $\mathcal{C}$ exists, then we apply DIT to the quadrangle $B_1C_1B_2C_2\in\mathcal{C}$ and line $BC$,
+Suppose that such a conic $\mathcal{C}$ exists, then we apply DIT to the quadrangle $B_1C_1B_2C_2\in\mathcal{C}$ and line $BC$,
 $$
 (A_1,A_2),(B,C),(B_1C_1\cap BC,B_2C_2\cap BC)
 $$
@@ -71,12 +71,12 @@ However, $(B,C;B_iC_i\cap BC,A_i)=A(B,C;P,A_i)\cdot A(B,C;P,B_iC_i\cap BC)^{-1}$
 $$
 (B,C;B_iC_i\cap BC,A_i)=-A(B,C;P,A_i)\cdot B(C,A;P,B_i)\cdot C(A,B;P,C_i)
 $$
-for $i=1,2$. Multiplying them up yields Carnot theorem.
+for $i=1,2$. Multiplying these for $i=1,2$ yields Carnot theorem.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-The equality in Carnot theorem is equivalent to the existance of an isoconjugation $\varphi$ on $ABC$ such that
+The equality in Carnot theorem is equivalent to the existence of an isoconjugation $\varphi$ on $ABC$ such that
 $$
 \varphi(AA_1)=AA_2,\,\varphi(BB_1)=BB_2,\,\varphi(CC_1)=CC_2
 $$
@@ -87,11 +87,11 @@ From Carnot theorem and Ceva theorem, the vertices of two cevian triangles are c
 
 :::{.unnumbered-env}
 **Definition**
-Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangle of points $P$ and $Q$ with respect to $ABC$, then the points
+Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangles of points $P$ and $Q$ with respect to $ABC$, then the points
 $$
 P_a,\,P_b,\,P_c,\,Q_a,\,Q_b,\,Q_c
 $$
 are conconic. This conic is called the **Carnot conic** (or **Cevian conic**) of $P$ and $Q$. The Carnot conic of $P$ and $P$ (which is tangent to the three sides of $ABC$ at the vertices of the cevian triangle of $P$) is called the **inconic** of $P$ (with respect to $ABC$). The $P$-anticomplement of the inconic of $P$ is called the **circumconic** of $P$ (i.e. the conic tangent to the three sides of the anticevian triangle at $A,B,C$).
 :::
 
-## Isoconjugtions and Circumconics
+## Isoconjugations and Circumconics
