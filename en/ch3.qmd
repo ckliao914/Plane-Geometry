@@ -111,7 +111,7 @@ Let $\varphi$ be an isoconjugation on $ABC$. A line $\ell$ passing through $A$ i
 
 :::{.unnumbered-env}
 **Example**
-Let $\varphi$ be an isoconjugation on $ABC$. Suppose that the tripolar of $P$ and $\varphi(P)$ are $\ell$ and $m$, respectively, then $\varphi(AP)=A\varphi(P)$. From harmonicity, $\varphi(A(\ell\cap BC))=A(m\cap BC)$。
+Let $\varphi$ be an isoconjugation on $ABC$. Suppose that the tripolar of $P$ and $\varphi(P)$ are $\ell$ and $m$, respectively, then $\varphi(AP)=A\varphi(P)$. From harmonicity, $\varphi(A(\ell\cap BC))=A(m\cap BC)$.
 :::
 
 :::{#lem-isoconjline}
@@ -130,7 +130,7 @@ is projective. By Steiner conic, the locus of $\varphi(X)=B\varphi(X)\cap C\varp
 $$
 f(BC)=\varphi(C(\ell\cap AB))=C(m\cap AB)
 $$
-Note that this is the tangent of $C$ to $\mathcal{C}$, so we similarly see that $\mathcal{C}=\mathcal{C}'=\varphi(\ell)$。
+Note that this is the tangent of $C$ to $\mathcal{C}$, so we similarly see that $\mathcal{C}=\mathcal{C}'=\varphi(\ell)$.
 :::
 
 :::{.unnumbered-env}
@@ -217,7 +217,7 @@ Since $\varphi$ maps $AX$ to $AX$,
 $$
 A(B,C;P,X)=A(C,B;P,X)=A(B,C;X,P)
 $$
-We see that $A,X,P$ or $A(B,C;P,X)=-1$. Similarly, $X$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$.
+We see that $A,X,P$ are collinear or $A(B,C;P,X)=-1$. Similarly, $X$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$.
 :::
 
 The following lemma is a special case of @lem-isoconconic.
@@ -228,5 +228,5 @@ Suppose that $\varphi=P\times P$ is an isoconjugation on $ABC$, then line $P\var
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-Let $P\varphi(X)$ intersect $(ABCPX)$ again at $Y$. Applying $\varphi$, $P\varphi(X)$ is sent to $(ABCPX)$, so $\varphi(Y)=Y$. From @lem-fixed-points-isoconjugation, $Y$ is equal to $P$ or the vertices of the anticevian triangle of $P$, but the latter are not on $(ABCPX)$, so $Y=P$.
+Let $P\varphi(X)$ intersect $(ABCPX)$ again at $Y$. Applying $\varphi$, $P\varphi(X)$ is sent to $(ABCPX)$, so $\varphi(Y)=Y$. From @lem-fixed-points-isoconjugation, $Y$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$, but the latter are not on $(ABCPX)$, so $Y=P$.
 :::
