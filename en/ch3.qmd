@@ -1,82 +1,95 @@
 # Desargues Involution Theorem and Isoconjugations
 
-# Desargues對合定理
+# Desargues Involution Theorem
 
 :::{#thm-desarguesInvolutionTheorem}
-## Desargues Involution Theorem, DIT
-錐線$\mathcal{C}$上有四點$ABCD$，給定一不過$ABCD$的直線$\ell$與$\mathcal{C}$交於兩點$X,Y$，則
-$$(X,Y),\,(AB\cap \ell,CD\cap \ell),\, (AC\cap\ell,BD\cap \ell),\, (AD\cap\ell, BC\cap\ell)$$為對合相互對。
+## Desargues involution theorem, DIT
+Let $A,B,C,D$ be four points on the conic $\mathcal{C}$, and let $\ell$ be a line not passing through $A,B,C,D$. Suppose that $\ell$ intersects $\mathcal{C}$ at points $X,Y$, then
+$$
+(X,Y),\,(AB\cap \ell,CD\cap \ell),\, (AC\cap\ell,BD\cap \ell),\, (AD\cap\ell, BC\cap\ell)
+$$
+is an involution.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-注意到打交比有
+Note that
 $$
 (X,Y;\ell\cap AB,\ell\cap AC)\stackrel{A}{=}(X,Y;B,C)_{\mathcal{C}}\stackrel{D}{=}(X,Y;\ell\cap DB,\ell\cap DC)=(Y,X;\ell\cap DC,\ell\cap DB)
 $$
-故$(X,Y),(\ell\cap AB,\ell\cap CD),(\ell\cap AC,\ell\cap BD)$為相互對。另一對同理。
+This shows that $(X,Y),(\ell\cap AB,\ell\cap CD),(\ell\cap AC,\ell\cap BD)$ is an involution. The same argument applies for the fourth pair.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-由DIT，給定點$ABCD$(任三點不共線)與不通過$ABCD$的直線$\ell$，
+From DIT, given points $A,B,C,D$ (no three of which are collinear) and a line $\ell$ not passing through $A,B,C,D$, the map
 $$
-g:\mathbb{P}_\ell\to\mathbb{P}_\ell\,\text{，}\,X\mapsto\ell\,\text{與}\,(ABCDX)\,\text{的另外一個交點}
+g:\mathbb{P}_\ell\to\mathbb{P}_\ell,\,X\mapsto\ell\cap (ABCDX)
 $$
-則$g$為一對合。在這個觀點下，將$\mathbb{P}_{AB}\cup\mathbb{P}_{CD}$視為一錐線也是合理的。
+(where $\ell\cap (ABCDX)$ denotes the second intersection of $\ell$ and $(ABCDX)$) is an involution. From this viewpoint, it is natural to regard $\mathbb{P}_{AB}\cup\mathbb{P}_{CD}$ as a conic.
 :::
 
 :::{#cor-tangentConicsDit}
-給定點$ABCD$ (任三點不共線)與不通過$ABCD$的直線$\ell$，則通過$ABCD$與$\ell$相切的錐線恰有兩個(切點就是對合的不動點)。
+Given points $A,B,C,D$ (no three of which are collinear) and a line $\ell$ not passing through any of them, there are exactly two conics passing through $A,B,C,D$ that is tangent to $\ell$ (the tangency points are the fixed points of the involution).
 :::
 
 :::{#thm-ddit}
 ## DDIT
-給定錐線$\mathcal{C}$，$\ell_1,\ell_2,\ell_3,\ell_4\in\mathcal{T}_\mathcal{C}$，令$\ell_i\cap \ell_j=A_{ij}$ ($1\leq i<j\leq 4$)，點$P$不在四條直線上，$m,n$為過$P$與$\mathcal{C}$相切的線，則以下點對為對合相互對。$$(m,n),(PA_{12},PA_{34}),(PA_{13},PA_{24}),(PA_{14},PA_{23})$$
+Let $\ell_1,\ell_2,\ell_3,\ell_4\in\mathcal{T}_\mathcal{C}$ be tangent to a conic $\mathcal{C}$. Set $\ell_i\cap \ell_j=A_{ij}$ for $1\leq i<j\leq 4$. Suppose that $P$ is not on $\ell_1,\ell_2,\ell_3,\ell_4$, and $m,n$ are the two tangents to $\mathcal{C}$ passing through $P$, then 
+$$
+(m,n),(PA_{12},PA_{34}),(PA_{13},PA_{24}),(PA_{14},PA_{23})
+$$
+is an involution.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-這是DIT的對偶(Dual of Desargues Involution Theorem)。
+This is the dual of Desargues involution theorem.
 :::
 
-注意到在Desargues對合中，$ABCD$不必要相異，相同時連線就是切線；對偶的，DDIT中，相同直線的交點就是切點。
+In Desargues involution theorem, the points $A,B,C,D$ need not be distinct, and a line becomes a tangent when they coincide. Dually, in DDIT, if two lines coincide, their intersection becomes the tangency point.
 
 :::{#thm-carnot}
-## Carnot
-給定三角形$ABC$，$A_1,A_2\in BC,\,B_1,B_2\in CA,\,C_1,C_2\in AB$。固定點$P$不在三邊上，則存在錐線$\mathcal{C}$交三邊於$A_1,A_2,B_1,B_2,C_1,C_2$若且唯若
-$$\prod_{i=1}^2 A(B,C;P,A_i)\cdot\prod_{i=1}^2 B(C,A;P,B_i)\cdot  \prod_{i=1}^2 C(A,B;P,C_i)=1$$
+## Carnot theorem
+Let $ABC$ be a triangle with $A_1,A_2\in BC,\,B_1,B_2\in CA,\,C_1,C_2\in AB$. Fix point $P$ not on the three sides, then there exists a conic $\mathcal{C}$ intersecting the three sides of $ABC$ at $A_1,A_2,B_1,B_2,C_1,C_2$ if and only if
+$$
+\prod_{i=1}^2 A(B,C;P,A_i)\cdot\prod_{i=1}^2 B(C,A;P,B_i)\cdot  \prod_{i=1}^2 C(A,B;P,C_i)=1
+$$
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-假設存在錐線$\mathcal{C}$，則對$B_1C_1B_2C_2\in\mathcal{C}$與直線$BC$使用DIT，
+Suppose that such conic $\mathcal{C}$ exists, then we apply DIT to the quadrangle $B_1C_1B_2C_2\in\mathcal{C}$ and line $BC$,
 $$
 (A_1,A_2),(B,C),(B_1C_1\cap BC,B_2C_2\cap BC)
 $$
-為對合相互對，也就是
+is an involution, i.e.
 $$
 (B,C;B_1C_1\cap BC,A_1)\cdot (B,C;B_2C_2\cap BC,A_2)=1
 $$
-但$(B,C;B_iC_i\cap BC,A_i)=A(B,C;P,A_i)\cdot A(B,C;P,B_iC_i\cap BC)^{-1}$，由Menelaus定理，
+However, $(B,C;B_iC_i\cap BC,A_i)=A(B,C;P,A_i)\cdot A(B,C;P,B_iC_i\cap BC)^{-1}$, from Menelaus theorem,
 $$
 (B,C;B_iC_i\cap BC,A_i)=-A(B,C;P,A_i)\cdot B(C,A;P,B_i)\cdot C(A,B;P,C_i)
 $$
-對於$i=1,2$。將$i=1$與$i=2$相乘就得到Carnot定理。
+for $i=1,2$. Multiplying them up yields Carnot theorem.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-Carnot定理的關係式等價存在$ABC$上的等共軛變換$\varphi$使得
+The equality in Carnot theorem is equivalent to the existance of an isoconjugation $\varphi$ on $ABC$ such that
 $$
 \varphi(AA_1)=AA_2,\,\varphi(BB_1)=BB_2,\,\varphi(CC_1)=CC_2
 $$
-可以取$\varphi$為$(BB_1\cap CC_1,BB_2\cap CC_2)$-等共軛。
+We may take $\varphi$ to be the $(BB_1\cap CC_1,BB_2\cap CC_2)$-isoconjugation.
 :::
 
-由Carnot定理與Ceva定理可以得到兩個西瓦三角形頂點共錐線。
+From Carnot theorem and Ceva theorem, the vertices of two cevian triangles are conconic.
 
 :::{.unnumbered-env}
 **Definition**
-$P$與$Q$對$ABC$的西瓦三角形分別為$P_aP_bP_c$與$Q_aQ_bQ_c$，則$$P_a,\,P_b,\,P_c,\,Q_a,\,Q_b,\,Q_c\,\text{共錐線}$$此錐線稱為$P$與$Q$的卡諾錐線(或西瓦錐線)。$P$與$P$的卡諾錐線(與三邊相切於$P$的西瓦三角形)稱為$P$的內切錐線。$P$的內切錐線的$P$-反補像稱為$P$的外接錐線(也就是與反西瓦三角形三邊切於$ABC$的錐線)。
+Let $P_aP_bP_c$ and $Q_aQ_bQ_c$ be the cevian triangle of points $P$ and $Q$ with respect to $ABC$, then the points
+$$
+P_a,\,P_b,\,P_c,\,Q_a,\,Q_b,\,Q_c
+$$
+are conconic. This conic is called the **Carnot conic** (or **Cevian conic**) of $P$ and $Q$. The Carnot conic of $P$ and $P$ (which is tangent to the three sides of $ABC$ at the vertices of the cevian triangle of $P$) is called the **inconic** of $P$ (with respect to $ABC$). The $P$-anticomplement of the inconic of $P$ is called the **circumconic** of $P$ (i.e. the conic tangent to the three sides of the anticevian triangle at $A,B,C$).
 :::
