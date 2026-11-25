@@ -93,3 +93,5 @@ P_a,\,P_b,\,P_c,\,Q_a,\,Q_b,\,Q_c
 $$
 are conconic. This conic is called the **Carnot conic** (or **Cevian conic**) of $P$ and $Q$. The Carnot conic of $P$ and $P$ (which is tangent to the three sides of $ABC$ at the vertices of the cevian triangle of $P$) is called the **inconic** of $P$ (with respect to $ABC$). The $P$-anticomplement of the inconic of $P$ is called the **circumconic** of $P$ (i.e. the conic tangent to the three sides of the anticevian triangle at $A,B,C$).
 :::
+
+## Isoconjugtions and Circumconics
