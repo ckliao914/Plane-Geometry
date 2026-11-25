@@ -1,6 +1,6 @@
 # Desargues Involution Theorem and Isoconjugations
 
-# Desargues Involution Theorem
+## Desargues Involution Theorem
 
 :::{#thm-desarguesInvolutionTheorem}
 ## Desargues involution theorem, DIT
