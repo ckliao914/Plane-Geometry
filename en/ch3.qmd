@@ -231,55 +231,59 @@ Suppose that $\varphi=P\times P$ is an isoconjugation on $ABC$, then line $P\var
 Let $P\varphi(X)$ intersect $(ABCPX)$ again at $Y$. Applying $\varphi$, $P\varphi(X)$ is sent to $(ABCPX)$, so $\varphi(Y)=Y$. From @lem-fixed-points-isoconjugation, $Y$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$, but the latter are not on $(ABCPX)$, so $Y=P$.
 :::
 
-## 等共軛的不動點與Desargues對合
+## The Fixed Points of an Isoconjugation and Desargues Involution Theorem
 
 :::{#lem-isoconjugatefix}
-$ABC$上的等共軛$\varphi$必有四個不動點，也就是有四個點滿足$\varphi(P)=P$。
+An isoconjugation $\varphi$ on $ABC$ has exactly $4$ fixed points, that is, there are four points $P$ satisfying $\varphi(P)=P$.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-因為$BX\mapsto B\varphi(X)$為對合，所以有兩條不動線。同理$C$也有兩條不動線，故這四個交點就是不動點。
+Since $BX\mapsto B\varphi(X)$ is an involution, there are two fixed lines $\ell_1,\ell_2$. Similarly argument on the vertex $C$ gives two fixed lines $m_1,m_2$, then the fixed points are precisely the four intersections $\ell_i\cap m_j$, $i,j=1,2$.
 :::
 
-可以發現等共軛變換其實是由四個不動點所決定：四個不動點的西瓦三角形就是定義等共軛變換的三角形。
+This shows that isoconjugation is uniquely determined by the four fixed points: the cevian triangle of the four fixed poins is the triangle where the isoconjugation is defined on.
 
 :::{.unnumbered-env}
 **Definition**
-給定四點$PQRS$(任三不共線)，$PQRS$的西瓦三角形為$ABC$，則定義完全四點形$PQRS$的等共軛變換是$ABC$上的等共軛變換$\varphi$滿足$\varphi(P)=P$。
+Let $P,Q,R,S$ be four points (no three of which are collinear) such that the cevian triangle of $PQRS$ is $ABC$. Define the isoconjugation of the complete quadrangle $PQRS$ to be the isoconjugation $\varphi$ on $ABC$ such that $\varphi(P)=P$.
 :::
 
 :::{#thm-quadrangle-isoconjugation}
-完全四點形$PQRS$的等共軛變換為$\varphi$，則對於任意過$PQRS$的錐線$\mathcal{C}$，$X$與$\varphi(X)$關於$\mathcal{C}$共軛。
+Let $\varphi$ be the isoconjugation of the complete quadrangle $PQRS$. For any conic $\mathcal{C}$ passing through $P,Q,R,S$, $X$ and $\varphi(X)$ are conjugate with respect to $\mathcal{C}$.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-令$\ell=X\varphi(X)$，$\ell$與$\mathcal{C}$交於兩點$U,V$，則對$\mathcal{C}$上的四點$PQRS$與直線$\ell$使用DIT，
+Let $\ell=X\varphi(X)$, and let $\ell$ and $\mathcal{C}$ intersect at points $U,V$. We apply DIT to the quadrangle $PQRS$ on $\mathcal{C}$ and the line $\ell$,
 $$
 (U,V),(\ell\cap PQ,\ell\cap RS), (\ell\cap PR,\ell\cap QS),(\ell\cap PS,\ell\cap QR)
 $$
-為對合相互對。令$P$對$QRS$的西瓦三角形為$ABC$，則由等共軛的定義知
+is an involution. Let $ABC$ be the cevian triangle of $P$ with respect to $QRS$, then from the definition of isoconjugation,
 $$
 -1=A(X,\varphi(X);P,R)=(X,\varphi(X);PQ\cap \ell,RS\cap\ell)
 $$
-故對$X\vert{}\varphi(X)$的調和共軛將$PQ\cap \ell$帶到$RS\cap\ell$，同理可以知道前面用迪沙格對合看出來的對合就是對$X\vert{}\varphi(X)$的調和共軛，也就是$(X,\varphi(X);U,V)=-1$，故$X$與$\varphi(X)$關於$\mathcal{C}$共軛。
+This shows that the harmonic conjugation with respect to $X|\varphi(X)$ sends $PQ\cap \ell$ to $RS\cap\ell$, and similarly, we see that the involution we obtained from DIT is the harmonic conjugation with respect to $X|\varphi(X)$, i.e. $(X,\varphi(X);U,V)=-1$. We conclude that $X$ and $\varphi(X)$ are conjugate with respect to $\mathcal{C}$.
 :::
 
 :::{#lem-eight-point-conic}
-若$P,Q$的反西瓦三角形為$P_AP_BP_C$與$Q_AQ_BQ_C$，則
-$$P,\,P_A,\,P_B,\,P_C,\,Q,\,Q_A,\,Q_B,\,Q_C$$
-共錐線，稱此錐線為$P,Q$的八點錐線(關於$ABC$)。
+Suppose that the anticevian triangles of points $P,Q$ are $P_AP_BP_C$ and $Q_AQ_BQ_C$, respectively, then
+$$
+P,\,P_A,\,P_B,\,P_C,\,Q,\,Q_A,\,Q_B,\,Q_C
+$$
+are conconic. We call this conic the **eight-point conic** of $P,Q$ (with respect to $ABC$).
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-令$\mathcal{G}=(PP_AP_BP_CQ)$，則$ABC$為$\mathcal{G}$的自共軛三角形，所以$A,AQ\cap BC$關於$\mathcal{G}$共軛。注意到
-$$(A,AQ\cap BC;Q,Q_A)=-1$$
-因為$Q$在$\mathcal{G}$上，故$Q_A$也在$\mathcal{G}$上(由La Hire定理)，同理有八點共錐線$\mathcal{G}$。
+Let $\mathcal{G}=(PP_AP_BP_CQ)$. Triangle $ABC$ is self-conjugate with respect to $\mathcal{G}$, so $A,AQ\cap BC$ are conjugate with respect to $\mathcal{G}$. Note that
+$$
+(A,AQ\cap BC;Q,Q_A)=-1
+$$
+Since $Q$ is on $\mathcal{G}$, $Q_A$ is also on $\mathcal{G}$ by La Hire theorem. Similarly the eight points are conconic on $\mathcal{G}$.
 :::
 
-也就是說兩個完全四點形的西瓦三角形若相同，則八點會共錐線。注意到有時候八點錐線會退化成兩條直線。
+In other words, if two complete quadrangles share the same cevian triangles, then the eight vertices are conconic. Sometimes, the eight-point conic may degenerate into two lines.
 
 :::{.unnumbered-env}
 **Definition**
