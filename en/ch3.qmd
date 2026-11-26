@@ -825,91 +825,94 @@ By @lem-recthyperbola, the orthocenter $H$ is on $\mathcal{H}$, so the cevian tr
 Let $H$ be the orthocenter of $ABC$, then in the complete quadrangle $ABCH$, the following nine points are concyclic: the six midpoints of any two distinct points and the three vertices of its cevian triangle. This circle is called the **nine-point circle** of $ABC$. The center of the nine-point circle is called the **nine-point center**, labeled $\X_5$.
 :::
 
-## 拋物線與密克點
+## Parabolas and Miquel Points
 
 :::{.unnumbered-env}
 **Definition**
-稱一個錐線$\Gamma$為拋物線(parabola)若$\Gamma$與$\ell_\infty$相切。拋物線的其中兩個焦點是與$\ell_\infty$的切點，所以拋物線的焦點通常指的是不在無窮遠線上的那一個(兩個)。
+A conic $\Gamma$ is said to be a **parabola** if $\Gamma$ is tangent to $\ell_\infty$. Two of the foci of a parabola are the tangent points with $\ell_\infty$ (of multiplicity$2$), so the focus of a parabola refers to the one (or two if counted with multiplicity) not on $\ell_\infty$.
 :::
 
 :::{#lem-parabolafocus}
-拋物線$\Gamma$的焦點為$F$，$BC,CA,AB$皆與$\Gamma$相切，則$ABCF$共圓。
+Let $\Gamma$ be a parabola with focus $F$ such that $BC,CA,AB$ are tangent to $\Gamma$, then $A,B,C,F$ are concyclic.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-由@lem-focusisogonal ，$\Gamma$的一對焦點，也就是$F$與$\Gamma$上的無窮遠點，為關於$ABC$的等角共軛點，故$F$在$\odot(ABC)$上。
+From @lem-focusisogonal, the pair of foci of $\Gamma$, i.e. $F$ the point at infinity on $\Gamma$, are isogonal conjugates with respect to $ABC$, so $F$ is on $\odot(ABC)$.
 :::
 
 :::{#thm-poncelet}
-三角形$A_1B_1C_1$與$A_2B_2C_2$的三邊皆與錐線
-$\mathcal{C}$相切，則
+Suppose that $\mathcal{C}$ is tangent to the sides of the two triangles $A_1B_1C_1$ and $A_2B_2C_2$, then 
 $$
-A_1,\,B_1,\,C_1,\,A_2,\,B_2,\,C_2\,\text{共錐線}
+A_1,\,B_1,\,C_1,\,A_2,\,B_2,\,C_2
 $$
+are conconic.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-令$B_2=\infty_+,C_2=\infty_-$，則拋物線$\mathcal{C}$的焦點為$A_2$，由@lem-parabolafocus 得證。
+We assign $B_2=\infty_+,C_2=\infty_-$, then the focus of $\mathcal{C}$ is $A_2$, so this follows from @lem-parabolafocus.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-這其實就是Poncelet閉合定理：給定三角形$ABC$，$\mathcal{C}_1$為一$ABC$的外接錐線，$\mathcal{C}_2$為一$ABC$的內切錐線。選一個在$\mathcal{C}_1$上的點$D$，$D$對$\mathcal{C}_2$的兩切線交$\mathcal{C}_1$於$E,F$，則$EF$亦與$\mathcal{C}_2$相切。
+@thm-poncelet is essentially the Poncelet closure theorem: let $ABC$ be a triangle, $\mathcal{C}_1$ be a circumconic, $\mathcal{C}_2$ is an inconic; take $D\in \mathcal{C}_1$, and let the two tangents of $\mathcal{C}_2$ through $D$ intersect $\mathcal{C}_1$ again $E,F$, then $EF$ and $\mathcal{C}_2$ are tangent.
 :::
 
 :::{#lem-parabolaMiquel}
-給定$n$條線(任三不共點)，則存在拋物線切這$n$條線若且唯若存在一點$M$(非無窮虛圓點)使得這$n$條線中任選三條所決定的三角形之外接圓皆過$M$，稱$M$為這個完全$n$線形的密克點。
+Given $n$ lines (no three are concurrent), there exists a parabola tangent to the $n$ lines if and only if there exists a point $M\neq \infty_\pm$ such that for any three of the $n$ lines, the circumcircle of the triangle they determine passes through $M$. The point $M$ is called the **Miquel point** of the $n$ lines.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-若存在拋物線切這$n$條線，則由@lem-parabolafocus ，所有外接圓皆過該拋物線的焦點。
+Suppose that there exists a parabola tangent to these $n$ lines, then from @lem-parabolafocus, all circumcircles pass through its focus.
 
-若存在該點$M$，則選擇$n$條線中的四條$\ell_1,\ell_2,\ell_3,\ell_4$，這四條線與$\ell_\infty$決定錐線$\Gamma$，且$M$為$\Gamma$的焦點。選擇第五條線$\ell_5$，考慮$\ell_5,\ell_1,\ell_2$三條線決定的外接圓$\omega$與$\Gamma$，因為$M\infty_+\infty_-$都在$\omega$上，且三邊皆切$\Gamma$，故使用Poncelet閉合可知$\ell_5$切$\omega$。
+Conversely, suppose that the Miquel point $M$ exists. Choose four lines $\ell_1,\ell_2,\ell_3,\ell_4$ among the $n$ lines. These four lines and $\ell_\infty$ determine a parabola $\Gamma$ with focus $M$. For a fifth line $\ell_5$, consider the circumcircle $\omega$ of the triangle determined by $\ell_5,\ell_1,\ell_2$ and the parabola $\Gamma$. Since the vertices of the triangle $M\infty_+\infty_-$ are on $\omega$, and $\Gamma$ is tangent to its three sides, from Poncelet closure, $\ell_5$ is tangent to $\omega$.
 :::
 
 :::{.unnumbered-env}
 **Definition**
-完全四線形，就是由四條線$(\ell_1,\ell_2,\ell_3,\ell_4)$組成的圖形(任三不共點)，一定有密克點。完全四線形$ABCD$指的是$(AB,BC,CD,DA)$四條線，$AC$與$BD$為對角線。為了對稱性這可以記為完全四線形$(A,C)(B,D)$。若$AB\cap CD=E$, $AD\cap BC=F$，則完全四線形$(A,C)(E,F)$也是同一個，故可記為完全四線形$(A,C)(B,D)(E,F)$，此時三條對角線就是$AC,BD,EF$，密克點為
+A **complete quadrilateral**, which is a configuration formed by four lines $(\ell_1,\ell_2,\ell_3,\ell_4)$ (no three are concurrent), has a Miquel point. The complete quadrilateral $ABCD$ refers to the four lines $(AB,BC,CD,DA)$, and $AC,BD$ are called the **diagonals**. For symmetry, we also use the notation $(A,C)(B,D)$. Set $AB\cap CD=E$, $AD\cap BC=F$. The complete quadrilateral $(A,C)(E,F)$ is the same complete quadrilateral, so we write $(A,C)(B,D)(E,F)$, where $AC,BD,EF$ are the diagonals, and the Miquel point is the concurrency point $M\neq \infty_\pm$ of the four circles 
 $$
 \odot(ADE),\, \odot(ABF),\,\odot(BCE),\,\odot(CDF)
 $$
-共的點(非無窮虛圓點)$M$。
 :::
 
-使用@lem-parabolaMiquel 及@thm-poncelet 的對偶會得到以下的推論。
+Applying @lem-parabolaMiquel the dual of @thm-poncelet, we obtain the following corollary.
 
 :::{#cor-parabola-miquel-conic}
-一錐線$\mathcal{C}$經過$A$, $B$, $C$, $P$，且與$\ell_\infty$交於$\infty_1,\infty_2$，則
+A conic $\mathcal{C}$ passes through $A,B,C,P$ and intersects $\ell_\infty$ at $\infty_1,\infty_2$, then the lines
 $$
 BC,\, CA,\, AB,\, P\infty_1,\, P\infty_2
 $$
-有密克點。
+have a Miquel point.
 :::
 
 :::{.unnumbered-env}
 **Example**
-令$\ell_1,\,\ell_2$為兩通過垂心$H$的直線，則$BC,CA,AB,\ell_1,\ell_2$有密克點。
+Let $\ell_1,\,\ell_2$ be two perpendicular lines through $H$, then the lines $BC,CA,AB,\ell_1,\ell_2$ have a Miquel point.
 :::
 
 :::{#lem-cevian-tripolar-miquel}
-給定$ABC$，$P$為一點，則$P$的西瓦三角形的三邊、$P$的三線性極線，以及中點三角形的三邊這七線有密克點。
+Let $ABC$ be a triangle and $P$ be a point, then the following $7$ lines have a Miquel point: the three sides of the cevian triangle of $P$, the tripolar of $P$, and the three sides of the medial triangle.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-令重心為$G$。由八點錐線的對偶，$P$與$G$的西瓦三角形的三邊以及$P,G$的三線性極線八線切同一錐線，因為$G$的三線性極線為$\ell_\infty$，由@lem-parabolaMiquel 得證。
+Let $G$ be the centroid. From the dual of eight-point conic (@lem-eight-point-conic), the six sides of the cevian triangles of $P$ and $G$ and the tripolars of $P,G$ are tangent to the same conic. Since $\ell_\infty$ is the tripole of $G$, this follows from @lem-parabolaMiquel.
 :::
 
-還有一個關於拋物線的光學性質。
+There is an optical property of the parabola.
 
 :::{#lem-parabola-optical}
-拋物線$\Gamma$上有兩點$P,Q$，使得$PQ$通過$\Gamma$的焦點$F$，則$P$的切線$\ell_P$垂直$Q$的切線$\ell_Q$。
+Let $P,Q$ be two points on a parabola $\Gamma$ such that $PQ$ passes through the focus $F$ of $\Gamma$, then the tangent $\ell_P$ at $P$ is perpendicular to the tangent $\ell_Q$ at $Q$.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-因為$F\infty_+$與$F\infty_-$切$\Gamma$，故$-1=(FS,FT;\ell_P,\ell_Q)_\Gamma=(\infty_+,\infty_-;\infty_{\ell_P},\infty_{\ell_Q})$。
+Since $F\infty_+$ and $F\infty_-$ are tangent to $\Gamma$, 
+$$
+-1=(FS,FT;\ell_P,\ell_Q)_\Gamma=(\infty_+,\infty_-;\infty_{\ell_P},\infty_{\ell_Q})
+$$
+We conclude that $\ell_P\perp \ell_Q$.
 :::
