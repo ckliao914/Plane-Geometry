@@ -239,7 +239,7 @@ An isoconjugation $\varphi$ on $ABC$ has exactly $4$ fixed points, that is, ther
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-Since $BX\mapsto B\varphi(X)$ is an involution, there are two fixed lines $\ell_1,\ell_2$. Similarly argument on the vertex $C$ gives two fixed lines $m_1,m_2$, then the fixed points are precisely the four intersections $\ell_i\cap m_j$, $i,j=1,2$.
+Since $BX\mapsto B\varphi(X)$ is an involution, there are two fixed lines $\ell_1,\ell_2$. A similar argument on the vertex $C$ gives two fixed lines $m_1,m_2$, then the fixed points are precisely the four intersections $\ell_i\cap m_j$, $i,j=1,2$.
 :::
 
 This shows that isoconjugation is uniquely determined by the four fixed points: the cevian triangle of the four fixed points is the triangle where the isoconjugation is defined on.
@@ -287,7 +287,7 @@ In other words, if two complete quadrangles share the same cevian triangles, the
 
 :::{.unnumbered-env}
 **Definition**
-We say that isoconjugations $\varphi_1,\varphi_2,\varphi_3$ on $ABC$ are collinear if for all points $X$, $\varphi_1(X),\varphi_2(X),\varphi_3(X)$ are collinear.
+We say that isoconjugations $\varphi_1,\varphi_2,\varphi_3$ on $ABC$ are collinear if for all $X$, the points $\varphi_1(X),\varphi_2(X),\varphi_3(X)$ are collinear.
 :::
 
 :::{#lem-isoconjugateline}
@@ -296,7 +296,7 @@ The isoconjugations $\varphi_i$ are collinear ($i=1,2,3$) if and only if there e
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-Take the eight-point conic passing through the fixed points of the isoconjugations $\varphi_1,\varphi_2$, then from @thm-quadrangle-isoconjugation, the polar of $X$ with respect to $\mathcal{G}$ is $X_1X_2$. Since $X_3\in X_1X_2$, the fixed points of $\varphi_3$ is on $\mathcal{G}$. Given point $Y$, then $Y_1,\,Y_2,\,Y_3$ are collinear on the polar of $Y$ with respect to $\mathcal{G}$.
+Take the eight-point conic passing through the fixed points of the isoconjugations $\varphi_1,\varphi_2$, then from @thm-quadrangle-isoconjugation, the polar of $X$ with respect to $\mathcal{G}$ is $X_1X_2$. Since $X_3\in X_1X_2$, the fixed points of $\varphi_3$ are on $\mathcal{G}$. Given point $Y$, then $Y_1,\,Y_2,\,Y_3$ are collinear on the polar of $Y$ with respect to $\mathcal{G}$.
 :::
 
 We may directly prove @lem-isoconjugateline: given $Y$, $(X\div Y)\times X_i=Y_i$, and $X\div Y$ is a projective transformation.
@@ -312,17 +312,17 @@ Given a point $P$ and a line $\ell$, $P\times X$ are collinear for all $X\in \el
 
 :::{.unnumbered-env}
 **Remark**
-In @lem-trilineardual (and the subsequent remark)，給定等共軛$\varphi=P\times Q$，則存在錐線$\mathcal{G}$使得$\mathfrak{p}_\mathcal{G}(X)$的三線性極點就是$\varphi(X)$。令$Q$的三線性極線為$\ell$，則$\mathfrak{p}_\mathcal{G}(P)=\ell$，這說明了$P\times \ell=\mathfrak{p}_\mathcal{G}$，也就是說定義$P\times Q$的錐線與定義$P\times \ell$的錐線都是$\mathcal{G}$。
+In @lem-trilineardual (and the subsequent remark), given an isoconjugation $\varphi=P\times Q$, there exists a conic $\mathcal{G}$ such that the tripole of $\mathfrak{p}_\mathcal{G}(X)$ is $\varphi(X)$. Let the tripolar of $Q$ be $\ell$, then $\mathfrak{p}_\mathcal{G}(P)=\ell$. This shows that $P\times \ell=\mathfrak{p}_\mathcal{G}$, i.e. the conic defining the isoconjugation $P\times Q$ and the conic $P\times \ell$ are both $\mathcal{G}$.
 :::
 
 :::{.unnumbered-env}
 **Definition**
-考慮等共軛的對偶命題：給定三角形$ABC$與直線$\ell_1,\ell_2$，令$f_A$為對合相互對$(B,C),\,(\ell_1\cap BC,\ell_2\cap BC)$定義的對合，對稱地定義$f_B,f_C$，則定義線等共軛$\varphi^{\mathbb{L}}=\ell_1\times \ell_2$滿足對於直線$m$，直線$\varphi^{\mathbb{L}}(m)$通過$f_A(m\cap BC),\,f_B(m\cap CA),\,f_C(m\cap AB)$。
+Consider the dual of isoconjugations: let $ABC$ be a triangle and $\ell_1,\ell_2$ be two lines. Let $f_A$ be the involution $(B,C),\,(\ell_1\cap BC,\ell_2\cap BC)$, and define $f_B,f_C$ analogously; define the **line-isoconjugation** $\varphi^{\mathbb{L}}=\ell_1\times \ell_2$ such that for each line $m$, $\varphi^{\mathbb{L}}(m)$ is a line passing through $f_A(m\cap BC),\,f_B(m\cap CA),\,f_C(m\cap AB)$.
 :::
 
-令$\ell_1,\ell_2,m$的三線性極點為$P_1,P_2,Q$，並定義$\varphi^{\mathbb{L}}=\ell_1\times \ell_2$，$\varphi=P_1\times P_2$，則$\varphi^{\mathbb{L}}(m)$的三線性極點為$\varphi(Q)$。這說明了線等共軛變換與等共軛變換之間透過三線性極線有對應關係。注意到定義$\varphi^{\mathbb{L}}$與$\varphi$的錐線都是$\mathcal{G}$，其中$\mathfrak{p}_\mathcal{G}=P_1\times \ell_2=P_2\times \ell_1$。
+Let the tripole of $\ell_1,\ell_2,m$ be $P_1,P_2,Q$. Define $\varphi^{\mathbb{L}}=\ell_1\times \ell_2$, $\varphi=P_1\times P_2$, then the tripole of $\varphi^{\mathbb{L}}(m)$ is $\varphi(Q)$. This shows that line-isoconjugations and isoconjugations are in one-one correspondence by tripoles/tripolars. The conics defining $\varphi^{\mathbb{L}}$ and $\varphi$ are both $\mathcal{G}$, where $\mathfrak{p}_\mathcal{G}=P_1\times \ell_2=P_2\times \ell_1$.
 
 :::{.unnumbered-env}
 **Remark**
-@thm-isoconjugate 中定義的等共軛變換應該稱為點等共軛變換，用$\varphi^\mathbb{P}$記，但因為習慣以點的角度出發，故會省略而稱之為等共軛變換。
+The isoconjugations defined in @thm-isoconjugate should be called "point-isoconjugations", denoted by $\varphi^\mathbb{P}$. For historical reasons, isoconjugations mean point-isoconjugations by default.
 :::
