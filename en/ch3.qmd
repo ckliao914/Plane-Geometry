@@ -287,27 +287,27 @@ In other words, if two complete quadrangles share the same cevian triangles, the
 
 :::{.unnumbered-env}
 **Definition**
-稱三個$ABC$上等共軛$\varphi_i$，$i=1,2,3$共線若對於所有$X$，$\varphi_i(X)$共線。
+We say that isoconjugations $\varphi_1,\varphi_2,\varphi_3$ on $ABC$ are collinear if for all points $X$, $\varphi_1(X),\varphi_2(X),\varphi_3(X)$ are collinear.
 :::
 
 :::{#lem-isoconjugateline}
-$\varphi_i$共線若且唯若存在一點$X$使$X_i:=\varphi_i(X)$共線。
+The isoconjugations $\varphi_i$ are collinear ($i=1,2,3$) if and only if there exists a point $X$ such that $X_i=\varphi_i(X)$ are collinear ($i=1,2,3$).
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-取$\varphi_1,\varphi_2$的不動點的八點錐線$\mathcal{G}$，由等共軛性質，$X$對$\mathcal{G}$極線就是$X_1X_2$。因為$X_3\in X_1X_2$，所以$\varphi_3$不動點也在$\mathcal{G}$上。給定$Y$，由等共軛知$Y_1,\,Y_2,\,Y_3$共線。
+Take the eight-point conic passing through the fixed points of the isoconjugations $\varphi_1,\varphi_2$, then from @thm-quadrangle-isoconjugation, the polar of $X$ with respect to $\mathcal{G}$ is $X_1X_2$. Since $X_3\in X_1X_2$, the fixed points of $\varphi_3$ is on $\mathcal{G}$. Given point $Y$, then $Y_1,\,Y_2,\,Y_3$ are collinear on the polar of $Y$ with respect to $\mathcal{G}$.
 :::
 
-@lem-isoconjugateline 也可以直接證明：給定$Y$，$(X\div Y)\times X_i=Y_i$，而$X\div Y$是射影變換。
+We may directly prove @lem-isoconjugateline: given $Y$, $(X\div Y)\times X_i=Y_i$, and $X\div Y$ is a projective transformation.
 
 :::{#cor-diagonalconic}
-把跟兩個等共軛$\varphi_1,\varphi_2$共線的所有等共軛$\varphi$蒐集起來，這些$\varphi$的不動點形成一個錐線$\mathcal{G}$，並且對於所有$X\in \mathbb{P}$，$\mathfrak{p}_\mathcal{G}(X)= \varphi_1(X)\varphi_2(X)$。
+Consider the family of isoconjugations $\varphi$ such that $\varphi,\varphi_1,\varphi_2$ are collinear, then the fixed points of all $\varphi$ lie on a fixed conic $\mathcal{G}$, and for all $X\in \mathbb{P}$, $\mathfrak{p}_\mathcal{G}(X)= \varphi_1(X)\varphi_2(X)$.
 :::
 
 :::{.unnumbered-env}
 **Definition**
-給定點$P$與線$\ell$，則$P\times X$共線對於$X\in \ell$，將這些等共軛蒐集起來記為$P\times \ell$。由@cor-diagonalconic ，$P\times \ell$可以視為配極(滿足$P$的極線是$\ell$且$ABC$自共軛)。
+Given a point $P$ and a line $\ell$, $P\times X$ are collinear for all $X\in \ell$. Denote by $P\times \ell$ the collections of all such $P\times X$. From @cor-diagonalconic, $P\times \ell$ may be regarded as a polar tranformation (such that the polar of $P$ is $\ell$ and $ABC$ is self-conjugate).
 :::
 
 :::{.unnumbered-env}
