@@ -326,3 +326,128 @@ Let the tripole of $\ell_1,\ell_2,m$ be $P_1,P_2,Q$. Define $\varphi^{\mathbb{L}
 **Remark**
 The isoconjugations defined in @thm-isoconjugate should be called "point-isoconjugations", denoted by $\varphi^\mathbb{P}$. For historical reasons, isoconjugations mean point-isoconjugations by default.
 :::
+
+## The Circular Points of Infinity
+
+:::{.unnumbered-env}
+**Definition**
+Define $\infty_+$ and $\infty_-$ to be the **circular points of infinity** (i.e. any two distinct points in $\mathbb{P}$). The line $\infty_+\infty_-$ is called the **line at infinity**, denoted $\ell_\infty$. For a line $\ell\neq\ell_\infty$, the **point at infinity** on $\ell$ is $\ell\cap\ell_\infty$, denoted by $\infty_{\ell}$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+The purpose of defining the circular points of infinity is to introduce some classical objects, such as circles and angles. When we assign two points to be the circular points of infinity, some projective statements become well-known lemmata.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+Suppose that $\infty_\ell=\infty_m$, then lines $\ell,m$ are said to be **parallel**, denoted $\ell\parallel m$.
+Define the **midpoint** of $A$ and $B$ to be the harmonic conjugate of $\infty_{AB}$ with respect to $A|B$. The **center** of a conic $\mathcal{C}$ is defined to be $\mathfrak{p}_\mathcal{C}(\ell_\infty)$.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+The **angle** between lines $\ell_1,\ell_2\neq\ell_\infty$ ($\ell_1,\ell_2$ shall not pass through $\infty_{\pm}$) is
+$$
+\sangle(\ell_1,\ell_2)=(\infty_{\ell_1},\infty_{\ell_2};\infty_+,\infty_-)
+$$
+For three points $A,B,C$, define $\sangle BAC=\sangle(BA,AC)$. By definition, 
+$$
+\sangle(\ell_1,\ell_2)=\sangle(\ell_1,\ell)\cdot\sangle (\ell,\ell_2)
+$$
+If $\sangle (\ell_1,\ell_2)=-1$, the lines $\ell_1$ and $\ell_2$ are said to be **perpendicular**, denoted $\ell_1\perp\ell_2$. Define $\infty_\ell^{\perp}$ to be the harmonic conjugate of $\infty_\ell$ with respect to $\infty_+|\infty_-$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+If we define $\measuredangle BAC=\dfrac1{2i}\log\sangle BAC$, then
+$$
+\measuredangle(\ell_1,\ell_2)=\measuredangle(\ell_1,\ell)+\measuredangle (\ell,\ell_2)
+$$
+If $\ell_1\perp\ell_2$, then $\measuredangle (\ell_1,\ell_2)=\dfrac1{2i}\log e^{\pi i}=\dfrac\pi2$, which coincides with the usual definition of directed angles. From this definition, if two directed angles differ by an integer multiple of $\pi$, then they are the same, for $e^{2\pi i}=1$. This suggests that directed angles and the $\sangle$ defined here are essentially the same, except that addition is replaced with multiplication.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+A conic $\omega$ is said to be a **circle** if $\omega$ passes through $\infty_+$ and $\infty_-$. The conic $(ABC\infty_+\infty_-)$ is the only conic passing through the vertices of $ABC$, called the **circumcircle** of $ABC$, denoted $\odot(ABC)$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+To make sure the objects are well-defined, when it comes to circumcircles or angles, all lines are assumed not to pass through the circular points of infinity.
+:::
+
+:::{#cor-concyclic}
+The points $A,B,C,D$ are concyclic if and only if $\sangle ACB=\sangle ADB$.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+A triangle $ABC$ is said to be $A$-isosceles if $\sangle ABC=\sangle BCA$.
+:::
+
+:::{#lem-isosceles-circle}
+Let $O$ be the center of the circle $\omega$. Suppose that $A,B$ are points on $\omega$, then $OAB$ is $O$-isosceles.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Let $AO,BO$ intersect $\omega$ again at $A',B'$. Consider the involution with perspector $O$, then (note that $O\infty_\pm$ is tangent to $\omega$)
+$$
+(A',B;\infty_+,\infty_-)_\omega=(A,B';\infty_+,\infty_-)_\omega
+$$
+i.e. $\sangle A'AB=\sangle ABB'$. We conclude that $OAB$ is $O$-isosceles.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+This is essentially the property that all points on a circle are equidistant to its center, but we are not defining lengths for now.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+Define the **isogonal conjugation** on $ABC$ to be $\varphi=\infty_+\times \infty_-$. The term "isogonal" comes from the equality $\sangle BAX=\sangle \varphi(X)AC$.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+Let $ABC$ be a triangle. The definition of some points is symmetric with respect to the three vertices. Such points are called **triangle centers**. There is a standard list of triangle centers, each labeled by an index. The $n$-th triangle center is denoted $\X_n$.
+
+(1) The **incenter** $I$ is one of the fixed points of the isogonal conjugation, labeled $\X_1$. Let the anticevian triangle of $I$ be $I_AI_BI_C$, then $I_A$ is the $A$-**excenter**, and define the $B,C$-excenters similarly. The triangle $I_AI_BI_C$ is called the **excentral triangle**.
+
+(2) The **medial triangle** of $ABC$ is the triangle with vertices the midpoints of $BC,CA,AB$. The medial triangle and $ABC$ are perspective, with perspector the tripole $G$ of $\ell_\infty$. The point $G$ is called the **centroid**, labeled $\X_2$.
+
+(3) The center $O$ of $\odot(ABC)$ is called the **circumcenter**, labeled $\X_3$.
+
+(4) The isogonal conjugate $H$ of the circumcenter is called the **orthocenter**, labeled $\X_4$.
+
+(5) The isogonal conjugate $K$ of the centroid is called the **symmedian point**, labeled $\X_6$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+On the complex projective plane, we cannot not define the incenter to be the fixed point in the "interior" of $ABC$, so we arbitrarily pick one as the excenter, and the others are called excenters.
+:::
+
+:::{#lem-orthocenter}
+Let the orthocenter of $ABC$ be $H$, then $AH\perp BC$ (this is where the orthocenter got its name).
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Let the circumcenter be $O$, and let $AO$ intersect the circumcircle at $A'$. We have
+$$
+\sangle(AH,BC)=\sangle HAB\cdot\sangle ABC=\sangle CAA'\cdot \sangle ABC=\sangle CBA'\cdot \sangle ABC=\sangle ABA'
+$$
+Since $\sangle ABA'=(A,A';\infty_+,\infty_-)_{\odot(ABC)}=-1$ (from @lem-harmonicquad), $AH\perp BC$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Let the incenter and excentral triangle be $I,I_AI_BI_C$, then $AI,AI_B$ are the fixed lines of the isogonal conjugation on $\mathbb{L}_A$, so $A(I,I_B;\infty_+,\infty_-)=-1$, i.e. $AI\perp AI_B$. From @lem-orthocenter, $I$ is the orthocenter of $I_AI_BI_C$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+The circumconic of the symmedian point $K$ is $\odot(ABC)$. This follows from @lem-isoconjline and the fact that the image of $\ell_\infty$ under the isogonal conjugation is $\odot(ABC)$. From @lem-trilineardual, the tripolar of any point on the circumcircle passes through $K$.
+:::
