@@ -461,7 +461,7 @@ Let $\mathcal{C}$ be a conic. Consider the two tangents $m_1,m_2$ (resp. $n_1,n_
 
 :::{#lem-focusproperty}
 ## optical property
-Let $F_{11},F_{22}$ be a pair of foci of the conic $\mathcal{C}$. For a point $P$, let $\ell_1,\ell_2$ be the two tangents of $\mathcal{C}$ through $P$, $\sangle (F_{11}P,\ell_1)=\sangle(\ell_2,F_{22}P)$.
+Let $F_{11},F_{22}$ be a pair of foci of the conic $\mathcal{C}$. For a point $P$, let $\ell_1,\ell_2$ be the two tangents of $\mathcal{C}$ through $P$, then $\sangle (F_{11}P,\ell_1)=\sangle(\ell_2,F_{22}P)$.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
@@ -500,7 +500,7 @@ is an involution. This is an isogonal involution on $\mathbb{L}_A$, so $\ell=AC$
 
 :::{.unnumbered-env}
 **Definition**
-We define the **angle bisectors* of $\sangle BAC$ to be the fixed lines of the involution $(AB,AC),(A\infty_+,A\infty_-)$ (the lines passing through $A$ such that $\sangle(AB,\ell)=\sangle(\ell,AC)$). We know that the two angle bisectors are perpendicular.
+We define the **angle bisectors** of $\sangle BAC$ to be the fixed lines of the involution $(AB,AC),(A\infty_+,A\infty_-)$ (the lines passing through $A$ such that $\sangle(AB,\ell)=\sangle(\ell,AC)$). We know that the two angle bisectors are perpendicular.
 :::
 
 :::{.unnumbered-env}
@@ -510,7 +510,7 @@ Let the cevian triangle of the orthocenter $H$ of $ABC$ be $H_aH_bH_c$. Since $A
 
 :::{.unnumbered-env}
 **Remark**
-We apply @lem-focusproperty to the case $P\in \mathcal{C}$, we see that the tangent of $P$ is an angle bisector of $\sangle F_{11}PF_{22}$. This shows that the definition of foci coincides with the classical definition.
+Applying @lem-focusproperty to the case $P\in \mathcal{C}$, we see that the tangent of $P$ is an angle bisector of $\sangle F_{11}PF_{22}$. This shows that the definition of foci coincides with the classical definition.
 :::
 
 :::{#lem-four-incircles}
@@ -527,7 +527,7 @@ Suppose that $\omega$ is a circle tangent to the three sides of $ABC$ with cente
 Among the four circles tangent to the three sides, the one centered at the incenter is called the **incircle**, and the one centered at the $A$-excenter is called the $A$-**excircle**. Analogously define the $B,C$-excircles.
 :::
 
-Writing the circular points of infinity out: given $ABC$, there exists exactly four inconics of $ABC$ that passes through $\infty_+,\infty_-$. Since the circular points of infinity are arbitrary points, we obtain the following.
+Writing the circular points of infinity out: given $ABC$, there exists exactly four inconics of $ABC$ that pass through $\infty_+,\infty_-$. Since the circular points of infinity are arbitrary points, we obtain the following.
 
 :::{#cor-five-elements-conics}
 Five points and lines in total determine finitely many conics:
@@ -554,7 +554,7 @@ $$
 is an involution, so $\sangle AFB=\sangle DFC$.
 :::
 
-Replacing the four tangents with two pairs of coinciding tangents (i.e. two tangents at $P\in \mathcal{C}$ and two tangents at $Q\mathcal{C}$), we obtain the following.
+Replacing the four tangents with two pairs of coinciding tangents (i.e. two tangents at $P\in \mathcal{C}$ and two tangents at $Q\in \mathcal{C}$), we obtain the following.
 
 :::{#cor-pole-bisector}
 Let $F$ be a focus of $\mathcal{C}$ and $P,Q$ be two points on $\mathcal{C}$. Suppose that $R$ is the pole of $PQ$, then $FR$ is an angle bisector of $\sangle PFQ$.
