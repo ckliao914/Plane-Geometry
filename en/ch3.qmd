@@ -230,3 +230,95 @@ Suppose that $\varphi=P\times P$ is an isoconjugation on $ABC$, then line $P\var
 ## Proof
 Let $P\varphi(X)$ intersect $(ABCPX)$ again at $Y$. Applying $\varphi$, $P\varphi(X)$ is sent to $(ABCPX)$, so $\varphi(Y)=Y$. From @lem-fixed-points-isoconjugation, $Y$ is equal to $P$ or one of the vertices of the anticevian triangle of $P$, but the latter are not on $(ABCPX)$, so $Y=P$.
 :::
+
+## 等共軛的不動點與Desargues對合
+
+:::{#lem-isoconjugatefix}
+$ABC$上的等共軛$\varphi$必有四個不動點，也就是有四個點滿足$\varphi(P)=P$。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+因為$BX\mapsto B\varphi(X)$為對合，所以有兩條不動線。同理$C$也有兩條不動線，故這四個交點就是不動點。
+:::
+
+可以發現等共軛變換其實是由四個不動點所決定：四個不動點的西瓦三角形就是定義等共軛變換的三角形。
+
+:::{.unnumbered-env}
+**Definition**
+給定四點$PQRS$(任三不共線)，$PQRS$的西瓦三角形為$ABC$，則定義完全四點形$PQRS$的等共軛變換是$ABC$上的等共軛變換$\varphi$滿足$\varphi(P)=P$。
+:::
+
+:::{#thm-quadrangle-isoconjugation}
+完全四點形$PQRS$的等共軛變換為$\varphi$，則對於任意過$PQRS$的錐線$\mathcal{C}$，$X$與$\varphi(X)$關於$\mathcal{C}$共軛。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令$\ell=X\varphi(X)$，$\ell$與$\mathcal{C}$交於兩點$U,V$，則對$\mathcal{C}$上的四點$PQRS$與直線$\ell$使用DIT，
+$$
+(U,V),(\ell\cap PQ,\ell\cap RS), (\ell\cap PR,\ell\cap QS),(\ell\cap PS,\ell\cap QR)
+$$
+為對合相互對。令$P$對$QRS$的西瓦三角形為$ABC$，則由等共軛的定義知
+$$
+-1=A(X,\varphi(X);P,R)=(X,\varphi(X);PQ\cap \ell,RS\cap\ell)
+$$
+故對$X\vert{}\varphi(X)$的調和共軛將$PQ\cap \ell$帶到$RS\cap\ell$，同理可以知道前面用迪沙格對合看出來的對合就是對$X\vert{}\varphi(X)$的調和共軛，也就是$(X,\varphi(X);U,V)=-1$，故$X$與$\varphi(X)$關於$\mathcal{C}$共軛。
+:::
+
+:::{#lem-eight-point-conic}
+若$P,Q$的反西瓦三角形為$P_AP_BP_C$與$Q_AQ_BQ_C$，則
+$$P,\,P_A,\,P_B,\,P_C,\,Q,\,Q_A,\,Q_B,\,Q_C$$
+共錐線，稱此錐線為$P,Q$的八點錐線(關於$ABC$)。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令$\mathcal{G}=(PP_AP_BP_CQ)$，則$ABC$為$\mathcal{G}$的自共軛三角形，所以$A,AQ\cap BC$關於$\mathcal{G}$共軛。注意到
+$$(A,AQ\cap BC;Q,Q_A)=-1$$
+因為$Q$在$\mathcal{G}$上，故$Q_A$也在$\mathcal{G}$上(由La Hire定理)，同理有八點共錐線$\mathcal{G}$。
+:::
+
+也就是說兩個完全四點形的西瓦三角形若相同，則八點會共錐線。注意到有時候八點錐線會退化成兩條直線。
+
+:::{.unnumbered-env}
+**Definition**
+稱三個$ABC$上等共軛$\varphi_i$，$i=1,2,3$共線若對於所有$X$，$\varphi_i(X)$共線。
+:::
+
+:::{#lem-isoconjugateline}
+$\varphi_i$共線若且唯若存在一點$X$使$X_i:=\varphi_i(X)$共線。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+取$\varphi_1,\varphi_2$的不動點的八點錐線$\mathcal{G}$，由等共軛性質，$X$對$\mathcal{G}$極線就是$X_1X_2$。因為$X_3\in X_1X_2$，所以$\varphi_3$不動點也在$\mathcal{G}$上。給定$Y$，由等共軛知$Y_1,\,Y_2,\,Y_3$共線。
+:::
+
+@lem-isoconjugateline 也可以直接證明：給定$Y$，$(X\div Y)\times X_i=Y_i$，而$X\div Y$是射影變換。
+
+:::{#cor-diagonalconic}
+把跟兩個等共軛$\varphi_1,\varphi_2$共線的所有等共軛$\varphi$蒐集起來，這些$\varphi$的不動點形成一個錐線$\mathcal{G}$，並且對於所有$X\in \mathbb{P}$，$\mathfrak{p}_\mathcal{G}(X)= \varphi_1(X)\varphi_2(X)$。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+給定點$P$與線$\ell$，則$P\times X$共線對於$X\in \ell$，將這些等共軛蒐集起來記為$P\times \ell$。由@cor-diagonalconic ，$P\times \ell$可以視為配極(滿足$P$的極線是$\ell$且$ABC$自共軛)。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+@lem-trilineardual 中(下面的Remark)，給定等共軛$\varphi=P\times Q$，則存在錐線$\mathcal{G}$使得$\mathfrak{p}_\mathcal{G}(X)$的三線性極點就是$\varphi(X)$。令$Q$的三線性極線為$\ell$，則$\mathfrak{p}_\mathcal{G}(P)=\ell$，這說明了$P\times \ell=\mathfrak{p}_\mathcal{G}$，也就是說定義$P\times Q$的錐線與定義$P\times \ell$的錐線都是$\mathcal{G}$。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+考慮等共軛的對偶命題：給定三角形$ABC$與直線$\ell_1,\ell_2$，令$f_A$為對合相互對$(B,C),\,(\ell_1\cap BC,\ell_2\cap BC)$定義的對合，對稱地定義$f_B,f_C$，則定義線等共軛$\varphi^{\mathbb{L}}=\ell_1\times \ell_2$滿足對於直線$m$，直線$\varphi^{\mathbb{L}}(m)$通過$f_A(m\cap BC),\,f_B(m\cap CA),\,f_C(m\cap AB)$。
+:::
+
+令$\ell_1,\ell_2,m$的三線性極點為$P_1,P_2,Q$，並定義$\varphi^{\mathbb{L}}=\ell_1\times \ell_2$，$\varphi=P_1\times P_2$，則$\varphi^{\mathbb{L}}(m)$的三線性極點為$\varphi(Q)$。這說明了線等共軛變換與等共軛變換之間透過三線性極線有對應關係。注意到定義$\varphi^{\mathbb{L}}$與$\varphi$的錐線都是$\mathcal{G}$，其中$\mathfrak{p}_\mathcal{G}=P_1\times \ell_2=P_2\times \ell_1$。
+
+:::{.unnumbered-env}
+**Remark**
+@thm-isoconjugate 中定義的等共軛變換應該稱為點等共軛變換，用$\varphi^\mathbb{P}$記，但因為習慣以點的角度出發，故會省略而稱之為等共軛變換。
+:::
