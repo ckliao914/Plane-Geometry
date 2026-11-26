@@ -824,3 +824,92 @@ By @lem-recthyperbola, the orthocenter $H$ is on $\mathcal{H}$, so the cevian tr
 **Definition**
 Let $H$ be the orthocenter of $ABC$, then in the complete quadrangle $ABCH$, the following nine points are concyclic: the six midpoints of any two distinct points and the three vertices of its cevian triangle. This circle is called the **nine-point circle** of $ABC$. The center of the nine-point circle is called the **nine-point center**, labeled $\X_5$.
 :::
+
+## 拋物線與密克點
+
+:::{.unnumbered-env}
+**Definition**
+稱一個錐線$\Gamma$為拋物線(parabola)若$\Gamma$與$\ell_\infty$相切。拋物線的其中兩個焦點是與$\ell_\infty$的切點，所以拋物線的焦點通常指的是不在無窮遠線上的那一個(兩個)。
+:::
+
+:::{#lem-parabolafocus}
+拋物線$\Gamma$的焦點為$F$，$BC,CA,AB$皆與$\Gamma$相切，則$ABCF$共圓。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+由@lem-focusisogonal ，$\Gamma$的一對焦點，也就是$F$與$\Gamma$上的無窮遠點，為關於$ABC$的等角共軛點，故$F$在$\odot(ABC)$上。
+:::
+
+:::{#thm-poncelet}
+三角形$A_1B_1C_1$與$A_2B_2C_2$的三邊皆與錐線
+$\mathcal{C}$相切，則
+$$
+A_1,\,B_1,\,C_1,\,A_2,\,B_2,\,C_2\,\text{共錐線}
+$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令$B_2=\infty_+,C_2=\infty_-$，則拋物線$\mathcal{C}$的焦點為$A_2$，由@lem-parabolafocus 得證。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+這其實就是Poncelet閉合定理：給定三角形$ABC$，$\mathcal{C}_1$為一$ABC$的外接錐線，$\mathcal{C}_2$為一$ABC$的內切錐線。選一個在$\mathcal{C}_1$上的點$D$，$D$對$\mathcal{C}_2$的兩切線交$\mathcal{C}_1$於$E,F$，則$EF$亦與$\mathcal{C}_2$相切。
+:::
+
+:::{#lem-parabolaMiquel}
+給定$n$條線(任三不共點)，則存在拋物線切這$n$條線若且唯若存在一點$M$(非無窮虛圓點)使得這$n$條線中任選三條所決定的三角形之外接圓皆過$M$，稱$M$為這個完全$n$線形的密克點。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+若存在拋物線切這$n$條線，則由@lem-parabolafocus ，所有外接圓皆過該拋物線的焦點。
+
+若存在該點$M$，則選擇$n$條線中的四條$\ell_1,\ell_2,\ell_3,\ell_4$，這四條線與$\ell_\infty$決定錐線$\Gamma$，且$M$為$\Gamma$的焦點。選擇第五條線$\ell_5$，考慮$\ell_5,\ell_1,\ell_2$三條線決定的外接圓$\omega$與$\Gamma$，因為$M\infty_+\infty_-$都在$\omega$上，且三邊皆切$\Gamma$，故使用Poncelet閉合可知$\ell_5$切$\omega$。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+完全四線形，就是由四條線$(\ell_1,\ell_2,\ell_3,\ell_4)$組成的圖形(任三不共點)，一定有密克點。完全四線形$ABCD$指的是$(AB,BC,CD,DA)$四條線，$AC$與$BD$為對角線。為了對稱性這可以記為完全四線形$(A,C)(B,D)$。若$AB\cap CD=E$, $AD\cap BC=F$，則完全四線形$(A,C)(E,F)$也是同一個，故可記為完全四線形$(A,C)(B,D)(E,F)$，此時三條對角線就是$AC,BD,EF$，密克點為
+$$
+\odot(ADE),\, \odot(ABF),\,\odot(BCE),\,\odot(CDF)
+$$
+共的點(非無窮虛圓點)$M$。
+:::
+
+使用@lem-parabolaMiquel 及@thm-poncelet 的對偶會得到以下的推論。
+
+:::{#cor-parabola-miquel-conic}
+一錐線$\mathcal{C}$經過$A$, $B$, $C$, $P$，且與$\ell_\infty$交於$\infty_1,\infty_2$，則
+$$
+BC,\, CA,\, AB,\, P\infty_1,\, P\infty_2
+$$
+有密克點。
+:::
+
+:::{.unnumbered-env}
+**Example**
+令$\ell_1,\,\ell_2$為兩通過垂心$H$的直線，則$BC,CA,AB,\ell_1,\ell_2$有密克點。
+:::
+
+:::{#lem-cevian-tripolar-miquel}
+給定$ABC$，$P$為一點，則$P$的西瓦三角形的三邊、$P$的三線性極線，以及中點三角形的三邊這七線有密克點。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令重心為$G$。由八點錐線的對偶，$P$與$G$的西瓦三角形的三邊以及$P,G$的三線性極線八線切同一錐線，因為$G$的三線性極線為$\ell_\infty$，由@lem-parabolaMiquel 得證。
+:::
+
+還有一個關於拋物線的光學性質。
+
+:::{#lem-parabola-optical}
+拋物線$\Gamma$上有兩點$P,Q$，使得$PQ$通過$\Gamma$的焦點$F$，則$P$的切線$\ell_P$垂直$Q$的切線$\ell_Q$。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+因為$F\infty_+$與$F\infty_-$切$\Gamma$，故$-1=(FS,FT;\ell_P,\ell_Q)_\Gamma=(\infty_+,\infty_-;\infty_{\ell_P},\infty_{\ell_Q})$。
+:::
