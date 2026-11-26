@@ -562,7 +562,7 @@ Let $F$ be a focus of $\mathcal{C}$ and $P,Q$ be two points on $\mathcal{C}$. Su
 
 ## Circumconics, Inconics, and the Symmedian Point
 
-Let $ABC$ be a triangle, the circumconic and inconic of $P$ be $\mathcal{C}_1,\,\mathcal{C}_2$, respectively, then $\mathfrak{p}_{\mathcal{C}_2}(P)$ is the tripolar of $P$. Let $\mathcal{C}_2$ intersect the tripolar of $P$ at $Q,R$, then $PQ$ and $PR$ are tangents of $\mathcal{C}_2$. Taking the $P$-anticomplement, $\mathcal{C}_1$ passes through $Q,\,R$, and $PQ,\,PR$ are tangents, too, so $\mathcal{C}_1$ and $\mathcal{C}_2$ are tangent at $Q,R$.
+Let $ABC$ be a triangle, the circumconic and inconic of $P$ be $\mathcal{C}_1,\,\mathcal{C}_2$, respectively, then $\mathfrak{p}_{\mathcal{C}_2}(P)$ is the tripolar of $P$. Let $\mathcal{C}_2$ intersect the tripolar of $P$ at $Q,R$, then $PQ$ and $PR$ are tangents of $\mathcal{C}_2$. Taking the $P$-anticomplement, $\mathcal{C}_1$ passes through $Q,\,R$, and $PQ,\,PR$ are also tangent to $\mathcal{C}_1$, so $\mathcal{C}_1$ and $\mathcal{C}_2$ are tangent at $Q,R$.
 
 :::{#lem-thirdrootofunitypoints}
 Let the tripole $\ell$ of $P$ with respect to $ABC$ intersect the circumconic $\mathcal{C}_1$ of $P$ at $Q,R$, then $R$ is on the tripolar of $Q$ (similarly, $Q$ is on tripolar of $R$).
