@@ -378,7 +378,7 @@ To make sure the objects are well-defined, when it comes to circumcircles or ang
 :::
 
 :::{#cor-concyclic}
-The points $A,B,C,D$ are concyclic if and only if $\sangle ACB=\sangle ADB$.
+The points $A,B,C,D$ are concyclic (i.e. lie on the same circle) if and only if $\sangle ACB=\sangle ADB$.
 :::
 
 :::{.unnumbered-env}
@@ -562,7 +562,7 @@ Let $F$ be a focus of $\mathcal{C}$ and $P,Q$ be two points on $\mathcal{C}$. Su
 
 ## Circumconics, Inconics, and the Symmedian Point
 
-Let $ABC$ be a triangle, the circumconic and inconic of $P$ be $\mathcal{C}_1,\,\mathcal{C}_2$, respectively, then $\mathfrak{p}_{\mathcal{C}_2}(P)$ is the tripolar of $P$. Let $\mathcal{C}_2$ intersect the tripolar of $P$ at $Q,R$, then $PQ$ and $PR$ are tangents of $\mathcal{C}$. Taking the $P$-anticomplement, $\mathcal{C}_1$ passes through $Q,\,R$, and $PQ,\,PR$ are tangents, too, so $\mathcal{C}_1$ and $\mathcal{C}_2$ are tangent at $Q,R$.
+Let $ABC$ be a triangle, the circumconic and inconic of $P$ be $\mathcal{C}_1,\,\mathcal{C}_2$, respectively, then $\mathfrak{p}_{\mathcal{C}_2}(P)$ is the tripolar of $P$. Let $\mathcal{C}_2$ intersect the tripolar of $P$ at $Q,R$, then $PQ$ and $PR$ are tangents of $\mathcal{C}_2$. Taking the $P$-anticomplement, $\mathcal{C}_1$ passes through $Q,\,R$, and $PQ,\,PR$ are tangents, too, so $\mathcal{C}_1$ and $\mathcal{C}_2$ are tangent at $Q,R$.
 
 :::{#lem-thirdrootofunitypoints}
 Let the tripole $\ell$ of $P$ with respect to $ABC$ intersect the circumconic $\mathcal{C}_1$ of $P$ at $Q,R$, then $R$ is on the tripolar of $Q$ (similarly, $Q$ is on tripolar of $R$).
@@ -579,113 +579,134 @@ $$
 Let $AP$ and $\mathcal{C}_1$ intersect again at $A'$, then $f(A)=A'$. Similarly we see that $f$ is the involution with perspector $P$, i.e. $f(Q)=Q$. We conclude that $P\times P\div Q=R$ is the intersection of the tripolar of $Q$ and $\ell$. 
 :::
 
-From @lem-trilineardual, the circumconic and tripolar of $Q$ intersect at $P,R$, so the relation between the three points are symmetric.
+From @lem-trilineardual, the circumconic and tripolar of $Q$ intersect at $P,R$, so the relation between the three points is symmetric.
 
 :::{.unnumbered-env}
 **Remark**
-$P,Q,R$三點滿足
+The three points $P,Q,R$ in @lem-thirdrootofunitypoints satisfy
 $$
 P\times P=Q\times R,\,Q\times Q=R\times P,\,R\times R=P\times Q
 $$
 :::
 
 :::{#lem-3-inv}
-令$P$對$ABC$的外接錐線與內切錐線為$\mathcal{C}_1$與$\mathcal{C}_2$，
+Let the circumconic and inconic of $P$ with respect to $ABC$ be $\mathcal{C}_1$ and $\mathcal{C}_2$, respectively. Define the projective map
 $$
-f:\mathcal{C}_1\to\mathcal{C}_1\,\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A
+f:\mathcal{C}_1\to\mathcal{C}_1,\,f(A)=B,\, f(B)=C,\, f(C)=A
 $$
-則對所有$X\in\mathcal{C}_1$，$Xf(X)$切$\mathcal{C}_2$。
+For any $X\in\mathcal{C}_1$, the line $Xf(X)$ is tangent to $\mathcal{C}_2$.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-注意到$f$的射影軸為$P$的三線性極線，故$f$的不動點為$P$的三線性極線與$\mathcal{C}_1$的交點$Q,\,R$。由@lem-autenvelope ，$Xf(X)$的軌跡為一錐點，且此錐點包含
+The projective axis of $f$ is the tripolar of $P$, so the fixed points of $f$ are the intersections $Q,R$ of the tripolar of $P$ and $\mathcal{C}_1$. From @lem-autenvelope, the locus of $Xf(X)$ is a dual conic containing
 $$
 Af(A)=AB,\,Bf(B)=BC,\,Cf(C)=CA,\,Qf(Q)=QP,\,Rf(R)=RP
 $$
-這五線都與$\mathcal{C}_2$相切，故$Xf(X)$切$\mathcal{C}_2$對於$X\in \mathcal{C}_1$。
+These $5$ lines are tangent to $\mathcal{C}_2$, so $Xf(X)$ is tangent to $\mathcal{C}_2$ for all $X\in \mathcal{C}_1$.
 :::
 
-現在考慮類似重心$K$的外接錐線$\odot(ABC)$與內切錐線$\mathcal{C}$。由@lem-3-inv ，令$f:\odot(ABC)\to \odot(ABC)$使$f(A)=B,\,f(B)=C,\,f(C)=A$，則$\infty_+,\infty_-$對$\mathcal{C}$的切線為
+We now consider the circumconic $\odot(ABC)$ and inconic $\mathcal{C}$ of the symmedian point $K$. By @lem-3-inv, let $f:\odot(ABC)\to \odot(ABC)$ such that $f(A)=B,\,f(B)=C,\,f(C)=A$, then the tangents of $\mathcal{C}$ through $\infty_+$ and $\infty_-$ are
 $$
 \infty_+f(\infty_+),\,\infty_+f^{-1}(\infty_+),\, \infty_-f(\infty_-),\,\infty_-f^{-1}(\infty_-)
 $$
-以下考慮$\mathcal{C}$的其中一對焦點$\infty_+f(\infty_+)\cap\infty_-f^{-1}(\infty_-),\,\infty_+f^{-1}(\infty_+)\cap\infty_-f(\infty_-)$。
+We consider a pair of foci $\infty_+f(\infty_+)\cap\infty_-f^{-1}(\infty_-),\,\infty_+f^{-1}(\infty_+)\cap\infty_-f(\infty_-)$ of $\mathcal{C}$.
 
 :::{.unnumbered-env}
 **Definition**
-三角形$ABC$的布洛卡點$Br,Br'$滿足
+The **Brocard points** of $ABC$ are points $Br,Br'$ satisfying
 $$
 \sangle BrAB=\sangle BrBC=\sangle BrCA,\,\sangle Br'BA=\sangle Br'CB=\sangle Br'AC
 $$
-因為$\odot(BrBC)$與$CA$相切，對稱地，兩布洛卡點都是唯一的，且互為等角共軛。
+Note that $\odot(BrBC)$ is tangent to $CA$, so the Brocard points are unique. Moreover, $Br,Br'$ are isogonal conjugates.
 :::
 
-接下來的目標是證明類似重心的內切錐線$\mathcal{C}$的一對焦點為兩布洛卡點。
-
+The next goal is to prove that the inconic with a pair of foci the Brocard points coincides with the inconic of the symmedian point.
 :::{#lem-brocardpoint}
-給定$ABC$，$\mathcal{C}$為$ABC$的一外接錐線，
+Let $\mathcal{C}$ be a circumconic of $ABC$. Define the projective map
 $$
-f:\mathcal{C}\to\mathcal{C}\,\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A
+f:\mathcal{C}\to\mathcal{C},\,f(A)=B,\, f(B)=C,\, f(C)=A
 $$
-$X,Y$為$\mathcal{C}$上任意兩點，$Xf(X)\cap Yf(Y)=Z$，則$(XYZAB)$與$AC$相切。
+Suppose that $X,Y$ are two points on $\mathcal{C}$, and $Xf(X)\cap Yf(Y)=Z$, then $(XYZAB)$ and $AC$ are tangent.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-相切等價$A(C,Z;Y,B)=X(A,Z;Y,B)$。令$AZ$交$\mathcal{C}$於$W$，則等價證明
+The tangency of $(XYZAB)$ and $AC$ is equivalent to
 $$
-(C,W;Y,B)_{\mathcal{C}}\,\text{與}\,(A,f(X);Y,B)_{\mathcal{C}}=(f(X),A;B,Y)_{\mathcal{C}}
+A(C,Z;Y,B)=X(A,Z;Y,B)
 $$
-相同，也就是要證明$Cf(X)$, $WA$, $BY$共點(對合)，這等價
+Let $AZ$ intersect $\mathcal{C}$ again at $W$, then it suffices to show that
 $$
-Cf(X)\cap BY,\,A,\, Xf(X)\cap Yf(Y)\,\text{共線}
+(C,W;Y,B)_{\mathcal{C}},\,(A,f(X);Y,B)_{\mathcal{C}}=(f(X),A;B,Y)_{\mathcal{C}}
 $$
-注意到$(Y,X;C,A)=(f(Y),f(X);A,B)=(f(X),f(Y);B,A)$。也就是存在
+are equal, i.e. that
 $$
-g:\mathcal{C}\to\mathcal{C}\,\text{保交比},\,g(Y)=f(X),\, g(X)=f(Y),\, g(C)=B,\, g(A)=A
+(C,f(X)),(W,A),(B,Y)
 $$
-考慮$g$的射影軸$\ell$，可知$\ell$上有$Cf(X)\cap BY$, $A$, $Xf(X)\cap Yf(Y)$三點，這就是前面等價要證明的三點共線。
+is an involution on $\mathcal{C}$, or that $Cf(X),WA,BY$ are concurrent. This is equivalent to
+$$
+Cf(X)\cap BY,\,A,\, Xf(X)\cap Yf(Y)
+$$
+being collinear.
+
+Note that
+$$
+(Y,X;C,A)=(f(Y),f(X);A,B)=(f(X),f(Y);B,A)
+$$
+i.e. there exists a projective map
+$$
+g:\mathcal{C}\to\mathcal{C},\,g(Y)=f(X),\, g(X)=f(Y),\, g(C)=B,\, g(A)=A
+$$
+Let $\ell$ be the projective axis of $g$, then the three points $Cf(X)\cap BY,A,Xf(X)\cap Yf(Y)$ are on $\ell$, which is the desired collinearity.
 :::
 
 :::{#cor-brocardpointinconic}
-令$f:\odot(ABC)\to\odot(ABC)\,
-\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A$，則布洛卡點$Br'=\infty_+f(\infty_+)\cap \infty_-f(\infty_-),\,Br=\infty_+f^{-1}(\infty_+)\cap \infty_-f^{-1}(\infty_-)$為類似重心的內切錐線之一對焦點 (由@lem-brocardpoint 中$X=\infty_+,\,Y=\infty_-$得到)。
+Define the projective map 
+$$
+f:\odot(ABC)\to\odot(ABC),\,f(A)=B,\, f(B)=C,\, f(C)=A
+$$
+The Brocard points
+$$
+Br'=\infty_+f(\infty_+)\cap \infty_-f(\infty_-),\,Br=\infty_+f^{-1}(\infty_+)\cap \infty_-f^{-1}(\infty_-)
+$$
+form a pair of foci of the inconic of the symmedian point (apply @lem-brocardpoint to $X=\infty_+,\,Y=\infty_-$).
 :::
 
 :::{.unnumbered-env}
 **Remark**
-@lem-brocardpoint 可以令$X,Y$為動點使用大保交比證明，也就是把無窮虛圓點當成外接圓上的動點來操作。
+In @lem-brocardpoint, we may let $X,Y$ be varying points on $\mathcal{C}$ and apply the projective map method. In other words, we think of the circular points of infinity as varying points on $\odot(ABC)$.
 :::
 
 :::{.unnumbered-env}
 **Example**
-令外心為$O$，$\odot(ABC)$與類似重心$K$的內切錐線$\mathcal{C}$相切於$Q,R$兩點，則有$O,K,Br,Br',Q,R$共圓$\omega$，稱為布洛卡圓。這是因為
+Let $O$ be the circumcenter, $\odot(ABC)$ and the inconic of the symmedian point $K$ are tangent at points $Q,R$, then $O,K,Br,Br',Q,R$ are concyclic on a circle $\omega$, called the **Brocard circle**. We'll show this in the following.
 
-1. 令$X$為$\odot(ABC)$上的一點，$X$對$\odot(ABC)$的切線為$\ell$，$X$對$\mathcal{C}$的切線為$m,n$。對$Q,Q,R,R$對$\odot(ABC),\,\mathcal{C}$的四切線以及$X$使用DDIT(對兩錐線分別用)，可知
+(1) Let $X$ be a point on $\odot(ABC)$, and let $\ell$ be the tangent of $X$ to $\odot(ABC)$, and the two tangents of $\mathcal{C}$ through $X$ be $m,n$. Apply DDIT on the four tangents of $Q,Q,R,R$ to $\odot(ABC)$ (resp. $\mathcal{C}$) and the point $X$, we see that
 $$
 (XK,XK),\,(XQ,XR),\,(\ell,\ell),(m,n)
 $$
-為對合，故$(\ell,XK;m,n)=-1$。取$X=\infty_\pm$，則
+is an involution, so $(\ell,XK;m,n)=-1$. Take $X=\infty_\pm$, then
 $$
 \infty_+(O,K;Br,Br')=\infty_-(O,K;Br,Br')=-1
 $$
-2. 考慮保交比的$f:\odot(ABC)\to \odot(ABC),\,f(A)=B,\,f(B)=C,\,f(C)=A$，其不動點為$Q,R$，由@lem-fixcrossratio ，$(X,f(X);Q,R)_{\odot(ABC)}=c$的值與$X\in \odot(ABC)$無關。取$X=\infty_+$，有
+
+(2) Consider the projective map $f:\odot(ABC)\to \odot(ABC),\,f(A)=B,\,f(B)=C,\,f(C)=A$ whose fixed points are $Q,R$. From @lem-fixcrossratio, the value of $(X,f(X);Q,R)_{\odot(ABC)}=c$ is independent of the choice of $X\in \odot(ABC)$. Take $X=\infty_+$, then
 $$
 \infty_+(O,Br';Q,R)=(\infty_+,f(\infty_+);Q,R)_{\odot(ABC)}=c
 $$
-對稱地$\infty_+(O,Br';Q,R)=\infty_-(O,Br';Q,R)=c$，$\infty_+(O,Br;Q,R)=\infty_-(O,Br;Q,R)$。
+Similarly, $\infty_+(O,Br';Q,R)=\infty_-(O,Br';Q,R)=c$, and $\infty_+(O,Br;Q,R)=\infty_-(O,Br;Q,R)$.
 
-綜合以上可知$O,K,Br,Br',Q,R$共圓(因為$K,Q,R$不共線)。
+We conclude that $O,K,Br,Br',Q,R$ are concyclic (since $K,Q,R$ are not collinear).
 :::
 
-這是一個不用算角度證明共圓的例子。
+This is an example of proving concyclicity without angle chasing.
 
 :::{.unnumbered-env}
 **Remark**
-因為$O\infty_+,O\infty_-,KQ,KR$為$\odot(ABC)$的切線，
+Since $O\infty_+,O\infty_-,KQ,KR$ are tangents of $\odot(ABC)$,
 $$
-(O,K;\infty_+,\infty_-)_\omega=Q(O,K;\infty_+,\infty_-)=-1\text{，同理 }(O,K;Q,R)_\omega=-1
+(O,K;\infty_+,\infty_-)_\omega=Q(O,K;\infty_+,\infty_-)=-1
 $$
-故$\omega$的中心在$OK$上。結合$(O,K;Br,Br')_\omega=-1$可知$BrBr'\perp OK\perp QR$。
+and similarly $(O,K;Q,R)_\omega=-1$. This shows that the center of $\omega$ is on $OK$. Combining this with $(O,K;Br,Br')_\omega=-1$, we see that $BrBr'\perp OK\perp QR$.
 :::
