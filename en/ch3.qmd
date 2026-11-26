@@ -710,3 +710,105 @@ $$
 $$
 and similarly $(O,K;Q,R)_\omega=-1$. This shows that the center of $\omega$ is on $OK$. Combining this with $(O,K;Br,Br')_\omega=-1$, we see that $BrBr'\perp OK\perp QR$.
 :::
+
+## 等軸雙曲線
+
+:::{.unnumbered-env}
+**Definition**
+若$\infty_+,\infty_-$關於$\mathcal{H}$共軛，則稱$\mathcal{H}$為等軸雙曲線(rectangular hyperbola)。
+:::
+
+:::{#lem-recthyperbola}
+若$ABC$的外接錐線$\mathcal{H}$為等軸雙曲線，則$\mathcal{H}$通過垂心$H$。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令等角共軛為$\varphi$。令$\ell_\infty$交$\mathcal{H}$於$\infty_1,\infty_2$，則
+$$
+-1=(\infty_1,\infty_2;\infty_+,\infty_-)\mathop{=}\limits^{\varphi}(\varphi(\infty_1),\varphi(\infty_2);\infty_-,\infty_+)_{\odot(ABC)}
+$$
+故直線$\varphi(\infty_1)\varphi(\infty_2)$通過外心$O$，取等角共軛有$\mathcal{H}=(ABC\infty_+\infty_-)$通過$H$。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+外接錐線$\mathcal{H}$通過垂心也可以推得$\mathcal{H}$為等軸雙曲線，除了直角三角形的情形：當$AB\perp AC$，則$\mathcal{H}$為等軸雙曲線若且唯若$A$對$\mathcal{H}$的切線垂直$BC$。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+令$\mathcal{C}$的中心為$O$。若$P$在$\mathcal{C}$上，則稱$P$的對徑點為$PO$與$\mathcal{C}$的第二個交點(也就是$P$對$\mathcal{C}$上兩無窮遠線上的點之調和共軛)。
+:::
+
+:::{#lem-recthyperbola-diametral-angle}
+若$A,B,P$在等軸雙曲線$\mathcal{H}$上，$A',B',P'$分別為$A,B,P$對$\mathcal{H}$的對徑點，則$\sangle APB=\sangle B'PA'=\sangle BP'A$。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+考慮$P\infty_+$, $P\infty_-$分別與$\mathcal{H}$的第二個交點$Q,Q'$，則因為$\infty_+,\infty_-$關於$\mathcal{H}$共軛，由@lem-brocardconj (Brocard定理)可以得知$QQ'$經過$\ell_\infty=\infty_+\infty_-$的極點，也就是$Q,Q'$為對徑點，$(A,A'), \,(B,B'),\, (Q,Q')$為$\mathcal{H}$上的對合(共點在$\mathcal{H}$的中心)，也就是
+$$
+(PA,PA'), \,(PB,PB'),\, (P\infty_+,P\infty_-)
+$$
+為對合，即$\sangle APB=\sangle B'PA'$。因為$B'P\parallel BP'$, $A'P\parallel AP'$，故$\sangle B'PA'=\sangle BP'A$。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+可以用Steiner conic構造使$P,P'$為對徑點並通過$A$的等軸雙曲線：考慮保交比的$f:\mathbb{L}_P\to \mathbb{L}_{P'}$滿足$f(P\infty_+)=P'\infty_-$, $f(P\infty_-)=P'\infty_+$, $f(PA)=P'A$，也就是$f$把角度反轉，取$\ell\cap f(\ell)$軌跡。若$f(P\infty_\pm)=P'\infty_{\pm}$(角度順轉)，則會構造出圓。
+:::
+
+:::{#thm-recthyperbolapolar}
+$O$為等軸雙曲線$\mathcal{H}$的中心，$A,B$為任兩點，則
+$$
+\sangle AOB=\sangle(\mathfrak{p}_\mathcal{H}(B),\mathfrak{p}_\mathcal{H}(A))
+$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+考慮$\mathcal{H}$對$\ell_\infty$引出的對合$f$，使$X$與$f(X)$共軛，則$f(\infty_+)=\infty_-$。$\infty_{OA}$的極線通過$O$與$\ell_\infty\cap \mathfrak{p}_\mathcal{H}(A)$，故$f(\infty_{OA})=\infty_{\mathfrak{p}_\mathcal{H}(A)}$，同理有
+$$
+(\infty_+,\infty_-), \,(\infty_{OA}, \infty_{\mathfrak{p}_\mathcal{H}(A)}), \,(\infty_{OB}, \infty_{\mathfrak{p}_\mathcal{H}(B)})
+$$
+為對合。故由$O$打對合有$\sangle AOB=\sangle(\mathfrak{p}_\mathcal{H}(B),\mathfrak{p}_\mathcal{H}(A))$。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+等軸雙曲線上的角度剛好跟圓反過來：給定圓$\omega$，其中心為$O$，則因為$AO\perp \mathfrak{p}_\omega(A)$，故$\sangle AOB=\sangle(\mathfrak{p}_\omega(A),\mathfrak{p}_\omega(B))$。
+:::
+
+在@thm-recthyperbolapolar 中，若$A,B$共軛，則可以得到下面的推論。
+
+:::{#cor-selfconjugateconcyclic}
+$O$為等軸雙曲線$\mathcal{H}$的中心，$ABC$為自共軛三角形，則$ABCO$共圓。
+:::
+
+:::{#thm-two-selfconjugate-conic}
+$A_1B_1C_1$與$A_2B_2C_2$為兩關於錐線$\mathcal{C}$的自共軛三角形，則
+$$
+A_1,\,B_1,\,C_1,\,A_2,\,B_2,\,C_2\,\text{共錐線}
+$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令$B_2=\infty_+,\,C_2=\infty_-$，則等軸雙曲線$\mathcal{C}$的中心為$A_2$，由@cor-selfconjugateconcyclic 得證。
+:::
+
+:::{#lem-ninepoint-center-locus}
+令$\mathcal{H}$為外接等軸雙曲線，則$\mathcal{H}$的中心$P$在中點三角形的外接圓上。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+由@lem-recthyperbola ，垂心$H$在$\mathcal{H}$上，$H$的西瓦三角形$DEF$自共軛，由@cor-selfconjugateconcyclic ，
+$\mathcal{H}$的中心$P$在$\odot(DEF)$上。注意到存在以$B,C$為對徑點並過$A$的等軸雙曲線，故$\odot(DEF)$經過$BC$中點，對稱地$\odot(DEF)$為$ABC$的中點三角形的外接圓。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+令$H$為垂心，則完全四點形$ABCH$任兩點的中點以及其西瓦三角形頂點九點共圓，此圓稱為九點圓。九點圓的中心編號為$\X_5$。
+:::
