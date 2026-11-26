@@ -728,7 +728,7 @@ Let $\varphi$ be the isogonal conjugation on $ABC$. Let $\ell_\infty$ intersect 
 $$
 -1=(\infty_1,\infty_2;\infty_+,\infty_-)\mathop{=}\limits^{\varphi}(\varphi(\infty_1),\varphi(\infty_2);\infty_-,\infty_+)_{\odot(ABC)}
 $$
-The line $\varphi(\infty_1)\varphi(\infty_2)$ passes through the circumcenter $O$. Taking the isogonal conjugation, $\mathcal{H}=(ABC\infty_+\infty_-)$ pass through $H$.
+The line $\varphi(\infty_1)\varphi(\infty_2)$ passes through the circumcenter $O$. Taking the isogonal conjugation, $\mathcal{H}=(ABC\infty_+\infty_-)$ passes through $H$.
 :::
 
 :::{.unnumbered-env}
