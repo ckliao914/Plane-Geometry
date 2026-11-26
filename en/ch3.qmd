@@ -559,3 +559,133 @@ Replacing the four tangents with two pairs of coinciding tangents (i.e. two tang
 :::{#cor-pole-bisector}
 Let $F$ be a focus of $\mathcal{C}$ and $P,Q$ be two points on $\mathcal{C}$. Suppose that $R$ is the pole of $PQ$, then $FR$ is an angle bisector of $\sangle PFQ$.
 :::
+
+## Circumconics, Inconics, and the Symmedian Point
+
+Let $ABC$ be a triangle, the circumconic and inconic of $P$ be $\mathcal{C}_1,\,\mathcal{C}_2$, respectively, then $\mathfrak{p}_{\mathcal{C}_2}(P)$ is the tripolar of $P$. Let $\mathcal{C}_2$ intersect the tripolar of $P$ at $Q,R$, then $PQ$ and $PR$ are tangents of $\mathcal{C}$. Taking the $P$-anticomplement, $\mathcal{C}_1$ passes through $Q,\,R$, and $PQ,\,PR$ are tangents, too, so $\mathcal{C}_1$ and $\mathcal{C}_2$ are tangent at $Q,R$.
+
+:::{#lem-thirdrootofunitypoints}
+Let the tripole $\ell$ of $P$ with respect to $ABC$ intersect the circumconic $\mathcal{C}_1$ of $P$ at $Q,R$, then $R$ is on the tripolar of $Q$ (similarly, $Q$ is on tripolar of $R$).
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+The image of $\ell$ under the isoconjugation $P\times P$ is $\mathcal{C}_1$, so $P\times P$ swaps $Q$ and $R$.
+
+Given $X\in \mathcal{C}_1$, let $Y$ be the intersection of the tripolar of $X$ and $\ell$, $Z=P\times P\div Y\in \mathcal{C}_1$. Consider the projective map
+$$
+f:\mathcal{C}_1\to \mathcal{C}_1,\,X\mapsto Z
+$$
+Let $AP$ and $\mathcal{C}_1$ intersect again at $A'$, then $f(A)=A'$. Similarly we see that $f$ is the involution with perspector $P$, i.e. $f(Q)=Q$. We conclude that $P\times P\div Q=R$ is the intersection of the tripolar of $Q$ and $\ell$. 
+:::
+
+From @lem-trilineardual, the circumconic and tripolar of $Q$ intersect at $P,R$, so the relation between the three points are symmetric.
+
+:::{.unnumbered-env}
+**Remark**
+$P,Q,R$三點滿足
+$$
+P\times P=Q\times R,\,Q\times Q=R\times P,\,R\times R=P\times Q
+$$
+:::
+
+:::{#lem-3-inv}
+令$P$對$ABC$的外接錐線與內切錐線為$\mathcal{C}_1$與$\mathcal{C}_2$，
+$$
+f:\mathcal{C}_1\to\mathcal{C}_1\,\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A
+$$
+則對所有$X\in\mathcal{C}_1$，$Xf(X)$切$\mathcal{C}_2$。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+注意到$f$的射影軸為$P$的三線性極線，故$f$的不動點為$P$的三線性極線與$\mathcal{C}_1$的交點$Q,\,R$。由@lem-autenvelope ，$Xf(X)$的軌跡為一錐點，且此錐點包含
+$$
+Af(A)=AB,\,Bf(B)=BC,\,Cf(C)=CA,\,Qf(Q)=QP,\,Rf(R)=RP
+$$
+這五線都與$\mathcal{C}_2$相切，故$Xf(X)$切$\mathcal{C}_2$對於$X\in \mathcal{C}_1$。
+:::
+
+現在考慮類似重心$K$的外接錐線$\odot(ABC)$與內切錐線$\mathcal{C}$。由@lem-3-inv ，令$f:\odot(ABC)\to \odot(ABC)$使$f(A)=B,\,f(B)=C,\,f(C)=A$，則$\infty_+,\infty_-$對$\mathcal{C}$的切線為
+$$
+\infty_+f(\infty_+),\,\infty_+f^{-1}(\infty_+),\, \infty_-f(\infty_-),\,\infty_-f^{-1}(\infty_-)
+$$
+以下考慮$\mathcal{C}$的其中一對焦點$\infty_+f(\infty_+)\cap\infty_-f^{-1}(\infty_-),\,\infty_+f^{-1}(\infty_+)\cap\infty_-f(\infty_-)$。
+
+:::{.unnumbered-env}
+**Definition**
+三角形$ABC$的布洛卡點$Br,Br'$滿足
+$$
+\sangle BrAB=\sangle BrBC=\sangle BrCA,\,\sangle Br'BA=\sangle Br'CB=\sangle Br'AC
+$$
+因為$\odot(BrBC)$與$CA$相切，對稱地，兩布洛卡點都是唯一的，且互為等角共軛。
+:::
+
+接下來的目標是證明類似重心的內切錐線$\mathcal{C}$的一對焦點為兩布洛卡點。
+
+:::{#lem-brocardpoint}
+給定$ABC$，$\mathcal{C}$為$ABC$的一外接錐線，
+$$
+f:\mathcal{C}\to\mathcal{C}\,\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A
+$$
+$X,Y$為$\mathcal{C}$上任意兩點，$Xf(X)\cap Yf(Y)=Z$，則$(XYZAB)$與$AC$相切。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+相切等價$A(C,Z;Y,B)=X(A,Z;Y,B)$。令$AZ$交$\mathcal{C}$於$W$，則等價證明
+$$
+(C,W;Y,B)_{\mathcal{C}}\,\text{與}\,(A,f(X);Y,B)_{\mathcal{C}}=(f(X),A;B,Y)_{\mathcal{C}}
+$$
+相同，也就是要證明$Cf(X)$, $WA$, $BY$共點(對合)，這等價
+$$
+Cf(X)\cap BY,\,A,\, Xf(X)\cap Yf(Y)\,\text{共線}
+$$
+注意到$(Y,X;C,A)=(f(Y),f(X);A,B)=(f(X),f(Y);B,A)$。也就是存在
+$$
+g:\mathcal{C}\to\mathcal{C}\,\text{保交比},\,g(Y)=f(X),\, g(X)=f(Y),\, g(C)=B,\, g(A)=A
+$$
+考慮$g$的射影軸$\ell$，可知$\ell$上有$Cf(X)\cap BY$, $A$, $Xf(X)\cap Yf(Y)$三點，這就是前面等價要證明的三點共線。
+:::
+
+:::{#cor-brocardpointinconic}
+令$f:\odot(ABC)\to\odot(ABC)\,
+\text{保交比},\,f(A)=B,\, f(B)=C,\, f(C)=A$，則布洛卡點$Br'=\infty_+f(\infty_+)\cap \infty_-f(\infty_-),\,Br=\infty_+f^{-1}(\infty_+)\cap \infty_-f^{-1}(\infty_-)$為類似重心的內切錐線之一對焦點 (由@lem-brocardpoint 中$X=\infty_+,\,Y=\infty_-$得到)。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+@lem-brocardpoint 可以令$X,Y$為動點使用大保交比證明，也就是把無窮虛圓點當成外接圓上的動點來操作。
+:::
+
+:::{.unnumbered-env}
+**Example**
+令外心為$O$，$\odot(ABC)$與類似重心$K$的內切錐線$\mathcal{C}$相切於$Q,R$兩點，則有$O,K,Br,Br',Q,R$共圓$\omega$，稱為布洛卡圓。這是因為
+
+1. 令$X$為$\odot(ABC)$上的一點，$X$對$\odot(ABC)$的切線為$\ell$，$X$對$\mathcal{C}$的切線為$m,n$。對$Q,Q,R,R$對$\odot(ABC),\,\mathcal{C}$的四切線以及$X$使用DDIT(對兩錐線分別用)，可知
+$$
+(XK,XK),\,(XQ,XR),\,(\ell,\ell),(m,n)
+$$
+為對合，故$(\ell,XK;m,n)=-1$。取$X=\infty_\pm$，則
+$$
+\infty_+(O,K;Br,Br')=\infty_-(O,K;Br,Br')=-1
+$$
+2. 考慮保交比的$f:\odot(ABC)\to \odot(ABC),\,f(A)=B,\,f(B)=C,\,f(C)=A$，其不動點為$Q,R$，由@lem-fixcrossratio ，$(X,f(X);Q,R)_{\odot(ABC)}=c$的值與$X\in \odot(ABC)$無關。取$X=\infty_+$，有
+$$
+\infty_+(O,Br';Q,R)=(\infty_+,f(\infty_+);Q,R)_{\odot(ABC)}=c
+$$
+對稱地$\infty_+(O,Br';Q,R)=\infty_-(O,Br';Q,R)=c$，$\infty_+(O,Br;Q,R)=\infty_-(O,Br;Q,R)$。
+
+綜合以上可知$O,K,Br,Br',Q,R$共圓(因為$K,Q,R$不共線)。
+:::
+
+這是一個不用算角度證明共圓的例子。
+
+:::{.unnumbered-env}
+**Remark**
+因為$O\infty_+,O\infty_-,KQ,KR$為$\odot(ABC)$的切線，
+$$
+(O,K;\infty_+,\infty_-)_\omega=Q(O,K;\infty_+,\infty_-)=-1\text{，同理 }(O,K;Q,R)_\omega=-1
+$$
+故$\omega$的中心在$OK$上。結合$(O,K;Br,Br')_\omega=-1$可知$BrBr'\perp OK\perp QR$。
+:::
