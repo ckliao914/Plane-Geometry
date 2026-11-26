@@ -312,7 +312,7 @@ Given a point $P$ and a line $\ell$, $P\times X$ are collinear for all $X\in \el
 
 :::{.unnumbered-env}
 **Remark**
-@lem-trilineardual 中(下面的Remark)，給定等共軛$\varphi=P\times Q$，則存在錐線$\mathcal{G}$使得$\mathfrak{p}_\mathcal{G}(X)$的三線性極點就是$\varphi(X)$。令$Q$的三線性極線為$\ell$，則$\mathfrak{p}_\mathcal{G}(P)=\ell$，這說明了$P\times \ell=\mathfrak{p}_\mathcal{G}$，也就是說定義$P\times Q$的錐線與定義$P\times \ell$的錐線都是$\mathcal{G}$。
+In @lem-trilineardual (and the subsequent remark)，給定等共軛$\varphi=P\times Q$，則存在錐線$\mathcal{G}$使得$\mathfrak{p}_\mathcal{G}(X)$的三線性極點就是$\varphi(X)$。令$Q$的三線性極線為$\ell$，則$\mathfrak{p}_\mathcal{G}(P)=\ell$，這說明了$P\times \ell=\mathfrak{p}_\mathcal{G}$，也就是說定義$P\times Q$的錐線與定義$P\times \ell$的錐線都是$\mathcal{G}$。
 :::
 
 :::{.unnumbered-env}
