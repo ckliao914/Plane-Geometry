@@ -728,7 +728,7 @@ Let $\varphi$ be the isogonal conjugation on $ABC$. Let $\ell_\infty$ intersect 
 $$
 -1=(\infty_1,\infty_2;\infty_+,\infty_-)\mathop{=}\limits^{\varphi}(\varphi(\infty_1),\varphi(\infty_2);\infty_-,\infty_+)_{\odot(ABC)}
 $$
-The line $\varphi(\infty_1)\varphi(\infty_2)$ pass through the circumcenter $O$. Taking the isogonal conjugation, $\mathcal{H}=(ABC\infty_+\infty_-)$ pass through $H$.
+The line $\varphi(\infty_1)\varphi(\infty_2)$ passes through the circumcenter $O$. Taking the isogonal conjugation, $\mathcal{H}=(ABC\infty_+\infty_-)$ pass through $H$.
 :::
 
 :::{.unnumbered-env}
@@ -738,7 +738,7 @@ The converse of @lem-recthyperbola (if $\mathcal{H}$ passes through the orthocen
 
 :::{.unnumbered-env}
 **Definition**
-Let $O$ be the center of $\mathcal{C}$. If $P$ is on $\mathcal{C}$, then the second intersection of $PO$ with $\mathcal{C}$ is called the **antipode** of $P$ (i.e. the harmonic conjugate of $P$ with respect to $\infty_1|\infty_2$, where $\infty_1,\infty_2$ are the intersections of $\mathcal{C}$ and $\ell_\infty$.
+Let $O$ be the center of $\mathcal{C}$. If $P$ is on $\mathcal{C}$, then the second intersection of $PO$ with $\mathcal{C}$ is called the **antipode** of $P$ (i.e. the harmonic conjugate of $P$ with respect to $\infty_1|\infty_2$, where $\infty_1,\infty_2$ are the intersections of $\mathcal{C}$ and $\ell_\infty$).
 :::
 
 :::{#lem-recthyperbola-diametral-angle}
@@ -747,7 +747,7 @@ Suppose that $A,B,P$ are on the rectangular hyperbola $\mathcal{H}$, and $A',B',
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-Consider the second intersection $Q,Q'$ of $P\infty_+$, $P\infty_-$ with $\mathcal{H}$, respectively. Since $\infty_+,\infty_-$ are conjugate with respect to $\mathcal{H}$. From @lem-brocardconj (or Brocard theorem), $QQ'$ passes through the pole of $\ell_\infty=\infty_+\infty_-$, i.e. $Q,Q'$ are antipodal points, and
+Consider the second intersection $Q,Q'$ of $P\infty_+$, $P\infty_-$ with $\mathcal{H}$, respectively. Since $\infty_+,\infty_-$ are conjugate with respect to $\mathcal{H}$, from @lem-brocardconj (or Brocard theorem), $QQ'$ passes through the pole of $\ell_\infty=\infty_+\infty_-$, i.e. $Q,Q'$ are antipodal points, and
 $$
 (A,A'), \,(B,B'),\, (Q,Q')
 $$
@@ -795,11 +795,11 @@ since $AO\perp \mathfrak{p}_\omega(A)$.
 In @thm-recthyperbolapolar, if $A,B$ are conjugate, we obtain the following corollary.
 
 :::{#cor-selfconjugateconcyclic}
-Let $O$ be the center of $\mathcal{H}$, and $ABC$ be a self-conjugate triangle with respecto to $\mathcal{H}$, then $A,B,C,O$ are concyclic.
+Let $O$ be the center of $\mathcal{H}$, and $ABC$ be a self-conjugate triangle with respect to $\mathcal{H}$, then $A,B,C,O$ are concyclic.
 :::
 
 :::{#thm-two-selfconjugate-conic}
-Let $A_1B_1C_1$ and $A_2B_2C_2$ be two self-conjugate triangles with respect to $\mathcal{C}$, then
+Let $A_1B_1C_1$ and $A_2B_2C_2$ be two self-conjugate triangles with respect to a conic $\mathcal{C}$, then
 $$
 A_1,\,B_1,\,C_1,\,A_2,\,B_2,\,C_2
 $$
@@ -817,10 +817,10 @@ Let $\mathcal{H}$ be a circumconic of $ABC$ that is a rectangular hyperbola, the
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-By @lem-recthyperbola, the orthocenter $H$ is on $\mathcal{H}$, so the cevian triangle $DEF$ of $H$ is self-conjugate. From @cor-selfconjugateconcyclic, the center $P$ of $\mathcal{H}$ is on $\odot(DEF)$. Note that there exists a rectangular hyperbola passing through $A$ such that $B,C$ is a pair of antipodal points, so $\odot(DEF)$ passes through the midpoint of $BC$. Similarly, we see that $\odot(DEF)$ coincides with the circumcircle of the medial triangle of $ABC$.
+By @lem-recthyperbola, the orthocenter $H$ is on $\mathcal{H}$, so the cevian triangle $DEF$ of $H$ is self-conjugate. From @cor-selfconjugateconcyclic, the center $P$ of $\mathcal{H}$ is on $\odot(DEF)$. Note that there exists a rectangular hyperbola passing through $A$ such that $B,C$ are a pair of antipodal points, so $\odot(DEF)$ passes through the midpoint of $BC$. Similarly, we see that $\odot(DEF)$ coincides with the circumcircle of the medial triangle of $ABC$.
 :::
 
 :::{.unnumbered-env}
 **Definition**
-Let $H$ be the orthocenter of $ABC$, then in the complete quadrangle $ABCH$, the following nine points are concyclic: the midpoint of any two distinct points and the vertices of its cevian triangle. This circle is called the **nine-point circle** of $ABC$. The center of the nine-point circle is called the **nine-point center**, labeled $\X_5$.
+Let $H$ be the orthocenter of $ABC$, then in the complete quadrangle $ABCH$, the following nine points are concyclic: the six midpoints of any two distinct points and the three vertices of its cevian triangle. This circle is called the **nine-point circle** of $ABC$. The center of the nine-point circle is called the **nine-point center**, labeled $\X_5$.
 :::
