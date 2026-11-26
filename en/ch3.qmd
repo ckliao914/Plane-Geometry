@@ -451,3 +451,111 @@ Let the incenter and excentral triangle be $I,I_AI_BI_C$, then $AI,AI_B$ are the
 **Example**
 The circumconic of the symmedian point $K$ is $\odot(ABC)$. This follows from @lem-isoconjline and the fact that the image of $\ell_\infty$ under the isogonal conjugation is $\odot(ABC)$. From @lem-trilineardual, the tripolar of any point on the circumcircle passes through $K$.
 :::
+
+## Foci of Conics and Optical Properties
+
+:::{.unnumbered-env}
+**Definition**
+Let $\mathcal{C}$ be a conic. Consider the two tangents $m_1,m_2$ (resp. $n_1,n_2$) of $\mathcal{C}$ through $\infty_+$ (resp. $\infty_-$). Set $m_i\cap n_j=F_{ij}$ for $i,j=1,2$. We call $F_{ij}$ the **foci** of $\mathcal{C}$, and $(F_{11},F_{22})$ is called a pair of foci, and $(F_{12},F_{21})$ is the other pair. By Brocard theorem and polarity, the midpoint of a pair of foci is the center of the conic. All four foci of a circle coincide at its center.
+:::
+
+:::{#lem-focusproperty}
+## optical property
+Let $F_{11},F_{22}$ be a pair of foci of the conic $\mathcal{C}$. For a point $P$, let $\ell_1,\ell_2$ be the two tangents of $\mathcal{C}$ through $P$, $\sangle (F_{11}P,\ell_1)=\sangle(\ell_2,F_{22}P)$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Consider the tangents $\infty_+F_{11},\infty_+F_{22},\infty_-F_{11},\infty_-F_{22}$ of $\mathcal{C}$. Apply DDIT to this quadrilateral and the point $P$, 
+$$
+(\ell_1,\ell_2),\, (PF_{11},PF_{22}),\, (P\infty_+,P\infty_-)
+$$
+is an involution, so
+$$
+\sangle (F_{11}P,\ell_1)=(\infty_{F_{11}P},\infty_{\ell_1};\infty_+,\infty_-)=(PF_{11},\ell_1;P\infty_+,P\infty_-)=(PF_{22},\ell_2;P\infty_-,P\infty_+)
+$$
+We similarly see that $\sangle (F_{11}P,\ell_1)=\sangle(\ell_2,F_{22}P)$.
+:::
+
+:::{#cor-focusisogonal}
+Let $\mathcal{C}$ be an inconic (i.e. a conic tangent to the three sides) of $ABC$, $F_{11},F_{22}$ be a pair of foci of $\mathcal{C}$, then $F_{11}$, $F_{22}$ are isogonal conjugates with respect to $ABC$.
+:::
+
+:::{#lem-focusconicexist}
+Given a pair of isogonal conjugates $P,Q$, then there exists a unique inconic of $ABC$ with $P,Q$ a pair of foci.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+It suffices to prove that there exists a conic tangent to the lines
+$$
+BC,\,CA,\,AB,\,P\infty_+,\,P\infty_-,\,Q\infty_+,\, Q\infty_-
+$$
+(the uniqueness is clear). Let $\mathcal{C}$ be a conic tangent to $AB,P\infty_+,P\infty_-,\,Q\infty_+,\, Q\infty_-$, and the other tangent from $A$ to $\mathcal{C}$ be $\ell$. Apply DDIT to $P\infty_+,P\infty_-,Q\infty_+, Q\infty_-\in \mathcal{T}_\mathcal{C}$ and the point $A$,
+$$
+(AB,\ell),\,(AP,AQ),\,(A\infty_+,A\infty_-)
+$$
+is an involution. This is an isogonal involution on $\mathbb{L}_A$, so $\ell=AC$. Similarly, $AC$ and $BC$ are both tangent to $\mathcal{C}$.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+We define the **angle bisectors* of $\sangle BAC$ to be the fixed lines of the involution $(AB,AC),(A\infty_+,A\infty_-)$ (the lines passing through $A$ such that $\sangle(AB,\ell)=\sangle(\ell,AC)$). We know that the two angle bisectors are perpendicular.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Let the cevian triangle of the orthocenter $H$ of $ABC$ be $H_aH_bH_c$. Since $AH\perp BC$ and $H_a(A,B;H_b,H_c)=-1$, $AH$ and $BC$ are the angle bisectors of $\sangle H_bH_aH_c$.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+We apply @lem-focusproperty to the case $P\in \mathcal{C}$, we see that the tangent of $P$ is an angle bisector of $\sangle F_{11}PF_{22}$. This shows that the definition of foci coincides with the classical definition.
+:::
+
+:::{#lem-four-incircles}
+Given a triangle $ABC$, there exists exactly $4$ circles tangent to the three sides of $ABC$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Suppose that $\omega$ is a circle tangent to the three sides of $ABC$ with center $I$, then from @lem-focusproperty, $I$ is the isogonal conjugate of itself, so $I$ must be one of the four fixed points of the isogonal conjugation. From @lem-focusconicexist, there exists a unique conic with focus $I,I$ that is tangent to the three sides of $ABC$. As there are four fixed points, there are four such circles.
+:::
+
+:::{.unnumbered-env}
+**Definition**
+Among the four circles tangent to the three sides, the one centered at the incenter is called the **incircle**, and the one centered at the $A$-excenter is called the $A$-**excircle**. Analogously define the $B,C$-excircles.
+:::
+
+Writing the circular points of infinity out: given $ABC$, there exists exactly four inconics of $ABC$ that passes through $\infty_+,\infty_-$. Since the circular points of infinity are arbitrary points, we obtain the following.
+
+:::{#cor-five-elements-conics}
+Five points and lines in total determine finitely many conics:
+
+(1) Given five points (no three are collinear), there exists a unique conic through these five points.
+
+(2) Given four points $A,B,C,D$ (no three are collinear) and a line $\ell$ not passing through these points, then there exist exactly two conics passing through $A,B,C,D$ and tangent to $\ell$. 
+
+(3) Given three points $P,Q,R$ and two lines $m,n$ not passing through $P,Q,R$ such that no three of $P,Q,R,m\cap n$ are collinear, there exist exactly four conics passing through $P,Q,R$ and tangent to $m,n$.
+
+The cases "$3$ lines and $2$ points", "$4$ lines and $1$ point", and "$5$ lines" are the dual of the previous cases, which determine $4,2,1$ conics, respectively. 
+:::
+
+:::{#lem-tangent-quad-focus}
+Let $F$ be a focus of the conic $\mathcal{C}$, lines $AB,BC,CD,DA$ are tangent to $\mathcal{C}$, then $\sangle AFB=\sangle DFC$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Apply DDIT to $AB,BC,CD,DA\in \mathcal{T}_{\mathcal{C}}$ and the point $F$,
+$$
+(F\infty_+,F\infty_-), \,(FA,FC), \,(FB,FD)
+$$
+is an involution, so $\sangle AFB=\sangle DFC$.
+:::
+
+Replacing the four tangents with two pairs of coinciding tangents (i.e. two tangents at $P\in \mathcal{C}$ and two tangents at $Q\mathcal{C}$), we obtain the following.
+
+:::{#cor-pole-bisector}
+Let $F$ be a focus of $\mathcal{C}$ and $P,Q$ be two points on $\mathcal{C}$. Suppose that $R$ is the pole of $PQ$, then $FR$ is an angle bisector of $\sangle PFQ$.
+:::
