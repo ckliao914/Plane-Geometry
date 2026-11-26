@@ -242,7 +242,7 @@ An isoconjugation $\varphi$ on $ABC$ has exactly $4$ fixed points, that is, ther
 Since $BX\mapsto B\varphi(X)$ is an involution, there are two fixed lines $\ell_1,\ell_2$. A similar argument on the vertex $C$ gives two fixed lines $m_1,m_2$, then the fixed points are precisely the four intersections $\ell_i\cap m_j$, $i,j=1,2$.
 :::
 
-This shows that isoconjugation is uniquely determined by the four fixed points: the cevian triangle of the four fixed points is the triangle where the isoconjugation is defined on.
+This shows that isoconjugation is uniquely determined by the four fixed points: the cevian triangle of the four fixed points is the triangle where the isoconjugation is defined.
 
 :::{.unnumbered-env}
 **Definition**
@@ -307,12 +307,12 @@ Consider the family of isoconjugations $\varphi$ such that $\varphi,\varphi_1,\v
 
 :::{.unnumbered-env}
 **Definition**
-Given a point $P$ and a line $\ell$, $P\times X$ are collinear for all $X\in \ell$. Denote by $P\times \ell$ the collections of all such $P\times X$. From @cor-diagonalconic, $P\times \ell$ may be regarded as a polar transformation (such that the polar of $P$ is $\ell$ and $ABC$ is self-conjugate).
+Given a point $P$ and a line $\ell$, $P\times X$ are collinear for all $X\in \ell$. Denote by $P\times \ell$ the collection of all such $P\times X$. From @cor-diagonalconic, $P\times \ell$ may be regarded as a polar transformation (such that the polar of $P$ is $\ell$ and $ABC$ is self-conjugate).
 :::
 
 :::{.unnumbered-env}
 **Remark**
-In @lem-trilineardual (and the subsequent remark), given an isoconjugation $\varphi=P\times Q$, there exists a conic $\mathcal{G}$ such that the tripole of $\mathfrak{p}_\mathcal{G}(X)$ is $\varphi(X)$. Let the tripolar of $Q$ be $\ell$, then $\mathfrak{p}_\mathcal{G}(P)=\ell$. This shows that $P\times \ell=\mathfrak{p}_\mathcal{G}$, i.e. the conic defining the isoconjugation $P\times Q$ and the conic $P\times \ell$ are both $\mathcal{G}$.
+In @lem-trilineardual (and the subsequent remark), given an isoconjugation $\varphi=P\times Q$, there exists a conic $\mathcal{G}$ such that the tripole of $\mathfrak{p}_\mathcal{G}(X)$ is $\varphi(X)$. Let the tripolar of $Q$ be $\ell$, then $\mathfrak{p}_\mathcal{G}(P)=\ell$. This shows that $P\times \ell=\mathfrak{p}_\mathcal{G}$, i.e. the conic associated to the isoconjugation $P\times Q$ and the conic defining $P\times \ell$ are both $\mathcal{G}$.
 :::
 
 :::{.unnumbered-env}
@@ -426,7 +426,7 @@ Let $ABC$ be a triangle. The definition of some points is symmetric with respect
 
 :::{.unnumbered-env}
 **Remark**
-On the complex projective plane, we cannot not define the incenter to be the fixed point in the "interior" of $ABC$, so we arbitrarily pick one as the excenter, and the others are called excenters.
+On the complex projective plane, we cannot define the incenter to be the fixed point in the "interior" of $ABC$, so we arbitrarily pick one as the incenter, and the others are called excenters.
 :::
 
 :::{#lem-orthocenter}
