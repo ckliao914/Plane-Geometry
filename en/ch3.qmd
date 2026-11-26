@@ -829,7 +829,7 @@ Let $H$ be the orthocenter of $ABC$, then in the complete quadrangle $ABCH$, the
 
 :::{.unnumbered-env}
 **Definition**
-A conic $\Gamma$ is said to be a **parabola** if $\Gamma$ is tangent to $\ell_\infty$. Two of the foci of a parabola are the tangent points with $\ell_\infty$ (of multiplicity$2$), so the focus of a parabola refers to the one (or two if counted with multiplicity) not on $\ell_\infty$.
+A conic $\Gamma$ is said to be a **parabola** if $\Gamma$ is tangent to $\ell_\infty$. Two of the foci of a parabola are the tangent points with $\ell_\infty$ (of multiplicity $2$), so the focus of a parabola refers to the one (or two if counted with multiplicity) not on $\ell_\infty$.
 :::
 
 :::{#lem-parabolafocus}
@@ -838,7 +838,7 @@ Let $\Gamma$ be a parabola with focus $F$ such that $BC,CA,AB$ are tangent to $\
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-From @lem-focusisogonal, the pair of foci of $\Gamma$, i.e. $F$ the point at infinity on $\Gamma$, are isogonal conjugates with respect to $ABC$, so $F$ is on $\odot(ABC)$.
+From @lem-focusisogonal, the pair of foci of $\Gamma$, i.e. $F$ and the point at infinity on $\Gamma$, are isogonal conjugates with respect to $ABC$, so $F$ is on $\odot(ABC)$.
 :::
 
 :::{#thm-poncelet}
@@ -856,7 +856,7 @@ We assign $B_2=\infty_+,C_2=\infty_-$, then the focus of $\mathcal{C}$ is $A_2$,
 
 :::{.unnumbered-env}
 **Remark**
-@thm-poncelet is essentially the Poncelet closure theorem: let $ABC$ be a triangle, $\mathcal{C}_1$ be a circumconic, $\mathcal{C}_2$ is an inconic; take $D\in \mathcal{C}_1$, and let the two tangents of $\mathcal{C}_2$ through $D$ intersect $\mathcal{C}_1$ again $E,F$, then $EF$ and $\mathcal{C}_2$ are tangent.
+@thm-poncelet is essentially the Poncelet closure theorem: let $ABC$ be a triangle, $\mathcal{C}_1$ be a circumconic, $\mathcal{C}_2$ be an inconic; take $D\in \mathcal{C}_1$, and let the two tangents of $\mathcal{C}_2$ through $D$ intersect $\mathcal{C}_1$ again at $E,F$, then $EF$ and $\mathcal{C}_2$ are tangent.
 :::
 
 :::{#lem-parabolaMiquel}
@@ -878,7 +878,7 @@ $$
 $$
 :::
 
-Applying @lem-parabolaMiquel the dual of @thm-poncelet, we obtain the following corollary.
+Applying @lem-parabolaMiquel and the dual of @thm-poncelet, we obtain the following corollary.
 
 :::{#cor-parabola-miquel-conic}
 A conic $\mathcal{C}$ passes through $A,B,C,P$ and intersects $\ell_\infty$ at $\infty_1,\infty_2$, then the lines
@@ -912,7 +912,7 @@ Let $P,Q$ be two points on a parabola $\Gamma$ such that $PQ$ passes through the
 ## Proof
 Since $F\infty_+$ and $F\infty_-$ are tangent to $\Gamma$, 
 $$
--1=(FS,FT;\ell_P,\ell_Q)_\Gamma=(\infty_+,\infty_-;\infty_{\ell_P},\infty_{\ell_Q})
+-1=(F\infty_+,F\infty_-;\ell_P,\ell_Q)_\Gamma=(\infty_+,\infty_-;\infty_{\ell_P},\infty_{\ell_Q})
 $$
 We conclude that $\ell_P\perp \ell_Q$.
 :::
