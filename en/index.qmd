@@ -19,6 +19,8 @@ In the complex projective plane, the hypothesis is satisfied, and we call the po
 
 * [Chapter 2: Conics and Pole-Polar Duality](ch2.html)
 
+* [Chapter 3: Desargues Involution Theorem and Isoconjugations](ch3.html)
+
 
 ---
 [← Back to Main Site](../index.html)
