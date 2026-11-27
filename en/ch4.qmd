@@ -76,7 +76,7 @@ Let a line $\ell$ intersect $BC, CA,AB$ at
 $$
 D=(0:v_A:w_A),\, E=(u_B:0:w_B), \,F=(u_C:v_C:0)
 $$
-From Menelaus theorem, $v_Aw_Bu_C+w_Au_Bv_C=0$, so the points $D$, $E$, $F$ satisfies the equation
+From Menelaus theorem, $v_Aw_Bu_C+w_Au_Bv_C=0$, so the points $D$, $E$, $F$ satisfy the equation
 $$
 w_Bv_Cu-w_Bu_Cv-u_Bv_Cw=0
 $$
