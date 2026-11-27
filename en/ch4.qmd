@@ -110,3 +110,5 @@ so the equation of $\ell$ is $v_0w_0u+w_0u_0v+u_0v_0w=0$. In other words, the tr
 **Remark**
 Let $F$ be a field of characteristic $3$. From the equation of the tripolar, $P$ is always on the tripolar of $P$ in $\mathcal{P}_F$.
 :::
+
+## Fixed Points of Projective Transformations
