@@ -285,13 +285,13 @@ Let $\psi$ be the (point) isoconjugation with respect to the two conics $\mathca
 ## Proof
 For $X\in \ell$, the map $\mathfrak{p}_{\mathcal{C}_1}(X)\mapsto X\mapsto \mathfrak{p}_{\mathcal{C}_2}(X)$ is projective. By Steiner conic, the locus of $\psi(X)=\mathfrak{p}_{\mathcal{C}_1}(X)\cap \mathfrak{p}_{\mathcal{C}_2}(X)$ is a line or conic, and the locus is a conic if and only if $\ell$ does not pass through any undefined point of $\psi$. This proves (1). Now assume that $\ell$ passes through an undefined point $P$ of $\psi$, then $\psi(\ell)$ is a line $m$.
 
-(i) Suppose that the undefined points are the three points $P,Q,R$. Since $\psi$ is an isoconjugation on $PQR$, $m$ passes through $P$.
+i. Suppose that the undefined points are the three points $P,Q,R$. Since $\psi$ is an isoconjugation on $PQR$, $m$ passes through $P$.
 
-(ii) Suppose that the undefined points are the two points $P,Q$, and the polar of $Q$ is $PQ$. Let $\ell$ intersect the polar of $P$ at $X$, then $\psi(X)=P$ (note that $\psi(X)$ is defined), so $m$ passes through $P$.
+ii. Suppose that the undefined points are the two points $P,Q$, and the polar of $Q$ is $PQ$. Let $\ell$ intersect the polar of $P$ at $X$, then $\psi(X)=P$ (note that $\psi(X)$ is defined), so $m$ passes through $P$.
 
-(iii) Suppose that the undefined points are the two points $P,Q$, and the polar of $P$ is $PQ$. Since $\psi(m)=\ell$ is a line, $m$ passes through $P$ or $Q$. From (ii), if $m$ passes through $Q$, then $\ell$ passes through $Q$, contradiction. We see that $m$ passes through $P$.
+iii. Suppose that the undefined points are the two points $P,Q$, and the polar of $P$ is $PQ$. Since $\psi(m)=\ell$ is a line, $m$ passes through $P$ or $Q$. From ii, if $m$ passes through $Q$, then $\ell$ passes through $Q$, contradiction. We see that $m$ passes through $P$.
 
-(iv) Suppose that there is only one undefined point $P$. Since $\psi(m)$ is a line, $m$ passes through $P$.
+iv. Suppose that there is only one undefined point $P$. Since $\psi(m)$ is a line, $m$ passes through $P$.
 
 This proves (2).
 :::
@@ -327,60 +327,65 @@ Suppose that $\rho$ is a perspective transformation such that the perspector $P$
 Suppose that $\rho$ is a perspective transformation such that the perspector $P$ is not on the perspectrix $\ell$. In this case, the pole of $\ell$ is $P$, and both $\mathcal{C}_1,\mathcal{C}_2$ intersect $\ell$ at two distinct points $Q,\, R$. Moreover, $PQ,PR$ are tangent to both conics. This proves (5).
 :::
 
-## 三錐線定理
+## Three Conic Theorem
 
 :::{#lem-restintersect}
-若兩錐線 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 交於 $A,B,C,D$（不必相異），$m_A$ 為過 $A$ 的直線，再交 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 於 $A_1,A_2$；$m_B$ 為過 $B$ 的直線，再交 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 於 $B_1,B_2$。則
-$$A_1B_1\cap A_2B_2\in CD \,\,\forall \,m_A\in\mathbb{L}_A,m_B\in \mathbb{L}_B$$
+Let two conics $\mathcal{C}_1$ and $\mathcal{C}_2$ intersect at points $A,B,C,D$ (not necessarily distinct). Let $m_A$ be a line through $A$, which intersects $\mathcal{C}_1$ and $\mathcal{C}_2$ again at $A_1,A_2$; let $m_B$ be a line through $B$, which intersects $\mathcal{C}_1$ and $\mathcal{C}_2$ again at $B_1,B_2$. For all $m_A\in\mathbb{L}_A,m_B\in \mathbb{L}_B$, we have
+$$
+A_1B_1\cap A_2B_2\in CD
+$$
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-固定 $m_B$（使 $B_1\neq B_2$），讓 $m_A$ 變動，則
-$$\mathbb{L}_{B_1}\to \mathbb{L}_{B_2}:B_1A_1\mapsto B_2A_2\,\text{保交比}$$
-且當 $m_A$ 為直線 $AB$ 時，$B_1A_1=B_2A_2$，故 $B_1A_1\cap B_2A_2$ 軌跡為一直線 $\ell$。
+Fix $m_B$ (such that $B_1\neq B_2$) and vary $m_A$, then the map
+$$\mathbb{L}_{B_1}\to \mathbb{L}_{B_2}:B_1A_1\mapsto B_2A_2$$
+is projective. Moreover, when $m_A=AB$, $B_1A_1=B_2A_2$, so the locus of $B_1A_1\cap B_2A_2$ is a line $\ell$.
 
-令 $\ell$ 與 $\mathcal{C}_1$ 交於 $C',D'$，則 $A_1=C'$ 時，$A_2$ 必須是 $C'$，故 $\ell$ 與 $\mathcal{C}_1$ 的兩交點跟與 $\mathcal{C}_2$ 的兩交點相同。若 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 有交點 $E$ 不在 $AB$ 上，則取 $m_A=AE$ 可知 $E$ 在 $\ell$ 上，故 $\ell$ 與 $AB$ 包含了所有 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 的交點。因為兩錐線交點只有四個，$\ell$ 可能性有限，故就算 $m_B$ 變動，所得到的 $\ell$ 仍為同一條。
+Let $\ell$ and $\mathcal{C}_1$ intersect at $C',D'$. When $A_1=C'$, $A_2$ has to be $C'$. We see that the two intersections of $\ell$ and $\mathcal{C}_1$ are the same as those of $\ell$ and $\mathcal{C}_2$. Suppose that there is an intersection $E$ of $\mathcal{C}_1$ and $\mathcal{C}_2$ that is not on $AB$. Taking $m_A=AE$, $E$ is on $\ell$, i.e. $\ell\cup AB$ contains all intersections of $\mathcal{C}_1$ and $\mathcal{C}_2$. Since there are only four intersections, there are finitely many possibilities of $\ell$. That means, as $m_B$ varies, we obtain the same $\ell$.
 
-現在要證明直線 $\ell=CD$，也就是 $\{A,B,C,D\}=\{A,B,C',D'\}$（算次數）。假設點 $P$ 在 $\{A,B,C',D'\}$ 被算了兩次以上。若 $A=B=P$ 或是 $C'=D'=P$ 時，兩錐線相切於 $P$；若 $B=D'=P$，則 $\ell$ 通過 $B$，固定 $m_B$ 為 $B$ 對 $\mathcal{C}_1$ 切線（假設 $B\neq B_2$），則 $m_A$ 變動時，$BA_1\cap B_2A_2$ 軌跡經過 $B$，矛盾，故 $B=B_2$，兩錐線相切於 $P$。
+We aim to show that $\ell=CD$, i.e. $\{A,B,C,D\}=\{A,B,C',D'\}$ (counted with multiplicity). Suppose that $P$ is counted at least twice in $\{A,B,C',D'\}$. When $A=B=P$ or $C'=D'=P$, the two conics are tangent at $P$; when $B=D'=P$, $\ell$ passes through $B$, so we fix $m_B$ to be the tangent of $B$ to $\mathcal{C}_1$ (suppose that $B\neq B_2$), then as $m_A$ varies, the locus of $BA_1\cap B_2A_2$ passes through $B$, which is a contradiction, so $B=B_2$ and the two conics are tangent at $P$.
 
-這說明了若 $P$ 在 $\{A,B,C,D\}$ 只被算了一次，則在 $\{A,B,C',D'\}$ 中也只被算了一次，且兩集合不算次數時相同。檢查 $5$ 種錐線交點的可能性，要證明兩集合算次數時相同僅需驗證兩錐線切於兩相異點的情形即可。
+This shows that if $P$ is counted exactly once in $\{A,B,C,D\}$, then it is also counted once in $\{A,B,C',D'\}$, and the two sets are equal if multiplicity is not counted. Considering the $5$ possibilities of the intersections of two conics, to prove that the two sets are equal (counted with multiplicity), it suffices to verify the case where the conics are tangent at two distinct points.
 
-假設 $A=C,\,B=D$，則取 $m_A$ 為 $A$ 的切線可知 $A\in \ell$，同理 $\ell=AB=CD$；假設 $A=B,\,C=D$，兩錐線切於 $A,C$（易知 $C\in\ell$），則取 $m_A,\,m_B$ 滿足
-$$(AB,AC;m_A,m_B)=-1\implies(A,C;A_i,B_i)_{\mathcal{C}_i}=-1,\,i=1,2$$
-故 $A_1B_1\cap A_2B_2$ 為 $A$ 與 $C$ 的切線交點，也就是 $\ell=CD$ 為 $C$ 的切線。
+Suppose that $A=C,\,B=D$. Taking $m_A$ to be the tangent at $A$, we see that $A\in \ell$, and similarly $\ell=AB=CD$. Suppose that $A=B,\,C=D$. In this case the two conics are tangent at $A,C$ (note that $C\in\ell$). Taking $m_A,\,m_B$ such that $(AB,AC;m_A,m_B)=-1$, we see that
+$$
+(A,C;A_i,B_i)_{\mathcal{C}_i}=-1,\,i=1,2
+$$
+This shows that $A_1B_1\cap A_2B_2$ is the intersection of the tangents at $A$ and $C$, i.e. $\ell=CD$ is the tangent at $C$.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-@lem-restintersect 說明了 @thm-intersectmulti 中次數的定法是合理的。
+@lem-restintersect suggests that the definition of the multiplicities in @thm-intersectmulti is reasonable.
 :::
 
-由 @lem-restintersect 可以推得三錐線定理。
+From @lem-restintersect we may prove the three conic theorem.
 
 :::{#thm-threeconic}
-錐線 $\mathcal{C}_1,\mathcal{C}_2,\mathcal{C}_3$ 皆過 $A,B$，且 $\mathcal{C}_2,\mathcal{C}_3$ 再交於 $A_1,B_1$，$\mathcal{C}_1,\mathcal{C}_3$ 再交於 $A_2,B_2$，$\mathcal{C}_1,\mathcal{C}_2$ 再交於 $A_3,B_3$，則 $A_1B_1,A_2B_2,A_3B_3$ 共點。
+## three conic theorem
+Suppose that the conics $\mathcal{C}_1,\mathcal{C}_2,\mathcal{C}_3$ all pass through points $A,B$. Let $\mathcal{C}_2,\mathcal{C}_3$ intersect again at $A_1,B_1$; $\mathcal{C}_1,\mathcal{C}_3$ intersect again at $A_2,B_2$; $\mathcal{C}_1,\mathcal{C}_2$ intersect again at $A_3,B_3$. The lines $A_1B_1,A_2B_2,A_3B_3$ are concurrent.
 :::
 
 :::{.callout-note collapse="true" icon="false"}
 ## Proof
-令 $AA_3,BB_3$ 分別再交 $\mathcal{C}_3$ 於 $X,Y$，對 $\mathcal{C}_1,\mathcal{C}_3$ 還有直線 $AA_3,BB_3$ 使用 @lem-restintersect 有 $A_2B_2,A_3B_3,XY$ 共點。同理知 $A_1B_1,A_2B_2,A_3B_3$ 共點在 $XY$ 上。
+Let $AA_3,BB_3$ intersect $\mathcal{C}_3$ again at $X,Y$, respectively. Apply @lem-restintersect to $\mathcal{C}_1,\mathcal{C}_3$ and the lines $AA_3,BB_3$, then $A_2B_2,A_3B_3,XY$ are concurrent. Similarly, $A_1B_1,A_2B_2,A_3B_3$ are concurrent on $XY$.
 :::
 
-@lem-restintersect 就是三錐線定理的退化版本。
+@lem-restintersect is the degenerate version of the three conic theorem.
 
 :::{.unnumbered-env}
 **Example**
-給定圓 $\omega_1,\omega_2$ 交於非無窮虛圓點的 $A,B$，且 $P_1,Q_1$ 在 $\omega_1$ 上，$P_2,Q_2$ 在 $\omega_2$ 上，則 $P_1Q_1\parallel P_2Q_2$ 若且唯若 $A,B,P_1,Q_1,P_2,Q_2$ 共（可退化）錐線。
+Let the circles $\omega_1,\omega_2$ intersect at $A,B\neq \infty_{\pm}$. Given $P_1,Q_1$ on $\omega_1$ and $P_2,Q_2$ on $\omega_2$, $P_1Q_1\parallel P_2Q_2$ if and only if the points $A,B,P_1,Q_1,P_2,Q_2$ lie on the same (possibly degenerate) conic.
 :::
+
+The intersections of two circles refer to the two intersections other than the circular points of infinity.
 
 :::{.unnumbered-env}
 **Definition**
-兩個圓的根軸就是兩圓除了無窮虛圓點外的兩個交點連線。
+The **radical axis** of two circles is the line connecting their two intersections.
 :::
 
-以後圓的交點指的就是非無窮虛圓點的兩交點。
-
 :::{#cor-radicalcenter}
-給定三圓 $\omega_1,\omega_2,\omega_3$，$\omega_2,\omega_3$ 的根軸為 $\ell_{23}$，類似地定義 $\ell_{31},\ell_{12}$，則 $\ell_{23},\ell_{31}, \ell_{12}$ 共點，這個點稱為三個圓的根心。
+Let $\omega_1,\omega_2,\omega_3$ be circles. Let the radical axis of $\omega_2,\omega_3$ be $\ell_{23}$, and define $\ell_{31},\ell_{12}$ similarly, then $\ell_{23},\ell_{31}, \ell_{12}$ are concurrent. The concurrency point is called the **radical center** of the three circles.
 :::
