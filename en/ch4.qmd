@@ -387,5 +387,5 @@ The **radical axis** of two circles is the line connecting their two intersectio
 :::
 
 :::{#cor-radicalcenter}
-Let $\omega_1,\omega_2,\omega_3$ be circles. Let the radical axis of $\omega_2,\omega_3$ be $\ell_{23}$, and define $\ell_{31},\ell_{12}$ similarly, then $\ell_{23},\ell_{31}, \ell_{12}$ are concurrent. The concurrency point is called the **radical center** of the three circles.
+Let $\omega_1,\omega_2,\omega_3$ be circles. Let the radical axis of $\omega_2,\omega_3$ be $\ell_{23}$, and define $\ell_{31},\ell_{12}$ similarly. The lines $\ell_{23},\ell_{31}, \ell_{12}$ are concurrent, and the concurrency point is called the **radical center** of the three circles.
 :::
