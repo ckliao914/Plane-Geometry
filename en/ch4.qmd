@@ -379,7 +379,7 @@ Let $AA_3,BB_3$ intersect $\mathcal{C}_3$ again at $X,Y$, respectively. Apply @l
 Let the circles $\omega_1,\omega_2$ intersect at $A,B\neq \infty_{\pm}$. Given $P_1,Q_1$ on $\omega_1$ and $P_2,Q_2$ on $\omega_2$, $P_1Q_1\parallel P_2Q_2$ if and only if the points $A,B,P_1,Q_1,P_2,Q_2$ lie on the same (possibly degenerate) conic.
 :::
 
-The intersections of two circles refer to the two intersections other than the circular points of infinity.
+The intersections of two circles refer to the two intersections other than the circular points at infinity.
 
 :::{.unnumbered-env}
 **Definition**
