@@ -208,7 +208,7 @@ The possible fixed point sets are: a point, two points, three (non-collinear) po
  
 (4) When the fixed point set is $\mathbb{P}_\ell$, the fixed line set is $\mathbb{L}_P$ where $P\in \ell$ is the perspector.
 
-(5) When the fixed point set is $\{P\}\cup \mathbb{P}_\ell$, the fixed line set is $\ell\cup\mathbb{L}_P$.
+(5) When the fixed point set is $\{P\}\cup \mathbb{P}_\ell$, the fixed line set is $\{\ell\}\cup\mathbb{L}_P$.
 
 Summing up, the type of the fixed point set and the fixed line set of a projective transformation correspond dually.
 :::
