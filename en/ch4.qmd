@@ -326,3 +326,61 @@ Suppose that $\rho$ is a perspective transformation such that the perspector $P$
 
 Suppose that $\rho$ is a perspective transformation such that the perspector $P$ is not on the perspectrix $\ell$. In this case, the pole of $\ell$ is $P$, and both $\mathcal{C}_1,\mathcal{C}_2$ intersect $\ell$ at two distinct points $Q,\, R$. Moreover, $PQ,PR$ are tangent to both conics. This proves (5).
 :::
+
+## 三錐線定理
+
+:::{#lem-restintersect}
+若兩錐線 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 交於 $A,B,C,D$（不必相異），$m_A$ 為過 $A$ 的直線，再交 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 於 $A_1,A_2$；$m_B$ 為過 $B$ 的直線，再交 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 於 $B_1,B_2$。則
+$$A_1B_1\cap A_2B_2\in CD \,\,\forall \,m_A\in\mathbb{L}_A,m_B\in \mathbb{L}_B$$
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+固定 $m_B$（使 $B_1\neq B_2$），讓 $m_A$ 變動，則
+$$\mathbb{L}_{B_1}\to \mathbb{L}_{B_2}:B_1A_1\mapsto B_2A_2\,\text{保交比}$$
+且當 $m_A$ 為直線 $AB$ 時，$B_1A_1=B_2A_2$，故 $B_1A_1\cap B_2A_2$ 軌跡為一直線 $\ell$。
+
+令 $\ell$ 與 $\mathcal{C}_1$ 交於 $C',D'$，則 $A_1=C'$ 時，$A_2$ 必須是 $C'$，故 $\ell$ 與 $\mathcal{C}_1$ 的兩交點跟與 $\mathcal{C}_2$ 的兩交點相同。若 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 有交點 $E$ 不在 $AB$ 上，則取 $m_A=AE$ 可知 $E$ 在 $\ell$ 上，故 $\ell$ 與 $AB$ 包含了所有 $\mathcal{C}_1$ 與 $\mathcal{C}_2$ 的交點。因為兩錐線交點只有四個，$\ell$ 可能性有限，故就算 $m_B$ 變動，所得到的 $\ell$ 仍為同一條。
+
+現在要證明直線 $\ell=CD$，也就是 $\{A,B,C,D\}=\{A,B,C',D'\}$（算次數）。假設點 $P$ 在 $\{A,B,C',D'\}$ 被算了兩次以上。若 $A=B=P$ 或是 $C'=D'=P$ 時，兩錐線相切於 $P$；若 $B=D'=P$，則 $\ell$ 通過 $B$，固定 $m_B$ 為 $B$ 對 $\mathcal{C}_1$ 切線（假設 $B\neq B_2$），則 $m_A$ 變動時，$BA_1\cap B_2A_2$ 軌跡經過 $B$，矛盾，故 $B=B_2$，兩錐線相切於 $P$。
+
+這說明了若 $P$ 在 $\{A,B,C,D\}$ 只被算了一次，則在 $\{A,B,C',D'\}$ 中也只被算了一次，且兩集合不算次數時相同。檢查 $5$ 種錐線交點的可能性，要證明兩集合算次數時相同僅需驗證兩錐線切於兩相異點的情形即可。
+
+假設 $A=C,\,B=D$，則取 $m_A$ 為 $A$ 的切線可知 $A\in \ell$，同理 $\ell=AB=CD$；假設 $A=B,\,C=D$，兩錐線切於 $A,C$（易知 $C\in\ell$），則取 $m_A,\,m_B$ 滿足
+$$(AB,AC;m_A,m_B)=-1\implies(A,C;A_i,B_i)_{\mathcal{C}_i}=-1,\,i=1,2$$
+故 $A_1B_1\cap A_2B_2$ 為 $A$ 與 $C$ 的切線交點，也就是 $\ell=CD$ 為 $C$ 的切線。
+:::
+
+:::{.unnumbered-env}
+**Remark**
+@lem-restintersect 說明了 @thm-intersectmulti 中次數的定法是合理的。
+:::
+
+由 @lem-restintersect 可以推得三錐線定理。
+
+:::{#thm-threeconic}
+錐線 $\mathcal{C}_1,\mathcal{C}_2,\mathcal{C}_3$ 皆過 $A,B$，且 $\mathcal{C}_2,\mathcal{C}_3$ 再交於 $A_1,B_1$，$\mathcal{C}_1,\mathcal{C}_3$ 再交於 $A_2,B_2$，$\mathcal{C}_1,\mathcal{C}_2$ 再交於 $A_3,B_3$，則 $A_1B_1,A_2B_2,A_3B_3$ 共點。
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+令 $AA_3,BB_3$ 分別再交 $\mathcal{C}_3$ 於 $X,Y$，對 $\mathcal{C}_1,\mathcal{C}_3$ 還有直線 $AA_3,BB_3$ 使用 @lem-restintersect 有 $A_2B_2,A_3B_3,XY$ 共點。同理知 $A_1B_1,A_2B_2,A_3B_3$ 共點在 $XY$ 上。
+:::
+
+@lem-restintersect 就是三錐線定理的退化版本。
+
+:::{.unnumbered-env}
+**Example**
+給定圓 $\omega_1,\omega_2$ 交於非無窮虛圓點的 $A,B$，且 $P_1,Q_1$ 在 $\omega_1$ 上，$P_2,Q_2$ 在 $\omega_2$ 上，則 $P_1Q_1\parallel P_2Q_2$ 若且唯若 $A,B,P_1,Q_1,P_2,Q_2$ 共（可退化）錐線。
+:::
+
+:::{.unnumbered-env}
+**Definition**
+兩個圓的根軸就是兩圓除了無窮虛圓點外的兩個交點連線。
+:::
+
+以後圓的交點指的就是非無窮虛圓點的兩交點。
+
+:::{#cor-radicalcenter}
+給定三圓 $\omega_1,\omega_2,\omega_3$，$\omega_2,\omega_3$ 的根軸為 $\ell_{23}$，類似地定義 $\ell_{31},\ell_{12}$，則 $\ell_{23},\ell_{31}, \ell_{12}$ 共點，這個點稱為三個圓的根心。
+:::
