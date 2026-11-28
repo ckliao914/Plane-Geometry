@@ -161,7 +161,11 @@ Since $\mathbf{L}\mathbf{x}=0\iff \mathbf{L}\mathbf{P}^{-1}\mathbf{P}\mathbf{x}=
 
 :::{.unnumbered-env}
 **Example**
-A dual transformation $\mathfrak{p}$ is of the form $\mathbf{x}\mapsto \mathbf{x}^t\mathbf{Q}$, so $\mathbb{P}_\mathfrak{p}=\{\mathbf{x}\mid \mathbf{x}^t\mathbf{Q}\mathbf{x}=0\}$ is a conic. Expanding, $\mathbb{P}_\mathfrak{p}$ is of the form $\{a_1u^2+a_2v^2+a_3w^2+a_4vw+a_5wu+a_6uv=0\}$. In particular, we also call conics "quadratic curves".
+A dual transformation $\mathfrak{p}$ is of the form $\mathbf{x}\mapsto \mathbf{x}^t\mathbf{Q}$, so $\mathbb{P}_\mathfrak{p}=\{\mathbf{x}\mid \mathbf{x}^t\mathbf{Q}\mathbf{x}=0\}$ is a conic. Expanding, $\mathbb{P}_\mathfrak{p}$ is of the form 
+$$
+\{a_1u^2+a_2v^2+a_3w^2+a_4vw+a_5wu+a_6uv=0\}
+$$
+In particular, we also call conics "quadratic curves".
 :::
 
 :::{.unnumbered-env}
@@ -226,4 +230,99 @@ Given a conic $\mathcal{C}$ and $f:\mathcal{C}\to\mathcal{C}$ such that $f$ has 
 :::{.unnumbered-env}
 **Example**
 Consider the projective transformation $(u:v:w)\mapsto (2u:v+w:w)$. The fixed points are $(1:0:0)$ and $(0:1:0)$.
+:::
+
+## Intersections of Conics and Isoconjugations
+
+:::{#lem-conicintersectionexist}
+Two conics $\mathcal{C}_1,\mathcal{C}_2$ must intersect.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Suppose that the two conics do not intersect, consider the fixed point set 
+$$
+\{X\mid \mathfrak{p}_{\mathcal{C}_1}(X)=\mathfrak{p}_{\mathcal{C}_2}(X)\}
+$$
+of the projective transformation $\rho(X)=\mathfrak{p}_{\mathcal{C}_1}(\mathfrak{p}_{\mathcal{C}_2}(X))$, which is possibly a single point, two points, three points, a line, a point and a line, or the entire plane.
+
+(1) Suppose that $\rho$ is a perspective transformation. Consider an intersection $S$ of the perspectrix and $\mathcal{C}_1$. Note that the polar of $S$ with respect to $\mathcal{C}_2$ passes through $S$, i.e. $S$ is the intersection of the two conics, contradiction.
+
+(2) Suppose that the fixed point set of $\rho$ consists of a single point $P$. The polar $\ell$ of $P$ is a fixed line of $\rho$, so $\ell$ passes through $P$, i.e. $P$ is the intersection of the two conics (and the tangents at $P$ to the two conics coincide), contradiction.
+
+(3) Suppose that the fixed point set of $\rho$ consists of two points $P,Q$. The polars of $P,Q$ are fixed lines, but one of them is $PQ$. Without loss of generality, assume that line $PQ$ is the polar of $Q$, then $Q$ is the intersection of the two conics.
+
+(4) Suppose that the fixed point set of $\rho$ consists of three points $P,Q,R$. The fixed line set is the three sides of triangle $PQR$, so the polar of $P$ is $QR$ (otherwise the conics intersect at $P$). Similarly, the triangle $PQR$ is self-conjugate with respect to $\mathcal{C}_1$ and $\mathcal{C}_2$. Let $PQR$ be the reference triangle. From @cor-diagonalconic, we regard $\mathfrak{p}_{\mathcal{C}_1}$ and $\mathfrak{p}_{\mathcal{C}_2}$ as sets collecting the fixed points of collinear isoconjugations. The function $\varphi=\mathfrak{p}_{\mathcal{C}_1}\cap\mathfrak{p}_{\mathcal{C}_2}$ is an isoconjugation on $PQR$, i.e. $\varphi:X\mapsto \mathfrak{p}_{\mathcal{C}_1}(X)\cap\mathfrak{p}_{\mathcal{C}_2}(X)$. From @lem-isoconjugatefix, $\varphi$ has $4$ fixed points, which are the intersections of $\mathcal{C}_1$ and $\mathcal{C}_2$.
+
+We conclude that two conics must intersect.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+We revisit the case (4) of the proof of @lem-conicintersectionexist, i.e. when the fixed points of $\rho$ are exactly $P,Q,R$. In this case, the polar of $P$ must be $QR$ (even if the two conics intersect). Suppose not, we assume that the polar of $P$ is $PR$, then the polar of $R$ is $PQ$, and the polar of $Q$ is $QR$. This shows that $\mathcal{C}_1,\,\mathcal{C}_2$ are tangent at points $P,Q$. Take $S\in PQ$, then $\mathfrak{p}_{\mathcal{C}_1}(S)=\mathfrak{p}_{\mathcal{C}_2}(S)$ passes through $R$ and the harmonic conjugate of $S$ with respect to $P|Q$, which is a contradiction. We conclude that in case (4), the two conics must intersect at $4$ points.
+:::
+
+As in case (4), we can generalize the concept of isoconjugations to isoconjugations with respect to two conics.
+
+:::{.unnumbered-env}
+**Definition**
+Define the (point) isoconjugation with respect to the two conics $\mathcal{C}_1$ and $\mathcal{C}_2$ as
+$$
+\psi(X)=\mathfrak{p}_{\mathcal{C}_1}(X)\cap \mathfrak{p}_{\mathcal{C}_2}(X)
+$$
+Suppose that $P$ satisfies $\mathfrak{p}_{\mathcal{C}_1}(P)= \mathfrak{p}_{\mathcal{C}_2}(P)$ (i.e. the fixed points of $\mathfrak{p}_{\mathcal{C}_1}\circ\mathfrak{p}_{\mathcal{C}_2}$), then $\psi(P)$ is undefined. Note that when $\psi(X)$ and $\psi(\psi(X))$ are defined, $\psi(\psi(X))=X$.
+:::
+
+:::{#lem-conicisoconjugatelocus}
+Let $\psi$ be the (point) isoconjugation with respect to the two conics $\mathcal{C}_1$ and $\mathcal{C}_2$, and $\psi$ is not defined at finitely many points. Suppose that $\ell$ is a line such that $\mathfrak{p}_{\mathcal{C}_1}(\ell)\neq \mathfrak{p}_{\mathcal{C}_2}(\ell)$.
+
+(1) If $\ell$ does not pass through any undefined point of $\psi$, then $\psi(\ell)$ is a conic.
+
+(2) If $\ell$ passes through an undefined point $P$ of $\psi$, then $\psi(\ell)$ is a line through $P$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+For $X\in \ell$, the map $\mathfrak{p}_{\mathcal{C}_1}(X)\mapsto X\mapsto \mathfrak{p}_{\mathcal{C}_2}(X)$ is projective. By Steiner conic, the locus of $\psi(X)=\mathfrak{p}_{\mathcal{C}_1}(X)\cap \mathfrak{p}_{\mathcal{C}_2}(X)$ is a line or conic, and the locus is a conic if and only if $\ell$ does not pass through any undefined point of $\psi$. This proves (1). Now assume that $\ell$ passes through an undefined point $P$ of $\psi$, then $\psi(\ell)$ is a line $m$.
+
+(i) Suppose that the undefined points are the three points $P,Q,R$. Since $\psi$ is an isoconjugation on $PQR$, $m$ passes through $P$.
+
+(ii) Suppose that the undefined points are the two points $P,Q$, and the polar of $Q$ is $PQ$. Let $\ell$ intersect the polar of $P$ at $X$, then $\psi(X)=P$ (note that $\psi(X)$ is defined), so $m$ passes through $P$.
+
+(iii) Suppose that the undefined points are the two points $P,Q$, and the polar of $P$ is $PQ$. Since $\psi(m)=\ell$ is a line, $m$ passes through $P$ or $Q$. From (ii), if $m$ passes through $Q$, then $\ell$ passes through $Q$, contradiction. We see that $m$ passes through $P$.
+
+(iv) Suppose that there is only one undefined point $P$. Since $\psi(m)$ is a line, $m$ passes through $P$.
+
+This proves (2).
+:::
+
+:::{#thm-intersectmulti}
+If we use the following way to define the multiplicity of intersections, then two conics $\mathcal{C}_1,\,\mathcal{C}_2$ always intersect at $4$ points. Let the isoconjugation be $\psi(X)=\mathfrak{p}_{\mathcal{C}_1}(X)\cap \mathfrak{p}_{\mathcal{C}_2}(X)$. We consider the set of points where $\psi$ is undefined.
+
+(1) If the set consists of exactly one point, then there are two distinct intersections of the conics, one of which is a tangency point. Define the multiplicity of the tangency point to be $3$.
+
+(2) If the set consists of exactly two points, then there are three distinct intersections of the conics, one of which is a tangency point. Define the multiplicity of the tangency point to be $2$.
+
+(3) If the set consists of exactly three points, then there are four distinct intersections of the conics.
+
+(4) If the set is an entire line, then there is a unique intersection of the conics, which is also a tangency point. Define the multiplicity of this intersection to be $4$.
+
+(5) If the set is the union of a point and an entire line, then there are two distinct intersections, both of which are tangency points. Define the multiplicity of both intersections to be $2$.
+
+If an intersection is not a tangency point, it is said to be of multiplicity $1$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+Let $\rho=\mathfrak{p}_{\mathcal{C}_1}\circ\mathfrak{p}_{\mathcal{C}_2}$. The fixed points of $\rho$ are the undefined points of $\psi$.
+
+Suppose that $\rho$ has a single fixed point $P$. The polar $\ell$ of $P$ passes through $P$, so the two conics are tangent at $P$. By @lem-conicisoconjugatelocus, the involution $f:\mathbb{L}_P\to \mathbb{L}_P,\,m\mapsto \psi(m)$ has two fixed lines $\ell$ and $m_0$, and $m_0$ intersects both conics again at $X_0$. Note that $X_0$ is the only intersection of the two conics other than $P$, and $X_0$ is not a tangency point. This proves (1).
+
+Suppose that $\rho$ has exactly two fixed points $P,Q$, the fixed lines are $PQ,\,\ell$ such that $P\in \ell$. The polar of $P,Q$ are $PQ,\ell$, respectively, and the two conics are tangent to $PQ$ at $P$. The involution $f:\mathbb{L}_P\to \mathbb{L}_P,\,m\mapsto \psi(m)$ has two fixed lines $m_1$ and $m_2$, and $m_i$ intersects both conics again at $X_i$ ($i=1,2$). This proves (2).
+
+Suppose that $\rho$ has exactly three fixed points. We studied this case in @lem-conicintersectionexist, which proves (3).
+
+Suppose that $\rho$ is a perspective transformation such that the perspector $P$ is on the perspectrix $\ell$. In this case, $\ell$ is tangent to the two conics at $P$. Suppose that the two conics intersect at $Q\neq P$, then there exists a point $X$ on $\ell$ such that $XQ$ intersects $\mathcal{C}_1,\mathcal{C}_2$ at distinct points $Y_1,Y_2$, respectively. The lines $\mathfrak{p}_{\mathcal{C}_i}(X)$ ($i=1,2$) pass through the harmonic conjugate of $X$ with respect to $Q|Y_i$, so $\mathfrak{p}_{\mathcal{C}_1}(X)\neq \mathfrak{p}_{\mathcal{C}_2}(X)$, which is a contradiction, i.e. there are no other intersections. This proves (4).
+
+Suppose that $\rho$ is a perspective transformation such that the perspector $P$ is not on the perspectrix $\ell$. In this case, the pole of $\ell$ is $P$, and both $\mathcal{C}_1,\mathcal{C}_2$ intersect $\ell$ at two distinct points $Q,\, R$. Moreover, $PQ,PR$ are tangent to both conics. This proves (5).
 :::
