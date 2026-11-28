@@ -327,16 +327,16 @@ Let the tripole of $\ell_1,\ell_2,m$ be $P_1,P_2,Q$. Define $\varphi^{\mathbb{L}
 The isoconjugations defined in @thm-isoconjugate should be called "point-isoconjugations", denoted by $\varphi^\mathbb{P}$. For historical reasons, isoconjugations mean point-isoconjugations by default.
 :::
 
-## The Circular Points of Infinity
+## The Circular Points at Infinity
 
 :::{.unnumbered-env}
 **Definition**
-Define $\infty_+$ and $\infty_-$ to be the **circular points of infinity** (i.e. any two distinct points in $\mathbb{P}$). The line $\infty_+\infty_-$ is called the **line at infinity**, denoted $\ell_\infty$. For a line $\ell\neq\ell_\infty$, the **point at infinity** on $\ell$ is $\ell\cap\ell_\infty$, denoted by $\infty_{\ell}$.
+Define $\infty_+$ and $\infty_-$ to be the **circular points at infinity** (i.e. any two distinct points in $\mathbb{P}$). The line $\infty_+\infty_-$ is called the **line at infinity**, denoted $\ell_\infty$. For a line $\ell\neq\ell_\infty$, the **point at infinity** on $\ell$ is $\ell\cap\ell_\infty$, denoted by $\infty_{\ell}$.
 :::
 
 :::{.unnumbered-env}
 **Remark**
-The purpose of defining the circular points of infinity is to introduce some classical objects, such as circles and angles. When we assign two points to be the circular points of infinity, some projective statements become well-known lemmata.
+The purpose of defining the circular points at infinity is to introduce some classical objects, such as circles and angles. When we assign two points to be the circular points at infinity, some projective statements become well-known lemmata.
 :::
 
 :::{.unnumbered-env}
@@ -374,7 +374,7 @@ A conic $\omega$ is said to be a **circle** if $\omega$ passes through $\infty_+
 
 :::{.unnumbered-env}
 **Remark**
-To make sure the objects are well-defined, when it comes to circumcircles or angles, all lines are assumed not to pass through the circular points of infinity.
+To make sure the objects are well-defined, when it comes to circumcircles or angles, all lines are assumed not to pass through the circular points at infinity.
 :::
 
 :::{#cor-concyclic}
@@ -527,7 +527,7 @@ Suppose that $\omega$ is a circle tangent to the three sides of $ABC$ with cente
 Among the four circles tangent to the three sides, the one centered at the incenter is called the **incircle**, and the one centered at the $A$-excenter is called the $A$-**excircle**. Analogously define the $B,C$-excircles.
 :::
 
-Writing the circular points of infinity out: given $ABC$, there exists exactly four inconics of $ABC$ that pass through $\infty_+,\infty_-$. Since the circular points of infinity are arbitrary points, we obtain the following.
+Writing the circular points at infinity out: given $ABC$, there exists exactly four inconics of $ABC$ that pass through $\infty_+,\infty_-$. Since the circular points at infinity are arbitrary points, we obtain the following.
 
 :::{#cor-five-elements-conics}
 Five points and lines in total determine finitely many conics:
@@ -675,7 +675,7 @@ form a pair of foci of the inconic of the symmedian point (apply @lem-brocardpoi
 
 :::{.unnumbered-env}
 **Remark**
-In @lem-brocardpoint, we may let $X,Y$ be varying points on $\mathcal{C}$ and apply the projective map method. In other words, we think of the circular points of infinity as varying points on $\odot(ABC)$.
+In @lem-brocardpoint, we may let $X,Y$ be varying points on $\mathcal{C}$ and apply the projective map method. In other words, we think of the circular points at infinity as varying points on $\odot(ABC)$.
 :::
 
 :::{.unnumbered-env}
