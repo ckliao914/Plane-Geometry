@@ -112,3 +112,118 @@ Let $F$ be a field of characteristic $3$. From the equation of the tripolar, $P$
 :::
 
 ## Fixed Points of Projective Transformations
+
+A projective transformation $\rho:\mathbb{P}\to \mathbb{P}$ is a function that preserves collinearity and cross ratio. Given a projective transformation $\rho$, $P$ is said to be a fixed point of $\rho$ if $\rho(P)=P$; $\ell$ is said to be a fixed line of $\rho$ if $\rho(\ell)=\ell$.
+
+Elements in $\mathbb{P}$ are represented by column vectors $\mathbf{x}=(u\quad v\quad w )^t$. We aim to show that the action of a complex $3\times 3$ invertible matrix $\mathbf{P}\in \mathrm{GL}_3(\mathbb{C})$ (taking $\mathbf{x}$ to $\mathbf{P}\mathbf{x}$) is a projective transformation. One-dimensional subspaces (resp. two-dimensional subspaces) are sent to one-dimensional subspaces (resp. two-dimensional subspaces) by $\mathbf{P}$, so $\mathbf{P}$ is a transformation on $\mathbb{P}$ that preserves collinearity.
+
+To prove that the transformation $\mathbf{P}$ preserves cross ratio, let $X=\mathbf{x}=(u:v:w)$ be a point varying on line $\ell$, and let $\mathbf{P}$ map the points $A,B,C,X$ to $A',B',C',X'$. Define $X_1=(0:v:w)$ to be the intersection of $AX$ and $BC$, and set
+$$X_1'=A'X'\cap B'C'=\mathbf{P}(X_1),\,X_2=AX_1'\cap BC$$
+The maps $X\mapsto X_1$ and $X_2\mapsto X_1'\mapsto  X'$ are projective, so it suffices to show that $X_1\mapsto X_2$ is a projective map on line $BC$.
+
+In the following, lowercase boldface denotes the column vector of the corresponding point. Note that 
+$$
+\mathbf{x_2}=\begin{pmatrix}0&0&0\\ 0&1&0\\0&0&1 \end{pmatrix}\mathbf{P}\mathbf{x_1}=\begin{pmatrix}0&0&0\\ 0&1&0\\0&0&1 \end{pmatrix}\begin{pmatrix}p_{11}&p_{12}&p_{13}\\ p_{21}&p_{22}&p_{23}\\p_{31}&p_{32}&p_{33} \end{pmatrix}\begin{pmatrix}0\\v\\w \end{pmatrix}=\begin{pmatrix}0\\p_{22} v+p_{23}w\\p_{32}v+p_{33}w \end{pmatrix}
+$$
+so it suffices to show that the action of the $2\times 2$ submatrix $\mathbf{P}_2$ in the bottom-right corner of $\mathbf{P}$ on the line $BC$ is projective.
+
+The point $Y=(v\quad w)^t$ denotes the point $(0:v:w)$ on $BC$. Recall that we are working under $P$-coordinates. Suppose that $AP\cap BC=P_a$, then $v/w=(B,C;P_a,Y)$. Consider the action of the following invertible matrices $\mathbf{P}_2$ on $BC$:
+
+(1) $\mathbf{P}_2=(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix})$: $\mathbf{P}_2$ is the involution $(B,C)$, $(P_a,P_a)$.
+
+(2) $\mathbf{P}_2=(\begin{smallmatrix}c&0\\ 0&1\end{smallmatrix})$, $c\in\mathbb{C}^\times$: let $Z\in BC$ such that $c=(B,C;Y,Z)$, then $\mathbf{P}_2$ maps $Y$ to $Z$.
+
+(3) $\mathbf{P}_2=(\begin{smallmatrix}-1&1\\ 0&1\end{smallmatrix})$: let $Z\in BC$ such that $(B,C;P_a,Y)=(B,P_a;C,Z)$, then $\mathbf{P}_2$ maps $Y$ to $Z$.
+
+Since the actions of the three types of matrices are projective, and they generate all $2\times 2$ invertible matrices, the action of any invertible matrix $\mathbf{P}_2$ on $BC$ is projective. This shows that $\mathbf{P}$ is a projective transformation. (We omitted the case where $\mathbf{P}_2$ is not invertible. In this case, $B'C'$ passes through $A$. Suppose that $A,B,C$ lie on $B'C',C'A',A'B'$, respectively, then the previous argument works for the inverse $\mathbf{P}^{-1}$ of $\mathbf{P}$.) 
+
+:::{#thm-proj-linear}
+A function $\rho:\mathbb{P}\to \mathbb{P}$ is a projective transformation if and only if $\rho$ is an invertible linear transformation on $\mathbb{C}^3$.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+It suffices to show that a projective transformation $\rho$ is a $3\times 3$ invertible matrix $\mathbf{P}\in\mathrm{GL}_3(\mathbb{C})$. Consider the $P$-coordinate with respect to $ABC$, let $\rho(A)=(u_A:v_A:w_A)$, and label the coordinates of $\rho(B),\rho(C),\rho(P)$ similarly. Since $\rho(A),\rho(B),\rho(C)$ are not collinear, there exists $(a\quad b\quad c)^t\in\mathbb{C}^3$ such that
+$$
+\begin{pmatrix}u_A&u_B&u_C\\ v_A&v_B&v_C\\w_A&w_B&w_C\end{pmatrix}\begin{pmatrix}a\\ b\\c\end{pmatrix}=\begin{pmatrix}u_P\\ v_P\\w_P\end{pmatrix}
+$$
+Set
+$$
+\mathbf{P}=\begin{pmatrix}au_A&bu_B&cu_C\\ av_A&bv_B&cv_C\\aw_A&bw_B&cw_C\end{pmatrix}
+$$
+Since the coordinate of $P$ is $(1:1:1)$, we see that $\mathbf{P}$ is the projective transformation $\rho$ by plugging in $A,B,C,P$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Since $\mathbf{L}\mathbf{x}=0\iff \mathbf{L}\mathbf{P}^{-1}\mathbf{P}\mathbf{x}=0$, the action of the projective transformation $\mathbf{x}\mapsto \mathbf{P}\mathbf{x}$ on $\mathbb{L}$ is $\mathbf{L}\mapsto \mathbf{L}\mathbf{P}^{-1}$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+A dual transformation $\mathfrak{p}$ is of the form $\mathbf{x}\mapsto \mathbf{x}^t\mathbf{Q}$, so $\mathbb{P}_\mathfrak{p}=\{\mathbf{x}\mid \mathbf{x}^t\mathbf{Q}\mathbf{x}=0\}$ is a conic. Expanding, $\mathbb{P}_\mathfrak{p}$ is of the form $\{a_1u^2+a_2v^2+a_3w^2+a_4vw+a_5wu+a_6uv=0\}$. In particular, we also call conics "quadratic curves".
+:::
+
+:::{.unnumbered-env}
+**Remark**
+The action of a dual transformation $\mathfrak{p}:\mathbf{x}\mapsto \mathbf{x}^t\mathbf{Q}$ on $\mathbb{L}$ is given by $\mathbf{L}\mapsto \mathbf{Q}^{-1}\mathbf{L}^t$, so $\mathfrak{p}^2:\mathbf{x}\mapsto \mathbf{Q}^{-1}\mathbf{Q}^t\mathbf{x}$. This shows that $\mathbf{Q}$ is a symmetric matrix when $\mathfrak{p}$ is a polar transformation (since $\mathbf{Q}^t=\lambda\mathbf{Q}$, $\lambda^2=1$, and taking the determinant gives $\lambda^3=1$).
+:::
+
+To study the fixed points of projective transformations, it suffices to study the eigenvectors of the corresponding matrices.
+
+:::{#thm-proj-fixed-point}
+Any projective transformation $\rho$ has a fixed point.
+:::
+
+:::{.callout-note collapse="true" icon="false"}
+## Proof
+The eigenvectors of $\rho=\mathbf{P}$ (i.e. the vectors $\mathbf{x}$ such that $\mathbf{P}\mathbf{x}=\lambda\mathbf{x}$ for some $\lambda\in\mathbb{C}^\times$) are the fixed points of $\rho$.
+:::
+
+To find $\lambda$, i.e. $\mathbf{P}-\lambda\mathbf{I}_3$ is not invertible, we solve for the cubic equation $\det(\mathbf{P}-\lambda\mathbf{I}_3)=0$. Since there always exist solutions for cubic equations, such $\lambda$ and $\mathbf{x}$ exist.
+
+:::{.unnumbered-env}
+**Remark**
+In fact, we do not need the linear hypothesis to show @thm-proj-fixed-point. Suppose that $\mathcal{P}$ and $\mathcal{P}_F$ are isomorphic, where $F$ is a field such that $F^\times\simeq \mathbb{C}^\times$ (in which square roots and cube roots can be taken). By the Cardano formula (i.e. radical solution of a cubic equation), solutions for cubic equations must exist.
+:::
+
+Now, we classify the fixed point set and fixed line set of $\rho$. The possible fixed point sets are: a point, two points, three (non-collinear) points, a line, a point and a line, and the entire plane. When the fixed point set is either a line or a point and a line, $\rho$ is a perspective transformation.
+
+Suppose that $\rho$ has a single fixed point $P$, but there exist two fixed lines $\ell_1,\ell_2$ through $P$. Let $X_1\in\ell_1$, $X_2\in\ell_2$. We have
+$$
+(X_1,\rho(\rho(X_1));\rho(X_1),P)=-1=(X_2,\rho(\rho(X_2));\rho(X_2),P)
+$$
+(from @lem-uniquefixedpoint). This shows that $X_1X_2$, $\rho(X_1)\rho(X_2)$ and $\rho(\rho(X_1))\rho(\rho(X_2))$ are concurrent, and this point is a fixed point of $\rho$, contradiction. We conclude that when the fixed point set consists of a single point $P$, the fixed line set consists of a single line through $P$.
+
+Suppose that $\rho$ has exactly three fixed points $P,Q,R$, then $PQ,QR,RP$ are fixed lines. Suppose that $\rho$ has exactly two fixed points $P,Q$, then from the cases of one fixed point and three fixed points (and the dual), $\rho$ has exactly two fixed lines.
+
+:::{#cor-fixed-point-classification}
+The possible fixed point sets are: a point, two points, three (non-collinear) points, a line, a point and a line, and the entire plane.
+
+(1) When the fixed point set consists of a single point $P$, the fixed line set consists of a single line through $P$.
+
+(2) When the fixed point set consists of exactly two points $P,Q$, the fixed line set consists of the line $PQ$ and another line through one of $P,Q$.
+
+(3) When the fixed point set consists of exactly three points $P,Q,R$, the fixed line set consists of lines $PQ,QR,RP$.
+ 
+(4) When the fixed point set is $\mathbb{P}_\ell$, the fixed line set is $\mathbb{L}_P$ where $P\in \ell$ is the perspector.
+
+(5) When the fixed point set is $\{P\}\cup \mathbb{P}_\ell$, the fixed line set is $\ell\cup\mathbb{L}_P$.
+
+Summing up, the type of the fixed point set and the fixed line set of a projective transformation correspond dually.
+:::
+
+:::{.unnumbered-env}
+**Remark**
+These six types of the fixed point sets of projective transformations correspond to the possible Jordan canonical forms of $3\times 3$ invertible matrices, so all of these six types exist. The duality follows from the fact that $\mathbf{P}^{-1}$ and $\mathbf{P}$ share the same type of Jordan form.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Given a conic $\mathcal{C}$ and $f:\mathcal{C}\to\mathcal{C}$ such that $f$ has exactly one fixed point $P$, then the extension $\rho$ of $f$ has exactly one fixed point $P$, and the fixed line is the tangent line at $P$.
+:::
+
+:::{.unnumbered-env}
+**Example**
+Consider the projective transformation $(u:v:w)\mapsto (2u:v+w:w)$. The fixed points are $(1:0:0)$ and $(0:1:0)$.
+:::
